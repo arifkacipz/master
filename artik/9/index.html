@@ -2,174 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Developers Can Integrate with DefiLlama Swap API</title>
+    <title>How Developers Can Integrate With Defi Llama Swap</title>
 </head>
 <body>
 
-    <header>
-        <h1>How Developers Can Integrate with DefiLlama Swap API</h1>
-    </header>
-
-    <main>
-        
-        <h2>Overview of the DefiLlama Swap Developer API</h2>
-
-        <p>The DefiLlama Swap API, often implicitly referred to through the broader DefiLlama API infrastructure, provides developers with programmatic access to the platform's core utility: **best-price aggregation and smart order routing**. This API is a critical tool for any project aiming to offer token swapping to its users.</p>
-
-        <p>The key feature of the Swap API is its ability to find the most efficient path for a trade across a highly fragmented liquidity landscape. It queries and compares routes from various underlying Decentralized Exchanges (DEXs) and leading aggregators (the "Aggregator of Aggregators" model).</p>
-
-        <p>The API is generally available as a set of **RESTful endpoints** that calculate the optimal trade parameters. Developers pass in required variables—such as the input token, output token, amount, and chain—and receive a highly optimized transaction payload in return.</p>
-
-        <p>This calculated payload includes the complete, multi-step routing path and the final smart contract call data required to execute the atomic swap on-chain, effectively outsourcing the complex pathfinding to DefiLlama.</p>
-
-        <p>Beyond the core swap function, developers gain access to DefiLlama's comprehensive data metrics, including **Total Value Locked (TVL)**, **real-time prices**, **fees and revenue**, and **DEX volume**. These data streams are essential for building context-aware trading applications.</p>
-
-        <p>The infrastructure is built to support numerous EVM-compatible chains, ensuring that developers can offer multi-chain and cross-chain swap solutions without managing multiple integration points.</p>
-
-        <p>The Swap API is designed with **transparency** in mind, offering developers the same granular visibility into slippage, fees, and liquidity depth that is visible on the public DefiLlama Swap interface.</p>
-
-        <p>This powerful API suite allows developers to focus on their unique application features (UX, wallet integration, etc.) while relying on DefiLlama for best-in-class liquidity sourcing and trade execution logic.</p>
-
-        <img src="./images (9)/card.png" alt="">
-
-        <h2>How DefiLlama Swap Enables Custom Integrations</h2>
-
-        <p>DefiLlama Swap is structured to allow for seamless custom integration, transforming third-party applications into instant high-efficiency trading platforms. This is achieved through the API’s output format and open-source SDK components.</p>
-
-        <p>The API’s primary output is a **raw transaction object** or **call data**. Developers take this optimized data—which contains all the logic for a multi-DEX, multi-hop swap—and pass it directly to the user’s wallet for signing. This non-custodial method ensures that custom dApps remain trustless.</p>
-
-        <p>Custom wallets and DeFi dashboards can integrate the Swap API to provide an in-app trade feature. When a user decides to swap tokens within the third-party dApp, the dApp queries the DefiLlama API for the best route and presents the superior price directly to the user.</p>
-
-        <p>For projects requiring unique monetization strategies, DefiLlama’s routing may be customized (depending on the underlying aggregator used) to facilitate a small fee or kickback. However, DefiLlama’s core service is built around maximizing user output, which generally implies a zero-fee model for the routing itself.</p>
-
-        <p>The API’s modular design allows developers to select only the necessary data points, such as real-time pricing and liquidity depth, without needing to integrate the full execution logic. This flexibility supports novel use cases like **arbitrage monitoring bots** or **liquidity depth visualizations**.</p>
-
-        <p>Since the DefiLlama ecosystem maintains open-source adapters, developers can also contribute by adding support for new, niche protocols, thereby directly expanding the capabilities and reach of the entire aggregated liquidity network.</p>
-
-        <p>The system is agnostic to the programming language, providing flexibility with API examples in common languages like **Node.js, Python, Ruby**, and **Shell**, facilitating quick deployment for a wide range of web3 projects.</p>
-
-        <p>By offering powerful routing logic as an accessible API service, DefiLlama Swap empowers developers to embed competitive DEX aggregation into any platform, driving DeFi mass adoption.</p>
-
-        <hr>
-
-        <h2>Real-Time Data Feeds from DefiLlama Swap</h2>
-
-        <p>DefiLlama Swap is unique in that its aggregation service is directly fueled by the industry’s most comprehensive and accurate **real-time data feeds**. These data streams are often accessible to developers through the broader DefiLlama API.</p>
-
-        <p>The most crucial feed is **Real-Time Liquidity Depth**. This data allows developers to visualize and utilize the liquidity available for any token pair across all connected DEXs and chains, ensuring that trade execution is based on the freshest possible information.</p>
-
-        <p>Developers can access **Protocol and Chain Metrics**, including real-time TVL, DEX volume, and fee generation for hundreds of protocols and chains. This data is vital for risk analysis, market trend identification, and making informed routing decisions.</p>
-
-        <p>**Token Pricing and Market Data** feeds provide current and historical price data, often sourced via CoinGecko or determined through on-chain pool weights, ensuring accurate valuation for assets before, during, and after a swap.</p>
-
-        <p>For applications involving cross-chain transfers, the API offers **Bridge Monitoring Data**, providing real-time volume, security metrics, and TVL for various bridge protocols, allowing developers to build robust and trustworthy cross-chain dApps.</p>
-
-        <p>These data feeds are fundamental to the Swap API's core function. The aggregation algorithm constantly queries these feeds to calculate the optimal path, ensuring the final output price is based on an exhaustive, real-time comparison.</p>
-
-        <p>The reliability of these feeds is guaranteed by DefiLlama’s commitment to **open-source data collection**, which sources information directly from smart contracts rather than relying on potentially biased, protocol-supplied APIs.</p>
-
-        <p>Access to these rich, real-time data feeds transforms the developer's ability to create powerful trading tools, moving beyond simple wallet connectivity to offering genuine, data-driven financial insights.</p>
-
-        <hr>
-
-        <h2>Building dApps with DefiLlama Swap APIs</h2>
-
-        <p>Developers can leverage the DefiLlama Swap API to build a variety of innovative decentralized applications (dApps), capitalizing on its competitive pricing and robust multi-chain infrastructure.</p>
-
-        <p>The most common application is embedding a **Swap Widget** into a DeFi wallet or portfolio tracker. This allows users to rebalance their portfolios or swap tokens without ever leaving the application interface, significantly improving User Experience (UX).</p>
-
-        <p>Developers can build **Algorithmic Trading Bots** that utilize the Swap API to automatically execute trades when specific price discrepancies or liquidity conditions are met, ensuring best execution for arbitrage or large-volume strategies.</p>
-
-        <p>A specialized use case involves creating **Yield Optimization Tools**. These dApps can use the DefiLlama Yield API to identify the best farming opportunities and then use the Swap API to execute the necessary token conversions and capital movements to participate in that yield, all within one platform.</p>
-
-        <p>For protocols built on emerging chains, integration provides immediate access to **global liquidity**. By routing trades through DefiLlama, the new protocol can tap into the capital depth of Ethereum and major L2s instantly, aiding in project scaling and adoption.</p>
-
-        <p>The cross-chain functionality allows for the creation of seamless **Cross-Chain Asset Managers** that enable users to swap between assets on different networks (e.g., BNB Chain to Avalanche) with minimal friction, a powerful utility for multi-chain users.</p>
-
-        <p>Projects focused on transparency and security can use the API to provide users with a **verifiable price quote**. The application can display the best rate from DefiLlama, reinforcing trust by showing users that they are receiving the optimal market price.</p>
-
-        <p>By providing a foundational layer of best execution, the DefiLlama Swap API frees dApp builders to focus on novel application layers, knowing their core trading functionality is handled by a battle-tested and unbiased aggregator.</p>
-
-        <hr>
-
-        <h2>Security and Authentication in DefiLlama Swap API</h2>
-
-        <p>Security and authentication in the DefiLlama Swap API primarily center on controlling access to the data feeds and ensuring the integrity of the transaction payload, rather than managing user funds.</p>
-
-        <p>For data access, DefiLlama utilizes **API Keys**, particularly for its Pro API endpoints, which offer commercial access to comprehensive data sets (TVL, volumes, bridges, etc.). Developers must manage these keys securely, as they act as the primary authentication method for accessing valuable, real-time market metrics.</p>
-
-        <p>Crucially, the Swap execution itself is secured by the principles of **non-custodial DeFi**. The API only returns the optimized transaction data; it never holds or transfers user funds. The user must sign the transaction with their private key via their wallet, ensuring the security of the funds remains entirely on the user's side.</p>
-
-        <p>The **integrity of the transaction payload** is paramount. The routing logic contained in the API's response is generated by a smart contract infrastructure that undergoes rigorous auditing, ensuring that the final execution instruction is free from manipulation or malicious code.</p>
-
-        <p>The API payload includes essential **security parameters**, such as the enforced slippage tolerance, which dictates the minimum amount of output token the user is willing to accept. This protection is embedded directly into the on-chain instruction, mitigating front-running risk.</p>
-
-        <p>Developers are also encouraged to manage **token approvals** securely. When integrating the API, best practice is to only request permission for the router contract to spend the specific amount of the input token required for the swap, reducing exposure risk.</p>
-
-        <p>Given the platform’s open-source nature, the community acts as a continuous security auditor, validating the logic and quickly flagging any potential vulnerabilities, which is an invaluable, decentralized security layer.</p>
-
-        <hr>
-
-        <h2>Documentation and SDKs for DefiLlama Swap Integration</h2>
-
-        <p>For developers, successful integration relies on clear documentation and available Software Development Kits (SDKs) to simplify the implementation of complex DeFi logic.</p>
-
-        <p>DefiLlama provides extensive **API documentation** for its various data endpoints (TVL, volumes, prices, bridges), which form the informational foundation for the Swap feature. These docs outline the required HTTP methods, parameters (like chain slugs and token addresses), and expected response formats.</p>
-
-        <p>While the front-end swap functionality utilizes the core data APIs, developers looking to access the execution logic may utilize community or partner resources that integrate with DefiLlama's meta-aggregation model.</p>
-
-        <p>A key resource for the DefiLlama ecosystem is the **<code>@defillama/sdk</code>** package available via npm. While this SDK is primarily designed for developers writing TVL adapters (connecting new protocols to the data platform), it contains tools and functions relevant for interacting with the multi-chain environment, particularly for EVM-compatible networks.</p>
-
-        <p>The documentation is often open-source and found on platforms like GitHub, reflecting the project's community-driven nature. This includes guides on how to build and test adapters using tools like **Node.js** and **BigNumber.js**, which are fundamental for on-chain data processing.</p>
-
-        <p>The focus on **SDK-based adapters** for EVM chains highlights the preference for transparency and on-chain verification over relying on third-party APIs for data, a principle that extends to the Swap's execution integrity.</p>
-
-        <p>Developers in non-EVM chains often use "Fetch adapters" which demonstrate the flexibility of the platform's methodology, allowing for custom data sources where the SDK is not yet natively supported.</p>
-
-        <p>By offering open tools and clear methodologies, DefiLlama cultivates a developer ecosystem where integration is both accessible and built on the foundation of verifiable, community-audited code.</p>
-
-        <hr>
-
-        <h2>Scaling DeFi Projects Using DefiLlama Swap Tools</h2>
-
-        <p>DefiLlama Swap provides an immediate and powerful avenue for DeFi projects to scale their user base, volume, and capital efficiency by outsourcing a critical, difficult-to-maintain function: liquidity management.</p>
-
-        <p>**Scaling Liquidity:** The biggest hurdle for new DeFi projects is attracting deep, consistent liquidity. By integrating the Swap API, a project immediately accesses the aggregated liquidity of the entire multi-chain market, offering users best-in-class trade execution from day one, which is a massive attraction for volume.</p>
-
-        <p>**Scaling Cross-Chain Reach:** New protocols can instantly offer multi-chain utility without investing heavily in bridge infrastructure. DefiLlama Swap handles the complex, risky, and high-maintenance task of cross-chain routing, allowing the project to focus on its core product features.</p>
-
-        <p>**Cost-Effective Scaling:** Utilizing the Swap API is more resource-efficient than building and maintaining an in-house aggregation solution. Developers save massive amounts of time and computational resources that would otherwise be spent querying and optimizing routes across dozens of independent DEXs.</p>
-
-        <p>**Scaling Trust:** Projects leverage DefiLlama's reputation for accurate data and zero-fee aggregation. Integrating a service known for providing the "best price" instantly transfers a high level of trust and transparency to the host application, essential for user acquisition.</p>
-
-        <p>**Scaling Efficiency:** The platform allows projects to deploy on low-cost Layer 2 networks, as the Swap API ensures that capital from the broader DeFi ecosystem can seamlessly flow into and out of the project, facilitating cost-effective transactions for users.</p>
-
-        <p>In essence, the Swap API acts as a universal liquidity plug-in. It allows projects to scale vertically by guaranteeing optimal execution, and horizontally by providing instantaneous multi-chain connectivity.</p>
-
-        <img src="./images (9)/LlamaSwap.jpeg" alt="">
-
-        <h2>Future Developer Ecosystem Around DefiLlama Swap</h2>
-
-        <p>The future developer ecosystem around DefiLlama Swap is expected to expand significantly, driven by the platform's data authority and the growing market demand for unified, chain-agnostic trading tools.</p>
-
-        <p>The primary area of future development will be the deep integration of **cross-chain execution protocols** beyond simple bridges, such as Generalized Message Passing (GMP) and "intent-based" trading solutions. This will offer developers even more robust and atomic multi-chain transaction capabilities.</p>
-
-        <p>The future ecosystem will see a move toward **enhanced liquidity types**. Developers will gain API access to route through new AMM models, perpetual DEXs, and specialized market mechanisms that require highly complex routing logic, opening up opportunities for advanced trading strategies.</p>
-
-        <p>There will be a push toward developing more **SDKs and helper libraries** for non-EVM chains. While the current SDK focuses on EVM, the growth of ecosystems like Solana and Sui will necessitate dedicated tools to bring the full power of LlamaSwap's aggregation to these networks.</p>
-
-        <p>The ecosystem will likely integrate tools for **automated risk management**. Developers could build dApps that query the DefiLlama API for real-time risk scores of underlying protocols or bridges and automatically adjust the swap routing to avoid high-risk paths.</p>
-
-        <p>As the DefiLlama platform already tracks unique metrics (TVL, volume, fees), future APIs will likely allow developers to build new products that fuse execution with **hyper-personalized data**. For example, a dApp could recommend a swap based on a user's current yield portfolio and a real-time DefiLlama APY feed.</p>
-
-        <p>In this future ecosystem, DefiLlama Swap will evolve from a trading utility into a **universal liquidity operating system** for DeFi developers, making it the essential infrastructure for any application that needs to touch token assets.</p>
-        
-    </main>
-
-    <footer>
-        <p>Article written based on the technical capabilities and open-source nature of the DefiLlama API and Swap aggregator.</p>
-    </footer>
+    <h1>How Developers Can Integrate With Defi Llama Swap</h1>
+
+    <p>Defi Llama Swap is more than just a user interface; it's a powerful execution layer backed by the industry's most trusted data. For developers, the platform offers a robust set of tools, APIs, and open-source resources designed for seamless integration into custom applications, trading bots, and dashboards. By leveraging Llama Swap's routing intelligence, developers can access optimal execution for their users without having to manage the complexity of multi-chain, meta-aggregation themselves, drastically lowering the barrier to building high-efficiency DeFi products.</p>
+
+    <hr>
+    <h2>Defi Llama Swap API documentation overview</h2>
+    <p>The Defi Llama Swap API documentation is designed for clarity and comprehensiveness, making it the primary resource for any developer looking to integrate the swap functionality.</p>
+    <p>The documentation clearly outlines the available **endpoints**, primarily focusing on those required for price quotation, optimal route calculation, and transaction signing preparation.</p>
+    <p>A key focus is on the **Quote Endpoint**, which allows developers to request the best price for any token pair across all supported chains, receiving a highly optimized route with all fees factored in.</p>
+    <p>The documentation provides detailed information on the **data structures** returned, including the specific smart contract to interact with, the call data, and the gas estimates for execution.</p>
+    <p>Crucially, the API is often simple, focusing on core inputs (source token, destination token, amount, chain ID) and providing the most efficient output for immediate transaction submission.</p>
+    <p>Examples for popular programming languages (like JavaScript or Python) are usually provided, accelerating the integration process for common use cases like web dApps or back-end bots.</p>
+    <p>It also explains how to handle edge cases, such as insufficient liquidity errors or high slippage warnings, allowing developers to build robust error handling into their applications.</p>
+    <p>The documentation benefits from the same commitment to transparency as the entire DefiLlama platform, ensuring developers understand exactly how the optimal route is determined.</p>
+
+    <img src="./images.jpg" alt="">
+    <h2>Building trading bots using Defi Llama Swap data</h2>
+    <p>Developers can build highly effective and efficient trading bots by leveraging the precision and breadth of data provided by the Defi Llama Swap API.</p>
+    <p>Trading bots can use the **Quote Endpoint** as a core component, constantly polling for the best possible execution price before submitting an order, ensuring optimal entry and exit points.</p>
+    <p>The speed of the API is critical for bots, enabling them to react to momentary market inefficiencies by swiftly securing the best possible rate across all aggregated liquidity sources.</p>
+    <p>By comparing the price returned by the Llama Swap API with external market data (like centralized exchange prices), bots can identify and execute sophisticated **arbitrage strategies** based on decentralized liquidity.</p>
+    <p>Advanced bots can utilize the detailed routing information provided to analyze market structure, understanding which specific liquidity pools are currently offering the best depth and lowest fees.</p>
+    <p>The multi-chain capability of the API allows bot developers to program strategies that exploit cross-chain price differences, using Llama Swap's routing to manage the complex bridge/swap sequence.</p>
+    <p>Bots must be programmed to handle the transaction submission and signing process, taking the raw call data from the API and correctly broadcasting the transaction to the chosen blockchain.</p>
+    <p>The result is a bot that leverages Llama Swap's complex aggregation intelligence, allowing the developer to focus their efforts on market signal generation rather than complex route optimization.</p>
+
+    <hr>
+    <h2>Integrating Defi Llama Swap into third-party dashboards</h2>
+    <p>Integrating Llama Swap into third-party DeFi dashboards is a common use case, enhancing the utility of analytical tools by providing a direct execution path for users.</p>
+    <p>A dashboard displaying a user's portfolio or yield farming positions can seamlessly add a **"Swap" button** that utilizes the Llama Swap API to instantly offer the best possible token exchange rate.</p>
+    <p>This integration is highly valuable because it keeps the user within the dashboard environment, preventing them from navigating away to search for the best price, which improves retention.</p>
+    <p>The dashboard can leverage Llama Swap’s data transparency to display the full quote details, including the specific DEX or aggregator used, bolstering user trust in the execution service.</p>
+    <p>Developers often customize the swap widget's visual appearance (UI) while relying on the Llama Swap API for the core logic (the "backend" of the swap), ensuring the brand continuity of their dashboard.</p>
+    <p>Integrating Llama Swap’s multi-chain capability allows the dashboard to become a universal trading portal, offering optimal swaps regardless of the user's current chain connection.</p>
+    <p>This capability turns a purely data-driven dashboard into an **actionable financial tool**, significantly enhancing its utility and value proposition to the end-user.</p>
+    <p>The process generally involves fetching the swap quote via the API and then using the returned transaction data to populate and trigger the user's wallet confirmation (e.g., MetaMask pop-up).</p>
+
+    <hr>
+    <h2>How open-source developers benefit from Defi Llama Swap</h2>
+    <p>The open-source nature of the Defi Llama ecosystem provides immense benefits and opportunities for independent developers contributing to the Web3 space.</p>
+    <p>Open-source developers can study and contribute to the **interface code** of the Llama Swap application itself, helping to improve the user experience, fix bugs, and suggest new features.</p>
+    <p>The public availability of the API and its underlying data methodology allows developers to build complementary tools and **auditing scripts** to verify the routing engine's efficiency and integrity.</p>
+    <p>Developers benefit from having a single, reliable, and fee-free source of optimal swap quotes, lowering the initial complexity and cost of creating any new DeFi product that requires token exchange.</p>
+    <p>By contributing to Llama Swap, developers build a reputation within one of the most respected and authoritative organizations in DeFi, enhancing their career prospects and visibility.</p>
+    <p>The extensive **DefiLlama data repository** is also a primary benefit, providing open-access data on TVL, fees, and protocol risk that can be combined with the swap API for advanced analysis tools.</p>
+    <p>Furthermore, the Llama Swap team often welcomes community input on new chain integrations or the testing of new routing logic, allowing open-source developers to directly influence a major piece of DeFi infrastructure.</p>
+    <p>This commitment to open principles fosters a collaborative environment where innovation in routing and execution can be shared and rapidly adopted by the entire DeFi community.</p>
+
+    <hr>
+    <h2>SDK features available in Defi Llama Swap</h2>
+    <p>While Defi Llama Swap primarily relies on a robust REST API, the community and official resources often point to Software Development Kits (SDKs) or libraries that wrap the API for easier implementation.</p>
+    <p>An official or community-maintained **JavaScript/TypeScript SDK** is essential for most front-end DeFi applications, streamlining the process of fetching quotes and formatting transaction data.</p>
+    <p>These SDKs often include helpful utility functions for **token address resolution**, automatically converting token symbols into their correct contract addresses for the target chain.</p>
+    <p>A key feature is the simplification of the complex **transaction data formatting**, taking the raw call data from the API and preparing it in the necessary JSON-RPC format for wallet interaction.</p>
+    <p>SDKs can also abstract the **multi-chain boilerplate**, allowing developers to easily switch between networks without manually changing API base URLs or managing network-specific configuration.</p>
+    <p>Advanced SDKs sometimes incorporate internal logic for **gas estimation adjustments** or automatic handling of different slippage tolerance settings before submitting the quote request.</p>
+    <p>The availability of an SDK drastically reduces the amount of low-level API management code a developer needs to write, accelerating the time-to-market for integrated applications.</p>
+    <p>By focusing on providing clean, well-tested code wrappers, Llama Swap ensures that the power of its meta-aggregation is easily accessible to developers across all major web platforms.</p>
+
+    <hr>
+    <h2>Testing environments for Defi Llama Swap developers</h2>
+    <p>For developers, having reliable testing environments is crucial to ensure that their integrated applications function correctly and securely before interacting with real user funds.</p>
+    <p>While Defi Llama Swap primarily executes on live mainnets, developers can use **forked testnets or local simulation environments** to test the logic of their applications that interact with the Llama Swap API.</p>
+    <p>Developers often use the API's quote function in a testing environment to simulate various trade scenarios, confirming that the returned routing logic and transaction data are correctly structured.</p>
+    <p>The use of **dummy tokens and mock wallets** in local development environments is essential to verify that the application correctly handles the two-step process of token approval and transaction signing.</p>
+    <p>Since the Llama Swap API is non-custodial and fee-free on its end, developers can reliably test the API's output without risking real funds, relying on the predictable structure of the returned call data.</p>
+    <p>For integration testing, developers should verify that their application accurately handles Llama Swap's error messages and status codes, such as when liquidity is insufficient or slippage is too high.</p>
+    <p>The community and official documentation often provide advice on how to correctly utilize popular blockchain developer tools (like Hardhat or Foundry) for integration testing with the API's output.</p>
+    <p>Ultimately, the developer is responsible for testing the final on-chain execution in a low-value environment, but Llama Swap provides a reliable, consistent API output to base those tests on.</p>
+
+    <hr>
+    <h2>Custom UI integrations for Defi Llama Swap tools</h2>
+    <p>Custom UI integrations are highly encouraged, as they allow developers to brand the swap functionality while benefiting from Llama Swap's robust backend.</p>
+    <p>Developers are free to design their own swap widgets, incorporating unique visual elements, layout features, or even specialized trade input forms that suit their application's specific user base.</p>
+    <p>A custom UI ensures a seamless and cohesive user experience; the swap function feels like an organic part of the host application rather than a third-party pop-up or redirect.</p>
+    <p>The integration often includes customizing how the crucial data is displayed, for example, presenting the slippage risk with a custom color code or warning banner.</p>
+    <p>Developers can tailor the UI to focus on specific markets, perhaps only displaying token pairs relevant to their community while still using Llama Swap's universal routing logic.</p>
+    <p>This flexibility allows innovative developers to create niche products, such as a dashboard dedicated only to Layer 2 asset swaps, optimized with a custom Llama Swap interface.</p>
+    <p>The most important part of custom UI integration is maintaining **transparency**; the developer must ensure that the user can still easily view the final execution details and the source of the best quote.</p>
+    <p>By providing a powerful API backend, Llama Swap empowers the community to build creative, front-end solutions that drive trade execution into every corner of the decentralized web.</p>
+
+    <img src="./images (9)/LlamaSwap.jpeg" alt="">
+    <h2>Developer community engagement with Defi Llama Swap</h2>
+    <p>Developer community engagement is a cornerstone of the Defi Llama ecosystem, which actively fosters an open and collaborative environment for its swap technology.</p>
+    <p>The primary hub for communication is the **DefiLlama Discord server**, where developers can directly interact with the core team, ask technical questions, and receive integration support.</p>
+    <p>The platform encourages active participation in its **GitHub repositories**, where developers can submit pull requests, report bugs, and suggest enhancements to the open-source code.</p>
+    <p>Community feedback is highly valued, with the team often soliciting input on potential new chain integrations, routing engine optimizations, or API feature requests before implementation.</p>
+    <p>Llama Swap often participates in developer conferences and hackathons, providing resources and mentorship to encourage the creation of new tools built on top of its API.</p>
+    <p>This high level of engagement means that the platform's development is community-driven, ensuring that the features released are those most desired and needed by the broader DeFi ecosystem.</p>
+    <p>The community acts as a valuable **support network**, with experienced developers helping newcomers troubleshoot integration issues and understand complex blockchain interactions.</p>
+    <p>By maintaining strong developer relations, Defi Llama Swap ensures that it remains at the forefront of technical innovation and maintains its status as the trusted foundation for decentralized execution.</p>
 
 </body>
 </html>
