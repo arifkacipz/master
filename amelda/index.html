@@ -3,251 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>The Wedding Of - Arif & Melda</title>
+    <title>Arif & Melda Wedding Invitation - Zepeto.Club</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&family=Lora:italic,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Poppins', sans-serif; background-color: #fdfcfb; color: #333; overflow-x: hidden; }
-        
-        /* Layout Ornamen & Background */
-        .elementor-section { position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; }
+        :root { --gold: #c2a383; --dark: #333333; --bg: #fdfcfb; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg); margin: 0; overflow: hidden; }
         .font-script { font-family: 'Alex Brush', cursive; }
         .font-cinzel { font-family: 'Cinzel', serif; }
 
-        /* Background Parallax Kraton */
-        .bg-fixed-kraton {
-            background-image: url('https://the.gandilova.com/wp-content/uploads/2025/09/BG-ART-2-KRATON-1-1.webp');
-            background-size: cover; background-position: center; background-attachment: fixed;
+        /* NOTIFICATION TOAST */
+        #toast-container {
+            position: fixed; top: 25px; left: 50%; transform: translateX(-50%);
+            z-index: 10000; pointer-events: none; width: 90%; max-width: 400px;
+        }
+        .toast-item {
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
+            padding: 14px 25px; border-radius: 12px; border-left: 4px solid var(--gold);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 12px;
+            display: flex; align-items: center; gap: 15px; opacity: 0; 
+            transform: translateY(-30px); transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .toast-item.show { opacity: 1; transform: translateY(0); }
+
+        /* COVER OVERLAY */
+        #cover {
+            position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://the.gandilova.com/wp-content/uploads/2025/09/BG-ART-2-KRATON-1-1.webp') center/cover no-repeat;
+            color: white; text-align: center; transition: transform 1.2s ease-in-out;
         }
 
-        /* Animasi Persis Elementor */
-        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s ease; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .zoom-blur { opacity: 0; transform: scale(0.85); filter: blur(5px); transition: all 1.5s ease; }
-        .zoom-blur.active { opacity: 1; transform: scale(1); filter: blur(0); }
+        /* MAIN CONTENT STRUCTURE */
+        .content-section { opacity: 0; transform: translateY(40px); transition: all 1s ease; }
+        .content-section.visible { opacity: 1; transform: translateY(0); }
 
-        /* Floating Nav & Music */
+        /* BOTTOM NAV */
         .bottom-nav {
             position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-            background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px);
-            display: flex; padding: 10px 25px; border-radius: 50px; gap: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); z-index: 1000; border: 1px solid rgba(255,255,255,0.5);
+            background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(15px);
+            display: flex; gap: 25px; padding: 12px 30px; border-radius: 50px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1); z-index: 5000; border: 1px solid rgba(255,255,255,0.4);
         }
-        .music-btn {
-            position: fixed; bottom: 100px; right: 20px; z-index: 1000;
-            background: white; width: 50px; height: 50px; border-radius: 50%;
-            display: flex; items-center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .rotate { animation: spin 4s linear infinite; }
-        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .nav-link { color: #888; font-size: 1.1rem; transition: 0.3s; }
+        .nav-link.active { color: var(--gold); }
 
-        /* Toast Notif Zepeto.Club */
-        #toast-container { position: fixed; top: 25px; left: 50%; transform: translateX(-50%); z-index: 11000; }
-        .toast-card {
-            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
-            padding: 12px 20px; border-radius: 15px; border-bottom: 3px solid #c2a383;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); transform: translateY(-100px); transition: 0.5s;
-            display: flex; align-items: center; gap: 12px;
-        }
-        .toast-card.show { transform: translateY(0); }
-
-        /* Responsive Fix */
-        @media (max-width: 768px) {
-            .mobile-stack { flex-direction: column; }
-            .font-script { font-size: 4rem !important; }
-        }
+        /* ORNAMENTS */
+        .ornament-top { width: 200px; margin: 0 auto; opacity: 0.6; filter: sepia(1); }
     </style>
 </head>
-<body>
+<body class="overflow-hidden">
 
     <div id="toast-container"></div>
 
-    <div id="cover" class="fixed inset-0 z-[10000] bg-fixed-kraton flex flex-col items-center justify-center text-white text-center p-6 transition-all duration-1500">
-        <div class="bg-black/50 absolute inset-0"></div>
-        <div class="relative z-10 zoom-blur active">
-            <h3 class="font-cinzel text-xl tracking-[0.4em] mb-4 uppercase">The Wedding of</h3>
+    <div id="cover">
+        <div class="px-6">
+            <h3 class="font-cinzel tracking-[0.4em] mb-4 text-sm">WEDDING ANNOUNCEMENT</h3>
             <h1 class="font-script text-7xl md:text-9xl mb-4">Arif & Melda</h1>
-            <h2 class="font-cinzel text-lg mb-10 tracking-[0.2em]">Minggu, 11 Januari 2026</h2>
-            <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 mb-8 inline-block px-10">
-                <p class="text-xs uppercase tracking-[0.3em] mb-2 font-cinzel">Kepada :</p>
-                <h2 id="guest-name" class="text-2xl font-bold italic">Tamu Undangan</h2>
+            <p class="font-cinzel tracking-widest text-lg mb-12">11 . 01 . 2026</p>
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 mb-8 max-w-sm mx-auto">
+                <p class="text-[10px] uppercase tracking-widest mb-2 opacity-80">Kepada Bapak/Ibu/Saudara/i:</p>
+                <h2 id="guest-name" class="text-xl font-bold italic tracking-wide">Tamu Undangan</h2>
             </div>
-            <br>
-            <button onclick="bukaUndangan()" class="bg-white text-black px-8 py-3 rounded-md font-bold shadow-xl flex items-center gap-2 hover:bg-gray-100 mx-auto transition">
+            <button onclick="unlockInvitation()" class="bg-white text-stone-900 px-10 py-3 rounded-full font-bold shadow-xl flex items-center gap-2 mx-auto hover:bg-stone-100 transition">
                 <i class="fa-regular fa-envelope-open"></i> BUKA UNDANGAN
             </button>
         </div>
     </div>
 
-    <main id="main-content" class="hidden">
+    <main id="app" class="hidden h-screen overflow-y-auto">
         
         <nav class="bottom-nav">
-            <a href="#home" class="nav-item"><i class="fa-solid fa-house"></i></a>
-            <a href="#couple" class="nav-item"><i class="fa-solid fa-heart"></i></a>
-            <a href="#event" class="nav-item"><i class="fa-solid fa-calendar-alt"></i></a>
-            <a href="#gift" class="nav-item"><i class="fa-solid fa-gift"></i></a>
-            <a href="#rsvp" class="nav-item"><i class="fa-solid fa-comments"></i></a>
+            <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i></a>
+            <a href="#couple" class="nav-link"><i class="fa-solid fa-heart"></i></a>
+            <a href="#event" class="nav-link"><i class="fa-solid fa-calendar-alt"></i></a>
+            <a href="#gift" class="nav-link"><i class="fa-solid fa-gift"></i></a>
+            <a href="#rsvp" class="nav-link"><i class="fa-solid fa-comments"></i></a>
         </nav>
 
-        <div class="music-btn" onclick="toggleMusic()">
-            <button id="audioControl" class="text-[#c2a383] text-2xl rotate"><i class="fa-solid fa-compact-disc"></i></button>
-        </div>
-        <audio id="bgm" loop><source src="https://sound.gandilova.com/Shane%20Filan%20-%20Beautiful%20In%20White.mp3" type="audio/mp3"></audio>
-
-        <section id="home" class="h-screen bg-fixed-kraton flex flex-col items-center justify-center text-white text-center">
-            <div class="reveal">
-                <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/a7f8045994d28927ba281b444198ff14/2025/12/4254-1766160276165.webp" class="w-64 md:w-80 mx-auto mb-6">
-                <h2 class="font-cinzel text-2xl tracking-[0.4em] mb-4">SAVE THE DATE</h2>
-                <h1 class="font-script text-8xl md:text-[10rem] mb-4">Arif & Melda</h1>
-                <p class="text-xl font-cinzel tracking-[0.2em]">Minggu, 11 Januari 2026</p>
+        <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+            <div class="content-section">
+                <img src="https://the.gandilova.com/wp-content/uploads/2025/08/PNG-Tangan.webp" class="ornament-top mb-10">
+                <h2 class="font-cinzel text-xl tracking-[0.5em] text-stone-400 mb-6">SAVE THE DATE</h2>
+                <h1 class="font-script text-8xl text-stone-800">Arif & Melda</h1>
+                <div class="w-12 h-[2px] bg-stone-300 my-8 mx-auto"></div>
+                <p class="font-cinzel tracking-widest text-stone-600">MINGGU, 11 JANUARI 2026</p>
             </div>
         </section>
 
-        <section class="py-24 px-6 text-center max-w-3xl mx-auto">
-            <div class="reveal">
-                <h3 class="font-cinzel text-xl mb-6 font-bold text-[#c2a383]">Qs. Ar. Rum : 21</h3>
-                <p class="italic text-gray-600 leading-relaxed text-[15px]">
-                    "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+        <section class="py-24 px-10 text-center bg-stone-50">
+            <div class="content-section max-w-2xl mx-auto">
+                <h3 class="font-cinzel text-amber-800 font-bold mb-6">AR-RUM : 21</h3>
+                <p class="italic text-stone-500 leading-loose text-sm">
+                    "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya..."
                 </p>
             </div>
         </section>
 
-        <section id="couple" class="py-20 bg-[#f9f7f4]">
-            <div class="text-center mb-16 reveal">
-                <h2 class="font-cinzel text-4xl text-stone-700 tracking-widest">THE COUPLE</h2>
-            </div>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-16 px-6">
-                <div class="text-center reveal max-w-xs">
-                    <div class="w-64 h-64 rounded-full mx-auto border-[10px] border-white shadow-2xl overflow-hidden">
-                        <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/cd14183c21c2c0d93c8c92464276ce00/2025/12/38781-1765978152104.webp" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-script text-5xl mt-8 text-stone-800">Arif Rachman Hidayat</h3>
-                    <p class="mt-4 font-bold text-xs tracking-widest uppercase">Putra dari</p>
-                    <p class="text-stone-500 italic">Bpk Widodo & Ibu Tuminah</p>
+        <section id="couple" class="py-24 px-10 text-center">
+            <div class="content-section space-y-20">
+                <div>
+                    <h2 class="font-script text-6xl text-stone-800">Arif Rachman Hidayat</h2>
+                    <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-stone-400">Putra dari</p>
+                    <p class="text-stone-600">Bpk. Widodo & Ibu Tuminah</p>
                 </div>
-
-                <div class="font-script text-7xl text-[#c2a383] reveal">&</div>
-
-                <div class="text-center reveal max-w-xs">
-                    <div class="w-64 h-64 rounded-full mx-auto border-[10px] border-white shadow-2xl overflow-hidden">
-                        <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/a7f8045994d28927ba281b444198ff14/2025/12/54-1766024790480.webp" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-script text-5xl mt-8 text-stone-800">Melda Dwi Rahajeng</h3>
-                    <p class="mt-4 font-bold text-xs tracking-widest uppercase">Putri dari</p>
-                    <p class="text-stone-500 italic">Bpk H. Sumedi Atmodidjojo (Alm) & Ibu Hj. Ida Faryani (Almh)</p>
+                <div class="text-4xl font-script text-amber-700 italic">&</div>
+                <div>
+                    <h2 class="font-script text-6xl text-stone-800">Melda Dwi Rahajeng</h2>
+                    <p class="mt-4 text-[10px] font-bold uppercase tracking-widest text-stone-400">Putri dari</p>
+                    <p class="text-stone-600">Bpk. H. Sumedi Atmodidjojo (Alm) & Ibu Hj. Ida Faryani (Almh)</p>
                 </div>
             </div>
         </section>
 
-        <section id="event" class="py-24 px-6 bg-white relative">
-            <div class="reveal max-w-2xl mx-auto bg-stone-50 p-10 rounded-[3rem] shadow-xl border border-stone-200 text-center">
-                <h2 class="font-cinzel text-3xl mb-8 text-[#c2a383] tracking-widest font-bold">AKAD NIKAH</h2>
-                <div class="border-y border-stone-200 py-10 mb-8 flex flex-col items-center">
-                    <p class="font-bold text-2xl mb-2 text-stone-500">Minggu</p>
-                    <div class="text-7xl font-bold font-cinzel text-stone-800">11</div>
-                    <p class="text-xl font-bold mt-4 tracking-widest italic text-stone-500 uppercase">Januari 2026</p>
-                    <p class="mt-4 font-bold text-stone-800">Pukul 11:00 WIB - Selesai</p>
-                </div>
-                <p class="font-cinzel font-bold mb-2 tracking-widest text-[#c2a383]">LOKASI</p>
-                <p class="font-bold text-lg mb-1">Rumah Mempelai Wanita</p>
-                <p class="text-sm text-stone-500 italic mb-8 max-w-md mx-auto leading-relaxed">Nirwana Estate Blok F No 9-10 RT 02 RW 11, Harapan jaya, Cibinong, Kab. Bogor</p>
-                <a href="https://maps.app.goo.gl/NEAPErnCvEMqrehu6" target="_blank" class="bg-black text-white px-10 py-4 rounded-full font-bold shadow-lg inline-flex items-center gap-2 hover:scale-105 transition">
-                    <i class="fa-solid fa-map-marker-alt"></i> LOKASI ACARA
-                </a>
-            </div>
-
-            <div class="reveal mt-24 text-center">
-                <img src="https://the.gandilova.com/wp-content/uploads/2025/08/PNG-Tangan.webp" class="w-48 mx-auto mb-6">
-                <h3 class="font-cinzel text-2xl mb-10 tracking-widest">COUNTING THE DAYS</h3>
-                <div class="flex justify-center gap-4 text-stone-700">
-                    <div class="flex flex-col"><span id="days" class="text-4xl font-bold">0</span><span class="text-[10px] uppercase font-bold tracking-widest">Hari</span></div>
-                    <div class="flex flex-col"><span id="hours" class="text-4xl font-bold">0</span><span class="text-[10px] uppercase font-bold tracking-widest">Jam</span></div>
-                    <div class="flex flex-col"><span id="minutes" class="text-4xl font-bold">0</span><span class="text-[10px] uppercase font-bold tracking-widest">Menit</span></div>
-                    <div class="flex flex-col"><span id="seconds" class="text-4xl font-bold">0</span><span class="text-[10px] uppercase font-bold tracking-widest">Detik</span></div>
+        <section id="event" class="py-24 px-6">
+            <div class="content-section bg-white p-12 rounded-[3rem] shadow-2xl border border-stone-100 text-center max-w-xl mx-auto">
+                <h2 class="font-cinzel text-2xl mb-8 tracking-[0.3em] font-bold text-amber-800">AKAD NIKAH</h2>
+                <div class="space-y-6">
+                    <div class="border-y border-stone-100 py-6">
+                        <p class="font-bold text-stone-700">Minggu, 11 Januari 2026</p>
+                        <p class="text-stone-500">Pukul 11:00 WIB - Selesai</p>
+                    </div>
+                    <p class="font-bold text-stone-800">Rumah Mempelai Wanita</p>
+                    <p class="text-xs italic text-stone-400 px-4">Nirwana Estate Blok F No 9-10 RT 02 RW 11, Harapan jaya, Cibinong, Kab. Bogor</p>
+                    <a href="https://maps.google.com" class="mt-6 inline-block bg-stone-900 text-white px-8 py-3 rounded-full text-xs font-bold tracking-widest">BUKA PETA</a>
                 </div>
             </div>
         </section>
 
-        <section id="gift" class="py-24 bg-stone-50 px-6 text-center">
-            <div class="reveal max-w-4xl mx-auto">
-                <h2 class="font-cinzel text-4xl mb-10 text-[#8d7b68]">GIFT</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-white p-10 rounded-3xl shadow-lg border-t-8 border-[#c2a383]">
-                        <img src="https://the.gandilova.com/wp-content/uploads/2025/09/BCA-1-2.webp" class="h-6 mx-auto mb-6 opacity-60">
-                        <p class="font-bold text-xl mb-1">7550312641</p>
-                        <p class="text-[10px] uppercase text-stone-400 font-bold mb-6">A.n Melda Dwi Rahajeng</p>
-                        <button onclick="copy('7550312641')" class="text-[10px] font-bold bg-stone-50 px-4 py-2 rounded-full hover:bg-stone-200 uppercase tracking-widest">Salin No. Rek</button>
+        <section id="gift" class="py-24 px-10 bg-stone-100 text-center">
+            <div class="content-section">
+                <h2 class="font-cinzel text-3xl mb-12 tracking-widest">WEDDING GIFT</h2>
+                <div class="grid gap-6 max-w-md mx-auto">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-amber-700">
+                        <p class="font-bold text-xl mb-1 tracking-tighter">7550312641</p>
+                        <p class="text-[10px] text-stone-400 font-bold uppercase tracking-widest">BCA - Melda Dwi Rahajeng</p>
+                        <button onclick="copy('7550312641')" class="mt-4 text-[10px] bg-stone-50 px-5 py-2 rounded-full font-bold hover:bg-stone-200 transition">SALIN REKENING</button>
                     </div>
-                    <div class="bg-white p-10 rounded-3xl shadow-lg border-t-8 border-[#c2a383]">
-                        <img src="https://the.gandilova.com/wp-content/uploads/2025/10/Logo_BRI.webp" class="h-6 mx-auto mb-6 opacity-60">
-                        <p class="font-bold text-xl mb-1">389301009030507</p>
-                        <p class="text-[10px] uppercase text-stone-400 font-bold mb-6">A.n Arif Rachman Hidayat</p>
-                        <button onclick="copy('389301009030507')" class="text-[10px] font-bold bg-stone-50 px-4 py-2 rounded-full hover:bg-stone-200 uppercase tracking-widest">Salin No. Rek</button>
-                    </div>
-                </div>
-                <div class="bg-white p-10 rounded-3xl shadow-lg border-t-8 border-[#c2a383] reveal">
-                    <i class="fa-solid fa-house-chimney text-3xl text-[#c2a383] mb-4"></i>
-                    <p class="font-cinzel font-bold mb-4">ALAMAT PENGIRIMAN</p>
-                    <p class="text-stone-500 italic px-4 text-sm leading-relaxed mb-8">Mustokorejo No. 27D, Denokan, Maguwoharjo, Kec. Depok, Kab. Sleman, DI Yogyakarta 55282</p>
-                    <button onclick="copy('Mustokorejo No. 27D, Denokan, Maguwoharjo, Kec. Depok, Kab. Sleman, DI Yogyakarta 55282')" class="text-[10px] font-bold bg-stone-50 px-6 py-2 rounded-full hover:bg-stone-200 uppercase tracking-widest">Salin Alamat</button>
                 </div>
             </div>
         </section>
 
-        <section id="rsvp" class="py-24 px-6 bg-[#fcfaf8]">
-            <div class="reveal max-w-3xl mx-auto">
-                <h2 class="font-cinzel text-3xl text-center mb-12 font-bold uppercase tracking-[0.3em] text-stone-700">Doa & Ucapan</h2>
-                <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-stone-100">
-                    <div class="flex items-center gap-3 mb-10 pb-4 border-b border-stone-100">
-                        <i class="fa-solid fa-feather-pointed text-[#c2a383] text-2xl"></i>
-                        <span id="count-ucapan" class="font-bold text-xl text-stone-700">0</span> Ucapan Terkirim
-                    </div>
-
+        <section id="rsvp" class="py-24 px-6">
+            <div class="content-section max-w-xl mx-auto">
+                <h2 class="font-cinzel text-center text-3xl mb-12 tracking-widest">RESERVASI</h2>
+                <div class="bg-white p-8 rounded-[2rem] shadow-2xl border border-stone-100">
                     <form id="rsvpForm" class="space-y-6">
-                        <input type="text" id="nama" placeholder="Nama Lengkap Anda" class="w-full p-4 bg-stone-50 rounded-2xl outline-none focus:ring-4 focus:ring-amber-50 border-none transition" required>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <select id="kehadiran" onchange="toggleGuest(this.value)" class="w-full p-4 bg-stone-50 rounded-2xl outline-none focus:ring-4 focus:ring-amber-50 border-none appearance-none cursor-pointer" required>
-                                <option value="" selected disabled>Konfirmasi Kehadiran</option>
-                                <option value="Hadir">Saya Akan Hadir</option>
-                                <option value="Tidak Hadir">Mohon Maaf, Tidak Bisa</option>
-                                <option value="Ragu-ragu">Masih Ragu</option>
-                            </select>
-
-                            <div id="wrap-guest" class="hidden">
-                                <select id="guest" class="w-full p-4 bg-stone-50 rounded-2xl outline-none focus:ring-4 focus:ring-amber-50 border-none appearance-none cursor-pointer">
-                                    <option value="0" selected disabled>Jumlah Tamu</option>
-                                    <option value="1">1 Orang</option><option value="2">2 Orang</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <textarea id="ucapan" placeholder="Tuliskan pesan & doa Anda..." class="w-full p-4 bg-stone-50 rounded-2xl h-40 outline-none focus:ring-4 focus:ring-amber-50 border-none resize-none" required maxlength="300" oninput="countChar(this)"></textarea>
-                            <div class="text-right text-[10px] text-stone-300 mt-1 font-bold"><span id="char-left">300</span> karakter tersisa</div>
-                        </div>
-
-                        <button type="submit" id="submit-btn" class="w-full bg-[#222] text-white py-5 rounded-2xl font-bold tracking-[0.4em] hover:bg-black hover:shadow-2xl transition shadow-xl uppercase text-xs">Kirim Ucapan</button>
+                        <input type="text" id="name" placeholder="Nama Lengkap" class="w-full p-4 bg-stone-50 rounded-2xl outline-none focus:ring-2 focus:ring-amber-200" required>
+                        <select id="status" class="w-full p-4 bg-stone-50 rounded-2xl outline-none" required>
+                            <option value="" disabled selected>Konfirmasi Kehadiran</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                        <textarea id="msg" placeholder="Pesan & Doa" class="w-full p-4 bg-stone-50 rounded-2xl h-32 outline-none resize-none" required></textarea>
+                        <button type="submit" id="btn-submit" class="w-full bg-stone-800 text-white py-4 rounded-2xl font-bold uppercase tracking-[0.2em] shadow-lg">KIRIM PESAN</button>
                     </form>
-
-                    <div id="commentList" class="mt-16 space-y-8 max-h-[600px] overflow-y-auto pr-4"></div>
+                    <div id="msg-box" class="mt-10 space-y-6 max-h-80 overflow-y-auto pr-2"></div>
                 </div>
             </div>
         </section>
 
-        <footer class="py-24 bg-stone-50 text-center border-t border-stone-100">
-            <div class="reveal">
-                <p class="mb-4 font-script text-4xl text-stone-400 italic">Hormat Kami,</p>
-                <h2 class="font-script text-7xl md:text-8xl mb-8 text-[#c2a383]">Arif & Melda</h2>
-                <p class="text-xs tracking-[0.4em] text-stone-300 uppercase mb-20">Wassalamualaikum Wr. Wb.</p>
-                
-                <div class="flex flex-col items-center opacity-60">
-                    <h3 class="font-cinzel text-xl font-bold tracking-[0.5em] text-stone-800">ZEPETO.CLUB</h3>
-                    <p class="text-[9px] font-bold tracking-[0.3em] uppercase text-stone-400 mt-2">Professional Digital Invitation</p>
+        <footer class="py-32 text-center bg-white">
+            <div class="content-section">
+                <p class="font-script text-4xl text-stone-400 mb-6">Wassalam,</p>
+                <h2 class="font-script text-7xl text-stone-800 mb-20">Arif & Melda</h2>
+                <div class="pt-20 opacity-40">
+                    <h4 class="font-cinzel text-lg font-bold tracking-[0.5em] text-stone-900">ZEPETO.CLUB</h4>
+                    <p class="text-[9px] uppercase tracking-[0.3em] mt-2 font-bold">Premium Digital Agency</p>
                 </div>
             </div>
         </footer>
@@ -255,108 +180,87 @@
     </main>
 
     <script>
-        const API_URL = 'https://melda-api.vercel.app/api';
-        const bgm = document.getElementById('bgm');
-        const audioControl = document.getElementById('audioControl');
+        const API = 'https://melda-api.vercel.app/api';
 
-        // AMBIL NAMA DARI URL (?to=NamaTamu)
+        // URL GUEST HANDLING
         const params = new URLSearchParams(window.location.search);
         if(params.has('to')) document.getElementById('guest-name').innerText = params.get('to');
 
-        // TOAST NOTIFICATION SYSTEM
-        function notify(msg) {
+        // ARTISTIC TOAST
+        function showToast(text, icon = 'fa-circle-check') {
             const container = document.getElementById('toast-container');
-            const card = document.createElement('div');
-            card.className = `toast-card font-bold text-xs uppercase tracking-widest text-stone-700`;
-            card.innerHTML = `<i class="fa-solid fa-circle-check text-[#c2a383]"></i> ${msg}`;
-            container.appendChild(card);
-            setTimeout(() => card.classList.add('show'), 100);
+            const el = document.createElement('div');
+            el.className = 'toast-item';
+            el.innerHTML = `<i class="fa-solid ${icon} text-amber-700 text-xl"></i>
+                            <div>
+                                <p class="text-[10px] font-bold text-stone-400 uppercase tracking-widest">Zepeto Notification</p>
+                                <p class="text-sm font-bold text-stone-700">${text}</p>
+                            </div>`;
+            container.appendChild(el);
+            setTimeout(() => el.classList.add('show'), 100);
             setTimeout(() => {
-                card.classList.remove('show');
-                setTimeout(() => card.remove(), 500);
+                el.classList.remove('show');
+                setTimeout(() => el.remove(), 600);
             }, 3500);
         }
 
-        function bukaUndangan() {
-            document.getElementById('cover').classList.add('-translate-y-full');
-            document.getElementById('main-content').classList.remove('hidden');
-            bgm.play().catch(() => console.log("Music blocked"));
-            handleReveal();
-            loadComments();
-            startCountdown();
-            notify("Selamat datang di undangan kami");
+        function unlockInvitation() {
+            document.getElementById('cover').style.transform = 'translateY(-100%)';
+            document.body.style.overflow = 'auto';
+            document.getElementById('app').classList.remove('hidden');
+            handleScroll();
+            showToast("Selamat Datang di Undangan Kami");
         }
-
-        function toggleMusic() {
-            if (bgm.paused) { bgm.play(); audioControl.classList.add('rotate'); }
-            else { bgm.pause(); audioControl.classList.remove('rotate'); }
-        }
-
-        function toggleGuest(v) { document.getElementById('wrap-guest').className = (v === 'Hadir') ? '' : 'hidden'; }
-        function countChar(val) { document.getElementById('char-left').innerText = 300 - val.value.length; }
 
         function copy(text) {
-            navigator.clipboard.writeText(text).then(() => notify("Teks Berhasil Disalin"));
+            navigator.clipboard.writeText(text).then(() => showToast("Nomor Rekening Disalin"));
         }
 
-        function handleReveal() {
-            const elements = document.querySelectorAll('.reveal, .zoom-blur');
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 50) el.classList.add('active');
+        function handleScroll() {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(s => {
+                const top = s.getBoundingClientRect().top;
+                if(top < window.innerHeight - 100) s.classList.add('visible');
             });
         }
-        window.addEventListener('scroll', handleReveal);
-
-        function startCountdown() {
-            const target = new Date("Jan 11, 2026 11:00:00").getTime();
-            setInterval(() => {
-                const now = new Date().getTime();
-                const diff = target - now;
-                if (diff < 0) return;
-                document.getElementById('days').innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-                document.getElementById('hours').innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                document.getElementById('minutes').innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                document.getElementById('seconds').innerText = Math.floor((diff % (1000 * 60)) / 1000);
-            }, 1000);
-        }
+        document.getElementById('app').addEventListener('scroll', handleScroll);
 
         document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
             e.preventDefault();
-            const btn = document.getElementById('submit-btn');
-            btn.innerText = "MENGIRIM..."; btn.disabled = true;
+            const btn = document.getElementById('btn-submit');
+            btn.innerText = "..."; btn.disabled = true;
+            
             const data = {
-                nama: document.getElementById('nama').value,
-                kehadiran: document.getElementById('kehadiran').value,
-                jumlah_tamu: document.getElementById('guest').value || 0,
-                ucapan: document.getElementById('ucapan').value
+                nama: document.getElementById('name').value,
+                kehadiran: document.getElementById('status').value,
+                ucapan: document.getElementById('msg').value
             };
+
             try {
-                await fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
-                notify("Pesan Berhasil Terkirim");
+                await fetch(API, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data) });
+                showToast("Pesan & Reservasi Berhasil Terkirim");
                 document.getElementById('rsvpForm').reset();
-                document.getElementById('char-left').innerText = 300;
-                loadComments();
-            } catch (err) { notify("Gagal Terkirim"); }
-            finally { btn.innerText = "Kirim Ucapan"; btn.disabled = false; }
+                loadMessages();
+            } catch (err) { showToast("Gagal Terkirim, Coba Lagi", "fa-circle-exclamation"); }
+            finally { btn.innerText = "KIRIM PESAN"; btn.disabled = false; }
         });
 
-        async function loadComments() {
+        async function loadMessages() {
             try {
-                const res = await fetch(API_URL);
+                const res = await fetch(API);
                 const data = await res.json();
-                document.getElementById('count-ucapan').innerText = data.length;
-                document.getElementById('commentList').innerHTML = data.map(i => `
-                    <div class="pb-6 border-b border-stone-50 last:border-0">
+                document.getElementById('msg-box').innerHTML = data.map(m => `
+                    <div class="p-5 bg-stone-50 rounded-2xl border border-stone-100">
                         <div class="flex justify-between items-center mb-2">
-                            <h4 class="font-bold text-stone-700 text-sm uppercase tracking-widest">${i.nama}</h4>
-                            <span class="text-[8px] font-bold bg-amber-50 text-amber-600 px-3 py-1 rounded-full border border-amber-100">${i.kehadiran}</span>
+                            <span class="font-bold text-stone-800 text-xs uppercase">${m.nama}</span>
+                            <span class="text-[8px] bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-bold uppercase">${m.kehadiran}</span>
                         </div>
-                        <p class="text-stone-500 text-[13px] italic font-medium leading-relaxed">"${i.ucapan}"</p>
+                        <p class="text-stone-500 text-xs italic leading-relaxed">"${m.ucapan}"</p>
                     </div>
                 `).join('');
-            } catch (e) {}
+            } catch(e) {}
         }
+        loadMessages();
     </script>
 </body>
 </html>
