@@ -7,7 +7,7 @@ $pass = 'dqrUuaSe4G9xINu4';
 $dbname = 'test';
 
 $conn = mysqli_init();
-mysqli_ssl_set($conn, NULL, NULL, "/isrgrootx1.pem", NULL, NULL); // Unduh CA Bundle dari TiDB
+mysqli_ssl_set($conn, NULL, NULL, "path/to/ca-bundle.crt", NULL, NULL); // Unduh CA Bundle dari TiDB
 
 if (!mysqli_real_connect($conn, $host, $user, $pass, $dbname, $port, NULL, MYSQLI_CLIENT_SSL)) {
     die("Koneksi Gagal: " . mysqli_connect_error());
