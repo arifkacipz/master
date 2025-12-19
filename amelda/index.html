@@ -3301,59 +3301,105 @@ new Promise( ( resolve ) => {
 <script>
 const API_URL = 'https://melda-api.vercel.app/api';
 
-// Fungsi untuk Menampilkan/Menyembunyikan Jumlah Tamu
-function checkAttendance(val) {
-    const guestWrapper = document.getElementById('guest-input-wrapper');
-    // Jika memilih 'present' (Hadir), maka tampilkan
-    if (val === 'present') {
-        guestWrapper.style.setProperty('display', 'block', 'important');
-    } else {
-        guestWrapper.style.setProperty('display', 'none', 'important');
-        document.getElementById('guest').value = ""; // Reset jumlah jika batal hadir
+// Fungsi Notifikasi Artistik Zepeto.Club (Sesuai Permintaan)
+function showZepetoNotif(msg) {
+    const toast = document.createElement('div');
+    toast.style.cssText = "position:fixed; top:30px; left:50%; transform:translateX(-50%); background:rgba(255,255,255,0.9); backdrop-filter:blur(15px); padding:15px 30px; border-radius:50px; border:1px solid #c2a383; box-shadow:0 15px 35px rgba(0,0,0,0.15); z-index:1000001; font-family:'Poppins',sans-serif; font-size:12px; font-weight:bold; color:#333; transition:0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); opacity:0; pointer-events:none;";
+    toast.innerHTML = `<span style="color:#c2a383; margin-right:10px;">✦</span> ZEPETO.CLUB : ${msg}`;
+    document.body.appendChild(toast);
+    setTimeout(() => { toast.style.opacity = '1'; toast.style.top = '50px'; }, 100);
+    setTimeout(() => { 
+        toast.style.opacity = '0'; 
+        toast.style.top = '30px'; 
+        setTimeout(() => toast.remove(), 600); 
+    }, 3500);
+}
+
+// FUNGSI UTAMA: LOAD DATA DARI VERCEL
+async function loadUcapanVercel() {
+    const listContainer = document.getElementById('saic-container-comment-88989');
+    if (!listContainer) return;
+
+    try {
+        // Tambahkan timestamp agar tidak terkena cache browser
+        const response = await fetch(`${API_URL}?t=${new Date().getTime()}`);
+        const data = await response.json();
+        
+        // Update jumlah total ucapan pada label asli
+        const countLabel = document.querySelector('.saic-wrap-link span');
+        if (countLabel) countLabel.innerText = data.length;
+
+        if (data.length === 0) {
+            listContainer.innerHTML = '<li class="text-center py-10 opacity-50 italic">Belum ada ucapan.</li>';
+            return;
+        }
+
+        // Render data ke dalam struktur <li> ASLI ELEMENTOR
+        listContainer.innerHTML = data.map(item => `
+            <li class="saic-comment" style="list-style:none; margin-bottom:25px; border-bottom:1px solid #f0f0f0; padding-bottom:15px;">
+                <div class="saic-comment-body">
+                    <div class="saic-comment-header" style="display:flex; align-items:center; margin-bottom:5px;">
+                        <cite class="saic-comment-author" style="font-style:normal; font-weight:bold; color:#333; font-size:14px;">${item.nama}</cite>
+                        <span style="font-size:9px; background:#f4f1ee; color:#c2a383; padding:2px 10px; border-radius:10px; margin-left:12px; font-weight:bold; text-transform:uppercase; border:1px solid #eee;">
+                            ${item.kehadiran === 'present' ? 'Hadir' : (item.kehadiran === 'notpresent' ? 'Tidak Hadir' : item.kehadiran)}
+                        </span>
+                    </div>
+                    <div class="saic-comment-content" style="color:#666; font-size:13px; font-style:italic; line-height:1.6; margin-top:8px;">
+                        <p>"${item.ucapan}"</p>
+                    </div>
+                </div>
+            </li>
+        `).join('');
+
+    } catch (err) {
+        console.error("Gagal memuat data dari Vercel:", err);
+        listContainer.innerHTML = '<li class="text-center py-10 text-red-400">Gagal memuat ucapan.</li>';
     }
 }
 
-// Tambahkan listener manual untuk dropdown kehadiran jika onchange di HTML tidak terbaca
-document.getElementById('attendance').addEventListener('change', function() {
-    checkAttendance(this.value);
-});
-
-// Update logic pengiriman data
-document.getElementById('commentform-88989').addEventListener('submit', async function(e) {
-    e.preventDefault(); // Mencegah reload halaman
+// HANDLE PENGIRIMAN DATA
+document.getElementById('commentform-88989').onsubmit = async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-88989');
+    const originalText = btn.value;
     
-    const submitBtn = document.getElementById('submit-88989');
-    submitBtn.value = "Mengirim...";
-    submitBtn.disabled = true;
+    btn.value = "MENGIRIM...";
+    btn.disabled = true;
 
-    // Ambil data
     const payload = {
         nama: document.getElementById('author').value,
-        kehadiran: document.getElementById('attendance').options[document.getElementById('attendance').selectedIndex].text,
-        jumlah_tamu: document.getElementById('guest').value || 0,
+        kehadiran: document.getElementById('attendance').value,
+        jumlah_tamu: document.getElementById('guest') ? document.getElementById('guest').value : 0,
         ucapan: document.getElementById('saic-textarea-88989').value
     };
 
     try {
-        const response = await fetch(API_URL, {
+        const res = await fetch(API_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
 
-        if (response.ok) {
-            zepetoNotify("Pesan Terkirim"); // Fungsi notifikasi Anda
+        if (res.ok) {
+            showZepetoNotif("Ucapan & Reservasi Berhasil Terkirim");
             this.reset();
-            document.getElementById('guest-input-wrapper').style.setProperty('display', 'none', 'important');
-            loadCommentsFromVercel(); 
+            // Sembunyikan kembali kolom jumlah tamu
+            const guestWrap = document.querySelector('.saic-wrap-guest');
+            if(guestWrap) guestWrap.style.display = 'none';
+            
+            // Refresh data tanpa reload halaman
+            await loadUcapanVercel();
         }
     } catch (err) {
-        zepetoNotify("Gagal Mengirim");
+        showZepetoNotif("Maaf, terjadi kesalahan.");
     } finally {
-        submitBtn.value = "Kirim";
-        submitBtn.disabled = false;
+        btn.value = originalText;
+        btn.disabled = false;
     }
-});
+};
+
+// Jalankan saat halaman dimuat
+window.addEventListener('DOMContentLoaded', loadUcapanVercel);
 </script>
 </body>
 </html>
