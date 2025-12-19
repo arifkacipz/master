@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload TXT ke Cloudinary</title>
+</head>
+<body>
+
+    <h2>Upload File .txt ke Cloudinary</h2>
+    <input type="file" id="file-input" accept=".txt">
+    <button onclick="uploadFile()">Unggah Sekarang</button>
+    
+    <p id="status"></p>
+
+    <script>
+        async function uploadFile() {
+            const fileInput = document.getElementById('file-input');
+            const status = document.getElementById('status');
+
+            if (fileInput.files.length === 0) {
+                alert("Pilih file .txt dulu!");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+
+            // GANTI DENGAN DATA ANDA
+            const cloudName = "dctzndhgm"; 
+            const uploadPreset = "preset_txt"; 
+
+            formData.append('file', file);
+            formData.append('upload_preset', uploadPreset);
+
+            status.innerText = "Sedang mengunggah...";
+
+            try {
+                const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/raw/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.secure_url) {
+                    status.innerHTML = `Berhasil! <br> Link: <a href="${data.secure_url}" target="_blank">Lihat File .txt</a>`;
+                } else {
+                    status.innerText = "Gagal mengunggah: " + data.error.message;
+                }
+            } catch (error) {
+                status.innerText = "Terjadi kesalahan koneksi.";
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>
