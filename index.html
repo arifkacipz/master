@@ -3,104 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Upload - Google Style</title>
+    <title>Cloud Storage - Anime Fusion</title>
+    
+    <link rel="icon" type="image/png" href="ico.png">
+    
     <style>
         :root {
             --google-blue: #1a73e8;
             --google-border: #dadce0;
+            --glass-white: rgba(255, 255, 255, 0.85);
+            --glass-dark: rgba(20, 0, 0, 0.9);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #ffffff;
             display: flex;
             min-height: 100vh;
             align-items: center;
             justify-content: center;
             padding: 1.5rem;
-            transition: background 0.5s ease;
+            overflow: hidden;
+            position: relative;
+            background-color: #000;
         }
 
+        /* --- BACKGROUND LAYER --- */
+        .bg-layer {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('https://images.unsplash.com/photo-1618335829737-2228733924bc?q=80&w=2070&auto=format&fit=crop'); /* Placeholder anime dark vibe */
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+            transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), filter 1s ease;
+        }
+
+        /* OVERLAY GRADIENT */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+            z-index: -1;
+            transition: background 1s ease;
+        }
+
+        /* --- CONTAINER UTAMA (GLASSMORPHISM) --- */
         .container {
             width: 100%;
             max-width: 28rem;
             padding: 2.5rem;
-            border: 1px solid var(--google-border);
-            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
             text-align: center;
-            transition: all 0.5s ease;
-            position: relative;
-            background: white;
+            background: var(--glass-white);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            z-index: 10;
         }
 
-        .logo-img { width: 48px; height: auto; margin-bottom: 1rem; }
+        /* --- ANIMASI TRANSISI ANTAR STATE --- */
+        .state-content {
+            animation: slideUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
 
-        /* Gaya Form Standar */
-        #upload-section h2 { font-size: 1.5rem; font-weight: 400; margin-bottom: 0.5rem; }
-        .subtitle { color: #5f6368; margin-bottom: 2rem; }
-        input[type="file"] { width: 100%; padding: 10px; border: 1px solid var(--google-border); border-radius: 4px; }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px) scale(0.95); filter: blur(10px); }
+            to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+        }
+
+        /* --- LOGO & TYPOGRAPHY --- */
+        .logo-img { width: 56px; margin-bottom: 1.5rem; transition: transform 0.5s ease; }
+        .logo-img:hover { transform: rotate(10deg) scale(1.1); }
+
+        h2 { font-size: 1.6rem; font-weight: 500; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+        .subtitle { color: #5f6368; margin-bottom: 2rem; font-size: 0.95rem; }
         
-        .actions { display: flex; justify-content: flex-end; margin-top: 2rem; }
+        /* --- INPUT & BUTTON --- */
+        .input-wrapper { position: relative; margin-bottom: 1.5rem; }
+        input[type="file"] { 
+            width: 100%; padding: 12px; 
+            border: 2px solid var(--google-border); border-radius: 8px;
+            background: rgba(255,255,255,0.5); transition: all 0.3s ease;
+        }
+        input[type="file"]:focus { border-color: var(--google-blue); outline: none; }
         
         button {
-            background-color: var(--google-blue);
-            color: white; border: none; padding: 0.6rem 1.5rem;
-            border-radius: 4px; font-weight: 500; cursor: pointer;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            background: var(--google-blue); color: white; border: none;
+            padding: 0.8rem 2rem; border-radius: 8px; font-weight: 600;
+            cursor: pointer; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 6px rgba(26, 115, 232, 0.3);
+        }
+        button:hover { transform: translateY(-3px); box-shadow: 0 10px 15px rgba(26, 115, 232, 0.4); }
+        button:active { transform: translateY(0); }
+
+        /* --- STATE KHUSUS --- */
+        .hidden { display: none !important; }
+
+        /* SUKSES STATE */
+        .success-bg .bg-layer { transform: scale(1.1); filter: sepia(0.3) brightness(0.8); }
+        .success-bg .container { background: rgba(245, 255, 245, 0.9); border-color: rgba(45, 90, 39, 0.3); }
+        .success-text h2 { font-family: 'Georgia', serif; font-style: italic; color: #2d5a27; font-size: 2.2rem; }
+
+        /* FAIL STATE */
+        .fail-bg .bg-layer { transform: scale(1.3) rotate(2deg); filter: grayscale(1) contrast(1.5) brightness(0.4); }
+        .fail-bg body::before { background: radial-gradient(circle, rgba(40,0,0,0.4) 0%, rgba(0,0,0,0.9) 100%); }
+        .fail-bg .container { background: var(--glass-dark); color: #ff4444; border-color: #ff0000; transform: perspective(1000px) rotateX(10deg); }
+        
+        .fail-text h2 { 
+            font-family: 'Courier New', monospace; font-size: 2.3rem; font-weight: 900;
+            animation: glitch 0.2s infinite; text-shadow: 3px 0 #fff;
         }
 
-        /* --- NOTIFIKASI SUKSES (ARTISTIK) --- */
-        .success-state { display: none; animation: fadeIn 1s forwards; }
-        .success-state h2 { 
-            font-family: 'Georgia', serif; font-style: italic; color: #2d5a27;
-            font-size: 2rem; letter-spacing: 2px; margin-bottom: 1rem;
+        /* --- FOOTER/LOADER --- */
+        #loader { font-style: italic; animation: pulse 1.5s infinite; margin-top: 10px; }
+
+        @keyframes glitch {
+            0% { transform: translate(2px, 0); }
+            50% { transform: translate(-2px, -1px); }
+            100% { transform: translate(0, 1px); }
         }
-        .success-state p { color: #556b2f; font-size: 1.1rem; line-height: 1.6; }
+        @keyframes pulse { 50% { opacity: 0.5; } }
 
-        /* --- NOTIFIKASI GAGAL (MENGERIKAN) --- */
-        .fail-state { display: none; animation: shake 0.5s infinite; color: #660000; }
-        .fail-state h2 { 
-            font-family: 'Creepster', 'Courier New', cursive; font-size: 2.5rem;
-            text-shadow: 2px 2px #000; color: #ff0000; margin-bottom: 1rem;
-        }
-        .fail-state p { font-family: 'Courier New', monospace; font-weight: bold; background: #000; color: #ff0000; padding: 10px; }
-
-        /* Animasi */
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes shake { 0% { transform: translate(1px, 1px); } 10% { transform: translate(-1px, -2px); } 20% { transform: translate(-3px, 0px); } }
-
-        /* Tombol Ulangi */
-        .retry-btn { margin-top: 2rem; background: #333; }
-        .retry-btn.success-btn { background: #556b2f; }
-        .retry-btn.fail-btn { background: #900; color: #fff; border: 2px solid #000; }
     </style>
 </head>
-<body>
+<body id="body-tag">
+
+<div class="bg-layer" id="bg-layer"></div>
 
 <div class="container" id="main-card">
-    <div id="upload-section">
+    <div id="upload-section" class="state-content">
         <img src="ico.png" alt="Logo" class="logo-img">
         <h2>Simpan ke Cloud</h2>
-        <p class="subtitle">Upload file .txt Anda dengan aman</p>
-        <input type="file" id="file-input" accept=".txt">
-        <div id="loading-text" style="margin-top: 10px; display: none; font-size: 0.8rem; color: var(--google-blue);">Mengirim data ke awan...</div>
-        <div class="actions">
+        <p class="subtitle">Hanya file .txt yang diizinkan untuk diabadikan</p>
+        
+        <div class="input-wrapper">
+            <input type="file" id="file-input" accept=".txt, text/plain">
+        </div>
+        
+        <div id="loader" class="hidden">Menyaring data dari dimensi lain...</div>
+        
+        <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
             <button id="upload-btn" onclick="uploadFile()">Berikutnya</button>
         </div>
     </div>
 
-    <div id="success-section" class="success-state">
-        <h2>Karya Tersimpan</h2>
-        <p>File Anda telah melayang ke keabadian digital dengan sempurna.</p>
-        <button class="retry-btn success-btn" onclick="resetPage()">Upload File Lain</button>
+    <div id="success-section" class="state-content success-text hidden">
+        <h2>Elegi Tersimpan</h2>
+        <p style="margin: 1.5rem 0; line-height: 1.6; color: #4a6741;">File teks Anda telah melintasi batas cakrawala digital dan kini beristirahat dengan tenang.</p>
+        <button style="background: #556b2f; width: 100%;" onclick="resetPage()">Unggah Karya Lain</button>
     </div>
 
-    <div id="fail-section" class="fail-state">
-        <h2>KATASTROFE!</h2>
-        <p id="error-desc"></p>
-        <button class="retry-btn fail-btn" onclick="resetPage()">COBA LAGI JIKA BERANI</button>
+    <div id="fail-section" class="state-content fail-text hidden">
+        <h2>ERROR_CRITICAL</h2>
+        <p id="error-desc" style="background: rgba(255,0,0,0.1); padding: 1rem; border-radius: 4px; margin: 1.5rem 0; font-family: monospace;"></p>
+        <button style="background: #600; width: 100%; border: 1px solid red;" onclick="resetPage()">KEMBALI KE GERBANG</button>
     </div>
 </div>
 
@@ -110,28 +170,33 @@
 
     async function uploadFile() {
         const fileInput = document.getElementById('file-input');
-        const uploadSection = document.getElementById('upload-section');
-        const successSection = document.getElementById('success-section');
-        const failSection = document.getElementById('fail-section');
-        const errorDesc = document.getElementById('error-desc');
-        const loadingText = document.getElementById('loading-text');
-        const mainCard = document.getElementById('main-card');
+        const uploadBtn = document.getElementById('upload-btn');
+        const loader = document.getElementById('loader');
+        const body = document.getElementById('body-tag');
 
         if (fileInput.files.length === 0) {
-            alert("Pilih file terlebih dahulu.");
+            alert("Harap pilih file!");
             return;
         }
 
         const file = fileInput.files[0];
+        const fileName = file.name.toLowerCase();
         
-        // Proteksi Ukuran 50KB
-        if (file.size > 50 * 1024) {
-            showError("FILE TERLALU RAKSASA! KAMI TIDAK BISA MENAMPUNGNYA!");
+        // Validasi Ekstensi
+        if (!fileName.endsWith('.txt')) {
+            showError("DETEKSI PENYUSUP! EKSTENSI BUKAN .TXT");
             return;
         }
 
-        loadingText.style.display = "block";
-        document.getElementById('upload-btn').disabled = true;
+        // Validasi Ukuran 50KB
+        if (file.size > 50 * 1024) {
+            showError("DATA TERLALU RAKSASA! MAKSIMAL 50KB!");
+            return;
+        }
+
+        // Start Loading
+        uploadBtn.disabled = true;
+        loader.classList.remove('hidden');
 
         const formData = new FormData();
         formData.append('file', file);
@@ -145,39 +210,50 @@
 
             const data = await response.json();
 
-            uploadSection.style.display = "none";
-
             if (data.secure_url) {
-                // TAMPILAN SUKSES
-                successSection.style.display = "block";
-                document.body.style.backgroundColor = "#f0f4ef"; // Hijau pudar artistik
+                transitionState('success-section');
+                body.classList.add('success-bg');
             } else {
                 showError(data.error.message.toUpperCase());
             }
         } catch (error) {
-            showError("KONEKSI TERPUTUS KE DUNIA KEGELAPAN!");
+            showError("KONEKSI GAIB TERPUTUS!");
         }
     }
 
+    function transitionState(targetId) {
+        // Sembunyikan semua section
+        document.getElementById('upload-section').classList.add('hidden');
+        document.getElementById('success-section').classList.add('hidden');
+        document.getElementById('fail-section').classList.add('hidden');
+
+        // Tampilkan target dengan animasi
+        const target = document.getElementById(targetId);
+        target.classList.remove('hidden');
+        
+        // Trigger ulang animasi CSS
+        target.style.animation = 'none';
+        target.offsetHeight; /* trigger reflow */
+        target.style.animation = null;
+    }
+
     function showError(msg) {
-        document.getElementById('upload-section').style.display = "none";
-        document.getElementById('fail-section').style.display = "block";
+        const body = document.getElementById('body-tag');
         document.getElementById('error-desc').innerText = msg;
-        document.body.style.backgroundColor = "#1a0000"; // Merah gelap mengerikan
-        document.getElementById('main-card').style.borderColor = "#ff0000";
+        transitionState('fail-section');
+        body.classList.add('fail-bg');
     }
 
     function resetPage() {
-        // Kembalikan semua ke default
-        document.getElementById('upload-section').style.display = "block";
-        document.getElementById('success-section').style.display = "none";
-        document.getElementById('fail-section').style.display = "none";
+        const body = document.getElementById('body-tag');
+        const fileInput = document.getElementById('file-input');
+        
+        body.classList.remove('success-bg', 'fail-bg');
+        transitionState('upload-section');
+        
         document.getElementById('upload-btn').disabled = false;
-        document.getElementById('loading-text').style.display = "none";
-        document.getElementById('file-input').value = "";
-        document.body.style.backgroundColor = "#ffffff";
-        document.getElementById('main-card').style.borderColor = "#dadce0";
-        document.getElementById('main-card').style.background = "white";
+        document.getElementById('loader').classList.add('hidden');
+        fileInput.value = "";
     }
 </script>
 
