@@ -2465,9 +2465,9 @@ function _pauseAudio(){
         <span class="saic-required">*</span>
     </div>
 
-    <div id="guest-input-wrapper" class="saic-wrap-guest" style="display: none;">
-        <select name="guest" id="guest" class="saic-select">
-            <option value="" selected disabled>Jumlah Tamu</option>
+    <div id="guest-input-wrapper" class="saic-wrap-guest" style="display: none !important;">
+    <select name="guest" id="guest" class="saic-select">
+        <option value="" selected disabled>Jumlah Tamu</option>
             <option value="1">1 orang</option>
             <option value="2">2 orang</option>
             <option value="3">3 orang</option>
@@ -3301,25 +3301,35 @@ new Promise( ( resolve ) => {
 <script>
 const API_URL = 'https://melda-api.vercel.app/api';
 
-// 1. Fungsi memunculkan input jumlah tamu jika pilih "Hadir"
+// Fungsi untuk Menampilkan/Menyembunyikan Jumlah Tamu
 function checkAttendance(val) {
     const guestWrapper = document.getElementById('guest-input-wrapper');
-    if (val === 'Hadir') {
-        guestWrapper.style.display = 'block';
+    // Jika memilih 'present' (Hadir), maka tampilkan
+    if (val === 'present') {
+        guestWrapper.style.setProperty('display', 'block', 'important');
     } else {
-        guestWrapper.style.display = 'none';
+        guestWrapper.style.setProperty('display', 'none', 'important');
+        document.getElementById('guest').value = ""; // Reset jumlah jika batal hadir
     }
 }
 
-// 2. Fungsi Mengirim Data ke Vercel
+// Tambahkan listener manual untuk dropdown kehadiran jika onchange di HTML tidak terbaca
+document.getElementById('attendance').addEventListener('change', function() {
+    checkAttendance(this.value);
+});
+
+// Update logic pengiriman data
 document.getElementById('commentform-88989').addEventListener('submit', async function(e) {
+    e.preventDefault(); // Mencegah reload halaman
+    
     const submitBtn = document.getElementById('submit-88989');
     submitBtn.value = "Mengirim...";
     submitBtn.disabled = true;
 
+    // Ambil data
     const payload = {
         nama: document.getElementById('author').value,
-        kehadiran: document.getElementById('attendance').value,
+        kehadiran: document.getElementById('attendance').options[document.getElementById('attendance').selectedIndex].text,
         jumlah_tamu: document.getElementById('guest').value || 0,
         ucapan: document.getElementById('saic-textarea-88989').value
     };
@@ -3332,49 +3342,18 @@ document.getElementById('commentform-88989').addEventListener('submit', async fu
         });
 
         if (response.ok) {
-            alert('Ucapan & RSVP Berhasil Terkirim!');
-            this.reset(); // Kosongkan form
-            document.getElementById('guest-input-wrapper').style.display = 'none';
-            loadCommentsFromVercel(); // Segarkan daftar ucapan
+            zepetoNotify("Pesan Terkirim"); // Fungsi notifikasi Anda
+            this.reset();
+            document.getElementById('guest-input-wrapper').style.setProperty('display', 'none', 'important');
+            loadCommentsFromVercel(); 
         }
     } catch (err) {
-        alert('Terjadi kesalahan saat mengirim data.');
+        zepetoNotify("Gagal Mengirim");
     } finally {
         submitBtn.value = "Kirim";
         submitBtn.disabled = false;
     }
 });
-
-// 3. Fungsi Mengambil & Menampilkan Ucapan di <ul> asli
-async function loadCommentsFromVercel() {
-    try {
-        const res = await fetch(API_URL);
-        const data = await res.json();
-        const container = document.getElementById('saic-container-comment-88989');
-        
-        // Render data ke dalam struktur <li> agar gaya CSS asli tetap terjaga
-        container.innerHTML = data.map(item => `
-            <li class="saic-comment py-4" style="list-style:none; border-bottom:1px solid #eee; margin-bottom:15px;">
-                <div class="saic-comment-body">
-                    <div class="saic-comment-header">
-                        <cite style="font-style:normal; font-weight:bold; color:#333;">${item.nama}</cite>
-                        <span style="font-size:10px; background:#f0f0f0; padding:2px 8px; border-radius:10px; margin-left:10px; color:#999; text-transform:uppercase;">
-                            ${item.kehadiran}
-                        </span>
-                    </div>
-                    <div class="saic-comment-content" style="margin-top:8px; color:#666; font-style:italic;">
-                        <p>"${item.ucapan}"</p>
-                    </div>
-                </div>
-            </li>
-        `).join('');
-    } catch (e) {
-        console.error("Gagal memuat ucapan.");
-    }
-}
-
-// Jalankan pemuatan ucapan saat halaman pertama kali dibuka
-document.addEventListener('DOMContentLoaded', loadCommentsFromVercel);
 </script>
 </body>
 </html>
