@@ -2448,51 +2448,52 @@ function _pauseAudio(){
 
 				<div id="respond-88989" class="respond saic-clearfix">
 
-					<form action="" method="POST" id="commentform-88989">
+					<form action="javascript:void(0);" method="POST" id="commentform-88989">
 
-						<p class="comment-form-author saic-field-1">
-							<input type="text" name="author" id="author" class="saic-input" aria-required="true" placeholder="Nama Anda" value="" />
-							<span class="saic-required">*</span>
-							<span class="saic-error-info saic-error-info-name">Masukan nama anda</span>
-						</p>
+    <p class="comment-form-author saic-field-1">
+        <input type="text" name="author" id="author" class="saic-input" aria-required="true" placeholder="Nama Anda" value="" required />
+        <span class="saic-required">*</span>
+    </p>
 
-						
-							<div class="saic-wrap-attendance">
-								<select name="attendance" id="attendance" class="saic-select">
-									<option value="" selected="" disabled>Konfirmasi Kehadiran</option>
-									<option value="present">Hadir</option>
-									<option value="notpresent">Tidak Hadir</option>
-																			<option value="notsure">Masih Ragu</option>
-																	</select>
-								<span class="saic-required">*</span>
-								<span class="saic-error-info saic-error-info-attendance">Pilih konfirmasi kehadiran</span>
-							</div>
+    <div class="saic-wrap-attendance">
+        <select name="attendance" id="attendance" class="saic-select" onchange="checkAttendance(this.value)" required>
+            <option value="" selected disabled>Konfirmasi Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+            <option value="Masih Ragu">Masih Ragu</option>
+        </select>
+        <span class="saic-required">*</span>
+    </div>
 
-						
-						<div class="saic-wrap-guest" style="display: none;">
-							<select name="guest" id="guest" class="saic-select">
-								<option value="" selected="" disabled>Jumlah Tamu</option>
-								<option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option><option value="5">5 orang</option><option value="6">6 orang</option><option value="7">7 orang</option><option value="8">8 orang</option><option value="9">9 orang</option><option value="10">10 orang</option>							</select>
-							<span class="saic-required">*</span>
-							<span class="saic-error-info saic-error-info-guest">Pilih jumlah tamu</span>
-						</div>
+    <div id="guest-input-wrapper" class="saic-wrap-guest" style="display: none;">
+        <select name="guest" id="guest" class="saic-select">
+            <option value="" selected disabled>Jumlah Tamu</option>
+            <option value="1">1 orang</option>
+            <option value="2">2 orang</option>
+            <option value="3">3 orang</option>
+            <option value="4">4 orang</option>
+            <option value="5">5 orang</option>
+            <option value="6">6 orang</option>
+            <option value="7">7 orang</option>
+            <option value="8">8 orang</option>
+            <option value="9">9 orang</option>
+            <option value="10">10 orang</option>
+        </select>
+        <span class="saic-required">*</span>
+    </div>
 
-						<div class="saic-wrap-textarea">
-							<textarea name="comment" id="saic-textarea-88989" class="waci_comment saic-textarea autosize-textarea" aria-required="true" placeholder="Tulis Ucapan" rows="1"></textarea>
-							<span class="saic-required">*</span>
-							<span class="saic-error-info saic-error-info-text">Ucapan minimal 2 karakter</span>
-						</div>
+    <div class="saic-wrap-textarea">
+        <textarea name="comment" id="saic-textarea-88989" class="waci_comment saic-textarea" aria-required="true" placeholder="Tulis Ucapan" required></textarea>
+        <span class="saic-required">*</span>
+    </div>
 
-						<div class="saic-wrap-submit saic-clearfix">
-							<p class="form-submit">
-                                <input type='hidden' name='comment_post_ID' value='88989' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-								<input type="hidden" name="commentpress" value="true" />
-								<input type="submit" id="submit-88989" value="Kirim" />
-							</p>
-						</div>
+    <div class="saic-wrap-submit saic-clearfix">
+        <p class="form-submit">
+            <input type="submit" id="submit-88989" value="Kirim" />
+        </p>
+    </div>
 
-					</form>
+</form>
 
 				</div>
 
@@ -3297,97 +3298,83 @@ new Promise( ( resolve ) => {
 	} );
 //# sourceURL=https://the.gandilova.com/wp-includes/js/wp-emoji-loader.js
 </script>
-	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"07a9daa091f44e13b42ed9b86bc3efa8","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 <script>
-// 1. Definisikan URL API Vercel Anda
 const API_URL = 'https://melda-api.vercel.app/api';
 
-// 2. Fungsi untuk Notifikasi Mengambang Artistik (Zepeto.Club)
-function showZepetoNotif(msg) {
-    const container = document.getElementById('zepeto-notif-container');
-    const toast = document.createElement('div');
-    toast.className = 'z-toast show'; // Menggunakan class CSS yang kita buat sebelumnya
-    toast.innerHTML = `
-        <div style="display:flex; align-items:center; gap:10px;">
-            <i class="fa-solid fa-circle-check" style="color:#c2a383;"></i>
-            <span style="font-size:12px; font-weight:bold; letter-spacing:1px; color:#333;">
-                ZEPETO.CLUB: ${msg}
-            </span>
-        </div>
-    `;
-    document.body.appendChild(toast);
-    setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 500); }, 3000);
-}
-
-// 3. Menangkap Event Klik pada Tombol Submit Asli
-const formAsli = document.getElementById('commentform-88989');
-if (formAsli) {
-    formAsli.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const btn = document.getElementById('submit-88989');
-        const originalBtnText = btn.value;
-        btn.value = "MENGIRIM...";
-        btn.disabled = true;
-
-        // Mengambil data tepat dari elemen ID asli WordPress
-        const payload = {
-            nama: document.getElementById('author').value,
-            kehadiran: document.getElementById('attendance').value,
-            jumlah_tamu: document.getElementById('guest') ? document.getElementById('guest').value : 0,
-            ucapan: document.getElementById('saic-textarea-88989').value
-        };
-
-        try {
-            const response = await fetch(API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
-            });
-
-            if (response.ok) {
-                showZepetoNotif("Ucapan Berhasil Terkirim!");
-                formAsli.reset();
-                loadUcapanVercel(); // Refresh daftar komentar
-            }
-        } catch (err) {
-            showZepetoNotif("Gagal mengirim pesan.");
-        } finally {
-            btn.value = originalBtnText;
-            btn.disabled = false;
-        }
-    });
-}
-
-// 4. Fungsi untuk memuat data dari database Vercel ke kolom komentar asli
-async function loadUcapanVercel() {
-    try {
-        const res = await fetch(API_URL);
-        const data = await res.json();
-        const listContainer = document.getElementById('saic-container-comment-88989');
-        
-        if (listContainer) {
-            listContainer.innerHTML = data.map(item => `
-                <li class="saic-comment border-b border-stone-100 py-4" style="list-style:none;">
-                    <div class="saic-comment-body">
-                        <div class="saic-comment-header">
-                            <cite class="font-bold text-stone-800" style="font-style:normal;">${item.nama}</cite>
-                            <span class="text-[10px] bg-stone-100 px-2 py-1 rounded ml-2 uppercase font-bold text-stone-400">${item.kehadiran}</span>
-                        </div>
-                        <div class="mt-2 text-stone-600 italic">
-                            <p>"${item.ucapan}"</p>
-                        </div>
-                    </div>
-                </li>
-            `).join('');
-        }
-    } catch (e) {
-        console.log("Database kosong atau error.");
+// 1. Fungsi memunculkan input jumlah tamu jika pilih "Hadir"
+function checkAttendance(val) {
+    const guestWrapper = document.getElementById('guest-input-wrapper');
+    if (val === 'Hadir') {
+        guestWrapper.style.display = 'block';
+    } else {
+        guestWrapper.style.display = 'none';
     }
 }
 
-// Jalankan load data saat halaman siap
-document.addEventListener('DOMContentLoaded', loadUcapanVercel);
+// 2. Fungsi Mengirim Data ke Vercel
+document.getElementById('commentform-88989').addEventListener('submit', async function(e) {
+    const submitBtn = document.getElementById('submit-88989');
+    submitBtn.value = "Mengirim...";
+    submitBtn.disabled = true;
+
+    const payload = {
+        nama: document.getElementById('author').value,
+        kehadiran: document.getElementById('attendance').value,
+        jumlah_tamu: document.getElementById('guest').value || 0,
+        ucapan: document.getElementById('saic-textarea-88989').value
+    };
+
+    try {
+        const response = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            alert('Ucapan & RSVP Berhasil Terkirim!');
+            this.reset(); // Kosongkan form
+            document.getElementById('guest-input-wrapper').style.display = 'none';
+            loadCommentsFromVercel(); // Segarkan daftar ucapan
+        }
+    } catch (err) {
+        alert('Terjadi kesalahan saat mengirim data.');
+    } finally {
+        submitBtn.value = "Kirim";
+        submitBtn.disabled = false;
+    }
+});
+
+// 3. Fungsi Mengambil & Menampilkan Ucapan di <ul> asli
+async function loadCommentsFromVercel() {
+    try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
+        const container = document.getElementById('saic-container-comment-88989');
+        
+        // Render data ke dalam struktur <li> agar gaya CSS asli tetap terjaga
+        container.innerHTML = data.map(item => `
+            <li class="saic-comment py-4" style="list-style:none; border-bottom:1px solid #eee; margin-bottom:15px;">
+                <div class="saic-comment-body">
+                    <div class="saic-comment-header">
+                        <cite style="font-style:normal; font-weight:bold; color:#333;">${item.nama}</cite>
+                        <span style="font-size:10px; background:#f0f0f0; padding:2px 8px; border-radius:10px; margin-left:10px; color:#999; text-transform:uppercase;">
+                            ${item.kehadiran}
+                        </span>
+                    </div>
+                    <div class="saic-comment-content" style="margin-top:8px; color:#666; font-style:italic;">
+                        <p>"${item.ucapan}"</p>
+                    </div>
+                </div>
+            </li>
+        `).join('');
+    } catch (e) {
+        console.error("Gagal memuat ucapan.");
+    }
+}
+
+// Jalankan pemuatan ucapan saat halaman pertama kali dibuka
+document.addEventListener('DOMContentLoaded', loadCommentsFromVercel);
 </script>
 </body>
 </html>
