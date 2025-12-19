@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wedding Of - Arif & Melda</title>
     
+    <meta name="description" content="E-Invitation Website">
     <meta property="og:title" content="The Wedding Of - Arif & Melda">
-    <meta property="og:description" content="E-Invitation Website">
     <meta property="og:image" content="https://the.gandilova.com/wp-content/uploads/jet-form-builder/cd14183c21c2c0d93c8c92464276ce00/2025/12/38781-1765978152104.webp">
 
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -15,132 +15,214 @@
 
     <style>
         html { scroll-behavior: smooth; }
-        body { font-family: 'Poppins', sans-serif; background-color: #f8f5f2; color: #444; overflow-x: hidden; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fdfcfb; color: #333; overflow-x: hidden; }
         .font-script { font-family: 'Alex Brush', cursive; }
         .font-cinzel { font-family: 'Cinzel', serif; }
 
         /* Backgrounds */
-        .bg-cover-img {
+        .bg-fixed-kraton {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://the.gandilova.com/wp-content/uploads/jet-form-builder/a7f8045994d28927ba281b444198ff14/2025/12/54-1766024790480.webp');
-            background-size: cover; background-position: center;
+                        url('https://the.gandilova.com/wp-content/uploads/2025/09/BG-ART-2-KRATON-1-1.webp');
+            background-size: cover; background-position: center; background-attachment: fixed;
         }
 
-        /* Animations like the original */
-        .reveal { opacity: 0; transform: translateY(50px); transition: all 1.2s ease; }
+        /* Animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease; }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
-        /* Floating Music Button */
-        .music-control { position: fixed; bottom: 90px; right: 20px; z-index: 1000; }
-        .rotate { animation: rotation 4s infinite linear; }
-        @keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } }
-
-        /* Bottom Nav */
+        /* Floating Elements */
         .bottom-nav {
-            position: fixed; bottom: 0; left: 0; right: 0;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            display: flex; justify-content: space-around;
-            padding: 12px 0; border-top: 1px solid #ddd; z-index: 999;
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px);
+            display: flex; padding: 10px 25px; border-radius: 50px; gap: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); z-index: 100;
         }
-        .nav-link { color: #888; font-size: 1.2rem; transition: 0.3s; }
-        .nav-link:hover { color: #c2a383; }
+        .nav-item { color: #8d7b68; font-size: 1.3rem; }
 
-        /* Original Card Style */
-        .ucapan-card {
-            background: white; padding: 15px; border-radius: 12px;
-            border-left: 5px solid #d4af37; margin-bottom: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        .music-btn {
+            position: fixed; bottom: 90px; right: 20px; z-index: 100;
+            background: white; width: 50px; height: 50px; border-radius: 50%;
+            display: flex; items-center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+        .rotate { animation: spin 4s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        .btn-gold { background: #c2a383; color: white; padding: 10px 25px; border-radius: 8px; transition: 0.3s; }
+        .btn-gold:hover { background: #a68a6d; transform: scale(1.05); }
     </style>
 </head>
 <body>
 
-    <div id="cover" class="fixed inset-0 z-[1000] bg-cover-img flex flex-col items-center justify-center text-white text-center p-6 transition-all duration-1000">
-        <h3 class="text-lg tracking-widest mb-2">THE WEDDING OF</h3>
+    <div id="cover" class="fixed inset-0 z-[1000] bg-fixed-kraton flex flex-col items-center justify-center text-white text-center p-6">
+        <h3 class="font-cinzel tracking-widest mb-4">THE WEDDING OF</h3>
         <h1 class="font-script text-7xl md:text-9xl mb-4">Arif & Melda</h1>
-        <p class="text-xl mb-10">Minggu, 11 Januari 2026</p>
-        <button onclick="bukaUndangan()" class="bg-white text-gray-800 px-8 py-3 rounded-full font-bold shadow-2xl hover:scale-105 transition">
-            <i class="fa-regular fa-envelope-open mr-2"></i> Buka Undangan
+        <p class="text-xl mb-12">Minggu, 11 Januari 2026</p>
+        <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 mb-8">
+            <p class="text-sm uppercase tracking-widest mb-2">Kepada Bapak/Ibu/Saudara/i:</p>
+            <h2 class="text-2xl font-bold italic">Tamu Undangan</h2>
+        </div>
+        <button onclick="bukaUndangan()" class="bg-white text-gray-900 px-8 py-3 rounded-full font-bold shadow-xl flex items-center gap-2">
+            <i class="fa-regular fa-envelope-open"></i> Buka Undangan
         </button>
     </div>
 
-    <main id="main-content" class="hidden pb-24">
+    <main id="main-content" class="hidden">
         
-        <nav class="bottom-nav">
-            <a href="#home" class="nav-link"><i class="fa-solid fa-house"></i></a>
-            <a href="#couple" class="nav-link"><i class="fa-solid fa-heart"></i></a>
-            <a href="#event" class="nav-link"><i class="fa-solid fa-calendar-alt"></i></a>
-            <a href="#rsvp" class="nav-link"><i class="fa-solid fa-comments"></i></a>
-        </nav>
+        <div class="bottom-nav">
+            <a href="#home" class="nav-item"><i class="fa-solid fa-house"></i></a>
+            <a href="#couple" class="nav-item"><i class="fa-solid fa-heart"></i></a>
+            <a href="#event" class="nav-item"><i class="fa-solid fa-calendar-check"></i></a>
+            <a href="#gift" class="nav-item"><i class="fa-solid fa-gift"></i></a>
+            <a href="#rsvp" class="nav-item"><i class="fa-solid fa-comments"></i></a>
+        </div>
 
-        <section id="home" class="h-screen bg-cover-img flex items-center justify-center text-white text-center">
+        <section id="home" class="h-screen bg-fixed-kraton flex flex-col items-center justify-center text-white text-center">
             <div class="reveal">
-                <h2 class="text-2xl font-cinzel">Save The Date</h2>
-                <h1 class="font-script text-8xl my-6">Arif & Melda</h1>
-                <p class="text-xl">11 . 01 . 2026</p>
+                <h2 class="font-cinzel text-2xl tracking-[0.3em] mb-4">SAVE THE DATE</h2>
+                <h1 class="font-script text-8xl md:text-[10rem]">Arif & Melda</h1>
+                <p class="text-2xl font-cinzel mt-4">11 . 01 . 2026</p>
             </div>
         </section>
 
-        <section id="couple" class="py-20 px-6 text-center">
+        <section class="py-20 px-6 text-center max-w-4xl mx-auto">
             <div class="reveal">
-                <p class="italic mb-10 px-4">"Di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu..." (QS. Ar-Rum: 21)</p>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-12">
-                    <div>
-                        <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/cd14183c21c2c0d93c8c92464276ce00/2025/12/38781-1765978152104.webp" class="w-56 h-56 rounded-full mx-auto border-4 border-white shadow-xl object-cover">
-                        <h2 class="font-script text-4xl mt-6">Arif Rachman Hidayat</h2>
-                        <p class="text-stone-500">Putra dari Bpk Widodo & Ibu Tuminah</p>
+                <h2 class="font-cinzel text-xl mb-6 font-bold text-[#c2a383]">QS. AR-RUM : 21</h2>
+                <p class="italic text-gray-600 leading-relaxed text-lg">
+                    "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+                </p>
+            </div>
+        </section>
+
+        <section id="couple" class="py-20 bg-stone-50 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="font-cinzel text-4xl text-center mb-20 text-[#8d7b68]">THE COUPLE</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-16">
+                    <div class="text-center reveal max-w-sm">
+                        <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/cd14183c21c2c0d93c8c92464276ce00/2025/12/38781-1765978152104.webp" 
+                             class="w-64 h-64 rounded-full mx-auto border-8 border-white shadow-2xl object-cover">
+                        <h3 class="font-script text-5xl mt-8 text-[#c2a383]">Arif Rachman Hidayat</h3>
+                        <p class="mt-4 font-bold uppercase tracking-widest text-sm">Putra dari:</p>
+                        <p class="text-gray-600 italic">Bpk Widodo & Ibu Tuminah</p>
                     </div>
-                    <div class="font-script text-6xl text-amber-600 my-4">&</div>
-                    <div>
-                        <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/a7f8045994d28927ba281b444198ff14/2025/12/54-1766024790480.webp" class="w-56 h-56 rounded-full mx-auto border-4 border-white shadow-xl object-cover">
-                        <h2 class="font-script text-4xl mt-6">Melda Dwi Rahajeng</h2>
-                        <p class="text-stone-500">Putri dari Bpk H. Sumedi (Alm) & Ibu Hj. Ida (Almh)</p>
+
+                    <div class="font-script text-7xl text-[#c2a383] reveal">&</div>
+
+                    <div class="text-center reveal max-w-sm">
+                        <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/a7f8045994d28927ba281b444198ff14/2025/12/54-1766024790480.webp" 
+                             class="w-64 h-64 rounded-full mx-auto border-8 border-white shadow-2xl object-cover">
+                        <h3 class="font-script text-5xl mt-8 text-[#c2a383]">Melda Dwi Rahajeng</h3>
+                        <p class="mt-4 font-bold uppercase tracking-widest text-sm">Putri dari:</p>
+                        <p class="text-gray-600 italic text-sm px-4">Bpk H. Sumedi Atmodidjojo (Alm) & Ibu Hj. Ida Faryani (Almh)</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="event" class="py-20 bg-stone-100 text-center px-6">
-            <div class="reveal max-w-2xl mx-auto bg-white p-10 rounded-3xl shadow-lg border border-stone-200">
-                <h2 class="font-cinzel text-3xl mb-6">Akad Nikah</h2>
-                <div class="w-16 h-1 bg-amber-400 mx-auto mb-6"></div>
-                <p class="text-xl font-bold">Minggu, 11 Januari 2026</p>
-                <p class="mb-4">Pukul 11:00 WIB - Selesai</p>
-                <p class="text-sm text-stone-500 mb-8">Nirwana Estate Blok F No 9-10 RT 02 RW 11, Harapan jaya, Cibinong, Kab. Bogor</p>
-                <a href="https://maps.app.goo.gl/NEAPErnCvEMqrehu6" class="inline-block bg-stone-800 text-white px-8 py-3 rounded-lg hover:bg-black transition">
-                    <i class="fa-solid fa-location-dot mr-2"></i> Lihat Lokasi
-                </a>
+        <section id="event" class="py-20 px-6">
+            <div class="reveal max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-2xl border border-stone-100 text-center">
+                <h2 class="font-cinzel text-3xl mb-8 text-[#c2a383]">AKAD NIKAH</h2>
+                <div class="flex flex-col gap-6 text-gray-700">
+                    <div class="border-y border-stone-200 py-6">
+                        <p class="font-bold text-2xl mb-2">Minggu</p>
+                        <p class="text-5xl font-cinzel text-[#c2a383]">11 JANUARI 2026</p>
+                        <p class="text-xl mt-2 font-bold italic">Pukul 11:00 WIB</p>
+                    </div>
+                    <div>
+                        <p class="font-cinzel font-bold mb-2">LOKASI</p>
+                        <p class="font-bold">Rumah Mempelai Wanita</p>
+                        <p class="text-sm italic">Nirwana Estate Blok F No 9-10 RT 02 RW 11, Harapan jaya, Cibinong, Kab. Bogor</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/NEAPErnCvEMqrehu6" target="_blank" class="btn-gold inline-flex items-center gap-2 mx-auto">
+                        <i class="fa-solid fa-location-dot"></i> LOKASI ACARA
+                    </a>
+                </div>
+            </div>
+
+            <div class="reveal mt-20 text-center">
+                <h3 class="font-cinzel text-2xl mb-8">Counting The Days</h3>
+                <div id="countdown" class="flex justify-center gap-4 text-white">
+                    <div class="bg-[#c2a383] p-4 rounded-lg min-w-[70px] shadow-lg">
+                        <span id="days" class="text-2xl font-bold block">00</span> Hari
+                    </div>
+                    <div class="bg-[#c2a383] p-4 rounded-lg min-w-[70px] shadow-lg">
+                        <span id="hours" class="text-2xl font-bold block">00</span> Jam
+                    </div>
+                    <div class="bg-[#c2a383] p-4 rounded-lg min-w-[70px] shadow-lg">
+                        <span id="minutes" class="text-2xl font-bold block">00</span> Menit
+                    </div>
+                    <div class="bg-[#c2a383] p-4 rounded-lg min-w-[70px] shadow-lg">
+                        <span id="seconds" class="text-2xl font-bold block">00</span> Detik
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="rsvp" class="py-20 px-6 max-w-3xl mx-auto">
-            <div class="reveal">
-                <h2 class="font-cinzel text-4xl text-center mb-10 text-stone-700">Doa & Ucapan</h2>
-                <form id="rsvpForm" class="bg-white p-8 rounded-3xl shadow-xl space-y-4">
-                    <input type="text" id="nama" placeholder="Nama Lengkap" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-2 focus:ring-amber-200" required>
-                    <select id="kehadiran" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-2 focus:ring-amber-200" required>
+        <section id="gift" class="py-20 bg-stone-100 px-6 text-center">
+            <div class="reveal max-w-2xl mx-auto">
+                <h2 class="font-cinzel text-3xl mb-4">WEDDING GIFT</h2>
+                <p class="text-gray-500 mb-12 italic text-sm">Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang ingin memberikan tanda kasih untuk kami, dapat melalui:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#c2a383]">
+                        <img src="https://the.gandilova.com/wp-content/uploads/2025/09/BCA-1-2.webp" class="h-8 mx-auto mb-4">
+                        <p class="font-bold">7550312641</p>
+                        <p class="text-sm">A.n Melda Dwi Rahajeng</p>
+                        <button onclick="copyToClipboard('7550312641')" class="mt-4 text-xs font-bold text-amber-700 underline">SALIN NO. REKENING</button>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#c2a383]">
+                        <img src="https://the.gandilova.com/wp-content/uploads/2025/10/Logo_BRI.webp" class="h-8 mx-auto mb-4">
+                        <p class="font-bold">389301009030507</p>
+                        <p class="text-sm">A.n Arif Rachman Hidayat</p>
+                        <button onclick="copyToClipboard('389301009030507')" class="mt-4 text-xs font-bold text-amber-700 underline">SALIN NO. REKENING</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#c2a383] mt-8 reveal">
+                    <i class="fa-solid fa-house-chimney text-3xl text-[#c2a383] mb-4"></i>
+                    <p class="font-bold mb-2 uppercase">Alamat Pengiriman Kado:</p>
+                    <p class="text-sm text-gray-600 italic px-4">Mustokorejo No. 27D, Denokan, Maguwoharjo, Kec. Depok, Kab. Sleman, DI Yogyakarta 55282</p>
+                    <button onclick="copyToClipboard('Mustokorejo No. 27D, Denokan, Maguwoharjo, Kec. Depok, Kab. Sleman, DI Yogyakarta 55282')" class="mt-4 text-xs font-bold text-amber-700 underline">SALIN ALAMAT</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp" class="py-20 px-6 max-w-2xl mx-auto">
+            <div class="reveal text-center">
+                <h2 class="font-cinzel text-3xl mb-10">DOA & UCAPAN</h2>
+                <form id="rsvpForm" class="bg-white p-8 shadow-2xl rounded-3xl space-y-4">
+                    <input type="text" id="nama" placeholder="Nama Anda" class="w-full p-4 bg-stone-50 rounded-xl outline-none border-none focus:ring-2 focus:ring-amber-200" required>
+                    <select id="kehadiran" class="w-full p-4 bg-stone-50 rounded-xl outline-none border-none focus:ring-2 focus:ring-amber-200" required>
                         <option value="">Konfirmasi Kehadiran</option>
                         <option value="Hadir">Hadir</option>
                         <option value="Tidak Hadir">Tidak Hadir</option>
+                        <option value="Ragu-ragu">Masih Ragu</option>
                     </select>
-                    <textarea id="ucapan" placeholder="Tulis ucapan anda..." class="w-full p-4 bg-stone-50 rounded-xl h-32 outline-none focus:ring-2 focus:ring-amber-200" required></textarea>
-                    <button type="submit" class="w-full bg-stone-800 text-white py-4 rounded-xl font-bold hover:bg-black transition">KIRIM UCAPAN</button>
+                    <textarea id="ucapan" placeholder="Tulis ucapan anda..." class="w-full p-4 bg-stone-50 rounded-xl h-32 outline-none border-none focus:ring-2 focus:ring-amber-200" required></textarea>
+                    <button type="submit" class="w-full bg-gray-800 text-white py-4 rounded-xl font-bold tracking-widest hover:bg-black transition">KIRIM UCAPAN</button>
                 </form>
 
-                <div id="commentList" class="mt-12 space-y-4 max-h-[500px] overflow-y-auto p-2">
+                <div id="commentList" class="mt-12 space-y-4 text-left max-h-[600px] overflow-y-auto pr-2">
                     </div>
             </div>
         </section>
 
-        <footer class="py-10 text-center text-stone-400 text-sm">
-            <p>&copy; 2025 Created with ❤️ by Zepeto.club</p>
+        <footer class="py-20 bg-stone-50 text-center">
+            <div class="reveal">
+                <p class="mb-4 font-script text-3xl">Hormat Kami,</p>
+                <h2 class="font-script text-6xl mb-6">Arif & Melda</h2>
+                <p class="text-sm tracking-widest text-gray-400">Wassalamualaikum Wr. Wb.</p>
+                <div class="mt-12 opacity-50">
+                    <img src="https://the.gandilova.com/wp-content/uploads/2025/11/Logo-Gandilova-FIX-3.webp" class="h-8 mx-auto">
+                    <p class="text-[10px] mt-2 italic">Creator ❤ gandilova</p>
+                </div>
+            </div>
         </footer>
+
     </main>
 
-    <div class="music-control">
-        <button onclick="toggleMusic()" id="musicBtn" class="bg-white/90 backdrop-blur shadow-2xl w-14 h-14 rounded-full flex items-center justify-center text-amber-700 rotate">
-            <i class="fa-solid fa-compact-disc text-3xl"></i>
+    <div class="music-btn" onclick="toggleMusic()">
+        <button id="audioControl" class="text-[#c2a383] text-2xl rotate">
+            <i class="fa-solid fa-compact-disc"></i>
         </button>
     </div>
     <audio id="bgm" loop>
@@ -149,34 +231,52 @@
 
     <script>
         const API_URL = 'https://melda-api.vercel.app/api';
-        const audio = document.getElementById('bgm');
-        const musicBtn = document.getElementById('musicBtn');
+        const bgm = document.getElementById('bgm');
+        const audioControl = document.getElementById('audioControl');
 
         function bukaUndangan() {
             document.getElementById('cover').classList.add('-translate-y-full');
             document.getElementById('main-content').classList.remove('hidden');
-            audio.play();
-            handleScroll();
+            bgm.play();
+            handleReveal();
             loadComments();
+            startCountdown();
+            setTimeout(() => document.getElementById('cover').remove(), 1000);
         }
 
         function toggleMusic() {
-            if (audio.paused) { audio.play(); musicBtn.classList.add('rotate'); }
-            else { audio.pause(); musicBtn.classList.remove('rotate'); }
+            if (bgm.paused) { bgm.play(); audioControl.classList.add('rotate'); }
+            else { bgm.pause(); audioControl.classList.remove('rotate'); }
         }
 
-        // Reveal Scroll Animation
-        function handleScroll() {
+        function handleReveal() {
             const reveals = document.querySelectorAll('.reveal');
             reveals.forEach(el => {
                 const windowHeight = window.innerHeight;
                 const elementTop = el.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 100) el.classList.add('active');
+                if (elementTop < windowHeight - 50) el.classList.add('active');
             });
         }
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleReveal);
 
-        // RSVP Logic
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => alert('Berhasil disalin!'));
+        }
+
+        // Hitung Mundur (Countdown)
+        function startCountdown() {
+            const targetDate = new Date("Jan 11, 2026 11:00:00").getTime();
+            setInterval(() => {
+                const now = new Date().getTime();
+                const diff = targetDate - now;
+                document.getElementById('days').innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+                document.getElementById('hours').innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById('minutes').innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById('seconds').innerText = Math.floor((diff % (1000 * 60)) / 1000);
+            }, 1000);
+        }
+
+        // Logic RSVP
         document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const data = {
@@ -184,10 +284,8 @@
                 kehadiran: document.getElementById('kehadiran').value,
                 ucapan: document.getElementById('ucapan').value
             };
-
             const btn = e.target.querySelector('button');
-            btn.innerText = "MENGIRIM...";
-            btn.disabled = true;
+            btn.innerText = "MENGIRIM..."; btn.disabled = true;
 
             try {
                 await fetch(API_URL, {
@@ -198,25 +296,22 @@
                 alert('Ucapan terkirim!');
                 document.getElementById('rsvpForm').reset();
                 loadComments();
-            } catch (err) {
-                alert('Gagal mengirim ucapan.');
-            } finally {
-                btn.innerText = "KIRIM UCAPAN";
-                btn.disabled = false;
-            }
+            } catch (err) { alert('Terjadi kesalahan!'); }
+            finally { btn.innerText = "KIRIM UCAPAN"; btn.disabled = false; }
         });
 
-        // Load Wishes
         async function loadComments() {
-            const res = await fetch(API_URL);
-            const data = await res.json();
-            const list = document.getElementById('commentList');
-            list.innerHTML = data.map(item => `
-                <div class="ucapan-card">
-                    <h4 class="font-bold text-stone-800">${item.nama} <span class="text-xs font-normal text-stone-400 italic">(${item.kehadiran})</span></h4>
-                    <p class="text-stone-600 text-sm mt-2 font-light">"${item.ucapan}"</p>
-                </div>
-            `).join('');
+            try {
+                const res = await fetch(API_URL);
+                const data = await res.json();
+                document.getElementById('commentList').innerHTML = data.map(item => `
+                    <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-[#c2a383]">
+                        <h4 class="font-bold text-sm text-stone-800 uppercase tracking-wider">${item.nama}</h4>
+                        <p class="text-[10px] text-stone-400 italic mb-2">${item.kehadiran}</p>
+                        <p class="text-xs text-stone-600">"${item.ucapan}"</p>
+                    </div>
+                `).join('');
+            } catch (e) {}
         }
     </script>
 </body>
