@@ -1,1 +1,15 @@
-npm install mysql2
+{
+  "name": "amelda-api",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql2": "^3.16.0"
+  }
+}
