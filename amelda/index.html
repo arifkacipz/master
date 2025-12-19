@@ -4,280 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wedding Of - Arif & Melda</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --primary: #d4af37; /* Warna Gold */
-            --bg-dark: #1a1a1a;
-            --text-light: #ffffff;
+        body { font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .font-script { font-family: 'Alex Brush', cursive; }
+        .cover-bg { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://the.gandilova.com/wp-content/uploads/2025/09/BG-ART-2-KRATON-1-1.webp');
+            background-size: cover; background-position: center;
         }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-        }
-
-        /* --- COVER SECTION --- */
-        #cover {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://the.gandilova.com/wp-content/uploads/2025/09/BG-ART-2-KRATON-1-1.webp');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: transform 1.5s ease-in-out, opacity 1s;
-        }
-
-        .cover-content { text-align: center; }
-        .cover-content h2 { font-family: 'Cinzel', serif; font-size: 1.5rem; letter-spacing: 5px; }
-        .cover-content h1 { font-family: 'Alex Brush', cursive; font-size: 4.5rem; margin: 20px 0; color: var(--primary); }
-        
-        .btn-open {
-            padding: 12px 25px;
-            background: var(--primary);
-            color: #000;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        /* --- MAIN CONTENT --- */
-        #main-content {
-            display: none; /* Muncul setelah klik buka */
-        }
-
-        section {
-            padding: 80px 20px;
-            text-align: center;
-            min-height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        h2.title { font-family: 'Alex Brush', cursive; font-size: 3.5rem; color: var(--primary); }
-        .cinzel { font-family: 'Cinzel', serif; font-weight: bold; }
-
-        /* --- COUPLE --- */
-        .couple-name { font-size: 2rem; font-weight: 600; margin: 10px 0; }
-        .parent-name { font-style: italic; opacity: 0.8; }
-
-        /* --- CARD STYLE --- */
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--primary);
-            padding: 30px;
-            border-radius: 15px;
-            margin: 20px auto;
-            max-width: 500px;
-        }
-
-        /* --- COUNTDOWN --- */
-        #countdown { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
-        .timer-box { background: var(--primary); color: #000; padding: 10px; border-radius: 8px; min-width: 60px; }
-        .timer-box span { display: block; font-size: 1.5rem; font-weight: bold; }
-
-        /* --- MUSIC PLAYER --- */
-        .music-control {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: var(--primary);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            animation: rotate 4s linear infinite;
-            animation-play-state: paused;
-        }
+        #main-content { display: none; }
+        .sticky-audio { position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+        .rotating { animation: rotate 4s linear infinite; }
         @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-        /* --- COPY REKENING --- */
-        .btn-copy {
-            background: #fff;
-            color: #000;
-            border: none;
-            padding: 5px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            font-size: 0.8rem;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            .cover-content h1 { font-size: 3rem; }
-            h2.title { font-size: 2.5rem; }
-        }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-    <div class="music-control" id="musicToggle" onclick="toggleMusic()">
-        <i class="fas fa-music"></i>
-    </div>
-    <audio id="mySong" loop>
-        <source src="https://sound.gandilova.com/Shane%20Filan%20-%20Beautiful%20In%20White.mp3" type="audio/mp3">
-    </audio>
-
-    <div id="cover">
-        <div class="cover-content animate__animated animate__zoomIn">
-            <h2 class="cinzel">THE WEDDING OF</h2>
-            <h1>Arif & Melda</h1>
-            <p>Kepada Bapak/Ibu/Saudara/i:</p>
-            <h3 id="guestName">Tamu Undangan</h3>
-            <br>
-            <button class="btn-open" onclick="openInvitation()">
-                <i class="far fa-envelope-open"></i> Buka Undangan
-            </button>
-        </div>
+    <div id="cover" class="fixed inset-0 z-[999] cover-bg flex flex-col items-center justify-center text-white text-center p-4">
+        <h3 class="text-xl mb-4">The Wedding of</h3>
+        <h1 class="font-script text-7xl mb-4">Arif & Melda</h1>
+        <p class="text-lg mb-8">Minggu, 11 Januari 2026</p>
+        <button onclick="bukaUndangan()" class="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition">
+            <i class="fa-regular fa-envelope-open mr-2"></i> Buka Undangan
+        </button>
     </div>
 
-    <div id="main-content">
-        
-        <section id="home">
-            <div class="card animate__animated animate__fadeInUp">
-                <h2 class="cinzel">Save the Date</h2>
-                <h2 class="couple-name">Arif & Melda</h2>
-                <p class="cinzel">Minggu, 11 Januari 2026</p>
-                <div id="countdown">
-                    <div class="timer-box"><span id="days">0</span>Hari</div>
-                    <div class="timer-box"><span id="hours">0</span>Jam</div>
-                    <div class="timer-box"><span id="minutes">0</span>Mnt</div>
-                    <div class="timer-box"><span id="seconds">0</span>Dtk</div>
+    <main id="main-content">
+        <section class="py-20 text-center px-6">
+            <h2 class="font-cinzel text-3xl mb-10 border-b-2 border-amber-200 inline-block">The Couple</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                <div>
+                    <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/cd14183c21c2c0d93c8c92464276ce00/2025/12/38781-1765978152104.webp" class="w-48 h-48 rounded-full border-4 border-amber-100 mx-auto shadow-xl">
+                    <h3 class="font-script text-4xl mt-4">Arif Rachman Hidayat</h3>
+                    <p class="text-sm text-gray-500">Putra dari Bpk Widodo & Ibu Tuminah</p>
+                </div>
+                <div class="font-script text-5xl text-amber-400">&</div>
+                <div>
+                    <img src="https://the.gandilova.com/wp-content/uploads/jet-form-builder/a7f8045994d28927ba281b444198ff14/2025/12/54-1766024790480.webp" class="w-48 h-48 rounded-full border-4 border-amber-100 mx-auto shadow-xl">
+                    <h3 class="font-script text-4xl mt-4">Melda Dwi Rahajeng</h3>
+                    <p class="text-sm text-gray-500">Putri dari Bpk H. Sumedi (Alm) & Ibu Hj. Ida (Almh)</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <p class="animate__animated animate__fadeIn">
-                "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu..." <br>
-                <strong>(QS. Ar-Rum: 21)</strong>
-            </p>
+        <section class="bg-amber-50 py-16 text-center">
+            <h2 class="font-cinzel text-2xl mb-4">Akad Nikah</h2>
+            <p class="font-bold text-3xl">11 Januari 2026</p>
+            <p>Pukul 11:00 WIB</p>
+            <p class="mt-4 px-10">Nirwana Estate Blok F No 9-10, Cibinong, Bogor</p>
+            <a href="https://maps.google.com" target="_blank" class="mt-6 inline-block bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition">
+                <i class="fa-solid fa-map-location-dot mr-2"></i> Lihat Peta
+            </a>
         </section>
 
-        <section id="couple">
-            <h2 class="title">The Couple</h2>
-            <div class="card">
-                <h3 class="couple-name">Arif Rachman Hidayat</h3>
-                <p class="parent-name">Putra dari <br> Bpk Widodo & Ibu Tuminah</p>
-                <h2 class="title">&</h2>
-                <h3 class="couple-name">Melda Dwi Rahajeng</h3>
-                <p class="parent-name">Putri dari <br> Bpk H. Sumedi Atmodidjojo (Alm) & Ibu Hj. Ida Faryani (Almh)</p>
-            </div>
-        </section>
+        <section class="py-20 px-6 max-w-2xl mx-auto">
+            <h2 class="font-cinzel text-3xl text-center mb-10">Doa & Ucapan</h2>
+            <form id="rsvpForm" class="bg-white p-8 shadow-2xl rounded-2xl border border-gray-100">
+                <div class="mb-4">
+                    <input type="text" name="nama" placeholder="Nama Anda" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-amber-200 outline-none" required>
+                </div>
+                <div class="mb-4">
+                    <select name="kehadiran" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-amber-200 outline-none" required>
+                        <option value="">Konfirmasi Kehadiran</option>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Tidak Hadir">Tidak Hadir</option>
+                        <option value="Ragu-ragu">Masih Ragu</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <textarea name="ucapan" placeholder="Tulis Ucapan Anda" class="w-full p-3 border rounded-lg h-32 focus:ring-2 focus:ring-amber-200 outline-none" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gray-800 text-white py-3 rounded-lg font-bold hover:bg-black transition">Kirim Ucapan</button>
+            </form>
 
-        <section id="event">
-            <h2 class="title">Akad Nikah</h2>
-            <div class="card">
-                <p>Minggu, 11 Januari 2026</p>
-                <p>Pukul 11:00 WIB</p>
-                <hr style="border: 0.5px solid var(--primary); width: 50%;">
-                <p><strong>Lokasi:</strong><br>
-                Rumah Mempelai Wanita<br>
-                Nirwana Estate Blok F No 9-10 RT 02 RW 11, Harapan jaya, Cibinong, Kab. Bogor</p>
-                <a href="https://maps.google.com" target="_blank" class="btn-open" style="display:inline-block; text-decoration: none; font-size: 0.8rem;">
-                    <i class="fas fa-map-marker-alt"></i> Lihat Lokasi
-                </a>
-            </div>
+            <div id="listUcapan" class="mt-12 space-y-4">
+                </div>
         </section>
+    </main>
 
-        <section id="gift">
-            <h2 class="title">Wedding Gift</h2>
-            <p>Bagi yang ingin memberikan tanda kasih:</p>
-            
-            <div class="card">
-                <p><strong>BCA</strong><br>7550312641<br>a.n Melda Dwi Rahajeng</p>
-                <button class="btn-copy" onclick="copyText('7550312641')">Salin Rekening</button>
-                
-                <p style="margin-top: 30px;"><strong>BRI</strong><br>389301009030507<br>a.n Arif Rachman Hidayat</p>
-                <button class="btn-copy" onclick="copyText('389301009030507')">Salin Rekening</button>
-            </div>
-        </section>
-
-        <section style="background: #111;">
-            <p>Terima kasih atas doa restu Anda.</p>
-            <h2 class="title">Arif & Melda</h2>
-            <p style="font-size: 0.7rem; opacity: 0.5;">Created for zepeto.club/amelda/</p>
-        </section>
-
+    <div class="sticky-audio">
+        <button onclick="toggleAudio()" id="audioBtn" class="bg-white shadow-lg w-12 h-12 rounded-full flex items-center justify-center text-amber-600 border-2 border-amber-200 rotating">
+            <i class="fa-solid fa-compact-disc text-2xl"></i>
+        </button>
     </div>
+    <audio id="bgMusic" loop>
+        <source src="https://sound.gandilova.com/Shane%20Filan%20-%20Beautiful%20In%20White.mp3" type="audio/mp3">
+    </audio>
 
     <script>
-        // Fungsi Ambil Nama Tamu dari URL (Contoh: ?to=Budi)
-        const urlParams = new URLSearchParams(window.location.search);
-        const to = urlParams.get('to');
-        if(to) document.getElementById('guestName').innerText = to;
+        const music = document.getElementById('bgMusic');
+        const audioBtn = document.getElementById('audioBtn');
 
-        // Fungsi Buka Undangan
-        function openInvitation() {
-            document.getElementById('cover').style.transform = 'translateY(-100%)';
-            document.getElementById('cover').style.opacity = '0';
-            document.getElementById('main-content').style.display = 'block';
-            
-            // Play Music
-            let song = document.getElementById('mySong');
-            song.play();
-            document.getElementById('musicToggle').style.animationPlayState = 'running';
+        function bukaUndangan() {
+            document.getElementById('cover').style.transform = "translateY(-100%)";
+            document.getElementById('cover').style.transition = "transform 1.5s ease-in-out";
+            document.getElementById('main-content').style.display = "block";
+            music.play();
+            setTimeout(() => {
+                document.getElementById('cover').remove();
+            }, 1500);
+            loadUcapan();
         }
 
-        // Fungsi Control Music
-        let isPlaying = true;
-        function toggleMusic() {
-            let song = document.getElementById('mySong');
-            let toggle = document.getElementById('musicToggle');
-            if(isPlaying) {
-                song.pause();
-                toggle.style.animationPlayState = 'paused';
+        function toggleAudio() {
+            if (music.paused) {
+                music.play();
+                audioBtn.classList.add('rotating');
             } else {
-                song.play();
-                toggle.style.animationPlayState = 'running';
+                music.pause();
+                audioBtn.classList.remove('rotating');
             }
-            isPlaying = !isPlaying;
         }
 
-        // Fungsi Salin Teks
-        function copyText(text) {
-            navigator.clipboard.writeText(text);
-            alert("Nomor rekening berhasil disalin!");
-        }
-
-        // Countdown Timer
-        const targetDate = new Date("Jan 11, 2026 11:00:00").getTime();
-        setInterval(function() {
-            let now = new Date().getTime();
-            let diff = targetDate - now;
+        // Handle RSVP Form
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
             
-            document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-            document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
-        }, 1000);
+            fetch('simpan_ucapan.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if(data.status === 'success') {
+                    alert('Ucapan berhasil dikirim!');
+                    this.reset();
+                    loadUcapan();
+                }
+            });
+        });
+
+        function loadUcapan() {
+            fetch('ambil_ucapan.php')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('listUcapan');
+                container.innerHTML = data.map(u => `
+                    <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-amber-300">
+                        <p class="font-bold text-gray-900">${u.nama} <span class="text-xs font-normal text-gray-400">(${u.kehadiran})</span></p>
+                        <p class="text-gray-600 text-sm italic mt-1">"${u.ucapan}"</p>
+                    </div>
+                `).join('');
+            });
+        }
     </script>
 </body>
 </html>
