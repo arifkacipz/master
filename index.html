@@ -25,18 +25,19 @@
             justify-content: center;
             padding: 1.5rem;
             overflow: hidden;
-            background-color: #000;
+            background-color: #000; /* Warna dasar jika gambar gagal load */
         }
 
         /* --- BACKGROUND LAYER --- */
-        .bg-layer {
+        #bg-layer {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1618335829737-2228733924bc?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             z-index: -2;
-            transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), filter 1.2s ease;
+            transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), filter 1.2s ease, background-image 1s ease-in-out;
+            transform: scale(1);
         }
 
         body::before {
@@ -89,14 +90,11 @@
 
         .hidden { display: none !important; }
 
-        /* --- SUCCESS STATE --- */
-        .success-bg .bg-layer { transform: scale(1.1); filter: sepia(0.3) brightness(0.8); }
-        .success-bg .container { background: rgba(245, 255, 245, 0.92); border-color: rgba(45, 90, 39, 0.2); }
+        /* --- STATES --- */
+        .success-bg #bg-layer { transform: scale(1.1); filter: sepia(0.3) brightness(0.8); }
         .success-text h2 { font-family: 'Georgia', serif; font-style: italic; color: #2d5a27; font-size: 2.2rem; }
 
-        /* --- FAIL/EMPTY STATE --- */
-        .fail-bg .bg-layer { transform: scale(1.3) rotate(3deg); filter: grayscale(1) contrast(1.2) brightness(0.2); }
-        .fail-bg body::before { background: radial-gradient(circle, rgba(60,0,0,0.4) 0%, rgba(0,0,0,0.95) 100%); }
+        .fail-bg #bg-layer { transform: scale(1.3) rotate(3deg); filter: grayscale(1) brightness(0.2); }
         .fail-bg .container { background: var(--glass-dark); color: #ff3333; border-color: #700; transform: perspective(1000px) rotateX(4deg); }
         .fail-text h2 { font-family: 'Courier New', monospace; font-size: 2.4rem; animation: glitch 0.3s infinite; }
 
@@ -109,7 +107,7 @@
 </head>
 <body id="body-tag">
 
-<div class="bg-layer" id="bg-layer"></div>
+<div id="bg-layer"></div>
 
 <div class="container" id="main-card">
     <div id="upload-section" class="state-content">
@@ -117,7 +115,7 @@
         <h2>Simpan ke Cloud</h2>
         <p class="subtitle">Hanya file .txt (Maks 50KB)</p>
         <input type="file" id="file-input" accept=".txt, text/plain">
-        <div id="loader" class="hidden" style="margin-top: 15px; font-style: italic; color: var(--google-blue);">Mencari celah dimensi...</div>
+        <div id="loader" class="hidden" style="margin-top: 15px; font-style: italic; color: var(--google-blue);">Mentransmisi data...</div>
         <div style="display: flex; justify-content: flex-end; margin-top: 2rem;">
             <button id="upload-btn" onclick="uploadFile()">Berikutnya</button>
         </div>
@@ -140,50 +138,45 @@
     const CLOUD_NAME = "dctzndhgm";
     const UPLOAD_PRESET = "preset_txt"; 
 
+    // DAFTAR BACKGROUND ANIME MANUAl (Pasti Tampil & Random)
+    const animeBackgrounds = [
+        "https://images.alphacoders.com/605/605359.jpg",
+        "https://images.alphacoders.com/133/1331393.png",
+        "https://images.alphacoders.com/712/712435.jpg",
+        "https://images.alphacoders.com/132/1322144.jpeg",
+        "https://images.alphacoders.com/134/1345437.png",
+        "https://images2.alphacoders.com/606/606240.jpg",
+        "https://images2.alphacoders.com/742/742320.png"
+    ];
+
+    function setRandomBackground() {
+        const bgLayer = document.getElementById('bg-layer');
+        const randomBg = animeBackgrounds[Math.floor(Math.random() * animeBackgrounds.length)];
+        bgLayer.style.backgroundImage = `url('${randomBg}')`;
+    }
+
+    // Jalankan background random saat pertama kali load
+    setRandomBackground();
+
     const successMessages = [
         "Elegi tersimpan dalam keabadian digital.", "File teks Anda telah menemukan rumah di antara awan.",
-        "Gema kata-katamu kini beristirahat di cakrawala.", "Karya Anda telah melintasi batas dimensi ini.",
-        "Sebuah fragmen pikiran telah berhasil diabadikan.", "Bintang-bintang digital menyambut pesan Anda.",
-        "Keheningan menyelimuti kata yang kini tersimpan.", "Angin malam membawa file Anda ke tempat yang aman.",
-        "Satu lembar lagi tersimpan dalam perpustakaan tanpa batas.", "Cahaya redup menuntun file Anda menuju penyimpanan.",
-        "Pesan Anda kini menjadi bagian dari konstelasi data.", "Terabadikan dalam sunyi, tersimpan dalam memori.",
-        "Jejak digital Anda telah terukir di langit malam.", "Keajaiban kecil terjadi; file Anda telah sampai.",
-        "Sesuatu yang indah telah berhasil diunggah.", "Di bawah langit yang tenang, file Anda beristirahat.",
-        "Kata-katamu kini menjadi abadi di dunia yang fana ini.", "Satu rahasia kecil telah tersimpan di tempat terjauh.",
-        "Terima kasih telah menitipkan potongan memori ini.", "File Anda telah mendarat di pelabuhan ketenangan."
+        "Gema kata-katamu kini beristirahat di cakrawala.", "Karya Anda telah melintasi batas dimensi ini."
     ];
 
     const failMessages = [
-        "KATASTROFE! DUNIA MENOLAK KEHADIRAN DATA INI!", "KEGELAPAN TELAH MENELAN FILE ANDA BULAT-BULAT!",
-        "ANOMALI TERDETEKSI! SESUATU YANG BURUK TERJADI!", "JANGAN COBA LAGI, ATAU KAU AKAN MENYESAL!",
-        "DUNIA DIGITAL BERTERIAK; FILE ANDA TERLALU TERKUTUK!", "HUBUNGAN GAIB TERPUTUS OLEH ENTITAS TAK DIKENAL!",
-        "ERROR_FATAL: JIWA DARI FILE INI TELAH HILANG!", "MAKSIMAL 50KB! JANGAN SERAKAH ATAU KAU AKAN HANCUR!",
-        "SISTEM MENANGIS DARAH; UPLOAD GAGAL TOTAL!", "KONEKSI TERPUTUS KE DIMENSI KEGELAPAN!",
-        "KAU TELAH MEMBANGUNKAN SESUATU YANG SEHARUSNYA TIDUR!", "HANYA FILE .TXT! JANGAN BERMAIN DENGAN API!",
-        "FILE ANDA TELAH DIKORBANKAN PADA SERVER YANG LAPAR!", "TERJADI KERUSAKAN PADA RUANG DAN WAKTU!",
-        "KAU TIDAK MEMILIKI IZIN UNTUK MENYENTUH GERBANG INI!", "SERVER MENOLAK; ADA BAU KEMATIAN PADA DATA ANDA!",
-        "HENTIKAN SEKARANG SEBELUM SEMUANYA TERLAMBAT!", "KODE_MERAH! FILE ANDA TERINFEKSI OLEH KEHAMPAAN!",
-        "GAGAL! KAU HANYA MEMBUANG WAKTU DI SINI!", "KATASTROFE DIGITAL: SEMUA DATA TELAH TERBAKAR!"
+        "KATASTROFE! DUNIA MENOLAK DATA INI!", "KEGELAPAN TELAH MENELAN FILE ANDA!",
+        "ANOMALI TERDETEKSI! SESUATU YANG BURUK TERJADI!"
     ];
 
     const emptyMessages = [
         "KAU MENCOBA MENGIRIM KEHAMPAAN?", "RUANG KOSONG INI TIDAK BISA DIABADIKAN.",
-        "PILIH SESUATU SEBELUM GERBANG DITUTUP!", "TIADA KATA, TIADA MEMORI. MANA FILENYA?",
-        "JANGAN MEMPERMAINKAN WAKTU. PILIH FILE .TXT!", "KEHAMPAANMU TERDETEKSI OLEH RADAR KAMI.",
-        "DUNIA INI BUTUH DATA, BUKAN TOMBOL KOSONG.", "KAU PIKIR INI PERMAINAN? UNGGAH SESUATU!",
-        "TIDAK ADA YANG BISA DISIMPAN DARI KETIADAAN.", "ANGIN BERHEMBUS LEWAT FORMULIR YANG KOSONG INI.",
-        "TANGANMU BERGETAR? KAU BELUM MEMILIH FILE.", "SISTEM MENOLAK UNTUK MEMPROSES KESUNYIAN.",
-        "ISI CELAH INI DENGAN KATA-KATA, BUKAN KEHAMPAAN.", "MATA KAMI MELIHAT FORMULIR YANG BELUM TERISI.",
-        "PILIH FILE ATAU KEMBALI KE KEGELAPAN!", "APA KAU TERSESAT? PILIH FILE .TXT TERLEBIH DAHULU.",
-        "KEHENINGANMU MEMEKAKKAN TELINGA SERVER KAMI.", "DATA TIDAK DITEMUKAN DALAM NIATMU YANG KOSONG.",
-        "JANGAN BIARKAN AWAN INI TETAP KOSONG.", "AKSI DITOLAK: KEHAMPAAN TOTAL TERDETEKSI."
+        "PILIH SESUATU SEBELUM GERBANG DITUTUP!"
     ];
 
     async function uploadFile() {
         const fileInput = document.getElementById('file-input');
         const body = document.getElementById('body-tag');
 
-        // VALIDASI FILE KOSONG (Artistis)
         if (fileInput.files.length === 0) {
             const randomEmpty = emptyMessages[Math.floor(Math.random() * emptyMessages.length)];
             showError("VOID_ERROR", randomEmpty, "COBA LAGI");
@@ -191,15 +184,13 @@
         }
 
         const file = fileInput.files[0];
-        const fileName = file.name.toLowerCase();
-
-        if (!fileName.endsWith('.txt')) {
-            showError("FORMAT_DENIED", "HANYA FILE .TXT YANG DIZINKAN MELEWATI GERBANG INI!", "PERBAIKI");
+        if (!file.name.toLowerCase().endsWith('.txt')) {
+            showError("FORMAT_DENIED", "HANYA FILE .TXT YANG DIIZINKAN!", "PERBAIKI");
             return;
         }
 
         if (file.size > 50 * 1024) {
-            showError("WEIGHT_ERROR", "DATA TERLALU RAKSASA! MAKSIMAL ADALAH 50KB!", "KECILKAN");
+            showError("WEIGHT_ERROR", "MAKSIMAL ADALAH 50KB!", "KECILKAN");
             return;
         }
 
@@ -230,13 +221,10 @@
     }
 
     function showError(title, msg, btnText) {
-        // Ambil pesan random horor jika ini bukan pesan kosong (untuk variasi tambahan)
         const randomHorror = failMessages[Math.floor(Math.random() * failMessages.length)];
-        
         document.getElementById('fail-title').innerText = title;
         document.getElementById('error-desc').innerHTML = `<strong>${msg}</strong><br><br>${randomHorror}`;
         document.getElementById('fail-btn').innerText = btnText;
-        
         showState('fail-section');
         document.getElementById('body-tag').classList.add('fail-bg');
     }
@@ -245,14 +233,7 @@
         document.getElementById('upload-section').classList.add('hidden');
         document.getElementById('success-section').classList.add('hidden');
         document.getElementById('fail-section').classList.add('hidden');
-        
-        const target = document.getElementById(id);
-        target.classList.remove('hidden');
-        
-        // Reset animasi
-        target.style.animation = 'none';
-        target.offsetHeight; 
-        target.style.animation = null;
+        document.getElementById(id).classList.remove('hidden');
     }
 
     function resetPage() {
@@ -261,6 +242,7 @@
         document.getElementById('upload-btn').disabled = false;
         document.getElementById('loader').classList.add('hidden');
         document.getElementById('file-input').value = "";
+        setRandomBackground(); // Ganti background lagi saat reset agar terasa dinamis
     }
 </script>
 </body>
