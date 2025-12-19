@@ -12,7 +12,7 @@
             --google-blue: #1a73e8;
             --google-border: #dadce0;
             --glass-white: rgba(255, 255, 255, 0.85);
-            --glass-dark: rgba(20, 0, 0, 0.9);
+            --glass-dark: rgba(10, 0, 0, 0.95);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -25,7 +25,6 @@
             justify-content: center;
             padding: 1.5rem;
             overflow: hidden;
-            position: relative;
             background-color: #000;
         }
 
@@ -33,14 +32,13 @@
         .bg-layer {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1618335829737-2228733924bc?q=80&w=2070&auto=format&fit=crop'); /* Placeholder anime dark vibe */
+            background-image: url('https://source.unsplash.com/featured/1600x900?anime,night,silent,scenic,dark');
             background-size: cover;
             background-position: center;
             z-index: -2;
-            transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), filter 1s ease;
+            transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), filter 1.2s ease;
         }
 
-        /* OVERLAY GRADIENT */
         body::before {
             content: '';
             position: fixed;
@@ -50,84 +48,72 @@
             transition: background 1s ease;
         }
 
-        /* --- CONTAINER UTAMA (GLASSMORPHISM) --- */
+        /* --- CONTAINER GLASSMORPHISM --- */
         .container {
             width: 100%;
             max-width: 28rem;
             padding: 2.5rem;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 16px;
+            border-radius: 20px;
             text-align: center;
             background: var(--glass-white);
             backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
             z-index: 10;
         }
 
-        /* --- ANIMASI TRANSISI ANTAR STATE --- */
+        /* --- ANIMASI TRANSISI --- */
         .state-content {
-            animation: slideUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation: slideIn 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
         }
 
-        @keyframes slideUp {
+        @keyframes slideIn {
             from { opacity: 0; transform: translateY(30px) scale(0.95); filter: blur(10px); }
             to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
         }
 
-        /* --- LOGO & TYPOGRAPHY --- */
         .logo-img { width: 56px; margin-bottom: 1.5rem; transition: transform 0.5s ease; }
-        .logo-img:hover { transform: rotate(10deg) scale(1.1); }
-
-        h2 { font-size: 1.6rem; font-weight: 500; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+        h2 { font-size: 1.6rem; font-weight: 500; margin-bottom: 0.5rem; }
         .subtitle { color: #5f6368; margin-bottom: 2rem; font-size: 0.95rem; }
         
-        /* --- INPUT & BUTTON --- */
-        .input-wrapper { position: relative; margin-bottom: 1.5rem; }
         input[type="file"] { 
-            width: 100%; padding: 12px; 
-            border: 2px solid var(--google-border); border-radius: 8px;
-            background: rgba(255,255,255,0.5); transition: all 0.3s ease;
+            width: 100%; padding: 14px; 
+            border: 2px dashed var(--google-border); border-radius: 8px;
+            background: rgba(255,255,255,0.4); cursor: pointer;
         }
-        input[type="file"]:focus { border-color: var(--google-blue); outline: none; }
         
         button {
             background: var(--google-blue); color: white; border: none;
             padding: 0.8rem 2rem; border-radius: 8px; font-weight: 600;
-            cursor: pointer; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 4px 6px rgba(26, 115, 232, 0.3);
+            cursor: pointer; transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        button:hover { transform: translateY(-3px); box-shadow: 0 10px 15px rgba(26, 115, 232, 0.4); }
-        button:active { transform: translateY(0); }
+        button:hover { transform: translateY(-2px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
+        button:disabled { background: #ccc; cursor: not-allowed; }
 
-        /* --- STATE KHUSUS --- */
+        /* --- STATE LOGIC --- */
         .hidden { display: none !important; }
 
-        /* SUKSES STATE */
+        /* SUCCESS STATE */
         .success-bg .bg-layer { transform: scale(1.1); filter: sepia(0.3) brightness(0.8); }
-        .success-bg .container { background: rgba(245, 255, 245, 0.9); border-color: rgba(45, 90, 39, 0.3); }
+        .success-bg .container { background: rgba(245, 255, 245, 0.92); border-color: rgba(45, 90, 39, 0.3); }
         .success-text h2 { font-family: 'Georgia', serif; font-style: italic; color: #2d5a27; font-size: 2.2rem; }
 
         /* FAIL STATE */
-        .fail-bg .bg-layer { transform: scale(1.3) rotate(2deg); filter: grayscale(1) contrast(1.5) brightness(0.4); }
-        .fail-bg body::before { background: radial-gradient(circle, rgba(40,0,0,0.4) 0%, rgba(0,0,0,0.9) 100%); }
-        .fail-bg .container { background: var(--glass-dark); color: #ff4444; border-color: #ff0000; transform: perspective(1000px) rotateX(10deg); }
-        
-        .fail-text h2 { 
-            font-family: 'Courier New', monospace; font-size: 2.3rem; font-weight: 900;
-            animation: glitch 0.2s infinite; text-shadow: 3px 0 #fff;
-        }
-
-        /* --- FOOTER/LOADER --- */
-        #loader { font-style: italic; animation: pulse 1.5s infinite; margin-top: 10px; }
+        .fail-bg .bg-layer { transform: scale(1.25) rotate(2deg); filter: grayscale(1) contrast(1.5) brightness(0.3); }
+        .fail-bg body::before { background: radial-gradient(circle, rgba(50,0,0,0.5) 0%, rgba(0,0,0,0.9) 100%); }
+        .fail-bg .container { background: var(--glass-dark); color: #ff3333; border-color: #ff0000; }
+        .fail-text h2 { font-family: 'Courier New', monospace; font-size: 2.3rem; animation: glitch 0.2s infinite; }
 
         @keyframes glitch {
-            0% { transform: translate(2px, 0); }
-            50% { transform: translate(-2px, -1px); }
-            100% { transform: translate(0, 1px); }
+            0% { transform: translate(2px,0); text-shadow: 2px 0 red; }
+            50% { transform: translate(-2px,0); text-shadow: -2px 0 blue; }
+            100% { transform: translate(0); }
         }
-        @keyframes pulse { 50% { opacity: 0.5; } }
 
+        @keyframes pulse { 50% { opacity: 0.5; } }
     </style>
 </head>
 <body id="body-tag">
@@ -138,28 +124,26 @@
     <div id="upload-section" class="state-content">
         <img src="ico.png" alt="Logo" class="logo-img">
         <h2>Simpan ke Cloud</h2>
-        <p class="subtitle">Hanya file .txt yang diizinkan untuk diabadikan</p>
+        <p class="subtitle">Hanya file .txt yang diizinkan (Maks 50KB)</p>
         
-        <div class="input-wrapper">
-            <input type="file" id="file-input" accept=".txt, text/plain">
-        </div>
+        <input type="file" id="file-input" accept=".txt, text/plain">
         
-        <div id="loader" class="hidden">Menyaring data dari dimensi lain...</div>
+        <div id="loader" class="hidden" style="margin-top: 15px; font-style: italic; animation: pulse 1s infinite; color: var(--google-blue);">Mentransmisi data...</div>
         
-        <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
+        <div style="display: flex; justify-content: flex-end; margin-top: 2rem;">
             <button id="upload-btn" onclick="uploadFile()">Berikutnya</button>
         </div>
     </div>
 
     <div id="success-section" class="state-content success-text hidden">
         <h2>Elegi Tersimpan</h2>
-        <p style="margin: 1.5rem 0; line-height: 1.6; color: #4a6741;">File teks Anda telah melintasi batas cakrawala digital dan kini beristirahat dengan tenang.</p>
+        <p id="success-msg" style="margin: 2rem 0; line-height: 1.6; color: #4a6741;"></p>
         <button style="background: #556b2f; width: 100%;" onclick="resetPage()">Unggah Karya Lain</button>
     </div>
 
     <div id="fail-section" class="state-content fail-text hidden">
         <h2>ERROR_CRITICAL</h2>
-        <p id="error-desc" style="background: rgba(255,0,0,0.1); padding: 1rem; border-radius: 4px; margin: 1.5rem 0; font-family: monospace;"></p>
+        <p id="error-desc" style="background: rgba(255,0,0,0.1); padding: 1.2rem; border-radius: 4px; margin: 1.5rem 0; font-family: monospace; font-size: 0.9rem; line-height: 1.4;"></p>
         <button style="background: #600; width: 100%; border: 1px solid red;" onclick="resetPage()">KEMBALI KE GERBANG</button>
     </div>
 </div>
@@ -167,6 +151,32 @@
 <script>
     const CLOUD_NAME = "dctzndhgm";
     const UPLOAD_PRESET = "preset_txt"; 
+
+    const successMessages = [
+        "Elegi tersimpan dalam keabadian digital.", "File teks Anda telah menemukan rumah di antara awan.",
+        "Gema kata-katamu kini beristirahat di cakrawala.", "Karya Anda telah melintasi batas dimensi ini.",
+        "Sebuah fragmen pikiran telah berhasil diabadikan.", "Bintang-bintang digital menyambut pesan Anda.",
+        "Keheningan menyelimuti kata yang kini tersimpan.", "Angin malam membawa file Anda ke tempat aman.",
+        "Satu lembar lagi dalam perpustakaan tanpa batas.", "Cahaya redup menuntun file Anda menuju penyimpanan.",
+        "Pesan Anda kini menjadi bagian dari konstelasi data.", "Terabadikan dalam sunyi, tersimpan dalam memori.",
+        "Jejak digital Anda telah terukir di langit malam.", "Keajaiban kecil terjadi; file Anda telah sampai.",
+        "Sesuatu yang indah telah berhasil diunggah.", "Di bawah langit yang tenang, file Anda beristirahat.",
+        "Kata-katamu kini abadi di dunia yang fana ini.", "Satu rahasia kecil tersimpan di tempat terjauh.",
+        "Terima kasih telah menitipkan potongan memori ini.", "File Anda telah mendarat di pelabuhan ketenangan."
+    ];
+
+    const failMessages = [
+        "KATASTROFE! DUNIA MENOLAK KEHADIRAN DATA INI!", "KEGELAPAN TELAH MENELAN FILE ANDA!",
+        "ANOMALI TERDETEKSI! SESUATU YANG BURUK TERJADI!", "JANGAN COBA LAGI, ATAU KAU AKAN MENYESAL!",
+        "DUNIA DIGITAL BERTERIAK; FILE ANDA TERKUTUK!", "HUBUNGAN GAIB TERPUTUS OLEH ENTITAS ASING!",
+        "ERROR_FATAL: JIWA DARI FILE INI TELAH HILANG!", "MAKSIMAL 50KB! JANGAN SERAKAH!",
+        "SISTEM MENANGIS DARAH; UPLOAD GAGAL TOTAL!", "KONEKSI TERPUTUS KE DIMENSI KEGELAPAN!",
+        "KAU MEMBANGUNKAN SESUATU YANG SEHARUSNYA TIDUR!", "HANYA FILE .TXT! JANGAN BERMAIN API!",
+        "FILE ANDA DIKORBANKAN PADA SERVER YANG LAPAR!", "TERJADI KERUSAKAN PADA RUANG DAN WAKTU!",
+        "KAU TIDAK MEMILIKI IZIN MENYENTUH GERBANG INI!", "SERVER MENOLAK; ADA BAU MAUT PADA DATA ANDA!",
+        "HENTIKAN SEKARANG SEBELUM TERLAMBAT!", "KODE_MERAH! FILE TERINFEKSI KEHAMPAAN!",
+        "GAGAL! KAU HANYA MEMBUANG WAKTU DI SINI!", "KATASTROFE DIGITAL: SEMUA DATA TERBAKAR!"
+    ];
 
     async function uploadFile() {
         const fileInput = document.getElementById('file-input');
@@ -181,20 +191,18 @@
 
         const file = fileInput.files[0];
         const fileName = file.name.toLowerCase();
-        
-        // Validasi Ekstensi
+
+        // VALIDASI GANDA
         if (!fileName.endsWith('.txt')) {
             showError("DETEKSI PENYUSUP! EKSTENSI BUKAN .TXT");
             return;
         }
 
-        // Validasi Ukuran 50KB
         if (file.size > 50 * 1024) {
             showError("DATA TERLALU RAKSASA! MAKSIMAL 50KB!");
             return;
         }
 
-        // Start Loading
         uploadBtn.disabled = true;
         loader.classList.remove('hidden');
 
@@ -211,7 +219,9 @@
             const data = await response.json();
 
             if (data.secure_url) {
-                transitionState('success-section');
+                const msg = successMessages[Math.floor(Math.random() * successMessages.length)];
+                document.getElementById('success-msg').innerText = msg;
+                showState('success-section');
                 body.classList.add('success-bg');
             } else {
                 showError(data.error.message.toUpperCase());
@@ -221,39 +231,27 @@
         }
     }
 
-    function transitionState(targetId) {
-        // Sembunyikan semua section
+    function showError(msg) {
+        const randomFail = failMessages[Math.floor(Math.random() * failMessages.length)];
+        document.getElementById('error-desc').innerHTML = `<strong>${msg}</strong><br><br>${randomFail}`;
+        showState('fail-section');
+        document.getElementById('body-tag').classList.add('fail-bg');
+    }
+
+    function showState(id) {
         document.getElementById('upload-section').classList.add('hidden');
         document.getElementById('success-section').classList.add('hidden');
         document.getElementById('fail-section').classList.add('hidden');
-
-        // Tampilkan target dengan animasi
-        const target = document.getElementById(targetId);
-        target.classList.remove('hidden');
-        
-        // Trigger ulang animasi CSS
-        target.style.animation = 'none';
-        target.offsetHeight; /* trigger reflow */
-        target.style.animation = null;
-    }
-
-    function showError(msg) {
-        const body = document.getElementById('body-tag');
-        document.getElementById('error-desc').innerText = msg;
-        transitionState('fail-section');
-        body.classList.add('fail-bg');
+        document.getElementById(id).classList.remove('hidden');
     }
 
     function resetPage() {
         const body = document.getElementById('body-tag');
-        const fileInput = document.getElementById('file-input');
-        
         body.classList.remove('success-bg', 'fail-bg');
-        transitionState('upload-section');
-        
+        showState('upload-section');
         document.getElementById('upload-btn').disabled = false;
         document.getElementById('loader').classList.add('hidden');
-        fileInput.value = "";
+        document.getElementById('file-input').value = "";
     }
 </script>
 
