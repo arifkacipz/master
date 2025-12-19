@@ -2,56 +2,192 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Upload TXT ke Cloudinary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File - Google Style</title>
+    <style>
+        :root {
+            --google-blue: #1a73e8;
+            --google-blue-hover: #1765cc;
+            --google-border: #dadce0;
+            --text-dark: #202124;
+            --text-gray: #5f6368;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 28rem;
+            padding: 2.5rem;
+            border: 1px solid var(--google-border);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Styling Logo Icon */
+        .logo-img {
+            width: 48px; /* Ukuran standar ikon Google */
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+
+        .upload-area {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--google-border);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        /* Tombol Utama */
+        button {
+            background-color: var(--google-blue);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(60,64,67,0.3);
+            transition: background 0.2s;
+        }
+
+        button:hover { background-color: var(--google-blue-hover); }
+        button:disabled { background-color: #e8eaed; color: #9aa0a6; cursor: not-allowed; box-shadow: none; }
+
+        /* Tombol Salin */
+        .copy-btn {
+            background: none;
+            color: var(--google-blue);
+            box-shadow: none;
+            padding: 0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .copy-btn:hover { background: none; text-decoration: underline; }
+
+        #status {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            min-height: 1.2rem;
+        }
+
+        .success { color: #188038; }
+        .error { color: #d93025; }
+    </style>
 </head>
 <body>
 
-    <h2>Upload File .txt ke Cloudinary</h2>
-    <input type="file" id="file-input" accept=".txt">
-    <button onclick="uploadFile()">Unggah Sekarang</button>
+<div class="container">
+    <img src="ico.png" alt="Logo" class="logo-img">
     
-    <p id="status"></p>
+    <h2>Simpan ke Cloud</h2>
+    <p class="subtitle">Upload file .txt Anda dengan aman</p>
+    
+    <div class="upload-area">
+        <input type="file" id="file-input" accept=".txt">
+        <div id="status"></div>
+    </div>
 
-    <script>
-        async function uploadFile() {
-            const fileInput = document.getElementById('file-input');
-            const status = document.getElementById('status');
+    <div class="actions">
+        <div id="copy-area"></div> <button id="upload-btn" onclick="uploadFile()">Berikutnya</button>
+    </div>
+</div>
 
-            if (fileInput.files.length === 0) {
-                alert("Pilih file .txt dulu!");
-                return;
-            }
+<script>
+    async function uploadFile() {
+        const CLOUD_NAME = "dctzndhgm"; 
+        const UPLOAD_PRESET = "preset_txt";  
+        const MAX_SIZE_KB = 50;
+        
+        const fileInput = document.getElementById('file-input');
+        const status = document.getElementById('status');
+        const btn = document.getElementById('upload-btn');
+        const copyArea = document.getElementById('copy-area');
 
-            const file = fileInput.files[0];
-            const formData = new FormData();
-
-            // GANTI DENGAN DATA ANDA
-            const cloudName = "dctzndhgm"; 
-            const uploadPreset = "preset_txt"; 
-
-            formData.append('file', file);
-            formData.append('upload_preset', uploadPreset);
-
-            status.innerText = "Sedang mengunggah...";
-
-            try {
-                const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/raw/upload`, {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const data = await response.json();
-
-                if (data.secure_url) {
-                    status.innerHTML = `Berhasil! <br> Link: <a href="${data.secure_url}" target="_blank">Lihat File .txt</a>`;
-                } else {
-                    status.innerText = "Gagal mengunggah: " + data.error.message;
-                }
-            } catch (error) {
-                status.innerText = "Terjadi kesalahan koneksi.";
-                console.error(error);
-            }
+        if (fileInput.files.length === 0) {
+            status.innerHTML = `<span class="error">Pilih file terlebih dahulu</span>`;
+            return;
         }
-    </script>
+
+        const file = fileInput.files[0];
+        if (file.size / 1024 > MAX_SIZE_KB) {
+            status.innerHTML = `<span class="error">File terlalu besar (Maks ${MAX_SIZE_KB}KB)</span>`;
+            return;
+        }
+
+        btn.disabled = true;
+        status.innerHTML = "Memproses...";
+        copyArea.innerHTML = "";
+
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('upload_preset', UPLOAD_PRESET);
+
+        try {
+            const response = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/raw/upload`, {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.secure_url) {
+                status.innerHTML = `<span class="success">Berhasil disimpan</span>`;
+                // Menambahkan tombol salin link
+                copyArea.innerHTML = `<button class="copy-btn" onclick="copyToClipboard('${data.secure_url}')">Salin Link</button>`;
+            } else {
+                status.innerHTML = `<span class="error">Gagal: ${data.error.message}</span>`;
+            }
+        } catch (error) {
+            status.innerHTML = `<span class="error">Kesalahan jaringan</span>`;
+        } finally {
+            btn.disabled = false;
+        }
+    }
+
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert("Link berhasil disalin!");
+        });
+    }
+</script>
+
 </body>
 </html>
