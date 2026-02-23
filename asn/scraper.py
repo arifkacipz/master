@@ -24,13 +24,13 @@ def get_images_from_chapter(url):
     try:
         res = requests.get(url, headers=HEADERS, timeout=30)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector ManhuaPlus biasanya berada di .reading-content atau #readerarea
-        imgs = soup.select('.reading-content img, #readerarea img')
+        # ManhuaPlus menggunakan .reading-content img
+        imgs = soup.select('.reading-content img, .page-break img, #readerarea img')
         list_gambar = []
         for i in imgs:
             src = i.get('src') or i.get('data-src') or i.get('data-lazy-src')
             if src and "http" in src:
-                if any(x in src.lower() for x in ["logo", "banner", "discord", "donation"]): continue
+                if any(x in src.lower() for x in ["logo", "banner", "discord", "donation", "loading"]): continue
                 list_gambar.append(src.strip())
         return list_gambar
     except:
@@ -41,43 +41,48 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
     try:
         thumb_cloud = ""
         if thumb_url and "http" in thumb_url:
+            print(f"Mengunggah sampul: {slug}...")
             up = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs", overwrite=True)
             thumb_cloud = up['secure_url']
         
         res = requests.get(link, headers=HEADERS, timeout=25)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector chapter list ManhuaPlus (Madara Theme)
-        raw_ch = soup.select('.wp-manga-chapter a')
         
+        # Selector ManhuaPlus: .wp-manga-chapter
+        raw_ch = soup.select('.wp-manga-chapter')
         if not raw_ch:
-            # Cadangan selector jika struktur berbeda
-            raw_ch = soup.select('#chapterlist ul li a')
+            raw_ch = soup.select('#chapterlist ul li')
 
-        if not raw_ch: return None
+        if not raw_ch:
+            print(f"DEBUG: Chapter tidak ditemukan untuk {judul}")
+            return None
+
         if limit_ch: raw_ch = raw_ch[:limit_ch]
         
         ch_data = []
-        for a_tag in raw_ch:
+        for c in raw_ch:
+            a_tag = c.select_one('a')
+            if not a_tag: continue
             ch_url = a_tag['href']
             ch_nama = a_tag.text.strip()
             
-            print(f"  -> Scraping {ch_nama}")
+            print(f"Scraping: {ch_nama}...")
             images = get_images_from_chapter(ch_url)
             if images:
                 ch_data.append({"nama": ch_nama, "images": images})
-            time.sleep(1)
+            time.sleep(1.2)
 
-        # INDEX 0 = CHAPTER TERLAMA
-        ch_data.reverse()
+        if not ch_data: return None
+        ch_data.reverse() # Index 0 = Paling Lama
 
         os.makedirs('db', exist_ok=True)
         with open(f'db/{slug}.json', 'w', encoding='utf-8') as f:
             json.dump({"judul": judul, "thumb": thumb_cloud, "chapters": ch_data}, f, indent=4)
         
-        print(f"BERHASIL: db/{slug}.json tersimpan.")
+        print(f"BERHASIL: db/{slug}.json tercipta.")
         return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
     except Exception as e:
-        print(f"ERROR {judul}: {e}")
+        print(f"ERROR: {judul} gagal - {e}")
         return None
 
 def main():
@@ -88,17 +93,22 @@ def main():
         print("Menarik katalog terbaru PetoMic dari ManhuaPlus...")
         res = requests.get("https://manhuaplus.org/all-manga/page/1/", headers=HEADERS)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector untuk item manga di daftar
-        items = soup.select('.page-item-detail, .listupd .bs')[:10]
+        
+        # Radar Katalog: ManhuaPlus sering pakai .page-item-detail
+        items = soup.select('.page-item-detail, .listupd .bs, .manga')[:10]
         
         if not items:
-            print("GAGAL: Tidak menemukan daftar komik.")
+            print("GAGAL: Radar tidak menemukan komik. Mencoba selector alternatif...")
+            items = soup.find_all('div', class_='page-item-detail') or soup.find_all('div', class_='bs')
+        
+        if not items:
+            print("GAGAL TOTAL: Website sumber mungkin sedang memblokir atau struktur berubah.")
             return
 
         list_json = []
         for item in items:
             try:
-                judul_tag = item.select_one('.post-title h3 a, .tt, h3 a')
+                judul_tag = item.select_one('.post-title h3 a, h4 a, .tt a, h3 a')
                 if not judul_tag: continue
                 
                 judul = judul_tag.text.strip()
