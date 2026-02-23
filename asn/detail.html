@@ -33,5 +33,15 @@
         }
         load();
     </script>
+<div style="margin-top: 30px; padding: 15px; background: #334155; border-radius: 8px; font-size: 13px;">
+    <strong>Tips:</strong> Jika chapter tidak lengkap, buka tab <strong>Actions</strong> di GitHub, pilih <strong>Update Comic Data</strong>, klik <strong>Run Workflow</strong>, dan masukkan slug: <code id="slug-hint" style="color:#38bdf8"></code>
+</div>
+
+<script>
+    const slug = new URLSearchParams(window.location.search).get('slug');
+    document.getElementById('slug-hint').innerText = slug;
+    // ... sisa kode load data detail ...
+</script>
+
 </body>
 </html>
