@@ -22,45 +22,58 @@ HEADERS = {
 
 def get_images(chapter_url):
     try:
-        # 1. Ambil ID dari URL
+        # 1. Identifikasi Chapter ID dari URL
         chapter_id = chapter_url.strip('/').split('/')[-1]
+        
         if not chapter_id.isdigit():
             res = requests.get(chapter_url, headers=HEADERS, timeout=20)
             match = re.search(r'CHAPTER_ID\s*=\s*(\d+)', res.text)
             if match: chapter_id = match.group(1)
             else: return []
 
-        # 2. Request ke AJAX Server
+        # 2. Ambil data gambar via AJAX POST
         ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
         ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
         
         if ajax_res.status_code == 200:
             data = ajax_res.json()
             if data.get('status') and 'html' in data:
-                img_soup = BeautifulSoup(data['html'], 'html.parser')
-                imgs = img_soup.select('img')
+                html_content = data['html']
+                img_soup = BeautifulSoup(html_content, 'html.parser')
+                imgs = img_soup.find_all('img')
                 
                 list_gambar = []
                 for i in imgs:
-                    # PRIORITAS: Ambil data-src, lalu src jika data-src tidak ada
-                    # FILTER: Abaikan jika ada kata 'loading.gif'
-                    src = i.get('data-src') or i.get('src')
+                    # Ambil dari data-src (lazy load) atau src standar
+                    src = i.get('data-src') or i.get('src') or i.get('data-lazy-src')
                     
                     if src and "loading.gif" not in src:
+                        src = src.strip()
+                        # Normalisasi link CDN manhuaplus.cc
                         if src.startswith('//'):
                             src = "https:" + src
-                        elif src.startswith('/'):
+                        elif src.startswith('/') and "cdn." not in src:
                             src = "https://manhuaplus.org" + src
-                        list_gambar.append(src.strip())
+                        
+                        if "http" in src:
+                            list_gambar.append(src)
+                
+                # JALUR BACKUP: Jika selector gagal, scan link cdn.manhuaplus.cc langsung dari teks
+                if not list_gambar:
+                    # Regex untuk menangkap link cdn.manhuaplus.cc
+                    found = re.findall(r'https?://cdn\.manhuaplus\.cc/[^\s"\']+', html_content)
+                    list_gambar = list(dict.fromkeys(found))
+
                 return list_gambar
         return []
     except Exception as e:
-        print(f"DEBUG: Gagal ambil gambar di {chapter_url}: {e}")
+        print(f"Error get_images: {e}")
         return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
     print(f"--- PetoMic memproses: {judul} ---")
     try:
+        # Upload Sampul ke Cloudinary
         thumb_cloud = ""
         if thumb_url and "http" in thumb_url:
             up = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs", overwrite=True)
@@ -70,7 +83,7 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         soup = BeautifulSoup(res.text, 'html.parser')
         ch_list = []
 
-        # Ambil dari JSON-LD
+        # Ekstraksi Daftar Chapter (JSON-LD)
         scripts = soup.find_all('script', type='application/ld+json')
         for s in scripts:
             try:
@@ -85,6 +98,7 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
                                 ch_list.append({"nama": name, "url": u})
             except: continue
 
+        # Backup: Dropdown Select List
         if not ch_list:
             options = soup.select('select[name="nPL_list"] option')
             for opt in options:
@@ -101,7 +115,7 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
             imgs = get_images(ch['url'])
             if imgs:
                 final_chapters.append({"nama": ch['nama'], "images": imgs})
-            time.sleep(1) # Jeda agar tidak dianggap serangan bot
+            time.sleep(0.8)
 
         if not final_chapters: return None
         final_chapters.reverse()
@@ -110,10 +124,10 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         with open(f'db/{slug}.json', 'w', encoding='utf-8') as f:
             json.dump({"judul": judul, "thumb": thumb_cloud, "chapters": final_chapters}, f, indent=4)
         
-        print(f"BERHASIL: {slug}.json tersimpan.")
+        print(f"BERHASIL SIMPAN: {slug}.json")
         return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
     except Exception as e:
-        print(f"Error {judul}: {e}")
+        print(f"Error fatal {judul}: {e}")
         return None
 
 def main():
@@ -122,10 +136,14 @@ def main():
         url = f"https://manhuaplus.org/manga/{target_slug}"
         process_comic(target_slug.replace('-', ' ').title(), url, target_slug, "", limit_ch=None)
     else:
-        print("Menarik katalog terbaru...")
+        print("Mencari katalog terbaru PetoMic...")
         list_json = []
         for page in range(1, 3):
-            url_katalog = "https://manhuaplus.org/all-manga/" if page == 1 else f"https://manhuaplus.org/all-manga/{page}/?sort=last_update&status=0"
+            if page == 1:
+                url_katalog = "https://manhuaplus.org/all-manga/"
+            else:
+                url_katalog = f"https://manhuaplus.org/all-manga/{page}/?sort=last_update&status=0"
+            
             res = requests.get(url_katalog, headers=HEADERS)
             soup = BeautifulSoup(res.text, 'html.parser')
             items = soup.select('div.mh-77vh > div, .page-item-detail')
