@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>PetoMic - Detail</title>
+    <title>PetoMic Detail</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; }
         body { background: var(--bg); color: white; font-family: sans-serif; padding: 20px; }
@@ -19,28 +19,34 @@
     </style>
 </head>
 <body>
-    <a href="index2.html" class="back">← Kembali ke Katalog</a>
+    <a href="index2.html" class="back">← Kembali</a>
     <div id="content">
         <div class="comic-info" id="header"></div>
         <div class="ch-box" id="list"></div>
         <div class="tips-box">
-            <strong>PetoMic Full Scrape:</strong> Jalankan di Actions dengan slug:
-            <br><div id="slug-hint">Memuat...</div> <span id="copy-status">Copied!</span>
+            <strong>PetoMic Full Scrape:</strong> Klik slug di bawah untuk menyalin, lalu jalankan di GitHub Actions:
+            <br><div id="slug-hint">Memuat...</div> <span id="copy-status">Tersalin!</span>
         </div>
     </div>
     <script>
-        const slug = new URLSearchParams(window.location.search).get('slug');
-        document.getElementById('slug-hint').innerText = slug;
-        document.getElementById('slug-hint').onclick = () => {
-            navigator.clipboard.writeText(slug).then(() => {
-                document.getElementById('copy-status').style.display = 'inline';
-                setTimeout(() => document.getElementById('copy-status').style.display = 'none', 2000);
-            });
-        };
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+        
         async function load() {
+            if(!slug) return;
+            document.getElementById('slug-hint').innerText = slug;
+            document.getElementById('slug-hint').onclick = () => {
+                navigator.clipboard.writeText(slug).then(() => {
+                    document.getElementById('copy-status').style.display = 'inline';
+                    setTimeout(() => document.getElementById('copy-status').style.display = 'none', 2000);
+                });
+            };
+
             const res = await fetch(`db/${slug}.json`);
             const d = await res.json();
             document.getElementById('header').innerHTML = `<img src="${d.thumb}"><h2>${d.judul}</h2>`;
+            
+            // Tampilkan Chapter Terbaru di Atas (Loop terbalik)
             let html = "";
             for (let i = d.chapters.length - 1; i >= 0; i--) {
                 html += `<a href="reader.html?slug=${slug}&ch=${i}" class="ch-link">
