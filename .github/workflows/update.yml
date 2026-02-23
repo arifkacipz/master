@@ -34,6 +34,7 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
+          # Memastikan folder db tercipta dan terlacak oleh Git
           mkdir -p asn/db
           touch asn/db/.gitkeep
           cd asn
@@ -45,5 +46,6 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add asn/list.json
           git add asn/db/
+          # Commit hanya jika ada perubahan, agar tidak error jika data sama
           git commit -m "PetoMic System Fix [$(date)]" || exit 0
           git push
