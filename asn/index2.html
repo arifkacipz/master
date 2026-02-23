@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Katalog Komik</title>
+    <title>PetoMic Catalog</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; }
         body { font-family: sans-serif; background: var(--bg); color: white; margin: 0; padding: 15px; }
         .header { position: sticky; top: 0; background: var(--bg); z-index: 10; padding: 10px 0; }
-        input { width: 100%; padding: 12px; border-radius: 8px; border: none; background: var(--card); color: white; }
+        input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: var(--card); color: white; outline: none; box-sizing: border-box; }
         .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
-        .card { background: var(--card); border-radius: 10px; overflow: hidden; text-decoration: none; color: white; }
-        img { width: 100%; height: 220px; object-fit: cover; }
-        .info { padding: 10px; font-size: 14px; font-weight: bold; }
+        .card { background: var(--card); border-radius: 10px; overflow: hidden; text-decoration: none; color: white; transition: 0.2s; border: 1px solid #334155; }
+        .card:active { transform: scale(0.96); }
+        img { width: 100%; height: 240px; object-fit: cover; background: #0f172a; }
+        .info { padding: 10px; font-size: 13px; font-weight: bold; line-height: 1.3; }
+        h1 { font-size: 1.4rem; color: var(--accent); margin: 0 0 10px 0; text-align: center; }
     </style>
 </head>
 <body>
     <div class="header">
-        <input type="text" id="search" placeholder="Cari judul komik...">
+        <h1>PetoMic</h1>
+        <input type="text" id="search" placeholder="Cari judul komik PetoMic...">
     </div>
     <div class="grid" id="list"></div>
-
     <script>
         let data = [];
         async function init() {
-            const res = await fetch('list.json');
-            data = await res.json();
-            render(data);
+            try {
+                const res = await fetch('list.json');
+                data = await res.json();
+                render(data);
+            } catch(e) { document.getElementById('list').innerHTML = "Memuat data..."; }
         }
         function render(items) {
-            const container = document.getElementById('list');
-            container.innerHTML = items.map(i => `
+            document.getElementById('list').innerHTML = items.map(i => `
                 <a href="detail.html?slug=${i.slug}" class="card">
                     <img src="${i.thumb}" loading="lazy">
                     <div class="info">${i.judul}</div>
-                </a>
-            `).join('');
+                </a>`).join('');
         }
         document.getElementById('search').oninput = (e) => {
-            const f = data.filter(i => i.judul.toLowerCase().includes(e.target.value.toLowerCase()));
-            render(f);
+            render(data.filter(i => i.judul.toLowerCase().includes(e.target.value.toLowerCase())));
         };
         init();
     </script>
