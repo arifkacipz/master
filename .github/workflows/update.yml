@@ -1,32 +1,36 @@
 name: Update Comic Data
 
 on:
-  workflow_dispatch: # Supaya bisa klik tombol hijau manual
+  schedule:
+    - cron: '*/30 * * * *' # Menjalankan robot setiap 30 menit
+  workflow_dispatch:      # Tombol manual tetap aktif
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
       - name: Run Scraper
         run: |
-          cd asn              # Masuk ke folder asn dulu
-          python scraper.py   # Jalankan script di dalam asn
+          cd asn
+          python scraper.py
 
       - name: Commit and Push
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add asn/data.json   # Beritahu git file di dalam asn berubah
-          git commit -m "Auto update data" || exit 0
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add asn/data.json
+          git commit -m "Auto Update Data 30 Menit" || exit 0
           git push
