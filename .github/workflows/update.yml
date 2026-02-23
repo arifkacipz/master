@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Slug ManhuaPlus (contoh: virus-king) untuk Full Scrape.'
+        description: 'Slug ManhuaPlus (contoh: virus-king)'
         required: false
         default: ''
 
@@ -16,19 +16,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Penting untuk proses rebase
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4 cloudinary
+      - run: pip install requests beautifulsoup4 cloudinary
 
-      - name: Run Scraper
-        env:
+      - env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
@@ -38,15 +36,17 @@ jobs:
           cd asn
           python scraper.py
 
-      - name: Commit and Push
+      - name: Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Paksa git untuk memantau semua file di folder asn
           git add asn/
+          
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "PetoMic Update: Fixed Empty Chapters [$(date)]"
-            git push
+            # Mengatasi error rejected dengan rebase sebelum push
+            git pull --rebase origin main
+            git commit -m "PetoMic Update: Fixed Images & Push [$(date)]"
+            git push origin main
           else
-            echo "Tidak ada perubahan data."
+            echo "Tidak ada perubahan data untuk di-push."
           fi
