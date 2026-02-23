@@ -42,11 +42,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Menambahkan seluruh isi folder asn secara rekursif
+          # Paksa git untuk memantau semua file di folder asn
           git add asn/
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "PetoMic Update: Database & Katalog [$(date)]"
+            git commit -m "PetoMic Update: Fixed Empty Chapters [$(date)]"
             git push
           else
-            echo "Tidak ada perubahan file yang terdeteksi."
+            echo "Tidak ada perubahan data."
           fi
