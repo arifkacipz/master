@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add asn/list.json
+          git add asn/list.json || echo "list.json not found"
           git add asn/db/
-          git commit -m "PetoMic Update: Source ToonGod [$(date)]" || exit 0
+          git commit -m "PetoMic Update: Source ToonGod Webtoon [$(date)]" || exit 0
           git push
