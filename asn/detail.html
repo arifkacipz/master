@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Komik</title>
+    <style>
+        body { font-family: sans-serif; background: #0f172a; color: white; padding: 20px; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; text-align: center; }
+        img { width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #38bdf8; text-decoration: none; font-size: 14px; }
+        h1 { font-size: 1.8rem; margin: 20px 0 10px; }
+        .chapter-list { margin-top: 30px; text-align: left; background: #1e293b; padding: 15px; border-radius: 8px; }
+        .read-now { display: block; background: #38bdf8; color: #000; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index2.html" class="back-btn">← Kembali ke Daftar</a>
+        <div id="comic-detail">Memuat detail...</div>
+    </div>
+
+    <script>
+        // 1. Ambil Judul dari URL (contoh: ?judul=Nama-Komik)
+        const urlParams = new URLSearchParams(window.location.search);
+        const judulTarget = urlParams.get('judul');
+
+        async function loadDetail() {
+            const response = await fetch('data.json');
+            const data = await response.json();
+
+            // 2. Cari komik yang judulnya cocok
+            const komik = data.find(item => item.judul === judulTarget);
+
+            const container = document.getElementById('comic-detail');
+            if (komik) {
+                document.title = "Baca " + komik.judul;
+                container.innerHTML = `
+                    <img src="${komik.gambar}" onerror="this.src='https://via.placeholder.com/300x400'">
+                    <h1>${komik.judul}</h1>
+                    <div class="chapter-list">
+                        <strong>Status:</strong> ${komik.chapter_terbaru}<br>
+                        <strong>Info:</strong> Komik ini diambil otomatis dari sumber aslinya.
+                    </div>
+                    <a href="${komik.link}" class="read-now" target="_blank">BACA SEKARANG DI SUMBER</a>
+                `;
+            } else {
+                container.innerHTML = "<h1>Komik tidak ditemukan!</h1>";
+            }
+        }
+
+        loadDetail();
+    </script>
+</body>
+</html>
