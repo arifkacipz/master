@@ -15,64 +15,58 @@ cloudinary.config(
 )
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
     'Referer': 'https://manhuaplus.org/',
     'X-Requested-With': 'XMLHttpRequest'
 }
 
 def get_images(chapter_url):
     try:
-        # 1. Ambil halaman chapter untuk mencari CHAPTER_ID
-        res = requests.get(chapter_url, headers=HEADERS, timeout=30)
-        html = res.text
+        # 1. Ambil CHAPTER_ID dari URL (biasanya angka di paling akhir)
+        # Contoh: https://manhuaplus.org/chapters/manga/chapter-136/92929
+        chapter_id = chapter_url.strip('/').split('/')[-1]
         
-        # Cari CHAPTER_ID menggunakan Regex (Berdasarkan script yang kamu berikan)
-        # Contoh di HTML: const CHAPTER_ID = 92929;
-        match = re.search(r'const\s+CHAPTER_ID\s*=\s*(\d+)', html)
-        if not match:
-            print(f"DEBUG: CHAPTER_ID tidak ketemu di {chapter_url}")
-            return []
-            
-        chapter_id = match.group(1)
-        print(f"DEBUG: Chapter ID ditemukan: {chapter_id}")
+        if not chapter_id.isdigit():
+            # Jika tidak ketemu di URL, cari di dalam HTML (Backup)
+            res = requests.get(chapter_url, headers=HEADERS, timeout=20)
+            match = re.search(r'CHAPTER_ID\s*=\s*(\d+)', res.text)
+            if match:
+                chapter_id = match.group(1)
+            else:
+                return []
 
-        # 2. Lakukan POST request ke AJAX endpoint (Cara ManhuaPlus memuat gambar)
+        print(f"DEBUG: Memproses Chapter ID: {chapter_id}")
+
+        # 2. Ambil gambar via AJAX POST
         ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
-        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=30)
+        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
         
         if ajax_res.status_code == 200:
             data = ajax_res.json()
             if data.get('status') and 'html' in data:
-                # Parse HTML yang dikembalikan oleh AJAX
                 img_soup = BeautifulSoup(data['html'], 'html.parser')
                 imgs = img_soup.select('img')
-                list_gambar = []
-                for i in imgs:
-                    src = i.get('data-src') or i.get('src')
-                    if src and "http" in src:
-                        list_gambar.append(src.strip())
-                return list_gambar
+                return [i.get('data-src') or i.get('src') for i in imgs if i.get('src') or i.get('data-src')]
         
         return []
     except Exception as e:
-        print(f"Gagal ambil gambar: {e}")
+        print(f"Error get_images: {e}")
         return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
     print(f"--- PetoMic memproses: {judul} ---")
     try:
-        # 1. Upload Sampul
+        # Upload Sampul
         thumb_cloud = ""
         if thumb_url and "http" in thumb_url:
             up = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs", overwrite=True)
             thumb_cloud = up['secure_url']
         
-        # 2. Ambil Daftar Chapter dari JSON-LD atau Select List
-        res = requests.get(link, headers=HEADERS, timeout=25)
+        res = requests.get(link, headers=HEADERS, timeout=20)
         soup = BeautifulSoup(res.text, 'html.parser')
         ch_list = []
 
-        # Cari di JSON-LD
+        # Ambil dari JSON-LD (Paling Lengkap)
         scripts = soup.find_all('script', type='application/ld+json')
         for s in scripts:
             try:
@@ -82,42 +76,42 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
                     if g.get('@type') == 'ItemList':
                         for item in g.get('itemListElement', []):
                             u = item.get('url')
-                            if u and '/chapter' in u:
-                                name = u.split('/')[-1].replace('-', ' ').title()
+                            if u and '/chapters/' in u:
+                                # Nama chapter dari URL
+                                name = u.split('/')[-2].replace('-', ' ').title()
                                 ch_list.append({"nama": name, "url": u})
             except: continue
 
-        # Jika gagal, ambil dari dropdown <select name="nPL_list"> (Berdasarkan HTML kamu)
+        # Jika JSON-LD gagal, ambil dari Select Option di halaman
         if not ch_list:
             options = soup.select('select[name="nPL_list"] option')
             for opt in options:
                 val = opt.get('value')
-                if val and "https" in val:
+                if val and "manhuaplus.org" in val:
                     ch_list.append({"nama": opt.text.strip(), "url": val})
 
         if not ch_list: return None
         if limit_ch: ch_list = ch_list[:limit_ch]
 
-        # 3. Scraping Gambar Tiap Chapter
         final_chapters = []
         for ch in ch_list:
-            print(f"Scraping Images for: {ch['nama']}...")
+            print(f"-> Scraping: {ch['nama']}")
             imgs = get_images(ch['url'])
             if imgs:
                 final_chapters.append({"nama": ch['nama'], "images": imgs})
-            time.sleep(1)
+            time.sleep(0.5)
 
         if not final_chapters: return None
-        final_chapters.reverse() # Chapter lama di Index 0
+        final_chapters.reverse() # Index 0 = Chapter Awal
 
         os.makedirs('db', exist_ok=True)
         with open(f'db/{slug}.json', 'w', encoding='utf-8') as f:
             json.dump({"judul": judul, "thumb": thumb_cloud, "chapters": final_chapters}, f, indent=4)
         
-        print(f"BERHASIL: {slug}.json dengan {len(final_chapters)} chapter.")
+        print(f"BERHASIL: {slug}.json tercipta.")
         return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
     except Exception as e:
-        print(f"Error fatal {judul}: {e}")
+        print(f"Error {judul}: {e}")
         return None
 
 def main():
@@ -128,7 +122,6 @@ def main():
     else:
         print("Mencari katalog terbaru...")
         list_json = []
-        # Ambil 2 halaman awal
         for page in range(1, 3):
             url_katalog = "https://manhuaplus.org/all-manga/" if page == 1 else f"https://manhuaplus.org/all-manga/{page}/?sort=last_update&status=0"
             res = requests.get(url_katalog, headers=HEADERS)
@@ -147,7 +140,7 @@ def main():
                     thumb = img_tag.get('data-src') or img_tag.get('src')
                     if thumb and not thumb.startswith('http'): thumb = "https://manhuaplus.org" + thumb
                     
-                    hasil = process_comic(judul, link, slug, thumb, limit_ch=3)
+                    hasil = process_comic(judul, link, slug, thumb, limit_ch=2)
                     if hasil: list_json.append(hasil)
                 except: continue
         
