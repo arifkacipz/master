@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Masukkan Slug (contoh: solo-leveling) untuk Full Scrape PetoMic. Kosongkan untuk update rutin.'
+        description: 'Masukkan Slug (contoh: bad-born-blood) untuk Full Scrape. Kosongkan untuk update rutin.'
         required: false
         default: ''
 
@@ -41,7 +41,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Perintah ini memastikan git mengenali folder db meskipun baru dibuat
           git add asn/list.json
-          git add asn/db/*.json
-          git commit -m "PetoMic Auto Update: ${TARGET_SLUG:-Routine}" || exit 0
+          git add asn/db/*.json || echo "Belum ada file di db"
+          git commit -m "PetoMic Update: ${TARGET_SLUG:-Routine}" || exit 0
           git push
