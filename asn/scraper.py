@@ -24,7 +24,6 @@ def get_images_from_chapter(url):
     try:
         res = requests.get(url, headers=HEADERS, timeout=20)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector khusus RizzComic dan cadangan
         imgs = soup.select('#readerarea img, .reading-content img, .entry-content img')
         list_gambar = []
         for i in imgs:
@@ -39,13 +38,16 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
     print(f"Sedang memproses: {judul}")
     try:
         # 1. Upload/Get Cloudinary Thumb
-        thumb_cloud = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="comic_thumbs")['secure_url']
+        thumb_cloud = ""
+        if thumb_url:
+            thumb_cloud = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="comic_thumbs")['secure_url']
         
         # 2. Get Chapter List
         res = requests.get(link, headers=HEADERS)
         soup = BeautifulSoup(res.text, 'html.parser')
         raw_ch = soup.select('#chapterlist ul li')
         
+        # Default RizzComic: Newest first. Kita ambil dulu datanya.
         if limit_ch: raw_ch = raw_ch[:limit_ch]
         
         ch_data = []
@@ -58,6 +60,9 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
                 "images": get_images_from_chapter(ch_url)
             })
             time.sleep(0.5)
+
+        # BALIK URUTAN: Agar index 0 = Chapter Paling Lama
+        ch_data.reverse()
 
         if not os.path.exists('db'): os.makedirs('db')
         with open(f'db/{slug}.json', 'w', encoding='utf-8') as f:
