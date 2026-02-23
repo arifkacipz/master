@@ -4,34 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Reader</title>
+    <title>Reader - Web Komik Kamu</title>
     <style>
-        body { background: #000; margin: 0; }
-        img { width: 100%; display: block; }
-        .nav { position: fixed; top: 0; background: rgba(0,0,0,0.7); width: 100%; padding: 10px; }
-        .nav a { color: white; text-decoration: none; font-weight: bold; }
+        :root { --bg: #000; --ui: #1e293b; --accent: #38bdf8; }
+        body { background: var(--bg); color: white; font-family: sans-serif; margin: 0; }
+        
+        .nav-bar { position: fixed; bottom: 0; width: 100%; background: rgba(30, 41, 59, 0.9); 
+                   display: flex; justify-content: space-between; padding: 15px; box-sizing: border-box; backdrop-filter: blur(10px); }
+        .nav-btn { background: var(--accent); color: black; border: none; padding: 10px 20px; 
+                   border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 14px; }
+        .nav-btn.disabled { background: #475569; opacity: 0.5; pointer-events: none; }
+        
+        .header { padding: 15px; text-align: center; border-bottom: 1px solid #334155; margin-bottom: 10px; }
+        .content img { width: 100%; display: block; margin: 0 auto; }
+        #loading { text-align: center; padding: 100px 20px; color: var(--accent); }
+        .spacer { height: 80px; } /* Ruang agar gambar terakhir tidak tertutup tombol */
     </style>
 </head>
 <body>
-    <div class="nav"><a href="index2.html">← Keluar</a></div>
-    <div id="images" style="padding-top:50px;">Memuat gambar...</div>
+
+    <div class="header">
+        <div id="chapter-title">Memuat...</div>
+    </div>
+
+    <div id="loading">Menyiapkan halaman komik...</div>
+    <div class="content" id="image-container"></div>
+    <div class="spacer"></div>
+
+    <div class="nav-bar">
+        <a id="prev-btn" class="nav-btn">← Prev</a>
+        <a href="index2.html" style="color:white; text-decoration:none; margin-top:8px;">Menu</a>
+        <a id="next-btn" class="nav-btn">Next →</a>
+    </div>
 
     <script>
         const params = new URLSearchParams(window.location.search);
         const slug = params.get('slug');
-        const chIdx = params.get('ch');
+        let chIdx = parseInt(params.get('ch')) || 0;
 
-        async function load() {
-            const res = await fetch(`db/${slug}.json`);
-            const d = await res.json();
-            const chUrl = d.chapters[chIdx].url;
+        async function loadChapter() {
+            try {
+                const res = await fetch(`db/${slug}.json`);
+                const data = await res.json();
+                
+                // Urutan chapter di JSON biasanya terbaru ke terlama (0 adalah chapter terbaru)
+                // Kita balik logikanya agar navigasi nyaman
+                const chapters = data.chapters;
+                const current = chapters[chIdx];
 
-            // Kita butuh bantuan scraper atau proxy jika gambar di-block.
-            // Sementara kita arahkan ke sumber jika scraper belum mendukung 'full deep scan'
-            window.location.href = chUrl; 
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('chapter-title').innerText = `${data.judul} - ${current.nama}`;
+                
+                const container = document.getElementById('image-container');
+                container.innerHTML = "";
+                
+                current.images.forEach(url => {
+                    const img = document.createElement('img');
+                    img.src = url;
+                    img.loading = "lazy";
+                    img.onerror = () => img.style.display = 'none';
+                    container.appendChild(img);
+                });
+
+                // Atur Tombol Navigasi
+                // Catatan: index 0 adalah chapter terbaru, index besar adalah chapter lama
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+
+                // Ke Chapter Sebelumnya (Angka Index Lebih Besar)
+                if (chIdx < chapters.length - 1) {
+                    prevBtn.href = `reader.html?slug=${slug}&ch=${chIdx + 1}`;
+                } else {
+                    prevBtn.classList.add('disabled');
+                }
+
+                // Ke Chapter Selanjutnya (Angka Index Lebih Kecil)
+                if (chIdx > 0) {
+                    nextBtn.href = `reader.html?slug=${slug}&ch=${chIdx - 1}`;
+                } else {
+                    nextBtn.classList.add('disabled');
+                }
+
+                // Scroll kembali ke atas saat ganti chapter
+                window.scrollTo(0, 0);
+
+            } catch (e) {
+                document.getElementById('loading').innerText = "Gagal memuat chapter. Pastikan data sudah di-update.";
+            }
         }
-        // Catatan: Untuk baca di web sendiri, scraper.py perlu di-update untuk ambil isi gambar.
-        load();
+
+        loadChapter();
     </script>
 </body>
 </html>
