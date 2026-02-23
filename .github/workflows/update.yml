@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Masukkan Slug ToonGod (contoh: solo-leveling) untuk Full Scrape. Kosongkan untuk rutin.'
+        description: 'Masukkan Slug ManhuaPlus (contoh: martial-peak) untuk Full Scrape. Kosongkan untuk rutin.'
         required: false
         default: ''
 
@@ -45,5 +45,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add asn/list.json || echo "list.json not found"
           git add asn/db/
-          git commit -m "PetoMic Update: Source ToonGod Webtoon [$(date)]" || exit 0
+          git commit -m "PetoMic Update: Source ManhuaPlus [$(date)]" || exit 0
           git push
