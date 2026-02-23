@@ -16,18 +16,20 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: Install dependencies
         run: pip install requests beautifulsoup4 cloudinary
 
-      - name: Run Scraper
+      - name: Run PetoMic Scraper
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
@@ -42,13 +44,22 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Tambahkan file ke staging area
           git add asn/
           
-          # Hanya commit jika ada perubahan untuk menghindari Error 128
+          # Cek apakah ada perubahan untuk di-push
           if [ -n "$(git status --porcelain)" ]; then
+            echo "Data baru terdeteksi, memulai proses upload..."
+            
+            # Commit lokal dulu agar Index bersih sebelum Pull
+            git commit -m "PetoMic Update: Fixed Git Rebase & CDN [$(date)]"
+            
+            # Ambil update terbaru dari server untuk menghindari push rejected
             git pull --rebase origin main
-            git commit -m "PetoMic Update: Split Source .org & .cc [$(date)]"
+            
+            # Kirim ke repositori
             git push origin main
           else
-            echo "Data sudah up-to-date, tidak ada perubahan."
+            echo "Tidak ada perubahan data, melewati proses push."
           fi
