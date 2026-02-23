@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Masukkan Slug ManhuaPlus (contoh: martial-peak) untuk Full Scrape. Kosongkan untuk rutin.'
+        description: 'Masukkan Slug ManhuaPlus (contoh: virus-king) untuk Full Scrape.'
         required: false
         default: ''
 
