@@ -24,36 +24,33 @@
         <div class="comic-info" id="header"></div>
         <div class="ch-box" id="list"></div>
         <div class="tips-box">
-            <strong>PetoMic Full Scrape:</strong> Klik slug di bawah untuk menyalin, lalu jalankan di GitHub Actions:
-            <br><div id="slug-hint">Memuat...</div> <span id="copy-status">Tersalin!</span>
+            <strong>PetoMic Full Scrape:</strong> Klik slug di bawah, lalu jalankan di Actions:
+            <br><div id="slug-hint"></div> <span id="copy-status">Tersalin!</span>
         </div>
     </div>
     <script>
         const params = new URLSearchParams(window.location.search);
         const slug = params.get('slug');
-        
+        document.getElementById('slug-hint').innerText = slug;
+        document.getElementById('slug-hint').onclick = () => {
+            navigator.clipboard.writeText(slug).then(() => {
+                document.getElementById('copy-status').style.display = 'inline';
+                setTimeout(() => document.getElementById('copy-status').style.display = 'none', 2000);
+            });
+        };
         async function load() {
-            if(!slug) return;
-            document.getElementById('slug-hint').innerText = slug;
-            document.getElementById('slug-hint').onclick = () => {
-                navigator.clipboard.writeText(slug).then(() => {
-                    document.getElementById('copy-status').style.display = 'inline';
-                    setTimeout(() => document.getElementById('copy-status').style.display = 'none', 2000);
-                });
-            };
-
-            const res = await fetch(`db/${slug}.json`);
-            const d = await res.json();
-            document.getElementById('header').innerHTML = `<img src="${d.thumb}"><h2>${d.judul}</h2>`;
-            
-            // Tampilkan Chapter Terbaru di Atas (Loop terbalik)
-            let html = "";
-            for (let i = d.chapters.length - 1; i >= 0; i--) {
-                html += `<a href="reader.html?slug=${slug}&ch=${i}" class="ch-link">
-                    <span>${d.chapters[i].nama}</span><span style="color:var(--accent)">BACA →</span>
-                </a>`;
-            }
-            document.getElementById('list').innerHTML = html;
+            try {
+                const res = await fetch(`db/${slug}.json`);
+                const d = await res.json();
+                document.getElementById('header').innerHTML = `<img src="${d.thumb}"><h2>${d.judul}</h2>`;
+                let html = "";
+                for (let i = d.chapters.length - 1; i >= 0; i--) {
+                    html += `<a href="reader.html?slug=${slug}&ch=${i}" class="ch-link">
+                        <span>${d.chapters[i].nama}</span><span style="color:var(--accent)">BACA →</span>
+                    </a>`;
+                }
+                document.getElementById('list').innerHTML = html;
+            } catch(e) { document.getElementById('list').innerHTML = "<p style='padding:20px;text-align:center'>Data belum di-scrape penuh.</p>"; }
         }
         load();
     </script>
