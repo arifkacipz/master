@@ -2,8 +2,8 @@ name: Update Comic Data
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Menjalankan robot setiap 30 menit
-  workflow_dispatch:      # Tombol manual tetap aktif
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,9 +20,13 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 cloudinary
 
       - name: Run Scraper
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
           cd asn
           python scraper.py
@@ -31,6 +35,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add asn/data.json
-          git commit -m "Auto Update Data 30 Menit" || exit 0
+          git add asn/list.json
+          git add asn/db/*.json
+          git commit -m "Auto Update: Cloudinary & Fragmented DB" || exit 0
           git push
