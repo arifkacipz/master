@@ -6,42 +6,110 @@
     <meta name="referrer" content="no-referrer">
     <title>Detail Komik</title>
     <style>
-        body { background: #0f172a; color: white; font-family: sans-serif; padding: 20px; }
-        .back { color: #38bdf8; text-decoration: none; }
-        .ch-box { background: #1e293b; margin-top: 20px; border-radius: 8px; }
-        .ch-link { display: block; padding: 15px; border-bottom: 1px solid #334155; color: white; text-decoration: none; }
+        :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; }
+        body { background: var(--bg); color: white; font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.5; }
+        .back { color: var(--accent); text-decoration: none; font-weight: bold; display: inline-block; margin-bottom: 20px; }
+        
+        .comic-info { text-align: center; margin-bottom: 30px; }
+        .comic-info img { width: 180px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); border: 2px solid #334155; }
+        .comic-info h1 { margin: 15px 0 5px; font-size: 1.5rem; }
+
+        .ch-box { background: var(--card); border-radius: 12px; overflow: hidden; border: 1px solid #334155; }
+        .ch-link { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #334155; color: white; text-decoration: none; transition: background 0.2s; }
+        .ch-link:active { background: #334155; }
+        .ch-link:last-child { border-bottom: none; }
+
+        /* Style untuk Tips Slug */
+        .tips-container { 
+            margin-top: 40px; padding: 15px; background: rgba(56, 189, 248, 0.05); 
+            border: 1px dashed var(--accent); border-radius: 10px; font-size: 13px; color: #cbd5e1;
+        }
+        #slug-hint { 
+            color: var(--accent); background: rgba(56, 189, 248, 0.15); 
+            padding: 3px 8px; border-radius: 5px; cursor: pointer; 
+            font-weight: bold; font-family: monospace; display: inline-block;
+            border: 1px solid var(--accent); margin-top: 5px;
+        }
+        #copy-msg { display: none; color: #10b981; font-weight: bold; margin-left: 8px; font-size: 11px; }
+        
+        #loading { text-align: center; padding: 50px; color: var(--accent); }
     </style>
 </head>
 <body>
+
     <a href="index2.html" class="back">← Kembali</a>
-    <div id="content">Memuat...</div>
+
+    <div id="loading">Memuat detail komik...</div>
+    <div id="content" style="display:none;">
+        <div class="comic-info" id="comic-header"></div>
+        
+        <h3 style="margin-bottom:10px; font-size:16px;">Daftar Chapter:</h3>
+        <div class="ch-box" id="chapter-list"></div>
+
+        <div class="tips-container">
+            <strong>💡 Tips Full Scrape:</strong><br>
+            Jika chapter tidak lengkap, buka GitHub Actions, pilih <strong>Update Comic Data</strong>, klik <strong>Run Workflow</strong>, dan masukkan slug ini:<br>
+            <div id="slug-hint" title="Klik untuk copy"></div>
+            <span id="copy-msg">Tersalin!</span>
+        </div>
+    </div>
 
     <script>
-        const slug = new URLSearchParams(window.location.search).get('slug');
-        async function load() {
-            const res = await fetch(`db/${slug}.json`);
-            const d = await res.json();
-            document.getElementById('content').innerHTML = `
-                <h1>${d.judul}</h1>
-                <img src="${d.thumb}" style="width:150px; border-radius:8px;">
-                <div class="ch-box">
-                    ${d.chapters.map((c, idx) => `
-                        <a href="reader.html?slug=${slug}&ch=${idx}" class="ch-link">${c.nama}</a>
-                    `).join('')}
-                </div>
-            `;
+        const urlParams = new URLSearchParams(window.location.search);
+        const slug = urlParams.get('slug');
+
+        async function loadDetail() {
+            if (!slug) {
+                document.getElementById('loading').innerText = "Slug tidak ditemukan di URL.";
+                return;
+            }
+
+            // Tampilkan Slug di bagian tips & Atur fitur Copy
+            const slugEl = document.getElementById('slug-hint');
+            slugEl.innerText = slug;
+            slugEl.onclick = () => {
+                navigator.clipboard.writeText(slug).then(() => {
+                    const msg = document.getElementById('copy-msg');
+                    msg.style.display = 'inline';
+                    setTimeout(() => msg.style.display = 'none', 2000);
+                });
+            };
+
+            try {
+                const res = await fetch(`db/${slug}.json`);
+                if (!res.ok) throw new Error();
+                const d = await res.json();
+
+                document.title = "Baca " + d.judul;
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+
+                // Render Header
+                document.getElementById('comic-header').innerHTML = `
+                    <img src="${d.thumb}" onerror="this.src='https://via.placeholder.com/150x200?text=No+Image'">
+                    <h1>${d.judul}</h1>
+                `;
+
+                // Render Chapters
+                const list = document.getElementById('chapter-list');
+                list.innerHTML = d.chapters.map((c, idx) => `
+                    <a href="reader.html?slug=${slug}&ch=${idx}" class="ch-link">
+                        <span>${c.nama}</span>
+                        <span style="color:var(--accent)">Baca →</span>
+                    </a>
+                `).join('');
+
+            } catch (e) {
+                document.getElementById('loading').innerHTML = `
+                    <p style="color:#ef4444">Data belum tersedia di database.</p>
+                    <p style="font-size:12px">Silakan jalankan Full Scrape di GitHub dengan slug di bawah.</p>
+                `;
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('chapter-list').style.display = 'none';
+            }
         }
-        load();
+
+        loadDetail();
     </script>
-<div style="margin-top: 30px; padding: 15px; background: #334155; border-radius: 8px; font-size: 13px;">
-    <strong>Tips:</strong> Jika chapter tidak lengkap, buka tab <strong>Actions</strong> di GitHub, pilih <strong>Update Comic Data</strong>, klik <strong>Run Workflow</strong>, dan masukkan slug: <code id="slug-hint" style="color:#38bdf8"></code>
-</div>
-
-<script>
-    const slug = new URLSearchParams(window.location.search).get('slug');
-    document.getElementById('slug-hint').innerText = slug;
-    // ... sisa kode load data detail ...
-</script>
-
 </body>
 </html>
