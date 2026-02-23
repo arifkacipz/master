@@ -4,96 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Reader - Web Komik Kamu</title>
+    <title>Reader</title>
     <style>
-        :root { --bg: #000; --ui: #1e293b; --accent: #38bdf8; }
-        body { background: var(--bg); color: white; font-family: sans-serif; margin: 0; }
-        
-        .nav-bar { position: fixed; bottom: 0; width: 100%; background: rgba(30, 41, 59, 0.9); 
-                   display: flex; justify-content: space-between; padding: 15px; box-sizing: border-box; backdrop-filter: blur(10px); }
-        .nav-btn { background: var(--accent); color: black; border: none; padding: 10px 20px; 
-                   border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 14px; }
-        .nav-btn.disabled { background: #475569; opacity: 0.5; pointer-events: none; }
-        
-        .header { padding: 15px; text-align: center; border-bottom: 1px solid #334155; margin-bottom: 10px; }
-        .content img { width: 100%; display: block; margin: 0 auto; }
-        #loading { text-align: center; padding: 100px 20px; color: var(--accent); }
-        .spacer { height: 80px; } /* Ruang agar gambar terakhir tidak tertutup tombol */
+        body { background: #000; color: white; margin: 0; font-family: sans-serif; }
+        .content img { width: 100%; display: block; }
+        .nav { position: fixed; bottom: 0; width: 100%; background: rgba(30,41,59,0.9); display: flex; justify-content: space-around; padding: 15px; backdrop-filter: blur(5px); }
+        .btn { background: #38bdf8; color: black; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 14px; }
+        .disabled { opacity: 0.3; pointer-events: none; }
     </style>
 </head>
 <body>
-
-    <div class="header">
-        <div id="chapter-title">Memuat...</div>
-    </div>
-
-    <div id="loading">Menyiapkan halaman komik...</div>
-    <div class="content" id="image-container"></div>
-    <div class="spacer"></div>
-
-    <div class="nav-bar">
-        <a id="prev-btn" class="nav-btn">← Prev</a>
-        <a href="index2.html" style="color:white; text-decoration:none; margin-top:8px;">Menu</a>
-        <a id="next-btn" class="nav-btn">Next →</a>
+    <div id="images"></div>
+    <div style="height: 80px;"></div>
+    <div class="nav">
+        <a id="prev" class="btn">Prev</a>
+        <a href="index2.html" style="color:white; padding-top:5px;">Menu</a>
+        <a id="next" class="btn">Next</a>
     </div>
 
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const slug = params.get('slug');
-        let chIdx = parseInt(params.get('ch')) || 0;
+        const p = new URLSearchParams(window.location.search);
+        const slug = p.get('slug');
+        const chIdx = parseInt(p.get('ch'));
 
-        async function loadChapter() {
-            try {
-                const res = await fetch(`db/${slug}.json`);
-                const data = await res.json();
-                
-                // Urutan chapter di JSON biasanya terbaru ke terlama (0 adalah chapter terbaru)
-                // Kita balik logikanya agar navigasi nyaman
-                const chapters = data.chapters;
-                const current = chapters[chIdx];
+        async function load() {
+            const res = await fetch(`db/${slug}.json`);
+            const d = await res.json();
+            const ch = d.chapters[chIdx];
 
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('chapter-title').innerText = `${data.judul} - ${current.nama}`;
-                
-                const container = document.getElementById('image-container');
-                container.innerHTML = "";
-                
-                current.images.forEach(url => {
-                    const img = document.createElement('img');
-                    img.src = url;
-                    img.loading = "lazy";
-                    img.onerror = () => img.style.display = 'none';
-                    container.appendChild(img);
-                });
+            document.title = d.judul + " - " + ch.nama;
+            const container = document.getElementById('images');
+            ch.images.forEach(img => {
+                const el = document.createElement('img');
+                el.src = img;
+                el.loading = "lazy";
+                container.appendChild(el);
+            });
 
-                // Atur Tombol Navigasi
-                // Catatan: index 0 adalah chapter terbaru, index besar adalah chapter lama
-                const prevBtn = document.getElementById('prev-btn');
-                const nextBtn = document.getElementById('next-btn');
+            const prev = document.getElementById('prev');
+            const next = document.getElementById('next');
 
-                // Ke Chapter Sebelumnya (Angka Index Lebih Besar)
-                if (chIdx < chapters.length - 1) {
-                    prevBtn.href = `reader.html?slug=${slug}&ch=${chIdx + 1}`;
-                } else {
-                    prevBtn.classList.add('disabled');
-                }
+            if(chIdx < d.chapters.length - 1) prev.href = `reader.html?slug=${slug}&ch=${chIdx+1}`;
+            else prev.classList.add('disabled');
 
-                // Ke Chapter Selanjutnya (Angka Index Lebih Kecil)
-                if (chIdx > 0) {
-                    nextBtn.href = `reader.html?slug=${slug}&ch=${chIdx - 1}`;
-                } else {
-                    nextBtn.classList.add('disabled');
-                }
-
-                // Scroll kembali ke atas saat ganti chapter
-                window.scrollTo(0, 0);
-
-            } catch (e) {
-                document.getElementById('loading').innerText = "Gagal memuat chapter. Pastikan data sudah di-update.";
-            }
+            if(chIdx > 0) next.href = `reader.html?slug=${slug}&ch=${chIdx-1}`;
+            else next.classList.add('disabled');
         }
-
-        loadChapter();
+        load();
     </script>
 </body>
 </html>
