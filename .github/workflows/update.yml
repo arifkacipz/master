@@ -16,17 +16,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - run: pip install requests beautifulsoup4 cloudinary
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 cloudinary
 
-      - env:
+      - name: Run Scraper
+        env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
@@ -40,12 +44,16 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Hapus file index lock jika ada (mencegah error 128)
+          rm -f .git/index.lock
+          
           git add asn/
           
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "PetoMic Update: Fixed Sequential Image Order [$(date)]"
+            git commit -m "PetoMic Master Fix: Session & CDN CC [$(date)]"
             git pull --rebase origin main
             git push origin main
           else
-            echo "Katalog sudah yang terbaru."
+            echo "Katalog sudah up-to-date."
           fi
