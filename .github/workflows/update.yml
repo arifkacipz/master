@@ -16,21 +16,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4 cloudinary
+      - run: pip install requests beautifulsoup4 cloudinary
 
-      - name: Run PetoMic Scraper
-        env:
+      - env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
@@ -44,22 +40,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Tambahkan file ke staging area
           git add asn/
           
-          # Cek apakah ada perubahan untuk di-push
           if [ -n "$(git status --porcelain)" ]; then
-            echo "Data baru terdeteksi, memulai proses upload..."
-            
-            # Commit lokal dulu agar Index bersih sebelum Pull
-            git commit -m "PetoMic Update: Fixed Git Rebase & CDN [$(date)]"
-            
-            # Ambil update terbaru dari server untuk menghindari push rejected
+            git commit -m "PetoMic Update: Fixed Sequential Image Order [$(date)]"
             git pull --rebase origin main
-            
-            # Kirim ke repositori
             git push origin main
           else
-            echo "Tidak ada perubahan data, melewati proses push."
+            echo "Katalog sudah yang terbaru."
           fi
