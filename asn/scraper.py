@@ -24,26 +24,25 @@ def get_images_from_chapter(url):
     try:
         res = requests.get(url, headers=HEADERS, timeout=25)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector untuk gambar di AsuraComic
         imgs = soup.select('#readerarea img, .rdminimal img')
         list_gambar = []
         for i in imgs:
             src = i.get('src') or i.get('data-src') or i.get('data-lazy-src')
-            if src and "http" in src and "asuracomic" not in src.lower(): # Menghindari logo asura jika ada
+            if src and "http" in src:
                 list_gambar.append(src.strip())
         return list_gambar
     except:
         return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
-    print(f"Sedang memproses: {judul}")
+    print(f"PetoMic memproses: {judul}")
     try:
-        # 1. Upload/Get Cloudinary Thumb
+        # 1. Upload Sampul ke Cloudinary
         thumb_cloud = ""
         if thumb_url:
-            thumb_cloud = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="asura_thumbs")['secure_url']
+            thumb_cloud = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs")['secure_url']
         
-        # 2. Get Chapter List
+        # 2. Ambil Daftar Chapter
         res = requests.get(link, headers=HEADERS)
         soup = BeautifulSoup(res.text, 'html.parser')
         raw_ch = soup.select('#chapterlist ul li')
@@ -56,12 +55,11 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
             ch_nama = c.select_one('.chapternum').text.strip()
             print(f"  -> Scraping {ch_nama}")
             images = get_images_from_chapter(ch_url)
-            
             if images:
                 ch_data.append({"nama": ch_nama, "images": images})
             time.sleep(0.8)
 
-        # INDEX 0 = CHAPTER PALING LAMA
+        # LOGIKA: INDEX 0 = CHAPTER PALING LAMA
         ch_data.reverse()
 
         if not os.path.exists('db'): os.makedirs('db')
@@ -70,20 +68,18 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         
         return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
     except Exception as e:
-        print(f"Error {judul}: {e}")
+        print(f"Gagal memproses {judul}: {e}")
         return None
 
 def main():
     if TARGET_SLUG:
-        print(f"--- MODE KHUSUS: Full Scrape Asura {TARGET_SLUG} ---")
+        print(f"--- PetoMic MODE KHUSUS: Full Scrape {TARGET_SLUG} ---")
         url = f"https://asuracomic.net/series/{TARGET_SLUG}/"
         process_comic(TARGET_SLUG.replace('-', ' ').title(), url, TARGET_SLUG, "", limit_ch=None)
     else:
-        print("--- MODE NORMAL: Update Katalog Asura ---")
-        # URL Series Asura
+        print("--- PetoMic MODE NORMAL: Update Katalog ---")
         res = requests.get("https://asuracomic.net/series?page=1", headers=HEADERS)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector Asura: Mencari kotak komik
         items = soup.select('.listupd .bs, .utao .uta')[:10]
         
         list_json = []
