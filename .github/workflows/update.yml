@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Penting untuk proses rebase
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -43,10 +43,10 @@ jobs:
           git add asn/
           
           if [ -n "$(git status --porcelain)" ]; then
-            # Mengatasi error rejected dengan rebase sebelum push
+            # Ambil update terbaru dari GitHub agar tidak terjadi error push rejected
             git pull --rebase origin main
-            git commit -m "PetoMic Update: Fixed Images & Push [$(date)]"
+            git commit -m "PetoMic Update: Fixed CDN manhuaplus.cc [$(date)]"
             git push origin main
           else
-            echo "Tidak ada perubahan data untuk di-push."
+            echo "Katalog sudah yang terbaru."
           fi
