@@ -2,8 +2,8 @@ name: Update Comic Data
 
 on:
   schedule:
-    - cron: '0 */1 * * *' # Jalan otomatis setiap 1 jam
-  workflow_dispatch:      # Tombol untuk jalan manual
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,16 +18,17 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4
 
       - name: Run Scraper
-        run: python scraper.py
+        run: |
+          cd asn
+          python scraper.py
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add data.json
-          git commit -m "Auto update comic list" || exit 0
+          git add asn/data.json
+          git commit -m "Auto update comic list in asn folder" || exit 0
           git push
