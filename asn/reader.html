@@ -7,11 +7,11 @@
     <title>PetoMic Reader</title>
     <style>
         body { background: #000; color: white; margin: 0; font-family: sans-serif; }
-        .content img { width: 100%; display: block; margin: 0 auto; border: none; }
+        .content img { width: 100%; display: block; margin: 0 auto; }
         .nav { position: fixed; bottom: 0; width: 100%; background: rgba(30, 41, 59, 0.95); display: flex; justify-content: space-around; padding: 15px; box-sizing: border-box; backdrop-filter: blur(5px); }
         .btn { background: #38bdf8; color: black; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; }
         .disabled { opacity: 0.3; pointer-events: none; }
-        #title { text-align: center; padding: 12px; font-size: 14px; color: #38bdf8; background: #000; }
+        #title { text-align: center; padding: 10px; font-size: 14px; color: #38bdf8; }
     </style>
 </head>
 <body>
@@ -20,17 +20,19 @@
     <div style="height: 80px;"></div>
     <div class="nav">
         <a id="prev" class="btn">← Prev</a>
-        <a href="index2.html" style="color:white; padding-top:10px; text-decoration:none; font-size:12px;">PetoMic</a>
+        <a href="index2.html" style="color:white; padding-top:10px; text-decoration:none; font-size:12px;">Menu</a>
         <a id="next" class="btn">Next →</a>
     </div>
     <script>
         const p = new URLSearchParams(window.location.search);
         const slug = p.get('slug');
         const chIdx = parseInt(p.get('ch'));
+
         async function load() {
             const res = await fetch(`db/${slug}.json`);
             const d = await res.json();
             const ch = d.chapters[chIdx];
+
             document.getElementById('title').innerText = `${d.judul} - ${ch.nama}`;
             const container = document.getElementById('images');
             ch.images.forEach(img => {
@@ -39,18 +41,18 @@
                 el.onerror = () => el.style.display = 'none';
                 container.appendChild(el);
             });
+
             const prevBtn = document.getElementById('prev');
             const nextBtn = document.getElementById('next');
-            
-            // LOGIKA PETOMIC (Index 0 = Chapter Awal):
-            // Prev: Mundur ke chapter lebih lama (Index Berkurang)
+
+            // Prev: Index berkurang (Chapter lebih lama)
             if (chIdx > 0) prevBtn.href = `reader.html?slug=${slug}&ch=${chIdx - 1}`;
             else prevBtn.classList.add('disabled');
-            
-            // Next: Maju ke chapter lebih baru (Index Bertambah)
+
+            // Next: Index bertambah (Chapter lebih baru)
             if (chIdx < d.chapters.length - 1) nextBtn.href = `reader.html?slug=${slug}&ch=${chIdx + 1}`;
             else nextBtn.classList.add('disabled');
-            
+
             window.scrollTo(0,0);
         }
         load();
