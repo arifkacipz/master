@@ -1,26 +1,414 @@
 {
     "judul": "Bad Born Blood",
-    "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771845150/comic_thumbs/bad-born-blood.jpg",
+    "thumb": "",
     "chapters": [
         {
-            "nama": "Chapter 75",
-            "images": []
+            "nama": "Chapter 1",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
         },
         {
-            "nama": "Chapter 74",
-            "images": []
+            "nama": "Chapter 2",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
         },
         {
-            "nama": "Chapter 73",
-            "images": []
+            "nama": "Chapter 3",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
         },
         {
-            "nama": "Chapter 72",
-            "images": []
+            "nama": "Chapter 4",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 5",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 6",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 7",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 8",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 9",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 10",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 11",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 12",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 13",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 14",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 15",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 16",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 17",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 18",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 19",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 20",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 21",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 22",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 23",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 24",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 25",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 26",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 27",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 28",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 29",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 30",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 31",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 32",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 33",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 34",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 35",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 37",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 38",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 39",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 42",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 44",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 45",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 46",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 47",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 48",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 50",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 51",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 52",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 54",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 55",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 56",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 57",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 58",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 59",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 60",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 61",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 62",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 63",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 64",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 65",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 66",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 68",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 69",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 70",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
         },
         {
             "nama": "Chapter 71",
-            "images": []
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 72",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 73",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 74",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
+        },
+        {
+            "nama": "Chapter 75",
+            "images": [
+                "https://rizzcomic.com/wp-content/themes/yagamangareader/assets/img/readerarea.svg"
+            ]
         }
     ]
 }
