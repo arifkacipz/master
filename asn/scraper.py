@@ -7,33 +7,34 @@ import re
 import cloudinary
 import cloudinary.uploader
 
-# Config Cloudinary
+# Config Cloudinary dari GitHub Secrets
 cloudinary.config(
     cloud_name = os.environ.get('CLOUDINARY_CLOUD_NAME'),
     api_key = os.environ.get('CLOUDINARY_API_KEY'),
     api_secret = os.environ.get('CLOUDINARY_API_SECRET')
 )
 
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Referer': 'https://asuracomic.net/'
+}
 TARGET_SLUG = os.environ.get('TARGET_SLUG')
-
-def slugify(text):
-    return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
 
 def get_images_from_chapter(url):
     try:
         res = requests.get(url, headers=HEADERS, timeout=30)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Mencari gambar di berbagai kemungkinan lokasi
+        # Radar diperkuat untuk menembus proteksi baru Asura
         imgs = soup.select('#readerarea img, .rdminimal img, .entry-content img, .main-reading-area img')
         list_gambar = []
         for i in imgs:
-            src = i.get('src') or i.get('data-src') or i.get('data-lazy-src')
-            if src and "http" in src and "asura" not in src.lower().split('/')[-1]:
+            src = i.get('src') or i.get('data-src') or i.get('data-lazy-src') or i.get('data-srcset')
+            if src and "http" in src:
+                # Abaikan gambar dekorasi/logo
+                if any(x in src.lower() for x in ["logo", "banner", "discord", "donation"]): continue
                 list_gambar.append(src.strip())
         return list_gambar
-    except Exception as e:
-        print(f"Gagal ambil gambar: {e}")
+    except:
         return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
@@ -41,18 +42,14 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
     try:
         thumb_cloud = ""
         if thumb_url and "http" in thumb_url:
-            print(f"Mengunggah sampul ke Cloudinary...")
-            up = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs")
+            up = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs", overwrite=True)
             thumb_cloud = up['secure_url']
         
-        res = requests.get(link, headers=HEADERS, timeout=20)
+        res = requests.get(link, headers=HEADERS, timeout=25)
         soup = BeautifulSoup(res.text, 'html.parser')
-        raw_ch = soup.select('#chapterlist ul li')
+        raw_ch = soup.select('#chapterlist ul li, .cl-list ul li')
         
-        if not raw_ch:
-            print("Peringatan: Tidak menemukan daftar chapter!")
-            return None
-
+        if not raw_ch: return None
         if limit_ch: raw_ch = raw_ch[:limit_ch]
         
         ch_data = []
@@ -60,24 +57,25 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
             a_tag = c.select_one('a')
             if not a_tag: continue
             ch_url = a_tag['href']
-            ch_nama = c.select_one('.chapternum').text.strip()
+            ch_nama = c.select_one('.chapternum, .chapter-name, span').text.strip()
             
             print(f"Scraping: {ch_nama}")
             images = get_images_from_chapter(ch_url)
             if images:
                 ch_data.append({"nama": ch_nama, "images": images})
-            time.sleep(1)
+            time.sleep(1.2)
 
-        ch_data.reverse() # Index 0 = Terlama
+        if not ch_data: return None
+        ch_data.reverse() # Index 0 = Chapter Terlama
 
         os.makedirs('db', exist_ok=True)
         with open(f'db/{slug}.json', 'w', encoding='utf-8') as f:
             json.dump({"judul": judul, "thumb": thumb_cloud, "chapters": ch_data}, f, indent=4)
         
-        print(f"Berhasil menyimpan db/{slug}.json")
+        print(f"BERHASIL: db/{slug}.json tercipta.")
         return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
     except Exception as e:
-        print(f"Error pada {judul}: {e}")
+        print(f"ERROR {judul}: {e}")
         return None
 
 def main():
@@ -85,30 +83,31 @@ def main():
         url = f"https://asuracomic.net/series/{TARGET_SLUG}/"
         process_comic(TARGET_SLUG.replace('-', ' ').title(), url, TARGET_SLUG, "", limit_ch=None)
     else:
-        print("Menarik daftar komik terbaru...")
+        print("Mencari katalog terbaru...")
         res = requests.get("https://asuracomic.net/series?page=1", headers=HEADERS)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Selector diperbarui agar lebih sensitif
-        items = soup.select('.listupd .bs, .utao .uta, .listupd .bsx')[:10]
+        # Selector katalog diperbarui (Asura sering pakai .uta atau .bs)
+        items = soup.select('.listupd .bs, .utao .uta, .listupd .bsx, .soralist ul li')[:12]
         
         if not items:
-            print("Gagal menemukan daftar komik. Selector mungkin berubah.")
+            print("GAGAL: Tidak menemukan daftar komik di halaman utama.")
             return
 
         list_json = []
         for item in items:
             try:
-                judul_tag = item.select_one('h4, .tt, h3, .bigor .tt')
+                judul_tag = item.select_one('h4, .tt, h3, .bigor .tt, .series')
                 link_tag = item.select_one('a')
                 if not judul_tag or not link_tag: continue
                 
                 judul = judul_tag.text.strip()
                 link = link_tag['href']
                 slug = link.split('/')[-2] if link.endswith('/') else link.split('/')[-1]
-                img_tag = item.select_one('img')
-                thumb = img_tag.get('src') or img_tag.get('data-src')
                 
-                hasil = process_comic(judul, link, slug, thumb, limit_ch=3)
+                img_tag = item.select_one('img')
+                thumb = img_tag.get('src') or img_tag.get('data-src') or img_tag.get('data-lazy-src')
+                
+                hasil = process_comic(judul, link, slug, thumb, limit_ch=5)
                 if hasil: list_json.append(hasil)
             except: continue
         
