@@ -3,83 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog Komik Filter</title>
+    <meta name="referrer" content="no-referrer">
+    <title>Katalog Komik</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; }
         body { font-family: sans-serif; background: var(--bg); color: white; margin: 0; padding: 15px; }
-        .header { position: sticky; top: 0; background: var(--bg); z-index: 10; padding-bottom: 10px; }
-        input { width: 100%; padding: 12px; border-radius: 8px; border: none; background: var(--card); color: white; box-sizing: border-box; }
-        .genre-container { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none; }
-        .genre-btn { padding: 6px 15px; border-radius: 20px; border: none; background: var(--card); color: white; white-space: nowrap; cursor: pointer; }
-        .active { background: var(--accent); color: black; font-weight: bold; }
-        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-        .card { background: var(--card); border-radius: 10px; overflow: hidden; text-decoration: none; color: white; font-size: 13px; }
-        .thumb { width: 100%; height: 200px; object-fit: cover; }
-        .info { padding: 8px; }
+        .header { position: sticky; top: 0; background: var(--bg); z-index: 10; padding: 10px 0; }
+        input { width: 100%; padding: 12px; border-radius: 8px; border: none; background: var(--card); color: white; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
+        .card { background: var(--card); border-radius: 10px; overflow: hidden; text-decoration: none; color: white; }
+        img { width: 100%; height: 220px; object-fit: cover; }
+        .info { padding: 10px; font-size: 14px; font-weight: bold; }
     </style>
 </head>
 <body>
+    <div class="header">
+        <input type="text" id="search" placeholder="Cari judul komik...">
+    </div>
+    <div class="grid" id="list"></div>
 
-<div class="header">
-    <input type="text" id="search" placeholder="Cari judul komik...">
-    <div class="genre-container" id="genres"></div>
-</div>
-
-<div class="grid" id="list"></div>
-
-<script>
-    let comics = [];
-    let currentGenre = "Semua";
-
-    async function init() {
-        const res = await fetch('data.json');
-        comics = await res.json();
-        
-        const allGenres = ["Semua", ...new Set(comics.flatMap(c => c.genres))];
-        const gDiv = document.getElementById('genres');
-        
-        allGenres.forEach(g => {
-            const btn = document.createElement('button');
-            btn.className = 'genre-btn';
-            btn.innerText = g;
-            if(g === "Semua") btn.classList.add('active');
-            btn.onclick = () => {
-                document.querySelectorAll('.genre-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentGenre = g;
-                render();
-            };
-            gDiv.appendChild(btn);
-        });
-        render();
-    }
-
-    function render() {
-        const query = document.getElementById('search').value.toLowerCase();
-        const container = document.getElementById('list');
-        container.innerHTML = "";
-
-        const filtered = comics.filter(c => {
-            const matchSearch = c.judul.toLowerCase().includes(query);
-            const matchGenre = currentGenre === "Semua" || c.genres.includes(currentGenre);
-            return matchSearch && matchGenre;
-        });
-
-        filtered.forEach(c => {
-            container.innerHTML += `
-                <a href="detail.html?judul=${encodeURIComponent(c.judul)}" class="card">
-                    <img src="${c.gambar}" class="thumb" onerror="this.src='https://via.placeholder.com/150x200'">
-                    <div class="info">
-                        <strong>${c.judul}</strong><br>
-                        <small style="color:var(--accent)">${c.chapter_terbaru}</small>
-                    </div>
+    <script>
+        let data = [];
+        async function init() {
+            const res = await fetch('list.json');
+            data = await res.json();
+            render(data);
+        }
+        function render(items) {
+            const container = document.getElementById('list');
+            container.innerHTML = items.map(i => `
+                <a href="detail.html?slug=${i.slug}" class="card">
+                    <img src="${i.thumb}" loading="lazy">
+                    <div class="info">${i.judul}</div>
                 </a>
-            `;
-        });
-    }
-
-    document.getElementById('search').oninput = render;
-    init();
-</script>
+            `).join('');
+        }
+        document.getElementById('search').oninput = (e) => {
+            const f = data.filter(i => i.judul.toLowerCase().includes(e.target.value.toLowerCase()));
+            render(f);
+        };
+        init();
+    </script>
 </body>
 </html>
