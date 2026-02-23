@@ -30,7 +30,7 @@
                 const res = await fetch('list.json');
                 data = await res.json();
                 render(data);
-            } catch(e) { document.getElementById('list').innerHTML = "Memuat..."; }
+            } catch(e) { document.getElementById('list').innerHTML = "Memuat data..."; }
         }
         function render(items) {
             document.getElementById('list').innerHTML = items.map(i => `
