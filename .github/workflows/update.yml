@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Masukkan Slug ManhuaPlus (contoh: virus-king) untuk Full Scrape.'
+        description: 'Slug ManhuaPlus (contoh: virus-king) untuk Full Scrape.'
         required: false
         default: ''
 
@@ -35,7 +35,6 @@ jobs:
           TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
           mkdir -p asn/db
-          touch asn/db/.gitkeep
           cd asn
           python scraper.py
 
@@ -43,8 +42,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Menambahkan file secara aman agar tidak error jika robot gagal
-          git add asn/list.json || echo "list.json not found"
-          git add asn/db/
-          git commit -m "PetoMic Update: Fix Image & Folder [$(date)]" || exit 0
-          git push
+          # Menambahkan seluruh isi folder asn secara rekursif
+          git add asn/
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "PetoMic Update: Database & Katalog [$(date)]"
+            git push
+          else
+            echo "Tidak ada perubahan file yang terdeteksi."
+          fi
