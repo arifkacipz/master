@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Reader</title>
+    <style>
+        body { background: #000; margin: 0; }
+        img { width: 100%; display: block; }
+        .nav { position: fixed; top: 0; background: rgba(0,0,0,0.7); width: 100%; padding: 10px; }
+        .nav a { color: white; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="nav"><a href="index2.html">← Keluar</a></div>
+    <div id="images" style="padding-top:50px;">Memuat gambar...</div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+        const chIdx = params.get('ch');
+
+        async function load() {
+            const res = await fetch(`db/${slug}.json`);
+            const d = await res.json();
+            const chUrl = d.chapters[chIdx].url;
+
+            // Kita butuh bantuan scraper atau proxy jika gambar di-block.
+            // Sementara kita arahkan ke sumber jika scraper belum mendukung 'full deep scan'
+            window.location.href = chUrl; 
+        }
+        // Catatan: Untuk baca di web sendiri, scraper.py perlu di-update untuk ambil isi gambar.
+        load();
+    </script>
+</body>
+</html>
