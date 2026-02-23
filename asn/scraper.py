@@ -16,7 +16,7 @@ cloudinary.config(
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-    'Referer': 'https://www.toongod.org/'
+    'Referer': 'https://manhuaplus.org/'
 }
 TARGET_SLUG = os.environ.get('TARGET_SLUG')
 
@@ -24,83 +24,72 @@ def get_images_from_chapter(url):
     try:
         res = requests.get(url, headers=HEADERS, timeout=30)
         soup = BeautifulSoup(res.text, 'html.parser')
-        # Radar untuk area pembaca
-        imgs = soup.select('#readerarea img, .rdminimal img, .entry-content img, .page-break img, .reading-content img')
-        
+        # Selector ManhuaPlus biasanya berada di .reading-content atau #readerarea
+        imgs = soup.select('.reading-content img, #readerarea img')
         list_gambar = []
         for i in imgs:
-            src = i.get('src') or i.get('data-src') or i.get('data-lazy-src') or i.get('data-srcset')
+            src = i.get('src') or i.get('data-src') or i.get('data-lazy-src')
             if src and "http" in src:
-                if any(x in src.lower() for x in ["logo", "banner", "discord", "donation", "loading"]): continue
+                if any(x in src.lower() for x in ["logo", "banner", "discord", "donation"]): continue
                 list_gambar.append(src.strip())
-        
-        # Backup: cari gambar di dalam script
-        if not list_gambar:
-            found = re.findall(r'(https?://[^\s"\']+\.(?:jpg|jpeg|png|webp))', res.text)
-            if found: list_gambar.extend([f for f in found if "toongod" not in f.lower()])
-            
         return list_gambar
     except:
         return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
-    print(f"--- PetoMic memproses: {judul} ---")
+    print(f"PetoMic memproses: {judul}")
     try:
         thumb_cloud = ""
         if thumb_url and "http" in thumb_url:
-            print(f"Mengunggah sampul: {slug}...")
             up = cloudinary.uploader.upload(thumb_url, public_id=slug, folder="petomic_thumbs", overwrite=True)
             thumb_cloud = up['secure_url']
         
         res = requests.get(link, headers=HEADERS, timeout=25)
         soup = BeautifulSoup(res.text, 'html.parser')
-        
-        # Selector Chapter
-        raw_ch = soup.select('#chapterlist ul li, .cl-list ul li, li.wp-manga-chapter, .eplister ul li')
+        # Selector chapter list ManhuaPlus (Madara Theme)
+        raw_ch = soup.select('.wp-manga-chapter a')
         
         if not raw_ch:
-            print(f"DEBUG: Tidak ada chapter ditemukan untuk {judul}")
-            return None
+            # Cadangan selector jika struktur berbeda
+            raw_ch = soup.select('#chapterlist ul li a')
 
+        if not raw_ch: return None
         if limit_ch: raw_ch = raw_ch[:limit_ch]
         
         ch_data = []
-        for c in raw_ch:
-            a_tag = c.select_one('a')
-            if not a_tag: continue
+        for a_tag in raw_ch:
             ch_url = a_tag['href']
-            ch_nama = c.select_one('.chapternum, .chapter-name, span, .cl-name').text.strip()
+            ch_nama = a_tag.text.strip()
             
-            print(f"Scraping: {ch_nama}...")
+            print(f"  -> Scraping {ch_nama}")
             images = get_images_from_chapter(ch_url)
             if images:
                 ch_data.append({"nama": ch_nama, "images": images})
-            time.sleep(1.2)
+            time.sleep(1)
 
-        if not ch_data: return None
-        ch_data.reverse() # Index 0 = Paling Lama
+        # INDEX 0 = CHAPTER TERLAMA
+        ch_data.reverse()
 
         os.makedirs('db', exist_ok=True)
         with open(f'db/{slug}.json', 'w', encoding='utf-8') as f:
             json.dump({"judul": judul, "thumb": thumb_cloud, "chapters": ch_data}, f, indent=4)
         
-        print(f"BERHASIL: db/{slug}.json tercipta.")
+        print(f"BERHASIL: db/{slug}.json tersimpan.")
         return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
     except Exception as e:
-        print(f"ERROR: {judul} gagal - {e}")
+        print(f"ERROR {judul}: {e}")
         return None
 
 def main():
     if TARGET_SLUG:
-        # MENGGUNAKAN /webtoon/ SESUAI PERMINTAAN
-        url = f"https://www.toongod.org/webtoon/{TARGET_SLUG}/"
+        url = f"https://manhuaplus.org/manga/{TARGET_SLUG}/"
         process_comic(TARGET_SLUG.replace('-', ' ').title(), url, TARGET_SLUG, "", limit_ch=None)
     else:
-        print("Menarik katalog terbaru PetoMic dari ToonGod...")
-        res = requests.get("https://www.toongod.org/home/page/1/", headers=HEADERS)
+        print("Menarik katalog terbaru PetoMic dari ManhuaPlus...")
+        res = requests.get("https://manhuaplus.org/all-manga/page/1/", headers=HEADERS)
         soup = BeautifulSoup(res.text, 'html.parser')
-        
-        items = soup.select('.listupd .bs, .utao .uta, .listupd .bsx, .page-item-detail, .manga')[:12]
+        # Selector untuk item manga di daftar
+        items = soup.select('.page-item-detail, .listupd .bs')[:10]
         
         if not items:
             print("GAGAL: Tidak menemukan daftar komik.")
@@ -109,18 +98,17 @@ def main():
         list_json = []
         for item in items:
             try:
-                judul_tag = item.select_one('h4, .tt, h3, .post-title h3, .series, .title')
-                link_tag = item.select_one('a')
-                if not judul_tag or not link_tag: continue
+                judul_tag = item.select_one('.post-title h3 a, .tt, h3 a')
+                if not judul_tag: continue
                 
                 judul = judul_tag.text.strip()
-                link = link_tag['href']
+                link = judul_tag['href']
                 slug = link.split('/')[-2] if link.endswith('/') else link.split('/')[-1]
                 
                 img_tag = item.select_one('img')
                 thumb = img_tag.get('src') or img_tag.get('data-src') or img_tag.get('data-lazy-src')
                 
-                hasil = process_comic(judul, link, slug, thumb, limit_ch=5)
+                hasil = process_comic(judul, link, slug, thumb, limit_ch=3)
                 if hasil: list_json.append(hasil)
             except: continue
         
