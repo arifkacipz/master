@@ -2,8 +2,13 @@ name: Update Comic Data
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 */6 * * *' # Cek update otomatis tiap 6 jam
   workflow_dispatch:
+    inputs:
+      target_slug:
+        description: 'Slug komik untuk Full Scrape (Contoh: solo-leveling). Kosongkan untuk update rutin.'
+        required: false
+        default: ''
 
 jobs:
   build:
@@ -27,6 +32,8 @@ jobs:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          # Menerima input dari tombol "Run Workflow" di GitHub
+          TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
           cd asn
           python scraper.py
@@ -37,5 +44,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add asn/list.json
           git add asn/db/*.json
-          git commit -m "Auto Update: Cloudinary & Fragmented DB" || exit 0
+          git commit -m "Auto Update: ${TARGET_SLUG:-Routine Update}" || exit 0
           git push
