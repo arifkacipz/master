@@ -7,94 +7,51 @@
     <title>Detail Komik</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; }
-        body { background: var(--bg); color: white; font-family: sans-serif; padding: 20px; line-height: 1.5; }
+        body { background: var(--bg); color: white; font-family: sans-serif; padding: 20px; }
         .back { color: var(--accent); text-decoration: none; font-weight: bold; display: block; margin-bottom: 20px; }
         .comic-info { text-align: center; margin-bottom: 30px; }
-        .comic-info img { width: 160px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+        .comic-info img { width: 160px; border-radius: 10px; }
         .ch-box { background: var(--card); border-radius: 10px; overflow: hidden; }
         .ch-link { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #334155; color: white; text-decoration: none; }
-        .ch-link:active { background: #334155; }
-        
-        /* Tips & Slug Copy */
         .tips-box { margin-top: 40px; padding: 15px; background: #1e293b; border-radius: 8px; font-size: 13px; border: 1px dashed #475569; }
-        .slug-wrapper { margin-top: 10px; display: flex; align-items: center; gap: 10px; }
-        #slug-hint { 
-            background: #0f172a; color: var(--accent); padding: 5px 12px; border-radius: 5px; 
-            cursor: pointer; font-weight: bold; border: 1px solid var(--accent);
-        }
-        #copy-status { font-size: 11px; color: #10b981; display: none; }
-        #loading { text-align: center; padding: 50px; color: var(--accent); }
+        #slug-hint { display: inline-block; background: #0f172a; color: var(--accent); padding: 5px 12px; border-radius: 5px; cursor: pointer; font-weight: bold; border: 1px solid var(--accent); margin-top: 10px; }
+        #copy-status { font-size: 11px; color: #10b981; display: none; margin-left: 10px; }
     </style>
 </head>
 <body>
-
     <a href="index2.html" class="back">← Kembali</a>
-
-    <div id="loading">Memuat detail...</div>
-
-    <div id="content" style="display:none;">
+    <div id="content">
         <div class="comic-info" id="header"></div>
         <div class="ch-box" id="list"></div>
-
         <div class="tips-box">
-            <strong>Tips:</strong> Jika chapter tidak lengkap, buka tab <strong>Actions</strong> di GitHub, pilih <strong>Update Comic Data</strong>, klik <strong>Run Workflow</strong>, dan masukkan slug:
-            <div class="slug-wrapper">
-                <div id="slug-hint" title="Klik untuk Copy">Memuat...</div>
-                <span id="copy-status">Tersalin!</span>
-            </div>
+            <strong>Tips:</strong> Jika chapter tidak lengkap, jalankan <strong>Full Scrape</strong> di GitHub Actions dengan slug ini:
+            <br><div id="slug-hint">Memuat...</div> <span id="copy-status">Tersalin!</span>
         </div>
     </div>
-
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const slug = urlParams.get('slug');
-
-        // Fungsi Copy Slug
-        function copySlug() {
-            if (!slug) return;
+        const slug = new URLSearchParams(window.location.search).get('slug');
+        document.getElementById('slug-hint').innerText = slug;
+        document.getElementById('slug-hint').onclick = () => {
             navigator.clipboard.writeText(slug).then(() => {
-                const status = document.getElementById('copy-status');
-                status.style.display = 'inline';
-                setTimeout(() => status.style.display = 'none', 2000);
+                document.getElementById('copy-status').style.display = 'inline';
+                setTimeout(() => document.getElementById('copy-status').style.display = 'none', 2000);
             });
-        }
+        };
 
         async function load() {
-            if (!slug) {
-                document.getElementById('loading').innerText = "Slug tidak ditemukan.";
-                return;
+            const res = await fetch(`db/${slug}.json`);
+            const d = await res.json();
+            document.getElementById('header').innerHTML = `<img src="${d.thumb}"><h2>${d.judul}</h2>`;
+            
+            // Tampilkan Newest First (index besar ke 0) agar user tidak scroll jauh ke bawah
+            let html = "";
+            for (let i = d.chapters.length - 1; i >= 0; i--) {
+                html += `
+                <a href="reader.html?slug=${slug}&ch=${i}" class="ch-link">
+                    <span>${d.chapters[i].nama}</span><span style="color:var(--accent)">BACA →</span>
+                </a>`;
             }
-
-            // Tampilkan slug di box tips
-            const slugHint = document.getElementById('slug-hint');
-            slugHint.innerText = slug;
-            slugHint.onclick = copySlug;
-
-            try {
-                const res = await fetch(`db/${slug}.json`);
-                const d = await res.json();
-
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-
-                document.getElementById('header').innerHTML = `
-                    <img src="${d.thumb}" onerror="this.src='https://via.placeholder.com/150x200'">
-                    <h2>${d.judul}</h2>
-                `;
-
-                document.getElementById('list').innerHTML = d.chapters.map((c, idx) => `
-                    <a href="reader.html?slug=${slug}&ch=${idx}" class="ch-link">
-                        <span>${c.nama}</span>
-                        <span style="color:var(--accent)">BACA →</span>
-                    </a>
-                `).join('');
-            } catch (e) {
-                document.getElementById('loading').innerHTML = `
-                    <p style="color:#ef4444">Data Chapter Belum Ada.</p>
-                    <p>Silakan copy slug di bawah dan lakukan <b>Full Scrape</b>.</p>
-                `;
-                document.getElementById('content').style.display = 'block';
-            }
+            document.getElementById('list').innerHTML = html;
         }
         load();
     </script>
