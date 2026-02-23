@@ -1,1 +1,166 @@
-fetch('data.json') // Tidak perlu pakai /asn/ lagi karena filenya satu folder
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Komik Otomatis</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--accent);
+        }
+
+        /* Tata letak Grid: 2 kolom di HP, banyak kolom di Laptop */
+        .comic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 600px) {
+            .comic-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 900px) {
+            .comic-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:active { transform: scale(0.95); }
+
+        .thumbnail-container {
+            position: relative;
+            width: 100%;
+            padding-top: 140%; /* Rasio gambar komik */
+            background: #334155;
+        }
+
+        .thumbnail-container img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .chapter {
+            font-size: 0.75rem;
+            color: var(--accent);
+            background: rgba(56, 189, 248, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .btn-read {
+            display: block;
+            text-align: center;
+            background: var(--accent);
+            color: #000;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        #loader { text-align: center; padding: 50px; color: var(--text-dim); }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Update RizzComic</h1>
+
+    <div id="loader">Sedang mengambil data terbaru...</div>
+    <div class="comic-grid" id="comic-list"></div>
+
+    <script>
+        async function loadComics() {
+            const listContainer = document.getElementById('comic-list');
+            const loader = document.getElementById('loader');
+
+            try {
+                // Mengambil data dari data.json di folder yang sama
+                const response = await fetch('data.json');
+                const data = await response.json();
+
+                if (data.length === 0) {
+                    loader.innerHTML = "Data kosong. Pastikan robot Scraper sudah berhasil jalan.";
+                    return;
+                }
+
+                loader.style.display = 'none';
+                
+                data.forEach(comic => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="thumbnail-container">
+                            <img src="${comic.gambar}" alt="${comic.judul}" onerror="this.src='https://via.placeholder.com/150x210?text=No+Image'">
+                        </div>
+                        <div class="info">
+                            <div>
+                                <p class="title">${comic.judul}</p>
+                                <span class="chapter">${comic.chapter_terbaru}</span>
+                            </div>
+                            <a href="${comic.link}" class="btn-read" target="_blank">BACA</a>
+                        </div>
+                    `;
+                    listContainer.appendChild(card);
+                });
+            } catch (error) {
+                console.error(error);
+                loader.innerHTML = "Gagal memuat data. Cek apakah file data.json sudah ada.";
+            }
+        }
+
+        loadComics();
+    </script>
+</body>
+</html>
