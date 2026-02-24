@@ -28,7 +28,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         let currentPage = parseInt(urlParams.get('p')) || 1;
 
-        fetch('/asn/list.json')
+        fetch('../list.json')
             .then(res => res.json())
             .then(data => {
                 const totalPages = Math.ceil(data.length / itemsPerPage);
