@@ -14,14 +14,18 @@ cloudinary.config(
     api_secret = os.environ.get('CLOUDINARY_API_SECRET')
 )
 
+# Menyamar sebagai Chrome di Android (Sesuai tampilan HP Anda)
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
     'Referer': 'https://manhuaplus.org/',
-    'X-Requested-With': 'XMLHttpRequest'
+    'Cache-Control': 'no-cache',
+    'Pragma': 'no-cache'
 }
 
 def get_images(chapter_url):
-    """Mengambil daftar gambar dari sebuah chapter menggunakan AJAX."""
+    """Mengambil gambar chapter dengan proteksi referer."""
     try:
         chapter_id = chapter_url.strip('/').split('/')[-1]
         if not chapter_id.isdigit():
@@ -31,8 +35,11 @@ def get_images(chapter_url):
             else: return []
 
         ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
-        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
+        # Kirim request dengan referer spesifik chapter
+        current_headers = HEADERS.copy()
+        current_headers['Referer'] = chapter_url
         
+        ajax_res = requests.post(ajax_url, headers=current_headers, timeout=20)
         if ajax_res.status_code == 200:
             data = ajax_res.json()
             if data.get('status') and 'html' in data:
@@ -48,16 +55,14 @@ def get_images(chapter_url):
                 temp_list.sort()
                 return temp_list
         return []
-    except:
-        return []
+    except: return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
-    """Memproses komik dengan sistem Deep-Scrape untuk mengambil ribuan chapter."""
+    """Proses komik dengan pendeteksi chapter berbasis JSON-LD (Anti-Skip)."""
     print(f"\n--- PetoMic memproses: {judul} ---")
     filepath = f'db/{slug}.json'
     os.makedirs('db', exist_ok=True)
     
-    # 1. Load Database Lokal
     old_chapters_dict = {}
     if os.path.exists(filepath):
         try:
@@ -68,73 +73,71 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         except: pass
 
     try:
-        # 2. Ambil Halaman Utama & Bongkar Manga ID (Kunci untuk Full List)
-        res = requests.get(link, headers=HEADERS, timeout=20)
-        
-        # Mencoba 3 pola ID berbeda yang sering digunakan ManhuaPlus
-        m_id_match = re.search(r'manga_id\s*:\s*["\'](\d+)["\']|data-id=["\'](\d+)["\']|chapter_list_manga_(\d+)', res.text)
-        
+        res = requests.get(link, headers=HEADERS, timeout=25)
+        soup = BeautifulSoup(res.text, 'html.parser')
         ch_list_from_web = []
-        if m_id_match:
-            m_id = m_id_match.group(1) or m_id_match.group(2) or m_id_match.group(3)
-            print(f"   [+] Manga ID Ditemukan: {m_id}. Meminta daftar chapter lengkap...")
-            
-            # Jalur AJAX khusus untuk memintas batasan "20 chapter"
-            ajax_urls = [
-                f"https://manhuaplus.org/ajax/chapters/list?manga_id={m_id}",
-                "https://manhuaplus.org/wp-admin/admin-ajax.php"
-            ]
-            
-            for a_url in ajax_urls:
-                if "admin-ajax" in a_url:
-                    ajax_res = requests.post(a_url, headers=HEADERS, data={'action': 'manga_get_chapters', 'manga': m_id}, timeout=20)
-                else:
-                    ajax_res = requests.post(a_url, headers=HEADERS, timeout=20)
-                
-                if ajax_res.status_code == 200 and len(ajax_res.text) > 100:
-                    soup_ch = BeautifulSoup(ajax_res.text, 'html.parser')
-                    items = soup_ch.select('li')
-                    for item in items:
-                        a = item.find('a')
-                        if a and '/chapters/' in a['href']:
-                            ch_list_from_web.append({"nama": a.text.strip(), "url": a['href']})
-                    if ch_list_from_web: break # Berhenti jika sudah dapat
 
-        # Backup: Jika AJAX gagal, sikat semua selector HTML
+        # METODE 1: JSON-LD (Paling Akurat untuk 10.000 Chapter)
+        scripts = soup.find_all('script', type='application/ld+json')
+        for s in scripts:
+            try:
+                js_data = json.loads(s.string)
+                # Mencari @graph yang berisi daftar ItemList
+                graph = js_data.get('@graph', [js_data])
+                for g in graph:
+                    if g.get('@type') == 'ItemList':
+                        for item in g.get('itemListElement', []):
+                            u = item.get('url')
+                            if u and '/chapters/' in u:
+                                # Ambil nama dari URL jika teks tidak ada
+                                n = u.strip('/').split('/')[-1].replace('-', ' ').title()
+                                ch_list_from_web.append({"nama": n, "url": u})
+            except: continue
+
+        # METODE 2: AJAX Fallback
         if not ch_list_from_web:
-            print("   [!] AJAX Gagal. Menyisir HTML mentah...")
-            soup = BeautifulSoup(res.text, 'html.parser')
-            for sel in ['ul.row-content-chapter li', '.eplister li', '.cl li']:
-                for item in soup.select(sel):
-                    a = item.find('a')
-                    if a and a.text.strip() not in [c['nama'] for c in ch_list_from_web]:
-                        ch_list_from_web.append({"nama": a.text.strip(), "url": a['href']})
+            m_id = re.search(r'manga_id\s*:\s*["\'](\d+)["\']|data-id=["\'](\d+)["\']', res.text)
+            if m_id:
+                manga_id = m_id.group(1) or m_id.group(2)
+                ajax_url = f"https://manhuaplus.org/ajax/chapters/list?manga_id={manga_id}"
+                ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
+                if ajax_res.status_code == 200:
+                    soup_ch = BeautifulSoup(ajax_res.text, 'html.parser')
+                    for a in soup_ch.find_all('a'):
+                        if '/chapters/' in a.get('href', ''):
+                            ch_list_from_web.append({"nama": a.text.strip(), "url": a['href']})
+
+        # METODE 3: Greedy Search (Menyisir Link)
+        if not ch_list_from_web:
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                if '/chapters/' in href and slug in href:
+                    name = a.text.strip() or href.split('/')[-1]
+                    if href not in [c['url'] for c in ch_list_from_web]:
+                        ch_list_from_web.append({"nama": name, "url": href})
 
         print(f"   [?] Hasil: Scraper melihat {len(ch_list_from_web)} chapter di web.")
 
-        # 3. Bandingkan: Apa ada yang baru/hilang?
+        # Filter Chapter Baru
         new_chapters = [ch for ch in ch_list_from_web if ch['nama'] not in old_chapters_dict]
         
         if not new_chapters:
-            print(f"   [~] Selesai: Semua {len(ch_list_from_web)} chapter di web sudah ada di database.")
+            print(f"   [~] Semua {len(ch_list_from_web)} chapter sudah tersimpan.")
             return {"judul": judul, "slug": slug, "thumb": thumb_url}
 
-        # Urutkan agar Chapter lama diproses duluan (Ch 1, 2, dst)
-        new_chapters.reverse()
+        new_chapters.reverse() # Proses dari Chapter 1 ke atas
+        if limit_ch: new_chapters = new_chapters[:limit_ch]
 
-        if limit_ch:
-            new_chapters = new_chapters[:limit_ch]
-
-        print(f"   [+] Memulai scraping {len(new_chapters)} chapter baru...")
+        print(f"   [+] Memulai scrape {len(new_chapters)} chapter baru (termasuk chapter lama yang terskip)...")
 
         for ch in new_chapters:
-            print(f"   -> Mendownload Gambar: {ch['nama']}")
+            print(f"   -> Scraping: {ch['nama']}")
             imgs = get_images(ch['url'])
             if imgs:
                 old_chapters_dict[ch['nama']] = {"nama": ch['nama'], "images": imgs}
-            time.sleep(1)
+            time.sleep(1.2) # Jeda lebih lama agar tidak dicurigai
 
-        # 4. Simpan Database dengan Urutan Rapi
+        # Sorting Numerik Rapi
         all_chapters = list(old_chapters_dict.values())
         try:
             all_chapters.sort(key=lambda x: float(re.findall(r"[-+]?\d*\.\d+|\d+", x['nama'])[0]))
@@ -143,22 +146,18 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump({"judul": judul, "thumb": thumb_url, "chapters": all_chapters}, f, indent=4)
         
-        print(f"DONE: {slug}.json kini memiliki {len(all_chapters)} chapter.")
+        print(f"DONE: {slug}.json diperbarui menjadi {len(all_chapters)} chapter.")
         return {"judul": judul, "slug": slug, "thumb": thumb_url}
     except Exception as e:
-        print(f"Error fatal: {e}")
+        print(f"Error: {e}")
         return None
 
 def main():
-    """Fungsi kontrol untuk mode Manual (TARGET_SLUG) atau Rutin."""
     target_slug = os.environ.get('TARGET_SLUG')
-    
     if target_slug:
-        # MODE MANUAL: Ambil seluruh daftar chapter
         url = f"https://manhuaplus.org/manga/{target_slug}"
         process_comic(target_slug.replace('-', ' ').title(), url, target_slug, "", limit_ch=None)
     else:
-        # MODE RUTIN: Update katalog utama
         print("Scraping katalog rutin...")
         list_json = []
         for page in range(1, 4):
@@ -168,18 +167,16 @@ def main():
                 soup = BeautifulSoup(res.text, 'html.parser')
                 items = soup.select('.listupd .bs, .page-item-detail, .mh-77vh > div')
                 for item in items:
-                    link_tag = item.select_one('a')
-                    if not link_tag: continue
-                    judul = link_tag.get('title') or link_tag.text.strip()
-                    link = link_tag['href']
+                    a = item.select_one('a')
+                    if not a: continue
+                    judul = a.get('title') or a.text.strip()
+                    link = a['href']
                     slug = link.strip('/').split('/')[-1]
-                    img_tag = item.select_one('img')
-                    thumb = img_tag.get('data-src') or img_tag.get('src') if img_tag else ""
-                    
+                    img = item.select_one('img')
+                    thumb = img.get('data-src') or img.get('src') if img else ""
                     hasil = process_comic(judul, link, slug, thumb, limit_ch=5)
                     if hasil: list_json.append(hasil)
             except: continue
-        
         with open('list.json', 'w', encoding='utf-8') as f:
             json.dump(list_json, f, indent=4)
 
