@@ -239,10 +239,10 @@ def main():
         )
     else:
         # Mode katalog: ambil dari halaman 1-10 (bisa disesuaikan)
-        print("Scraping katalog rutin PetoMic (Halaman 1-10)...")
+        print("Scraping katalog rutin PetoMic (Halaman 1-2)...")
         list_json = []
 
-        for page in range(1, 11):
+        for page in range(1, 3):
             if page == 1:
                 url_katalog = "https://manhuaplus.org/all-manga/"
             else:
@@ -275,7 +275,7 @@ def main():
                         thumb = "https://manhuaplus.org" + thumb
 
                     # Untuk katalog: batasi 2 chapter terbaru (bisa diubah sesuai kebutuhan)
-                    hasil = process_comic(judul, link, slug, thumb, limit_ch=2)
+                    hasil = process_comic(judul, link, slug, thumb, limit_ch=5)
                     if hasil:
                         list_json.append(hasil)
                 except Exception as e:
