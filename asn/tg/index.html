@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trigger GitHub Actions Workflow</title>
     <style>
+        /* (style tetap sama, tidak diubah) */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: #0a0a0a;
@@ -160,6 +161,7 @@
         // ===== KONFIGURASI =====
         const OWNER = 'arifkacipz';      // Username GitHub Anda
         const REPO = 'master';           // Nama repositori
+        const BRANCH = 'master';          // Branch default (bukan 'main')
         // =======================
 
         window.onload = function() {
@@ -175,7 +177,6 @@
         function toggleSlugField() {
             const workflow = document.getElementById('workflowSelect').value;
             const slugContainer = document.getElementById('slugContainer');
-            // Sembunyikan slug untuk workflow yang tidak memerlukan input slug
             const noSlugWorkflows = ['full_scrape_scheduler.yml', 'multi.yml'];
             slugContainer.style.display = noSlugWorkflows.includes(workflow) ? 'none' : 'block';
         }
@@ -208,12 +209,10 @@
 
             const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${workflow}/dispatches`;
 
-            let payload = { ref: 'main' };
-            // Hanya kirim inputs jika workflow membutuhkan slug dan slug tidak kosong
+            let payload = { ref: BRANCH };
             if (workflow === 'update-petomic-data.yml' && slug) {
                 payload.inputs = { target_slug: slug };
             }
-            // Workflow lain tidak mengirim inputs
 
             btn.disabled = true;
             btn.innerText = 'Memproses...';
@@ -234,7 +233,12 @@
                     showStatus('✅ Workflow berhasil dipicu! Cek tab Actions di GitHub.', 'success');
                 } else {
                     const error = await response.json();
-                    showStatus(`❌ Gagal: ${error.message}`, 'error');
+                    // Tampilkan pesan error lebih detail
+                    let errorMsg = error.message || 'Unknown error';
+                    if (response.status === 404) {
+                        errorMsg = 'Workflow tidak ditemukan. Pastikan nama file benar dan sudah di-push ke branch ' + BRANCH;
+                    }
+                    showStatus(`❌ Gagal (${response.status}): ${errorMsg}`, 'error');
                 }
             } catch (err) {
                 showStatus(`❌ Error: ${err.message}`, 'error');
