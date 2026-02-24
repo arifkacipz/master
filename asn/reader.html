@@ -7,42 +7,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #000; touch-action: manipulation; }
-        img { min-height: 300px; background: #0a0a0a; display: block; width: 100%; max-width: 672px; margin: 0 auto; }
-        .nav-btn { flex: 1; padding: 14px; font-weight: 800; font-size: 12px; text-transform: uppercase; text-align: center; border-radius: 12px; transition: all 0.3s ease; }
-        .btn-prev { background: #27272a; color: #a1a1aa; }
-        .btn-next { background: #7e22ce; color: white; box-shadow: 0 4px 14px 0 rgba(126, 34, 206, 0.39); }
-        .disabled { opacity: 0.1; pointer-events: none; }
-        /* Animasi Transisi Menu */
-        #bottom-nav { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .menu-hidden { transform: translateY(110%); }
+        img { display: block; width: 100%; max-width: 672px; margin: 0 auto; background: #0a0a0a; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .nav-btn { flex: 1; padding: 14px; font-weight: 800; font-size: 11px; text-transform: uppercase; border-radius: 12px; }
+        #bottom-nav, #top-header { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .menu-hidden-top { transform: translateY(-110%); }
+        .menu-hidden-bottom { transform: translateY(115%); }
     </style>
 </head>
 <body class="text-white">
 
-    <div id="tap-area" class="flex flex-col items-center min-h-screen pb-40">
-        <div id="loader" class="mt-40 text-zinc-600 text-sm font-bold tracking-widest animate-pulse uppercase">Menghubungkan ke Server...</div>
+    <header id="top-header" class="fixed top-0 left-0 w-full z-50 bg-zinc-900/90 backdrop-blur-md border-b border-white/5 p-3">
+        <div class="flex justify-between items-center max-w-3xl mx-auto">
+            <a href="index2.html" class="text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-white">Home</a>
+            <span id="top-title" class="text-[9px] font-bold truncate max-w-[180px] text-zinc-400 uppercase">Memuat...</span>
+            <a href="javascript:history.back()" class="text-[10px] font-black uppercase tracking-widest text-purple-500">Back</a>
+        </div>
+    </header>
+
+    <div id="tap-area" class="flex flex-col items-center min-h-screen pt-12 pb-40">
+        <div id="loader" class="mt-40 text-zinc-700 text-xs font-bold animate-pulse">MEMUAT GAMBAR...</div>
     </div>
 
-    <div id="bottom-nav" class="fixed bottom-0 left-0 w-full p-4 bg-zinc-900/90 backdrop-blur-xl border-t border-white/10 shadow-[0_-20px_50px_rgba(0,0,0,0.8)] z-50">
+    <div id="bottom-nav" class="fixed bottom-0 left-0 w-full p-4 bg-zinc-900/90 backdrop-blur-xl border-t border-white/10 z-50 shadow-2xl">
         <div class="max-w-md mx-auto flex flex-col gap-3">
-            
-            <div class="flex justify-between items-center px-1">
-                <span id="ch-label" class="text-[10px] font-black text-zinc-500 uppercase tracking-tighter">Memuat...</span>
-                <span class="text-[10px] text-zinc-600 italic">Tap layar untuk fokus baca</span>
-            </div>
-            
-            <select id="ch-selector" class="w-full bg-black border border-white/10 text-xs rounded-xl p-3 outline-none text-purple-400 font-bold appearance-none text-center">
-                <option>Memuat daftar chapter...</option>
-            </select>
-
+            <select id="ch-selector" class="w-full bg-black border border-white/10 text-xs rounded-xl p-3 outline-none text-purple-400 font-bold appearance-none text-center"></select>
             <div class="flex gap-2">
-                <button id="prev-btn" class="nav-btn btn-prev disabled">Prev</button>
-                
-                <a id="back-detail" href="#" class="bg-zinc-800 px-6 rounded-xl flex items-center justify-center border border-white/5 hover:bg-zinc-700 transition group" title="Detail Komik">
-                    <span class="text-xl font-black text-zinc-400 group-hover:text-purple-400">!</span>
-                </a>
-                
-                <button id="next-btn" class="nav-btn btn-next disabled">Next</button>
+                <button id="prev-btn" class="nav-btn bg-zinc-800 text-zinc-400 opacity-20 pointer-events-none">Prev</button>
+                <a id="back-detail" href="#" class="bg-zinc-800 px-6 rounded-xl flex items-center justify-center border border-white/5 text-xl font-black text-zinc-400 hover:text-purple-400 transition">!</a>
+                <button id="next-btn" class="nav-btn bg-purple-700 text-white opacity-20 pointer-events-none">Next</button>
             </div>
         </div>
     </div>
@@ -52,7 +44,6 @@
         const slug = urlParams.get('slug');
         const chIndex = parseInt(urlParams.get('ch'));
 
-        // Set Link Kembali ke Detail Komik
         document.getElementById('back-detail').href = `detail.html?slug=${slug}`;
 
         fetch(`../db/${slug}.json`)
@@ -61,59 +52,43 @@
                 const chapter = manga.chapters[chIndex];
                 if (!chapter) return;
 
-                // --- 1. Update Judul Halaman ---
                 document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
-
+                document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
                 document.getElementById('loader').remove();
-                document.getElementById('ch-label').innerText = chapter.nama;
                 
-                // --- 2. Dropdown Navigasi ---
                 const selector = document.getElementById('ch-selector');
                 selector.innerHTML = manga.chapters.map((ch, i) => 
                     `<option value="${i}" ${i === chIndex ? 'selected' : ''}>${ch.nama}</option>`
                 ).reverse().join('');
                 selector.onchange = (e) => location.href = `reader.html?slug=${slug}&ch=${e.target.value}`;
 
-                // --- 3. Logika Tombol Prev/Next ---
                 if (chIndex > 0) {
                     const btn = document.getElementById('prev-btn');
-                    btn.classList.remove('disabled');
+                    btn.classList.remove('opacity-20', 'pointer-events-none');
                     btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex - 1}`;
                 }
                 if (chIndex < manga.chapters.length - 1) {
                     const btn = document.getElementById('next-btn');
-                    btn.classList.remove('disabled');
+                    btn.classList.remove('opacity-20', 'pointer-events-none');
                     btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex + 1}`;
                 }
 
-                // --- 4. Render Gambar (Sorting Numeric) ---
                 const container = document.getElementById('tap-area');
-                const sortedImages = chapter.images.sort((a, b) => {
-                    return a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'});
-                });
-
-                sortedImages.forEach(imgUrl => {
+                chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(imgUrl => {
                     const img = document.createElement('img');
-                    img.src = imgUrl; 
-                    img.loading = "lazy";
-                    img.className = "shadow-2xl border-b border-white/5";
+                    img.src = imgUrl; img.loading = "lazy";
                     img.onerror = () => img.remove();
                     container.appendChild(img);
                 });
             });
 
-        // --- 5. Fitur Tap to Hide Menu ---
+        // Tap to Hide (Top & Bottom)
         let menuVisible = true;
         document.body.addEventListener('click', (e) => {
-            // Abaikan klik jika yang diklik adalah bagian dari menu navigasi
-            if (!e.target.closest('#bottom-nav')) {
+            if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
                 menuVisible = !menuVisible;
-                const nav = document.getElementById('bottom-nav');
-                if (menuVisible) {
-                    nav.classList.remove('menu-hidden');
-                } else {
-                    nav.classList.add('menu-hidden');
-                }
+                document.getElementById('bottom-nav').classList.toggle('menu-hidden-bottom', !menuVisible);
+                document.getElementById('top-header').classList.toggle('menu-hidden-top', !menuVisible);
             }
         });
     </script>
