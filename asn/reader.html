@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetoMic - Reader</title>
+    <title>Memuat Chapter... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #000; touch-action: manipulation; }
@@ -12,7 +12,6 @@
         .btn-prev { background: #27272a; color: #a1a1aa; }
         .btn-next { background: #7e22ce; color: white; box-shadow: 0 4px 14px 0 rgba(126, 34, 206, 0.39); }
         .disabled { opacity: 0.1; pointer-events: none; }
-        /* Animasi Transisi Menu */
         #bottom-nav { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .menu-hidden { transform: translateY(110%); }
     </style>
@@ -28,7 +27,7 @@
             
             <div class="flex justify-between items-center px-1">
                 <span id="ch-label" class="text-[10px] font-black text-zinc-500 uppercase tracking-tighter">Memuat...</span>
-                <span class="text-[10px] text-zinc-500 italic">Tap layar untuk sembunyikan menu</span>
+                <span class="text-[10px] text-zinc-600 italic">Tap layar untuk sembunyikan menu</span>
             </div>
             
             <select id="ch-selector" class="w-full bg-black border border-white/10 text-xs rounded-xl p-3 outline-none text-purple-400 font-bold appearance-none text-center">
@@ -52,7 +51,7 @@
         const slug = urlParams.get('slug');
         const chIndex = parseInt(urlParams.get('ch'));
 
-        // 1. Set Link Kembali ke Detail
+        // Link kembali ke detail komik
         document.getElementById('back-detail').href = `detail.html?slug=${slug}`;
 
         fetch(`../db/${slug}.json`)
@@ -61,17 +60,20 @@
                 const chapter = manga.chapters[chIndex];
                 if (!chapter) return;
 
+                // --- UPDATE TITLE HALAMAN (FORMAT: Judul & Chapter - PetoMic) ---
+                document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
+
                 document.getElementById('loader').remove();
                 document.getElementById('ch-label').innerText = chapter.nama;
                 
-                // 2. Dropdown Navigasi
+                // Dropdown Chapter
                 const selector = document.getElementById('ch-selector');
                 selector.innerHTML = manga.chapters.map((ch, i) => 
                     `<option value="${i}" ${i === chIndex ? 'selected' : ''}>${ch.nama}</option>`
                 ).reverse().join('');
                 selector.onchange = (e) => location.href = `reader.html?slug=${slug}&ch=${e.target.value}`;
 
-                // 3. Tombol Prev/Next
+                // Tombol Navigasi
                 if (chIndex > 0) {
                     const btn = document.getElementById('prev-btn');
                     btn.classList.remove('disabled');
@@ -83,7 +85,7 @@
                     btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex + 1}`;
                 }
 
-                // 4. Urutan Gambar (Numeric Sorting)
+                // Render Gambar Berurutan
                 const container = document.getElementById('tap-area');
                 const sortedImages = chapter.images.sort((a, b) => {
                     return a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'});
@@ -99,18 +101,13 @@
                 });
             });
 
-        // 5. Fitur Tap to Hide
+        // Fitur Tap to Hide Menu
         let menuVisible = true;
         document.body.addEventListener('click', (e) => {
-            // Jika yang diklik bukan elemen navigasi, sembunyikan menu
             if (!e.target.closest('#bottom-nav')) {
                 menuVisible = !menuVisible;
                 const nav = document.getElementById('bottom-nav');
-                if (menuVisible) {
-                    nav.classList.remove('menu-hidden');
-                } else {
-                    nav.classList.add('menu-hidden');
-                }
+                nav.classList.toggle('menu-hidden', !menuVisible);
             }
         });
     </script>
