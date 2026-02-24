@@ -1,0 +1,45 @@
+name: Full Scrape Scheduler
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # setiap 30 menit
+  workflow_dispatch:          # bisa dijalankan manual
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 cloudinary
+
+      - name: Run full scrape scheduler
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+        run: python asn/full_scrape_scheduler.py
+
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Full scrape: one slug [$(date)]"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "Tidak ada perubahan, skip commit."
+          fi
