@@ -39,61 +39,132 @@
     </div>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        let slug = urlParams.get('slug');
-        let chIndex = parseInt(urlParams.get('ch'));
-
-        if (!slug || isNaN(chIndex)) {
-            const parts = window.location.pathname.split('/').filter(Boolean);
-            const chPart = parts.pop();
-            slug = parts.pop();
-            chIndex = parseInt(chPart.replace('ch-', ''));
-        }
-
-        document.getElementById('back-detail').href = `/asn/${slug}`;
-
-        fetch(`/db/${slug}.json`)
-            .then(res => res.json())
-            .then(manga => {
-                const chapter = manga.chapters[chIndex];
-                document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
-                document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
-                document.getElementById('loader').remove();
-                
-                const selector = document.getElementById('ch-selector');
-                selector.innerHTML = manga.chapters.map((ch, i) => 
-                    `<option value="${i}" ${i === chIndex ? 'selected' : ''}>${ch.nama}</option>`
-                ).reverse().join('');
-                selector.onchange = (e) => location.href = `/asn/${slug}/ch-${e.target.value}`;
-
-                if (chIndex > 0) {
-                    const btn = document.getElementById('prev-btn');
-                    btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `/asn/${slug}/ch-${chIndex - 1}`;
-                }
-                if (chIndex < manga.chapters.length - 1) {
-                    const btn = document.getElementById('next-btn');
-                    btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `/asn/${slug}/ch-${chIndex + 1}`;
-                }
-
-                const container = document.getElementById('tap-area');
-                chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(imgUrl => {
-                    const img = document.createElement('img');
-                    img.src = imgUrl; img.loading = "lazy";
-                    img.onerror = () => img.remove();
-                    container.appendChild(img);
-                });
-            });
-
-        let menuVisible = true;
-        document.body.addEventListener('click', (e) => {
-            if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
-                menuVisible = !menuVisible;
-                document.getElementById('bottom-nav').classList.toggle('menu-hidden-bottom', !menuVisible);
-                document.getElementById('top-header').classList.toggle('menu-hidden-top', !menuVisible);
+        (function() {
+            // Fungsi untuk mengekstrak nomor chapter dari nama (misal "Chapter 41" -> "41", "Chapter 41.5" -> "41.5")
+            function getChapterNumber(chapterName) {
+                const match = chapterName.match(/\d+(\.\d+)?/);
+                return match ? match[0] : '';
             }
-        });
+
+            // Parse URL
+            let slug, chapterNumber, chapterIndex;
+
+            // Coba dari path (format baru: /asn/{slug}/ch-{nomor})
+            const pathParts = window.location.pathname.split('/').filter(Boolean);
+            if (pathParts.length >= 3 && pathParts[0] === 'asn') {
+                slug = pathParts[1];
+                const chPart = pathParts[2];
+                if (chPart.startsWith('ch-')) {
+                    chapterNumber = chPart.substring(3);
+                }
+            }
+
+            // Jika tidak dapat, coba dari query string (format lama: ?slug=&ch=)
+            if (!slug) {
+                const urlParams = new URLSearchParams(window.location.search);
+                slug = urlParams.get('slug');
+                const chParam = urlParams.get('ch');
+                if (chParam) {
+                    chapterIndex = parseInt(chParam);
+                }
+            }
+
+            if (!slug) {
+                alert('Slug tidak ditemukan');
+                return;
+            }
+
+            // Set back link ke halaman detail komik
+            document.getElementById('back-detail').href = `/asn/${slug}`;
+
+            // Fetch data JSON komik
+            fetch(`/db/${slug}.json`)
+                .then(res => res.json())
+                .then(manga => {
+                    // Tentukan indeks chapter berdasarkan nomor atau indeks
+                    let currentIndex;
+                    if (chapterNumber !== undefined) {
+                        currentIndex = manga.chapters.findIndex(ch => getChapterNumber(ch.nama) === chapterNumber);
+                        if (currentIndex === -1) {
+                            console.warn('Chapter dengan nomor ' + chapterNumber + ' tidak ditemukan, menggunakan chapter pertama');
+                            currentIndex = 0;
+                        }
+                    } else if (chapterIndex !== undefined && !isNaN(chapterIndex) && chapterIndex >= 0 && chapterIndex < manga.chapters.length) {
+                        currentIndex = chapterIndex;
+                    } else {
+                        // Default ke chapter pertama
+                        currentIndex = 0;
+                    }
+
+                    const chapter = manga.chapters[currentIndex];
+                    const currentChapterNumber = getChapterNumber(chapter.nama);
+
+                    // Update judul halaman dan header
+                    document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
+                    document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
+                    document.getElementById('loader').remove();
+
+                    // Isi dropdown chapter (ditampilkan terbalik: chapter terbaru di atas)
+                    const selector = document.getElementById('ch-selector');
+                    const reversedChapters = [...manga.chapters].reverse();
+                    selector.innerHTML = reversedChapters.map(ch => {
+                        const number = getChapterNumber(ch.nama);
+                        const selected = (number === currentChapterNumber) ? 'selected' : '';
+                        return `<option value="${number}" ${selected}>${ch.nama}</option>`;
+                    }).join('');
+
+                    selector.onchange = (e) => {
+                        const selectedNumber = e.target.value;
+                        location.href = `/asn/${slug}/ch-${selectedNumber}`;
+                    };
+
+                    // Atur tombol Prev dan Next
+                    const prevBtn = document.getElementById('prev-btn');
+                    const nextBtn = document.getElementById('next-btn');
+
+                    if (currentIndex > 0) {
+                        const prevChapter = manga.chapters[currentIndex - 1];
+                        const prevNumber = getChapterNumber(prevChapter.nama);
+                        prevBtn.classList.remove('opacity-20', 'pointer-events-none');
+                        prevBtn.onclick = () => {
+                            location.href = `/asn/${slug}/ch-${prevNumber}`;
+                        };
+                    }
+
+                    if (currentIndex < manga.chapters.length - 1) {
+                        const nextChapter = manga.chapters[currentIndex + 1];
+                        const nextNumber = getChapterNumber(nextChapter.nama);
+                        nextBtn.classList.remove('opacity-20', 'pointer-events-none');
+                        nextBtn.onclick = () => {
+                            location.href = `/asn/${slug}/ch-${nextNumber}`;
+                        };
+                    }
+
+                    // Tampilkan gambar chapter
+                    const container = document.getElementById('tap-area');
+                    chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(imgUrl => {
+                        const img = document.createElement('img');
+                        img.src = imgUrl;
+                        img.loading = "lazy";
+                        img.onerror = () => img.remove();
+                        container.appendChild(img);
+                    });
+                })
+                .catch(err => {
+                    console.error(err);
+                    document.getElementById('loader').innerText = 'Gagal memuat data.';
+                });
+
+            // Toggle tampilan menu (header & bottom nav) saat tap di area gambar
+            let menuVisible = true;
+            document.body.addEventListener('click', (e) => {
+                if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
+                    menuVisible = !menuVisible;
+                    document.getElementById('bottom-nav').classList.toggle('menu-hidden-bottom', !menuVisible);
+                    document.getElementById('top-header').classList.toggle('menu-hidden-top', !menuVisible);
+                }
+            });
+        })();
     </script>
 </body>
 </html>
