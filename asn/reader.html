@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetoMic - Reader Berurutan</title>
+    <title>PetoMic - Reader</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        img { user-select: none; -webkit-user-drag: none; }
+        .nav-active { opacity: 1; }
+        .nav-disabled { opacity: 0.2; pointer-events: none; }
+    </style>
 </head>
 <body class="bg-black text-white overflow-x-hidden">
-    <div class="fixed top-0 left-0 w-full p-4 bg-black/90 backdrop-blur flex justify-between items-center z-50 border-b border-white/10">
-        <a href="javascript:history.back()" class="px-4 py-1 bg-zinc-800 hover:bg-zinc-700 rounded text-xs font-bold transition">KEMBALI</a>
-        <span id="ch-title" class="font-bold text-xs uppercase text-purple-400 tracking-tighter truncate max-w-[150px]">Memuat...</span>
-        <div class="flex gap-2" id="nav-top">
-            </div>
+    <div class="fixed top-0 left-0 w-full p-2 bg-black/90 backdrop-blur-md shadow-2xl flex items-center z-50 border-b border-white/5 h-14">
+        <a href="javascript:history.back()" class="w-10 h-10 flex items-center justify-center bg-zinc-800 rounded-lg mr-2">←</a>
+        
+        <div class="flex-1 flex justify-center items-center gap-1 md:gap-4 px-2">
+            <button id="prev-btn" class="nav-disabled bg-zinc-800 px-3 py-2 rounded-lg text-[10px] font-bold uppercase">Prev</button>
+            
+            <select id="ch-selector" class="bg-zinc-900 border border-white/10 text-[10px] md:text-xs rounded-lg px-2 py-2 outline-none max-w-[140px] md:max-w-xs font-bold text-purple-400">
+                <option>Memuat...</option>
+            </select>
+            
+            <button id="next-btn" class="nav-disabled bg-purple-700 px-3 py-2 rounded-lg text-[10px] font-bold uppercase">Next</button>
+        </div>
     </div>
 
-    <div id="image-container" class="mt-16 flex flex-col items-center bg-black min-h-screen">
+    <div id="image-container" class="mt-14 flex flex-col items-center bg-zinc-950 min-h-screen pb-20">
         </div>
 
     <script>
@@ -22,36 +34,50 @@
         const slug = urlParams.get('slug');
         const chIndex = parseInt(urlParams.get('ch'));
 
-        // Mengambil data dari folder DB di ROOT (naik 1 tingkat)
         fetch(`../db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 const chapter = manga.chapters[chIndex];
                 if (!chapter) return;
 
-                document.getElementById('ch-title').innerText = chapter.nama;
-                const container = document.getElementById('image-container');
+                // 1. Populasi Dropdown Chapter
+                const selector = document.getElementById('ch-selector');
+                selector.innerHTML = manga.chapters.map((ch, i) => 
+                    `<option value="${i}" ${i === chIndex ? 'selected' : ''}>${ch.nama}</option>`
+                ).reverse().join('');
+                selector.onchange = (e) => location.href = `reader.html?slug=${slug}&ch=${e.target.value}`;
 
-                // LOGIKA SORTING BERDASARKAN TIMESTAMP FILENAME
-                // Contoh file: 06-50-16-xxxx.webp
+                // 2. Logic Tombol Prev & Next
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+
+                if (chIndex > 0) {
+                    prevBtn.classList.replace('nav-disabled', 'nav-active');
+                    prevBtn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex - 1}`;
+                }
+
+                if (chIndex < manga.chapters.length - 1) {
+                    nextBtn.classList.replace('nav-disabled', 'nav-active');
+                    nextBtn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex + 1}`;
+                }
+
+                // 3. Sorting Gambar berdasarkan Timestamp Filename
                 const sortedImages = chapter.images.sort((a, b) => {
-                    const nameA = a.split('/').pop(); // Ambil nama file saja
-                    const nameB = b.split('/').pop();
-                    return nameA.localeCompare(nameB); // Urutkan string (06-50-16 < 06-50-20)
+                    const fileA = a.split('/').pop();
+                    const fileB = b.split('/').pop();
+                    return fileA.localeCompare(fileB);
                 });
 
-                // Tampilkan gambar yang sudah disortir
+                // 4. Render Gambar
+                const container = document.getElementById('image-container');
                 sortedImages.forEach(imgUrl => {
                     const img = document.createElement('img');
                     img.src = imgUrl;
-                    img.className = "w-full max-w-3xl mb-0.5 shadow-md";
+                    img.className = "w-full max-w-3xl mb-0 shadow-lg";
                     img.loading = "lazy";
-                    img.onerror = () => img.remove(); // Hapus jika link mati
+                    img.onerror = () => img.remove();
                     container.appendChild(img);
                 });
-            })
-            .catch(err => {
-                console.error("Gagal memuat data:", err);
             });
     </script>
 </body>
