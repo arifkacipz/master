@@ -178,7 +178,7 @@ def main():
         print("Scraping katalog rutin PetoMic (Halaman 1-9)...")
         list_json = []
         
-        for page in range(1, 100):
+        for page in range(1, 11):
             if page == 1:
                 url_katalog = "https://manhuaplus.org/all-manga/"
             else:
