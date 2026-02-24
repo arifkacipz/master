@@ -15,12 +15,11 @@
     </style>
 </head>
 <body class="text-white">
-
     <header id="top-header" class="fixed top-0 left-0 w-full z-50 bg-zinc-900/90 backdrop-blur-md border-b border-white/5 p-3">
         <div class="flex justify-between items-center max-w-3xl mx-auto">
-            <a href="index2.html" class="text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-white">Home</a>
+            <a href="/asn/index2.html" class="text-[10px] font-black uppercase text-zinc-500">Home</a>
             <span id="top-title" class="text-[9px] font-bold truncate max-w-[180px] text-zinc-400 uppercase">Memuat...</span>
-            <a href="javascript:history.back()" class="text-[10px] font-black uppercase tracking-widest text-purple-500">Back</a>
+            <a href="javascript:history.back()" class="text-[10px] font-black uppercase text-purple-500">Back</a>
         </div>
     </header>
 
@@ -28,12 +27,12 @@
         <div id="loader" class="mt-40 text-zinc-700 text-xs font-bold animate-pulse">MEMUAT GAMBAR...</div>
     </div>
 
-    <div id="bottom-nav" class="fixed bottom-0 left-0 w-full p-4 bg-zinc-900/90 backdrop-blur-xl border-t border-white/10 z-50 shadow-2xl">
+    <div id="bottom-nav" class="fixed bottom-0 left-0 w-full p-4 bg-zinc-900/90 backdrop-blur-xl border-t border-white/10 z-50">
         <div class="max-w-md mx-auto flex flex-col gap-3">
             <select id="ch-selector" class="w-full bg-black border border-white/10 text-xs rounded-xl p-3 outline-none text-purple-400 font-bold appearance-none text-center"></select>
             <div class="flex gap-2">
                 <button id="prev-btn" class="nav-btn bg-zinc-800 text-zinc-400 opacity-20 pointer-events-none">Prev</button>
-                <a id="back-detail" href="#" class="bg-zinc-800 px-6 rounded-xl flex items-center justify-center border border-white/5 text-xl font-black text-zinc-400 hover:text-purple-400 transition">!</a>
+                <a id="back-detail" href="#" class="bg-zinc-800 px-6 rounded-xl flex items-center justify-center border border-white/5 text-xl font-black text-zinc-400">!</a>
                 <button id="next-btn" class="nav-btn bg-purple-700 text-white opacity-20 pointer-events-none">Next</button>
             </div>
         </div>
@@ -41,17 +40,22 @@
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const slug = urlParams.get('slug');
-        const chIndex = parseInt(urlParams.get('ch'));
+        let slug = urlParams.get('slug');
+        let chIndex = parseInt(urlParams.get('ch'));
 
-        document.getElementById('back-detail').href = `detail.html?slug=${slug}`;
+        if (!slug || isNaN(chIndex)) {
+            const parts = window.location.pathname.split('/').filter(Boolean);
+            const chPart = parts.pop();
+            slug = parts.pop();
+            chIndex = parseInt(chPart.replace('ch-', ''));
+        }
 
-        fetch(`../db/${slug}.json`)
+        document.getElementById('back-detail').href = `/asn/${slug}`;
+
+        fetch(`/asn/db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 const chapter = manga.chapters[chIndex];
-                if (!chapter) return;
-
                 document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
                 document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
                 document.getElementById('loader').remove();
@@ -60,17 +64,17 @@
                 selector.innerHTML = manga.chapters.map((ch, i) => 
                     `<option value="${i}" ${i === chIndex ? 'selected' : ''}>${ch.nama}</option>`
                 ).reverse().join('');
-                selector.onchange = (e) => location.href = `reader.html?slug=${slug}&ch=${e.target.value}`;
+                selector.onchange = (e) => location.href = `/asn/${slug}/ch-${e.target.value}`;
 
                 if (chIndex > 0) {
                     const btn = document.getElementById('prev-btn');
                     btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex - 1}`;
+                    btn.onclick = () => location.href = `/asn/${slug}/ch-${chIndex - 1}`;
                 }
                 if (chIndex < manga.chapters.length - 1) {
                     const btn = document.getElementById('next-btn');
                     btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex + 1}`;
+                    btn.onclick = () => location.href = `/asn/${slug}/ch-${chIndex + 1}`;
                 }
 
                 const container = document.getElementById('tap-area');
@@ -82,7 +86,6 @@
                 });
             });
 
-        // Tap to Hide (Top & Bottom)
         let menuVisible = true;
         document.body.addEventListener('click', (e) => {
             if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
