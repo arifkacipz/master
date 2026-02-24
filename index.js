@@ -3,22 +3,23 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
 
-    // 1. Jalur Reader: /asn/slug/ch-8 -> buka reader.html
+    // Tambahan: Jika akses /asn/ atau /asn maka buka index.html
+    if (path === '/asn' || path === '/asn/') {
+      return fetch(`${url.origin}/asn/index.html`);
+    }
+
+    // 1. Jalur Reader: /asn/slug/ch-8
     const readerMatch = path.match(/^\/asn\/([^/]+)\/ch-(\d+)\/?$/);
     if (readerMatch) {
-      const slug = readerMatch[1];
-      const ch = readerMatch[2];
-      return fetch(`${url.origin}/asn/reader.html?slug=${slug}&ch=${ch}`);
+      return fetch(`${url.origin}/asn/reader.html?slug=${readerMatch[1]}&ch=${readerMatch[2]}`);
     }
 
-    // 2. Jalur Detail: /asn/slug -> buka detail.html
+    // 2. Jalur Detail: /asn/slug
     const detailMatch = path.match(/^\/asn\/([^/]+)\/?$/);
     if (detailMatch && !detailMatch[1].includes('.')) {
-      const slug = detailMatch[1];
-      return fetch(`${url.origin}/asn/detail.html?slug=${slug}`);
+      return fetch(`${url.origin}/asn/detail.html?slug=${detailMatch[1]}`);
     }
 
-    // 3. Permintaan lainnya (file json, gambar, index2.html) biarkan normal
     return fetch(request);
   },
 };
