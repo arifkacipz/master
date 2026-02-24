@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
-    <title>PetoMic Reader</title>
-    <style>
-        body { background: #000; color: white; margin: 0; font-family: sans-serif; }
-        .content img { width: 100%; display: block; margin: 0 auto; }
-        .nav { position: fixed; bottom: 0; width: 100%; background: rgba(30, 41, 59, 0.95); display: flex; justify-content: space-around; padding: 15px; box-sizing: border-box; backdrop-filter: blur(5px); }
-        .btn { background: #38bdf8; color: black; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; }
-        .disabled { opacity: 0.3; pointer-events: none; }
-        #title { text-align: center; padding: 12px; font-size: 14px; color: #38bdf8; }
-    </style>
+    <title>PetoMic - Reader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="title">Memuat...</div>
-    <div class="content" id="images"></div>
-    <div style="height: 100px;"></div>
-    <div class="nav">
-        <a id="prev" class="btn">← Prev</a>
-        <a href="index2.html" style="color:white; padding-top:10px; text-decoration:none; font-size:12px;">Menu</a>
-        <a id="next" class="btn">Next →</a>
+<body class="bg-black text-white">
+    <div class="fixed top-0 left-0 w-full p-4 bg-black/90 flex justify-between items-center z-50">
+        <a href="javascript:history.back()" class="px-4 py-1 bg-gray-800 rounded text-xs">KEMBALI</a>
+        <span id="ch-title" class="font-bold text-xs uppercase text-purple-400 tracking-widest"></span>
+        <div></div>
     </div>
+
+    <div id="image-container" class="mt-16 flex flex-col items-center">
+        </div>
+
     <script>
-        const p = new URLSearchParams(window.location.search);
-        const slug = p.get('slug');
-        const chIdx = parseInt(p.get('ch'));
-        async function load() {
-            try {
-                const res = await fetch(`db/${slug}.json`);
-                const d = await res.json();
-                const ch = d.chapters[chIdx];
-                document.getElementById('title').innerText = `${d.judul} - ${ch.nama}`;
-                const container = document.getElementById('images');
-                ch.images.forEach(img => {
-                    const el = document.createElement('img');
-                    el.src = img; el.loading = "lazy";
-                    el.onerror = () => el.style.display = 'none';
-                    container.appendChild(el);
+        const urlParams = new URLSearchParams(window.location.search);
+        const slug = urlParams.get('slug');
+        const chIndex = parseInt(urlParams.get('ch'));
+
+        // Ambil data dari ROOT
+        fetch(`../db/${slug}.json`)
+            .then(res => res.json())
+            .then(manga => {
+                const chapter = manga.chapters[chIndex];
+                document.getElementById('ch-title').innerText = chapter.nama;
+                
+                const container = document.getElementById('image-container');
+                chapter.images.forEach(imgUrl => {
+                    const img = document.createElement('img');
+                    img.src = imgUrl;
+                    img.className = "w-full max-w-3xl mb-0.5";
+                    img.loading = "lazy";
+                    container.appendChild(img);
                 });
-                const prevBtn = document.getElementById('prev');
-                const nextBtn = document.getElementById('next');
-                if (chIdx > 0) prevBtn.href = `reader.html?slug=${slug}&ch=${chIdx - 1}`;
-                else prevBtn.classList.add('disabled');
-                if (chIdx < d.chapters.length - 1) nextBtn.href = `reader.html?slug=${slug}&ch=${chIdx + 1}`;
-                else nextBtn.classList.add('disabled');
-                window.scrollTo(0,0);
-            } catch(e) { document.getElementById('title').innerText = "Gagal memuat."; }
-        }
-        load();
+            });
     </script>
 </body>
 </html>
