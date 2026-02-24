@@ -52,7 +52,7 @@
 
         document.getElementById('back-detail').href = `/asn/${slug}`;
 
-        fetch(`../db/${slug}.json`)
+        fetch(`/db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 const chapter = manga.chapters[chIndex];
