@@ -5,10 +5,12 @@ on:
   schedule:
     - cron: '0 */6 * * *'   # Opsional: jalankan setiap 6 jam
 
+# Menambahkan concurrency group untuk mencegah tumpang tindih
+concurrency:
+  group: matrix-full-scrape
+  cancel-in-progress: false  # biarkan workflow yang sedang berjalan selesai, yang baru antri
+
 jobs:
-  # ------------------------------------------------------------------
-  # Job 1: Memilih maksimal 3 slug yang memenuhi syarat
-  # ------------------------------------------------------------------
   select-slugs:
     runs-on: ubuntu-latest
     outputs:
@@ -68,9 +70,6 @@ jobs:
           name: selected-slugs
           path: selected_slugs.json
 
-  # ------------------------------------------------------------------
-  # Job 2: Melakukan full scrape untuk setiap slug (paralel maks 3)
-  # ------------------------------------------------------------------
   scrape:
     needs: select-slugs
     runs-on: ubuntu-latest
@@ -97,9 +96,6 @@ jobs:
           TARGET_SLUG: ${{ matrix.slug }}
         run: python asn/scraper.py
 
-  # ------------------------------------------------------------------
-  # Job 3: Memperbarui tracker untuk slug yang sudah diproses
-  # ------------------------------------------------------------------
   update-tracker:
     needs: scrape
     runs-on: ubuntu-latest
@@ -144,9 +140,6 @@ jobs:
           git pull --rebase origin main
           git push origin main
 
-  # ------------------------------------------------------------------
-  # Job 4 (Opsional): Memperbarui list.json
-  # ------------------------------------------------------------------
   generate-list:
     needs: scrape
     runs-on: ubuntu-latest
