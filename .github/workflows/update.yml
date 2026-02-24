@@ -2,7 +2,7 @@ name: Update PetoMic Data
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
     inputs:
       target_slug:
@@ -35,17 +35,16 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
-          # Jalankan scraper langsung di folder asn
           python asn/scraper.py
+
+      - name: Generate list.json from db
+        run: python generate_list.py
 
       - name: Sync and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Paksa Git untuk melihat semua perubahan di seluruh direktori
           git add -A
-          
           if [ -n "$(git status --porcelain)" ]; then
             echo "Perubahan ditemukan. Melakukan sinkronisasi..."
             git commit -m "PetoMic: Scrape Sync [$(date)]"
