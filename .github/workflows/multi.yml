@@ -1,0 +1,166 @@
+name: Matrix Full Scrape (3 per run)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'   # Opsional: jalankan setiap 6 jam
+
+jobs:
+  # ------------------------------------------------------------------
+  # Job 1: Memilih maksimal 3 slug yang memenuhi syarat
+  # ------------------------------------------------------------------
+  select-slugs:
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.select.outputs.slugs }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Select up to 3 slugs (latest chapter ≤ 100, not in tracker)
+        id: select
+        run: |
+          python << EOF
+          import os, json, glob, re
+
+          TRACKER_FILE = 'full_scrape_tracker.json'
+
+          def get_latest_chapter(chapters):
+              nums = []
+              for ch in chapters:
+                  match = re.search(r'(\d+(?:\.\d+)?)', ch.get('nama', ''))
+                  if match:
+                      nums.append(float(match.group(1)))
+              return max(nums) if nums else 0
+
+          # Load tracker
+          if os.path.exists(TRACKER_FILE):
+              with open(TRACKER_FILE, 'r') as f:
+                  tracker = json.load(f)
+          else:
+              tracker = {}
+
+          selected = []
+          for file in glob.glob('db/*.json'):
+              slug = os.path.splitext(os.path.basename(file))[0]
+              if slug in tracker:
+                  continue                     # sudah pernah full scrape
+              with open(file, 'r') as f:
+                  data = json.load(f)
+              latest = get_latest_chapter(data.get('chapters', []))
+              if latest <= 100:
+                  selected.append(slug)
+
+          selected = selected[:3]               # maksimal 3 slug
+          # Simpan ke file untuk job matrix
+          with open('selected_slugs.json', 'w') as f:
+              json.dump(selected, f)
+
+          # Output sebagai JSON array
+          print(f"slugs={json.dumps(selected)}")
+          EOF
+          echo "slugs=$(cat selected_slugs.json)" >> $GITHUB_OUTPUT
+
+      - name: Upload selected slugs
+        uses: actions/upload-artifact@v4
+        with:
+          name: selected-slugs
+          path: selected_slugs.json
+
+  # ------------------------------------------------------------------
+  # Job 2: Melakukan full scrape untuk setiap slug (paralel maks 3)
+  # ------------------------------------------------------------------
+  scrape:
+    needs: select-slugs
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        slug: ${{ fromJson(needs.select-slugs.outputs.slugs) }}
+      max-parallel: 3
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 cloudinary
+
+      - name: Run full scrape for ${{ matrix.slug }}
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          TARGET_SLUG: ${{ matrix.slug }}
+        run: python asn/scraper.py
+
+  # ------------------------------------------------------------------
+  # Job 3: Memperbarui tracker untuk slug yang sudah diproses
+  # ------------------------------------------------------------------
+  update-tracker:
+    needs: scrape
+    runs-on: ubuntu-latest
+    if: always()          # tetap jalan meski ada job scrape gagal (opsional)
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download selected slugs
+        uses: actions/download-artifact@v4
+        with:
+          name: selected-slugs
+
+      - name: Update tracker
+        run: |
+          python << EOF
+          import os, json, time
+
+          TRACKER_FILE = 'full_scrape_tracker.json'
+          with open('selected_slugs.json', 'r') as f:
+              selected = json.load(f)
+
+          if os.path.exists(TRACKER_FILE):
+              with open(TRACKER_FILE, 'r') as f:
+                  tracker = json.load(f)
+          else:
+              tracker = {}
+
+          now = time.time()
+          for slug in selected:
+              tracker[slug] = now
+
+          with open(TRACKER_FILE, 'w') as f:
+              json.dump(tracker, f, indent=2)
+          EOF
+
+      - name: Commit and push tracker
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add full_scrape_tracker.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update tracker after matrix scrape"
+          git pull --rebase origin main
+          git push origin main
+
+  # ------------------------------------------------------------------
+  # Job 4 (Opsional): Memperbarui list.json
+  # ------------------------------------------------------------------
+  generate-list:
+    needs: scrape
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate list.json
+        run: python generate_list.py
+
+      - name: Commit list.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add list.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update list.json"
+          git pull --rebase origin main
+          git push origin main
