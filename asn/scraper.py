@@ -175,10 +175,10 @@ def main():
         # Untuk TARGET_SLUG: ambil semua chapter (limit_ch=None)
         process_comic(target_slug.replace('-', ' ').title(), url, target_slug, limit_ch=None)
     else:
-        print("Scraping katalog rutin PetoMic (Halaman 1-3)...")
+        print("Scraping katalog rutin PetoMic (Halaman 1-5)...")
         list_json = []
         
-        for page in range(1, 4):
+        for page in range(1, 6):
             if page == 1:
                 url_katalog = "https://manhuaplus.org/all-manga/"
             else:
