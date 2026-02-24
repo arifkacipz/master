@@ -16,6 +16,13 @@
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
     <script>
+        // Fungsi untuk mengekstrak nomor chapter dari teks (misal: "Chapter 41" -> "41")
+        function getChapterNumber(chapterName) {
+            const match = chapterName.match(/\d+(\.\d+)?/);
+            return match ? match[0] : '';
+        }
+
+        // Ambil slug dari URL
         const urlParams = new URLSearchParams(window.location.search);
         let slug = urlParams.get('slug');
 
@@ -28,12 +35,17 @@
             .then(res => res.json())
             .then(manga => {
                 document.title = `${manga.judul} - PetoMic`;
-                let listHtml = manga.chapters.map((ch, i) => `
-                    <a href="/asn/${slug}/ch-${i}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
-                        <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
-                        <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">BACA</span>
-                    </a>
-                `).reverse().join('');
+
+                // Buat daftar chapter dengan link menggunakan nomor chapter
+                let listHtml = manga.chapters.map((ch, i) => {
+                    const chapterNumber = getChapterNumber(ch.nama) || i; // fallback ke indeks jika gagal
+                    return `
+                        <a href="/asn/${slug}/ch-${chapterNumber}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
+                            <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
+                            <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">BACA</span>
+                        </a>
+                    `;
+                }).reverse().join('');
 
                 document.getElementById('content').innerHTML = `
                     <div class="flex flex-col items-center mb-10 text-center">
@@ -63,6 +75,9 @@
                         </div>
                     </div>
                 `;
+            })
+            .catch(err => {
+                document.getElementById('content').innerHTML = '<p class="text-center text-zinc-500">Gagal memuat data.</p>';
             });
     </script>
 </body>
