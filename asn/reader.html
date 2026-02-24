@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetoMic - Reader</title>
+    <title>PetoMic - Reader Berurutan</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white">
-    <div class="fixed top-0 left-0 w-full p-4 bg-black/90 flex justify-between items-center z-50">
-        <a href="javascript:history.back()" class="px-4 py-1 bg-gray-800 rounded text-xs">KEMBALI</a>
-        <span id="ch-title" class="font-bold text-xs uppercase text-purple-400 tracking-widest"></span>
-        <div></div>
+<body class="bg-black text-white overflow-x-hidden">
+    <div class="fixed top-0 left-0 w-full p-4 bg-black/90 backdrop-blur flex justify-between items-center z-50 border-b border-white/10">
+        <a href="javascript:history.back()" class="px-4 py-1 bg-zinc-800 hover:bg-zinc-700 rounded text-xs font-bold transition">KEMBALI</a>
+        <span id="ch-title" class="font-bold text-xs uppercase text-purple-400 tracking-tighter truncate max-w-[150px]">Memuat...</span>
+        <div class="flex gap-2" id="nav-top">
+            </div>
     </div>
 
-    <div id="image-container" class="mt-16 flex flex-col items-center">
+    <div id="image-container" class="mt-16 flex flex-col items-center bg-black min-h-screen">
         </div>
 
     <script>
@@ -21,21 +22,36 @@
         const slug = urlParams.get('slug');
         const chIndex = parseInt(urlParams.get('ch'));
 
-        // Ambil data dari ROOT
+        // Mengambil data dari folder DB di ROOT (naik 1 tingkat)
         fetch(`../db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 const chapter = manga.chapters[chIndex];
+                if (!chapter) return;
+
                 document.getElementById('ch-title').innerText = chapter.nama;
-                
                 const container = document.getElementById('image-container');
-                chapter.images.forEach(imgUrl => {
+
+                // LOGIKA SORTING BERDASARKAN TIMESTAMP FILENAME
+                // Contoh file: 06-50-16-xxxx.webp
+                const sortedImages = chapter.images.sort((a, b) => {
+                    const nameA = a.split('/').pop(); // Ambil nama file saja
+                    const nameB = b.split('/').pop();
+                    return nameA.localeCompare(nameB); // Urutkan string (06-50-16 < 06-50-20)
+                });
+
+                // Tampilkan gambar yang sudah disortir
+                sortedImages.forEach(imgUrl => {
                     const img = document.createElement('img');
                     img.src = imgUrl;
-                    img.className = "w-full max-w-3xl mb-0.5";
+                    img.className = "w-full max-w-3xl mb-0.5 shadow-md";
                     img.loading = "lazy";
+                    img.onerror = () => img.remove(); // Hapus jika link mati
                     container.appendChild(img);
                 });
+            })
+            .catch(err => {
+                console.error("Gagal memuat data:", err);
             });
     </script>
 </body>
