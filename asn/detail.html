@@ -3,45 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetoMic - Detail</title>
+    <title>PetoMic - Detail Komik</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
-    <div id="content" class="container mx-auto px-4 py-10 max-w-2xl">
-        <div class="text-center text-gray-500">Memuat data...</div>
+<body class="bg-gray-900 text-white min-h-screen font-sans">
+    <div id="content" class="container mx-auto px-4 py-8 max-w-2xl">
+        <div class="text-center py-20 text-gray-500 italic">Memuat data komik...</div>
     </div>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const slug = urlParams.get('slug');
 
-        // Mengambil data dari folder db di ROOT
         fetch(`../db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 const content = document.getElementById('content');
-                let chaptersHtml = '';
-                manga.chapters.forEach((ch, index) => {
-                    chaptersHtml += `
-                        <a href="reader.html?slug=${slug}&ch=${index}" class="block p-4 bg-gray-800 border-b border-gray-700 hover:bg-purple-800 transition">
-                            ${ch.nama}
-                        </a>
-                    `;
-                });
+                
+                // Dropdown Options
+                let optionsHtml = manga.chapters.map((ch, i) => 
+                    `<option value="${i}">${ch.nama}</option>`
+                ).reverse().join('');
+
+                // List Chapters
+                let listHtml = manga.chapters.map((ch, i) => `
+                    <a href="reader.html?slug=${slug}&ch=${i}" class="flex justify-between items-center p-4 bg-gray-800 border-b border-gray-700 hover:bg-purple-900/50 transition">
+                        <span class="font-medium">${ch.nama}</span>
+                        <span class="text-xs text-purple-400 font-bold">BACA →</span>
+                    </a>
+                `).reverse().join('');
 
                 content.innerHTML = `
-                    <div class="flex flex-col items-center mb-8">
-                        <img src="${manga.thumb}" class="w-48 rounded-lg shadow-2xl mb-4 border-2 border-purple-500">
-                        <h1 class="text-2xl font-bold">${manga.judul}</h1>
+                    <div class="flex flex-col items-center mb-6 text-center">
+                        <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl border-4 border-gray-800 mb-4 object-cover h-72">
+                        <h1 class="text-2xl font-black mb-2 uppercase">${manga.judul}</h1>
+                        
+                        <div class="flex items-center gap-2 bg-black/40 p-2 rounded-lg border border-white/10 mb-4">
+                            <code class="text-purple-400 text-xs font-mono">${slug}</code>
+                            <button onclick="copySlug('${slug}')" class="bg-purple-700 text-[10px] px-2 py-1 rounded font-bold hover:bg-purple-600">COPY SLUG</button>
+                        </div>
                     </div>
-                    <div class="rounded-xl overflow-hidden border border-gray-700">
-                        ${chaptersHtml}
+
+                    <div class="bg-blue-900/30 border border-blue-500/50 rounded-xl p-4 mb-8 text-sm text-blue-200">
+                        <p class="font-bold mb-1">💡 Tips Scrape Semua Chapter:</p>
+                        <ol class="list-decimal ml-4 space-y-1 text-xs opacity-80">
+                            <li>Buka tab <b>Actions</b> di GitHub Repositori Anda.</li>
+                            <li>Pilih workflow <b>Update PetoMic Data</b>.</li>
+                            <li>Klik <b>Run workflow</b>, masukkan slug di atas: <b class="text-white">${slug}</b></li>
+                            <li>Tunggu robot selesai untuk mengambil seluruh chapter komik ini.</li>
+                        </ol>
                     </div>
-                    <div class="mt-6 text-center">
-                        <a href="index2.html" class="text-gray-400 hover:text-purple-400 text-sm">← Kembali ke Katalog</a>
+
+                    <div class="mb-4">
+                        <label class="text-[10px] font-bold text-gray-500 uppercase tracking-widest ml-1">Lompat ke Chapter:</label>
+                        <select onchange="location.href='reader.html?slug=${slug}&ch='+this.value" class="w-full bg-gray-800 border border-gray-700 p-3 rounded-xl text-sm focus:ring-2 focus:ring-purple-500 outline-none mt-1">
+                            <option disabled selected>Pilih Chapter...</option>
+                            ${optionsHtml}
+                        </select>
+                    </div>
+
+                    <div class="bg-gray-800/50 rounded-2xl overflow-hidden shadow-xl border border-gray-700">
+                        <div class="p-4 bg-gray-800 text-[10px] font-black uppercase text-purple-400 tracking-widest border-b border-gray-700 flex justify-between">
+                            <span>Daftar Chapter</span>
+                            <span>Total: ${manga.chapters.length}</span>
+                        </div>
+                        <div class="max-h-[400px] overflow-y-auto">
+                            ${listHtml}
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a href="index2.html" class="text-gray-500 hover:text-white text-xs font-bold uppercase tracking-widest transition">← Balik ke Katalog</a>
                     </div>
                 `;
+            })
+            .catch(() => {
+                document.getElementById('content').innerHTML = `<div class="text-center py-20 text-red-500">Gagal memuat data. Slug mungkin salah atau file db tidak ada.</div>`;
             });
+
+        function copySlug(text) {
+            navigator.clipboard.writeText(text);
+            alert("Slug berhasil disalin ke clipboard!");
+        }
     </script>
 </body>
 </html>
