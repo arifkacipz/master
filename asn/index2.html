@@ -9,81 +9,54 @@
 <body class="bg-black text-white font-sans">
     <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-white/5 p-4 shadow-2xl">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index2.html" class="text-2xl font-black tracking-tighter italic">
-                PETO<span class="text-purple-500">MIC</span>
-            </a>
-            <nav>
-                <a href="index2.html" class="text-[10px] font-black uppercase tracking-[0.2em] text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full bg-purple-500/5">
-                    Home
-                </a>
-            </nav>
+            <a href="/asn/index2.html" class="text-2xl font-black tracking-tighter italic">PETO<span class="text-purple-500">MIC</span></a>
+            <nav><a href="/asn/index2.html" class="text-[10px] font-black uppercase tracking-[0.2em] text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full bg-purple-500/5">Home</a></nav>
         </div>
     </header>
 
     <div class="container mx-auto px-4 py-8">
-        <div id="manga-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            </div>
-
+        <div id="manga-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6"></div>
         <div class="flex justify-center items-center gap-4 mt-12 pb-10">
-            <button id="page-prev" class="px-5 py-2 bg-zinc-900 border border-white/5 rounded-xl text-xs font-bold uppercase tracking-widest opacity-20 pointer-events-none transition hover:bg-zinc-800">
-                « Prev
-            </button>
-            <div id="page-info" class="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                Page <span id="current-page" class="text-purple-500">1</span>
-            </div>
-            <button id="page-next" class="px-5 py-2 bg-zinc-900 border border-white/5 rounded-xl text-xs font-bold uppercase tracking-widest opacity-20 pointer-events-none transition hover:bg-zinc-800">
-                Next »
-            </button>
+            <button id="page-prev" class="px-5 py-2 bg-zinc-900 border border-white/5 rounded-xl text-xs font-bold opacity-20 pointer-events-none transition hover:bg-zinc-800">« PREV</button>
+            <div class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Page <span id="current-page" class="text-purple-500">1</span></div>
+            <button id="page-next" class="px-5 py-2 bg-zinc-900 border border-white/5 rounded-xl text-xs font-bold opacity-20 pointer-events-none transition hover:bg-zinc-800">NEXT »</button>
         </div>
     </div>
 
     <script>
-        // Konfigurasi Paging
         const itemsPerPage = 20;
         const urlParams = new URLSearchParams(window.location.search);
         let currentPage = parseInt(urlParams.get('p')) || 1;
 
-        fetch('../list.json')
+        fetch('/asn/list.json')
             .then(res => res.json())
             .then(data => {
-                const container = document.getElementById('manga-list');
-                const totalManga = data.length;
-                const totalPages = Math.ceil(totalManga / itemsPerPage);
-
-                // Hitung Indeks Data
+                const totalPages = Math.ceil(data.length / itemsPerPage);
                 const start = (currentPage - 1) * itemsPerPage;
-                const end = start + itemsPerPage;
-                const pagedData = data.slice(start, end);
-
-                // Update Info Halaman
+                const pagedData = data.slice(start, start + itemsPerPage);
+                
                 document.getElementById('current-page').innerText = currentPage;
-
-                // Render Komik
+                const container = document.getElementById('manga-list');
+                
                 pagedData.forEach(manga => {
                     container.innerHTML += `
-                        <a href="detail.html?slug=${manga.slug}" class="bg-zinc-900 rounded-2xl overflow-hidden hover:scale-105 transition transform duration-300 block border border-white/5 shadow-xl">
+                        <a href="/asn/${manga.slug}" class="bg-zinc-900 rounded-2xl overflow-hidden hover:scale-105 transition transform duration-300 block border border-white/5 shadow-xl">
                             <img src="${manga.thumb}" class="w-full h-64 object-cover" loading="lazy">
                             <div class="p-3 text-sm font-bold truncate">${manga.judul}</div>
                         </a>
                     `;
                 });
 
-                // Kontrol Tombol Prev
                 if (currentPage > 1) {
                     const btn = document.getElementById('page-prev');
                     btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `index2.html?p=${currentPage - 1}`;
+                    btn.onclick = () => location.href = `?p=${currentPage - 1}`;
                 }
-
-                // Kontrol Tombol Next
                 if (currentPage < totalPages) {
                     const btn = document.getElementById('page-next');
                     btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `index2.html?p=${currentPage + 1}`;
+                    btn.onclick = () => location.href = `?p=${currentPage + 1}`;
                 }
-            })
-            .catch(err => {
-                document.getElementById('manga-list').innerHTML = `<div class="col-span-full text-center py-20 text-zinc-700">Gagal memuat list.json dari root.</div>`;
             });
     </script>
 </body>
