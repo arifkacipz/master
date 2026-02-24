@@ -24,7 +24,7 @@
             slug = parts[parts.length - 1];
         }
 
-        fetch(`/asn/db/${slug}.json`)
+        fetch(`../db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 document.title = `${manga.judul} - PetoMic`;
