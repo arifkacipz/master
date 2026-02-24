@@ -6,28 +6,33 @@
     <title>PetoMic - Reader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        img { user-select: none; -webkit-user-drag: none; }
-        .nav-active { opacity: 1; }
-        .nav-disabled { opacity: 0.2; pointer-events: none; }
+        img { min-height: 200px; background: #0a0a0a; }
+        .nav-btn { flex: 1; padding: 12px; font-weight: bold; font-size: 11px; text-transform: uppercase; text-align: center; border-radius: 8px; transition: 0.2s; }
+        .btn-prev { background: #27272a; color: #a1a1aa; }
+        .btn-next { background: #7e22ce; color: white; }
+        .disabled { opacity: 0.2; pointer-events: none; }
     </style>
 </head>
-<body class="bg-black text-white overflow-x-hidden">
-    <div class="fixed top-0 left-0 w-full p-2 bg-black/90 backdrop-blur-md shadow-2xl flex items-center z-50 border-b border-white/5 h-14">
-        <a href="javascript:history.back()" class="w-10 h-10 flex items-center justify-center bg-zinc-800 rounded-lg mr-2">←</a>
-        
-        <div class="flex-1 flex justify-center items-center gap-1 md:gap-4 px-2">
-            <button id="prev-btn" class="nav-disabled bg-zinc-800 px-3 py-2 rounded-lg text-[10px] font-bold uppercase">Prev</button>
-            
-            <select id="ch-selector" class="bg-zinc-900 border border-white/10 text-[10px] md:text-xs rounded-lg px-2 py-2 outline-none max-w-[140px] md:max-w-xs font-bold text-purple-400">
-                <option>Memuat...</option>
-            </select>
-            
-            <button id="next-btn" class="nav-disabled bg-purple-700 px-3 py-2 rounded-lg text-[10px] font-bold uppercase">Next</button>
-        </div>
+<body class="bg-black text-white">
+
+    <div id="image-container" class="flex flex-col items-center bg-zinc-950 min-h-screen pb-32">
+        <div id="loader" class="mt-40 text-gray-500 animate-pulse">Menyiapkan halaman...</div>
     </div>
 
-    <div id="image-container" class="mt-14 flex flex-col items-center bg-zinc-950 min-h-screen pb-20">
+    <div class="fixed bottom-0 left-0 w-full p-4 bg-zinc-900/95 backdrop-blur-md border-t border-white/5 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] z-50">
+        <div class="max-w-xl mx-auto flex flex-col gap-3">
+            
+            <select id="ch-selector" class="w-full bg-black border border-white/10 text-xs rounded-lg p-2 outline-none text-purple-400 font-bold">
+                <option>Memuat daftar chapter...</option>
+            </select>
+
+            <div class="flex gap-2">
+                <button id="prev-btn" class="nav-btn btn-prev disabled">Prev</button>
+                <a href="index2.html" class="bg-zinc-800 p-3 rounded-lg text-xs flex items-center justify-center">🏠</a>
+                <button id="next-btn" class="nav-btn btn-next disabled">Next</button>
+            </div>
         </div>
+    </div>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
@@ -38,46 +43,59 @@
             .then(res => res.json())
             .then(manga => {
                 const chapter = manga.chapters[chIndex];
-                if (!chapter) return;
+                if (!chapter) throw new Error("Chapter tidak ditemukan");
 
-                // 1. Populasi Dropdown Chapter
+                document.getElementById('loader').remove();
+                
+                // 1. Dropdown Navigasi
                 const selector = document.getElementById('ch-selector');
                 selector.innerHTML = manga.chapters.map((ch, i) => 
                     `<option value="${i}" ${i === chIndex ? 'selected' : ''}>${ch.nama}</option>`
                 ).reverse().join('');
                 selector.onchange = (e) => location.href = `reader.html?slug=${slug}&ch=${e.target.value}`;
 
-                // 2. Logic Tombol Prev & Next
-                const prevBtn = document.getElementById('prev-btn');
-                const nextBtn = document.getElementById('next-btn');
-
+                // 2. Tombol Prev/Next
                 if (chIndex > 0) {
-                    prevBtn.classList.replace('nav-disabled', 'nav-active');
-                    prevBtn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex - 1}`;
+                    const btn = document.getElementById('prev-btn');
+                    btn.classList.remove('disabled');
+                    btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex - 1}`;
                 }
-
                 if (chIndex < manga.chapters.length - 1) {
-                    nextBtn.classList.replace('nav-disabled', 'nav-active');
-                    nextBtn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex + 1}`;
+                    const btn = document.getElementById('next-btn');
+                    btn.classList.remove('disabled');
+                    btn.onclick = () => location.href = `reader.html?slug=${slug}&ch=${chIndex + 1}`;
                 }
 
-                // 3. Sorting Gambar berdasarkan Timestamp Filename
+                // 3. Sorting & Render Gambar (Solusi Blank)
+                const container = document.getElementById('image-container');
+                
+                // Urutkan berdasarkan angka terakhir di URL (Timestamp)
                 const sortedImages = chapter.images.sort((a, b) => {
-                    const fileA = a.split('/').pop();
-                    const fileB = b.split('/').pop();
-                    return fileA.localeCompare(fileB);
+                    return a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'});
                 });
 
-                // 4. Render Gambar
-                const container = document.getElementById('image-container');
+                if (sortedImages.length === 0) {
+                    container.innerHTML = `<div class="mt-40 text-red-500">Gambar kosong di file JSON.</div>`;
+                }
+
                 sortedImages.forEach(imgUrl => {
                     const img = document.createElement('img');
-                    img.src = imgUrl;
+                    // Tambahkan timestamp acak di ujung link untuk menembus cache CDN jika perlu
+                    img.src = imgUrl; 
                     img.className = "w-full max-w-3xl mb-0 shadow-lg";
                     img.loading = "lazy";
-                    img.onerror = () => img.remove();
+                    
+                    // Fallback jika gambar benar-benar tidak bisa dimuat
+                    img.onerror = () => {
+                        console.log("Gagal memuat: " + imgUrl);
+                        img.style.display = 'none';
+                    };
+                    
                     container.appendChild(img);
                 });
+            })
+            .catch(err => {
+                document.getElementById('image-container').innerHTML = `<div class="mt-40 text-red-500 text-sm p-10 text-center">${err.message}. Pastikan file db/${slug}.json sudah benar.</div>`;
             });
     </script>
 </body>
