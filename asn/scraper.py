@@ -14,18 +14,14 @@ cloudinary.config(
     api_secret = os.environ.get('CLOUDINARY_API_SECRET')
 )
 
-# Menyamar sebagai Chrome di Android (Sesuai tampilan HP Anda)
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-    'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
     'Referer': 'https://manhuaplus.org/',
-    'Cache-Control': 'no-cache',
-    'Pragma': 'no-cache'
+    'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
 }
 
 def get_images(chapter_url):
-    """Mengambil gambar chapter dengan proteksi referer."""
+    """Mengambil gambar chapter dengan sistem AJAX."""
     try:
         chapter_id = chapter_url.strip('/').split('/')[-1]
         if not chapter_id.isdigit():
@@ -35,11 +31,7 @@ def get_images(chapter_url):
             else: return []
 
         ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
-        # Kirim request dengan referer spesifik chapter
-        current_headers = HEADERS.copy()
-        current_headers['Referer'] = chapter_url
-        
-        ajax_res = requests.post(ajax_url, headers=current_headers, timeout=20)
+        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
         if ajax_res.status_code == 200:
             data = ajax_res.json()
             if data.get('status') and 'html' in data:
@@ -58,7 +50,7 @@ def get_images(chapter_url):
     except: return []
 
 def process_comic(judul, link, slug, thumb_url, limit_ch=None):
-    """Proses komik dengan pendeteksi chapter berbasis JSON-LD (Anti-Skip)."""
+    """Proses komik dengan perbaikan nama chapter otomatis."""
     print(f"\n--- PetoMic memproses: {judul} ---")
     filepath = f'db/{slug}.json'
     os.makedirs('db', exist_ok=True)
@@ -68,6 +60,7 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 old_data = json.load(f)
+                # Normalisasi nama lama agar perbandingan akurat
                 old_chapters_dict = {ch['nama']: ch for ch in old_data.get('chapters', [])}
                 print(f"   [!] Database Lokal: Terdeteksi {len(old_chapters_dict)} chapter.")
         except: pass
@@ -77,20 +70,23 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
         soup = BeautifulSoup(res.text, 'html.parser')
         ch_list_from_web = []
 
-        # METODE 1: JSON-LD (Paling Akurat untuk 10.000 Chapter)
+        # METODE 1: JSON-LD (Prioritas Nama Chapter Asli)
         scripts = soup.find_all('script', type='application/ld+json')
         for s in scripts:
             try:
                 js_data = json.loads(s.string)
-                # Mencari @graph yang berisi daftar ItemList
                 graph = js_data.get('@graph', [js_data])
                 for g in graph:
                     if g.get('@type') == 'ItemList':
                         for item in g.get('itemListElement', []):
                             u = item.get('url')
+                            n = item.get('name') # Ambil field 'name' resmi
                             if u and '/chapters/' in u:
-                                # Ambil nama dari URL jika teks tidak ada
-                                n = u.strip('/').split('/')[-1].replace('-', ' ').title()
+                                # Jika nama berupa angka ID, bersihkan
+                                if not n or n.isdigit():
+                                    # Coba ambil angka terakhir dari URL sebagai nomor chapter
+                                    num_match = re.findall(r'\d+', u.split('/')[-1])
+                                    n = f"Chapter {num_match[-1]}" if num_match else n
                                 ch_list_from_web.append({"nama": n, "url": u})
             except: continue
 
@@ -107,37 +103,28 @@ def process_comic(judul, link, slug, thumb_url, limit_ch=None):
                         if '/chapters/' in a.get('href', ''):
                             ch_list_from_web.append({"nama": a.text.strip(), "url": a['href']})
 
-        # METODE 3: Greedy Search (Menyisir Link)
-        if not ch_list_from_web:
-            for a in soup.find_all('a', href=True):
-                href = a['href']
-                if '/chapters/' in href and slug in href:
-                    name = a.text.strip() or href.split('/')[-1]
-                    if href not in [c['url'] for c in ch_list_from_web]:
-                        ch_list_from_web.append({"nama": name, "url": href})
-
         print(f"   [?] Hasil: Scraper melihat {len(ch_list_from_web)} chapter di web.")
 
-        # Filter Chapter Baru
+        # Filter: Hanya ambil yang benar-benar baru berdasarkan nama
         new_chapters = [ch for ch in ch_list_from_web if ch['nama'] not in old_chapters_dict]
         
         if not new_chapters:
             print(f"   [~] Semua {len(ch_list_from_web)} chapter sudah tersimpan.")
             return {"judul": judul, "slug": slug, "thumb": thumb_url}
 
-        new_chapters.reverse() # Proses dari Chapter 1 ke atas
+        new_chapters.reverse() 
         if limit_ch: new_chapters = new_chapters[:limit_ch]
 
-        print(f"   [+] Memulai scrape {len(new_chapters)} chapter baru (termasuk chapter lama yang terskip)...")
+        print(f"   [+] Memulai scrape {len(new_chapters)} chapter baru...")
 
         for ch in new_chapters:
             print(f"   -> Scraping: {ch['nama']}")
             imgs = get_images(ch['url'])
             if imgs:
                 old_chapters_dict[ch['nama']] = {"nama": ch['nama'], "images": imgs}
-            time.sleep(1.2) # Jeda lebih lama agar tidak dicurigai
+            time.sleep(1.2)
 
-        # Sorting Numerik Rapi
+        # Sorting Numerik
         all_chapters = list(old_chapters_dict.values())
         try:
             all_chapters.sort(key=lambda x: float(re.findall(r"[-+]?\d*\.\d+|\d+", x['nama'])[0]))
