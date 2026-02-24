@@ -6,93 +6,64 @@
     <title>Memuat Detail... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-zinc-950 text-white min-h-screen font-sans">
+<body class="bg-zinc-950 text-white min-h-screen">
     <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-white/5 p-4">
         <div class="container mx-auto max-w-xl flex justify-between items-center">
-            <a href="index2.html" class="text-[10px] font-black text-zinc-500 hover:text-white transition uppercase tracking-[0.2em] flex items-center gap-2">
-                <span class="text-lg">«</span> Back to Home
-            </a>
-            <span class="text-[10px] font-black uppercase tracking-widest text-zinc-600">Info Detail</span>
+            <a href="/asn/index2.html" class="text-[10px] font-black text-zinc-500 hover:text-white transition uppercase tracking-[0.2em]">« Back to Home</a>
         </div>
     </header>
 
-    <div id="content" class="container mx-auto px-4 py-8 max-w-xl">
-        <div class="text-center py-20 text-zinc-800 animate-pulse uppercase tracking-widest text-xs font-bold">
-            Menghubungkan ke Database...
-        </div>
-    </div>
+    <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const slug = urlParams.get('slug');
+        let slug = urlParams.get('slug');
 
-        fetch(`../db/${slug}.json`)
+        if (!slug) {
+            const parts = window.location.pathname.split('/').filter(Boolean);
+            slug = parts[parts.length - 1];
+        }
+
+        fetch(`/asn/db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
-                const content = document.getElementById('content');
-                
-                // --- UPDATE TITLE HALAMAN (FORMAT: Judul - PetoMic) ---
                 document.title = `${manga.judul} - PetoMic`;
-
                 let listHtml = manga.chapters.map((ch, i) => `
-                    <a href="reader.html?slug=${slug}&ch=${i}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
+                    <a href="/asn/${slug}/ch-${i}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
                         <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
                         <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">BACA</span>
                     </a>
                 `).reverse().join('');
 
-                content.innerHTML = `
+                document.getElementById('content').innerHTML = `
                     <div class="flex flex-col items-center mb-10 text-center">
-                        <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] mb-6 object-cover h-72 border-2 border-white/5">
-                        <h1 class="text-3xl font-black mb-1 tracking-tighter leading-none uppercase">${manga.judul}</h1>
-                        <p class="text-[10px] text-zinc-500 font-bold tracking-widest uppercase mt-2">PetoMic Database</p>
+                        <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl mb-6 object-cover h-72 border-2 border-white/5">
+                        <h1 class="text-3xl font-black mb-1 uppercase">${manga.judul}</h1>
                     </div>
-
                     <div class="bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-white/5 mb-8">
                         <div class="p-5 bg-zinc-900/50 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b border-white/5 flex justify-between">
-                            <span>Daftar Chapter</span>
-                            <span class="text-purple-500">${manga.chapters.length} Total</span>
+                            <span>Daftar Chapter</span><span class="text-purple-500">${manga.chapters.length} Total</span>
                         </div>
                         <div class="max-h-[500px] overflow-y-auto">${listHtml}</div>
                     </div>
-
                     <div class="space-y-4 mb-10">
                         <div class="flex flex-col items-center gap-3 bg-zinc-900/50 p-4 rounded-2xl border border-white/5">
-                            <span class="text-[10px] text-zinc-500 font-black uppercase tracking-widest">Manga Slug Identification</span>
-                            <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10 w-full justify-between max-w-xs mx-auto">
-                                <code class="text-purple-400 text-xs font-mono font-bold truncate mr-2">${slug}</code>
-                                <button onclick="copySlug('${slug}')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black hover:bg-purple-400 transition uppercase tracking-tighter">COPY</button>
+                            <span class="text-[10px] text-zinc-500 font-black uppercase">Manga Slug Identification</span>
+                            <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10">
+                                <code class="text-purple-400 text-xs font-mono font-bold">${slug}</code>
+                                <button onclick="navigator.clipboard.writeText('${slug}');alert('Slug dicopy!')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
                             </div>
                         </div>
-
-                        <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6">
-                            <p class="text-[11px] font-bold text-indigo-300 uppercase mb-3 italic tracking-wider">💡 Panduan Scrape Komplit:</p>
-                            <ul class="text-[10px] text-zinc-400 space-y-3 list-disc ml-4 leading-relaxed">
-                                <li>Masuk ke menu <b>Actions</b> di Repositori GitHub.</li>
-                                <li>Pilih workflow <b>Update PetoMic Data</b>.</li>
-                                <li>Klik <b>Run workflow</b>.</li>
-                                <li>Tempel slug yang sudah kamu copy tadi: <b class="text-white">${slug}</b>.</li>
-                                <li>Tunggu robot memproses semua chapter untuk komik ini.</li>
+                        <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 text-[10px] text-zinc-400 leading-relaxed">
+                            <p class="font-bold text-indigo-300 uppercase mb-3 italic">💡 Panduan Scrape Komplit:</p>
+                            <ul class="space-y-2 list-disc ml-4">
+                                <li>Buka <b>Actions</b> di GitHub > Pilih <b>Update PetoMic Data</b>.</li>
+                                <li>Klik <b>Run workflow</b> dan masukkan slug: <b class="text-white">${slug}</b>.</li>
                             </ul>
                         </div>
                     </div>
-
-                    <div class="text-center pb-12">
-                        <a href="index2.html" class="text-zinc-700 hover:text-white text-[10px] font-black uppercase tracking-[0.4em] transition">← Kembali ke Katalog</a>
-                    </div>
                 `;
-            })
-            .catch(() => {
-                document.getElementById('content').innerHTML = `
-                    <div class="text-center py-20 text-red-500 text-sm font-bold uppercase tracking-widest">
-                        Gagal memuat data komik!
-                    </div>`;
             });
-
-        function copySlug(text) {
-            navigator.clipboard.writeText(text);
-            alert("Slug '" + text + "' berhasil disalin ke papan klip!");
-        }
     </script>
 </body>
 </html>
