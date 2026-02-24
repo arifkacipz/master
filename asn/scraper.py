@@ -25,10 +25,15 @@ def merge_chapters(old_chapters, new_chapters):
     """
     Menggabungkan dua daftar chapter berdasarkan URL.
     Chapter baru akan menimpa yang lama jika URL sama (untuk update).
+    Hanya chapter yang memiliki 'url' yang diproses.
     Hasil diurutkan berdasarkan nomor chapter (diekstrak dari nama).
     """
-    combined = {ch['url']: ch for ch in old_chapters}
-    for ch in new_chapters:
+    # Filter chapter yang memiliki url
+    old_valid = [ch for ch in old_chapters if 'url' in ch]
+    new_valid = [ch for ch in new_chapters if 'url' in ch]
+
+    combined = {ch['url']: ch for ch in old_valid}
+    for ch in new_valid:
         combined[ch['url']] = ch  # timpa jika sudah ada
     merged = list(combined.values())
 
@@ -88,7 +93,7 @@ def process_comic(judul, link, slug, thumb_url=None, limit_ch=None):
     Memproses satu komik:
     - Mengambil daftar chapter dari halaman detail
     - Mengambil gambar setiap chapter (jika limit_ch ditentukan, hanya limit chapter terbaru)
-    - Menggabungkan dengan data lama jika file sudah ada
+    - Menggabungkan dengan data lama jika file sudah ada dan valid
     - Menyimpan ke db/{slug}.json
     """
     print(f"--- PetoMic memproses: {judul} ---")
@@ -186,7 +191,7 @@ def process_comic(judul, link, slug, thumb_url=None, limit_ch=None):
             print(f"   -> Scraping Chapter: {ch['nama']}")
             imgs = get_images(ch['url'])
             if imgs:
-                final_chapters.append({"nama": ch['nama'], "images": imgs})
+                final_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
             time.sleep(0.8)  # Jeda agar tidak kena blokir
 
         if not final_chapters:
@@ -196,17 +201,21 @@ def process_comic(judul, link, slug, thumb_url=None, limit_ch=None):
         # Urutan baca: dari terlama ke terbaru (sesuai permintaan)
         final_chapters.reverse()
 
-        # --- GABUNGKAN DENGAN DATA LAMA (JIKA ADA) ---
+        # --- GABUNGKAN DENGAN DATA LAMA (JIKA ADA DAN VALID) ---
         db_path = f'db/{slug}.json'
         if os.path.exists(db_path):
             try:
                 with open(db_path, 'r', encoding='utf-8') as f:
                     old_data = json.load(f)
                 old_chapters = old_data.get('chapters', [])
-                final_chapters = merge_chapters(old_chapters, final_chapters)
-                print(f"   -> Menggabungkan dengan {len(old_chapters)} chapter lama")
+                # Validasi: pastikan setiap chapter punya 'url', jika tidak, anggap file corrupt
+                if all(isinstance(ch, dict) and 'url' in ch for ch in old_chapters):
+                    final_chapters = merge_chapters(old_chapters, final_chapters)
+                    print(f"   -> Menggabungkan dengan {len(old_chapters)} chapter lama")
+                else:
+                    print(f"   -> File lama tidak valid (ada chapter tanpa url), akan ditimpa dengan data baru")
             except Exception as e:
-                print(f"Gagal membaca file lama, akan menimpa: {e}")
+                print(f"   -> Gagal membaca file lama ({e}), akan menimpa dengan data baru")
 
         # Simpan hasil
         os.makedirs('db', exist_ok=True)
@@ -239,7 +248,7 @@ def main():
         )
     else:
         # Mode katalog: ambil dari halaman 1-10 (bisa disesuaikan)
-        print("Scraping katalog rutin PetoMic (Halaman 1-2)...")
+        print("Scraping katalog rutin PetoMic (Halaman 1-10)...")
         list_json = []
 
         for page in range(1, 3):
