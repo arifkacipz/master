@@ -16,8 +16,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -36,24 +35,22 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
-          mkdir -p asn/db
-          cd asn
-          python scraper.py
+          # Jalankan scraper langsung di folder asn
+          python asn/scraper.py
 
-      - name: Commit and Push
+      - name: Sync and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Hapus file index lock jika ada (mencegah error 128)
-          rm -f .git/index.lock
-          
-          git add asn/
+          # Paksa Git untuk melihat semua perubahan di seluruh direktori
+          git add -A
           
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "PetoMic Master Fix: Session & CDN CC [$(date)]"
+            echo "Perubahan ditemukan. Melakukan sinkronisasi..."
+            git commit -m "PetoMic: Scrape Sync [$(date)]"
             git pull --rebase origin main
             git push origin main
           else
-            echo "Katalog sudah up-to-date."
+            echo "Tidak ada data baru yang ditemukan."
           fi
