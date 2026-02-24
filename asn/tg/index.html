@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trigger GitHub Actions Workflow</title>
+    <title>Trigger GitHub Actions - PetoMic</title>
     <style>
-        /* (style tetap sama, tidak diubah) */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             background: #0a0a0a;
@@ -131,7 +130,7 @@
 
         <label for="workflowSelect">Pilih Workflow</label>
         <select id="workflowSelect">
-            <option value="update-petomic-data.yml">Update PetoMic Data (dengan slug)</option>
+            <option value="update.yml">Update PetoMic Data (dengan slug)</option>
             <option value="full_scrape_scheduler.yml">Full Scrape Scheduler (otomatis)</option>
             <option value="multi.yml">Matrix Full Scrape (3 per run)</option>
         </select>
@@ -161,7 +160,7 @@
         // ===== KONFIGURASI =====
         const OWNER = 'arifkacipz';      // Username GitHub Anda
         const REPO = 'master';           // Nama repositori
-        const BRANCH = 'master';          // Branch default (bukan 'main')
+        const BRANCH = 'main';            // Branch default (main)
         // =======================
 
         window.onload = function() {
@@ -177,6 +176,7 @@
         function toggleSlugField() {
             const workflow = document.getElementById('workflowSelect').value;
             const slugContainer = document.getElementById('slugContainer');
+            // Hanya update.yml yang membutuhkan slug
             const noSlugWorkflows = ['full_scrape_scheduler.yml', 'multi.yml'];
             slugContainer.style.display = noSlugWorkflows.includes(workflow) ? 'none' : 'block';
         }
@@ -210,7 +210,8 @@
             const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${workflow}/dispatches`;
 
             let payload = { ref: BRANCH };
-            if (workflow === 'update-petomic-data.yml' && slug) {
+            // Hanya kirim inputs jika workflow adalah update.yml dan slug diisi
+            if (workflow === 'update.yml' && slug) {
                 payload.inputs = { target_slug: slug };
             }
 
@@ -233,10 +234,13 @@
                     showStatus('✅ Workflow berhasil dipicu! Cek tab Actions di GitHub.', 'success');
                 } else {
                     const error = await response.json();
-                    // Tampilkan pesan error lebih detail
                     let errorMsg = error.message || 'Unknown error';
                     if (response.status === 404) {
                         errorMsg = 'Workflow tidak ditemukan. Pastikan nama file benar dan sudah di-push ke branch ' + BRANCH;
+                    } else if (response.status === 401) {
+                        errorMsg = 'Token tidak valid atau kedaluwarsa.';
+                    } else if (response.status === 403) {
+                        errorMsg = 'Token tidak memiliki izin yang cukup (butuh scope workflow).';
                     }
                     showStatus(`❌ Gagal (${response.status}): ${errorMsg}`, 'error');
                 }
