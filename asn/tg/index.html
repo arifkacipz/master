@@ -44,7 +44,7 @@
             display: block;
             margin-bottom: 6px;
         }
-        input {
+        input, select {
             width: 100%;
             padding: 12px;
             background: #2a2a2a;
@@ -55,7 +55,7 @@
             margin-bottom: 20px;
             box-sizing: border-box;
         }
-        input:focus {
+        input:focus, select:focus {
             outline: none;
             border-color: #a78bfa;
         }
@@ -118,7 +118,7 @@
 <body>
     <div class="card">
         <h1>🚀 Trigger Workflow</h1>
-        <p>Jalankan workflow <strong>Update PetoMic Data</strong> langsung dengan token GitHub.</p>
+        <p>Pilih workflow yang akan dijalankan.</p>
 
         <label for="token">GitHub Personal Access Token</label>
         <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off">
@@ -128,8 +128,16 @@
             <label style="margin-bottom: 0;">Ingat token di browser (local storage)</label>
         </div>
 
-        <label for="slug">Target Slug (kosongkan untuk katalog)</label>
-        <input type="text" id="slug" placeholder="contoh: virus-king">
+        <label for="workflowSelect">Pilih Workflow</label>
+        <select id="workflowSelect">
+            <option value="update-petomic-data.yml">Update PetoMic Data (dengan slug)</option>
+            <option value="full_scrape_scheduler.yml">Full Scrape Scheduler (otomatis)</option>
+        </select>
+
+        <div id="slugContainer">
+            <label for="slug">Target Slug (kosongkan untuk katalog)</label>
+            <input type="text" id="slug" placeholder="contoh: virus-king">
+        </div>
 
         <button id="triggerBtn" onclick="triggerWorkflow()">Jalankan Workflow</button>
 
@@ -149,18 +157,25 @@
 
     <script>
         // ===== KONFIGURASI =====
-        const OWNER = 'arifkacipz';      // Ganti dengan username GitHub Anda
-        const REPO = 'master';             // Ganti dengan nama repositori
-        const WORKFLOW_ID = 'update.yml'; // Nama file workflow (bisa juga 'main.yml')
+        const OWNER = 'arifkacipz';      // Username GitHub Anda
+        const REPO = 'master';           // Nama repositori
         // =======================
 
-        // Saat halaman dimuat, isi token dari local storage jika ada
         window.onload = function() {
             const savedToken = localStorage.getItem('github_token');
             if (savedToken) {
                 document.getElementById('token').value = savedToken;
             }
+            toggleSlugField();
         };
+
+        document.getElementById('workflowSelect').addEventListener('change', toggleSlugField);
+
+        function toggleSlugField() {
+            const workflow = document.getElementById('workflowSelect').value;
+            const slugContainer = document.getElementById('slugContainer');
+            slugContainer.style.display = workflow === 'full_scrape_scheduler.yml' ? 'none' : 'block';
+        }
 
         function clearToken() {
             localStorage.removeItem('github_token');
@@ -170,6 +185,7 @@
 
         async function triggerWorkflow() {
             const token = document.getElementById('token').value.trim();
+            const workflow = document.getElementById('workflowSelect').value;
             const slug = document.getElementById('slug').value.trim();
             const remember = document.getElementById('rememberToken').checked;
             const autoClear = document.getElementById('autoClear').checked;
@@ -181,21 +197,19 @@
                 return;
             }
 
-            // Simpan token jika dicentang
             if (remember) {
                 localStorage.setItem('github_token', token);
             } else {
                 localStorage.removeItem('github_token');
             }
 
-            const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_ID}/dispatches`;
+            const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${workflow}/dispatches`;
 
-            const payload = {
-                ref: 'main',  // branch tempat workflow dijalankan
-                inputs: {
-                    target_slug: slug
-                }
-            };
+            let payload = { ref: 'main' };
+            if (workflow === 'update-petomic-data.yml' && slug) {
+                payload.inputs = { target_slug: slug };
+            }
+            // Untuk full_scrape_scheduler.yml, kirim tanpa inputs
 
             btn.disabled = true;
             btn.innerText = 'Memproses...';
