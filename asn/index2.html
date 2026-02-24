@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
-    <title>PetoMic Catalog</title>
-    <style>
-        :root { --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; }
-        body { font-family: sans-serif; background: var(--bg); color: white; margin: 0; padding: 15px; }
-        .header { position: sticky; top: 0; background: var(--bg); z-index: 10; padding: 10px 0; text-align: center; border-bottom: 1px solid #334155; }
-        h1 { color: var(--accent); margin: 0 0 10px 0; font-size: 1.5rem; }
-        input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: var(--card); color: white; outline: none; box-sizing: border-box; }
-        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
-        .card { background: var(--card); border-radius: 10px; overflow: hidden; text-decoration: none; color: white; border: 1px solid #334155; }
-        img { width: 100%; height: 230px; object-fit: cover; background: #0f172a; }
-        .info { padding: 10px; font-size: 13px; font-weight: bold; }
-    </style>
+    <title>PetoMic - Katalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="header">
-        <h1>PetoMic</h1>
-        <input type="text" id="search" placeholder="Cari judul komik...">
+<body class="bg-gray-900 text-white">
+    <header class="p-6 bg-purple-800 shadow-xl mb-10 text-center">
+        <h1 class="text-3xl font-bold uppercase tracking-widest">PetoMic <span class="text-purple-300">ASN</span></h1>
+    </header>
+
+    <div class="container mx-auto px-4 pb-20">
+        <div id="manga-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            </div>
     </div>
-    <div class="grid" id="list"></div>
+
     <script>
-        let data = [];
-        async function init() {
-            try {
-                const res = await fetch('list.json');
-                data = await res.json();
-                render(data);
-            } catch(e) { document.getElementById('list').innerHTML = "Memuat data..."; }
-        }
-        function render(items) {
-            document.getElementById('list').innerHTML = items.map(i => `
-                <a href="detail.html?slug=${i.slug}" class="card">
-                    <img src="${i.thumb}" loading="lazy" onerror="this.src='https://via.placeholder.com/150x230'">
-                    <div class="info">${i.judul}</div>
-                </a>`).join('');
-        }
-        document.getElementById('search').oninput = (e) => {
-            render(data.filter(i => i.judul.toLowerCase().includes(e.target.value.toLowerCase())));
-        };
-        init();
+        // Mengambil data dari ROOT (luar folder asn)
+        fetch('../list.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('manga-list');
+                data.forEach(manga => {
+                    container.innerHTML += `
+                        <a href="detail.html?slug=${manga.slug}" class="bg-gray-800 rounded-xl overflow-hidden hover:ring-2 hover:ring-purple-500 transition block">
+                            <img src="${manga.thumb}" class="w-full h-64 object-cover">
+                            <div class="p-3 text-sm font-bold truncate">${manga.judul}</div>
+                        </a>
+                    `;
+                });
+            });
     </script>
 </body>
 </html>
