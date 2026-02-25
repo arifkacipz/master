@@ -39,7 +39,7 @@ jobs:
         env:
           TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
-          python asn/asura.py   # Pastikan path dan nama file sesuai
+          python asr/asura.py   # Pastikan path dan nama file sesuai
 
       - name: Generate list2.json from db2
         run: python generate_list2.py
