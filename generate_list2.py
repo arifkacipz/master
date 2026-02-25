@@ -48,4 +48,4 @@ def generate_list_from_db2():
     print(f"✅ Berhasil membuat list.json dengan {len(comics)} komik (diurutkan update terbaru).")
 
 if __name__ == "__main__":
-    generate_list_from_db()
+    generate_list_from_db2()
