@@ -32,14 +32,12 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
-        # Cloudinary tidak diperlukan untuk Asura Scans, jadi hapus
+  run: pip install requests beautifulsoup4 cloudscraper
 
       - name: Run Scraper
-        env:
-          TARGET_SLUG: ${{ github.event.inputs.target_slug }}
-        run: |
-          python asr/asura.py   # Pastikan path dan nama file sesuai
+  env:
+    TARGET_SLUG: ${{ github.event.inputs.target_slug }}
+  run: python asr/asura.py
 
       - name: Generate list2.json from db2
         run: python generate_list2.py
