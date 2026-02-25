@@ -3,7 +3,7 @@ name: Matrix Full Scrape (3 per run)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'   # Opsional: jalankan setiap 6 jam
+    - cron: '0 */1 * * *'   # Opsional: jalankan setiap 6 jam
 
 concurrency:
   group: matrix-full-scrape
