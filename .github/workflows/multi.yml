@@ -3,7 +3,7 @@ name: Matrix Full Scrape (3 per run)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/27 * * * *'   # Setiap 27 menit
+    - cron: '36 * * * *'   # Setiap jam pada menit 36 UTC
 
 concurrency:
   group: matrix-full-scrape
@@ -136,9 +136,7 @@ jobs:
             echo "No changes to tracker"
           else
             git commit -m "Update tracker after matrix scrape"
-            # Fetch latest changes and rebase
-            git fetch origin main
-            git rebase FETCH_HEAD || (git rebase --abort && echo "Rebase failed" && exit 1)
+            git pull --rebase origin main
             git push origin main
           fi
 
@@ -160,7 +158,6 @@ jobs:
             echo "No changes to list.json"
           else
             git commit -m "Update list.json"
-            git fetch origin main
-            git rebase FETCH_HEAD || (git rebase --abort && echo "Rebase failed" && exit 1)
+            git pull --rebase origin main
             git push origin main
           fi
