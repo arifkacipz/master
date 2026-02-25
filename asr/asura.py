@@ -34,7 +34,6 @@ def extract_json_data(html):
 def get_series_list(page=1):
     """
     Mengambil daftar series dari halaman series?page={page}
-    Berdasarkan struktur HTML dari asuracomic_net.html
     """
     url = f"{BASE_URL}/series?page={page}"
     soup = get_soup(url)
@@ -42,7 +41,6 @@ def get_series_list(page=1):
         return []
     
     series = []
-    # Setiap item komik berada di dalam <a href="/series/...">
     items = soup.select('a[href^="/series/"]')
     
     seen_slugs = set()
@@ -57,13 +55,11 @@ def get_series_list(page=1):
         
         full_link = BASE_URL + link
         
-        # Cari judul di dalam span dengan class "block text-[13.3px] font-bold"
         title_elem = a.select_one('span.block.text-\\[13\\.3px\\].font-bold')
         if not title_elem:
             title_elem = a.select_one('div[class*="font-bold"]')
         judul = title_elem.text.strip() if title_elem else slug.replace('-', ' ').title()
         
-        # Ambil thumbnail dari <img> di dalam <a>
         img = a.select_one('img')
         thumb = ''
         if img:
@@ -80,26 +76,26 @@ def get_series_list(page=1):
     
     return series
 
-def get_chapters_from_detail(series_url):
+def get_chapters_from_detail(series_url, limit=None):
     """
-    Mengambil daftar chapter dari halaman detail series
-    Berdasarkan struktur HTML dari asuracomic_net (1).html
+    Mengambil daftar chapter dari halaman detail series.
+    Jika limit ditentukan, hanya ambil sejumlah chapter terbaru.
     """
     soup = get_soup(series_url)
     if not soup:
         return []
     
     chapters = []
-    # Coba ekstrak dari data JSON terlebih dahulu (jika ada)
+    # Coba ekstrak dari data JSON terlebih dahulu
     json_data = extract_json_data(str(soup))
     if json_data:
         try:
-            # Navigasi ke data chapters
             props = json_data.get('props', {}).get('pageProps', {})
-            comic_data = props.get('comic', {})
-            # Dari asuracomic_net (1).html, chapters ada di dalam props
             chapters_data = props.get('chapters', [])
             if chapters_data:
+                # Jika ada limit, ambil chapter terbaru (asumsi urutan dari API sudah terbaru di awal)
+                if limit:
+                    chapters_data = chapters_data[:limit]
                 for ch in chapters_data:
                     chapters.append({
                         'nama': f"Chapter {ch.get('name', '')}",
@@ -112,7 +108,11 @@ def get_chapters_from_detail(series_url):
     # Fallback: parsing HTML biasa
     chapter_container = soup.select_one('div.pl-4.pr-2.pb-4.overflow-y-auto')
     if chapter_container:
-        for a in chapter_container.select('a[href*="/chapter/"]'):
+        chapter_links = chapter_container.select('a[href*="/chapter/"]')
+        # Jika ada limit, ambil sejumlah link teratas (asumsi urutan terbaru di atas)
+        if limit:
+            chapter_links = chapter_links[:limit]
+        for a in chapter_links:
             href = a.get('href')
             if not href:
                 continue
@@ -132,69 +132,52 @@ def get_chapters_from_detail(series_url):
     return chapters
 
 def get_images_from_chapter_page(chapter_url):
-    """
-    Mengambil semua URL gambar dari halaman chapter
-    Berdasarkan struktur HTML dari asuracomic_net (2).html
-    """
+    """Mengambil semua URL gambar dari halaman chapter"""
     response = requests.get(chapter_url, headers=HEADERS)
     if response.status_code != 200:
         return []
     
-    # Ekstrak data JSON dari halaman
     json_data = extract_json_data(response.text)
-    if not json_data:
-        return []
+    if json_data:
+        try:
+            props = json_data.get('props', {}).get('pageProps', {})
+            chapter_data = props.get('chapter', {})
+            pages = chapter_data.get('pages', [])
+            images = []
+            for page in pages:
+                if isinstance(page, dict) and 'url' in page:
+                    images.append(page['url'])
+                elif isinstance(page, str):
+                    images.append(page)
+            if images:
+                return images
+        except Exception as e:
+            print(f"Error parsing JSON for images: {e}")
     
-    try:
-        # Navigasi ke data pages gambar
-        # props -> pageProps -> chapter -> pages -> [ {order, url}, ... ]
-        props = json_data.get('props', {}).get('pageProps', {})
-        chapter_data = props.get('chapter', {})
-        pages = chapter_data.get('pages', [])
-        
-        images = []
-        for page in pages:
-            if isinstance(page, dict) and 'url' in page:
-                images.append(page['url'])
-            elif isinstance(page, str):
-                images.append(page)
-        
-        if images:
-            return images
-    except Exception as e:
-        print(f"Error parsing JSON for images: {e}")
-    
-    # Fallback: cari gambar langsung di HTML
+    # Fallback
     soup = BeautifulSoup(response.text, 'html.parser')
     images = []
     for img in soup.select('img[src*="gg.asuracomic.net/storage/media"]'):
         src = img.get('src')
         if src and src not in images:
             images.append(src)
-    
     return images
 
 def merge_chapters(old_chapters, new_chapters):
-    """
-    Menggabungkan dua daftar chapter berdasarkan URL.
-    Chapter baru akan menimpa yang lama jika URL sama (untuk update).
-    Hasil diurutkan berdasarkan nomor chapter.
-    """
+    """Menggabungkan dua daftar chapter berdasarkan URL."""
     combined = {ch['url']: ch for ch in old_chapters if 'url' in ch}
     for ch in new_chapters:
         combined[ch['url']] = ch
     merged = list(combined.values())
     
-    # Urutkan berdasarkan nomor chapter (jika ada)
     def get_ch_number(ch):
         match = re.search(r'(\d+(?:\.\d+)?)', ch['nama'])
         return float(match.group(1)) if match else 0
     merged.sort(key=get_ch_number)
-    
     return merged
 
-def process_comic(comic):
-    """Memproses satu komik: ambil chapter dan gambar, simpan ke db2/"""
+def process_comic(comic, limit_ch=None):
+    """Memproses satu komik. Jika limit_ch ditentukan, hanya ambil sejumlah chapter terbaru."""
     judul = comic['judul']
     link = comic['link']
     slug = comic['slug']
@@ -202,14 +185,13 @@ def process_comic(comic):
     
     print(f"--- Memproses: {judul} ---")
     
-    chapters = get_chapters_from_detail(link)
+    chapters = get_chapters_from_detail(link, limit=limit_ch)
     if not chapters:
         print(f"Tidak ada chapter untuk {slug}")
         return None
     
     print(f"   -> Ditemukan {len(chapters)} chapter")
     
-    # Ambil gambar untuk setiap chapter
     final_chapters = []
     for i, ch in enumerate(chapters):
         print(f"   -> Scraping {ch['nama']} ({i+1}/{len(chapters)})")
@@ -220,17 +202,14 @@ def process_comic(comic):
                 'url': ch['url'],
                 'images': images
             })
-        time.sleep(1)  # Jeda antar request
+        time.sleep(1)
     
     if not final_chapters:
         print(f"Tidak ada gambar untuk {slug}")
         return None
     
     # Urutkan chapter berdasarkan nomor
-    def get_ch_number(ch):
-        match = re.search(r'(\d+(?:\.\d+)?)', ch['nama'])
-        return float(match.group(1)) if match else 0
-    final_chapters.sort(key=get_ch_number)
+    final_chapters.sort(key=lambda ch: float(re.search(r'(\d+(?:\.\d+)?)', ch['nama']).group(1)) if re.search(r'(\d+(?:\.\d+)?)', ch['nama']) else 0)
     
     # Gabung dengan data lama jika ada
     db_path = f'db2/{slug}.json'
@@ -245,7 +224,6 @@ def process_comic(comic):
         except Exception as e:
             print(f"   -> Gagal membaca file lama ({e}), akan menimpa")
     
-    # Simpan ke file di folder db2
     os.makedirs('db2', exist_ok=True)
     with open(db_path, 'w', encoding='utf-8') as f:
         json.dump({
@@ -260,14 +238,13 @@ def process_comic(comic):
 def main():
     target_slug = os.environ.get('TARGET_SLUG')
     if target_slug:
-        # Mode satu komik
+        # Mode satu komik: ambil semua chapter
         url = f"{BASE_URL}/series/{target_slug}"
         soup = get_soup(url)
         if not soup:
             print("Gagal mengakses halaman komik")
             return
         
-        # Coba ambil judul dari data JSON atau h1
         judul = target_slug.replace('-', ' ').title()
         json_data = extract_json_data(str(soup))
         if json_data:
@@ -279,7 +256,6 @@ def main():
             except:
                 pass
         
-        # Cari thumbnail dari meta og:image atau data JSON
         thumb = ""
         og_img = soup.find('meta', property='og:image')
         if og_img and og_img.get('content'):
@@ -290,7 +266,7 @@ def main():
                 thumb = img_tag.get('src') or ''
         
         comic = {'judul': judul, 'link': url, 'slug': target_slug, 'thumb': thumb}
-        result = process_comic(comic)
+        result = process_comic(comic, limit_ch=None)  # ambil semua chapter
         if result:
             with open('list2.json', 'w', encoding='utf-8') as f:
                 json.dump([result], f, indent=4)
@@ -298,7 +274,7 @@ def main():
     else:
         # Mode katalog: ambil dari beberapa halaman (misal 3 halaman pertama)
         all_comics = []
-        for page in range(1, 4):
+        for page in range(1, 2):
             print(f"\n--- Halaman {page} ---")
             comics = get_series_list(page)
             if not comics:
@@ -307,16 +283,15 @@ def main():
             all_comics.extend(comics)
             time.sleep(2)
         
-        # Proses setiap komik
         results = []
         for i, comic in enumerate(all_comics):
             print(f"\nProgress: {i+1}/{len(all_comics)}")
-            res = process_comic(comic)
+            # Batasi hanya 2 chapter terbaru
+            res = process_comic(comic, limit_ch=2)
             if res:
                 results.append(res)
             time.sleep(2)
         
-        # Simpan katalog ke list2.json
         with open('list2.json', 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=4)
         print(f"\nSelesai. Total {len(results)} komik diproses. Katalog disimpan sebagai list2.json")
