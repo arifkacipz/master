@@ -46,13 +46,20 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Hanya tambahkan folder db2/ dan file list2.json
-          git add db2/ list2.json
+          # Tambahkan folder db2/ hanya jika ada
+          if [ -d "db2" ]; then
+            git add db2/
+          fi
+          # Tambahkan file list2.json hanya jika ada
+          if [ -f "list2.json" ]; then
+            git add list2.json
+          fi
+          # Cek apakah ada perubahan yang di-staged
           if git diff --quiet && git diff --staged --quiet; then
             echo "Tidak ada perubahan data."
           else
             echo "Perubahan ditemukan. Melakukan commit dan push..."
             git commit -m "Auto-update Asura Scans data [skip ci]"
-            git pull --rebase origin main   # Ganti 'main' jika branch Anda 'master'
+            git pull --rebase origin main
             git push origin main
           fi
