@@ -4,11 +4,11 @@ import glob
 
 def generate_list_from_db2():
     """
-    Membaca semua file JSON di folder db2/ dan menghasilkan list.json
+    Membaca semua file JSON di folder db2/ dan menghasilkan list2.json
     yang berisi daftar komik (judul, slug, thumb) diurutkan berdasarkan
     waktu modifikasi file terbaru (descending).
     """
-    # Cari semua file JSON di folder db
+    # Cari semua file JSON di folder db2
     json_files = glob.glob('db2/*.json')
     comics = []
 
@@ -45,7 +45,7 @@ def generate_list_from_db2():
     with open('list2.json', 'w', encoding='utf-8') as f:
         json.dump(comics, f, indent=4)
 
-    print(f"✅ Berhasil membuat list.json dengan {len(comics)} komik (diurutkan update terbaru).")
+    print(f"✅ Berhasil membuat list2.json dengan {len(comics)} komik (diurutkan update terbaru).")
 
 if __name__ == "__main__":
     generate_list_from_db2()
