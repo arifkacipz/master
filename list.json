@@ -5,6 +5,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965387/petomic_thumbs/world-s-strongest-survivor.jpg"
     },
     {
+        "judul": "Virus King",
+        "slug": "virus-king",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875199/petomic_thumbs/virus-king.jpg"
+    },
+    {
         "judul": "Your Talent is Mine",
         "slug": "your-talent-is-mine",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936207/petomic_thumbs/your-talent-is-mine.jpg"
@@ -20,9 +25,24 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965430/petomic_thumbs/zombie-dad.jpg"
     },
     {
+        "judul": "What a Bountiful Harvest, Demon Lord!",
+        "slug": "what-a-bountiful-harvest-demon-lord",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935745/petomic_thumbs/what-a-bountiful-harvest-demon-lord.jpg"
+    },
+    {
         "judul": "Time-Limited Genius Dark Knight",
         "slug": "time-limited-genius-dark-knight002",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902296/petomic_thumbs/time-limited-genius-dark-knight002.jpg"
+    },
+    {
+        "judul": "There Are No Bad Warriors in This World",
+        "slug": "there-are-no-bad-warriors-in-this-world",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965255/petomic_thumbs/there-are-no-bad-warriors-in-this-world.jpg"
+    },
+    {
+        "judul": "The World-Class Extra's Walkthrough",
+        "slug": "the-world-class-extra-s-walkthrough",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965585/petomic_thumbs/the-world-class-extra-s-walkthrough.jpg"
     },
     {
         "judul": "Villain to Kill",
@@ -33,11 +53,6 @@
         "judul": "To Be an Actor",
         "slug": "to-be-an-actor",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965264/petomic_thumbs/to-be-an-actor.jpg"
-    },
-    {
-        "judul": "Virus King",
-        "slug": "virus-king",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875199/petomic_thumbs/virus-king.jpg"
     },
     {
         "judul": "Ultimate Shut-in",
@@ -65,6 +80,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965406/petomic_thumbs/urban-legend-maker.jpg"
     },
     {
+        "judul": "The Youngest Son of the Eunhae Merchant Group",
+        "slug": "the-youngest-son-of-the-eunhae-merchant-group",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936111/petomic_thumbs/the-youngest-son-of-the-eunhae-merchant-group.jpg"
+    },
+    {
         "judul": "Top Tier Providence",
         "slug": "top-tier-providence",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902425/petomic_thumbs/top-tier-providence.jpg"
@@ -75,29 +95,19 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965259/petomic_thumbs/valhalla-saga.jpg"
     },
     {
-        "judul": "What a Bountiful Harvest, Demon Lord!",
-        "slug": "what-a-bountiful-harvest-demon-lord",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935745/petomic_thumbs/what-a-bountiful-harvest-demon-lord.jpg"
-    },
-    {
         "judul": "Tyrant of the Otherworld Prison: My Shadow Can Evolve Infinitely",
         "slug": "tyrant-of-the-otherworld-prison-my-shadow-can-evolve-infinitely",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936000/petomic_thumbs/tyrant-of-the-otherworld-prison-my-shadow-can-evolve-infinitely.jpg"
     },
     {
+        "judul": "The Yellow-Haired Villain in the Female Main Character's Novel Wants Happiness",
+        "slug": "the-yellow-haired-villain-in-the-female-main-character-s-novel-wants-happiness",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965611/petomic_thumbs/the-yellow-haired-villain-in-the-female-main-character-s-novel-wants-happiness.jpg"
+    },
+    {
         "judul": "Unparalleled in the Online Gaming World [Remake]",
         "slug": "unparalleled-in-the-online-gaming-world-remake",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936078/petomic_thumbs/unparalleled-in-the-online-gaming-world-remake.jpg"
-    },
-    {
-        "judul": "There Are No Bad Warriors in This World",
-        "slug": "there-are-no-bad-warriors-in-this-world",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965255/petomic_thumbs/there-are-no-bad-warriors-in-this-world.jpg"
-    },
-    {
-        "judul": "The World-Class Extra's Walkthrough",
-        "slug": "the-world-class-extra-s-walkthrough",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965585/petomic_thumbs/the-world-class-extra-s-walkthrough.jpg"
     },
     {
         "judul": "The Villain Wants to Live",
@@ -175,11 +185,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771874027/petomic_thumbs/the-ultimate-of-all-ages.jpg"
     },
     {
-        "judul": "The Youngest Son of the Eunhae Merchant Group",
-        "slug": "the-youngest-son-of-the-eunhae-merchant-group",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936111/petomic_thumbs/the-youngest-son-of-the-eunhae-merchant-group.jpg"
-    },
-    {
         "judul": "The Third Prince of the Fallen Kingdom has Regressed",
         "slug": "the-third-prince-of-the-fallen-kingdom-has-regressed",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935994/petomic_thumbs/the-third-prince-of-the-fallen-kingdom-has-regressed.jpg"
@@ -200,11 +205,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965134/petomic_thumbs/the-s-rank-hunter-s-healing-life-with-monsters.jpg"
     },
     {
-        "judul": "The Yellow-Haired Villain in the Female Main Character's Novel Wants Happiness",
-        "slug": "the-yellow-haired-villain-in-the-female-main-character-s-novel-wants-happiness",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965611/petomic_thumbs/the-yellow-haired-villain-in-the-female-main-character-s-novel-wants-happiness.jpg"
-    },
-    {
         "judul": "The Rune Wars",
         "slug": "the-rune-wars",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965152/petomic_thumbs/the-rune-wars.jpg"
@@ -213,6 +213,11 @@
         "judul": "The Terminally Ill Young Master of the Baek Clan",
         "slug": "the-terminally-ill-young-master-of-the-baek-clan",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936169/petomic_thumbs/the-terminally-ill-young-master-of-the-baek-clan.jpg"
+    },
+    {
+        "judul": "Max Level Player",
+        "slug": "the-maxed-out-player",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936217/petomic_thumbs/the-maxed-out-player.jpg"
     },
     {
         "judul": "The Novel\u2019s Extra (Remake)",
@@ -228,6 +233,11 @@
         "judul": "The Reborn Young Lord Is an Assassin",
         "slug": "the-reborn-young-lord-is-an-assassinaw5002",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935736/petomic_thumbs/the-reborn-young-lord-is-an-assassinaw5002.jpg"
+    },
+    {
+        "judul": "Martial God Regressed to Level 2",
+        "slug": "the-martial-god-who-regressed-back-to-level-2",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771906743/petomic_thumbs/the-martial-god-who-regressed-back-to-level-2.jpg"
     },
     {
         "judul": "The Reincarnated King of Fists",
@@ -248,6 +258,11 @@
         "judul": "The Return of the Mythical Archmage",
         "slug": "the-reincarnation-of-the-great-mage-in-myth",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935802/petomic_thumbs/the-reincarnation-of-the-great-mage-in-myth.jpg"
+    },
+    {
+        "judul": "The Max Level Hero has Returned!",
+        "slug": "the-max-level-hero-strikes-back",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965302/petomic_thumbs/the-max-level-hero-strikes-back.jpg"
     },
     {
         "judul": "The Reset Life of a Game Addict",
@@ -275,24 +290,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902390/petomic_thumbs/the-player-hides-his-pastkj51.jpg"
     },
     {
-        "judul": "Max Level Player",
-        "slug": "the-maxed-out-player",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936217/petomic_thumbs/the-maxed-out-player.jpg"
-    },
-    {
         "judul": "The Last Adventurer",
         "slug": "the-last-adventurerasw003",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902306/petomic_thumbs/the-last-adventurerasw003.jpg"
-    },
-    {
-        "judul": "Martial God Regressed to Level 2",
-        "slug": "the-martial-god-who-regressed-back-to-level-2",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771906743/petomic_thumbs/the-martial-god-who-regressed-back-to-level-2.jpg"
-    },
-    {
-        "judul": "The Max Level Hero has Returned!",
-        "slug": "the-max-level-hero-strikes-back",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965302/petomic_thumbs/the-max-level-hero-strikes-back.jpg"
     },
     {
         "judul": "The Mad Dog of the Duke\u2019s Estate",
@@ -305,6 +305,16 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875182/petomic_thumbs/the-legendary-hero-is-an-academy-honors-student.jpg"
     },
     {
+        "judul": "The Genius Who Sees Through the World",
+        "slug": "the-genius-who-sees-through-the-world",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936264/petomic_thumbs/the-genius-who-sees-through-the-world.jpg"
+    },
+    {
+        "judul": "The Heavenly Demon Wants a Quiet Life",
+        "slug": "the-heavenly-demon-wants-a-quiet-life",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902409/petomic_thumbs/the-heavenly-demon-wants-a-quiet-life.jpg"
+    },
+    {
         "judul": "The Illegitimate Who Devours Weapons",
         "slug": "the-illegitimate-who-devours-weapons",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771874033/petomic_thumbs/the-illegitimate-who-devours-weapons.jpg"
@@ -315,9 +325,19 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936386/petomic_thumbs/the-hero-starts-over-at-the-academy.jpg"
     },
     {
+        "judul": "The Greatest Estate Developer",
+        "slug": "the-greatest-estate-developer789",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935915/petomic_thumbs/the-greatest-estate-developer789.jpg"
+    },
+    {
         "judul": "The Heavenly Path Is Not Stupid",
         "slug": "the-heavenly-path-is-not-stupid",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936134/petomic_thumbs/the-heavenly-path-is-not-stupid.jpg"
+    },
+    {
+        "judul": "The Rebirth of the Hero\u2019s Party\u2019s Archmage",
+        "slug": "the-great-mage-of-the-hero-s-party-reincarnates",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936376/petomic_thumbs/the-great-mage-of-the-hero-s-party-reincarnates.jpg"
     },
     {
         "judul": "I Am God Killer",
@@ -330,9 +350,19 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935700/petomic_thumbs/the-infinite-mage.jpg"
     },
     {
+        "judul": "The Great Ruler",
+        "slug": "the-great-rulera01",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965463/petomic_thumbs/the-great-rulera01.jpg"
+    },
+    {
         "judul": "The Knight Who Only Lives Today",
         "slug": "the-knight-who-only-lives-today",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771874014/petomic_thumbs/the-knight-who-only-lives-today.jpg"
+    },
+    {
+        "judul": "The Grand Mudang Saga",
+        "slug": "the-grand-mudang-saga",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965495/petomic_thumbs/the-grand-mudang-saga.jpg"
     },
     {
         "judul": "The Knight King Who Returned with a God",
@@ -355,19 +385,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935979/petomic_thumbs/the-frozen-player-returns.jpg"
     },
     {
-        "judul": "The Genius Who Sees Through the World",
-        "slug": "the-genius-who-sees-through-the-world",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936264/petomic_thumbs/the-genius-who-sees-through-the-world.jpg"
-    },
-    {
-        "judul": "The Heavenly Demon Wants a Quiet Life",
-        "slug": "the-heavenly-demon-wants-a-quiet-life",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902409/petomic_thumbs/the-heavenly-demon-wants-a-quiet-life.jpg"
-    },
-    {
         "judul": "The Evil God Descends, I Own Great Hell",
         "slug": "the-evil-god-descends-i-own-great-hell",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965344/petomic_thumbs/the-evil-god-descends-i-own-great-hell.jpg"
+    },
+    {
+        "judul": "Becoming the Swordmaster Rank Young Lord of the Sichuan Tang Family",
+        "slug": "the-dang-clan-s-swordmaster-heir-just-wants-a-normal-life",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935807/petomic_thumbs/the-dang-clan-s-swordmaster-heir-just-wants-a-normal-life.jpg"
     },
     {
         "judul": "Demonic Evolution",
@@ -375,14 +400,19 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935816/petomic_thumbs/the-devil-never-cries.jpg"
     },
     {
+        "judul": "The Count\u2019s Youngest Son Is a Player",
+        "slug": "the-count-s-youngest-son-is-a-playerdfg",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936246/petomic_thumbs/the-count-s-youngest-son-is-a-playerdfg.jpg"
+    },
+    {
         "judul": "The Eldest Son of the Marquis House is a Martial Artist",
         "slug": "the-eldest-son-of-the-marquis-house-is-a-martial-artist",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965125/petomic_thumbs/the-eldest-son-of-the-marquis-house-is-a-martial-artist.jpg"
     },
     {
-        "judul": "The Greatest Estate Developer",
-        "slug": "the-greatest-estate-developer789",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935915/petomic_thumbs/the-greatest-estate-developer789.jpg"
+        "judul": "The Dark Swordsman Returns",
+        "slug": "the-dark-swordsman-returns",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965533/petomic_thumbs/the-dark-swordsman-returns.jpg"
     },
     {
         "judul": "The Fox-Eyed Villain of the Demon Academy",
@@ -393,11 +423,6 @@
         "judul": "The Genius Mage Who Uses His Fists",
         "slug": "the-genius-mage-who-uses-his-fists",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936144/petomic_thumbs/the-genius-mage-who-uses-his-fists.jpg"
-    },
-    {
-        "judul": "The Rebirth of the Hero\u2019s Party\u2019s Archmage",
-        "slug": "the-great-mage-of-the-hero-s-party-reincarnates",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936376/petomic_thumbs/the-great-mage-of-the-hero-s-party-reincarnates.jpg"
     },
     {
         "judul": "The Extra's Academy Survival Guide",
@@ -415,11 +440,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965202/petomic_thumbs/the-demonic-cult-instructor-returns.jpg"
     },
     {
-        "judul": "The Great Ruler",
-        "slug": "the-great-rulera01",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965463/petomic_thumbs/the-great-rulera01.jpg"
-    },
-    {
         "judul": "Genius Martial Arts Trainer",
         "slug": "the-genius-murim-fitness-trainer",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875220/petomic_thumbs/the-genius-murim-fitness-trainer.jpg"
@@ -435,14 +455,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936344/petomic_thumbs/the-genius-swordsman-of-mount-hua.jpg"
     },
     {
+        "judul": "The Demon Lord Reincarnated as a Slave ~Rising to the Top to Rewrite History~",
+        "slug": "the-demon-lord-reincarnated-as-a-slave-rising-to-the-top-to-rewrite-history",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965637/petomic_thumbs/the-demon-lord-reincarnated-as-a-slave-rising-to-the-top-to-rewrite-history.jpg"
+    },
+    {
         "judul": "The Demon-Slaying Madman\u2014reborn as a demon.",
         "slug": "the-demon-slaying-madman-reborn-as-a-demon",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965175/petomic_thumbs/the-demon-slaying-madman-reborn-as-a-demon.jpg"
-    },
-    {
-        "judul": "The Grand Mudang Saga",
-        "slug": "the-grand-mudang-saga",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965495/petomic_thumbs/the-grand-mudang-saga.jpg"
     },
     {
         "judul": "The Crown Prince That Sells Medicine",
@@ -450,9 +470,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936212/petomic_thumbs/the-apothecary-prince.jpg"
     },
     {
-        "judul": "Becoming the Swordmaster Rank Young Lord of the Sichuan Tang Family",
-        "slug": "the-dang-clan-s-swordmaster-heir-just-wants-a-normal-life",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935807/petomic_thumbs/the-dang-clan-s-swordmaster-heir-just-wants-a-normal-life.jpg"
+        "judul": "Steel-Eating Player",
+        "slug": "steel-eating-player",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965560/petomic_thumbs/steel-eating-player.jpg"
     },
     {
         "judul": "Surviving in a Romance Fantasy Novel",
@@ -465,19 +485,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935935/petomic_thumbs/the-art-of-reincarnation.jpg"
     },
     {
-        "judul": "The Count\u2019s Youngest Son Is a Player",
-        "slug": "the-count-s-youngest-son-is-a-playerdfg",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936246/petomic_thumbs/the-count-s-youngest-son-is-a-playerdfg.jpg"
-    },
-    {
         "judul": "The Archmage's Restaurant",
         "slug": "the-archmage-s-restaurant",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965269/petomic_thumbs/the-archmage-s-restaurant.jpg"
-    },
-    {
-        "judul": "The Dark Swordsman Returns",
-        "slug": "the-dark-swordsman-returns",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965533/petomic_thumbs/the-dark-swordsman-returns.jpg"
     },
     {
         "judul": "Overlord of Insects",
@@ -500,6 +510,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965537/petomic_thumbs/supremely-talented-player.jpg"
     },
     {
+        "judul": "Subscribed to GodTube",
+        "slug": "subscribed-to-godtube",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936189/petomic_thumbs/subscribed-to-godtube.jpg"
+    },
+    {
         "judul": "The Battle of Nations: I Will Subdue the World Through Pangu",
         "slug": "the-battle-of-nations-i-will-subdue-the-world-through-pangu",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965679/petomic_thumbs/the-battle-of-nations-i-will-subdue-the-world-through-pangu.jpg"
@@ -520,6 +535,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935594/petomic_thumbs/supreme-curse-master.jpg"
     },
     {
+        "judul": "Strength Through Adversity, My Cultivation Knows No Limits",
+        "slug": "strength-through-adversity-my-cultivation-knows-no-limits",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902387/petomic_thumbs/strength-through-adversity-my-cultivation-knows-no-limits.jpg"
+    },
+    {
         "judul": "The Concept-Grasping Magical Genius",
         "slug": "the-concept-grasping-magical-genius",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965556/petomic_thumbs/the-concept-grasping-magical-genius.jpg"
@@ -538,11 +558,6 @@
         "judul": "The Academy\u2019s Sashimi Sword Master",
         "slug": "the-academy-s-sashimi-sword-master",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965335/petomic_thumbs/the-academy-s-sashimi-sword-master.jpg"
-    },
-    {
-        "judul": "The Demon Lord Reincarnated as a Slave ~Rising to the Top to Rewrite History~",
-        "slug": "the-demon-lord-reincarnated-as-a-slave-rising-to-the-top-to-rewrite-history",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965637/petomic_thumbs/the-demon-lord-reincarnated-as-a-slave-rising-to-the-top-to-rewrite-history.jpg"
     },
     {
         "judul": "The Cold-Blooded Warrior",
@@ -568,11 +583,6 @@
         "judul": "Sir, Don't Show Off",
         "slug": "sir-don-t-show-off",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965482/petomic_thumbs/sir-don-t-show-off.jpg"
-    },
-    {
-        "judul": "Steel-Eating Player",
-        "slug": "steel-eating-player",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965560/petomic_thumbs/steel-eating-player.jpg"
     },
     {
         "judul": "Soul Land IV",
@@ -605,9 +615,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936148/petomic_thumbs/secretly-more-powerful-than-the-hero.jpg"
     },
     {
-        "judul": "Subscribed to GodTube",
-        "slug": "subscribed-to-godtube",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936189/petomic_thumbs/subscribed-to-godtube.jpg"
+        "judul": "Revenge of the Baskerville Bloodhound",
+        "slug": "revenge-of-the-iron-blooded-sword-hound",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902310/petomic_thumbs/revenge-of-the-iron-blooded-sword-hound.jpg"
+    },
+    {
+        "judul": "Worthless Regression",
+        "slug": "returning-with-absolutely-nothing",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936125/petomic_thumbs/returning-with-absolutely-nothing.jpg"
     },
     {
         "judul": "Snake Immortal: The Tale of a Snake's Cultivation to Immortality",
@@ -628,11 +643,6 @@
         "judul": "Solo Resurrection",
         "slug": "solo-resurrection",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936029/petomic_thumbs/solo-resurrection.jpg"
-    },
-    {
-        "judul": "Strength Through Adversity, My Cultivation Knows No Limits",
-        "slug": "strength-through-adversity-my-cultivation-knows-no-limits",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902387/petomic_thumbs/strength-through-adversity-my-cultivation-knows-no-limits.jpg"
     },
     {
         "judul": "Solo Leveling: Ragnarok",
@@ -685,6 +695,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936175/petomic_thumbs/return-of-the-sword-god-rank-civil-servant.jpg"
     },
     {
+        "judul": "Reborn as a Demonic Cultivator: Starting with a Zombie Planet",
+        "slug": "reborn-as-a-demonic-cultivator-starting-with-a-zombie-planet",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965689/petomic_thumbs/reborn-as-a-demonic-cultivator-starting-with-a-zombie-planet.jpg"
+    },
+    {
         "judul": "Return of the Back Alley Wizard",
         "slug": "return-of-the-back-alley-wizard",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965139/petomic_thumbs/return-of-the-back-alley-wizard.jpg"
@@ -725,9 +740,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875170/petomic_thumbs/reincarnation-of-the-fist-king.jpg"
     },
     {
-        "judul": "Revenge of the Baskerville Bloodhound",
-        "slug": "revenge-of-the-iron-blooded-sword-hound",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902310/petomic_thumbs/revenge-of-the-iron-blooded-sword-hound.jpg"
+        "judul": "Regenerate Top Players",
+        "slug": "regenerate-top-players",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965665/petomic_thumbs/regenerate-top-players.jpg"
     },
     {
         "judul": "Regressed, but the World Didn\u2019t End",
@@ -740,9 +755,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935920/petomic_thumbs/return-of-the-mad-demonyugh5001.jpg"
     },
     {
-        "judul": "Worthless Regression",
-        "slug": "returning-with-absolutely-nothing",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936125/petomic_thumbs/returning-with-absolutely-nothing.jpg"
+        "judul": "Reborn as a Monster 2: Rise of the Beast God",
+        "slug": "reborn-as-a-monster-2-rise-of-the-beast-god",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965326/petomic_thumbs/reborn-as-a-monster-2-rise-of-the-beast-god.jpg"
     },
     {
         "judul": "Bloodhound\u2019s Regression Instinct",
@@ -765,6 +780,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902405/petomic_thumbs/returned-by-the-king.jpg"
     },
     {
+        "judul": "The Chaebeol\u2019s Youngest Son",
+        "slug": "reborn-rich4001",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936203/petomic_thumbs/reborn-rich4001.jpg"
+    },
+    {
         "judul": "Reincarnation of the Hero Party's Grand Mage",
         "slug": "reincarnation-of-the-hero-party-s-grand-mage",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965221/petomic_thumbs/reincarnation-of-the-hero-party-s-grand-mage.jpg"
@@ -780,6 +800,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902398/petomic_thumbs/reincarnator.jpg"
     },
     {
+        "judul": "Omniscient Reader's Viewpoint",
+        "slug": "omniscient-reader-s-viewpoint0jhki4001",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935604/petomic_thumbs/omniscient-reader-s-viewpoint0jhki4001.jpg"
+    },
+    {
         "judul": "One Hundred Thousand Years of Tribulation by Heavenly Thunder",
         "slug": "one-hundred-thousand-years-of-tribulation-by-heavenly-thunder",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965312/petomic_thumbs/one-hundred-thousand-years-of-tribulation-by-heavenly-thunder.jpg"
@@ -788,11 +813,6 @@
         "judul": "Peerless Battle Spirit",
         "slug": "peerless-battle-spirit",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935740/petomic_thumbs/peerless-battle-spirit.jpg"
-    },
-    {
-        "judul": "Reborn as a Demonic Cultivator: Starting with a Zombie Planet",
-        "slug": "reborn-as-a-demonic-cultivator-starting-with-a-zombie-planet",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965689/petomic_thumbs/reborn-as-a-demonic-cultivator-starting-with-a-zombie-planet.jpg"
     },
     {
         "judul": "Rebirth Of The Ultimate Master",
@@ -815,19 +835,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935910/petomic_thumbs/overgeared.jpg"
     },
     {
-        "judul": "Regenerate Top Players",
-        "slug": "regenerate-top-players",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965665/petomic_thumbs/regenerate-top-players.jpg"
+        "judul": "Number One Beast Master",
+        "slug": "number-one-beast-master",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935847/petomic_thumbs/number-one-beast-master.jpg"
     },
     {
         "judul": "Rebirth of the Thief Who Roamed the World",
         "slug": "rebirth-of-the-thief-who-roamed-the-world",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902402/petomic_thumbs/rebirth-of-the-thief-who-roamed-the-world.jpg"
-    },
-    {
-        "judul": "Reborn as a Monster 2: Rise of the Beast God",
-        "slug": "reborn-as-a-monster-2-rise-of-the-beast-god",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965326/petomic_thumbs/reborn-as-a-monster-2-rise-of-the-beast-god.jpg"
     },
     {
         "judul": "Player Elimination Plan! When Anomalies Descend Upon The Human World",
@@ -855,6 +870,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902342/petomic_thumbs/playing-the-perfect-fox-eyed-villain.jpg"
     },
     {
+        "judul": "Omae wa Tsuyo sugita to Nakama ni Uragirareta \"Moto S Rank Boukensha\" wa, Inaka de Slow Life o Okuritai",
+        "slug": "omae-wa-tsuyo-sugita-to-nakama-ni-uragirareta-moto-s-rank-boukensha-wa-inaka-de-slow-life-o-okuritai",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965606/petomic_thumbs/omae-wa-tsuyo-sugita-to-nakama-ni-uragirareta-moto-s-rank-boukensha-wa-inaka-de-slow-life-o-okuritai.jpg"
+    },
+    {
         "judul": "The Player Who Can't Level Up",
         "slug": "player-who-can-t-level-up",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935861/petomic_thumbs/player-who-can-t-level-up.jpg"
@@ -865,19 +885,19 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965378/petomic_thumbs/primordial-ten-fiends-others-tame-beasts-i-tame-beast-girls.jpg"
     },
     {
-        "judul": "The Chaebeol\u2019s Youngest Son",
-        "slug": "reborn-rich4001",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936203/petomic_thumbs/reborn-rich4001.jpg"
-    },
-    {
         "judul": "Pick Me Up",
         "slug": "pick-me-up",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935631/petomic_thumbs/pick-me-up.jpg"
     },
     {
-        "judul": "Omniscient Reader's Viewpoint",
-        "slug": "omniscient-reader-s-viewpoint0jhki4001",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935604/petomic_thumbs/omniscient-reader-s-viewpoint0jhki4001.jpg"
+        "judul": "Nuclear Explosion Swordsmanship: One Slash, One Kill",
+        "slug": "nuclear-explosion-swordsmanship-one-slash-one-kill",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965340/petomic_thumbs/nuclear-explosion-swordsmanship-one-slash-one-kill.jpg"
+    },
+    {
+        "judul": "Masters of Lightning Knives",
+        "slug": "masters-of-lightning-knives",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936371/petomic_thumbs/masters-of-lightning-knives.jpg"
     },
     {
         "judul": "My Disciples Are All Big Villains",
@@ -920,14 +940,24 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935715/petomic_thumbs/my-f-rank-high-school-life.jpg"
     },
     {
-        "judul": "Number One Beast Master",
-        "slug": "number-one-beast-master",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935847/petomic_thumbs/number-one-beast-master.jpg"
+        "judul": "Mirror Prepayment",
+        "slug": "mirror-prepayment",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965468/petomic_thumbs/mirror-prepayment.jpg"
+    },
+    {
+        "judul": "Monster Pet Evolution",
+        "slug": "monster-pet-evolution",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936019/petomic_thumbs/monster-pet-evolution.jpg"
     },
     {
         "judul": "My Apocalypse System Is Broken",
         "slug": "my-apocalypse-system-is-broken",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965547/petomic_thumbs/my-apocalypse-system-is-broken.jpg"
+    },
+    {
+        "judul": "Mercenary Enrollment",
+        "slug": "mercenary-enrollment",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935773/petomic_thumbs/mercenary-enrollment.jpg"
     },
     {
         "judul": "Myst, Might, Mayhem",
@@ -943,11 +973,6 @@
         "judul": "My Wife is a Heavenly Big Shot",
         "slug": "my-wife-is-a-heavenly-big-shot",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936322/petomic_thumbs/my-wife-is-a-heavenly-big-shot.jpg"
-    },
-    {
-        "judul": "Omae wa Tsuyo sugita to Nakama ni Uragirareta \"Moto S Rank Boukensha\" wa, Inaka de Slow Life o Okuritai",
-        "slug": "omae-wa-tsuyo-sugita-to-nakama-ni-uragirareta-moto-s-rank-boukensha-wa-inaka-de-slow-life-o-okuritai",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965606/petomic_thumbs/omae-wa-tsuyo-sugita-to-nakama-ni-uragirareta-moto-s-rank-boukensha-wa-inaka-de-slow-life-o-okuritai.jpg"
     },
     {
         "judul": "Mr. Zombie",
@@ -975,19 +1000,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936130/petomic_thumbs/night-of-the-soulless-heathens.jpg"
     },
     {
-        "judul": "Nuclear Explosion Swordsmanship: One Slash, One Kill",
-        "slug": "nuclear-explosion-swordsmanship-one-slash-one-kill",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965340/petomic_thumbs/nuclear-explosion-swordsmanship-one-slash-one-kill.jpg"
-    },
-    {
         "judul": "Martial Wild West",
         "slug": "martial-wild-west",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936048/petomic_thumbs/martial-wild-west.jpg"
     },
     {
-        "judul": "Masters of Lightning Knives",
-        "slug": "masters-of-lightning-knives",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936371/petomic_thumbs/masters-of-lightning-knives.jpg"
+        "judul": "Keep a Low Profile, Sect Leader",
+        "slug": "keep-a-low-profile-sect-leader",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902428/petomic_thumbs/keep-a-low-profile-sect-leader.jpg"
     },
     {
         "judul": "Martial Peak",
@@ -1003,6 +1023,11 @@
         "judul": "Lout of Count's Family",
         "slug": "lout-of-count-s-family",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936152/petomic_thumbs/lout-of-count-s-family.jpg"
+    },
+    {
+        "judul": "Killer Peter",
+        "slug": "killer-peter556",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902432/petomic_thumbs/killer-peter556.jpg"
     },
     {
         "judul": "Martial Evolution: Start by Awakening the King of Monsters",
@@ -1040,24 +1065,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935654/petomic_thumbs/master-this-villainous-disciple-is-not-the-holy-child.jpg"
     },
     {
-        "judul": "Mirror Prepayment",
-        "slug": "mirror-prepayment",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965468/petomic_thumbs/mirror-prepayment.jpg"
-    },
-    {
-        "judul": "Monster Pet Evolution",
-        "slug": "monster-pet-evolution",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936019/petomic_thumbs/monster-pet-evolution.jpg"
+        "judul": "It turns out that I am the second generation of demons",
+        "slug": "it-turns-out-that-i-am-the-second-generation-of-demons",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965724/petomic_thumbs/it-turns-out-that-i-am-the-second-generation-of-demons.jpg"
     },
     {
         "judul": "Lord of Summoning! When Anomalies Descend Upon The Human World",
         "slug": "lord-of-summoning-when-anomalies-descend-upon-the-human-world",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936254/petomic_thumbs/lord-of-summoning-when-anomalies-descend-upon-the-human-world.jpg"
-    },
-    {
-        "judul": "Mercenary Enrollment",
-        "slug": "mercenary-enrollment",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935773/petomic_thumbs/mercenary-enrollment.jpg"
     },
     {
         "judul": "Lv.99 Burning Flame Princess",
@@ -1095,14 +1110,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771910948/petomic_thumbs/i-m-the-great-immortal01.jpg"
     },
     {
-        "judul": "Keep a Low Profile, Sect Leader",
-        "slug": "keep-a-low-profile-sect-leader",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902428/petomic_thumbs/keep-a-low-profile-sect-leader.jpg"
+        "judul": "I\u2019m Going to Destroy this Country",
+        "slug": "i-m-going-to-wipe-out-this-country",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935969/petomic_thumbs/i-m-going-to-wipe-out-this-country.jpg"
     },
     {
-        "judul": "Killer Peter",
-        "slug": "killer-peter556",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902432/petomic_thumbs/killer-peter556.jpg"
+        "judul": "I'm Being Mistaken for a Soccer Genius",
+        "slug": "i-m-being-mistaken-for-a-soccer-genius",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965684/petomic_thumbs/i-m-being-mistaken-for-a-soccer-genius.jpg"
     },
     {
         "judul": "I, The Demon Lord am being targeted by my female Disciples!",
@@ -1135,6 +1150,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965504/petomic_thumbs/infinite-leveling-murim.jpg"
     },
     {
+        "judul": "I'm Really Not the Demon God's Lackey",
+        "slug": "i-m-really-not-the-demon-god-s-lackey",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936034/petomic_thumbs/i-m-really-not-the-demon-god-s-lackey.jpg"
+    },
+    {
         "judul": "Ice Lord",
         "slug": "ice-lord",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935856/petomic_thumbs/ice-lord.jpg"
@@ -1145,11 +1165,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965510/petomic_thumbs/i-work-nine-to-five-in-the-immortal-cultivation-world.jpg"
     },
     {
-        "judul": "It turns out that I am the second generation of demons",
-        "slug": "it-turns-out-that-i-am-the-second-generation-of-demons",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965724/petomic_thumbs/it-turns-out-that-i-am-the-second-generation-of-demons.jpg"
-    },
-    {
         "judul": "Infinite Evolution Starting from Zero",
         "slug": "infinite-evolution-starting-from-zero",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965198/petomic_thumbs/infinite-evolution-starting-from-zero.jpg"
@@ -1158,6 +1173,11 @@
         "judul": "I\u2019m the Max-Level Newbie",
         "slug": "i-m-the-max-level-newbie",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875216/petomic_thumbs/i-m-the-max-level-newbie.jpg"
+    },
+    {
+        "judul": "I\u2019m Not That Kind of Talent",
+        "slug": "i-m-not-that-kind-of-talent",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771874021/petomic_thumbs/i-m-not-that-kind-of-talent.jpg"
     },
     {
         "judul": "I Used to be a Boss",
@@ -1195,16 +1215,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965234/petomic_thumbs/i-became-a-swordsmanship-instructor-at-the-academy.jpg"
     },
     {
-        "judul": "I\u2019m Going to Destroy this Country",
-        "slug": "i-m-going-to-wipe-out-this-country",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935969/petomic_thumbs/i-m-going-to-wipe-out-this-country.jpg"
-    },
-    {
-        "judul": "I'm Being Mistaken for a Soccer Genius",
-        "slug": "i-m-being-mistaken-for-a-soccer-genius",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965684/petomic_thumbs/i-m-being-mistaken-for-a-soccer-genius.jpg"
-    },
-    {
         "judul": "Returned as a Martial Genius",
         "slug": "i-came-back-as-a-martial-genius",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935881/petomic_thumbs/i-came-back-as-a-martial-genius.jpg"
@@ -1240,14 +1250,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965621/petomic_thumbs/i-became-the-husband-of-the-cult-leader-of-the-demonic-sect.jpg"
     },
     {
-        "judul": "I'm Really Not the Demon God's Lackey",
-        "slug": "i-m-really-not-the-demon-god-s-lackey",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936034/petomic_thumbs/i-m-really-not-the-demon-god-s-lackey.jpg"
-    },
-    {
         "judul": "I Awoke as a God After Auto Battling For a Million Years",
         "slug": "i-awoke-as-a-god-after-auto-battling-for-a-million-years",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935664/petomic_thumbs/i-awoke-as-a-god-after-auto-battling-for-a-million-years.jpg"
+    },
+    {
+        "judul": "Helmut: The Forsaken Child",
+        "slug": "helmut-the-forsaken-child",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935925/petomic_thumbs/helmut-the-forsaken-child.jpg"
     },
     {
         "judul": "Worthless Profession: Dragon Tamer",
@@ -1255,14 +1265,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936073/petomic_thumbs/i-got-the-weakest-class-dragon-tamer.jpg"
     },
     {
+        "judul": "Hero X Demon Queen",
+        "slug": "hero-x-demon-queen",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936292/petomic_thumbs/hero-x-demon-queen.jpg"
+    },
+    {
         "judul": "How a Catastrophic Necromancer Retires",
         "slug": "how-a-catastrophic-necromancer-retires",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965458/petomic_thumbs/how-a-catastrophic-necromancer-retires.jpg"
-    },
-    {
-        "judul": "I\u2019m Not That Kind of Talent",
-        "slug": "i-m-not-that-kind-of-talent",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771874021/petomic_thumbs/i-m-not-that-kind-of-talent.jpg"
     },
     {
         "judul": "I Became The King by Scavenging",
@@ -1305,11 +1315,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935640/petomic_thumbs/global-martial-arts.jpg"
     },
     {
-        "judul": "Helmut: The Forsaken Child",
-        "slug": "helmut-the-forsaken-child",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935925/petomic_thumbs/helmut-the-forsaken-child.jpg"
-    },
-    {
         "judul": "Goblin\u2019s Night",
         "slug": "goblin-s-night",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936005/petomic_thumbs/goblin-s-night.jpg"
@@ -1320,11 +1325,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935614/petomic_thumbs/global-beast-tamer-i-can-see-the-path-of-evolution.jpg"
     },
     {
-        "judul": "Hero X Demon Queen",
-        "slug": "hero-x-demon-queen",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936292/petomic_thumbs/hero-x-demon-queen.jpg"
-    },
-    {
         "judul": "God of the Apocalypse",
         "slug": "god-of-the-apocalypse",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965655/petomic_thumbs/god-of-the-apocalypse.jpg"
@@ -1333,6 +1333,11 @@
         "judul": "Fated to Be Loved by Villains",
         "slug": "fated-to-be-loved-by-villains",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936139/petomic_thumbs/fated-to-be-loved-by-villains.jpg"
+    },
+    {
+        "judul": "F-Class Destiny Hunter",
+        "slug": "f-rank-fortune-hunter",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936180/petomic_thumbs/f-rank-fortune-hunter.jpg"
     },
     {
         "judul": "Gods of all people: I sacrificed hundreds of millions of living beings to become a god",
@@ -1350,9 +1355,34 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935649/petomic_thumbs/full-time-swordsman.jpg"
     },
     {
+        "judul": "Emperor of Steel",
+        "slug": "emperor-of-steel",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965425/petomic_thumbs/emperor-of-steel.jpg"
+    },
+    {
+        "judul": "Extraordinary World! I, a vampire...",
+        "slug": "extraordinary-world-i-a-vampire",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965278/petomic_thumbs/extraordinary-world-i-a-vampire.jpg"
+    },
+    {
+        "judul": "Starting Over as a Tree",
+        "slug": "evolution-begins-with-a-big-tree",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902293/petomic_thumbs/evolution-begins-with-a-big-tree.jpg"
+    },
+    {
         "judul": "Full-Time Awakening",
         "slug": "full-time-awakening",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936241/petomic_thumbs/full-time-awakening.jpg"
+    },
+    {
+        "judul": "Esteemed Female Masters All Want to Possess Me",
+        "slug": "esteemed-female-masters-all-want-to-possess-me",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965491/petomic_thumbs/esteemed-female-masters-all-want-to-possess-me.jpg"
+    },
+    {
+        "judul": "Transcension Academy",
+        "slug": "enrolling-in-the-transcendent-academyswetf5001",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936268/petomic_thumbs/enrolling-in-the-transcendent-academyswetf5001.jpg"
     },
     {
         "judul": "Genius Archer\u2019s Livestreaming",
@@ -1360,9 +1390,19 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936390/petomic_thumbs/genius-archer-s-livestreaming.jpg"
     },
     {
+        "judul": "Demon Instructor's Return",
+        "slug": "demon-instructor-s-return",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965515/petomic_thumbs/demon-instructor-s-return.jpg"
+    },
+    {
         "judul": "Doomsday Game: Rise of the Villain",
         "slug": "doomsday-game-rise-of-the-villain",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965616/petomic_thumbs/doomsday-game-rise-of-the-villain.jpg"
+    },
+    {
+        "judul": "The Heavenly Demon Can\u2019t Live a Normal Life",
+        "slug": "descended-from-divinity7001",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935678/petomic_thumbs/descended-from-divinity7001.jpg"
     },
     {
         "judul": "Destined Murderer",
@@ -1385,14 +1425,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935791/petomic_thumbs/dragon-master.jpg"
     },
     {
+        "judul": "Magic Emperor",
+        "slug": "demon-magic-emperor",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875174/petomic_thumbs/demon-magic-emperor.jpg"
+    },
+    {
         "judul": "Dungeon Architect",
         "slug": "dungeon-architect",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936115/petomic_thumbs/dungeon-architect.jpg"
-    },
-    {
-        "judul": "F-Class Destiny Hunter",
-        "slug": "f-rank-fortune-hunter",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936180/petomic_thumbs/f-rank-fortune-hunter.jpg"
     },
     {
         "judul": "Dominating the Wasteland: I Control an Immortal Sect in the Apocalypse",
@@ -1410,11 +1450,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936366/petomic_thumbs/doomsday-arrival-evolution-into-the-crimson-king.jpg"
     },
     {
-        "judul": "Emperor of Steel",
-        "slug": "emperor-of-steel",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965425/petomic_thumbs/emperor-of-steel.jpg"
-    },
-    {
         "judul": "Eat and Go",
         "slug": "eat-and-go",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965543/petomic_thumbs/eat-and-go.jpg"
@@ -1423,16 +1458,6 @@
         "judul": "Dukedom\u2019s Legendary Prodigy",
         "slug": "dukedom-s-legendary-prodigy",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935782/petomic_thumbs/dukedom-s-legendary-prodigy.jpg"
-    },
-    {
-        "judul": "Extraordinary World! I, a vampire...",
-        "slug": "extraordinary-world-i-a-vampire",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965278/petomic_thumbs/extraordinary-world-i-a-vampire.jpg"
-    },
-    {
-        "judul": "Starting Over as a Tree",
-        "slug": "evolution-begins-with-a-big-tree",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902293/petomic_thumbs/evolution-begins-with-a-big-tree.jpg"
     },
     {
         "judul": "Domestication of Divine Beasts at the Beginning",
@@ -1450,24 +1475,24 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902320/petomic_thumbs/emperor-of-solo-play.jpg"
     },
     {
-        "judul": "Esteemed Female Masters All Want to Possess Me",
-        "slug": "esteemed-female-masters-all-want-to-possess-me",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965491/petomic_thumbs/esteemed-female-masters-all-want-to-possess-me.jpg"
+        "judul": "Talent-Swallowing Magician",
+        "slug": "demon-devourer",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936120/petomic_thumbs/demon-devourer.jpg"
     },
     {
-        "judul": "Transcension Academy",
-        "slug": "enrolling-in-the-transcendent-academyswetf5001",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936268/petomic_thumbs/enrolling-in-the-transcendent-academyswetf5001.jpg"
-    },
-    {
-        "judul": "Demon Instructor's Return",
-        "slug": "demon-instructor-s-return",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965515/petomic_thumbs/demon-instructor-s-return.jpg"
+        "judul": "The Bully In-Charge",
+        "slug": "designated-bully5001",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936194/petomic_thumbs/designated-bully5001.jpg"
     },
     {
         "judul": "Creepy Pharmacist: All My Patients are Horrific",
         "slug": "creepy-pharmacist-all-my-patients-are-horrific",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965443/petomic_thumbs/creepy-pharmacist-all-my-patients-are-horrific.jpg"
+    },
+    {
+        "judul": "Becoming a God, Starting as water monkey",
+        "slug": "becoming-a-god-starting-as-water-monkey",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935951/petomic_thumbs/becoming-a-god-starting-as-water-monkey.jpg"
     },
     {
         "judul": "Chronicles of the Demon Faction",
@@ -1485,11 +1510,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965330/petomic_thumbs/chronicles-of-the-reincarnated-demon-god555456.jpg"
     },
     {
-        "judul": "The Heavenly Demon Can\u2019t Live a Normal Life",
-        "slug": "descended-from-divinity7001",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935678/petomic_thumbs/descended-from-divinity7001.jpg"
-    },
-    {
         "judul": "Breakers",
         "slug": "breakers",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936279/petomic_thumbs/breakers.jpg"
@@ -1505,6 +1525,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936283/petomic_thumbs/breaking-into-the-body-of-the-emperor-s-daughter.jpg"
     },
     {
+        "judul": "Blink Master of the Magic Academy",
+        "slug": "blink-master-of-the-magic-academy",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936102/petomic_thumbs/blink-master-of-the-magic-academy.jpg"
+    },
+    {
         "judul": "Boundless Ascension",
         "slug": "boundless-ascensionasdw7001",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875229/petomic_thumbs/boundless-ascensionasdw7001.jpg"
@@ -1515,9 +1540,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771910923/petomic_thumbs/crimson-reset.jpg"
     },
     {
-        "judul": "Magic Emperor",
-        "slug": "demon-magic-emperor",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875174/petomic_thumbs/demon-magic-emperor.jpg"
+        "judul": "Best Teacher Baek",
+        "slug": "best-teacher-baek4001",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965250/petomic_thumbs/best-teacher-baek4001.jpg"
     },
     {
         "judul": "Surviving as a Genius on Borrowed Time",
@@ -1535,14 +1560,9 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936313/petomic_thumbs/chronicles-of-the-lazy-sovereign.jpg"
     },
     {
-        "judul": "Talent-Swallowing Magician",
-        "slug": "demon-devourer",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936120/petomic_thumbs/demon-devourer.jpg"
-    },
-    {
-        "judul": "The Bully In-Charge",
-        "slug": "designated-bully5001",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936194/petomic_thumbs/designated-bully5001.jpg"
+        "judul": "Become the Strongest Hero Through the Cheat System",
+        "slug": "become-the-strongest-hero-through-the-cheat-system",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965670/petomic_thumbs/become-the-strongest-hero-through-the-cheat-system.jpg"
     },
     {
         "judul": "Childhood Friend of the Zenith",
@@ -1560,24 +1580,14 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935725/petomic_thumbs/battle-through-the-heavens001.jpg"
     },
     {
-        "judul": "Becoming a God, Starting as water monkey",
-        "slug": "becoming-a-god-starting-as-water-monkey",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771935951/petomic_thumbs/becoming-a-god-starting-as-water-monkey.jpg"
-    },
-    {
         "judul": "Awakening the Purple Thunder at the Beginning",
         "slug": "awakening-the-purple-thunder-at-the-beginning",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875178/petomic_thumbs/awakening-the-purple-thunder-at-the-beginning.jpg"
     },
     {
-        "judul": "Blink Master of the Magic Academy",
-        "slug": "blink-master-of-the-magic-academy",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936102/petomic_thumbs/blink-master-of-the-magic-academy.jpg"
-    },
-    {
-        "judul": "Best Teacher Baek",
-        "slug": "best-teacher-baek4001",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965250/petomic_thumbs/best-teacher-baek4001.jpg"
+        "judul": "Arctic Cold War",
+        "slug": "arctic-cold-war",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965166/petomic_thumbs/arctic-cold-war.jpg"
     },
     {
         "judul": "Barbarian's Adventure in a Fantasy World",
@@ -1605,11 +1615,6 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965317/petomic_thumbs/beast-taming-starting-with-the-classic-of-mountains-and-seas-sweeping-across-the-globe.jpg"
     },
     {
-        "judul": "Become the Strongest Hero Through the Cheat System",
-        "slug": "become-the-strongest-hero-through-the-cheat-system",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965670/petomic_thumbs/become-the-strongest-hero-through-the-cheat-system.jpg"
-    },
-    {
         "judul": "Banished Disciple's Counterattack",
         "slug": "banished-disciple-s-counterattack",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771875190/petomic_thumbs/banished-disciple-s-counterattack.jpg"
@@ -1623,11 +1628,6 @@
         "judul": "All People Scramble for the Tower, I Cleared 999 Floors in Advance Manga",
         "slug": "all-people-scramble-for-the-tower-i-cleared-999-floors-in-advance-manga",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965472/petomic_thumbs/all-people-scramble-for-the-tower-i-cleared-999-floors-in-advance-manga.jpg"
-    },
-    {
-        "judul": "Arctic Cold War",
-        "slug": "arctic-cold-war",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965166/petomic_thumbs/arctic-cold-war.jpg"
     },
     {
         "judul": "Apocalypse: Cockroaches Gives Me Buff",
@@ -1645,6 +1645,11 @@
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965454/petomic_thumbs/all-master-necromancer.jpg"
     },
     {
+        "judul": "All Hail the Sect Leader",
+        "slug": "all-hail-the-sect-leader",
+        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902416/petomic_thumbs/all-hail-the-sect-leader.jpg"
+    },
+    {
         "judul": "All Soccer Talents Are Mine",
         "slug": "all-soccer-talents-are-mine",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965646/petomic_thumbs/all-soccer-talents-are-mine.jpg"
@@ -1658,11 +1663,6 @@
         "judul": "After Ten Millennia in Hell",
         "slug": "after-ten-millennia-in-hell",
         "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902303/petomic_thumbs/after-ten-millennia-in-hell.jpg"
-    },
-    {
-        "judul": "All Hail the Sect Leader",
-        "slug": "all-hail-the-sect-leader",
-        "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902416/petomic_thumbs/all-hail-the-sect-leader.jpg"
     },
     {
         "judul": "After Rebirth, I Used Mirror Reversal For Vengeance",
