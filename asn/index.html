@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetoMic - Katalog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Mode daftar (list) */
+        .list-mode {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .list-mode a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #1a1a1a;
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.2s;
+        }
+        .list-mode a:hover {
+            background: #2a2a2a;
+            transform: translateX(4px);
+        }
+        .list-mode img {
+            width: 60px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+        .list-mode .judul {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body class="bg-black text-white font-sans">
     <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-white/5 p-4 shadow-2xl">
@@ -15,49 +47,192 @@
     </header>
 
     <div class="container mx-auto px-4 py-8">
+        <!-- Kontrol: Search, Mode Toggle -->
+        <div class="flex flex-col sm:flex-row gap-4 items-center justify-between mb-8">
+            <div class="relative w-full sm:w-64">
+                <input type="text" id="search-input" placeholder="Cari komik..." class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-2 pl-10 text-sm focus:outline-none focus:border-purple-500 transition">
+                <svg class="absolute left-3 top-2.5 h-4 w-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+            <div class="flex gap-2 bg-zinc-900 p-1 rounded-xl border border-white/5">
+                <button id="mode-grid" class="px-4 py-1.5 text-xs font-bold rounded-lg bg-purple-600 text-white transition">Thumbnail</button>
+                <button id="mode-list" class="px-4 py-1.5 text-xs font-bold rounded-lg text-zinc-400 hover:bg-zinc-800 transition">Daftar</button>
+            </div>
+        </div>
+
+        <!-- Container manga list -->
         <div id="manga-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6"></div>
-        <div class="flex justify-center items-center gap-4 mt-12 pb-10">
-            <button id="page-prev" class="px-5 py-2 bg-zinc-900 border border-white/5 rounded-xl text-xs font-bold opacity-20 pointer-events-none transition hover:bg-zinc-800">« PREV</button>
-            <div class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Page <span id="current-page" class="text-purple-500">1</span></div>
-            <button id="page-next" class="px-5 py-2 bg-zinc-900 border border-white/5 rounded-xl text-xs font-bold opacity-20 pointer-events-none transition hover:bg-zinc-800">NEXT »</button>
+
+        <!-- Navigasi Halaman -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-12 pb-10">
+            <button id="page-first" class="px-3 py-2 bg-zinc-900 border border-white/5 rounded-lg text-xs font-bold hover:bg-zinc-800 transition disabled:opacity-20 disabled:pointer-events-none">« First</button>
+            <button id="page-prev" class="px-3 py-2 bg-zinc-900 border border-white/5 rounded-lg text-xs font-bold hover:bg-zinc-800 transition disabled:opacity-20 disabled:pointer-events-none">‹ Prev</button>
+            <div id="page-numbers" class="flex gap-1 overflow-x-auto max-w-[300px] sm:max-w-md py-1">
+                <!-- nomor halaman akan diisi js -->
+            </div>
+            <button id="page-next" class="px-3 py-2 bg-zinc-900 border border-white/5 rounded-lg text-xs font-bold hover:bg-zinc-800 transition disabled:opacity-20 disabled:pointer-events-none">Next ›</button>
+            <button id="page-last" class="px-3 py-2 bg-zinc-900 border border-white/5 rounded-lg text-xs font-bold hover:bg-zinc-800 transition disabled:opacity-20 disabled:pointer-events-none">Last »</button>
         </div>
     </div>
 
     <script>
         const itemsPerPage = 20;
-        const urlParams = new URLSearchParams(window.location.search);
-        let currentPage = parseInt(urlParams.get('p')) || 1;
+        let allData = []; // menyimpan semua data asli
+        let filteredData = []; // data setelah filter pencarian
+        let currentPage = 1;
+        let mode = 'grid'; // 'grid' atau 'list'
 
+        // Elemen DOM
+        const container = document.getElementById('manga-list');
+        const searchInput = document.getElementById('search-input');
+        const modeGridBtn = document.getElementById('mode-grid');
+        const modeListBtn = document.getElementById('mode-list');
+        const pageNumbersDiv = document.getElementById('page-numbers');
+        const pageFirst = document.getElementById('page-first');
+        const pagePrev = document.getElementById('page-prev');
+        const pageNext = document.getElementById('page-next');
+        const pageLast = document.getElementById('page-last');
+
+        // Fungsi render
+        function render() {
+            const start = (currentPage - 1) * itemsPerPage;
+            const pagedData = filteredData.slice(start, start + itemsPerPage);
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+            // Render daftar komik
+            container.innerHTML = '';
+            pagedData.forEach(manga => {
+                const a = document.createElement('a');
+                a.href = `/asn/${manga.slug}`;
+                a.className = 'block';
+                if (mode === 'grid') {
+                    a.innerHTML = `
+                        <div class="bg-zinc-900 rounded-2xl overflow-hidden hover:scale-105 transition transform duration-300 border border-white/5 shadow-xl">
+                            <img src="${manga.thumb}" class="w-full h-64 object-cover" loading="lazy">
+                            <div class="p-3 text-sm font-bold truncate">${manga.judul}</div>
+                        </div>
+                    `;
+                } else {
+                    a.innerHTML = `
+                        <div class="flex items-center gap-4 bg-zinc-900 rounded-xl p-3 border border-white/5 hover:bg-zinc-800 transition">
+                            <img src="${manga.thumb}" class="w-16 h-20 object-cover rounded-lg" loading="lazy">
+                            <div class="font-bold text-base">${manga.judul}</div>
+                        </div>
+                    `;
+                }
+                container.appendChild(a);
+            });
+
+            // Update class mode pada container
+            container.className = mode === 'grid' ? 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6' : 'list-mode';
+
+            // Render nomor halaman
+            renderPageNumbers(totalPages);
+
+            // Update status tombol navigasi
+            pageFirst.disabled = currentPage === 1;
+            pagePrev.disabled = currentPage === 1;
+            pageNext.disabled = currentPage === totalPages;
+            pageLast.disabled = currentPage === totalPages;
+        }
+
+        function renderPageNumbers(totalPages) {
+            let html = '';
+            const maxVisible = 7; // jumlah maksimal nomor yang ditampilkan
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+            if (endPage - startPage + 1 < maxVisible) {
+                startPage = Math.max(1, endPage - maxVisible + 1);
+            }
+
+            if (startPage > 1) {
+                html += `<span class="px-2 py-1 text-zinc-500">...</span>`;
+            }
+            for (let i = startPage; i <= endPage; i++) {
+                html += `<button class="page-number px-3 py-1 rounded-lg text-xs font-bold ${i === currentPage ? 'bg-purple-600 text-white' : 'bg-zinc-900 border border-white/5 hover:bg-zinc-800'}" data-page="${i}">${i}</button>`;
+            }
+            if (endPage < totalPages) {
+                html += `<span class="px-2 py-1 text-zinc-500">...</span>`;
+            }
+            pageNumbersDiv.innerHTML = html;
+
+            // Tambahkan event listener ke setiap tombol nomor
+            document.querySelectorAll('.page-number').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentPage = parseInt(btn.dataset.page);
+                    render();
+                });
+            });
+        }
+
+        // Fungsi filter berdasarkan search
+        function filterData() {
+            const keyword = searchInput.value.trim().toLowerCase();
+            if (keyword === '') {
+                filteredData = [...allData];
+            } else {
+                filteredData = allData.filter(manga => 
+                    manga.judul.toLowerCase().includes(keyword)
+                );
+            }
+            currentPage = 1; // reset ke halaman pertama
+            render();
+        }
+
+        // Ambil data dari list.json
         fetch('../list.json')
             .then(res => res.json())
             .then(data => {
-                const totalPages = Math.ceil(data.length / itemsPerPage);
-                const start = (currentPage - 1) * itemsPerPage;
-                const pagedData = data.slice(start, start + itemsPerPage);
-                
-                document.getElementById('current-page').innerText = currentPage;
-                const container = document.getElementById('manga-list');
-                
-                pagedData.forEach(manga => {
-                    container.innerHTML += `
-                        <a href="/asn/${manga.slug}" class="bg-zinc-900 rounded-2xl overflow-hidden hover:scale-105 transition transform duration-300 block border border-white/5 shadow-xl">
-                            <img src="${manga.thumb}" class="w-full h-64 object-cover" loading="lazy">
-                            <div class="p-3 text-sm font-bold truncate">${manga.judul}</div>
-                        </a>
-                    `;
-                });
-
-                if (currentPage > 1) {
-                    const btn = document.getElementById('page-prev');
-                    btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `?p=${currentPage - 1}`;
-                }
-                if (currentPage < totalPages) {
-                    const btn = document.getElementById('page-next');
-                    btn.classList.remove('opacity-20', 'pointer-events-none');
-                    btn.onclick = () => location.href = `?p=${currentPage + 1}`;
-                }
+                allData = data;
+                filteredData = [...allData];
+                render();
+            })
+            .catch(err => {
+                console.error('Gagal memuat data', err);
+                container.innerHTML = '<p class="text-center text-red-500">Gagal memuat katalog.</p>';
             });
+
+        // Event listener search
+        searchInput.addEventListener('input', filterData);
+
+        // Mode toggle
+        modeGridBtn.addEventListener('click', () => {
+            mode = 'grid';
+            modeGridBtn.classList.add('bg-purple-600', 'text-white');
+            modeGridBtn.classList.remove('text-zinc-400', 'hover:bg-zinc-800');
+            modeListBtn.classList.remove('bg-purple-600', 'text-white');
+            modeListBtn.classList.add('text-zinc-400', 'hover:bg-zinc-800');
+            render();
+        });
+
+        modeListBtn.addEventListener('click', () => {
+            mode = 'list';
+            modeListBtn.classList.add('bg-purple-600', 'text-white');
+            modeListBtn.classList.remove('text-zinc-400', 'hover:bg-zinc-800');
+            modeGridBtn.classList.remove('bg-purple-600', 'text-white');
+            modeGridBtn.classList.add('text-zinc-400', 'hover:bg-zinc-800');
+            render();
+        });
+
+        // Navigasi halaman
+        pageFirst.addEventListener('click', () => {
+            currentPage = 1;
+            render();
+        });
+        pagePrev.addEventListener('click', () => {
+            if (currentPage > 1) currentPage--;
+            render();
+        });
+        pageNext.addEventListener('click', () => {
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            if (currentPage < totalPages) currentPage++;
+            render();
+        });
+        pageLast.addEventListener('click', () => {
+            currentPage = Math.ceil(filteredData.length / itemsPerPage);
+            render();
+        });
     </script>
 </body>
 </html>
