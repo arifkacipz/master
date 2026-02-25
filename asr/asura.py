@@ -4,16 +4,34 @@ from bs4 import BeautifulSoup
 import json
 import re
 import time
+import random
 
 BASE_URL = "https://asuracomic.net"
+
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://asuracomic.net/',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Cache-Control': 'max-age=0',
 }
 
+# Buat session untuk mempertahankan cookie
+session = requests.Session()
+session.headers.update(HEADERS)
+
 def get_soup(url):
-    """Mengambil dan memparsing halaman HTML"""
+    """Mengambil dan memparsing halaman HTML dengan jeda acak"""
     try:
-        res = requests.get(url, headers=HEADERS, timeout=20)
+        time.sleep(random.uniform(1, 2))  # Jeda acak 1-2 detik
+        res = session.get(url, timeout=20)
         res.raise_for_status()
         return BeautifulSoup(res.text, 'html.parser')
     except Exception as e:
@@ -133,7 +151,7 @@ def get_chapters_from_detail(series_url, limit=None):
 
 def get_images_from_chapter_page(chapter_url):
     """Mengambil semua URL gambar dari halaman chapter"""
-    response = requests.get(chapter_url, headers=HEADERS)
+    response = session.get(chapter_url, timeout=20)
     if response.status_code != 200:
         return []
     
@@ -202,7 +220,7 @@ def process_comic(comic, limit_ch=None):
                 'url': ch['url'],
                 'images': images
             })
-        time.sleep(1)
+        time.sleep(random.uniform(1, 2))
     
     if not final_chapters:
         print(f"Tidak ada gambar untuk {slug}")
@@ -274,14 +292,14 @@ def main():
     else:
         # Mode katalog: ambil dari beberapa halaman (misal 3 halaman pertama)
         all_comics = []
-        for page in range(1, 2):
+        for page in range(1, 4):
             print(f"\n--- Halaman {page} ---")
             comics = get_series_list(page)
             if not comics:
                 break
             print(f"Ditemukan {len(comics)} komik")
             all_comics.extend(comics)
-            time.sleep(2)
+            time.sleep(random.uniform(2, 3))
         
         results = []
         for i, comic in enumerate(all_comics):
@@ -290,7 +308,7 @@ def main():
             res = process_comic(comic, limit_ch=2)
             if res:
                 results.append(res)
-            time.sleep(2)
+            time.sleep(random.uniform(2, 3))
         
         with open('list2.json', 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=4)
