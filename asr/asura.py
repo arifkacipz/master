@@ -1,5 +1,5 @@
 import os
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 import json
 import re
@@ -8,30 +8,21 @@ import random
 
 BASE_URL = "https://asuracomic.net"
 
-HEADERS = {
+# Buat scraper dengan cloudscraper (otomatis bypass Cloudflare)
+scraper = cloudscraper.create_scraper()
+scraper.headers.update({
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br',
     'Referer': 'https://asuracomic.net/',
     'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'same-origin',
-    'Sec-Fetch-User': '?1',
-    'Cache-Control': 'max-age=0',
-}
-
-# Buat session untuk mempertahankan cookie
-session = requests.Session()
-session.headers.update(HEADERS)
+})
 
 def get_soup(url):
     """Mengambil dan memparsing halaman HTML dengan jeda acak"""
     try:
-        time.sleep(random.uniform(1, 2))  # Jeda acak 1-2 detik
-        res = session.get(url, timeout=20)
+        time.sleep(random.uniform(1, 2))
+        res = scraper.get(url, timeout=20)
         res.raise_for_status()
         return BeautifulSoup(res.text, 'html.parser')
     except Exception as e:
@@ -111,7 +102,6 @@ def get_chapters_from_detail(series_url, limit=None):
             props = json_data.get('props', {}).get('pageProps', {})
             chapters_data = props.get('chapters', [])
             if chapters_data:
-                # Jika ada limit, ambil chapter terbaru (asumsi urutan dari API sudah terbaru di awal)
                 if limit:
                     chapters_data = chapters_data[:limit]
                 for ch in chapters_data:
@@ -127,7 +117,6 @@ def get_chapters_from_detail(series_url, limit=None):
     chapter_container = soup.select_one('div.pl-4.pr-2.pb-4.overflow-y-auto')
     if chapter_container:
         chapter_links = chapter_container.select('a[href*="/chapter/"]')
-        # Jika ada limit, ambil sejumlah link teratas (asumsi urutan terbaru di atas)
         if limit:
             chapter_links = chapter_links[:limit]
         for a in chapter_links:
@@ -151,11 +140,15 @@ def get_chapters_from_detail(series_url, limit=None):
 
 def get_images_from_chapter_page(chapter_url):
     """Mengambil semua URL gambar dari halaman chapter"""
-    response = session.get(chapter_url, timeout=20)
-    if response.status_code != 200:
+    try:
+        res = scraper.get(chapter_url, timeout=20)
+        if res.status_code != 200:
+            return []
+    except Exception as e:
+        print(f"Error fetching chapter {chapter_url}: {e}")
         return []
     
-    json_data = extract_json_data(response.text)
+    json_data = extract_json_data(res.text)
     if json_data:
         try:
             props = json_data.get('props', {}).get('pageProps', {})
@@ -173,7 +166,7 @@ def get_images_from_chapter_page(chapter_url):
             print(f"Error parsing JSON for images: {e}")
     
     # Fallback
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(res.text, 'html.parser')
     images = []
     for img in soup.select('img[src*="gg.asuracomic.net/storage/media"]'):
         src = img.get('src')
@@ -284,7 +277,7 @@ def main():
                 thumb = img_tag.get('src') or ''
         
         comic = {'judul': judul, 'link': url, 'slug': target_slug, 'thumb': thumb}
-        result = process_comic(comic, limit_ch=None)  # ambil semua chapter
+        result = process_comic(comic, limit_ch=None)
         if result:
             with open('list2.json', 'w', encoding='utf-8') as f:
                 json.dump([result], f, indent=4)
@@ -292,7 +285,7 @@ def main():
     else:
         # Mode katalog: ambil dari beberapa halaman (misal 3 halaman pertama)
         all_comics = []
-        for page in range(1, 4):
+        for page in range(1, 2):
             print(f"\n--- Halaman {page} ---")
             comics = get_series_list(page)
             if not comics:
