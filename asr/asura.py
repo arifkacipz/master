@@ -8,7 +8,7 @@ import random
 
 BASE_URL = "https://asuracomic.net"
 
-# Buat scraper dengan cloudscraper (otomatis bypass Cloudflare)
+# Buat scraper dengan cloudscraper
 scraper = cloudscraper.create_scraper()
 scraper.headers.update({
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -41,9 +41,6 @@ def extract_json_data(html):
     return None
 
 def get_series_list(page=1):
-    """
-    Mengambil daftar series dari halaman series?page={page}
-    """
     url = f"{BASE_URL}/series?page={page}"
     soup = get_soup(url)
     if not soup:
@@ -86,16 +83,12 @@ def get_series_list(page=1):
     return series
 
 def get_chapters_from_detail(series_url, limit=None):
-    """
-    Mengambil daftar chapter dari halaman detail series.
-    Jika limit ditentukan, hanya ambil sejumlah chapter terbaru.
-    """
     soup = get_soup(series_url)
     if not soup:
         return []
     
     chapters = []
-    # Coba ekstrak dari data JSON terlebih dahulu
+    # Coba dari JSON
     json_data = extract_json_data(str(soup))
     if json_data:
         try:
@@ -105,15 +98,20 @@ def get_chapters_from_detail(series_url, limit=None):
                 if limit:
                     chapters_data = chapters_data[:limit]
                 for ch in chapters_data:
+                    chap_num = ch.get('name', '')
+                    chap_url = f"{series_url}/chapter/{chap_num}"
+                    chap_name = f"Chapter {chap_num}"
+                    if ch.get('title'):
+                        chap_name += f" - {ch['title']}"
                     chapters.append({
-                        'nama': f"Chapter {ch.get('name', '')}",
-                        'url': f"{series_url}/chapter/{ch.get('name', '')}"
+                        'nama': chap_name,
+                        'url': chap_url
                     })
                 return chapters
-        except:
-            pass
+        except Exception as e:
+            print(f"Error parsing chapters JSON: {e}")
     
-    # Fallback: parsing HTML biasa
+    # Fallback HTML
     chapter_container = soup.select_one('div.pl-4.pr-2.pb-4.overflow-y-auto')
     if chapter_container:
         chapter_links = chapter_container.select('a[href*="/chapter/"]')
@@ -130,7 +128,6 @@ def get_chapters_from_detail(series_url, limit=None):
             
             nama_elem = a.select_one('h3.text-sm.text-white.font-medium')
             nama = nama_elem.text.strip() if nama_elem else href.split('/')[-1]
-            
             chapters.append({
                 'nama': nama,
                 'url': chapter_url
@@ -143,39 +140,55 @@ def get_images_from_chapter_page(chapter_url):
     try:
         res = scraper.get(chapter_url, timeout=20)
         if res.status_code != 200:
+            print(f"   [Error] Status code {res.status_code} for {chapter_url}")
             return []
     except Exception as e:
-        print(f"Error fetching chapter {chapter_url}: {e}")
+        print(f"   [Error] Exception fetching {chapter_url}: {e}")
         return []
     
+    # Coba ekstrak dari JSON
     json_data = extract_json_data(res.text)
     if json_data:
         try:
             props = json_data.get('props', {}).get('pageProps', {})
+            # Coba path: props.chapter.pages
             chapter_data = props.get('chapter', {})
             pages = chapter_data.get('pages', [])
-            images = []
-            for page in pages:
-                if isinstance(page, dict) and 'url' in page:
-                    images.append(page['url'])
-                elif isinstance(page, str):
-                    images.append(page)
-            if images:
-                return images
+            if pages:
+                images = []
+                for page in pages:
+                    if isinstance(page, dict):
+                        img_url = page.get('url') or page.get('src')
+                        if img_url:
+                            images.append(img_url)
+                    elif isinstance(page, str):
+                        images.append(page)
+                if images:
+                    return images
         except Exception as e:
-            print(f"Error parsing JSON for images: {e}")
+            print(f"   [Error parsing JSON: {e}")
     
-    # Fallback
+    # Fallback ke parsing HTML
     soup = BeautifulSoup(res.text, 'html.parser')
     images = []
+    # Cari semua img dengan src yang mengandung domain storage
     for img in soup.select('img[src*="gg.asuracomic.net/storage/media"]'):
         src = img.get('src')
         if src and src not in images:
             images.append(src)
-    return images
+    # Juga coba data-src (untuk lazy loading)
+    for img in soup.select('img[data-src*="gg.asuracomic.net/storage/media"]'):
+        src = img.get('data-src')
+        if src and src not in images:
+            images.append(src)
+    
+    if images:
+        return images
+    else:
+        print(f"   [Warning] No images found for {chapter_url}")
+        return []
 
 def merge_chapters(old_chapters, new_chapters):
-    """Menggabungkan dua daftar chapter berdasarkan URL."""
     combined = {ch['url']: ch for ch in old_chapters if 'url' in ch}
     for ch in new_chapters:
         combined[ch['url']] = ch
@@ -188,7 +201,6 @@ def merge_chapters(old_chapters, new_chapters):
     return merged
 
 def process_comic(comic, limit_ch=None):
-    """Memproses satu komik. Jika limit_ch ditentukan, hanya ambil sejumlah chapter terbaru."""
     judul = comic['judul']
     link = comic['link']
     slug = comic['slug']
@@ -249,7 +261,6 @@ def process_comic(comic, limit_ch=None):
 def main():
     target_slug = os.environ.get('TARGET_SLUG')
     if target_slug:
-        # Mode satu komik: ambil semua chapter
         url = f"{BASE_URL}/series/{target_slug}"
         soup = get_soup(url)
         if not soup:
@@ -283,7 +294,7 @@ def main():
                 json.dump([result], f, indent=4)
             print("Katalog disimpan sebagai list2.json")
     else:
-        # Mode katalog: ambil dari beberapa halaman (misal 3 halaman pertama)
+        # Mode katalog: hanya halaman 1 untuk testing
         all_comics = []
         for page in range(1, 2):
             print(f"\n--- Halaman {page} ---")
@@ -297,7 +308,6 @@ def main():
         results = []
         for i, comic in enumerate(all_comics):
             print(f"\nProgress: {i+1}/{len(all_comics)}")
-            # Batasi hanya 2 chapter terbaru
             res = process_comic(comic, limit_ch=2)
             if res:
                 results.append(res)
