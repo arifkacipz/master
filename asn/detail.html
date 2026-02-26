@@ -22,6 +22,10 @@
             background: #9333ea;
             border-radius: 10px;
         }
+        /* Toast notification */
+        .toast-notify {
+            transition: opacity 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="bg-zinc-950 text-white min-h-screen">
@@ -33,7 +37,7 @@
 
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
-    <!-- Daftar 20 komik terakhir di‑full‑scrape (horizontal) -->
+    <!-- Daftar 20 komik terakhir full scrape (horizontal) -->
     <div id="recent-scrape-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
         <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
             <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,13 +45,40 @@
             </svg>
             <span>Terbaru di‑Full Scrape</span>
         </h2>
-        <!-- Container dengan flex row dan overflow auto untuk scroll horizontal -->
         <div id="recent-scrape-list" class="flex gap-4 overflow-x-auto pb-4 horizontal-scroll">
             <!-- Akan diisi JavaScript -->
         </div>
     </div>
 
     <script>
+        // ==================== FUNGSI COPY DENGAN NOTIFIKASI ====================
+        function copyWithNotification(slug, buttonElement) {
+            navigator.clipboard.writeText(slug).then(() => {
+                // Buat elemen toast
+                const toast = document.createElement('span');
+                toast.className = 'absolute -top-8 right-0 bg-green-600 text-white text-xs px-2 py-1 rounded opacity-0 toast-notify pointer-events-none';
+                toast.innerText = 'Tersalin!';
+                
+                // Pastikan parent memiliki posisi relative
+                const parent = buttonElement.closest('.relative') || buttonElement.parentElement;
+                if (!parent.classList.contains('relative')) {
+                    parent.classList.add('relative');
+                }
+                parent.appendChild(toast);
+                
+                // Munculkan toast
+                setTimeout(() => toast.classList.add('opacity-100'), 10);
+                
+                // Hapus setelah 2 detik
+                setTimeout(() => {
+                    toast.classList.remove('opacity-100');
+                    setTimeout(() => toast.remove(), 300);
+                }, 2000);
+            }).catch(err => {
+                console.error('Gagal menyalin:', err);
+            });
+        }
+
         // ==================== FUNGSI RECENT (localStorage) ====================
         window.addToRecent = function(slug, judul, thumb) {
             try {
@@ -119,7 +150,7 @@
                         <span class="text-[10px] text-zinc-500 font-black uppercase">Manga Identification</span>
                         <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10">
                             <code class="text-purple-400 text-xs font-mono font-bold">${slug}</code>
-                            <button onclick="navigator.clipboard.writeText('${slug}')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
+                            <button onclick="copyWithNotification('${slug}', this)" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
                         </div>
                     </div>
                     <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 text-[10px] text-zinc-400 leading-relaxed">
