@@ -137,74 +137,8 @@
     </div>
 
     <script>
-        // ==================== KONFIGURASI ====================
-        const itemsPerPage = 20;
-        let allData = [];
-        let filteredData = [];
-        let currentPage = 1;
-        let mode = 'grid';
-        let popularData = []; // Data untuk populer (akan digenerate dari allData)
-        let currentPopularTab = 'daily';
-
-        // Elemen DOM
-        const container = document.getElementById('manga-list');
-        const popularContainer = document.getElementById('popular-list');
-        const searchInput = document.getElementById('search-input');
-        const modeGridBtn = document.getElementById('mode-grid');
-        const modeListBtn = document.getElementById('mode-list');
-        const pageNumbersDiv = document.getElementById('page-numbers');
-        const pageFirst = document.getElementById('page-first');
-        const pagePrev = document.getElementById('page-prev');
-        const pageNext = document.getElementById('page-next');
-        const pageLast = document.getElementById('page-last');
-        const recentSection = document.getElementById('recent-section');
-        const recentList = document.getElementById('recent-list');
-        
-        // Tab buttons
-        const tabDaily = document.getElementById('tab-daily');
-        const tabWeekly = document.getElementById('tab-weekly');
-        const tabMonthly = document.getElementById('tab-monthly');
-
         // ==================== FUNGSI RECENT (localStorage) ====================
-        function loadRecentComics() {
-            try {
-                const recent = localStorage.getItem('petomic_recent');
-                if (recent) {
-                    const recentData = JSON.parse(recent);
-                    if (recentData.length > 0) {
-                        renderRecentComics(recentData);
-                        recentSection.classList.remove('hidden');
-                    } else {
-                        recentSection.classList.add('hidden');
-                    }
-                } else {
-                    recentSection.classList.add('hidden');
-                }
-            } catch (e) {
-                console.warn('Gagal membaca riwayat:', e);
-                recentSection.classList.add('hidden');
-            }
-        }
-
-        function renderRecentComics(recentData) {
-            recentList.innerHTML = '';
-            recentData.forEach(item => {
-                // Cari data lengkap dari allData
-                const comic = allData.find(c => c.slug === item.slug) || item;
-                recentList.innerHTML += `
-                    <a href="/asn/${comic.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
-                        <img src="${comic.thumb}" class="w-full h-36 object-cover" loading="lazy">
-                        <div class="p-2">
-                            <div class="text-xs font-bold truncate">${comic.judul}</div>
-                            <div class="text-[10px] text-zinc-500 mt-1">${item.waktu || 'Baru'}</div>
-                        </div>
-                    </a>
-                `;
-            });
-        }
-
-        // Fungsi ini HARUS dipanggil dari halaman detail/reader saat user membaca komik
-        // Contoh: <script>addToRecent('nama-slug', 'Judul Komik', 'url-thumb')</script>
+        // Fungsi untuk menambah komik ke daftar terakhir dibaca (dipanggil dari halaman detail/reader)
         window.addToRecent = function(slug, judul, thumb) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
@@ -228,32 +162,72 @@
                 
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
                 
-                // Update tampilan jika di halaman ini
-                if (window.location.pathname.includes('/asn/')) {
-                    renderRecentComics(recentData);
-                    recentSection.classList.remove('hidden');
-                }
+                // Update tampilan recent di halaman ini (jika ada)
+                renderRecentComics(recentData);
             } catch (e) {
                 console.warn('Gagal menyimpan riwayat:', e);
             }
         };
 
-        // ==================== FUNGSI POPULER (Static Simulation) ====================
+        // Fungsi untuk menampilkan daftar recent
+        function renderRecentComics(recentData) {
+            const recentSection = document.getElementById('recent-section');
+            const recentList = document.getElementById('recent-list');
+            
+            if (!recentData || recentData.length === 0) {
+                recentSection.classList.add('hidden');
+                return;
+            }
+            
+            recentSection.classList.remove('hidden');
+            recentList.innerHTML = '';
+            recentData.forEach(item => {
+                recentList.innerHTML += `
+                    <a href="/asn/${item.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
+                        <img src="${item.thumb}" class="w-full h-36 object-cover" loading="lazy">
+                        <div class="p-2">
+                            <div class="text-xs font-bold truncate">${item.judul}</div>
+                            <div class="text-[10px] text-zinc-500 mt-1">${item.waktu}</div>
+                        </div>
+                    </a>
+                `;
+            });
+        }
+
+        // ==================== KONFIGURASI UTAMA ====================
+        const itemsPerPage = 20;
+        let allData = [];
+        let filteredData = [];
+        let currentPage = 1;
+        let mode = 'grid';
+        let popularData = [];
+
+        // Elemen DOM
+        const container = document.getElementById('manga-list');
+        const popularContainer = document.getElementById('popular-list');
+        const searchInput = document.getElementById('search-input');
+        const modeGridBtn = document.getElementById('mode-grid');
+        const modeListBtn = document.getElementById('mode-list');
+        const pageNumbersDiv = document.getElementById('page-numbers');
+        const pageFirst = document.getElementById('page-first');
+        const pagePrev = document.getElementById('page-prev');
+        const pageNext = document.getElementById('page-next');
+        const pageLast = document.getElementById('page-last');
+        
+        // Tab buttons
+        const tabDaily = document.getElementById('tab-daily');
+        const tabWeekly = document.getElementById('tab-weekly');
+        const tabMonthly = document.getElementById('tab-monthly');
+
+        // ==================== FUNGSI POPULER ====================
         function generatePopularData() {
             if (!allData.length) return;
-            
-            // Buat salinan data
-            popularData = [...allData];
-            
-            // Tambah properti populer palsu
-            popularData = popularData.map((comic, index) => {
-                return {
-                    ...comic,
-                    dailyViews: Math.floor(Math.random() * 9000) + 1000,  // 1000-9999
-                    weeklyViews: Math.floor(Math.random() * 50000) + 5000, // 5000-54999
-                    monthlyViews: Math.floor(Math.random() * 200000) + 20000 // 20000-219999
-                };
-            });
+            popularData = allData.map((comic, index) => ({
+                ...comic,
+                dailyViews: Math.floor(Math.random() * 9000) + 1000,
+                weeklyViews: Math.floor(Math.random() * 50000) + 5000,
+                monthlyViews: Math.floor(Math.random() * 200000) + 20000
+            }));
         }
 
         function renderPopular(tab = 'daily') {
@@ -268,7 +242,6 @@
                 sorted = [...popularData].sort((a, b) => b.monthlyViews - a.monthlyViews);
             }
             
-            // Ambil 6 teratas
             const top6 = sorted.slice(0, 6);
             
             popularContainer.innerHTML = '';
@@ -294,11 +267,10 @@
             const pagedData = filteredData.slice(start, start + itemsPerPage);
             const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
-            // Render daftar komik
             container.innerHTML = '';
             pagedData.forEach(manga => {
                 const a = document.createElement('a');
-                a.href = `/asn/${manga.slug}`;
+                a.href = `/asn/${manga.slug}`; // Clean URL
                 a.className = 'block';
                 if (mode === 'grid') {
                     a.innerHTML = `
@@ -318,13 +290,9 @@
                 container.appendChild(a);
             });
 
-            // Update class mode pada container
             container.className = mode === 'grid' ? 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6' : 'list-mode';
-
-            // Render nomor halaman
             renderPageNumbers(totalPages);
 
-            // Update status tombol navigasi
             pageFirst.disabled = currentPage === 1;
             pagePrev.disabled = currentPage === 1;
             pageNext.disabled = currentPage === totalPages;
@@ -361,31 +329,32 @@
 
         function filterData() {
             const keyword = searchInput.value.trim().toLowerCase();
-            if (keyword === '') {
-                filteredData = [...allData];
-            } else {
-                filteredData = allData.filter(manga => 
-                    manga.judul.toLowerCase().includes(keyword)
-                );
-            }
+            filteredData = keyword === '' ? [...allData] : allData.filter(manga => 
+                manga.judul.toLowerCase().includes(keyword)
+            );
             currentPage = 1;
             render();
         }
 
         // ==================== LOAD DATA ====================
-        fetch('../list2.json')
+        fetch('../list.json') // Ambil dari root
             .then(res => res.json())
             .then(data => {
                 allData = data;
                 filteredData = [...allData];
-                
-                // Generate data populer
                 generatePopularData();
-                
-                // Render semua
                 render();
                 renderPopular('daily');
-                loadRecentComics();
+
+                // Muat recent dari localStorage
+                try {
+                    const recent = localStorage.getItem('petomic_recent');
+                    if (recent) {
+                        renderRecentComics(JSON.parse(recent));
+                    }
+                } catch (e) {
+                    console.warn('Gagal memuat riwayat:', e);
+                }
             })
             .catch(err => {
                 console.error('Gagal memuat data', err);
@@ -413,7 +382,6 @@
             render();
         });
 
-        // Tab Popular
         tabDaily.addEventListener('click', () => {
             tabDaily.classList.add('tab-active');
             tabWeekly.classList.remove('tab-active');
@@ -435,7 +403,6 @@
             renderPopular('monthly');
         });
 
-        // Navigasi halaman
         pageFirst.addEventListener('click', () => {
             currentPage = 1;
             render();
