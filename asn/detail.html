@@ -6,7 +6,7 @@
     <title>Memuat Detail... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Scroll horizontal untuk recent */
+        /* Scroll horizontal untuk recent (opsional, jika ingin konsisten) */
         .recent-scroll {
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
@@ -109,16 +109,21 @@
             return match ? match[0] : '';
         }
 
-        // Ambil slug dari URL
-        const urlParams = new URLSearchParams(window.location.search);
-        let slug = urlParams.get('slug');
+        // Ambil slug dari URL (clean URL: /asn/{slug})
+        let slug = window.location.pathname.split('/').filter(Boolean).pop();
 
         if (!slug) {
-            const parts = window.location.pathname.split('/').filter(Boolean);
-            slug = parts[parts.length - 1];
+            // Fallback ke query string jika tidak ada di path
+            const urlParams = new URLSearchParams(window.location.search);
+            slug = urlParams.get('slug');
         }
 
-        // Fetch data komik
+        if (!slug) {
+            document.getElementById('content').innerHTML = '<p class="text-center text-red-500">Slug tidak ditemukan.</p>';
+            throw new Error('Slug tidak ditemukan');
+        }
+
+        // Fetch data komik dari folder db di root
         fetch(`../db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
@@ -127,7 +132,7 @@
                 // Catat kunjungan ke recent
                 window.addToRecent(slug, manga.judul, manga.thumb);
 
-                // Buat daftar chapter
+                // Buat daftar chapter dengan link ke reader (format /asn/{slug}/ch-{chapter})
                 let listHtml = manga.chapters.map((ch, i) => {
                     const chapterNumber = getChapterNumber(ch.nama) || i;
                     return `
@@ -168,7 +173,7 @@
                     </div>
                 `;
 
-                // Muat dan tampilkan daftar recent dari localStorage
+                // Muat dan tampilkan daftar recent dari localStorage (untuk bagian bawah)
                 try {
                     const recent = localStorage.getItem('petomic_recent');
                     if (recent) {
