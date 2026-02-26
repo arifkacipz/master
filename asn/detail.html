@@ -6,7 +6,7 @@
     <title>Memuat Detail... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Scroll horizontal */
+        /* Scroll horizontal kustom */
         .horizontal-scroll {
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
@@ -33,14 +33,15 @@
 
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
-    <!-- Daftar komik terakhir di-full-scrape (horizontal) -->
+    <!-- Daftar 20 komik terakhir di‑full‑scrape (horizontal) -->
     <div id="recent-scrape-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
         <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
             <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
             </svg>
-            <span>Terbaru di-Full Scrape</span>
+            <span>Terbaru di‑Full Scrape</span>
         </h2>
+        <!-- Container dengan flex row dan overflow auto untuk scroll horizontal -->
         <div id="recent-scrape-list" class="flex gap-4 overflow-x-auto pb-4 horizontal-scroll">
             <!-- Akan diisi JavaScript -->
         </div>
@@ -53,7 +54,12 @@
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
                 recentData = recentData.filter(item => item.slug !== slug);
-                recentData.unshift({ slug, judul, thumb, waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' }) });
+                recentData.unshift({
+                    slug,
+                    judul,
+                    thumb,
+                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
+                });
                 if (recentData.length > 4) recentData = recentData.slice(0, 4);
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
             } catch (e) { console.warn('Gagal menyimpan riwayat:', e); }
@@ -113,7 +119,7 @@
                         <span class="text-[10px] text-zinc-500 font-black uppercase">Manga Identification</span>
                         <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10">
                             <code class="text-purple-400 text-xs font-mono font-bold">${slug}</code>
-                            <button onclick="navigator.clipboard.writeText('${slug}');alert('Slug dicopy!')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
+                            <button onclick="navigator.clipboard.writeText('${slug}')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
                         </div>
                     </div>
                     <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 text-[10px] text-zinc-400 leading-relaxed">
@@ -126,15 +132,15 @@
                 </div>
             `;
 
-            // ==================== TAMPILKAN 6 KOMIK TERAKHIR FULL SCRAPE ====================
+            // ==================== TAMPILKAN 20 KOMIK TERAKHIR FULL SCRAPE ====================
             if (Object.keys(tracker).length > 0) {
-                // Urutkan berdasarkan timestamp (terbaru dulu)
+                // Urutkan berdasarkan timestamp (terbaru dulu), ambil 20
                 const sortedSlugs = Object.entries(tracker)
                     .sort((a, b) => b[1] - a[1])
-                    .slice(0, 6)
+                    .slice(0, 20)
                     .map(entry => entry[0]);
 
-                // Ambil data masing-masing komik dari folder db/
+                // Ambil data masing‑masing komik dari folder db/
                 const fetchPromises = sortedSlugs.map(slug =>
                     fetch(`../db/${slug}.json`)
                         .then(res => res.json())
