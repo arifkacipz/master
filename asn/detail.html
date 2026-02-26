@@ -37,19 +37,6 @@
 
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
-    <!-- Daftar 20 komik terakhir full scrape (horizontal) -->
-    <div id="recent-scrape-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
-        <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
-            <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-            </svg>
-            <span>Terbaru di‑Full Scrape</span>
-        </h2>
-        <div id="recent-scrape-list" class="flex gap-4 overflow-x-auto pb-4 horizontal-scroll">
-            <!-- Akan diisi JavaScript -->
-        </div>
-    </div>
-
     <!-- Daftar komik dengan total chapter kurang dari 20 -->
     <div id="low-chapter-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
         <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
@@ -105,10 +92,9 @@
         // ==================== LOAD DATA KOMIK UTAMA ====================
         Promise.all([
             fetch(`../db/${slug}.json`).then(res => res.json()),
-            fetch('../full_scrape_tracker.json').then(res => res.json()).catch(() => ({})),
             fetch('../stats.json').then(res => res.json()).catch(() => []) // file statistik
         ])
-        .then(([manga, tracker, stats]) => {
+        .then(([manga, stats]) => {
             document.title = `${manga.judul} - PetoMic`;
 
             // Buat daftar chapter
@@ -151,38 +137,6 @@
                     </div>
                 </div>
             `;
-
-            // ==================== TAMPILKAN 20 KOMIK TERAKHIR FULL SCRAPE ====================
-            if (Object.keys(tracker).length > 0) {
-                const sortedSlugs = Object.entries(tracker)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 20)
-                    .map(entry => entry[0]);
-
-                const fetchPromises = sortedSlugs.map(slug =>
-                    fetch(`../db/${slug}.json`)
-                        .then(res => res.json())
-                        .then(data => ({ slug, judul: data.judul, thumb: data.thumb }))
-                        .catch(() => null)
-                );
-
-                Promise.all(fetchPromises).then(comics => {
-                    const validComics = comics.filter(c => c !== null);
-                    if (validComics.length === 0) return;
-
-                    const listContainer = document.getElementById('recent-scrape-list');
-                    listContainer.innerHTML = validComics.map(comic => `
-                        <a href="/asn/${comic.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
-                            <img src="${comic.thumb}" class="w-full h-36 object-cover" loading="lazy">
-                            <div class="p-2">
-                                <div class="text-xs font-bold truncate">${comic.judul}</div>
-                            </div>
-                        </a>
-                    `).join('');
-
-                    document.getElementById('recent-scrape-section').classList.remove('hidden');
-                });
-            }
 
             // ==================== TAMPILKAN KOMIK DENGAN CHAPTER < 20 ====================
             if (stats.length > 0) {
