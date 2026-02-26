@@ -6,20 +6,21 @@
     <title>Memuat Detail... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Scroll horizontal untuk recent (opsional, jika ingin konsisten) */
-        .recent-scroll {
+        /* Scroll horizontal */
+        .horizontal-scroll {
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
         }
-        .recent-scroll::-webkit-scrollbar {
-            height: 4px;
+        .horizontal-scroll::-webkit-scrollbar {
+            height: 6px;
         }
-        .recent-scroll::-webkit-scrollbar-track {
+        .horizontal-scroll::-webkit-scrollbar-track {
             background: #1a1a1a;
+            border-radius: 10px;
         }
-        .recent-scroll::-webkit-scrollbar-thumb {
+        .horizontal-scroll::-webkit-scrollbar-thumb {
             background: #9333ea;
-            border-radius: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -32,76 +33,31 @@
 
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
-    <!-- Bagian Terakhir Dibaca (akan muncul jika ada riwayat) -->
-    <div id="recent-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
+    <!-- Daftar komik terakhir di-full-scrape (horizontal) -->
+    <div id="recent-scrape-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
         <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
             <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
             </svg>
-            <span>Terakhir Dibaca</span>
+            <span>Terbaru di-Full Scrape</span>
         </h2>
-        <div id="recent-list" class="flex gap-4 overflow-x-auto pb-4 recent-scroll">
+        <div id="recent-scrape-list" class="flex gap-4 overflow-x-auto pb-4 horizontal-scroll">
             <!-- Akan diisi JavaScript -->
         </div>
     </div>
 
     <script>
         // ==================== FUNGSI RECENT (localStorage) ====================
-        // Fungsi untuk menambah komik ke daftar terakhir dibaca
         window.addToRecent = function(slug, judul, thumb) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
-                
-                // Hapus jika sudah ada (pindahkan ke paling atas)
                 recentData = recentData.filter(item => item.slug !== slug);
-                
-                // Tambah ke awal
-                recentData.unshift({
-                    slug: slug,
-                    judul: judul,
-                    thumb: thumb,
-                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
-                });
-                
-                // Batasi hanya 4
-                if (recentData.length > 4) {
-                    recentData = recentData.slice(0, 4);
-                }
-                
+                recentData.unshift({ slug, judul, thumb, waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' }) });
+                if (recentData.length > 4) recentData = recentData.slice(0, 4);
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
-                
-                // Update tampilan recent di halaman ini (jika ada)
-                renderRecentComics(recentData);
-            } catch (e) {
-                console.warn('Gagal menyimpan riwayat:', e);
-            }
+            } catch (e) { console.warn('Gagal menyimpan riwayat:', e); }
         };
-
-        // Fungsi untuk menampilkan daftar recent
-        function renderRecentComics(recentData) {
-            const recentSection = document.getElementById('recent-section');
-            const recentList = document.getElementById('recent-list');
-            
-            if (!recentData || recentData.length === 0) {
-                recentSection.classList.add('hidden');
-                return;
-            }
-            
-            recentSection.classList.remove('hidden');
-            recentList.innerHTML = '';
-            recentData.forEach(item => {
-                recentList.innerHTML += `
-                    <a href="/asn/${item.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
-                        <img src="${item.thumb}" class="w-full h-36 object-cover" loading="lazy">
-                        <div class="p-2">
-                            <div class="text-xs font-bold truncate">${item.judul}</div>
-                            <div class="text-[10px] text-zinc-500 mt-1">${item.waktu}</div>
-                        </div>
-                    </a>
-                `;
-            });
-        }
 
         // ==================== FUNGSI UTAMA DETAIL ====================
         function getChapterNumber(chapterName) {
@@ -111,82 +67,103 @@
 
         // Ambil slug dari URL (clean URL: /asn/{slug})
         let slug = window.location.pathname.split('/').filter(Boolean).pop();
-
         if (!slug) {
-            // Fallback ke query string jika tidak ada di path
             const urlParams = new URLSearchParams(window.location.search);
             slug = urlParams.get('slug');
         }
-
         if (!slug) {
             document.getElementById('content').innerHTML = '<p class="text-center text-red-500">Slug tidak ditemukan.</p>';
             throw new Error('Slug tidak ditemukan');
         }
 
-        // Fetch data komik dari folder db di root
-        fetch(`../db/${slug}.json`)
-            .then(res => res.json())
-            .then(manga => {
-                document.title = `${manga.judul} - PetoMic`;
+        // ==================== LOAD DATA KOMIK UTAMA ====================
+        Promise.all([
+            fetch(`../db/${slug}.json`).then(res => res.json()),
+            fetch('../full_scrape_tracker.json').then(res => res.json()).catch(() => ({}))
+        ])
+        .then(([manga, tracker]) => {
+            document.title = `${manga.judul} - PetoMic`;
+            window.addToRecent(slug, manga.judul, manga.thumb);
 
-                // Catat kunjungan ke recent
-                window.addToRecent(slug, manga.judul, manga.thumb);
-
-                // Buat daftar chapter dengan link ke reader (format /asn/{slug}/ch-{chapter})
-                let listHtml = manga.chapters.map((ch, i) => {
-                    const chapterNumber = getChapterNumber(ch.nama) || i;
-                    return `
-                        <a href="/asn/${slug}/ch-${chapterNumber}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
-                            <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
-                            <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">BACA</span>
-                        </a>
-                    `;
-                }).reverse().join('');
-
-                // Tampilkan konten utama
-                document.getElementById('content').innerHTML = `
-                    <div class="flex flex-col items-center mb-10 text-center">
-                        <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl mb-6 object-cover h-72 border-2 border-white/5">
-                        <h1 class="text-3xl font-black mb-1 uppercase">${manga.judul}</h1>
-                    </div>
-                    <div class="bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-white/5 mb-8">
-                        <div class="p-5 bg-zinc-900/50 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b border-white/5 flex justify-between">
-                            <span>Daftar Chapter</span><span class="text-purple-500">${manga.chapters.length} Total</span>
-                        </div>
-                        <div class="max-h-[500px] overflow-y-auto">${listHtml}</div>
-                    </div>
-                    <div class="space-y-4 mb-10">
-                        <div class="flex flex-col items-center gap-3 bg-zinc-900/50 p-4 rounded-2xl border border-white/5">
-                            <span class="text-[10px] text-zinc-500 font-black uppercase">Manga Identification</span>
-                            <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10">
-                                <code class="text-purple-400 text-xs font-mono font-bold">${slug}</code>
-                                <button onclick="navigator.clipboard.writeText('${slug}');alert('Slug dicopy!')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
-                            </div>
-                        </div>
-                        <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 text-[10px] text-zinc-400 leading-relaxed">
-                            <p class="font-bold text-indigo-300 uppercase mb-3 italic">💡 Panduan Komplit:</p>
-                            <ul class="space-y-2 list-disc ml-4">
-                                <li>Buka <b>Actions</b> > Pilih <b>Update Data</b>.</li>
-                                <li>Klik <b>Run</b> dan masukkan: <b class="text-white">${slug}</b>.</li>
-                            </ul>
-                        </div>
-                    </div>
+            // Buat daftar chapter
+            let listHtml = manga.chapters.map((ch, i) => {
+                const chapterNumber = getChapterNumber(ch.nama) || i;
+                return `
+                    <a href="/asn/${slug}/ch-${chapterNumber}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
+                        <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
+                        <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">BACA</span>
+                    </a>
                 `;
+            }).reverse().join('');
 
-                // Muat dan tampilkan daftar recent dari localStorage (untuk bagian bawah)
-                try {
-                    const recent = localStorage.getItem('petomic_recent');
-                    if (recent) {
-                        renderRecentComics(JSON.parse(recent));
-                    }
-                } catch (e) {
-                    console.warn('Gagal memuat riwayat:', e);
-                }
-            })
-            .catch(err => {
-                console.error(err);
-                document.getElementById('content').innerHTML = '<p class="text-center text-zinc-500">Gagal memuat data.</p>';
-            });
+            // Tampilkan konten utama
+            document.getElementById('content').innerHTML = `
+                <div class="flex flex-col items-center mb-10 text-center">
+                    <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl mb-6 object-cover h-72 border-2 border-white/5">
+                    <h1 class="text-3xl font-black mb-1 uppercase">${manga.judul}</h1>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-white/5 mb-8">
+                    <div class="p-5 bg-zinc-900/50 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b border-white/5 flex justify-between">
+                        <span>Daftar Chapter</span><span class="text-purple-500">${manga.chapters.length} Total</span>
+                    </div>
+                    <div class="max-h-[500px] overflow-y-auto">${listHtml}</div>
+                </div>
+                <div class="space-y-4 mb-10">
+                    <div class="flex flex-col items-center gap-3 bg-zinc-900/50 p-4 rounded-2xl border border-white/5">
+                        <span class="text-[10px] text-zinc-500 font-black uppercase">Manga Identification</span>
+                        <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10">
+                            <code class="text-purple-400 text-xs font-mono font-bold">${slug}</code>
+                            <button onclick="navigator.clipboard.writeText('${slug}');alert('Slug dicopy!')" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 text-[10px] text-zinc-400 leading-relaxed">
+                        <p class="font-bold text-indigo-300 uppercase mb-3 italic">💡 Panduan Komplit:</p>
+                        <ul class="space-y-2 list-disc ml-4">
+                            <li>Buka <b>Actions</b> > Pilih <b>Update Data</b>.</li>
+                            <li>Klik <b>Run</b> dan masukkan: <b class="text-white">${slug}</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+
+            // ==================== TAMPILKAN 6 KOMIK TERAKHIR FULL SCRAPE ====================
+            if (Object.keys(tracker).length > 0) {
+                // Urutkan berdasarkan timestamp (terbaru dulu)
+                const sortedSlugs = Object.entries(tracker)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 6)
+                    .map(entry => entry[0]);
+
+                // Ambil data masing-masing komik dari folder db/
+                const fetchPromises = sortedSlugs.map(slug =>
+                    fetch(`../db/${slug}.json`)
+                        .then(res => res.json())
+                        .then(data => ({ slug, judul: data.judul, thumb: data.thumb }))
+                        .catch(() => null)
+                );
+
+                Promise.all(fetchPromises).then(comics => {
+                    const validComics = comics.filter(c => c !== null);
+                    if (validComics.length === 0) return;
+
+                    const listContainer = document.getElementById('recent-scrape-list');
+                    listContainer.innerHTML = validComics.map(comic => `
+                        <a href="/asn/${comic.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
+                            <img src="${comic.thumb}" class="w-full h-36 object-cover" loading="lazy">
+                            <div class="p-2">
+                                <div class="text-xs font-bold truncate">${comic.judul}</div>
+                            </div>
+                        </a>
+                    `).join('');
+
+                    document.getElementById('recent-scrape-section').classList.remove('hidden');
+                });
+            }
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('content').innerHTML = '<p class="text-center text-zinc-500">Gagal memuat data.</p>';
+        });
     </script>
 </body>
 </html>
