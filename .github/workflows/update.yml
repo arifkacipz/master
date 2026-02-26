@@ -40,6 +40,10 @@ jobs:
       - name: Generate list.json from db
         run: python generate_list.py
 
+      # Tambahkan langkah untuk generate_stats.py
+      - name: Generate stats.json (komik dengan chapter < 20)
+        run: python generate_stats.py
+
       - name: Sync and Push
         run: |
           git config --global user.name "github-actions[bot]"
