@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memuat Detail... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Scroll horizontal untuk recent */
+        .recent-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: #9333ea #1a1a1a;
+        }
+        .recent-scroll::-webkit-scrollbar {
+            height: 4px;
+        }
+        .recent-scroll::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        .recent-scroll::-webkit-scrollbar-thumb {
+            background: #9333ea;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body class="bg-zinc-950 text-white min-h-screen">
     <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-white/5 p-4">
@@ -15,8 +32,78 @@
 
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
+    <!-- Bagian Terakhir Dibaca (akan muncul jika ada riwayat) -->
+    <div id="recent-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
+        <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+            <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>Terakhir Dibaca</span>
+        </h2>
+        <div id="recent-list" class="flex gap-4 overflow-x-auto pb-4 recent-scroll">
+            <!-- Akan diisi JavaScript -->
+        </div>
+    </div>
+
     <script>
-        // Fungsi untuk mengekstrak nomor chapter dari teks (misal: "Chapter 41" -> "41")
+        // ==================== FUNGSI RECENT (localStorage) ====================
+        // Fungsi untuk menambah komik ke daftar terakhir dibaca
+        window.addToRecent = function(slug, judul, thumb) {
+            try {
+                const recent = localStorage.getItem('petomic_recent');
+                let recentData = recent ? JSON.parse(recent) : [];
+                
+                // Hapus jika sudah ada (pindahkan ke paling atas)
+                recentData = recentData.filter(item => item.slug !== slug);
+                
+                // Tambah ke awal
+                recentData.unshift({
+                    slug: slug,
+                    judul: judul,
+                    thumb: thumb,
+                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
+                });
+                
+                // Batasi hanya 4
+                if (recentData.length > 4) {
+                    recentData = recentData.slice(0, 4);
+                }
+                
+                localStorage.setItem('petomic_recent', JSON.stringify(recentData));
+                
+                // Update tampilan recent di halaman ini (jika ada)
+                renderRecentComics(recentData);
+            } catch (e) {
+                console.warn('Gagal menyimpan riwayat:', e);
+            }
+        };
+
+        // Fungsi untuk menampilkan daftar recent
+        function renderRecentComics(recentData) {
+            const recentSection = document.getElementById('recent-section');
+            const recentList = document.getElementById('recent-list');
+            
+            if (!recentData || recentData.length === 0) {
+                recentSection.classList.add('hidden');
+                return;
+            }
+            
+            recentSection.classList.remove('hidden');
+            recentList.innerHTML = '';
+            recentData.forEach(item => {
+                recentList.innerHTML += `
+                    <a href="/asn/${item.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
+                        <img src="${item.thumb}" class="w-full h-36 object-cover" loading="lazy">
+                        <div class="p-2">
+                            <div class="text-xs font-bold truncate">${item.judul}</div>
+                            <div class="text-[10px] text-zinc-500 mt-1">${item.waktu}</div>
+                        </div>
+                    </a>
+                `;
+            });
+        }
+
+        // ==================== FUNGSI UTAMA DETAIL ====================
         function getChapterNumber(chapterName) {
             const match = chapterName.match(/\d+(\.\d+)?/);
             return match ? match[0] : '';
@@ -31,14 +118,18 @@
             slug = parts[parts.length - 1];
         }
 
+        // Fetch data komik
         fetch(`../db/${slug}.json`)
             .then(res => res.json())
             .then(manga => {
                 document.title = `${manga.judul} - PetoMic`;
 
-                // Buat daftar chapter dengan link menggunakan nomor chapter
+                // Catat kunjungan ke recent
+                window.addToRecent(slug, manga.judul, manga.thumb);
+
+                // Buat daftar chapter
                 let listHtml = manga.chapters.map((ch, i) => {
-                    const chapterNumber = getChapterNumber(ch.nama) || i; // fallback ke indeks jika gagal
+                    const chapterNumber = getChapterNumber(ch.nama) || i;
                     return `
                         <a href="/asn/${slug}/ch-${chapterNumber}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
                             <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
@@ -47,6 +138,7 @@
                     `;
                 }).reverse().join('');
 
+                // Tampilkan konten utama
                 document.getElementById('content').innerHTML = `
                     <div class="flex flex-col items-center mb-10 text-center">
                         <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl mb-6 object-cover h-72 border-2 border-white/5">
@@ -75,8 +167,19 @@
                         </div>
                     </div>
                 `;
+
+                // Muat dan tampilkan daftar recent dari localStorage
+                try {
+                    const recent = localStorage.getItem('petomic_recent');
+                    if (recent) {
+                        renderRecentComics(JSON.parse(recent));
+                    }
+                } catch (e) {
+                    console.warn('Gagal memuat riwayat:', e);
+                }
             })
             .catch(err => {
+                console.error(err);
                 document.getElementById('content').innerHTML = '<p class="text-center text-zinc-500">Gagal memuat data.</p>';
             });
     </script>
