@@ -27,18 +27,15 @@ jobs:
 
           STATS_FILE = 'stats.json'
 
-          # Baca stats.json
           if not os.path.exists(STATS_FILE):
               print("stats.json tidak ditemukan")
               selected = []
           else:
               with open(STATS_FILE, 'r') as f:
                   stats = json.load(f)
-              # Ambil semua slug (maksimal 3)
               all_slugs = [item['slug'] for item in stats if 'slug' in item]
               selected = all_slugs[:3]
 
-          # Simpan ke file
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
@@ -78,51 +75,58 @@ jobs:
           TARGET_SLUG: ${{ matrix.slug }}
         run: python asn/scraper.py
 
-  generate-stats:
+      # Upload file JSON yang baru dihasilkan (jika ada)
+      - name: Upload updated JSON for ${{ matrix.slug }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: db-${{ matrix.slug }}
+          path: db/${{ matrix.slug }}.json
+          if-no-files-found: ignore
+
+  commit-changes:
     needs: scrape
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download all updated JSON files
+        uses: actions/download-artifact@v4
+        with:
+          path: downloaded-artifacts
+          pattern: db-*
+          merge-multiple: true
+
+      # Salin file yang diunduh ke folder db/ (perbarui data lokal)
+      - name: Copy to db folder
+        run: |
+          mkdir -p db
+          cp -v downloaded-artifacts/*.json db/ 2>/dev/null || true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # Generate stats.json berdasarkan data terbaru di db/
       - name: Generate stats.json
         run: python generate_stats.py
 
-      - name: Commit stats.json
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.json
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to stats.json"
-          else
-            git commit -m "Update stats.json"
-            git pull --rebase origin main
-            git push origin main
-          fi
-
-  generate-list:
-    needs: scrape
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
+      # Generate list.json berdasarkan data terbaru di db/
       - name: Generate list.json
         run: python generate_list.py
 
-      - name: Commit list.json
+      # Commit semua perubahan (db/, stats.json, list.json) sekaligus
+      - name: Commit and push all changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add list.json
+          git add db/ stats.json list.json
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to list.json"
+            echo "Tidak ada perubahan data."
           else
-            git commit -m "Update list.json"
+            git commit -m "Auto-update: full scrape dan statistik [skip ci]"
             git pull --rebase origin main
             git push origin main
           fi
