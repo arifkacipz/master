@@ -19,40 +19,26 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Select up to 3 slugs (latest chapter ≤ 100, not in tracker)
+      - name: Select up to 3 slugs from stats.json
         id: select
         run: |
           python << EOF
-          import os, json, glob, re
+          import os, json
 
-          TRACKER_FILE = 'full_scrape_tracker.json'
+          STATS_FILE = 'stats.json'
 
-          def get_latest_chapter(chapters):
-              nums = []
-              for ch in chapters:
-                  match = re.search(r'(\d+(?:\.\d+)?)', ch.get('nama', ''))
-                  if match:
-                      nums.append(float(match.group(1)))
-              return max(nums) if nums else 0
-
-          if os.path.exists(TRACKER_FILE):
-              with open(TRACKER_FILE, 'r') as f:
-                  tracker = json.load(f)
+          # Baca stats.json
+          if not os.path.exists(STATS_FILE):
+              print("stats.json tidak ditemukan")
+              selected = []
           else:
-              tracker = {}
+              with open(STATS_FILE, 'r') as f:
+                  stats = json.load(f)
+              # Ambil semua slug (maksimal 3)
+              all_slugs = [item['slug'] for item in stats if 'slug' in item]
+              selected = all_slugs[:3]
 
-          selected = []
-          for file in glob.glob('db/*.json'):
-              slug = os.path.splitext(os.path.basename(file))[0]
-              if slug in tracker:
-                  continue
-              with open(file, 'r') as f:
-                  data = json.load(f)
-              latest = get_latest_chapter(data.get('chapters', []))
-              if latest <= 100:
-                  selected.append(slug)
-
-          selected = selected[:3]
+          # Simpan ke file
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
@@ -92,50 +78,29 @@ jobs:
           TARGET_SLUG: ${{ matrix.slug }}
         run: python asn/scraper.py
 
-  update-tracker:
+  generate-stats:
     needs: scrape
     runs-on: ubuntu-latest
-    if: always()
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download selected slugs
-        uses: actions/download-artifact@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          name: selected-slugs
+          python-version: '3.10'
 
-      - name: Update tracker
-        run: |
-          python << EOF
-          import os, json, time
+      - name: Generate stats.json
+        run: python generate_stats.py
 
-          TRACKER_FILE = 'full_scrape_tracker.json'
-          with open('selected_slugs.json', 'r') as f:
-              selected = json.load(f)
-
-          if os.path.exists(TRACKER_FILE):
-              with open(TRACKER_FILE, 'r') as f:
-                  tracker = json.load(f)
-          else:
-              tracker = {}
-
-          now = time.time()
-          for slug in selected:
-              tracker[slug] = now
-
-          with open(TRACKER_FILE, 'w') as f:
-              json.dump(tracker, f, indent=2)
-          EOF
-
-      - name: Commit and push tracker
+      - name: Commit stats.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add full_scrape_tracker.json
+          git add stats.json
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to tracker"
+            echo "No changes to stats.json"
           else
-            git commit -m "Update tracker after matrix scrape"
+            git commit -m "Update stats.json"
             git pull --rebase origin main
             git push origin main
           fi
