@@ -270,7 +270,7 @@
             container.innerHTML = '';
             pagedData.forEach(manga => {
                 const a = document.createElement('a');
-                a.href = `/asn/${manga.slug}`; // Clean URL
+                a.href = `/asn/${manga.slug}`; // Clean URL (akan di-rewrite oleh Cloudflare)
                 a.className = 'block';
                 if (mode === 'grid') {
                     a.innerHTML = `
