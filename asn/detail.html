@@ -85,23 +85,6 @@
             });
         }
 
-        // ==================== FUNGSI RECENT (localStorage) ====================
-        window.addToRecent = function(slug, judul, thumb) {
-            try {
-                const recent = localStorage.getItem('petomic_recent');
-                let recentData = recent ? JSON.parse(recent) : [];
-                recentData = recentData.filter(item => item.slug !== slug);
-                recentData.unshift({
-                    slug,
-                    judul,
-                    thumb,
-                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
-                });
-                if (recentData.length > 4) recentData = recentData.slice(0, 4);
-                localStorage.setItem('petomic_recent', JSON.stringify(recentData));
-            } catch (e) { console.warn('Gagal menyimpan riwayat:', e); }
-        };
-
         // ==================== FUNGSI UTAMA DETAIL ====================
         function getChapterNumber(chapterName) {
             const match = chapterName.match(/\d+(\.\d+)?/);
@@ -127,7 +110,6 @@
         ])
         .then(([manga, tracker, stats]) => {
             document.title = `${manga.judul} - PetoMic`;
-            window.addToRecent(slug, manga.judul, manga.thumb);
 
             // Buat daftar chapter
             let listHtml = manga.chapters.map((ch, i) => {
