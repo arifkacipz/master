@@ -104,6 +104,36 @@
     </div>
 
     <script>
+        // ==================== FUNGSI RECENT (localStorage) ====================
+        // Fungsi untuk menambah komik ke daftar terakhir dibaca
+        function addToRecent(slug, judul, thumb) {
+            try {
+                const recent = localStorage.getItem('petomic_recent');
+                let recentData = recent ? JSON.parse(recent) : [];
+                
+                // Hapus jika sudah ada (pindahkan ke paling atas)
+                recentData = recentData.filter(item => item.slug !== slug);
+                
+                // Tambah ke awal
+                recentData.unshift({
+                    slug: slug,
+                    judul: judul,
+                    thumb: thumb,
+                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
+                });
+                
+                // Batasi hanya 4
+                if (recentData.length > 4) {
+                    recentData = recentData.slice(0, 4);
+                }
+                
+                localStorage.setItem('petomic_recent', JSON.stringify(recentData));
+            } catch (e) {
+                console.warn('Gagal menyimpan riwayat:', e);
+            }
+        }
+
+        // ========== FUNGSI UTAMA READER ==========
         (function() {
             // Fungsi ekstrak nomor chapter
             function getChapterNumber(chapterName) {
@@ -201,6 +231,9 @@
 
                     const chapter = manga.chapters[currentIndex];
                     const currentChapterNumber = getChapterNumber(chapter.nama);
+
+                    // Catat kunjungan ke recent
+                    addToRecent(slug, manga.judul, manga.thumb);
 
                     document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
                     document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
