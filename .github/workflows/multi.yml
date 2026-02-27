@@ -1,4 +1,4 @@
-name: Matrix Full Scrape (3 per run)
+name: Matrix Full Scrape (3 per run - Random)
 
 on:
   workflow_dispatch:
@@ -19,29 +19,45 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Select up to 3 slugs from stats.json
+      - name: Select up to 3 random slugs from stats.json
         id: select
         run: |
           python << EOF
-          import os, json
+          import os, json, random
 
           STATS_FILE = 'stats.json'
+          selected = []
 
-          if not os.path.exists(STATS_FILE):
-              print("stats.json tidak ditemukan")
-              selected = []
+          if os.path.exists(STATS_FILE):
+              try:
+                  with open(STATS_FILE, 'r') as f:
+                      stats = json.load(f)
+                  
+                  # Mengambil semua slug dari stats.json
+                  all_slugs = [item['slug'] for item in stats if 'slug' in item]
+                  
+                  if all_slugs:
+                      # Pilih maksimal 3 slug secara acak tanpa duplikat
+                      num_to_select = min(len(all_slugs), 3)
+                      selected = random.sample(all_slugs, num_to_select)
+                      print(f"Berhasil memilih {len(selected)} slug secara acak.")
+                  else:
+                      print("Tidak ada slug ditemukan dalam stats.json")
+              except Exception as e:
+                  print(f"Terjadi kesalahan saat membaca stats.json: {e}")
           else:
-              with open(STATS_FILE, 'r') as f:
-                  stats = json.load(f)
-              all_slugs = [item['slug'] for item in stats if 'slug' in item]
-              selected = all_slugs[:3]
+              print("stats.json tidak ditemukan")
 
+          # Simpan ke file untuk artifact
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
-          print(f"slugs={json.dumps(selected)}")
+          # Set output untuk digunakan oleh job 'scrape'
+          # Menggunakan json.dumps untuk memastikan formatnya valid string JSON
+          import os
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"slugs={json.dumps(selected)}\n")
           EOF
-          echo "slugs=$(cat selected_slugs.json)" >> $GITHUB_OUTPUT
 
       - name: Upload selected slugs
         uses: actions/upload-artifact@v4
@@ -51,6 +67,7 @@ jobs:
 
   scrape:
     needs: select-slugs
+    if: needs.select-slugs.outputs.slugs != '[]' && needs.select-slugs.outputs.slugs != ''
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -75,7 +92,6 @@ jobs:
           TARGET_SLUG: ${{ matrix.slug }}
         run: python asn/scraper.py
 
-      # Upload file JSON yang baru dihasilkan (jika ada)
       - name: Upload updated JSON for ${{ matrix.slug }}
         uses: actions/upload-artifact@v4
         with:
@@ -86,6 +102,7 @@ jobs:
   commit-changes:
     needs: scrape
     runs-on: ubuntu-latest
+    if: always() # Tetap jalankan commit jika ada scraper yang berhasil
     steps:
       - uses: actions/checkout@v4
         with:
@@ -98,7 +115,6 @@ jobs:
           pattern: db-*
           merge-multiple: true
 
-      # Salin file yang diunduh ke folder db/ (perbarui data lokal)
       - name: Copy to db folder
         run: |
           mkdir -p db
@@ -109,15 +125,12 @@ jobs:
         with:
           python-version: '3.10'
 
-      # Generate stats.json berdasarkan data terbaru di db/
       - name: Generate stats.json
         run: python generate_stats.py
 
-      # Generate list.json berdasarkan data terbaru di db/
       - name: Generate list.json
         run: python generate_list.py
 
-      # Commit semua perubahan (db/, stats.json, list.json) sekaligus
       - name: Commit and push all changes
         run: |
           git config --global user.name "github-actions[bot]"
@@ -126,7 +139,7 @@ jobs:
           if git diff --quiet && git diff --staged --quiet; then
             echo "Tidak ada perubahan data."
           else
-            git commit -m "Auto-update: full scrape dan statistik [skip ci]"
+            git commit -m "Auto-update: random full scrape dan statistik [skip ci]"
             git pull --rebase origin main
             git push origin main
           fi
