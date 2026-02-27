@@ -3,7 +3,7 @@ name: Matrix Full Scrape (3 per run - Random)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '36 * * * *'   # Setiap jam pada menit 36 UTC
+    - cron: '*/20 * * * *'   # Setiap jam pada menit 36 UTC
 
 concurrency:
   group: matrix-full-scrape
