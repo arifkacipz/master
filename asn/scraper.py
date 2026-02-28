@@ -6,6 +6,7 @@ import time
 import re
 import cloudinary
 import cloudinary.uploader
+import argparse
 
 # ================== KONFIGURASI CLOUDINARY ==================
 cloudinary.config(
@@ -22,7 +23,7 @@ HEADERS = {
 
 # ================== FUNGSI BANTU UMUM ==================
 def extract_chapter_number(chapter_name):
-    """Ekstrak nomor chapter dari string nama (misal 'Chapter 45' -> 45.0)."""
+    """Ekstrak nomor chapter dari string (misal 'Chapter 45' -> 45.0)."""
     match = re.search(r'(\d+(?:\.\d+)?)', chapter_name)
     return float(match.group(1)) if match else None
 
@@ -225,10 +226,11 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None):
             # Tidak ada data lama, gunakan final_chapters apa adanya
             pass
 
-        # Simpan hasil
+        # Simpan hasil (tambahkan field source)
         result = {
             "judul": judul,
             "thumb": thumb_cloud,
+            "source": "manhuaplus",
             "chapters": final_chapters
         }
         save_to_db(slug, result)
@@ -422,10 +424,11 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None):
             # Tidak ada data lama, gunakan final_chapters apa adanya
             pass
 
-        # Simpan hasil
+        # Simpan hasil (tambahkan field source)
         result = {
             "judul": judul,
             "thumb": thumb_cloud,
+            "source": "arenascan",
             "chapters": final_chapters
         }
         save_to_db(slug, result)
@@ -466,13 +469,113 @@ def scrape_arenascan_catalog(max_pages=10):
         time.sleep(1)
     return list_manga
 
-# ================== MAIN ==================
+# ================== FUNGSI KATALOG ==================
+def run_catalog_mode(max_pages=3, limit_ch=3):
+    """Menjalankan scraping katalog dari kedua sumber."""
+    print("=== SCRAPING KATALOG MANHUAPLUS ===")
+    manga_list_manhuaplus = scrape_manhuaplus_catalog(max_pages=max_pages)
+    for manga in manga_list_manhuaplus:
+        process_comic_manhuaplus(
+            judul=manga['judul'],
+            link=manga['url'],
+            slug=manga['slug'],
+            thumb_url=manga['thumb'],
+            limit_ch=limit_ch
+        )
+        time.sleep(2)
+
+    print("\n=== SCRAPING KATALOG ARENASCAN ===")
+    manga_list_arenascan = scrape_arenascan_catalog(max_pages=max_pages)
+    for manga in manga_list_arenascan:
+        process_comic_arenascan(
+            judul=manga['judul'],
+            link=manga['url'],
+            slug=manga['slug'],
+            thumb_url=manga['thumb'],
+            limit_ch=limit_ch
+        )
+        time.sleep(2)
+
+    # Buat list.json gabungan
+    all_manga = []
+    for filename in os.listdir('db'):
+        if filename.endswith('.json'):
+            with open(os.path.join('db', filename), 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                all_manga.append({
+                    "judul": data.get("judul", ""),
+                    "slug": filename[:-5],
+                    "thumb": data.get("thumb", "")
+                })
+    with open('list.json', 'w', encoding='utf-8') as f:
+        json.dump(all_manga, f, indent=4)
+    print(f"\nlist.json diperbarui dengan {len(all_manga)} manga.")
+
+# ================== MAIN dengan ARGPARSE ==================
 def main():
+    parser = argparse.ArgumentParser(description='Scrape komik dari manhuaplus.org dan arenascan.com')
+    parser.add_argument('--slug', help='Slug komik (contoh: nama-komik)')
+    parser.add_argument('--source', choices=['manhuaplus', 'arenascan', 'auto'], default='auto',
+                        help='Sumber data (default auto: coba manhuaplus dulu, lalu arenascan)')
+    parser.add_argument('--catalog', action='store_true', help='Jalankan mode katalog (mengabaikan slug)')
+    parser.add_argument('--pages', type=int, default=3, help='Jumlah halaman katalog (default 3)')
+    parser.add_argument('--limit', type=int, default=3, help='Jumlah chapter terbaru yang diambil di mode katalog (default 3)')
+    args = parser.parse_args()
+
+    if args.catalog:
+        # Mode katalog via argumen
+        run_catalog_mode(max_pages=args.pages, limit_ch=args.limit)
+        return
+
+    if args.slug:
+        # Mode satu slug dengan argumen
+        if args.source == 'auto':
+            # Coba manhuaplus dulu
+            url = f"https://manhuaplus.org/manga/{args.slug}"
+            result = process_comic_manhuaplus(
+                judul=args.slug.replace('-', ' ').title(),
+                link=url,
+                slug=args.slug,
+                thumb_url=None,
+                limit_ch=None
+            )
+            if not result:
+                # Coba arenascan
+                url = f"https://arenascan.com/manga/{args.slug}/"
+                result = process_comic_arenascan(
+                    judul=args.slug.replace('-', ' ').title(),
+                    link=url,
+                    slug=args.slug,
+                    thumb_url=None,
+                    limit_ch=None
+                )
+            if not result:
+                print(f"Gagal mengambil data untuk slug {args.slug} dari kedua sumber.")
+        elif args.source == 'manhuaplus':
+            url = f"https://manhuaplus.org/manga/{args.slug}"
+            process_comic_manhuaplus(
+                judul=args.slug.replace('-', ' ').title(),
+                link=url,
+                slug=args.slug,
+                thumb_url=None,
+                limit_ch=None
+            )
+        else:  # arenascan
+            url = f"https://arenascan.com/manga/{args.slug}/"
+            process_comic_arenascan(
+                judul=args.slug.replace('-', ' ').title(),
+                link=url,
+                slug=args.slug,
+                thumb_url=None,
+                limit_ch=None
+            )
+        return
+
+    # Jika tidak ada argumen, gunakan environment variables (kompatibilitas ke belakang)
     target_slug = os.environ.get('TARGET_SLUG')
     source = os.environ.get('SOURCE', 'manhuaplus').lower()
-
     if target_slug:
-        # Mode satu slug
+        # Mode satu slug via env
         if source == 'manhuaplus':
             url = f"https://manhuaplus.org/manga/{target_slug}"
             process_comic_manhuaplus(
@@ -494,45 +597,8 @@ def main():
         else:
             print(f"Source tidak dikenal: {source}. Gunakan 'manhuaplus' atau 'arenascan'.")
     else:
-        # Mode katalog: jalankan kedua sumber dengan limit chapter (misal 3 terbaru)
-        print("=== SCRAPING KATALOG MANHUAPLUS ===")
-        manga_list_manhuaplus = scrape_manhuaplus_catalog(max_pages=3)  # sesuaikan jumlah halaman
-        for manga in manga_list_manhuaplus:
-            process_comic_manhuaplus(
-                judul=manga['judul'],
-                link=manga['url'],
-                slug=manga['slug'],
-                thumb_url=manga['thumb'],
-                limit_ch=3  # ambil 3 chapter terbaru
-            )
-            time.sleep(2)
-
-        print("\n=== SCRAPING KATALOG ARENASCAN ===")
-        manga_list_arenascan = scrape_arenascan_catalog(max_pages=3)
-        for manga in manga_list_arenascan:
-            process_comic_arenascan(
-                judul=manga['judul'],
-                link=manga['url'],
-                slug=manga['slug'],
-                thumb_url=manga['thumb'],
-                limit_ch=3
-            )
-            time.sleep(2)
-
-        # Buat list.json gabungan dari semua file di folder db/
-        all_manga = []
-        for filename in os.listdir('db'):
-            if filename.endswith('.json'):
-                with open(os.path.join('db', filename), 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    all_manga.append({
-                        "judul": data.get("judul", ""),
-                        "slug": filename[:-5],
-                        "thumb": data.get("thumb", "")
-                    })
-        with open('list.json', 'w', encoding='utf-8') as f:
-            json.dump(all_manga, f, indent=4)
-        print(f"\nlist.json diperbarui dengan {len(all_manga)} manga.")
+        # Mode katalog via env (default)
+        run_catalog_mode(max_pages=3, limit_ch=3)
 
 if __name__ == "__main__":
     main()
