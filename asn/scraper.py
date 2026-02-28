@@ -209,18 +209,7 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
         }
 
         if save:
-            # Gabung dengan data lama
-            old_data = load_from_db(slug)
-            if old_data and 'chapters' in old_data:
-                old_chapters = old_data['chapters']
-                if all('url' in ch for ch in old_chapters):
-                    # Gunakan merge berdasarkan nomor chapter
-                    # Tapi kita akan gunakan fungsi merge yang sudah ada? Kita perlu mengimpor merge_chapters
-                    # Untuk sementara, kita gunakan merge sederhana (tambahkan yang baru)
-                    # Namun kita sudah punya merge_chapters di atas? Belum didefinisikan ulang.
-                    # Sebenarnya kita punya merge_chapters? Di kode ini belum ada. Kita akan tambahkan nanti.
-                    # Untuk sementara, kita lewati dulu, nanti akan diintegrasikan.
-                    pass
+            # Gabung dengan data lama (sederhana, lewati dulu)
             save_to_db(slug, result)
             print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
         return result
@@ -682,7 +671,7 @@ def main():
     parser.add_argument('--source', choices=['manhuaplus', 'arenascan', 'auto'], default='auto',
                         help='Sumber data (default auto: coba manhuaplus dulu, lalu arenascan)')
     parser.add_argument('--catalog', action='store_true', help='Jalankan mode katalog (mengabaikan slug)')
-    parser.add_argument('--pages', type=int, default=3, help='Jumlah halaman katalog (default 3)')
+    parser.add_argument('--pages', type=int, default=8, help='Jumlah halaman katalog (default 8)')
     parser.add_argument('--limit', type=int, default=3, help='Jumlah chapter terbaru yang diambil di mode katalog (default 3)')
     parser.add_argument('--compare', action='store_true', help='Bandingkan data dari dua sumber untuk slug tertentu (tanpa simpan)')
     args = parser.parse_args()
@@ -747,7 +736,8 @@ def main():
         else:
             print(f"Source tidak dikenal: {source}. Gunakan 'manhuaplus' atau 'arenascan'.")
     else:
-        run_catalog_mode(max_pages=3, limit_ch=3)
+        # Mode katalog default: 8 halaman, 3 chapter
+        run_catalog_mode(max_pages=8, limit_ch=3)
 
 if __name__ == "__main__":
     main()
