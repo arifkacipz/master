@@ -448,7 +448,7 @@ def scrape_arenascan_catalog(max_pages=10):
     return list_manga
 
 # ================== FUNGSI KATALOG ==================
-def run_catalog_mode(max_pages=3, limit_ch=3):
+def run_catalog_mode(max_pages=8, limit_ch=3):
     """Menjalankan scraping katalog dari kedua sumber."""
     print("=== SCRAPING KATALOG MANHUAPLUS ===")
     manga_list_manhuaplus = scrape_manhuaplus_catalog(max_pages=max_pages)
