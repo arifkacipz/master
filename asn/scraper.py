@@ -125,8 +125,8 @@ def get_images_manhuaplus(chapter_url):
         print(f"Error get_images_manhuaplus: {e}")
         return []
 
-def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None):
-    """Memproses satu komik dari manhuaplus."""
+def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, save=True):
+    """Memproses satu komik dari manhuaplus. Jika save=False, hanya mengembalikan data tanpa menyimpan."""
     print(f"--- ManhuaPlus memproses: {judul} ---")
     try:
         res = requests.get(link, headers=HEADERS, timeout=20)
@@ -213,29 +213,31 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None):
         # Urutan baca: dari terlama ke terbaru
         final_chapters.reverse()
 
-        # Gabung dengan data lama (hanya tambah chapter dengan nomor baru)
-        old_data = load_from_db(slug)
-        if old_data and 'chapters' in old_data:
-            old_chapters = old_data['chapters']
-            if all('url' in ch for ch in old_chapters):
-                final_chapters = merge_chapters(old_chapters, final_chapters)
-                print(f"   -> Setelah digabung: total {len(final_chapters)} chapter")
-            else:
-                print("   -> File lama tidak valid, ditimpa dengan data baru")
+        # Gabung dengan data lama jika save=True
+        if save:
+            old_data = load_from_db(slug)
+            if old_data and 'chapters' in old_data:
+                old_chapters = old_data['chapters']
+                if all('url' in ch for ch in old_chapters):
+                    final_chapters = merge_chapters(old_chapters, final_chapters)
+                    print(f"   -> Setelah digabung: total {len(final_chapters)} chapter")
+                else:
+                    print("   -> File lama tidak valid, ditimpa dengan data baru")
         else:
-            # Tidak ada data lama, gunakan final_chapters apa adanya
+            # Tidak pakai merge, langsung return
             pass
 
-        # Simpan hasil (tambahkan field source)
         result = {
             "judul": judul,
             "thumb": thumb_cloud,
             "source": "manhuaplus",
             "chapters": final_chapters
         }
-        save_to_db(slug, result)
-        print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
-        return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
+
+        if save:
+            save_to_db(slug, result)
+            print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
+        return result
 
     except Exception as e:
         print(f"Gagal memproses {judul}: {e}")
@@ -344,8 +346,8 @@ def get_images_arenascan(chapter_url):
         print(f"Error get_images_arenascan: {e}")
         return []
 
-def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None):
-    """Memproses satu komik dari arenascan."""
+def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True):
+    """Memproses satu komik dari arenascan. Jika save=False, hanya mengembalikan data tanpa menyimpan."""
     print(f"--- Arenascan memproses: {judul} ---")
     try:
         res = requests.get(link, headers=HEADERS, timeout=20)
@@ -411,29 +413,31 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None):
             print(f"Tidak ada gambar berhasil diambil untuk {slug}")
             return None
 
-        # Gabung dengan data lama (hanya tambah chapter dengan nomor baru)
-        old_data = load_from_db(slug)
-        if old_data and 'chapters' in old_data:
-            old_chapters = old_data['chapters']
-            if all('url' in ch for ch in old_chapters):
-                final_chapters = merge_chapters(old_chapters, final_chapters)
-                print(f"   -> Setelah digabung: total {len(final_chapters)} chapter")
-            else:
-                print("   -> File lama tidak valid, ditimpa dengan data baru")
+        # Gabung dengan data lama jika save=True
+        if save:
+            old_data = load_from_db(slug)
+            if old_data and 'chapters' in old_data:
+                old_chapters = old_data['chapters']
+                if all('url' in ch for ch in old_chapters):
+                    final_chapters = merge_chapters(old_chapters, final_chapters)
+                    print(f"   -> Setelah digabung: total {len(final_chapters)} chapter")
+                else:
+                    print("   -> File lama tidak valid, ditimpa dengan data baru")
         else:
-            # Tidak ada data lama, gunakan final_chapters apa adanya
+            # Tidak pakai merge, langsung return
             pass
 
-        # Simpan hasil (tambahkan field source)
         result = {
             "judul": judul,
             "thumb": thumb_cloud,
             "source": "arenascan",
             "chapters": final_chapters
         }
-        save_to_db(slug, result)
-        print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
-        return {"judul": judul, "slug": slug, "thumb": thumb_cloud}
+
+        if save:
+            save_to_db(slug, result)
+            print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
+        return result
 
     except Exception as e:
         print(f"Gagal memproses {judul}: {e}")
@@ -480,7 +484,8 @@ def run_catalog_mode(max_pages=3, limit_ch=3):
             link=manga['url'],
             slug=manga['slug'],
             thumb_url=manga['thumb'],
-            limit_ch=limit_ch
+            limit_ch=limit_ch,
+            save=True
         )
         time.sleep(2)
 
@@ -492,7 +497,8 @@ def run_catalog_mode(max_pages=3, limit_ch=3):
             link=manga['url'],
             slug=manga['slug'],
             thumb_url=manga['thumb'],
-            limit_ch=limit_ch
+            limit_ch=limit_ch,
+            save=True
         )
         time.sleep(2)
 
@@ -511,6 +517,67 @@ def run_catalog_mode(max_pages=3, limit_ch=3):
         json.dump(all_manga, f, indent=4)
     print(f"\nlist.json diperbarui dengan {len(all_manga)} manga.")
 
+# ================== FUNGSI PERBANDINGAN ==================
+def compare_sources(slug):
+    """Bandingkan data dari manhuaplus dan arenascan untuk slug yang sama."""
+    print(f"\n=== MEMBANDINGKAN {slug} ===")
+    data_manhua = process_comic_manhuaplus(
+        judul=slug.replace('-', ' ').title(),
+        link=f"https://manhuaplus.org/manga/{slug}",
+        slug=slug,
+        thumb_url=None,
+        limit_ch=None,
+        save=False  # Jangan simpan ke db
+    )
+    data_arena = process_comic_arenascan(
+        judul=slug.replace('-', ' ').title(),
+        link=f"https://arenascan.com/manga/{slug}/",
+        slug=slug,
+        thumb_url=None,
+        limit_ch=None,
+        save=False
+    )
+
+    # Jika salah satu gagal, tetap lanjut dengan data kosong
+    if not data_manhua:
+        print("Gagal mengambil dari manhuaplus.")
+        data_manhua = {'chapters': [], 'judul': None, 'thumb': None}
+    if not data_arena:
+        print("Gagal mengambil dari arenascan.")
+        data_arena = {'chapters': [], 'judul': None, 'thumb': None}
+
+    # Ekstrak nomor chapter untuk perbandingan
+    def get_chapter_map(data):
+        chapters = data.get('chapters', [])
+        return {ch['nama']: ch for ch in chapters}
+
+    map_a = get_chapter_map(data_manhua)
+    map_b = get_chapter_map(data_arena)
+
+    set_a = set(map_a.keys())
+    set_b = set(map_b.keys())
+
+    only_a = set_a - set_b
+    only_b = set_b - set_a
+    common = set_a & set_b
+
+    # Tampilkan hasil
+    print("\n=== HASIL PERBANDINGAN ===")
+    print(f"Judul ManhuaPlus : {data_manhua.get('judul')}")
+    print(f"Judul Arenascan  : {data_arena.get('judul')}")
+    print(f"Total chapter ManhuaPlus : {len(set_a)}")
+    print(f"Total chapter Arenascan  : {len(set_b)}")
+    print(f"Chapter hanya di ManhuaPlus ({len(only_a)}): {sorted(list(only_a))}")
+    print(f"Chapter hanya di Arenascan ({len(only_b)}): {sorted(list(only_b))}")
+    print(f"Chapter yang sama ({len(common)}): {sorted(list(common))}")
+
+    # Simpan laporan di folder cp/
+    os.makedirs('cp', exist_ok=True)
+    report_filename = os.path.join('cp', f'compare_{slug}.json')
+    with open(report_filename, 'w', encoding='utf-8') as f:
+        json.dump(report, f, indent=4)
+    print(f"\nLaporan tersimpan di {report_filename}")
+
 # ================== MAIN dengan ARGPARSE ==================
 def main():
     parser = argparse.ArgumentParser(description='Scrape komik dari manhuaplus.org dan arenascan.com')
@@ -520,54 +587,60 @@ def main():
     parser.add_argument('--catalog', action='store_true', help='Jalankan mode katalog (mengabaikan slug)')
     parser.add_argument('--pages', type=int, default=3, help='Jumlah halaman katalog (default 3)')
     parser.add_argument('--limit', type=int, default=3, help='Jumlah chapter terbaru yang diambil di mode katalog (default 3)')
+    parser.add_argument('--compare', action='store_true', help='Bandingkan data dari dua sumber untuk slug tertentu')
     args = parser.parse_args()
 
+    if args.compare:
+        if not args.slug:
+            print("Slug diperlukan untuk mode compare")
+            return
+        compare_sources(args.slug)
+        return
+
     if args.catalog:
-        # Mode katalog via argumen
         run_catalog_mode(max_pages=args.pages, limit_ch=args.limit)
         return
 
     if args.slug:
-        # Mode satu slug dengan argumen
         if args.source == 'auto':
             # Coba manhuaplus dulu
-            url = f"https://manhuaplus.org/manga/{args.slug}"
             result = process_comic_manhuaplus(
                 judul=args.slug.replace('-', ' ').title(),
-                link=url,
+                link=f"https://manhuaplus.org/manga/{args.slug}",
                 slug=args.slug,
                 thumb_url=None,
-                limit_ch=None
+                limit_ch=None,
+                save=True
             )
             if not result:
                 # Coba arenascan
-                url = f"https://arenascan.com/manga/{args.slug}/"
                 result = process_comic_arenascan(
                     judul=args.slug.replace('-', ' ').title(),
-                    link=url,
+                    link=f"https://arenascan.com/manga/{args.slug}/",
                     slug=args.slug,
                     thumb_url=None,
-                    limit_ch=None
+                    limit_ch=None,
+                    save=True
                 )
             if not result:
                 print(f"Gagal mengambil data untuk slug {args.slug} dari kedua sumber.")
         elif args.source == 'manhuaplus':
-            url = f"https://manhuaplus.org/manga/{args.slug}"
             process_comic_manhuaplus(
                 judul=args.slug.replace('-', ' ').title(),
-                link=url,
+                link=f"https://manhuaplus.org/manga/{args.slug}",
                 slug=args.slug,
                 thumb_url=None,
-                limit_ch=None
+                limit_ch=None,
+                save=True
             )
         else:  # arenascan
-            url = f"https://arenascan.com/manga/{args.slug}/"
             process_comic_arenascan(
                 judul=args.slug.replace('-', ' ').title(),
-                link=url,
+                link=f"https://arenascan.com/manga/{args.slug}/",
                 slug=args.slug,
                 thumb_url=None,
-                limit_ch=None
+                limit_ch=None,
+                save=True
             )
         return
 
@@ -575,29 +648,27 @@ def main():
     target_slug = os.environ.get('TARGET_SLUG')
     source = os.environ.get('SOURCE', 'manhuaplus').lower()
     if target_slug:
-        # Mode satu slug via env
         if source == 'manhuaplus':
-            url = f"https://manhuaplus.org/manga/{target_slug}"
             process_comic_manhuaplus(
                 judul=target_slug.replace('-', ' ').title(),
-                link=url,
+                link=f"https://manhuaplus.org/manga/{target_slug}",
                 slug=target_slug,
                 thumb_url=None,
-                limit_ch=None
+                limit_ch=None,
+                save=True
             )
         elif source == 'arenascan':
-            url = f"https://arenascan.com/manga/{target_slug}/"
             process_comic_arenascan(
                 judul=target_slug.replace('-', ' ').title(),
-                link=url,
+                link=f"https://arenascan.com/manga/{target_slug}/",
                 slug=target_slug,
                 thumb_url=None,
-                limit_ch=None
+                limit_ch=None,
+                save=True
             )
         else:
             print(f"Source tidak dikenal: {source}. Gunakan 'manhuaplus' atau 'arenascan'.")
     else:
-        # Mode katalog via env (default)
         run_catalog_mode(max_pages=3, limit_ch=3)
 
 if __name__ == "__main__":
