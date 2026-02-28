@@ -84,22 +84,10 @@
     "chapterCount": 2
   },
   {
-    "slug": "hero-x-demon-queen",
-    "judul": "Hero X Demon Queen",
-    "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936292/petomic_thumbs/hero-x-demon-queen.jpg",
-    "chapterCount": 2
-  },
-  {
     "slug": "killer-peter556",
     "judul": "Killer Peter",
     "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771902432/petomic_thumbs/killer-peter556.jpg",
     "chapterCount": 5
-  },
-  {
-    "slug": "lout-of-count-s-family",
-    "judul": "Lout of Count's Family",
-    "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936152/petomic_thumbs/lout-of-count-s-family.jpg",
-    "chapterCount": 2
   },
   {
     "slug": "the-maxed-out-player",
@@ -1132,11 +1120,5 @@
     "judul": "The Great Ruler",
     "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771965463/petomic_thumbs/the-great-rulera01.jpg",
     "chapterCount": 2
-  },
-  {
-    "slug": "breakers",
-    "judul": "Breakers",
-    "thumb": "https://res.cloudinary.com/dctzndhgm/image/upload/v1771936279/petomic_thumbs/breakers.jpg",
-    "chapterCount": 19
   }
 ]
