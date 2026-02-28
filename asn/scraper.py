@@ -116,6 +116,9 @@ def get_chapter_list_manhuaplus(link):
     """Ambil daftar chapter dari halaman detail manhuaplus (tanpa gambar)."""
     try:
         res = requests.get(link, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"Gagal mengakses {link}, status code: {res.status_code}")
+            return []
         soup = BeautifulSoup(res.text, 'html.parser')
         ch_list = []
         ul = soup.select_one('ul#myUL')
@@ -159,6 +162,9 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
     print(f"--- ManhuaPlus memproses: {judul} ---")
     try:
         res = requests.get(link, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"Gagal mengakses {link}, status code: {res.status_code}")
+            return None
         soup = BeautifulSoup(res.text, 'html.parser')
 
         # Ambil judul asli dari halaman
@@ -366,6 +372,9 @@ def get_chapter_list_arenascan(link):
     """Ambil daftar chapter dari halaman detail arenascan (tanpa gambar)."""
     try:
         res = requests.get(link, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"Gagal mengakses {link}, status code: {res.status_code}")
+            return []
         soup = BeautifulSoup(res.text, 'html.parser')
         ch_list = []
         chapterlist = soup.select_one('#chapterlist ul')
@@ -388,6 +397,9 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
     print(f"--- Arenascan memproses: {judul} ---")
     try:
         res = requests.get(link, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"Gagal mengakses {link}, status code: {res.status_code}")
+            return None
         soup = BeautifulSoup(res.text, 'html.parser')
 
         # Ambil judul dari h1
@@ -444,7 +456,7 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
             print(f"   -> Scraping Chapter: {ch['nama']}")
             imgs = get_images_arenascan(ch['url'])
             if imgs:
-                final_chapters.append({"nama": ch['nama'], "url": ch['url"], "images": imgs})
+                final_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
             time.sleep(0.8)
 
         if not final_chapters:
@@ -498,7 +510,7 @@ def scrape_arenascan_catalog(max_pages=10):
     return list_manga
 
 # ================== FUNGSI KATALOG ==================
-def run_catalog_mode(max_pages=8, limit_ch=3):
+def run_catalog_mode(max_pages=2, limit_ch=3):
     """Menjalankan scraping katalog dari kedua sumber."""
     print("=== SCRAPING KATALOG MANHUAPLUS ===")
     manga_list_manhuaplus = scrape_manhuaplus_catalog(max_pages=max_pages)
@@ -834,7 +846,7 @@ def main():
     parser.add_argument('--source', choices=['manhuaplus', 'arenascan', 'auto'], default='auto',
                         help='Sumber data (default auto: gabungkan kedua sumber)')
     parser.add_argument('--catalog', action='store_true', help='Jalankan mode katalog (mengabaikan slug)')
-    parser.add_argument('--pages', type=int, default=8, help='Jumlah halaman katalog (default 8)')
+    parser.add_argument('--pages', type=int, default=2, help='Jumlah halaman katalog (default 8)')
     parser.add_argument('--limit', type=int, default=3, help='Jumlah chapter terbaru yang diambil di mode katalog (default 3)')
     parser.add_argument('--compare', action='store_true', help='Bandingkan data dari dua sumber untuk slug tertentu (tanpa simpan)')
     parser.add_argument('--missing', action='store_true', help='Periksa chapter yang hilang di data lokal dibandingkan dengan online')
@@ -905,7 +917,7 @@ def main():
             print(f"Source tidak dikenal: {source}. Gunakan 'manhuaplus' atau 'arenascan'.")
     else:
         # Mode katalog default: 8 halaman, 3 chapter
-        run_catalog_mode(max_pages=8, limit_ch=3)
+        run_catalog_mode(max_pages=2, limit_ch=3)
 
 if __name__ == "__main__":
     main()
