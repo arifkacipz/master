@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Slug ManhuaPlus (contoh: virus-king)'
+        description: 'Slug komik (contoh: virus-king) - kosongkan untuk mode katalog'
         required: false
         default: ''
 
@@ -28,19 +28,27 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 cloudinary
 
-      - name: Run Scraper
+      - name: Run Scraper (mode auto untuk slug tertentu)
+        if: github.event.inputs.target_slug != ''
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-          TARGET_SLUG: ${{ github.event.inputs.target_slug }}
         run: |
-          python asn/scraper.py
+          python asn/scraper.py --slug "${{ github.event.inputs.target_slug }}"
+
+      - name: Run Scraper (mode katalog default)
+        if: github.event.inputs.target_slug == ''
+        env:
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+        run: |
+          python asn/scraper.py --catalog --pages 2 --limit 3
 
       - name: Generate list.json from db
         run: python generate_list.py
 
-      # Tambahkan langkah untuk generate_stats.py
       - name: Generate stats.json (komik dengan chapter < 20)
         run: python generate_stats.py
 
