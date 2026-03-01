@@ -2,8 +2,41 @@ name: Matrix Full Scrape (3 per run - Random)
 
 on:
   workflow_dispatch:
+    inputs:
+      source:
+        description: 'Sumber slug (missing, stats, missing_fields, atau kosongkan untuk otomatis)'
+        required: false
+        default: ''
+        type: choice
+        options:
+          - ''
+          - missing
+          - stats
+          - missing_fields
+      max_chapters:
+        description: 'Batas total chapter (20, 50, 100, atau kosongkan untuk tidak ada batas)'
+        required: false
+        default: ''
+        type: choice
+        options:
+          - ''
+          - '20'
+          - '50'
+          - '100'
+      count:
+        description: 'Jumlah slug yang dipilih (1-6)'
+        required: false
+        default: '3'
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+          - '6'
   schedule:
-    - cron: '*/20 * * * *'   # Setiap 20 menit
+    - cron: '* */4 * * *'   # Setiap 20 menit
 
 concurrency:
   group: matrix-full-scrape
@@ -33,62 +66,123 @@ jobs:
             python generate_stats.py || echo "[]" > stats.json
           fi
 
-      - name: Select slugs priority from missing.json (<50) then stats.json, excluding tracked slugs
+      - name: Select slugs based on inputs
         id: select
+        env:
+          SOURCE: ${{ github.event.inputs.source }}
+          MAX_CHAPTERS: ${{ github.event.inputs.max_chapters }}
+          COUNT: ${{ github.event.inputs.count }}
         run: |
           python << EOF
           import os, json, random
+
+          # Konversi environment variable
+          source = os.environ.get('SOURCE', '')
+          max_chapters_str = os.environ.get('MAX_CHAPTERS', '')
+          count_str = os.environ.get('COUNT', '3')
+          
+          try:
+              count = int(count_str) if count_str else 3
+          except:
+              count = 3
+          count = min(max(count, 1), 3)  # batasi 1-3
 
           TRACKER_FILE = 'tracker.json'
           selected = []
           tracked_slugs = set()
 
-          # Baca tracker jika ada
+          # Baca tracker jika ada (untuk menghindari duplikat, hanya jika mode otomatis atau jika ingin tetap digunakan)
+          # Untuk manual, kita mungkin ingin mengabaikan tracker? Tergantung kebutuhan. Di sini kita tetap gunakan tracker untuk semua mode agar slug tidak pernah terpilih dua kali.
           if os.path.exists(TRACKER_FILE):
               try:
                   with open(TRACKER_FILE, 'r') as f:
                       tracker_data = json.load(f)
-                      # Asumsikan tracker berbentuk list
                       if isinstance(tracker_data, list):
                           tracked_slugs = set(tracker_data)
                       elif isinstance(tracker_data, dict):
                           tracked_slugs = set(tracker_data.keys())
-                      print(f"Ditemukan {len(tracked_slugs)} slug dalam tracker.")
+                  print(f"Tracker berisi {len(tracked_slugs)} slug.")
               except Exception as e:
                   print(f"Error membaca tracker: {e}")
 
-          # Prioritas 1: dari missing.json dengan total_online < 50
-          if os.path.exists('missing.json'):
-              try:
-                  with open('missing.json', 'r') as f:
-                      missing = json.load(f)
-                  candidates = [item['slug'] for item in missing if item.get('total_online', 0) < 50 and item['slug'] not in tracked_slugs]
-                  if candidates:
-                      num_to_select = min(len(candidates), 3)
-                      selected = random.sample(candidates, num_to_select)
-                      print(f"Memilih {len(selected)} slug dari missing.json (<50 chapter)")
-              except Exception as e:
-                  print(f"Error membaca missing.json: {e}")
+          # Fungsi untuk memuat file JSON
+          def load_json_file(filename):
+              if os.path.exists(filename):
+                  with open(filename, 'r') as f:
+                      return json.load(f)
+              return None
 
-          # Prioritas 2: jika kurang, ambil dari stats.json (juga exclude tracked)
-          if len(selected) < 3:
-              if os.path.exists('stats.json'):
-                  try:
-                      with open('stats.json', 'r') as f:
-                          stats = json.load(f)
-                      all_slugs = [item['slug'] for item in stats if 'slug' in item and item['slug'] not in selected and item['slug'] not in tracked_slugs]
-                      if all_slugs:
-                          needed = 3 - len(selected)
-                          num_to_select = min(len(all_slugs), needed)
-                          additional = random.sample(all_slugs, num_to_select)
-                          selected.extend(additional)
-                          print(f"Menambahkan {len(additional)} slug dari stats.json")
-                  except Exception as e:
-                      print(f"Error membaca stats.json: {e}")
+          # Tentukan sumber
+          if source == 'missing':
+              data = load_json_file('missing.json')
+              if data:
+                  # Filter berdasarkan max_chapters jika ada
+                  candidates = []
+                  for item in data:
+                      total = item.get('total_online', 0)
+                      if max_chapters_str and total > int(max_chapters_str):
+                          continue
+                      candidates.append(item['slug'])
+                  print(f"Memilih dari missing.json, total {len(candidates)} kandidat setelah filter.")
+              else:
+                  print("missing.json tidak ditemukan.")
+                  candidates = []
+          elif source == 'stats':
+              data = load_json_file('stats.json')
+              if data:
+                  candidates = []
+                  for item in data:
+                      total = item.get('chapterCount', 0)
+                      if max_chapters_str and total > int(max_chapters_str):
+                          continue
+                      candidates.append(item['slug'])
+                  print(f"Memilih dari stats.json, total {len(candidates)} kandidat setelah filter.")
+              else:
+                  print("stats.json tidak ditemukan.")
+                  candidates = []
+          elif source == 'missing_fields':
+              data = load_json_file('missing_fields.json')
+              if data:
+                  candidates = [item['slug'] for item in data]
+                  print(f"Memilih dari missing_fields.json, total {len(candidates)} kandidat.")
+              else:
+                  print("missing_fields.json tidak ditemukan.")
+                  candidates = []
+          else:
+              # Mode otomatis: prioritas missing.json (<50), lalu stats.json
+              candidates = []
+              # Coba missing.json
+              missing_data = load_json_file('missing.json')
+              if missing_data:
+                  candidates = [item['slug'] for item in missing_data if item.get('total_online', 0) < 50]
+                  print(f"Mode otomatis: {len(candidates)} kandidat dari missing.json (<50)")
+              if len(candidates) < count and os.path.exists('stats.json'):
+                  stats_data = load_json_file('stats.json')
+                  if stats_data:
+                      # Ambil slug dari stats yang belum ada di candidates
+                      stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item['slug'] not in candidates]
+                      # Filter berdasarkan max_chapters? Di mode otomatis kita tidak pakai max_chapters dari input, bisa ditambahkan jika perlu.
+                      # Kita bisa tambahkan filter jika max_chapters diisi, misal:
+                      if max_chapters_str:
+                          # Filter stats berdasarkan chapterCount
+                          stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item.get('chapterCount', 0) <= int(max_chapters_str) and item['slug'] not in candidates]
+                      else:
+                          stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item['slug'] not in candidates]
+                      candidates.extend(stats_slugs)
+                      print(f"Mode otomatis: menambahkan {len(stats_slugs)} dari stats.json")
 
-          print(f"Total slug terpilih: {selected}")
+          # Filter kandidat yang belum ada di tracker
+          candidates = [slug for slug in candidates if slug not in tracked_slugs]
 
-          # Update tracker: tambahkan slug yang baru dipilih
+          # Pilih secara acak sebanyak count
+          if candidates:
+              num_to_select = min(len(candidates), count)
+              selected = random.sample(candidates, num_to_select)
+              print(f"Terpilih {len(selected)} slug: {selected}")
+          else:
+              print("Tidak ada kandidat yang tersedia.")
+
+          # Update tracker dengan slug yang baru dipilih
           if selected:
               # Baca ulang tracker untuk menghindari konflik
               if os.path.exists(TRACKER_FILE):
@@ -104,10 +198,9 @@ jobs:
                       except:
                           tracked_updated = set()
               else:
-                  tracked_updated = set(tracked_slugs)  # dari awal
+                  tracked_updated = set()
 
               tracked_updated.update(selected)
-              # Simpan sebagai list
               with open(TRACKER_FILE, 'w') as f:
                   json.dump(list(tracked_updated), f, indent=2)
               print(f"Tracker diperbarui dengan {len(selected)} slug baru.")
