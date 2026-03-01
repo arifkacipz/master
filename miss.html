@@ -17,7 +17,7 @@
             -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
-            max-width: 350px; /* Diperbesar untuk menampung lebih banyak chapter */
+            max-width: 350px;
         }
         .missing-horizontal-scroll::-webkit-scrollbar {
             height: 6px;
@@ -38,14 +38,14 @@
         .table-wrapper {
             overflow-x: auto;
         }
-        /* Fix untuk tombol copy di posisi tetap */
+        /* Slug wrapper */
         .slug-wrapper {
             display: flex;
-            align-items: flex-start; /* Ubah dari center ke flex-start agar teks bisa wrap ke atas */
+            align-items: flex-start;
             justify-content: space-between;
             background: rgba(0,0,0,0.5);
             border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px; /* Sedikit lebih besar untuk tampilan wrap */
+            border-radius: 12px;
             padding: 8px 8px 8px 12px;
             min-width: 180px;
             gap: 8px;
@@ -54,8 +54,8 @@
             font-family: monospace;
             font-size: 0.75rem;
             color: #c084fc;
-            word-break: break-all; /* Membuat slug bisa wrap ke baris berikutnya */
-            white-space: normal; /* Mengizinkan wrap */
+            word-break: break-all;
+            white-space: normal;
             line-height: 1.4;
             flex: 1;
         }
@@ -70,19 +70,17 @@
             transition: all 0.2s;
             white-space: nowrap;
             flex-shrink: 0;
-            align-self: center; /* Tetap di tengah vertikal */
+            align-self: center;
         }
         .copy-btn:hover {
             background: #9333ea;
             color: white;
         }
-        /* Pastikan judul komik tidak ikut scroll horizontal */
         .judul-cell {
             min-width: 180px;
             white-space: normal;
             word-break: break-word;
         }
-        /* Responsif untuk mobile */
         @media (max-width: 640px) {
             .judul-cell {
                 min-width: 120px;
@@ -94,12 +92,20 @@
                 max-width: 200px;
             }
         }
-        /* Sticky header tabel */
         th {
             position: sticky;
             top: 0;
             background: #18181b;
             z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+        th:hover {
+            color: white;
+        }
+        .sort-indicator {
+            margin-left: 4px;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -108,14 +114,12 @@
     <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-white/5 p-4">
         <div class="container mx-auto max-w-6xl flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <!-- Tombol BACK -->
                 <button onclick="history.back()" class="text-[10px] font-black text-zinc-500 hover:text-white transition uppercase tracking-[0.2em] flex items-center gap-1">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
                     BACK
                 </button>
-                <!-- Tombol HOME -->
                 <a href="https://zepeto.club/asn/" class="text-[10px] font-black text-zinc-500 hover:text-white transition uppercase tracking-[0.2em] flex items-center gap-1">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -146,13 +150,18 @@
             </div>
         </div>
 
-        <!-- Footer -->
         <div class="mt-8 text-center text-[10px] text-zinc-600 uppercase tracking-wider">
             <span>PetoMic • Data diperbarui secara otomatis</span>
         </div>
     </main>
 
     <script>
+        // Global variables untuk sorting
+        let currentData = [];
+        let sortColumn = 'judul';
+        let sortDirection = 'asc';
+
+        // Fungsi copy dengan notifikasi
         function copyWithNotification(slug, buttonElement) {
             navigator.clipboard.writeText(slug).then(() => {
                 const toast = document.createElement('span');
@@ -173,6 +182,109 @@
             });
         }
 
+        // Fungsi untuk render tabel
+        function renderTable(data) {
+            const tableContainer = document.getElementById('table-container');
+            if (!data || data.length === 0) {
+                tableContainer.innerHTML = '<div class="text-center py-20 text-zinc-500">Tidak ada data.</div>';
+                return;
+            }
+
+            let tableHtml = `
+                <div class="table-wrapper">
+                    <table class="w-full text-sm">
+                        <thead class="text-left text-zinc-400 border-b border-white/5">
+                            <tr>
+                                <th class="pb-3 font-medium" onclick="sortTable('judul')">
+                                    Judul Komik
+                                    <span class="sort-indicator">${sortColumn === 'judul' ? (sortDirection === 'asc' ? '▲' : '▼') : ''}</span>
+                                </th>
+                                <th class="pb-3 font-medium" onclick="sortTable('slug')">
+                                    Slug
+                                    <span class="sort-indicator">${sortColumn === 'slug' ? (sortDirection === 'asc' ? '▲' : '▼') : ''}</span>
+                                </th>
+                                <th class="pb-3 font-medium text-center" onclick="sortTable('total_online')">
+                                    Online
+                                    <span class="sort-indicator">${sortColumn === 'total_online' ? (sortDirection === 'asc' ? '▲' : '▼') : ''}</span>
+                                </th>
+                                <th class="pb-3 font-medium text-center" onclick="sortTable('total_downloaded')">
+                                    Downloaded
+                                    <span class="sort-indicator">${sortColumn === 'total_downloaded' ? (sortDirection === 'asc' ? '▲' : '▼') : ''}</span>
+                                </th>
+                                <th class="pb-3 font-medium">Missing Chapters</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5">
+            `;
+
+            data.forEach((item) => {
+                const badges = item.missing && item.missing.length > 0
+                    ? item.missing.map(ch => `<span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">${ch}</span>`).join('')
+                    : '';
+
+                const missingHtml = item.missing && item.missing.length > 0
+                    ? `<div class="missing-horizontal-scroll"><div class="badge-container">${badges}</div></div>`
+                    : '<span class="text-zinc-500 text-xs">-</span>';
+
+                tableHtml += `
+                    <tr class="hover:bg-white/5 transition">
+                        <td class="py-3 pr-3">
+                            <div class="flex items-center gap-3">
+                                <img src="${item.thumb}" alt="${item.judul}" class="w-10 h-14 object-cover rounded-lg border border-white/10 flex-shrink-0" onerror="this.src='https://via.placeholder.com/50x70?text=Error'">
+                                <span class="font-medium judul-cell">${item.judul}</span>
+                            </div>
+                        </td>
+                        <td class="py-3 pr-3">
+                            <div class="slug-wrapper">
+                                <span class="slug-text">${item.slug}</span>
+                                <button onclick="copyWithNotification('${item.slug}', this)" class="copy-btn">Copy</button>
+                            </div>
+                        </td>
+                        <td class="py-3 pr-3 text-center">${item.total_online || 0}</td>
+                        <td class="py-3 pr-3 text-center">${item.total_downloaded || 0}</td>
+                        <td class="py-3">${missingHtml}</td>
+                    </tr>
+                `;
+            });
+
+            tableHtml += `
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            tableContainer.innerHTML = tableHtml;
+        }
+
+        // Fungsi sorting
+        function sortTable(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+
+            const sorted = [...currentData].sort((a, b) => {
+                let valA = a[column];
+                let valB = b[column];
+
+                if (column === 'judul' || column === 'slug') {
+                    valA = String(valA).toLowerCase();
+                    valB = String(valB).toLowerCase();
+                    if (sortDirection === 'asc') return valA.localeCompare(valB);
+                    else return valB.localeCompare(valA);
+                } else {
+                    valA = Number(valA) || 0;
+                    valB = Number(valB) || 0;
+                    if (sortDirection === 'asc') return valA - valB;
+                    else return valB - valA;
+                }
+            });
+
+            renderTable(sorted);
+        }
+
+        // Fungsi utama load data
         async function loadMissingData() {
             const timestampSpan = document.getElementById('timestamp');
             const totalCountSpan = document.getElementById('total-count');
@@ -202,6 +314,7 @@
 
                 totalCountSpan.innerText = missingList.length;
 
+                // Ambil data tambahan dari db jika perlu
                 const enhancedList = await Promise.all(missingList.map(async (item) => {
                     const slug = item.slug;
                     let judul = item.judul || slug;
@@ -217,62 +330,12 @@
                             }
                         } catch (e) {}
                     }
-
                     return { ...item, judul, thumb };
                 }));
 
-                let tableHtml = `
-                    <div class="table-wrapper">
-                        <table class="w-full text-sm">
-                            <thead class="text-left text-zinc-400 border-b border-white/5">
-                                <tr>
-                                    <th class="pb-3 font-medium">Judul Komik</th>
-                                    <th class="pb-3 font-medium">Slug</th>
-                                    <th class="pb-3 font-medium text-center">Online</th>
-                                    <th class="pb-3 font-medium text-center">Downloaded</th>
-                                    <th class="pb-3 font-medium">Missing Chapters</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-white/5">
-                `;
-
-                enhancedList.forEach((item) => {
-                    const badges = item.missing && item.missing.length > 0
-                        ? item.missing.map(ch => `<span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">${ch}</span>`).join('')
-                        : '';
-
-                    const missingHtml = item.missing && item.missing.length > 0
-                        ? `<div class="missing-horizontal-scroll"><div class="badge-container">${badges}</div></div>`
-                        : '<span class="text-zinc-500 text-xs">-</span>';
-
-                    tableHtml += `
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="py-3 pr-3">
-                                <div class="flex items-center gap-3">
-                                    <img src="${item.thumb}" alt="${item.judul}" class="w-10 h-14 object-cover rounded-lg border border-white/10 flex-shrink-0" onerror="this.src='https://via.placeholder.com/50x70?text=Error'">
-                                    <span class="font-medium judul-cell">${item.judul}</span>
-                                </div>
-                            </td>
-                            <td class="py-3 pr-3">
-                                <div class="slug-wrapper">
-                                    <span class="slug-text">${item.slug}</span>
-                                    <button onclick="copyWithNotification('${item.slug}', this)" class="copy-btn">Copy</button>
-                                </div>
-                            </td>
-                            <td class="py-3 pr-3 text-center">${item.total_online || 0}</td>
-                            <td class="py-3 pr-3 text-center">${item.total_downloaded || 0}</td>
-                            <td class="py-3">${missingHtml}</td>
-                        </tr>
-                    `;
-                });
-
-                tableHtml += `
-                            </tbody>
-                        </table>
-                    </div>
-                `;
-
-                tableContainer.innerHTML = tableHtml;
+                // Simpan ke global dan render
+                currentData = enhancedList;
+                renderTable(currentData);
 
             } catch (error) {
                 console.error(error);
