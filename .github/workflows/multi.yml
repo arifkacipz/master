@@ -36,7 +36,8 @@ on:
           - '5'
           - '6'
   schedule:
-    - cron: '0 */4 * * *'   # Setiap 4 jam sekali
+    - cron: '25 * * * *'   # Setiap 4 jam sekali
+    - cron: '40 * * * *'
 
 concurrency:
   group: matrix-full-scrape
