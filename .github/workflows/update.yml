@@ -55,6 +55,9 @@ jobs:
       - name: Generate missing.json
         run: python miss.py
 
+      - name: Check missing fields (source, online, Chs)
+        run: python check_fields.py
+
       - name: Sync and Push
         run: |
           git config --global user.name "github-actions[bot]"
