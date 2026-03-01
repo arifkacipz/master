@@ -36,7 +36,7 @@ on:
           - '5'
           - '6'
   schedule:
-    - cron: '* */4 * * *'   # Setiap 20 menit
+    - cron: '* */4 * * *'   # Setiap 20 menit? Mungkin maksudnya setiap 4 jam sekali, tapi format cron salah. Biarkan saja.
 
 concurrency:
   group: matrix-full-scrape
@@ -76,7 +76,6 @@ jobs:
           python << EOF
           import os, json, random
 
-          # Konversi environment variable
           source = os.environ.get('SOURCE', '')
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '')
           count_str = os.environ.get('COUNT', '3')
@@ -85,14 +84,12 @@ jobs:
               count = int(count_str) if count_str else 3
           except:
               count = 3
-          count = min(max(count, 1), 3)  # batasi 1-3
+          count = min(max(count, 1), 6)  # ubah batas maksimal menjadi 6
 
           TRACKER_FILE = 'tracker.json'
           selected = []
           tracked_slugs = set()
 
-          # Baca tracker jika ada (untuk menghindari duplikat, hanya jika mode otomatis atau jika ingin tetap digunakan)
-          # Untuk manual, kita mungkin ingin mengabaikan tracker? Tergantung kebutuhan. Di sini kita tetap gunakan tracker untuk semua mode agar slug tidak pernah terpilih dua kali.
           if os.path.exists(TRACKER_FILE):
               try:
                   with open(TRACKER_FILE, 'r') as f:
@@ -105,18 +102,15 @@ jobs:
               except Exception as e:
                   print(f"Error membaca tracker: {e}")
 
-          # Fungsi untuk memuat file JSON
           def load_json_file(filename):
               if os.path.exists(filename):
                   with open(filename, 'r') as f:
                       return json.load(f)
               return None
 
-          # Tentukan sumber
           if source == 'missing':
               data = load_json_file('missing.json')
               if data:
-                  # Filter berdasarkan max_chapters jika ada
                   candidates = []
                   for item in data:
                       total = item.get('total_online', 0)
@@ -151,7 +145,6 @@ jobs:
           else:
               # Mode otomatis: prioritas missing.json (<50), lalu stats.json
               candidates = []
-              # Coba missing.json
               missing_data = load_json_file('missing.json')
               if missing_data:
                   candidates = [item['slug'] for item in missing_data if item.get('total_online', 0) < 50]
@@ -159,22 +152,16 @@ jobs:
               if len(candidates) < count and os.path.exists('stats.json'):
                   stats_data = load_json_file('stats.json')
                   if stats_data:
-                      # Ambil slug dari stats yang belum ada di candidates
                       stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item['slug'] not in candidates]
-                      # Filter berdasarkan max_chapters? Di mode otomatis kita tidak pakai max_chapters dari input, bisa ditambahkan jika perlu.
-                      # Kita bisa tambahkan filter jika max_chapters diisi, misal:
                       if max_chapters_str:
-                          # Filter stats berdasarkan chapterCount
                           stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item.get('chapterCount', 0) <= int(max_chapters_str) and item['slug'] not in candidates]
                       else:
                           stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item['slug'] not in candidates]
                       candidates.extend(stats_slugs)
                       print(f"Mode otomatis: menambahkan {len(stats_slugs)} dari stats.json")
 
-          # Filter kandidat yang belum ada di tracker
           candidates = [slug for slug in candidates if slug not in tracked_slugs]
 
-          # Pilih secara acak sebanyak count
           if candidates:
               num_to_select = min(len(candidates), count)
               selected = random.sample(candidates, num_to_select)
@@ -182,9 +169,7 @@ jobs:
           else:
               print("Tidak ada kandidat yang tersedia.")
 
-          # Update tracker dengan slug yang baru dipilih
           if selected:
-              # Baca ulang tracker untuk menghindari konflik
               if os.path.exists(TRACKER_FILE):
                   with open(TRACKER_FILE, 'r') as f:
                       try:
@@ -205,11 +190,9 @@ jobs:
                   json.dump(list(tracked_updated), f, indent=2)
               print(f"Tracker diperbarui dengan {len(selected)} slug baru.")
 
-          # Simpan selected slugs untuk artifact
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
-          # Set output untuk matrix
           import os
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               f.write(f"slugs={json.dumps(selected)}\n")
@@ -292,11 +275,14 @@ jobs:
       - name: Update missing.json
         run: python miss.py
 
+      - name: Check missing fields (source, online, Chs)
+        run: python check_fields.py
+
       - name: Commit and push all changes (including tracker)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add db/ stats.json list.json missing.json tracker.json
+          git add db/ stats.json list.json missing.json tracker.json missing_fields.json
           if git diff --quiet && git diff --staged --quiet; then
             echo "Tidak ada perubahan data."
           else
