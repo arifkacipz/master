@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Chapters Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .missing-list {
+            max-height: 150px;
+            overflow-y: auto;
+            display: block;
+            padding: 5px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .badge {
+            background-color: #ff9800;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: right;
+            color: #777;
+            font-size: 12px;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+            color: #777;
+        }
+        .error {
+            color: #f44336;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Missing Chapters Report</h1>
+        <div id="content">
+            <div class="loading">Memuat data...</div>
+        </div>
+        <div class="footer">
+            Last updated: <span id="timestamp"></span>
+        </div>
+    </div>
+
+    <script>
+        async function loadMissingData() {
+            const contentDiv = document.getElementById('content');
+            const timestampSpan = document.getElementById('timestamp');
+
+            try {
+                const response = await fetch('missing.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error ${response.status}`);
+                }
+                const data = await response.json();
+
+                // Update timestamp
+                const now = new Date();
+                timestampSpan.textContent = now.toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'medium' });
+
+                if (!Array.isArray(data) || data.length === 0) {
+                    contentDiv.innerHTML = '<div class="error">✅ Tidak ada chapter missing. File missing.json kosong atau tidak valid.</div>';
+                    return;
+                }
+
+                // Build table
+                let html = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Judul</th>
+                                <th>Slug</th>
+                                <th>Total Online</th>
+                                <th>Downloaded</th>
+                                <th>Missing Chapters</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+
+                data.forEach((item, index) => {
+                    const missingList = item.missing && item.missing.length > 0
+                        ? `<div class="missing-list">${item.missing.map(ch => `<span class="badge">${ch}</span>`).join(' ')}</div>`
+                        : '<em>Tidak ada missing</em>';
+
+                    html += `
+                        <tr>
+                            <td>${index + 1}</td>
+                            <td><strong>${item.judul || item.slug}</strong></td>
+                            <td><code>${item.slug}</code></td>
+                            <td>${item.total_online || 0}</td>
+                            <td>${item.total_downloaded || 0}</td>
+                            <td>${missingList}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                        </tbody>
+                    </table>
+                `;
+                contentDiv.innerHTML = html;
+
+            } catch (error) {
+                contentDiv.innerHTML = `<div class="error">❌ Gagal memuat data: ${error.message}</div>`;
+                console.error(error);
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', loadMissingData);
+    </script>
+</body>
+</html>
