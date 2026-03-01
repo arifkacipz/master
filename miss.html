@@ -10,35 +10,59 @@
         .toast-notify {
             transition: opacity 0.3s ease-in-out;
         }
-        /* Custom scroll for missing list */
-        .missing-scroll {
-            max-height: 100px;
-            overflow-y: auto;
+        /* Horizontal scroll untuk missing chapters */
+        .missing-horizontal-scroll {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
+            max-width: 300px; /* Sesuaikan dengan kebutuhan */
         }
-        .missing-scroll::-webkit-scrollbar {
-            width: 4px;
+        .missing-horizontal-scroll::-webkit-scrollbar {
+            height: 6px;
         }
-        .missing-scroll::-webkit-scrollbar-track {
+        .missing-horizontal-scroll::-webkit-scrollbar-track {
             background: #1a1a1a;
             border-radius: 10px;
         }
-        .missing-scroll::-webkit-scrollbar-thumb {
+        .missing-horizontal-scroll::-webkit-scrollbar-thumb {
             background: #9333ea;
             border-radius: 10px;
+        }
+        /* Agar konten tidak terpotong */
+        .badge-container {
+            display: inline-flex;
+            gap: 4px;
+            padding: 2px 0;
+        }
+        /* Pastikan tabel tidak meluber */
+        .table-wrapper {
+            overflow-x: auto;
         }
     </style>
 </head>
 <body class="bg-zinc-950 text-white min-h-screen">
-    <header class="sticky top-0 z-50 bg-gradient-to-r from-purple-700 to-pink-600 p-4 shadow-lg">
+    <!-- Header baru dengan BACK dan HOME -->
+    <header class="sticky top-0 z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-white/5 p-4">
         <div class="container mx-auto max-w-6xl flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                </svg>
-                <h1 class="text-xl font-black tracking-wider">Missing Chapters Report</h1>
+            <div class="flex items-center gap-4">
+                <!-- Tombol BACK (kembali ke halaman sebelumnya) -->
+                <button onclick="history.back()" class="text-[10px] font-black text-zinc-500 hover:text-white transition uppercase tracking-[0.2em] flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    BACK
+                </button>
+                <!-- Tombol HOME mengarah ke https://zepeto.club/asn/ -->
+                <a href="https://zepeto.club/asn/" class="text-[10px] font-black text-zinc-500 hover:text-white transition uppercase tracking-[0.2em] flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    HOME
+                </a>
             </div>
+            <!-- Timestamp di sisi kanan -->
             <div class="text-sm bg-white/20 px-3 py-1 rounded-full flex items-center gap-1" id="timestamp">
                 <span>Memuat...</span>
             </div>
@@ -150,25 +174,31 @@
                     };
                 }));
 
-                // 3. Bangun tabel HTML
+                // 3. Bangun tabel HTML dengan missing chapters horizontal scroll
                 let tableHtml = `
-                    <table class="w-full text-sm">
-                        <thead class="text-left text-zinc-400 border-b border-white/5">
-                            <tr>
-                                <th class="pb-3 font-medium">Thumb</th>
-                                <th class="pb-3 font-medium">Judul</th>
-                                <th class="pb-3 font-medium">Slug</th>
-                                <th class="pb-3 font-medium text-center">Online</th>
-                                <th class="pb-3 font-medium text-center">Downloaded</th>
-                                <th class="pb-3 font-medium">Missing Chapters</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-white/5">
+                    <div class="table-wrapper">
+                        <table class="w-full text-sm">
+                            <thead class="text-left text-zinc-400 border-b border-white/5">
+                                <tr>
+                                    <th class="pb-3 font-medium">Thumb</th>
+                                    <th class="pb-3 font-medium">Judul</th>
+                                    <th class="pb-3 font-medium">Slug</th>
+                                    <th class="pb-3 font-medium text-center">Online</th>
+                                    <th class="pb-3 font-medium text-center">Downloaded</th>
+                                    <th class="pb-3 font-medium">Missing Chapters</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-white/5">
                 `;
 
                 enhancedList.forEach((item) => {
+                    // Buat badge untuk missing chapters
+                    const badges = item.missing && item.missing.length > 0
+                        ? item.missing.map(ch => `<span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">${ch}</span>`).join('')
+                        : '<span class="text-zinc-500 text-xs">-</span>';
+
                     const missingHtml = item.missing && item.missing.length > 0
-                        ? `<div class="missing-scroll flex flex-wrap gap-1">${item.missing.map(ch => `<span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">${ch}</span>`).join('')}</div>`
+                        ? `<div class="missing-horizontal-scroll"><div class="badge-container">${badges}</div></div>`
                         : '<span class="text-zinc-500 text-xs">-</span>';
 
                     tableHtml += `
@@ -191,8 +221,9 @@
                 });
 
                 tableHtml += `
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 `;
 
                 tableContainer.innerHTML = tableHtml;
