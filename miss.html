@@ -1,160 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missing Chapters Report</title>
+    <title>Missing Chapters - PetoMic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-            color: #333;
+        /* Toast notification */
+        .toast-notify {
+            transition: opacity 0.3s ease-in-out;
         }
-        h1 {
-            text-align: center;
-            color: #444;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px;
-            text-align: left;
-            position: sticky;
-            top: 0;
-        }
-        td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        .missing-list {
-            max-height: 150px;
+        /* Custom scroll for missing list */
+        .missing-scroll {
+            max-height: 100px;
             overflow-y: auto;
-            display: block;
-            padding: 5px;
-            background: #fafafa;
-            border-radius: 4px;
+            scrollbar-width: thin;
+            scrollbar-color: #9333ea #1a1a1a;
         }
-        .badge {
-            background-color: #ff9800;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
+        .missing-scroll::-webkit-scrollbar {
+            width: 4px;
         }
-        .footer {
-            margin-top: 20px;
-            text-align: right;
-            color: #777;
-            font-size: 12px;
+        .missing-scroll::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 10px;
         }
-        .loading {
-            text-align: center;
-            padding: 50px;
-            font-size: 18px;
-            color: #777;
-        }
-        .error {
-            color: #f44336;
-            text-align: center;
-            padding: 20px;
-            font-size: 16px;
+        .missing-scroll::-webkit-scrollbar-thumb {
+            background: #9333ea;
+            border-radius: 10px;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>📋 Missing Chapters Report</h1>
-        <div id="content">
-            <div class="loading">Memuat data...</div>
+<body class="bg-zinc-950 text-white min-h-screen">
+    <header class="sticky top-0 z-50 bg-gradient-to-r from-purple-700 to-pink-600 p-4 shadow-lg">
+        <div class="container mx-auto max-w-6xl flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <h1 class="text-xl font-black tracking-wider">Missing Chapters Report</h1>
+            </div>
+            <div class="text-sm bg-white/20 px-3 py-1 rounded-full flex items-center gap-1" id="timestamp">
+                <span>Memuat...</span>
+            </div>
         </div>
-        <div class="footer">
-            Last updated: <span id="timestamp"></span>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Konten utama -->
+        <div id="content" class="bg-zinc-900 rounded-3xl shadow-2xl border border-white/5 overflow-hidden">
+            <div class="p-5 bg-zinc-900/50 text-sm font-black uppercase text-zinc-500 tracking-widest border-b border-white/5 flex justify-between items-center">
+                <span>Daftar Komik dengan Chapter Hilang</span>
+                <span id="total-count" class="text-purple-500">0</span>
+            </div>
+            <div class="p-5" id="table-container">
+                <!-- Akan diisi oleh JavaScript -->
+                <div class="flex justify-center items-center py-20">
+                    <svg class="animate-spin h-8 w-8 text-purple-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <!-- Footer -->
+        <div class="mt-8 text-center text-[10px] text-zinc-600 uppercase tracking-wider">
+            <span>PetoMic • Data diperbarui secara otomatis</span>
+        </div>
+    </main>
 
     <script>
+        // ==================== FUNGSI COPY DENGAN NOTIFIKASI (sama seperti di detail.html) ====================
+        function copyWithNotification(slug, buttonElement) {
+            navigator.clipboard.writeText(slug).then(() => {
+                const toast = document.createElement('span');
+                toast.className = 'absolute -top-8 right-0 bg-green-600 text-white text-xs px-2 py-1 rounded opacity-0 toast-notify pointer-events-none';
+                toast.innerText = 'Tersalin!';
+                const parent = buttonElement.closest('.relative') || buttonElement.parentElement;
+                if (!parent.classList.contains('relative')) {
+                    parent.classList.add('relative');
+                }
+                parent.appendChild(toast);
+                setTimeout(() => toast.classList.add('opacity-100'), 10);
+                setTimeout(() => {
+                    toast.classList.remove('opacity-100');
+                    setTimeout(() => toast.remove(), 300);
+                }, 2000);
+            }).catch(err => {
+                console.error('Gagal menyalin:', err);
+            });
+        }
+
+        // ==================== FUNGSI UTAMA ====================
         async function loadMissingData() {
-            const contentDiv = document.getElementById('content');
             const timestampSpan = document.getElementById('timestamp');
+            const totalCountSpan = document.getElementById('total-count');
+            const tableContainer = document.getElementById('table-container');
 
             try {
+                // 1. Fetch missing.json
                 const response = await fetch('missing.json');
-                if (!response.ok) {
-                    throw new Error(`HTTP error ${response.status}`);
-                }
-                const data = await response.json();
+                if (!response.ok) throw new Error(`Gagal memuat missing.json (${response.status})`);
+                const missingList = await response.json();
 
                 // Update timestamp
                 const now = new Date();
-                timestampSpan.textContent = now.toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'medium' });
+                timestampSpan.innerHTML = `<span>${now.toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' })}</span>`;
 
-                if (!Array.isArray(data) || data.length === 0) {
-                    contentDiv.innerHTML = '<div class="error">✅ Tidak ada chapter missing. File missing.json kosong atau tidak valid.</div>';
+                if (!Array.isArray(missingList) || missingList.length === 0) {
+                    tableContainer.innerHTML = `
+                        <div class="text-center py-20 text-zinc-500">
+                            <svg class="w-16 h-16 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <p class="text-xl font-bold">Tidak ada chapter missing!</p>
+                            <p class="text-sm">Semua komik dalam keadaan lengkap.</p>
+                        </div>
+                    `;
+                    totalCountSpan.innerText = '0';
                     return;
                 }
 
-                // Build table
-                let html = `
-                    <table>
-                        <thead>
+                totalCountSpan.innerText = missingList.length;
+
+                // 2. Untuk setiap item, pastikan kita punya judul dan thumb (bisa dari missing.json atau fetch db)
+                const enhancedList = await Promise.all(missingList.map(async (item) => {
+                    const slug = item.slug;
+                    let judul = item.judul || slug;
+                    let thumb = item.thumb || 'https://via.placeholder.com/50x70?text=No+Image';
+
+                    // Jika judul/thumb tidak ada di missing.json, coba ambil dari file db
+                    if (!item.judul || !item.thumb) {
+                        try {
+                            const dbRes = await fetch(`db/${slug}.json`);
+                            if (dbRes.ok) {
+                                const dbData = await dbRes.json();
+                                judul = dbData.judul || judul;
+                                thumb = dbData.thumb || thumb;
+                            }
+                        } catch (e) {
+                            // Abaikan, tetap pakai default
+                        }
+                    }
+
+                    return {
+                        ...item,
+                        judul,
+                        thumb
+                    };
+                }));
+
+                // 3. Bangun tabel HTML
+                let tableHtml = `
+                    <table class="w-full text-sm">
+                        <thead class="text-left text-zinc-400 border-b border-white/5">
                             <tr>
-                                <th>No</th>
-                                <th>Judul</th>
-                                <th>Slug</th>
-                                <th>Total Online</th>
-                                <th>Downloaded</th>
-                                <th>Missing Chapters</th>
+                                <th class="pb-3 font-medium">Thumb</th>
+                                <th class="pb-3 font-medium">Judul</th>
+                                <th class="pb-3 font-medium">Slug</th>
+                                <th class="pb-3 font-medium text-center">Online</th>
+                                <th class="pb-3 font-medium text-center">Downloaded</th>
+                                <th class="pb-3 font-medium">Missing Chapters</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="divide-y divide-white/5">
                 `;
 
-                data.forEach((item, index) => {
-                    const missingList = item.missing && item.missing.length > 0
-                        ? `<div class="missing-list">${item.missing.map(ch => `<span class="badge">${ch}</span>`).join(' ')}</div>`
-                        : '<em>Tidak ada missing</em>';
+                enhancedList.forEach((item) => {
+                    const missingHtml = item.missing && item.missing.length > 0
+                        ? `<div class="missing-scroll flex flex-wrap gap-1">${item.missing.map(ch => `<span class="bg-orange-600 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">${ch}</span>`).join('')}</div>`
+                        : '<span class="text-zinc-500 text-xs">-</span>';
 
-                    html += `
-                        <tr>
-                            <td>${index + 1}</td>
-                            <td><strong>${item.judul || item.slug}</strong></td>
-                            <td><code>${item.slug}</code></td>
-                            <td>${item.total_online || 0}</td>
-                            <td>${item.total_downloaded || 0}</td>
-                            <td>${missingList}</td>
+                    tableHtml += `
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="py-3 pr-3">
+                                <img src="${item.thumb}" alt="${item.judul}" class="w-10 h-14 object-cover rounded-lg border border-white/10" onerror="this.src='https://via.placeholder.com/50x70?text=Error'">
+                            </td>
+                            <td class="py-3 pr-3 font-medium">${item.judul}</td>
+                            <td class="py-3 pr-3">
+                                <div class="flex items-center gap-2 bg-black/50 p-1 pl-3 rounded-full border border-white/10">
+                                    <code class="text-purple-400 text-xs font-mono truncate max-w-[100px]">${item.slug}</code>
+                                    <button onclick="copyWithNotification('${item.slug}', this)" class="bg-white text-black text-[10px] px-3 py-1 rounded-full font-black uppercase hover:bg-purple-500 hover:text-white transition">Copy</button>
+                                </div>
+                            </td>
+                            <td class="py-3 pr-3 text-center">${item.total_online || 0}</td>
+                            <td class="py-3 pr-3 text-center">${item.total_downloaded || 0}</td>
+                            <td class="py-3">${missingHtml}</td>
                         </tr>
                     `;
                 });
 
-                html += `
+                tableHtml += `
                         </tbody>
                     </table>
                 `;
-                contentDiv.innerHTML = html;
+
+                tableContainer.innerHTML = tableHtml;
 
             } catch (error) {
-                contentDiv.innerHTML = `<div class="error">❌ Gagal memuat data: ${error.message}</div>`;
                 console.error(error);
+                tableContainer.innerHTML = `
+                    <div class="text-center py-20 text-red-500">
+                        <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-xl font-bold">Gagal memuat data</p>
+                        <p class="text-sm">${error.message}</p>
+                    </div>
+                `;
+                timestampSpan.innerHTML = '<span>Error</span>';
+                totalCountSpan.innerText = '0';
             }
         }
 
