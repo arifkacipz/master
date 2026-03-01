@@ -36,7 +36,7 @@ on:
           - '5'
           - '6'
   schedule:
-    - cron: '* */4 * * *'   # Setiap 4 jam sekali (seharusnya 0 */4 * * *)
+    - cron: '0 */4 * * *'   # Setiap 4 jam sekali
 
 concurrency:
   group: matrix-full-scrape
@@ -74,7 +74,7 @@ jobs:
           COUNT: ${{ github.event.inputs.count }}
         run: |
           python << EOF
-          import os, json, random
+          import os, json, random, datetime
 
           source = os.environ.get('SOURCE', '')
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '')
@@ -90,6 +90,7 @@ jobs:
           selected = []
           tracked_slugs = set()
 
+          # Baca tracker jika ada (format list)
           if os.path.exists(TRACKER_FILE):
               try:
                   with open(TRACKER_FILE, 'r') as f:
@@ -97,10 +98,14 @@ jobs:
                       if isinstance(tracker_data, list):
                           tracked_slugs = set(tracker_data)
                       elif isinstance(tracker_data, dict):
+                          # Jika ternyata berbentuk dict, ambil keys-nya
                           tracked_slugs = set(tracker_data.keys())
                   print(f"Tracker berisi {len(tracked_slugs)} slug.")
               except Exception as e:
-                  print(f"Error membaca tracker: {e}")
+                  print(f"Error membaca tracker: {e}, akan memulai tracker baru.")
+                  tracked_slugs = set()
+          else:
+              print("Tracker belum ada, akan dibuat baru.")
 
           def load_json_file(filename):
               if os.path.exists(filename):
@@ -108,6 +113,7 @@ jobs:
                       return json.load(f)
               return None
 
+          # Tentukan kandidat berdasarkan sumber
           if source == 'missing':
               data = load_json_file('missing.json')
               if data:
@@ -170,8 +176,9 @@ jobs:
           else:
               print("Tidak ada kandidat yang tersedia.")
 
-          # Update tracker dengan slug yang baru dipilih
+          # Update tracker dengan slug yang baru dipilih (tambahkan ke daftar)
           if selected:
+              # Baca ulang tracker untuk memastikan tidak ada konflik
               if os.path.exists(TRACKER_FILE):
                   with open(TRACKER_FILE, 'r') as f:
                       try:
@@ -188,10 +195,18 @@ jobs:
                   tracked_updated = set()
 
               tracked_updated.update(selected)
+              # Simpan sebagai list
               with open(TRACKER_FILE, 'w') as f:
                   json.dump(list(tracked_updated), f, indent=2)
-              print(f"Tracker diperbarui dengan {len(selected)} slug baru.")
+              print(f"Tracker diperbarui dengan {len(selected)} slug baru. Total tracker sekarang: {len(tracked_updated)}")
+          else:
+              # Jika tidak ada slug dipilih, pastikan tracker.json tetap ada (mungkin kosong)
+              if not os.path.exists(TRACKER_FILE):
+                  with open(TRACKER_FILE, 'w') as f:
+                      json.dump([], f)
+                  print("Tracker dibuat kosong.")
 
+          # Simpan selected slugs untuk artifact
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
@@ -205,6 +220,12 @@ jobs:
         with:
           name: selected-slugs
           path: selected_slugs.json
+
+      - name: Upload tracker.json
+        uses: actions/upload-artifact@v4
+        with:
+          name: tracker-json
+          path: tracker.json
 
   scrape:
     needs: select-slugs
@@ -254,6 +275,12 @@ jobs:
           path: downloaded-artifacts
           pattern: db-*
           merge-multiple: true
+
+      - name: Download tracker.json
+        uses: actions/download-artifact@v4
+        with:
+          name: tracker-json
+          path: .
 
       - name: Copy to db folder
         run: |
