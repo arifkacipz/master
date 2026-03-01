@@ -52,6 +52,9 @@ jobs:
       - name: Generate stats.json (komik dengan chapter < 20)
         run: python generate_stats.py
 
+      - name: Generate missing.json
+        run: python miss.py
+
       - name: Sync and Push
         run: |
           git config --global user.name "github-actions[bot]"
