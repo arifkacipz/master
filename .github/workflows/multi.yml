@@ -36,7 +36,7 @@ on:
           - '5'
           - '6'
   schedule:
-    - cron: '* */4 * * *'   # Setiap 20 menit? Mungkin maksudnya setiap 4 jam sekali, tapi format cron salah. Biarkan saja.
+    - cron: '* */4 * * *'   # Setiap 4 jam sekali (seharusnya 0 */4 * * *)
 
 concurrency:
   group: matrix-full-scrape
@@ -84,7 +84,7 @@ jobs:
               count = int(count_str) if count_str else 3
           except:
               count = 3
-          count = min(max(count, 1), 6)  # ubah batas maksimal menjadi 6
+          count = min(max(count, 1), 6)  # batasi 1-6
 
           TRACKER_FILE = 'tracker.json'
           selected = []
@@ -160,6 +160,7 @@ jobs:
                       candidates.extend(stats_slugs)
                       print(f"Mode otomatis: menambahkan {len(stats_slugs)} dari stats.json")
 
+          # Filter kandidat yang belum ada di tracker
           candidates = [slug for slug in candidates if slug not in tracked_slugs]
 
           if candidates:
@@ -169,6 +170,7 @@ jobs:
           else:
               print("Tidak ada kandidat yang tersedia.")
 
+          # Update tracker dengan slug yang baru dipilih
           if selected:
               if os.path.exists(TRACKER_FILE):
                   with open(TRACKER_FILE, 'r') as f:
@@ -278,7 +280,7 @@ jobs:
       - name: Check missing fields (source, online, Chs)
         run: python check_fields.py
 
-      - name: Commit and push all changes (including tracker)
+      - name: Commit and push all changes (including tracker and missing_fields)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
