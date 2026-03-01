@@ -197,7 +197,7 @@ jobs:
         run: python generate_list.py
 
       - name: Update missing.json
-        run: python update_missing.py
+        run: python miss.py
 
       - name: Commit and push all changes (including tracker)
         run: |
