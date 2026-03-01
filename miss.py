@@ -8,6 +8,7 @@ def update_missing():
         return
 
     missing_list = []
+    # Membaca semua file JSON di folder db
     for filename in os.listdir(db_folder):
         if not filename.endswith('.json'):
             continue
@@ -20,7 +21,6 @@ def update_missing():
             print(f"Gagal membaca {filename}: {e}")
             continue
 
-        # Ambil informasi
         judul = data.get('judul', slug)
         thumb = data.get('thumb', '')
         online = data.get('online', 0)
@@ -33,11 +33,11 @@ def update_missing():
         # Parsing Chs menjadi list nama online
         online_names = [name.strip() for name in chs.split(',') if name.strip()] if chs else []
 
-        # Jika online == 0, mungkin data belum lengkap, lewati
         if online == 0 or not online_names:
+            # Data tidak lengkap, lewati
             continue
 
-        # Cari missing
+        # Cari chapter yang hilang
         missing_names = [name for name in online_names if name not in local_names]
 
         if missing_names:
