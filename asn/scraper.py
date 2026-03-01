@@ -7,6 +7,7 @@ import re
 import cloudinary
 import cloudinary.uploader
 import argparse
+from collections import OrderedDict
 
 # ================== KONFIGURASI CLOUDINARY ==================
 cloudinary.config(
@@ -41,13 +42,6 @@ def upload_to_cloudinary(image_url, public_id, folder="petomic_thumbs"):
         print(f"Cloudinary upload gagal: {e}")
         return image_url  # Fallback ke URL asli
 
-def save_to_db(slug, data):
-    """Simpan data ke file db/{slug}.json."""
-    os.makedirs('db', exist_ok=True)
-    path = f'db/{slug}.json'
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=4)
-
 def load_from_db(slug):
     """Load data dari file db/{slug}.json jika ada dan valid."""
     path = f'db/{slug}.json'
@@ -58,6 +52,63 @@ def load_from_db(slug):
         except:
             pass
     return None
+
+def merge_chapters_by_number(old_chapters, new_chapters):
+    """
+    Menggabungkan dua daftar chapter berdasarkan nomor chapter.
+    - Jika nomor chapter sudah ada di old, pertahankan yang lama (tidak ditimpa).
+    - Jika nomor chapter baru, tambahkan.
+    Hasil diurutkan berdasarkan nomor chapter.
+    """
+    old_dict = {}
+    for ch in old_chapters:
+        num = extract_chapter_number(ch.get('nama', ''))
+        if num is not None:
+            old_dict[num] = ch
+
+    for ch in new_chapters:
+        num = extract_chapter_number(ch.get('nama', ''))
+        if num is not None and num not in old_dict:
+            old_dict[num] = ch
+
+    merged = list(old_dict.values())
+    merged.sort(key=lambda x: extract_chapter_number(x['nama']))
+    return merged
+
+def save_to_db(slug, new_data):
+    """
+    Menyimpan data ke db/{slug}.json dengan menggabungkan chapter baru
+    dengan chapter yang sudah ada (berdasarkan nomor chapter).
+    Field `online` dan `Chs` akan diperbarui sesuai nilai di new_data.
+    """
+    os.makedirs('db', exist_ok=True)
+    path = f'db/{slug}.json'
+
+    old_data = load_from_db(slug)
+    if old_data:
+        # Gabungkan chapter
+        old_chapters = old_data.get('chapters', [])
+        new_chapters = new_data.get('chapters', [])
+        merged_chapters = merge_chapters_by_number(old_chapters, new_chapters)
+        # Pertahankan judul dan thumb dari new_data (bisa juga pilih salah satu)
+        judul = new_data.get('judul', old_data.get('judul', slug))
+        thumb = new_data.get('thumb', old_data.get('thumb', ''))
+        source = new_data.get('source', old_data.get('source', 'unknown'))
+        online = new_data.get('online', len(merged_chapters))
+        chs = new_data.get('Chs', ', '.join([ch['nama'] for ch in merged_chapters]))
+        final_data = {
+            "judul": judul,
+            "thumb": thumb,
+            "source": source,
+            "online": online,
+            "Chs": chs,
+            "chapters": merged_chapters
+        }
+    else:
+        final_data = new_data
+
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(final_data, f, indent=4)
 
 def check_image_url(url):
     """Periksa apakah URL gambar dapat diakses (HEAD request)."""
@@ -74,44 +125,7 @@ def check_chapter_health(chapter):
         return False
     return check_image_url(images[0])
 
-# ================== FUNGSI UNTUK MANHUAPLUS ==================
-def get_images_manhuaplus(chapter_url):
-    """Mengambil semua URL gambar dari halaman chapter manhuaplus."""
-    try:
-        # Ekstrak Chapter ID dari URL
-        chapter_id = chapter_url.strip('/').split('/')[-1]
-        if not chapter_id.isdigit():
-            res = requests.get(chapter_url, headers=HEADERS, timeout=20)
-            match = re.search(r'CHAPTER_ID\s*=\s*(\d+)', res.text)
-            if match:
-                chapter_id = match.group(1)
-            else:
-                return []
-
-        # Ambil data gambar via AJAX POST
-        ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
-        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
-
-        if ajax_res.status_code == 200:
-            data = ajax_res.json()
-            if data.get('status') and 'html' in data:
-                html_content = data['html']
-                list_gambar = re.findall(r'https?://cdn\.manhuaplus\.cc/[^\s"\']+', html_content)
-                # Filter duplikat dan loading.gif
-                seen = set()
-                temp_list = []
-                for img in list_gambar:
-                    img = img.strip()
-                    if "loading.gif" not in img and img not in seen:
-                        temp_list.append(img)
-                        seen.add(img)
-                temp_list.sort()
-                return temp_list
-        return []
-    except Exception as e:
-        print(f"Error get_images_manhuaplus: {e}")
-        return []
-
+# ================== FUNGSI AMBIL DAFTAR CHAPTER (TANPA GAMBAR) ==================
 def get_chapter_list_manhuaplus(link):
     """Ambil daftar chapter dari halaman detail manhuaplus (tanpa gambar)."""
     try:
@@ -157,6 +171,147 @@ def get_chapter_list_manhuaplus(link):
         print(f"Error get_chapter_list_manhuaplus: {e}")
         return []
 
+def get_chapter_list_arenascan(link):
+    """Ambil daftar chapter dari halaman detail arenascan (tanpa gambar)."""
+    try:
+        res = requests.get(link, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"Gagal mengakses {link}, status code: {res.status_code}")
+            return []
+        soup = BeautifulSoup(res.text, 'html.parser')
+        ch_list = []
+        chapterlist = soup.select_one('#chapterlist ul')
+        if chapterlist:
+            for li in chapterlist.select('li'):
+                a = li.select_one('a[href]')
+                if not a:
+                    continue
+                url = a['href']
+                chapternum = a.select_one('.chapternum')
+                nama = chapternum.get_text(strip=True) if chapternum else a.get_text(strip=True)
+                ch_list.append({"nama": nama, "url": url})
+        return ch_list
+    except Exception as e:
+        print(f"Error get_chapter_list_arenascan: {e}")
+        return []
+
+def get_merged_chapter_list(slug):
+    """Menggabungkan daftar chapter dari manhuaplus dan arenascan berdasarkan nomor chapter."""
+    merged = OrderedDict()
+    
+    manhua_list = get_chapter_list_manhuaplus(f"https://manhuaplus.org/manga/{slug}")
+    for ch in manhua_list:
+        num = extract_chapter_number(ch['nama'])
+        if num is not None:
+            if num not in merged:
+                merged[num] = ch['nama']
+    
+    arena_list = get_chapter_list_arenascan(f"https://arenascan.com/manga/{slug}/")
+    for ch in arena_list:
+        num = extract_chapter_number(ch['nama'])
+        if num is not None:
+            if num not in merged:
+                merged[num] = ch['nama']
+    
+    sorted_items = sorted(merged.items())
+    return [nama for _, nama in sorted_items]
+
+# ================== FUNGSI AMBIL GAMBAR CHAPTER ==================
+def get_images_manhuaplus(chapter_url):
+    """Mengambil semua URL gambar dari halaman chapter manhuaplus."""
+    try:
+        chapter_id = chapter_url.strip('/').split('/')[-1]
+        if not chapter_id.isdigit():
+            res = requests.get(chapter_url, headers=HEADERS, timeout=20)
+            match = re.search(r'CHAPTER_ID\s*=\s*(\d+)', res.text)
+            if match:
+                chapter_id = match.group(1)
+            else:
+                return []
+        ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
+        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
+        if ajax_res.status_code == 200:
+            data = ajax_res.json()
+            if data.get('status') and 'html' in data:
+                html_content = data['html']
+                list_gambar = re.findall(r'https?://cdn\.manhuaplus\.cc/[^\s"\']+', html_content)
+                seen = set()
+                temp_list = []
+                for img in list_gambar:
+                    img = img.strip()
+                    if "loading.gif" not in img and img not in seen:
+                        temp_list.append(img)
+                        seen.add(img)
+                temp_list.sort()
+                return temp_list
+        return []
+    except Exception as e:
+        print(f"Error get_images_manhuaplus: {e}")
+        return []
+
+def get_images_arenascan(chapter_url):
+    """Ambil semua URL gambar dari halaman chapter arenascan."""
+    try:
+        res = requests.get(chapter_url, headers=HEADERS, timeout=20)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        img_urls = []
+
+        # METODE 1: div#readerarea
+        readerarea = soup.find('div', id='readerarea')
+        if readerarea:
+            imgs = readerarea.find_all('img')
+            for img in imgs:
+                src = img.get('src') or img.get('data-src') or img.get('data-lazy-src')
+                if src and 'loading' not in src and src.startswith('http'):
+                    img_urls.append(src)
+            if not img_urls:
+                noscript = readerarea.find('noscript')
+                if noscript and noscript.string:
+                    noscript_soup = BeautifulSoup(noscript.string, 'html.parser')
+                    imgs = noscript_soup.find_all('img')
+                    for img in imgs:
+                        src = img.get('src')
+                        if src and src.startswith('http'):
+                            img_urls.append(src)
+
+        # METODE 2: ts_reader.run
+        if not img_urls:
+            script_pattern = r'ts_reader\.run\(({.*?})\);'
+            scripts = soup.find_all('script', text=re.compile(script_pattern))
+            for script in scripts:
+                match = re.search(script_pattern, script.string)
+                if match:
+                    try:
+                        data = json.loads(match.group(1))
+                        sources = data.get('sources', [])
+                        if sources:
+                            images = sources[0].get('images', [])
+                            if images:
+                                img_urls = images
+                                break
+                    except:
+                        continue
+
+        # METODE 3: fallback semua img
+        if not img_urls:
+            all_imgs = soup.find_all('img')
+            for img in all_imgs:
+                src = img.get('src') or img.get('data-src')
+                if src and 'logo' not in src and 'avatar' not in src and src.startswith('http'):
+                    img_urls.append(src)
+
+        seen = set()
+        unique = []
+        for u in img_urls:
+            if u not in seen:
+                unique.append(u)
+                seen.add(u)
+        return unique
+    except Exception as e:
+        print(f"Error get_images_arenascan: {e}")
+        return []
+
+# ================== FUNGSI MEMPROSES SATU SUMBER (DENGAN GAMBAR) ==================
 def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, save=True):
     """Memproses satu komik dari manhuaplus. Jika save=False, hanya mengembalikan data tanpa menyimpan."""
     print(f"--- ManhuaPlus memproses: {judul} ---")
@@ -188,7 +343,7 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
 
         thumb_cloud = upload_to_cloudinary(thumb_url, slug) if thumb_url else ""
 
-        # Ambil daftar chapter
+        # Ambil daftar chapter (tanpa gambar dulu)
         ch_list = []
         ul_chapter = soup.select_one('ul#myUL')
         if ul_chapter:
@@ -199,40 +354,16 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
                     nama = a.get_text(strip=True) or li.get('data', '')
                     ch_list.append({"nama": nama, "url": url})
 
-        # Cadangan: JSON-LD
-        if not ch_list:
-            scripts = soup.find_all('script', type='application/ld+json')
-            for s in scripts:
-                try:
-                    js_data = json.loads(s.string)
-                    graph = js_data.get('@graph', [js_data])
-                    for g in graph:
-                        if g.get('@type') == 'ItemList':
-                            for item in g.get('itemListElement', []):
-                                u = item.get('url')
-                                if u and '/chapters/' in u:
-                                    name = u.split('/')[-2].replace('-', ' ').title()
-                                    ch_list.append({"nama": name, "url": u})
-                except:
-                    continue
-
-        # Cadangan: dropdown
-        if not ch_list:
-            options = soup.select('select[name="nPL_list"] option')
-            for opt in options:
-                val = opt.get('value')
-                if val and "manhuaplus.org" in val:
-                    ch_list.append({"nama": opt.text.strip(), "url": val})
-
+        # Fallback jika tidak ditemukan
         if not ch_list:
             print(f"Tidak ada chapter ditemukan untuk {slug}")
             return None
 
         # Terapkan limit jika diminta (ambil chapter terbaru)
         if limit_ch:
-            ch_list = ch_list[:limit_ch]  # asumsi urutan dari website: terbaru -> terlama
+            ch_list = ch_list[:limit_ch]
 
-        # Urutan baca: dari terlama ke terbaru (untuk penyimpanan)
+        # Balik urutan menjadi terlama -> terbaru untuk pemrosesan
         ch_list.reverse()
 
         # Ambil gambar setiap chapter
@@ -248,23 +379,102 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
             print(f"Tidak ada gambar berhasil diambil untuk {slug}")
             return None
 
-        # Jika save=False, tidak perlu menggabung dengan data lama
         result = {
             "judul": judul,
-            "thumb": thumb_cloud if save else thumb_url,  # jika tidak disimpan, gunakan URL asli
+            "thumb": thumb_cloud if save else thumb_url,
             "source": "manhuaplus",
             "chapters": final_chapters
         }
 
-        if save:
-            save_to_db(slug, result)
-            print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
         return result
 
     except Exception as e:
         print(f"Gagal memproses {judul}: {e}")
         return None
 
+def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True):
+    """Memproses satu komik dari arenascan. Jika save=False, hanya mengembalikan data tanpa menyimpan."""
+    print(f"--- Arenascan memproses: {judul} ---")
+    try:
+        res = requests.get(link, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"Gagal mengakses {link}, status code: {res.status_code}")
+            return None
+        soup = BeautifulSoup(res.text, 'html.parser')
+
+        # Ambil judul dari h1
+        h1 = soup.select_one('h1.entry-title')
+        if h1:
+            judul = h1.get_text(strip=True)
+
+        # Ambil thumbnail jika belum ada
+        if not thumb_url:
+            og_img = soup.find('meta', property='og:image')
+            if og_img and og_img.get('content'):
+                thumb_url = og_img['content']
+            else:
+                img_tag = soup.select_one('.thumb img, .summary_image img')
+                if img_tag:
+                    thumb_url = img_tag.get('src') or img_tag.get('data-src')
+                if thumb_url and not thumb_url.startswith('http'):
+                    thumb_url = 'https://arenascan.com' + thumb_url
+
+        thumb_cloud = upload_to_cloudinary(thumb_url, slug) if thumb_url else ""
+
+        # Ambil daftar chapter
+        chapterlist = soup.select_one('#chapterlist ul')
+        if not chapterlist:
+            print(f"Tidak ada daftar chapter ditemukan untuk {slug}")
+            return None
+
+        ch_list = []
+        for li in chapterlist.select('li'):
+            a = li.select_one('a[href]')
+            if not a:
+                continue
+            url = a['href']
+            chapternum = a.select_one('.chapternum')
+            nama = chapternum.get_text(strip=True) if chapternum else a.get_text(strip=True)
+            ch_list.append({"nama": nama, "url": url})
+
+        if not ch_list:
+            print(f"Tidak ada chapter ditemukan untuk {slug}")
+            return None
+
+        # Terapkan limit jika diminta (ambil chapter terbaru)
+        if limit_ch:
+            ch_list = ch_list[:limit_ch]
+
+        # Balik urutan menjadi terlama -> terbaru
+        ch_list.reverse()
+
+        # Ambil gambar setiap chapter
+        final_chapters = []
+        for ch in ch_list:
+            print(f"   -> Scraping Chapter: {ch['nama']}")
+            imgs = get_images_arenascan(ch['url'])
+            if imgs:
+                final_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
+            time.sleep(0.8)
+
+        if not final_chapters:
+            print(f"Tidak ada gambar berhasil diambil untuk {slug}")
+            return None
+
+        result = {
+            "judul": judul,
+            "thumb": thumb_cloud if save else thumb_url,
+            "source": "arenascan",
+            "chapters": final_chapters
+        }
+
+        return result
+
+    except Exception as e:
+        print(f"Gagal memproses {judul}: {e}")
+        return None
+
+# ================== FUNGSI KATALOG ==================
 def scrape_manhuaplus_catalog(max_pages=10):
     """Ambil daftar manga dari halaman katalog manhuaplus."""
     base_url = "https://manhuaplus.org/all-manga/"
@@ -300,185 +510,6 @@ def scrape_manhuaplus_catalog(max_pages=10):
         time.sleep(1)
     return list_manga
 
-# ================== FUNGSI UNTUK ARENASCAN ==================
-def get_images_arenascan(chapter_url):
-    """Ambil semua URL gambar dari halaman chapter arenascan."""
-    try:
-        res = requests.get(chapter_url, headers=HEADERS, timeout=20)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        img_urls = []
-
-        # --- METODE 1: Cari langsung di div#readerarea ---
-        readerarea = soup.find('div', id='readerarea')
-        if readerarea:
-            # Cari semua tag img (mungkin sudah dimuat)
-            imgs = readerarea.find_all('img')
-            for img in imgs:
-                src = img.get('src') or img.get('data-src') or img.get('data-lazy-src')
-                if src and 'loading' not in src and src.startswith('http'):
-                    img_urls.append(src)
-
-            # Jika kosong, cari di dalam <noscript>
-            if not img_urls:
-                noscript = readerarea.find('noscript')
-                if noscript and noscript.string:
-                    noscript_soup = BeautifulSoup(noscript.string, 'html.parser')
-                    imgs = noscript_soup.find_all('img')
-                    for img in imgs:
-                        src = img.get('src')
-                        if src and src.startswith('http'):
-                            img_urls.append(src)
-
-        # --- METODE 2: Ekstrak dari ts_reader.run (jika ada) ---
-        if not img_urls:
-            script_pattern = r'ts_reader\.run\(({.*?})\);'
-            scripts = soup.find_all('script', text=re.compile(script_pattern))
-            for script in scripts:
-                match = re.search(script_pattern, script.string)
-                if match:
-                    try:
-                        data = json.loads(match.group(1))
-                        sources = data.get('sources', [])
-                        if sources:
-                            images = sources[0].get('images', [])
-                            if images:
-                                img_urls = images
-                                break
-                    except:
-                        continue
-
-        # --- METODE 3: Fallback cari semua img di halaman (jika dua metode di atas gagal) ---
-        if not img_urls:
-            all_imgs = soup.find_all('img')
-            for img in all_imgs:
-                src = img.get('src') or img.get('data-src')
-                if src and 'logo' not in src and 'avatar' not in src and src.startswith('http'):
-                    img_urls.append(src)
-
-        # Hapus duplikat dan urutkan
-        seen = set()
-        unique = []
-        for u in img_urls:
-            if u not in seen:
-                unique.append(u)
-                seen.add(u)
-        return unique
-
-    except Exception as e:
-        print(f"Error get_images_arenascan: {e}")
-        return []
-
-def get_chapter_list_arenascan(link):
-    """Ambil daftar chapter dari halaman detail arenascan (tanpa gambar)."""
-    try:
-        res = requests.get(link, headers=HEADERS, timeout=20)
-        if res.status_code != 200:
-            print(f"Gagal mengakses {link}, status code: {res.status_code}")
-            return []
-        soup = BeautifulSoup(res.text, 'html.parser')
-        ch_list = []
-        chapterlist = soup.select_one('#chapterlist ul')
-        if chapterlist:
-            for li in chapterlist.select('li'):
-                a = li.select_one('a[href]')
-                if not a:
-                    continue
-                url = a['href']
-                chapternum = a.select_one('.chapternum')
-                nama = chapternum.get_text(strip=True) if chapternum else a.get_text(strip=True)
-                ch_list.append({"nama": nama, "url": url})
-        return ch_list
-    except Exception as e:
-        print(f"Error get_chapter_list_arenascan: {e}")
-        return []
-
-def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True):
-    """Memproses satu komik dari arenascan. Jika save=False, hanya mengembalikan data tanpa menyimpan."""
-    print(f"--- Arenascan memproses: {judul} ---")
-    try:
-        res = requests.get(link, headers=HEADERS, timeout=20)
-        if res.status_code != 200:
-            print(f"Gagal mengakses {link}, status code: {res.status_code}")
-            return None
-        soup = BeautifulSoup(res.text, 'html.parser')
-
-        # Ambil judul dari h1
-        h1 = soup.select_one('h1.entry-title')
-        if h1:
-            judul = h1.get_text(strip=True)
-
-        # Ambil thumbnail jika belum ada
-        if not thumb_url:
-            og_img = soup.find('meta', property='og:image')
-            if og_img and og_img.get('content'):
-                thumb_url = og_img['content']
-            else:
-                img_tag = soup.select_one('.thumb img, .summary_image img')
-                if img_tag:
-                    thumb_url = img_tag.get('src') or img_tag.get('data-src')
-                if thumb_url and not thumb_url.startswith('http'):
-                    thumb_url = 'https://arenascan.com' + thumb_url
-
-        thumb_cloud = upload_to_cloudinary(thumb_url, slug) if thumb_url else ""
-
-        # Ambil daftar chapter dari div#chapterlist ul
-        chapterlist = soup.select_one('#chapterlist ul')
-        if not chapterlist:
-            print(f"Tidak ada daftar chapter ditemukan untuk {slug}")
-            return None
-
-        ch_list = []
-        for li in chapterlist.select('li'):
-            a = li.select_one('a[href]')
-            if not a:
-                continue
-            url = a['href']
-            # Nama chapter dari span.chapternum
-            chapternum = a.select_one('.chapternum')
-            nama = chapternum.get_text(strip=True) if chapternum else a.get_text(strip=True)
-            ch_list.append({"nama": nama, "url": url})
-
-        if not ch_list:
-            print(f"Tidak ada chapter ditemukan untuk {slug}")
-            return None
-
-        # Daftar chapter dari website: urutan terbaru -> terlama
-        # Jika ada limit, ambil chapter terbaru dulu
-        if limit_ch:
-            ch_list = ch_list[:limit_ch]  # ambil sejumlah chapter terbaru
-
-        # Balik urutan menjadi terlama -> terbaru untuk penyimpanan dan pemrosesan
-        ch_list.reverse()
-
-        # Ambil gambar setiap chapter
-        final_chapters = []
-        for ch in ch_list:
-            print(f"   -> Scraping Chapter: {ch['nama']}")
-            imgs = get_images_arenascan(ch['url'])
-            if imgs:
-                final_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
-            time.sleep(0.8)
-
-        if not final_chapters:
-            print(f"Tidak ada gambar berhasil diambil untuk {slug}")
-            return None
-
-        result = {
-            "judul": judul,
-            "thumb": thumb_cloud if save else thumb_url,
-            "source": "arenascan",
-            "chapters": final_chapters
-        }
-
-        if save:
-            save_to_db(slug, result)
-            print(f"SUKSES: {slug}.json tersimpan (total {len(final_chapters)} chapter).")
-        return result
-
-    except Exception as e:
-        print(f"Gagal memproses {judul}: {e}")
-        return None
-
 def scrape_arenascan_catalog(max_pages=10):
     """Ambil daftar manga dari halaman katalog arenascan."""
     base_url = "https://arenascan.com/manga/"
@@ -509,33 +540,53 @@ def scrape_arenascan_catalog(max_pages=10):
         time.sleep(1)
     return list_manga
 
-# ================== FUNGSI KATALOG ==================
-def run_catalog_mode(max_pages=2, limit_ch=3):
+def run_catalog_mode(max_pages=8, limit_ch=3):
     """Menjalankan scraping katalog dari kedua sumber."""
     print("=== SCRAPING KATALOG MANHUAPLUS ===")
     manga_list_manhuaplus = scrape_manhuaplus_catalog(max_pages=max_pages)
     for manga in manga_list_manhuaplus:
-        process_comic_manhuaplus(
+        slug = manga['slug']
+        merged_names = get_merged_chapter_list(slug)
+        online_count = len(merged_names)
+        chs_string = ", ".join(merged_names)
+
+        result = process_comic_manhuaplus(
             judul=manga['judul'],
             link=manga['url'],
-            slug=manga['slug'],
+            slug=slug,
             thumb_url=manga['thumb'],
             limit_ch=limit_ch,
-            save=True
+            save=False
         )
+        if result:
+            result['online'] = online_count
+            result['Chs'] = chs_string
+            # Simpan dengan merge
+            save_to_db(slug, result)
+            generate_missing_report(slug, merged_names, result['chapters'])
         time.sleep(2)
 
     print("\n=== SCRAPING KATALOG ARENASCAN ===")
     manga_list_arenascan = scrape_arenascan_catalog(max_pages=max_pages)
     for manga in manga_list_arenascan:
-        process_comic_arenascan(
+        slug = manga['slug']
+        merged_names = get_merged_chapter_list(slug)
+        online_count = len(merged_names)
+        chs_string = ", ".join(merged_names)
+
+        result = process_comic_arenascan(
             judul=manga['judul'],
             link=manga['url'],
-            slug=manga['slug'],
+            slug=slug,
             thumb_url=manga['thumb'],
             limit_ch=limit_ch,
-            save=True
+            save=False
         )
+        if result:
+            result['online'] = online_count
+            result['Chs'] = chs_string
+            save_to_db(slug, result)
+            generate_missing_report(slug, merged_names, result['chapters'])
         time.sleep(2)
 
     # Buat list.json gabungan
@@ -553,10 +604,15 @@ def run_catalog_mode(max_pages=2, limit_ch=3):
         json.dump(all_manga, f, indent=4)
     print(f"\nlist.json diperbarui dengan {len(all_manga)} manga.")
 
-# ================== FUNGSI PERBANDINGAN & MERGE (dengan source_chapter) ==================
+# ================== FUNGSI PERBANDINGAN & MERGE (MODE AUTO) ==================
 def compare_and_merge_sources(slug):
     """Ambil data dari kedua sumber, periksa kesehatan, gabungkan, dan simpan dengan informasi source_chapter."""
     print(f"\n=== MEMBANDINGKAN DAN MENGGABUNGKAN {slug} ===")
+    
+    merged_names = get_merged_chapter_list(slug)
+    online_count = len(merged_names)
+    chs_string = ", ".join(merged_names)
+
     data_manhua = process_comic_manhuaplus(
         judul=slug.replace('-', ' ').title(),
         link=f"https://manhuaplus.org/manga/{slug}",
@@ -584,16 +640,21 @@ def compare_and_merge_sources(slug):
         print("Hanya data dari arenascan tersedia, menyimpan...")
         for ch in data_arena.get('chapters', []):
             ch['source_chapter'] = 'arenascan'
+        data_arena['online'] = online_count
+        data_arena['Chs'] = chs_string
         save_to_db(slug, data_arena)
-        # Buat laporan perbandingan (hanya satu sumber)
-        compare_sources(slug)  # akan menghasilkan laporan dengan satu sumber
+        compare_sources(slug)
+        generate_missing_report(slug, merged_names, data_arena['chapters'])
         return
     if not data_arena:
         print("Hanya data dari manhuaplus tersedia, menyimpan...")
         for ch in data_manhua.get('chapters', []):
             ch['source_chapter'] = 'manhuaplus'
+        data_manhua['online'] = online_count
+        data_manhua['Chs'] = chs_string
         save_to_db(slug, data_manhua)
         compare_sources(slug)
+        generate_missing_report(slug, merged_names, data_manhua['chapters'])
         return
 
     # Kedua sumber berhasil, lakukan penggabungan dengan pemeriksaan kesehatan
@@ -631,10 +692,10 @@ def compare_and_merge_sources(slug):
                 print(f"  Chapter {num}: menggunakan arenascan (manhuaplus rusak)")
             elif health_m and health_a:
                 keep = ch_m
-                source_used = "manhuaplus"  # prefer manhuaplus
+                source_used = "manhuaplus"
                 print(f"  Chapter {num}: kedua sehat, memilih manhuaplus")
             else:
-                keep = ch_m  # keduanya rusak, tetap pilih manhuaplus
+                keep = ch_m
                 source_used = "manhuaplus"
                 print(f"  Chapter {num}: KEDUA RUSAK, memilih manhuaplus")
         elif ch_m:
@@ -645,7 +706,7 @@ def compare_and_merge_sources(slug):
                 print(f"  Chapter {num}: hanya di manhuaplus, namun RUSAK")
             else:
                 print(f"  Chapter {num}: hanya di manhuaplus (sehat)")
-        else:  # ch_a only
+        else:
             health = check_chapter_health(ch_a)
             keep = ch_a
             source_used = "arenascan"
@@ -654,13 +715,10 @@ def compare_and_merge_sources(slug):
             else:
                 print(f"  Chapter {num}: hanya di arenascan (sehat)")
 
-        # Tambahkan informasi source ke chapter
         if keep:
             keep['source_chapter'] = source_used
             merged_chapters.append(keep)
 
-    # Urutkan chapter berdasarkan nomor (sudah otomatis karena all_nums terurut)
-    # Pilih thumbnail (prefer manhuaplus)
     thumb = data_manhua.get('thumb') or data_arena.get('thumb')
     judul = data_manhua.get('judul') or data_arena.get('judul')
 
@@ -668,16 +726,18 @@ def compare_and_merge_sources(slug):
         "judul": judul,
         "thumb": thumb,
         "source": "merged",
+        "online": online_count,
+        "Chs": chs_string,
         "chapters": merged_chapters
     }
 
     save_to_db(slug, merged_data)
     print(f"Data gabungan tersimpan di db/{slug}.json (total {len(merged_chapters)} chapter)")
 
-    # Buat laporan perbandingan
     compare_sources(slug)
+    generate_missing_report(slug, merged_names, merged_chapters)
 
-# ================== FUNGSI PERBANDINGAN UNTUK LAPORAN ==================
+# ================== FUNGSI LAPORAN PERBANDINGAN ==================
 def compare_sources(slug):
     """Bandingkan data dari manhuaplus dan arenascan untuk slug tertentu (tanpa simpan) dan simpan laporan di cp/."""
     print(f"\n=== MEMBUAT LAPORAN PERBANDINGAN {slug} ===")
@@ -702,7 +762,6 @@ def compare_sources(slug):
         print("Gagal mengambil dari kedua sumber.")
         return
 
-    # Ekstrak nomor chapter
     def get_chapter_set(data):
         return {extract_chapter_number(ch['nama']) for ch in data.get('chapters', []) if extract_chapter_number(ch['nama']) is not None}
 
@@ -713,7 +772,6 @@ def compare_sources(slug):
     only_b = set_b - set_a
     common = set_a & set_b
 
-    # Simpan laporan di folder cp/
     os.makedirs('cp', exist_ok=True)
     report = {
         'slug': slug,
@@ -740,113 +798,53 @@ def compare_sources(slug):
         json.dump(report, f, indent=4)
     print(f"Laporan perbandingan tersimpan di {report_filename}")
 
-# ================== FUNGSI MISSING CHAPTER ==================
-def check_missing_chapters(slug, all_mode=False):
+# ================== FUNGSI LAPORAN MISSING ==================
+def generate_missing_report(slug, online_names, downloaded_chapters):
     """
-    Memeriksa chapter yang hilang di data lokal dibandingkan dengan sumber online.
-    Jika all_mode=True, periksa semua komik di folder db/.
+    Membandingkan daftar chapter online (online_names) dengan chapter yang berhasil di-download (downloaded_chapters)
+    dan menyimpan laporan ke missing.json di root.
     """
-    os.makedirs('cp', exist_ok=True)
+    downloaded_names = [ch['nama'] for ch in downloaded_chapters]
+    missing = [name for name in online_names if name not in downloaded_names]
 
-    if all_mode:
-        print("\n=== MEMERIKSA SEMUA KOMIK DI FOLDER db/ ===")
-        slugs = [f[:-5] for f in os.listdir('db') if f.endswith('.json')]
-        if not slugs:
-            print("Tidak ada file JSON di folder db/.")
-            return
+    if not missing:
+        return  # Tidak ada missing, tidak perlu simpan laporan
+
+    # Baca atau buat file missing.json
+    missing_file = 'missing.json'
+    if os.path.exists(missing_file):
+        with open(missing_file, 'r', encoding='utf-8') as f:
+            all_reports = json.load(f)
+    else:
         all_reports = []
-        for s in slugs:
-            print(f"\n--- Memeriksa {s} ---")
-            report = check_single_missing(s)
-            if report:
-                all_reports.append(report)
-            time.sleep(1)
-        # Simpan laporan gabungan
-        report_filename = os.path.join('cp', 'missing_all.json')
-        with open(report_filename, 'w', encoding='utf-8') as f:
-            json.dump(all_reports, f, indent=4)
-        print(f"\nLaporan semua komik tersimpan di {report_filename}")
+
+    # Cari apakah sudah ada laporan untuk slug ini
+    existing = next((r for r in all_reports if r['slug'] == slug), None)
+    if existing:
+        existing['missing'] = missing
+        existing['total_online'] = len(online_names)
+        existing['total_downloaded'] = len(downloaded_names)
     else:
-        if not slug:
-            print("Slug diperlukan untuk mode missing (atau gunakan --all)")
-            return
-        report = check_single_missing(slug)
-        if report:
-            report_filename = os.path.join('cp', f'missing_{slug}.json')
-            with open(report_filename, 'w', encoding='utf-8') as f:
-                json.dump(report, f, indent=4)
-            print(f"\nLaporan tersimpan di {report_filename}")
+        all_reports.append({
+            'slug': slug,
+            'judul': downloaded_chapters[0].get('judul', slug) if downloaded_chapters else slug,
+            'total_online': len(online_names),
+            'total_downloaded': len(downloaded_names),
+            'missing': missing
+        })
 
-def check_single_missing(slug):
-    """Periksa missing chapter untuk satu slug."""
-    local_data = load_from_db(slug)
-    if not local_data:
-        print(f"Data lokal untuk {slug} tidak ditemukan di folder db/.")
-        return None
+    with open(missing_file, 'w', encoding='utf-8') as f:
+        json.dump(all_reports, f, indent=2, ensure_ascii=False)
+    print(f"Laporan missing diperbarui di {missing_file}")
 
-    judul = local_data.get('judul', slug)
-    source_local = local_data.get('source', 'unknown')
-    chapters_local = local_data.get('chapters', [])
-    local_nums = {extract_chapter_number(ch['nama']) for ch in chapters_local if extract_chapter_number(ch['nama']) is not None}
-
-    print(f"Data lokal: {len(local_nums)} chapter")
-
-    # Ambil data online dari kedua sumber
-    data_manhua = get_chapter_list_manhuaplus(f"https://manhuaplus.org/manga/{slug}")
-    data_arena = get_chapter_list_arenascan(f"https://arenascan.com/manga/{slug}/")
-
-    online_reports = {}
-
-    if data_manhua:
-        manhua_nums = {extract_chapter_number(ch['nama']) for ch in data_manhua if extract_chapter_number(ch['nama']) is not None}
-        missing_manhua = manhua_nums - local_nums
-        print(f"ManhuaPlus online: {len(manhua_nums)} chapter, missing: {len(missing_manhua)}")
-        online_reports['manhuaplus'] = {
-            'total_online': len(manhua_nums),
-            'missing': sorted(list(missing_manhua))
-        }
-    else:
-        online_reports['manhuaplus'] = {'total_online': 0, 'missing': []}
-
-    if data_arena:
-        arena_nums = {extract_chapter_number(ch['nama']) for ch in data_arena if extract_chapter_number(ch['nama']) is not None}
-        missing_arena = arena_nums - local_nums
-        print(f"Arenascan online: {len(arena_nums)} chapter, missing: {len(missing_arena)}")
-        online_reports['arenascan'] = {
-            'total_online': len(arena_nums),
-            'missing': sorted(list(missing_arena))
-        }
-    else:
-        online_reports['arenascan'] = {'total_online': 0, 'missing': []}
-
-    report = {
-        'slug': slug,
-        'judul': judul,
-        'source_local': source_local,
-        'total_local': len(local_nums),
-        'online': online_reports
-    }
-
-    # Tampilkan ringkasan
-    print("\n--- RINGKASAN ---")
-    print(f"Judul: {judul}")
-    print(f"Source lokal: {source_local}")
-    print(f"Total chapter lokal: {len(local_nums)}")
-    if online_reports['manhuaplus']['total_online'] > 0:
-        print(f"ManhuaPlus online: {online_reports['manhuaplus']['total_online']} chapter, missing: {online_reports['manhuaplus']['missing']}")
-    if online_reports['arenascan']['total_online'] > 0:
-        print(f"Arenascan online: {online_reports['arenascan']['total_online']} chapter, missing: {online_reports['arenascan']['missing']}")
-
-    return report
-
-# ================== MAIN dengan ARGPARSE ==================
+# ================== MAIN ==================
 def main():
     parser = argparse.ArgumentParser(description='Scrape komik dari manhuaplus.org dan arenascan.com')
     parser.add_argument('--slug', help='Slug komik (contoh: nama-komik)')
     parser.add_argument('--source', choices=['manhuaplus', 'arenascan', 'auto'], default='auto',
                         help='Sumber data (default auto: gabungkan kedua sumber)')
     parser.add_argument('--catalog', action='store_true', help='Jalankan mode katalog (mengabaikan slug)')
-    parser.add_argument('--pages', type=int, default=2, help='Jumlah halaman katalog (default 8)')
+    parser.add_argument('--pages', type=int, default=8, help='Jumlah halaman katalog (default 8)')
     parser.add_argument('--limit', type=int, default=3, help='Jumlah chapter terbaru yang diambil di mode katalog (default 3)')
     parser.add_argument('--compare', action='store_true', help='Bandingkan data dari dua sumber untuk slug tertentu (tanpa simpan)')
     parser.add_argument('--missing', action='store_true', help='Periksa chapter yang hilang di data lokal dibandingkan dengan online')
@@ -854,7 +852,9 @@ def main():
     args = parser.parse_args()
 
     if args.missing:
-        check_missing_chapters(args.slug, all_mode=args.all)
+        # Untuk mode missing, kita bisa panggil fungsi terpisah atau gunakan generate_missing_report untuk semua slug
+        # Untuk sementara, beri pesan
+        print("Mode missing belum diimplementasikan di sini. Gunakan script terpisah.")
         return
 
     if args.compare:
@@ -872,52 +872,83 @@ def main():
         if args.source == 'auto':
             compare_and_merge_sources(args.slug)
         elif args.source == 'manhuaplus':
-            process_comic_manhuaplus(
+            merged_names = get_merged_chapter_list(args.slug)
+            online_count = len(merged_names)
+            chs_string = ", ".join(merged_names)
+            result = process_comic_manhuaplus(
                 judul=args.slug.replace('-', ' ').title(),
                 link=f"https://manhuaplus.org/manga/{args.slug}",
                 slug=args.slug,
                 thumb_url=None,
                 limit_ch=None,
-                save=True
+                save=False
             )
+            if result:
+                result['online'] = online_count
+                result['Chs'] = chs_string
+                save_to_db(args.slug, result)
+                generate_missing_report(args.slug, merged_names, result['chapters'])
         else:  # arenascan
-            process_comic_arenascan(
+            merged_names = get_merged_chapter_list(args.slug)
+            online_count = len(merged_names)
+            chs_string = ", ".join(merged_names)
+            result = process_comic_arenascan(
                 judul=args.slug.replace('-', ' ').title(),
                 link=f"https://arenascan.com/manga/{args.slug}/",
                 slug=args.slug,
                 thumb_url=None,
                 limit_ch=None,
-                save=True
+                save=False
             )
+            if result:
+                result['online'] = online_count
+                result['Chs'] = chs_string
+                save_to_db(args.slug, result)
+                generate_missing_report(args.slug, merged_names, result['chapters'])
         return
 
-    # Jika tidak ada argumen, gunakan environment variables (kompatibilitas ke belakang)
+    # Jika tidak ada argumen, gunakan environment variables
     target_slug = os.environ.get('TARGET_SLUG')
     source = os.environ.get('SOURCE', 'manhuaplus').lower()
     if target_slug:
         if source == 'manhuaplus':
-            process_comic_manhuaplus(
+            merged_names = get_merged_chapter_list(target_slug)
+            online_count = len(merged_names)
+            chs_string = ", ".join(merged_names)
+            result = process_comic_manhuaplus(
                 judul=target_slug.replace('-', ' ').title(),
                 link=f"https://manhuaplus.org/manga/{target_slug}",
                 slug=target_slug,
                 thumb_url=None,
                 limit_ch=None,
-                save=True
+                save=False
             )
+            if result:
+                result['online'] = online_count
+                result['Chs'] = chs_string
+                save_to_db(target_slug, result)
+                generate_missing_report(target_slug, merged_names, result['chapters'])
         elif source == 'arenascan':
-            process_comic_arenascan(
+            merged_names = get_merged_chapter_list(target_slug)
+            online_count = len(merged_names)
+            chs_string = ", ".join(merged_names)
+            result = process_comic_arenascan(
                 judul=target_slug.replace('-', ' ').title(),
                 link=f"https://arenascan.com/manga/{target_slug}/",
                 slug=target_slug,
                 thumb_url=None,
                 limit_ch=None,
-                save=True
+                save=False
             )
+            if result:
+                result['online'] = online_count
+                result['Chs'] = chs_string
+                save_to_db(target_slug, result)
+                generate_missing_report(target_slug, merged_names, result['chapters'])
         else:
             print(f"Source tidak dikenal: {source}. Gunakan 'manhuaplus' atau 'arenascan'.")
     else:
-        # Mode katalog default: 8 halaman, 3 chapter
-        run_catalog_mode(max_pages=2, limit_ch=3)
+        run_catalog_mode(max_pages=8, limit_ch=3)
 
 if __name__ == "__main__":
     main()
