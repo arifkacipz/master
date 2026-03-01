@@ -24,47 +24,99 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
       - name: Generate initial stats.json if not exists
         run: |
           if [ ! -f stats.json ]; then
             python generate_stats.py || echo "[]" > stats.json
           fi
 
-      - name: Select up to 3 random slugs from stats.json
+      - name: Select slugs priority from missing.json (<50) then stats.json, excluding tracked slugs
         id: select
         run: |
           python << EOF
           import os, json, random
 
-          STATS_FILE = 'stats.json'
+          TRACKER_FILE = 'tracker.json'
           selected = []
+          tracked_slugs = set()
 
-          if os.path.exists(STATS_FILE):
+          # Baca tracker jika ada
+          if os.path.exists(TRACKER_FILE):
               try:
-                  with open(STATS_FILE, 'r') as f:
-                      stats = json.load(f)
-                  
-                  # Mengambil semua slug dari stats.json
-                  all_slugs = [item['slug'] for item in stats if 'slug' in item]
-                  
-                  if all_slugs:
-                      # Pilih maksimal 3 slug secara acak tanpa duplikat
-                      num_to_select = min(len(all_slugs), 3)
-                      selected = random.sample(all_slugs, num_to_select)
-                      print(f"Berhasil memilih {len(selected)} slug secara acak.")
-                  else:
-                      print("Tidak ada slug ditemukan dalam stats.json")
+                  with open(TRACKER_FILE, 'r') as f:
+                      tracker_data = json.load(f)
+                      # Asumsikan tracker berbentuk list
+                      if isinstance(tracker_data, list):
+                          tracked_slugs = set(tracker_data)
+                      elif isinstance(tracker_data, dict):
+                          tracked_slugs = set(tracker_data.keys())
+                      print(f"Ditemukan {len(tracked_slugs)} slug dalam tracker.")
               except Exception as e:
-                  print(f"Terjadi kesalahan saat membaca stats.json: {e}")
-          else:
-              print("stats.json tidak ditemukan")
+                  print(f"Error membaca tracker: {e}")
 
-          # Simpan ke file untuk artifact
+          # Prioritas 1: dari missing.json dengan total_online < 50
+          if os.path.exists('missing.json'):
+              try:
+                  with open('missing.json', 'r') as f:
+                      missing = json.load(f)
+                  candidates = [item['slug'] for item in missing if item.get('total_online', 0) < 50 and item['slug'] not in tracked_slugs]
+                  if candidates:
+                      num_to_select = min(len(candidates), 3)
+                      selected = random.sample(candidates, num_to_select)
+                      print(f"Memilih {len(selected)} slug dari missing.json (<50 chapter)")
+              except Exception as e:
+                  print(f"Error membaca missing.json: {e}")
+
+          # Prioritas 2: jika kurang, ambil dari stats.json (juga exclude tracked)
+          if len(selected) < 3:
+              if os.path.exists('stats.json'):
+                  try:
+                      with open('stats.json', 'r') as f:
+                          stats = json.load(f)
+                      all_slugs = [item['slug'] for item in stats if 'slug' in item and item['slug'] not in selected and item['slug'] not in tracked_slugs]
+                      if all_slugs:
+                          needed = 3 - len(selected)
+                          num_to_select = min(len(all_slugs), needed)
+                          additional = random.sample(all_slugs, num_to_select)
+                          selected.extend(additional)
+                          print(f"Menambahkan {len(additional)} slug dari stats.json")
+                  except Exception as e:
+                      print(f"Error membaca stats.json: {e}")
+
+          print(f"Total slug terpilih: {selected}")
+
+          # Update tracker: tambahkan slug yang baru dipilih
+          if selected:
+              # Baca ulang tracker untuk menghindari konflik
+              if os.path.exists(TRACKER_FILE):
+                  with open(TRACKER_FILE, 'r') as f:
+                      try:
+                          existing = json.load(f)
+                          if isinstance(existing, list):
+                              tracked_updated = set(existing)
+                          elif isinstance(existing, dict):
+                              tracked_updated = set(existing.keys())
+                          else:
+                              tracked_updated = set()
+                      except:
+                          tracked_updated = set()
+              else:
+                  tracked_updated = set(tracked_slugs)  # dari awal
+
+              tracked_updated.update(selected)
+              # Simpan sebagai list
+              with open(TRACKER_FILE, 'w') as f:
+                  json.dump(list(tracked_updated), f, indent=2)
+              print(f"Tracker diperbarui dengan {len(selected)} slug baru.")
+
+          # Simpan selected slugs untuk artifact
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
-          # Set output untuk digunakan oleh job 'scrape'
-          # Menggunakan json.dumps untuk memastikan formatnya valid string JSON
+          # Set output untuk matrix
           import os
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               f.write(f"slugs={json.dumps(selected)}\n")
@@ -112,7 +164,7 @@ jobs:
   commit-changes:
     needs: scrape
     runs-on: ubuntu-latest
-    if: always() # Tetap jalankan commit jika ada scraper yang berhasil
+    if: always()
     steps:
       - uses: actions/checkout@v4
         with:
@@ -135,19 +187,23 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Install dependencies for missing update
+        run: pip install requests beautifulsoup4
+
       - name: Generate stats.json
         run: python generate_stats.py
 
       - name: Generate list.json
         run: python generate_list.py
 
-      - name: Commit and push all changes
+      - name: Update missing.json
+        run: python update_missing.py
+
+      - name: Commit and push all changes (including tracker)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add db/ stats.json list.json
-          # Opsional: tambahkan folder cp jika ingin menyertakan laporan perbandingan
-          # git add cp/ 
+          git add db/ stats.json list.json missing.json tracker.json
           if git diff --quiet && git diff --staged --quiet; then
             echo "Tidak ada perubahan data."
           else
