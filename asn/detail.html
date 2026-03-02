@@ -138,13 +138,13 @@
                 </div>
             `;
 
-            // ==================== TAMPILKAN KOMIK DENGAN CHAPTER < 20 ====================
+            // ==================== TAMPILKAN KOMIK DENGAN CHAPTER < 15 ====================
             if (stats.length > 0) {
-                // Filter komik dengan chapter < 20
-                const lowChapterComics = stats.filter(comic => comic.chapterCount < 20);
+                // Filter komik dengan chapter < 15
+                const lowChapterComics = stats.filter(comic => comic.chapterCount < 15);
                 if (lowChapterComics.length > 0) {
                     // Update judul dengan total komik
-                    document.getElementById('low-chapter-title').innerText = `Komik <20 Chapter = (${lowChapterComics.length})`;
+                    document.getElementById('low-chapter-title').innerText = `Komik <15 Chapter = (${lowChapterComics.length})`;
 
                     // Ambil maksimal 10 atau semua
                     const limited = lowChapterComics.slice(0, 10);
