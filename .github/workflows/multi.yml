@@ -1,4 +1,4 @@
-name: Matrix Full Scrape (3 per run - Random)
+name: Matrix Full Scrape (Random)
 
 on:
   workflow_dispatch:
@@ -27,7 +27,7 @@ on:
       count:
         description: 'Jumlah slug yang dipilih (1-20)'
         required: false
-        default: '3'
+        default: '5'
         type: choice
         options:
           - '1'
@@ -83,12 +83,12 @@ jobs:
 
           source = os.environ.get('SOURCE', '')
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '')
-          count_str = os.environ.get('COUNT', '3')
+          count_str = os.environ.get('COUNT', '5')
           
           try:
-              count = int(count_str) if count_str else 3
+              count = int(count_str) if count_str else 5
           except:
-              count = 3
+              count = 5
           count = min(max(count, 1), 20)  # batasi 1-6
 
           TRACKER_FILE = 'tracker.json'
@@ -231,7 +231,7 @@ jobs:
     strategy:
       matrix:
         slug: ${{ fromJson(needs.select-slugs.outputs.slugs) }}
-      max-parallel: 3
+      max-parallel: 20
     steps:
       - uses: actions/checkout@v4
 
