@@ -254,7 +254,7 @@
             const tableContainer = document.getElementById('table-container');
 
             try {
-                const response = await fetch('missing_fields.json');
+                const response = await fetch('../missing_fields.json');
                 if (!response.ok) throw new Error(`Gagal memuat missing_fields.json (${response.status})`);
                 const data = await response.json();
 
