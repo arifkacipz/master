@@ -23,6 +23,7 @@ on:
           - '20'
           - '50'
           - '100'
+          - '150'
       count:
         description: 'Jumlah slug yang dipilih (1-6)'
         required: false
@@ -34,10 +35,12 @@ on:
           - '3'
           - '4'
           - '5'
-          - '6'
+          - '10'
+          - '15'
+          - '20'
   schedule:
-    - cron: '25 * * * *' 
-    - cron: '45 * * * *'
+    - cron: '* * */6 * *' 
+    - cron: '* * */3 * *'
 
 concurrency:
   group: matrix-full-scrape
