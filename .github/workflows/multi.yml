@@ -38,6 +38,9 @@ on:
           - '10'
           - '15'
           - '20'
+          - '30'
+          - '40'
+          - '50'
   schedule:
     - cron: '* * */6 * *' 
     - cron: '* * */3 * *'
@@ -89,7 +92,7 @@ jobs:
               count = int(count_str) if count_str else 5
           except:
               count = 5
-          count = min(max(count, 1), 20)  # batasi 1-6
+          count = min(max(count, 1), 50)  # batasi 1-50
 
           TRACKER_FILE = 'tracker.json'
           selected = []
@@ -231,7 +234,7 @@ jobs:
     strategy:
       matrix:
         slug: ${{ fromJson(needs.select-slugs.outputs.slugs) }}
-      max-parallel: 20
+      max-parallel: 50
     steps:
       - uses: actions/checkout@v4
 
