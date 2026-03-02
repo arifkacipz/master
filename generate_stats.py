@@ -32,13 +32,13 @@ def generate_stats(db_folder='db', output_file='stats.json'):
             print(f"Error membaca {filepath}: {e}")
 
     # Filter komik dengan chapter < 20
-    low_chapter = [c for c in stats if c['chapterCount'] < 20]
+    low_chapter = [c for c in stats if c['chapterCount'] < 15]
 
     # Simpan ke file stats.json
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(low_chapter, f, indent=2, ensure_ascii=False)
 
-    print(f"Total komik dengan chapter < 20: {len(low_chapter)}")
+    print(f"Total komik dengan chapter < 15: {len(low_chapter)}")
     print(f"Data disimpan di {output_file}")
 
 if __name__ == "__main__":
