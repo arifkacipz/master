@@ -90,24 +90,6 @@
     ]
   },
   {
-    "slug": "regressed-genius-creates-mythic-items",
-    "judul": "Regressed Genius Creates Mythic Items",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "extraordinary-world-i-a-vampire",
-    "judul": "Extraordinary World! I, a vampire...",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "scoring-the-sacred-body-of-the-ancients-from-the-get-go",
     "judul": "Scoring the Sacred Body of the Ancients from the Get-go",
     "missing_fields": [
@@ -266,24 +248,6 @@
     ]
   },
   {
-    "slug": "arctic-cold-war",
-    "judul": "Arctic Cold War",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "the-evil-god-descends-i-own-great-hell",
-    "judul": "The Evil God Descends, I Own Great Hell",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "absolute-dominion",
     "judul": "Absolute Dominion",
     "missing_fields": [
@@ -400,14 +364,6 @@
     ]
   },
   {
-    "slug": "wild-night",
-    "judul": "Wild Night",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "beast-taming-starting-with-the-classic-of-mountains-and-seas-sweeping-across-the-globe",
     "judul": "Beast Taming: Starting with the Classic of Mountains and Seas, Sweeping Across the Globe",
     "missing_fields": [
@@ -433,15 +389,6 @@
     ]
   },
   {
-    "slug": "qingxu-bing",
-    "judul": "Mood Disorder",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "dungeon-architect",
     "judul": "Dungeon Architect",
     "missing_fields": [
@@ -460,14 +407,6 @@
   {
     "slug": "behold-the-perfect-villainess",
     "judul": "Behold The Perfect Villainess",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "dragon-master",
-    "judul": "Dragon Master",
     "missing_fields": [
       "online",
       "Chs"
@@ -520,24 +459,6 @@
     "slug": "healing-life-through-camping-in-another-world",
     "judul": "Healing Life Through Camping In Another World",
     "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "masters-of-lightning-knives",
-    "judul": "Masters of Lightning Knives",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "the-doomsday-ruthless-man-hoarding-trillions-of-supplies-at-the-beginning",
-    "judul": "The Doomsday Ruthless Man: Hoarding Trillions of Supplies at the Beginning",
-    "missing_fields": [
-      "source",
       "online",
       "Chs"
     ]
@@ -609,15 +530,6 @@
     ]
   },
   {
-    "slug": "space-cheon-ma-3077",
-    "judul": "Space Cheon-ma 3077",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "the-constellations-are-my-disciples001",
     "judul": "The Constellations Are My Disciples",
     "missing_fields": [
@@ -636,14 +548,6 @@
   {
     "slug": "pick-me-up",
     "judul": "Pick Me Up",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "the-white-wolfs-bride",
-    "judul": "The White Wolf’s Bride",
     "missing_fields": [
       "online",
       "Chs"
@@ -687,15 +591,6 @@
     "slug": "surviving-as-a-genius-on-borrowed-time",
     "judul": "Surviving as a Genius on Borrowed Time",
     "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "level-up-with-the-gods",
-    "judul": "Level Up with the Gods",
-    "missing_fields": [
-      "source",
       "online",
       "Chs"
     ]
@@ -841,14 +736,6 @@
     ]
   },
   {
-    "slug": "the-genius-murim-fitness-trainer",
-    "judul": "Genius Martial Arts Trainer",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "return-of-the-immortal-monk",
     "judul": "Return of the Immortal Monk",
     "missing_fields": [
@@ -885,15 +772,6 @@
     "slug": "your-sweet-breath",
     "judul": "Your Sweet Breath",
     "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "villain-to-kill5001",
-    "judul": "Villain to Kill",
-    "missing_fields": [
-      "source",
       "online",
       "Chs"
     ]
@@ -1007,15 +885,6 @@
     ]
   },
   {
-    "slug": "the-nine-heavens-swordmaster",
-    "judul": "Heavenly Inquisition Sword",
-    "missing_fields": [
-      "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
     "slug": "mythic-item-obtained4001",
     "judul": "Mythic Item Obtained",
     "missing_fields": [
@@ -1059,14 +928,6 @@
   {
     "slug": "i-m-not-that-kind-of-talent",
     "judul": "I’m Not That Kind of Talent",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "the-return-of-the-disaster-class-hero",
-    "judul": "Return of the Disaster-Class Hero",
     "missing_fields": [
       "online",
       "Chs"
@@ -1141,30 +1002,6 @@
   {
     "slug": "the-youngest-son-of-the-eunhae-merchant-group",
     "judul": "The Youngest Son of the Eunhae Merchant Group",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "start-invincible",
-    "judul": "Start Invincible",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "return-of-the-calamity-class-death-knight",
-    "judul": "Return of the Apocalypse-Class Death Knight",
-    "missing_fields": [
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "i-came-back-as-a-martial-genius",
-    "judul": "Returned as a Martial Genius",
     "missing_fields": [
       "online",
       "Chs"
@@ -1264,14 +1101,6 @@
     "judul": "The Great Ruler",
     "missing_fields": [
       "source",
-      "online",
-      "Chs"
-    ]
-  },
-  {
-    "slug": "the-villainess-just-wants-to-live-in-peace",
-    "judul": "The Villainess Just Wants to Live in Peace!",
-    "missing_fields": [
       "online",
       "Chs"
     ]
