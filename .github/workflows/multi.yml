@@ -25,7 +25,7 @@ on:
           - '100'
           - '150'
       count:
-        description: 'Jumlah slug yang dipilih (1-6)'
+        description: 'Jumlah slug yang dipilih (1-20)'
         required: false
         default: '3'
         type: choice
@@ -89,7 +89,7 @@ jobs:
               count = int(count_str) if count_str else 3
           except:
               count = 3
-          count = min(max(count, 1), 6)  # batasi 1-6
+          count = min(max(count, 1), 20)  # batasi 1-6
 
           TRACKER_FILE = 'tracker.json'
           selected = []
