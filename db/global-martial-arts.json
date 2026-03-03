@@ -1,10 +1,1563 @@
 {
     "judul": "Global Martial Arts",
     "thumb": "https://manhuaplus.org/uploads/covers/global-martial-arts.jpg",
-    "source": "manhuaplus",
+    "source": "merged",
     "online": 342,
-    "Chs": "Chapter 342, Chapter 341, Chapter 340, Chapter 339, Chapter 338, Chapter 337, Chapter 336, Chapter 335, Chapter 334, Chapter 333, Chapter 332, Chapter 331, Chapter 330, Chapter 329, Chapter 328, Chapter 327, Chapter 326, Chapter 325, Chapter 324, Chapter 323, Chapter 322, Chapter 321, Chapter 320, Chapter 319, Chapter 318, Chapter 317, Chapter 316, Chapter 315, Chapter 314, Chapter 313, Chapter 312, Chapter 311, Chapter 310, Chapter 309, Chapter 308, Chapter 307, Chapter 306, Chapter 305, Chapter 304, Chapter 303, Chapter 302, Chapter 301, Chapter 300, Chapter 299, Chapter 298, Chapter 297, Chapter 296, Chapter 295, Chapter 294, Chapter 293, Chapter 292, Chapter 291, Chapter 290, Chapter 289, Chapter 288, Chapter 287, Chapter 286, Chapter 285, Chapter 284, Chapter 283, Chapter 282, Chapter 281, Chapter 280, Chapter 279, Chapter 278, Chapter 277, Chapter 276, Chapter 275, Chapter 274, Chapter 273, Chapter 272, Chapter 271, Chapter 270, Chapter 269, Chapter 268, Chapter 267, Chapter 266, Chapter 265, Chapter 264, Chapter 263, Chapter 262, Chapter 261, Chapter 260, Chapter 259, Chapter 258, Chapter 257, Chapter 256, Chapter 255, Chapter 254, Chapter 253, Chapter 252, Chapter 251, Chapter 250, Chapter 249, Chapter 248, Chapter 247, Chapter 246, Chapter 245, Chapter 244, Chapter 243, Chapter 242, Chapter 241, Chapter 240, Chapter 239, Chapter 238, Chapter 237, Chapter 236, Chapter 235, Chapter 234, Chapter 233, Chapter 232, Chapter 231, Chapter 230, Chapter 229, Chapter 228, Chapter 227, Chapter 226, Chapter 225, Chapter 224, Chapter 223, Chapter 222, Chapter 221, Chapter 220, Chapter 219, Chapter 218, Chapter 217, Chapter 216, Chapter 215, Chapter 214, Chapter 213, Chapter 212, Chapter 211, Chapter 210, Chapter 209, Chapter 208, Chapter 207, Chapter 206, Chapter 205, Chapter 204, Chapter 203, Chapter 202, Chapter 201, Chapter 200, Chapter 199, Chapter 198, Chapter 197, Chapter 196, Chapter 195, Chapter 194, Chapter 193, Chapter 192, Chapter 191, Chapter 190, Chapter 189, Chapter 188, Chapter 187, Chapter 186, Chapter 185, Chapter 184, Chapter 183, Chapter 182, Chapter 181, Chapter 180, Chapter 179, Chapter 178, Chapter 177, Chapter 176, Chapter 175, Chapter 174, Chapter 173, Chapter 172, Chapter 171, Chapter 170, Chapter 169, Chapter 168, Chapter 167, Chapter 166, Chapter 165, Chapter 164, Chapter 163, Chapter 162, Chapter 161, Chapter 160, Chapter 159, Chapter 158, Chapter 157, Chapter 156, Chapter 155, Chapter 154, Chapter 153, Chapter 152, Chapter 151, Chapter 150, Chapter 149, Chapter 148, Chapter 147, Chapter 146, Chapter 145, Chapter 144, Chapter 143, Chapter 142, Chapter 141, Chapter 140, Chapter 139, Chapter 138, Chapter 137, Chapter 136, Chapter 135, Chapter 134, Chapter 133, Chapter 132, Chapter 131, Chapter 130, Chapter 129, Chapter 128, Chapter 127, Chapter 126, Chapter 125, Chapter 124, Chapter 123, Chapter 122, Chapter 121, Chapter 120, Chapter 119, Chapter 118, Chapter 117, Chapter 116, Chapter 115, Chapter 114, Chapter 113, Chapter 112, Chapter 111, Chapter 110, Chapter 109, Chapter 108, Chapter 107, Chapter 106, Chapter 105, Chapter 104, Chapter 103, Chapter 102, Chapter 101, Chapter 100, Chapter 99, Chapter 98, Chapter 97, Chapter 96, Chapter 95, Chapter 94, Chapter 93, Chapter 92, Chapter 91, Chapter 90, Chapter 89, Chapter 88, Chapter 87, Chapter 86, Chapter 85, Chapter 84, Chapter 83, Chapter 82, Chapter 81, Chapter 80, Chapter 79, Chapter 78, Chapter 77, Chapter 76, Chapter 75, Chapter 74, Chapter 73, Chapter 72, Chapter 71, Chapter 70, Chapter 69, Chapter 68, Chapter 67, Chapter 66, Chapter 65, Chapter 64, Chapter 63, Chapter 62, Chapter 61, Chapter 60, Chapter 59, Chapter 58, Chapter 57, Chapter 56, Chapter 55, Chapter 54, Chapter 53, Chapter 52, Chapter 51, Chapter 50, Chapter 49, Chapter 48, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57, Chapter 58, Chapter 59, Chapter 60, Chapter 61, Chapter 62, Chapter 63, Chapter 64, Chapter 65, Chapter 66, Chapter 67, Chapter 68, Chapter 69, Chapter 70, Chapter 71, Chapter 72, Chapter 73, Chapter 74, Chapter 75, Chapter 76, Chapter 77, Chapter 78, Chapter 79, Chapter 80, Chapter 81, Chapter 82, Chapter 83, Chapter 84, Chapter 85, Chapter 86, Chapter 87, Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130, Chapter 131, Chapter 132, Chapter 133, Chapter 134, Chapter 135, Chapter 136, Chapter 137, Chapter 138, Chapter 139, Chapter 140, Chapter 141, Chapter 142, Chapter 143, Chapter 144, Chapter 145, Chapter 146, Chapter 147, Chapter 148, Chapter 149, Chapter 150, Chapter 151, Chapter 152, Chapter 153, Chapter 154, Chapter 155, Chapter 156, Chapter 157, Chapter 158, Chapter 159, Chapter 160, Chapter 161, Chapter 162, Chapter 163, Chapter 164, Chapter 165, Chapter 166, Chapter 167, Chapter 168, Chapter 169, Chapter 170, Chapter 171, Chapter 172, Chapter 173, Chapter 174, Chapter 175, Chapter 176, Chapter 177, Chapter 178, Chapter 179, Chapter 180, Chapter 181, Chapter 182, Chapter 183, Chapter 184, Chapter 185, Chapter 186, Chapter 187, Chapter 188, Chapter 189, Chapter 190, Chapter 191, Chapter 192, Chapter 193, Chapter 194, Chapter 195, Chapter 196, Chapter 197, Chapter 198, Chapter 199, Chapter 200, Chapter 201, Chapter 202, Chapter 203, Chapter 204, Chapter 205, Chapter 206, Chapter 207, Chapter 208, Chapter 209, Chapter 210, Chapter 211, Chapter 212, Chapter 213, Chapter 214, Chapter 215, Chapter 216, Chapter 217, Chapter 218, Chapter 219, Chapter 220, Chapter 221, Chapter 222, Chapter 223, Chapter 224, Chapter 225, Chapter 226, Chapter 227, Chapter 228, Chapter 229, Chapter 230, Chapter 231, Chapter 232, Chapter 233, Chapter 234, Chapter 235, Chapter 236, Chapter 237, Chapter 238, Chapter 239, Chapter 240, Chapter 241, Chapter 242, Chapter 243, Chapter 244, Chapter 245, Chapter 246, Chapter 247, Chapter 248, Chapter 249, Chapter 250, Chapter 251, Chapter 252, Chapter 253, Chapter 254, Chapter 255, Chapter 256, Chapter 257, Chapter 258, Chapter 259, Chapter 260, Chapter 261, Chapter 262, Chapter 263, Chapter 264, Chapter 265, Chapter 266, Chapter 267, Chapter 268, Chapter 269, Chapter 270, Chapter 271, Chapter 272, Chapter 273, Chapter 274, Chapter 275, Chapter 276, Chapter 277, Chapter 278, Chapter 279, Chapter 280, Chapter 281, Chapter 282, Chapter 283, Chapter 284, Chapter 285, Chapter 286, Chapter 287, Chapter 288, Chapter 289, Chapter 290, Chapter 291, Chapter 292, Chapter 293, Chapter 294, Chapter 295, Chapter 296, Chapter 297, Chapter 298, Chapter 299, Chapter 300, Chapter 301, Chapter 302, Chapter 303, Chapter 304, Chapter 305, Chapter 306, Chapter 307, Chapter 308, Chapter 309, Chapter 310, Chapter 311, Chapter 312, Chapter 313, Chapter 314, Chapter 315, Chapter 316, Chapter 317, Chapter 318, Chapter 319, Chapter 320, Chapter 321, Chapter 322, Chapter 323, Chapter 324, Chapter 325, Chapter 326, Chapter 327, Chapter 328, Chapter 329, Chapter 330, Chapter 331, Chapter 332, Chapter 333, Chapter 334, Chapter 335, Chapter 336, Chapter 337, Chapter 338, Chapter 339, Chapter 340, Chapter 341, Chapter 342",
     "chapters": [
+        {
+            "nama": "Chapter 212",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-212",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/14378/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/14378/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/14378/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/14378/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/14378/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/14378/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/14378/0006.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 218",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-218",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/20401/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/20401/0007.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 219",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-219",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/20431/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/20431/0007.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 220",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-220",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/20480/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/20480/0007.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 221",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-221",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/20516/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/20516/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/20516/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/20516/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/20516/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/20516/0005.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 222",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-222",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/20550/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/20550/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/20550/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/20550/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/20550/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/20550/0005.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 223",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-223",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-18-1326279809750288.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-22-1326283963584235.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-27-1326288883915057.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-30-1326292493155577.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-34-1326296533293698.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-38-1326300444939631.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-43-1326305532424616.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-47-1326309402568240.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-51-1326313098075884.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-54-1326316260158254.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-09-57-1326319725556162.webp",
+                "https://cdn.manhuaplus.cc/2025/12/16/08-10-01-1326323231617035.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 240",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-240",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/31848/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/31848/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/31848/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/31848/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/31848/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/31848/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/31848/0006.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 241",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-241",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/32155/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/32155/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/32155/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/32155/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/32155/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/32155/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/32155/0006.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 244",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-244",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/34121/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/34121/0007.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 245",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-245",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/34255/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0008.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0009.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0010.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0011.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0012.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0013.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0014.webp",
+                "https://cdn.manhuaplus.cc/ch/34255/0015.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 246",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-246",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/34598/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0008.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0009.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0010.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0011.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0012.webp",
+                "https://cdn.manhuaplus.cc/ch/34598/0013.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 247",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-247",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/34764/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/34764/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/34764/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/34764/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/34764/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/34764/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/34764/0006.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 264",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-264",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/40914/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0008.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0009.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0010.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0011.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0012.webp",
+                "https://cdn.manhuaplus.cc/ch/40914/0013.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 265",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-265",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/41132/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0008.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0009.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0010.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0011.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0012.webp",
+                "https://cdn.manhuaplus.cc/ch/41132/0013.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 266",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-266",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/41299/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0008.webp",
+                "https://cdn.manhuaplus.cc/ch/41299/0009.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 267",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-267",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/43157/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0008.webp",
+                "https://cdn.manhuaplus.cc/ch/43157/0009.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 268",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-268",
+            "images": [
+                "https://cdn.manhuaplus.cc/ch/43437/0000.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0001.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0002.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0003.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0004.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0005.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0006.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0007.webp",
+                "https://cdn.manhuaplus.cc/ch/43437/0008.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 269",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-269",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-29-14518454591900149.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-35-14518460511566451.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-39-14518464964895569.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-43-14518469202023851.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-48-14518473512661383.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-52-14518478151166350.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-06-58-14518483389710623.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-02-14518487939126316.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-07-14518492355871830.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-11-14518496382045314.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-15-14518500548492454.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-21-14518506792862105.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-25-14518511222647655.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-30-14518515506651033.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-34-14518519961297317.webp",
+                "https://cdn.manhuaplus.cc/2024/08/19/11-07-40-14518525327611634.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 270",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-270",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/08/26/11-10-17-15123483215977376.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-10-24-15123489732833230.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-10-31-15123496353351841.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-10-39-15123504785381901.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-10-48-15123514176550459.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-10-54-15123519795631578.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-11-02-15123527483776664.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-11-07-15123533024760705.webp",
+                "https://cdn.manhuaplus.cc/2024/08/26/11-11-13-15123538322382898.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 271",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-271",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/09/03/11-20-39-15815305196717619.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-20-46-15815311276709292.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-20-51-15815317022766528.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-20-57-15815323257892044.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-02-15815327643432985.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-09-15815334540635056.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-14-15815339343134302.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-18-15815343750172970.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-23-15815348347583852.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-26-15815352170510405.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-32-15815357621397257.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-36-15815362224571922.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-42-15815367789427075.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-46-15815371834263720.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-50-15815375838722834.webp",
+                "https://cdn.manhuaplus.cc/2024/09/03/11-21-55-15815380915504038.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 272",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-272",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/09/11/11-13-00-16506045616424175.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-13-15-16506060851712868.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-13-31-16506076832690737.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-13-45-16506090905142394.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-14-00-16506106231649441.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-14-16-16506121986360920.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-14-32-16506137681748050.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-14-44-16506149639794698.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-14-52-16506157656655442.webp",
+                "https://cdn.manhuaplus.cc/2024/09/11/11-15-00-16506165936365154.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 273",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-273",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-02-17283707870530028.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-08-17283713615243777.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-13-17283718540995453.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-18-17283723964981558.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-22-17283727914178332.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-27-17283733128607205.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-32-17283738189460262.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-38-17283743858072954.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-44-17283749871154144.webp",
+                "https://cdn.manhuaplus.cc/2024/09/20/11-14-51-17283757248827420.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 274",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-274",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/09/29/11-19-47-18061652662092453.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-19-55-18061660503672945.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-03-18061668876080391.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-12-18061677854145504.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-20-18061685432767634.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-28-18061693871405862.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-37-18061703266120580.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-46-18061712193265667.webp",
+                "https://cdn.manhuaplus.cc/2024/09/29/11-20-55-18061720960908596.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 275",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-275",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/10/09/11-07-58-18924943661903103.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-08-15-18924960435102189.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-08-26-18924971921811125.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-08-39-18924984364251009.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-08-50-18924995574445553.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-09-05-18925011197078449.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-09-18-18925024265406263.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-09-27-18925032882496221.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-09-42-18925048205647251.webp",
+                "https://cdn.manhuaplus.cc/2024/10/09/11-09-49-18925055029449269.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 276",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-276",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/10/18/11-00-33-19702099037706599.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-00-41-19702106937813190.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-00-50-19702115495131422.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-00-58-19702123732425239.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-01-05-19702130947877126.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-01-15-19702141093649293.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-01-24-19702149282551305.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-01-30-19702156239776849.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-01-42-19702167299210646.webp",
+                "https://cdn.manhuaplus.cc/2024/10/18/11-01-50-19702175734334261.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 277",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-277",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/10/29/11-34-50-519802867103261.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-35-26-519838804446591.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-36-42-519915208385886.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-40-52-520165073501480.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-41-34-520206603213624.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-42-15-520248444317354.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-42-52-520284998640990.webp",
+                "https://cdn.manhuaplus.cc/2024/10/29/11-43-36-520328622660967.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 278",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-278",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/11/06/11-45-12-1211625262308577.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-45-22-1211635310766216.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-45-35-1211647756761975.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-45-43-1211656004544065.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-45-50-1211663482652431.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-45-59-1211671873501640.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-46-10-1211683027368555.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-46-17-1211690354411301.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-46-25-1211697888875802.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-46-32-1211705335971294.webp",
+                "https://cdn.manhuaplus.cc/2024/11/06/11-46-43-1211716028425111.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 279",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-279",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-12-2240264610444611.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-18-2240271418883427.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-26-2240279518487315.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-33-2240286279608619.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-39-2240292085622906.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-51-2240304122944790.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-29-57-2240309915353071.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-30-07-2240320213572506.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-30-13-2240326512788737.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-30-21-2240333592649804.webp",
+                "https://cdn.manhuaplus.cc/2024/11/18/09-30-27-2240340187938334.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 280",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-280",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/11/28/10-53-42-3109335172834728.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-53-50-3109343481097160.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-54-32-3109384913973592.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-54-40-3109392695542404.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-54-47-3109399695677129.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-54-56-3109409063058596.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-55-03-3109416344826492.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-55-11-3109424388864959.webp",
+                "https://cdn.manhuaplus.cc/2024/11/28/10-55-19-3109431929456695.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 281",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-281",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/12/08/10-49-54-3973107170885967.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-50-06-3973118929047681.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-50-13-3973126565475208.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-54-21-3973374531083291.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-54-29-3973381748414114.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-54-36-3973389293524880.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-54-45-3973397938598540.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-54-54-3973406667464381.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-55-01-3973414100444727.webp",
+                "https://cdn.manhuaplus.cc/2024/12/08/10-55-11-3973423613428473.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 282",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-282",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/12/15/11-36-57-4580730266417726.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-03-4580735694122204.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-09-4580742392324664.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-17-4580749652433599.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-22-4580755570685681.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-28-4580760886941562.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-33-4580765698612978.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-40-4580772670409526.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-47-4580779650045872.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-53-4580786304354027.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-37-59-4580792257178291.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-38-05-4580798424128098.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-38-12-4580805120886932.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-38-19-4580811663609459.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-38-24-4580817446406517.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-38-32-4580824908568269.webp",
+                "https://cdn.manhuaplus.cc/2024/12/15/11-38-39-4580832148217726.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 283",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-283",
+            "images": [
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-07-5098059611193813.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-12-5098065062018217.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-19-5098072344240835.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-29-5098082217281765.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-37-5098090151152710.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-43-5098096379562352.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-19-55-5098107872122265.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-20-05-5098118246503531.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-20-13-5098125815453809.webp",
+                "https://cdn.manhuaplus.cc/2024/12/21/11-20-20-5098132756241394.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 284",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-284",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/01/01/11-10-50-257244670606769.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-11-06-257260275368720.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-11-15-257269329893844.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-11-26-257280346164615.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-11-33-257287041823818.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-11-39-257293753180679.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-15-04-257498161760777.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-15-10-257504730947606.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-17-24-257638095332073.webp",
+                "https://cdn.manhuaplus.cc/2025/01/01/11-17-31-257645121627568.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 285",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-285",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/01/11/07-25-52-1107746730704012.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-25-58-1107752651577701.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-04-1107758705111547.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-09-1107763275558080.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-15-1107769365502819.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-21-1107775026935271.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-26-1107780274408621.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-30-1107784849989117.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-37-1107791925480741.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-43-1107797754624777.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-49-1107803645886219.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-54-1107808872314118.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-26-58-1107812700560447.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-27-02-1107816431259694.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-27-06-1107820833232884.webp",
+                "https://cdn.manhuaplus.cc/2025/01/11/07-27-11-1107825482273707.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 286",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-286",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/01/20/11-04-08-1898442777718333.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-04-24-1898458197860019.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-04-31-1898465133436939.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-04-43-1898477739507985.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-04-55-1898489360815696.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-05-40-1898534827393292.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-05-51-1898545627569422.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-05-59-1898553700877554.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-06-35-1898589663628739.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-07-24-1898638549918446.webp",
+                "https://cdn.manhuaplus.cc/2025/01/20/11-07-34-1898648428507351.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 287",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-287",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/01/27/11-41-42-2505496051303278.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-41-50-2505504180699631.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-41-57-2505511148376297.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-04-2505518525925917.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-12-2505526236489655.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-18-2505532244577233.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-24-2505538958043794.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-36-2505550410835496.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-44-2505558886614324.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-42-51-2505565488598112.webp",
+                "https://cdn.manhuaplus.cc/2025/01/27/11-43-00-2505574524298078.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 288",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-288",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/02/04/11-11-33-3194887261432449.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-11-41-3194895050752355.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-12-04-3194918943129506.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-12-25-3194939760542988.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-12-53-3194967284666515.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-13-00-3194974544329501.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-13-17-3194991461618501.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-13-34-3195008026279028.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-14-31-3195065428726891.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-14-51-3195085708212807.webp",
+                "https://cdn.manhuaplus.cc/2025/02/04/11-15-19-3195113714384145.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 290",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-290",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/02/20/10-08-29-4573503938966212.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-08-53-4573527323212773.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-09-07-4573541927373834.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-09-19-4573553303832080.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-10-38-4573632134353658.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-11-00-4573654821822212.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-11-38-4573692923413004.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-12-11-4573725395010395.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-12-38-4573752184118483.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-12-52-4573766429111240.webp",
+                "https://cdn.manhuaplus.cc/2025/02/20/10-13-18-4573792079574746.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 292",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-292",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/03/03/10-32-02-5525316150432680.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-32-17-5525331220388609.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-32-28-5525342477174796.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-32-51-5525365253904542.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-33-12-5525386506385035.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-33-32-5525406025729877.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-33-47-5525421145279806.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-33-57-5525431738561872.webp",
+                "https://cdn.manhuaplus.cc/2025/03/03/10-34-12-5525446251471405.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 293",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-293",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/03/10/11-05-27-6132121500690004.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-06-29-6132183033492856.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-06-45-6132199685146969.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-11-23-6132477781865451.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-11-40-6132494462411799.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-12-15-6132529100601234.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-14-14-6132648690242025.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-14-35-6132669074969858.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-14-57-6132691208598058.webp",
+                "https://cdn.manhuaplus.cc/2025/03/10/11-16-26-6132780953183490.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 294",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-294",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/03/17/10-08-25-6733499211676777.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-08-48-6733522249557709.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-08-58-6733532136638107.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-09-07-6733541738089490.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-09-55-6733589886808695.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-16-08-6733962870828424.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-17-00-6734014803449335.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-19-32-6734166132489080.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-19-44-6734178842488581.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-19-57-6734191473419755.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-22-13-6734327926859343.webp",
+                "https://cdn.manhuaplus.cc/2025/03/17/10-22-51-6734365399646280.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 296",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-296",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/03/30/11-04-58-7860092120485432.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-05-17-7860111081715361.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-05-32-7860126937071186.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-05-43-7860137536282348.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-05-52-7860146120521742.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-06-02-7860156585985077.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-06-17-7860171906569519.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-06-33-7860187382984807.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-06-45-7860199914870180.webp",
+                "https://cdn.manhuaplus.cc/2025/03/30/11-07-00-7860214905147526.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 298",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-298",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/04/13/11-00-22-9069416532886315.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-00-40-9069434703208792.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-00-51-9069445048056464.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-01-10-9069464810360853.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-01-30-9069484982354126.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-01-48-9069502233311999.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-02-08-9069522428292086.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-02-30-9069544023942431.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-02-46-9069560459060803.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-02-58-9069572021995596.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-03-12-9069586184798696.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-03-27-9069601312988567.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-03-41-9069615440998618.webp",
+                "https://cdn.manhuaplus.cc/2025/04/13/11-03-59-9069633055191291.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 299",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-299",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-21-9676795856848435.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-28-9676802321165601.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-32-9676806880778440.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-39-9676813722639118.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-45-9676819409058384.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-50-9676824742096790.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-43-56-9676830201997538.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-44-03-9676837313338731.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-44-10-9676844311477238.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-44-16-9676850051099102.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-44-22-9676856099978866.webp",
+                "https://cdn.manhuaplus.cc/2025/04/20/11-44-28-9676862372019239.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 300",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-300",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/04/28/10-59-38-10365372620035976.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/10-59-43-10365377078712392.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/10-59-47-10365381212773875.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/10-59-52-10365386152169987.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/10-59-57-10365391723148756.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-02-10365396912989675.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-07-10365401779790719.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-12-10365406482337896.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-17-10365411339428427.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-21-10365415949778415.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-26-10365420252612404.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-31-10365425057444304.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-36-10365430338070525.webp",
+                "https://cdn.manhuaplus.cc/2025/04/28/11-00-41-10365435304194553.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 301",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-301",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-02-690890985577400.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-08-690897179514873.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-14-690903193177979.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-20-690909325786220.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-26-690915588375401.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-32-690921701419704.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-38-690927845297387.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-44-690933153597084.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-49-690938276314147.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-40-55-690944346702325.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-00-690949296290857.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-06-690955287058577.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-12-690960978593636.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-17-690966701514447.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-22-690971714034338.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-29-690978215464655.webp",
+                "https://cdn.manhuaplus.cc/2025/05/08/10-41-34-690983666144237.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 302",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-302",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-15-1383784351006498.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-23-1383792050096739.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-30-1383799295232530.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-36-1383805283459416.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-41-1383810728363422.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-49-1383818808774798.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-08-55-1383824566437183.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-09-01-1383830425510156.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-09-06-1383835726583835.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-09-12-1383841851711682.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-10-02-1383891912668742.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-10-17-1383906392300008.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-10-21-1383910891677818.webp",
+                "https://cdn.manhuaplus.cc/2025/05/16/11-10-28-1383917202807605.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 303",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-303",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/05/21/10-42-39-1814248102244924.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-42-47-1814256312139366.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-42-54-1814263815509721.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-42-59-1814268798344237.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-05-1814274016177553.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-11-1814280840770170.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-16-1814285620505819.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-23-1814292149786367.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-28-1814297422640771.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-34-1814303448250077.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-39-1814308074051748.webp",
+                "https://cdn.manhuaplus.cc/2025/05/21/10-43-43-1814312824574085.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 304",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-304",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/05/27/10-09-29-2330658496900288.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-09-38-2330667149628210.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-09-46-2330675796917845.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-09-55-2330684673541000.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-10-05-2330694014957585.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-10-30-2330719587620475.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-10-40-2330729133320704.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-10-51-2330740273122150.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-11-00-2330748926166461.webp",
+                "https://cdn.manhuaplus.cc/2025/05/27/10-11-09-2330758748496738.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 305",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-305",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/06/03/11-14-26-2939355852826045.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-14-35-2939364513242381.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-14-43-2939372844864853.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-14-53-2939382838475778.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-15-02-2939391809211342.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-15-22-2939411763990131.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-15-30-2939419760211154.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-15-38-2939427555520894.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-15-49-2939438914787008.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-16-01-2939450898553498.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-16-27-2939476317929675.webp",
+                "https://cdn.manhuaplus.cc/2025/06/03/11-16-42-2939491617913686.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 306",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-306",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/06/08/09-58-53-3366822536333993.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/09-59-02-3366831806156208.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/09-59-12-3366841595729884.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/09-59-22-3366850951697610.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/09-59-31-3366860076392353.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/09-59-40-3366869442861198.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/09-59-50-3366879777000276.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/10-00-00-3366889688039966.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/10-00-10-3366899225799477.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/10-00-19-3366908330293927.webp",
+                "https://cdn.manhuaplus.cc/2025/06/08/10-00-33-3366922848461937.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 307",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-307",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/06/14/10-08-50-3885819427993599.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-08-57-3885825956374370.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-05-3885834619427234.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-11-3885840680921167.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-19-3885848355680118.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-25-3885854246106637.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-31-3885860549869917.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-37-3885866640275907.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-44-3885873251098730.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-48-3885877846784862.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-53-3885882359989168.webp",
+                "https://cdn.manhuaplus.cc/2025/06/14/10-09-58-3885887543093497.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 308",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-308",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/06/23/10-56-18-618882226415389.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/10-57-12-618936054273655.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/10-58-18-619002122297515.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/10-59-50-619094137994550.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/10-59-59-619103172554721.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-00-08-619111574976415.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-00-17-619121043593562.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-00-25-619128349032068.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-01-02-619165881658693.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-01-10-619174193465187.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-02-26-619249544291658.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-02-34-619257776376174.webp",
+                "https://cdn.manhuaplus.cc/2025/06/23/11-02-43-619266498109053.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 309",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-309",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/07/01/11-05-21-1310624544945692.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-05-30-1310633806490064.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-05-37-1310641051539746.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-05-45-1310648598931231.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-05-52-1310655438898666.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-05-58-1310661295747026.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-04-1310667611165319.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-10-1310673484177029.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-15-1310678896475012.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-21-1310684748440964.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-27-1310690368525163.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-32-1310695742190300.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-38-1310701870973151.webp",
+                "https://cdn.manhuaplus.cc/2025/07/01/11-06-45-1310708602667337.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 310",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-310",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-01-2087124296094820.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-11-2087134318973639.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-19-2087142630356764.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-29-2087152429181168.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-37-2087160306849730.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-44-2087167964963700.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-47-51-2087174600443312.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-48-00-2087183564238431.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-48-07-2087190669568705.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-48-13-2087196670825418.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-48-19-2087202447067700.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-48-25-2087209041241474.webp",
+                "https://cdn.manhuaplus.cc/2025/07/10/10-48-33-2087216330625216.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 311",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-311",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/07/17/10-48-32-2692016011799241.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-48-39-2692022734033782.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-48-45-2692029006937322.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-48-52-2692035391973552.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-48-58-2692041775702916.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-04-2692048161591702.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-12-2692055291754291.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-19-2692062409981160.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-27-2692070624970970.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-34-2692078103979730.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-41-2692085158254612.webp",
+                "https://cdn.manhuaplus.cc/2025/07/17/10-49-48-2692092046757233.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 312",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-312",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/07/24/10-28-41-3295624438105831.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-28-48-3295631963476137.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-28-55-3295638316810373.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-01-3295644564487844.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-07-3295650939856467.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-13-3295656626277407.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-19-3295662962398605.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-26-3295669404076912.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-33-3295676291210058.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-41-3295685181193558.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-48-3295691878819949.webp",
+                "https://cdn.manhuaplus.cc/2025/07/24/10-29-56-3295700257984581.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 313",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-313",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/08/07/10-10-50-295083328016418.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-10-55-295088588659740.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-10-59-295093006924335.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-05-295098634802209.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-10-295103308107312.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-14-295108221474158.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-19-295113197203447.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-24-295118102687386.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-29-295123269144655.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-34-295128174682210.webp",
+                "https://cdn.manhuaplus.cc/2025/08/07/10-11-39-295132696822089.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 314",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-314",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-20-816993491653003.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-25-816998628633045.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-32-817005294225910.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-36-817009880673892.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-41-817014532564127.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-46-817019330401915.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-50-817024082390014.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-09-55-817028980239275.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-10-00-817033768464794.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-10-05-817038856826831.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-10-10-817043740903011.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-10-15-817048863463117.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-10-21-817054336849279.webp",
+                "https://cdn.manhuaplus.cc/2025/08/13/11-10-27-817061010170035.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 315",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-315",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-14-1934307308617646.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-19-1934313091232192.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-26-1934319296955526.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-31-1934325093323308.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-37-1934331023070353.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-43-1934336631028290.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-49-1934342520136570.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-31-55-1934348333670135.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-32-00-1934354026375500.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-32-06-1934359848739766.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-32-12-1934365277063585.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-32-17-1934370858543709.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-32-23-1934376392207599.webp",
+                "https://cdn.manhuaplus.cc/2025/08/26/09-32-29-1934382614641332.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 316",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-316",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/04/10-32-06-2715559769365196.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-32-12-2715566273216130.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-32-19-2715572921641342.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-32-24-2715577614669058.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-32-30-2715584174931211.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-32-37-2715591227127329.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-56-21-2717014509583396.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-56-29-2717022588227095.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-56-33-2717026278641728.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-56-37-2717031019265674.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-56-43-2717036517470256.webp",
+                "https://cdn.manhuaplus.cc/2025/09/04/10-56-49-2717042872742862.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 317",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-317",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/11/11-13-54-3322867468048507.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-00-3322874081603754.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-07-3322880847947865.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-14-3322888215753893.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-27-3322900948005383.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-39-3322912717905418.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-46-3322919958251999.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-14-53-3322926545035333.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-15-03-3322936644486030.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-15-09-3322943217174114.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-15-18-3322951633593943.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-15-26-3322959993222938.webp",
+                "https://cdn.manhuaplus.cc/2025/09/11/11-15-35-3322968435797888.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 318",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-318",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/16/09-47-35-3749689093360884.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-47-40-3749693941996425.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-47-45-3749698886955205.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-47-50-3749704227004881.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-47-57-3749710688710069.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-04-3749717493152150.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-10-3749724142103353.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-17-3749730399146832.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-23-3749737244092236.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-31-3749745052507189.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-37-3749751252286256.webp",
+                "https://cdn.manhuaplus.cc/2025/09/16/09-48-45-3749759139995214.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 319",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-319",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/23/05-42-16-4339770127056975.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-42-30-4339783592754052.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-03-4339816339879923.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-22-4339835753911415.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-51-4339864787974576.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-08-4339882102405400.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-19-4339892348804885.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-31-4339904374610814.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-53-4339926901991105.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-59-4339933047952647.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-45-11-4339944587136092.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 320",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-320",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/23/05-42-58-4339811440540984.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-05-4339819146841773.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-24-4339837672815936.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-45-4339858711823332.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-43-56-4339869404513589.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-07-4339881138537905.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-12-4339886255324701.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-21-4339894910659904.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-34-4339907957723116.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-50-4339923350901400.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-44-55-4339929148527996.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-45-03-4339936425881777.webp",
+                "https://cdn.manhuaplus.cc/2025/09/23/05-45-15-4339949072631295.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 321",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-321",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-39-4791412281108518.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-42-4791416257153903.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-49-4791422537273426.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-56-4791429998666161.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-02-4791435932143517.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-08-4791441664541175.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-13-4791446983782911.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-21-4791454408775280.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-35-4791468621153397.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-48-4791481994256213.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-03-4791496925762988.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-10-4791503475454382.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-21-4791514596853213.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-37-4791531165132921.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 322",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-322",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-50-4791423305316655.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-54-4791427727073857.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-09-59-4791432840507181.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-05-4791438447409654.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-11-4791444563697136.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-17-4791450759446331.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-25-4791458536525592.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-36-4791470131891937.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-10-50-4791483346178798.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-04-4791498147884206.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-11-4791505119970268.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-19-4791512378510741.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-35-4791529214903367.webp",
+                "https://cdn.manhuaplus.cc/2025/09/28/11-11-43-4791536333325608.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 323",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-323",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-16-5223570270936289.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-20-5223574015920877.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-25-5223579014470541.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-30-5223583589408756.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-35-5223588690623248.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-38-5223592242424037.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-43-5223596858866571.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-48-5223601372263106.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-52-5223606144874412.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-12-58-5223611500955541.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-13-03-5223616550531017.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-13-08-5223621739324061.webp",
+                "https://cdn.manhuaplus.cc/2025/10/03/11-13-13-5223626906876205.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 324",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-324",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-09-5654302403466721.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-17-5654310920576843.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-23-5654316440953583.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-30-5654323797566963.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-35-5654328829742290.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-46-5654339296228145.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-51-5654344690223271.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-51-56-5654349872465328.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-01-5654354975757179.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-06-5654359938707028.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-12-5654365458707181.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-18-5654371386552747.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-24-5654377602801556.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-36-5654389919153178.webp",
+                "https://cdn.manhuaplus.cc/2025/10/08/10-52-44-5654397646308667.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 325",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-325",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/10/10/10-59-53-5827626578367552.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/10-59-57-5827630509972356.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-02-5827635480217335.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-06-5827640173466736.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-11-5827644365040453.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-15-5827649066556306.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-21-5827654511333133.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-25-5827659196349249.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-30-5827663438789165.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-34-5827667752038458.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-38-5827672235111322.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-45-5827679217972208.webp",
+                "https://cdn.manhuaplus.cc/2025/10/10/11-00-49-5827683209622089.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 326",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-326",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-05-6348438682574388.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-08-6348441890676550.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-13-6348446602839368.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-17-6348451266764336.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-22-6348455810419386.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-26-6348460113483825.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-31-6348464853103704.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-36-6348469688321325.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-41-6348474623743372.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-46-6348480241269574.webp",
+                "https://cdn.manhuaplus.cc/2025/10/16/11-40-51-6348484429354218.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 327",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-327",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/10/23/10-19-38-6948411589753206.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-19-43-6948417154376492.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-19-50-6948423709110688.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-19-57-6948430806914978.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-05-6948438348581615.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-11-6948444856645027.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-19-6948452322701050.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-25-6948459052459977.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-32-6948465883578270.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-42-6948475356226344.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-48-6948481987813295.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-20-57-6948491074495391.webp",
+                "https://cdn.manhuaplus.cc/2025/10/23/10-21-04-6948497773466268.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 328",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-328",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/10/31/11-17-39-7643092595165359.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-17-47-7643100896678350.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-17-53-7643106610890878.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-00-7643113548342376.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-07-7643120596821314.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-14-7643127569064919.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-21-7643134545305961.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-27-7643140546757704.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-33-7643146690990433.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-39-7643152626530342.webp",
+                "https://cdn.manhuaplus.cc/2025/10/31/11-18-52-7643165526887250.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 329",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-329",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/11/06/10-50-28-8159861386786482.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-50-35-8159869243519187.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-50-44-8159877560666175.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-50-51-8159884914438781.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-50-59-8159892487811177.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-51-06-8159899704437127.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-51-12-8159906215969822.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-51-22-8159915716899490.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-51-31-8159924463249133.webp",
+                "https://cdn.manhuaplus.cc/2025/11/06/10-51-40-8159934251666728.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 330",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-330",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-15-8761468606711002.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-22-8761476086191919.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-29-8761482294083199.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-36-8761489505390967.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-43-8761496760462120.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-50-8761504179951972.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-57-57-8761510454194191.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-58-02-8761516060832149.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-58-08-8761521772239956.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-58-13-8761527243660295.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-58-19-8761532895295866.webp",
+                "https://cdn.manhuaplus.cc/2025/11/13/09-58-26-8761539908070961.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 331",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-331",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-29-170807997237785.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-34-170812507926825.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-39-170817756923243.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-44-170822329768275.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-48-170826474800611.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-52-170830885457009.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-26-57-170835357377893.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-27-01-170840271743532.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-27-07-170845823571113.webp",
+                "https://cdn.manhuaplus.cc/2025/11/21/11-27-12-170850719524753.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 332",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-332",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/12/01/12-17-35-1977049865440.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-17-41-1983031018236.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-17-46-1987897082302.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-17-51-1993066851917.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-17-56-1997814303108.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-18-01-2002954164814.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-18-06-2007989817339.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-18-10-2012607740575.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-18-15-2017090716835.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-18-19-2021259365003.webp",
+                "https://cdn.manhuaplus.cc/2025/12/01/12-18-26-2028731876945.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 333",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-333",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-22-600104498684967.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-30-600111968557893.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-36-600118390053917.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-42-600124294876310.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-48-600130147237319.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-54-600136363426658.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-26-59-600141640259112.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-27-04-600146689824368.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-27-10-600152210094575.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-27-15-600157404109596.webp",
+                "https://cdn.manhuaplus.cc/2025/12/07/10-27-21-600163148635412.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 334",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-334",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/12/13/10-40-53-1119375334920932.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-41-02-1119383973106936.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-41-12-1119394110396882.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-41-23-1119404943152060.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-41-35-1119417085639873.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-41-46-1119428038738361.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-41-55-1119437178191805.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-42-03-1119445364012622.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-42-10-1119451791335289.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-42-23-1119465406451843.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-42-32-1119474568119051.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-42-41-1119482964418273.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-42-52-1119494066333170.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-43-04-1119506618485555.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-43-17-1119519287450154.webp",
+                "https://cdn.manhuaplus.cc/2025/12/13/10-43-26-1119528089043883.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 335",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-335",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/12/22/10-24-54-1896016329584466.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-24-59-1896021052654257.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-02-1896024308793422.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-06-1896027909317326.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-09-1896031259965584.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-13-1896035352221494.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-17-1896039178604809.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-21-1896042962500372.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-24-1896046562545514.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-27-1896049699014665.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-31-1896052818607456.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-34-1896055858081803.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-37-1896058980688898.webp",
+                "https://cdn.manhuaplus.cc/2025/12/22/10-25-40-1896062588027144.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 336",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-336",
+            "images": [
+                "https://cdn.manhuaplus.cc/2025/12/28/10-23-37-2414338792735933.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-23-41-2414342928253350.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-23-47-2414348866725315.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-23-50-2414352648314549.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-23-54-2414356732436693.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-00-2414362111541571.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-03-2414365620232593.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-09-2414371059107014.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-12-2414374429722074.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-16-2414377917141506.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-20-2414382717698318.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-24-2414385854570543.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-29-2414390823482121.webp",
+                "https://cdn.manhuaplus.cc/2025/12/28/10-24-38-2414399746918430.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 337",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-337",
+            "images": [
+                "https://cdn.manhuaplus.cc/2026/01/08/10-30-40-3365162506155879.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-30-47-3365169209083000.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-30-52-3365174560858550.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-30-58-3365180624295805.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-31-04-3365185817470720.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-31-13-3365194906778503.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-31-18-3365199867761416.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-31-23-3365205137381978.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-31-29-3365210964094849.webp",
+                "https://cdn.manhuaplus.cc/2026/01/08/10-31-36-3365217743204644.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 338",
+            "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-338",
+            "images": [
+                "https://cdn.manhuaplus.cc/2026/01/17/10-24-34-4142396389667017.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-24-42-4142404111576198.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-24-52-4142414223192918.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-24-59-4142421341012278.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-08-4142430223826479.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-15-4142436816799024.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-23-4142445112306092.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-32-4142454399601983.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-39-4142460919865274.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-45-4142467023085628.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-51-4142473424130307.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-25-58-4142479860303727.webp",
+                "https://cdn.manhuaplus.cc/2026/01/17/10-26-05-4142486790597893.webp"
+            ],
+            "source_chapter": "manhuaplus"
+        },
         {
             "nama": "Chapter 339",
             "url": "https://manhuaplus.org/manga/global-martial-arts/chapter-339",
