@@ -92,23 +92,10 @@ jobs:
               count = int(count_str) if count_str else 5
           except:
               count = 5
-          count = min(max(count, 1), 50)  # batasi 1-50
+          count = min(max(count, 1), 50)
 
           TRACKER_FILE = 'tracker.json'
           selected = []
-          tracked_slugs = set()
-
-          if os.path.exists(TRACKER_FILE):
-              try:
-                  with open(TRACKER_FILE, 'r') as f:
-                      tracker_data = json.load(f)
-                      if isinstance(tracker_data, list):
-                          tracked_slugs = set(tracker_data)
-                      elif isinstance(tracker_data, dict):
-                          tracked_slugs = set(tracker_data.keys())
-                  print(f"Tracker berisi {len(tracked_slugs)} slug.")
-              except Exception as e:
-                  print(f"Error membaca tracker: {e}")
 
           def load_json_file(filename):
               if os.path.exists(filename):
@@ -116,69 +103,70 @@ jobs:
                       return json.load(f)
               return None
 
-          if source == 'missing':
-              data = load_json_file('missing.json')
-              if data:
-                  candidates = []
-                  for item in data:
-                      total = item.get('total_online', 0)
-                      if max_chapters_str and total > int(max_chapters_str):
-                          continue
-                      candidates.append(item['slug'])
-                  print(f"Memilih dari missing.json, total {len(candidates)} kandidat setelah filter.")
-              else:
-                  print("missing.json tidak ditemukan.")
-                  candidates = []
-          elif source == 'stats':
-              data = load_json_file('stats.json')
-              if data:
-                  candidates = []
-                  for item in data:
-                      total = item.get('chapterCount', 0)
-                      if max_chapters_str and total > int(max_chapters_str):
-                          continue
-                      candidates.append(item['slug'])
-                  print(f"Memilih dari stats.json, total {len(candidates)} kandidat setelah filter.")
-              else:
-                  print("stats.json tidak ditemukan.")
-                  candidates = []
-          elif source == 'missing_fields':
-              data = load_json_file('missing_fields.json')
-              if data:
-                  candidates = [item['slug'] for item in data]
-                  print(f"Memilih dari missing_fields.json, total {len(candidates)} kandidat.")
-              else:
-                  print("missing_fields.json tidak ditemukan.")
-                  candidates = []
+          def filter_by_max_chapters(data, max_chapters):
+              """Filter list of dicts yang memiliki key 'total_online' atau 'chapterCount'"""
+              if not max_chapters:
+                  return data
+              max_val = int(max_chapters)
+              result = []
+              for item in data:
+                  total = item.get('total_online') or item.get('chapterCount') or 0
+                  if total <= max_val:
+                      result.append(item)
+              return result
+
+          # Urutan prioritas sumber
+          source_order = []
+          if source:
+              source_order = [source]
           else:
-              # Mode otomatis: prioritas missing.json (<50), lalu stats.json
-              candidates = []
-              missing_data = load_json_file('missing.json')
-              if missing_data:
-                  candidates = [item['slug'] for item in missing_data if item.get('total_online', 0) < 50]
-                  print(f"Mode otomatis: {len(candidates)} kandidat dari missing.json (<50)")
-              if len(candidates) < count and os.path.exists('stats.json'):
-                  stats_data = load_json_file('stats.json')
-                  if stats_data:
-                      stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item['slug'] not in candidates]
-                      if max_chapters_str:
-                          stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item.get('chapterCount', 0) <= int(max_chapters_str) and item['slug'] not in candidates]
+              source_order = ['stats', 'missing', 'missing_fields']
+
+          # Kumpulkan kandidat dari sumber-sumber secara berurutan
+          candidates = []
+          used_sources = []
+          for src in source_order:
+              if len(candidates) >= count:
+                  break
+              data = None
+              if src == 'stats':
+                  data = load_json_file('stats.json')
+                  if data:
+                      filtered = filter_by_max_chapters(data, max_chapters_str)
+                      new_slugs = [item['slug'] for item in filtered if item['slug'] not in candidates]
+                      candidates.extend(new_slugs)
+                      used_sources.append(src)
+                      print(f"Dari stats.json: {len(new_slugs)} slug baru setelah filter.")
+              elif src == 'missing':
+                  data = load_json_file('missing.json')
+                  if data:
+                      filtered = filter_by_max_chapters(data, max_chapters_str)
+                      new_slugs = [item['slug'] for item in filtered if item['slug'] not in candidates]
+                      candidates.extend(new_slugs)
+                      used_sources.append(src)
+                      print(f"Dari missing.json: {len(new_slugs)} slug baru.")
+              elif src == 'missing_fields':
+                  data = load_json_file('missing_fields.json')
+                  if data:
+                      if data and isinstance(data[0], dict):
+                          new_slugs = [item['slug'] for item in data if item['slug'] not in candidates]
                       else:
-                          stats_slugs = [item['slug'] for item in stats_data if 'slug' in item and item['slug'] not in candidates]
-                      candidates.extend(stats_slugs)
-                      print(f"Mode otomatis: menambahkan {len(stats_slugs)} dari stats.json")
+                          new_slugs = [slug for slug in data if slug not in candidates]
+                      candidates.extend(new_slugs)
+                      used_sources.append(src)
+                      print(f"Dari missing_fields.json: {len(new_slugs)} slug baru.")
+              else:
+                  print(f"Sumber tidak dikenal: {src}")
 
-          # Filter kandidat yang belum ada di tracker
-          candidates = [slug for slug in candidates if slug not in tracked_slugs]
-
+          # Batasi jumlah kandidat sesuai count
           if candidates:
               num_to_select = min(len(candidates), count)
               selected = random.sample(candidates, num_to_select)
-              print(f"Terpilih {len(selected)} slug: {selected}")
+              print(f"Terpilih {len(selected)} slug dari sumber {used_sources}: {selected}")
           else:
               print("Tidak ada kandidat yang tersedia.")
 
-          # Update tracker dengan slug yang baru dipilih
+          # Update tracker (hanya untuk logging, tidak digunakan sebagai filter)
           if selected:
               if os.path.exists(TRACKER_FILE):
                   with open(TRACKER_FILE, 'r') as f:
@@ -194,13 +182,11 @@ jobs:
                           tracked_updated = set()
               else:
                   tracked_updated = set()
-
               tracked_updated.update(selected)
               with open(TRACKER_FILE, 'w') as f:
                   json.dump(list(tracked_updated), f, indent=2)
               print(f"Tracker diperbarui dengan {len(selected)} slug baru.")
           else:
-              # Jika tidak ada slug dipilih, pastikan tracker.json tetap ada
               if not os.path.exists(TRACKER_FILE):
                   with open(TRACKER_FILE, 'w') as f:
                       json.dump([], f)
