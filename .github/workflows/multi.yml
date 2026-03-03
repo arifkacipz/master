@@ -42,7 +42,7 @@ on:
           - '40'
           - '50'
   schedule:
-    - cron: '* * */6 * *' 
+    - cron: '* * */6 * *'
     - cron: '* * */3 * *'
 
 concurrency:
@@ -87,7 +87,7 @@ jobs:
           source = os.environ.get('SOURCE', '')
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '')
           count_str = os.environ.get('COUNT', '5')
-          
+
           try:
               count = int(count_str) if count_str else 5
           except:
@@ -122,7 +122,6 @@ jobs:
           else:
               source_order = ['stats', 'missing_fields', 'missing']
 
-          # Kumpulkan kandidat dari sumber-sumber secara berurutan
           candidates = []
           used_sources = []
           for src in source_order:
@@ -139,15 +138,30 @@ jobs:
                       print(f"Dari stats.json: {len(new_slugs)} slug baru setelah filter.")
               elif src == 'missing_fields':
                   data = load_json_file('missing_fields.json')
-                  if data:
-                      # missing_fields bisa berisi list of dict atau list of string
-                      if data and isinstance(data[0], dict):
-                          new_slugs = [item['slug'] for item in data if item['slug'] not in candidates]
+                  print(f"missing_fields.json loaded: {data is not None}, type: {type(data)}")
+                  if data and isinstance(data, list):
+                      print(f"Length: {len(data)}")
+                      if len(data) > 0:
+                          print(f"First item: {data[0]}")
+                          # Ambil semua slug yang ada di missing_fields.json, tanpa filter tambahan
+                          new_slugs = []
+                          for item in data:
+                              if isinstance(item, dict) and 'slug' in item:
+                                  slug = item['slug']
+                                  if slug not in candidates:
+                                      new_slugs.append(slug)
+                              elif isinstance(item, str):
+                                  if item not in candidates:
+                                      new_slugs.append(item)
+                              else:
+                                  print(f"Item tidak dikenal: {item}")
+                          candidates.extend(new_slugs)
+                          used_sources.append(src)
+                          print(f"Dari missing_fields.json: {len(new_slugs)} slug baru.")
                       else:
-                          new_slugs = [slug for slug in data if slug not in candidates]
-                      candidates.extend(new_slugs)
-                      used_sources.append(src)
-                      print(f"Dari missing_fields.json: {len(new_slugs)} slug baru.")
+                          print("missing_fields.json kosong.")
+                  else:
+                      print("missing_fields.json bukan list atau tidak ada.")
               elif src == 'missing':
                   data = load_json_file('missing.json')
                   if data:
@@ -159,7 +173,6 @@ jobs:
               else:
                   print(f"Sumber tidak dikenal: {src}")
 
-          # Batasi jumlah kandidat sesuai count
           if candidates:
               num_to_select = min(len(candidates), count)
               selected = random.sample(candidates, num_to_select)
@@ -196,7 +209,6 @@ jobs:
           with open('selected_slugs.json', 'w') as f:
               json.dump(selected, f)
 
-          import os
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               f.write(f"slugs={json.dumps(selected)}\n")
               f.write(f"selected_count={len(selected)}\n")
