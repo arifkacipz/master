@@ -143,21 +143,20 @@ jobs:
                       print(f"Length: {len(data)}")
                       if len(data) > 0:
                           print(f"First item: {data[0]}")
-                          # Ambil semua slug yang ada di missing_fields.json, tanpa filter tambahan
-                          new_slugs = []
+                          # Ekstrak semua slug dari file
+                          extracted_slugs = []
                           for item in data:
                               if isinstance(item, dict) and 'slug' in item:
-                                  slug = item['slug']
-                                  if slug not in candidates:
-                                      new_slugs.append(slug)
+                                  extracted_slugs.append(item['slug'])
                               elif isinstance(item, str):
-                                  if item not in candidates:
-                                      new_slugs.append(item)
-                              else:
-                                  print(f"Item tidak dikenal: {item}")
+                                  extracted_slugs.append(item)
+                          print(f"Extracted {len(extracted_slugs)} slugs from file.")
+                          # Filter yang belum ada di candidates
+                          existing = set(candidates)
+                          new_slugs = [s for s in extracted_slugs if s not in existing]
                           candidates.extend(new_slugs)
                           used_sources.append(src)
-                          print(f"Dari missing_fields.json: {len(new_slugs)} slug baru.")
+                          print(f"Dari missing_fields.json: {len(new_slugs)} slug baru (setelah filter duplikat).")
                       else:
                           print("missing_fields.json kosong.")
                   else:
