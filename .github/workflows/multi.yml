@@ -115,12 +115,12 @@ jobs:
                       result.append(item)
               return result
 
-          # Urutan prioritas sumber
+          # Urutan prioritas sumber: stats -> missing_fields -> missing
           source_order = []
           if source:
               source_order = [source]
           else:
-              source_order = ['stats', 'missing', 'missing_fields']
+              source_order = ['stats', 'missing_fields', 'missing']
 
           # Kumpulkan kandidat dari sumber-sumber secara berurutan
           candidates = []
@@ -137,6 +137,17 @@ jobs:
                       candidates.extend(new_slugs)
                       used_sources.append(src)
                       print(f"Dari stats.json: {len(new_slugs)} slug baru setelah filter.")
+              elif src == 'missing_fields':
+                  data = load_json_file('missing_fields.json')
+                  if data:
+                      # missing_fields bisa berisi list of dict atau list of string
+                      if data and isinstance(data[0], dict):
+                          new_slugs = [item['slug'] for item in data if item['slug'] not in candidates]
+                      else:
+                          new_slugs = [slug for slug in data if slug not in candidates]
+                      candidates.extend(new_slugs)
+                      used_sources.append(src)
+                      print(f"Dari missing_fields.json: {len(new_slugs)} slug baru.")
               elif src == 'missing':
                   data = load_json_file('missing.json')
                   if data:
@@ -145,16 +156,6 @@ jobs:
                       candidates.extend(new_slugs)
                       used_sources.append(src)
                       print(f"Dari missing.json: {len(new_slugs)} slug baru.")
-              elif src == 'missing_fields':
-                  data = load_json_file('missing_fields.json')
-                  if data:
-                      if data and isinstance(data[0], dict):
-                          new_slugs = [item['slug'] for item in data if item['slug'] not in candidates]
-                      else:
-                          new_slugs = [slug for slug in data if slug not in candidates]
-                      candidates.extend(new_slugs)
-                      used_sources.append(src)
-                      print(f"Dari missing_fields.json: {len(new_slugs)} slug baru.")
               else:
                   print(f"Sumber tidak dikenal: {src}")
 
