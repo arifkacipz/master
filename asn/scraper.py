@@ -832,7 +832,7 @@ def generate_list():
 
 # ================== GENERATE STATS ==================
 def generate_stats():
-    """Membaca semua file di db/ dan menghasilkan stats.json (komik dengan chapter < 20)."""
+    """Membaca semua file di db/ dan menghasilkan stats.json (komik dengan chapter < 15)."""
     stats = []
     for filename in os.listdir('db'):
         if filename.endswith('.json'):
@@ -852,11 +852,11 @@ def generate_stats():
                     "online": online,
                     "Chs": chs
                 })
-    # Filter komik dengan online < 20
-    low_chapter = [c for c in stats if c['online'] < 20]
+    # Filter komik dengan online < 15 (diubah dari 20)
+    low_chapter = [c for c in stats if c['online'] < 15]
     with open('stats.json', 'w', encoding='utf-8') as f:
         json.dump(low_chapter, f, indent=2, ensure_ascii=False)
-    print(f"stats.json diperbarui dengan {len(low_chapter)} komik (online < 20).")
+    print(f"stats.json diperbarui dengan {len(low_chapter)} komik (online < 15).")
 
 # ================== MAIN ==================
 def main():
