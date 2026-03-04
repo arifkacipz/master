@@ -13,6 +13,14 @@ on:
           - missing
           - stats
           - missing_fields
+      filter_by:
+        description: 'Filter berdasarkan total online atau chapterCount'
+        required: false
+        default: 'online'
+        type: choice
+        options:
+          - online
+          - chapterCount
       max_chapters:
         description: 'Batas total chapter (20, 50, 100, atau kosongkan untuk tidak ada batas)'
         required: false
@@ -72,16 +80,17 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Generate initial stats.json if not exists
+      - name: Ensure stats.json exists
         run: |
           if [ ! -f stats.json ]; then
-            python generate_stats.py || echo "[]" > stats.json
+            echo "[]" > stats.json
           fi
 
       - name: Select slugs based on inputs
         id: select
         env:
           SOURCE: ${{ github.event.inputs.source }}
+          FILTER_BY: ${{ github.event.inputs.filter_by }}
           MAX_CHAPTERS: ${{ github.event.inputs.max_chapters }}
           COUNT: ${{ github.event.inputs.count }}
           MANUAL_SLUGS: ${{ github.event.inputs.manual_slugs }}
@@ -91,6 +100,7 @@ jobs:
 
           manual_slugs = os.environ.get('MANUAL_SLUGS', '').strip()
           source = os.environ.get('SOURCE', '').strip()
+          filter_by = os.environ.get('FILTER_BY', 'online').strip()
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '').strip()
           count_str = os.environ.get('COUNT', '5').strip()
 
@@ -109,34 +119,30 @@ jobs:
                       return json.load(f)
               return None
 
-          def filter_by_max_chapters(data, max_chapters):
+          def filter_by_max_chapters(data, max_chapters, field):
               if not max_chapters:
                   return data
               max_val = int(max_chapters)
               result = []
               for item in data:
-                  total = item.get('total_online') or item.get('chapterCount') or 0
+                  total = item.get(field, 0)
                   if total <= max_val:
                       result.append(item)
               return result
 
           # Jika manual_slugs diisi, gunakan itu
           if manual_slugs:
-              # Pisahkan dengan koma atau newline
               parts = re.split(r'[,\n]+', manual_slugs)
               raw_slugs = [p.strip() for p in parts if p.strip()]
-              # Hapus duplikat dengan mempertahankan urutan
               seen = set()
               unique_slugs = []
               for slug in raw_slugs:
                   if slug not in seen:
                       seen.add(slug)
                       unique_slugs.append(slug)
-              # Batasi 20
               selected = unique_slugs[:20]
               print(f"Menggunakan manual slugs: {len(selected)} slug (maks 20)")
           else:
-              # Logika pemilihan berdasarkan source
               source_order = []
               if source:
                   source_order = [source]
@@ -152,11 +158,11 @@ jobs:
                   if src == 'stats':
                       data = load_json_file('stats.json')
                       if data:
-                          filtered = filter_by_max_chapters(data, max_chapters_str)
+                          filtered = filter_by_max_chapters(data, max_chapters_str, filter_by)
                           new_slugs = [item['slug'] for item in filtered if item['slug'] not in candidates]
                           candidates.extend(new_slugs)
                           used_sources.append(src)
-                          print(f"Dari stats.json: {len(new_slugs)} slug baru setelah filter.")
+                          print(f"Dari stats.json: {len(new_slugs)} slug baru setelah filter (filter by {filter_by}).")
                   elif src == 'missing_fields':
                       data = load_json_file('missing_fields.json')
                       if data and isinstance(data, list):
@@ -174,11 +180,16 @@ jobs:
                   elif src == 'missing':
                       data = load_json_file('missing.json')
                       if data:
-                          filtered = filter_by_max_chapters(data, max_chapters_str)
+                          # missing.json mungkin tidak memiliki field online/chapterCount, jadi kita tidak filter
+                          # atau kita bisa filter berdasarkan total_online jika ada
+                          # Asumsikan missing.json memiliki field 'total_online' (dari miss.py)
+                          # Kita bisa gunakan filter_by juga, tapi tergantung format
+                          # Untuk sederhana, kita tidak filter missing.json
+                          filtered = data  # tidak filter
                           new_slugs = [item['slug'] for item in filtered if item['slug'] not in candidates]
                           candidates.extend(new_slugs)
                           used_sources.append(src)
-                          print(f"Dari missing.json: {len(new_slugs)} slug baru.")
+                          print(f"Dari missing.json: {len(new_slugs)} slug baru (tanpa filter).")
                   else:
                       print(f"Sumber tidak dikenal: {src}")
 
@@ -295,23 +306,11 @@ jobs:
           mkdir -p db
           cp -v downloaded-artifacts/*.json db/ 2>/dev/null || true
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies for missing update
-        run: pip install requests beautifulsoup4
-
-      - name: Generate stats.json
-        run: python generate_stats.py
-
-      - name: Generate list.json
-        run: python generate_list.py
-
+      # Opsional: Update missing.json jika diperlukan
       - name: Update missing.json
         run: python miss.py
 
+      # Opsional: Check missing fields
       - name: Check missing fields (source, online, Chs)
         run: python check_fields.py
 
@@ -344,6 +343,7 @@ jobs:
             <b>Run ID:</b> ${{ github.run_id }}
             <b>Trigger:</b> ${{ github.event_name }}
             <b>Source:</b> ${{ github.event.inputs.source || 'auto' }}
+            <b>Filter by:</b> ${{ github.event.inputs.filter_by || 'online' }}
             <b>Max Chapters:</b> ${{ github.event.inputs.max_chapters || 'none' }}
             <b>Selected slugs:</b> ${{ needs.select-slugs.outputs.slugs || 'none' }}
             <b>Changes committed:</b> ${{ steps.commit.outputs.committed }}
