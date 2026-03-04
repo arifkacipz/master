@@ -266,25 +266,29 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
       - name: Install ChromeDriver
         run: |
-          # Ambil major version Chrome (misal 130 dari 130.0.6723.116)
-          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
-          echo "Chrome major version: $CHROME_VERSION"
-          
-          # Coba dapatkan versi ChromeDriver yang cocok
-          DRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
-          
+          # Ambil major version Chrome
+          CHROME_MAJOR=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
+          echo "Chrome major version: $CHROME_MAJOR"
+
+          # Ambil versi terbaru dari API JSON
+          JSON_URL="https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json"
+          DRIVER_VERSION=$(curl -s $JSON_URL | jq -r --arg VERSION "$CHROME_MAJOR" '.versions[] | select(.version | startswith($VERSION + ".")) | .version' | head -1)
+
           # Fallback jika gagal
-          if [ -z "$DRIVER_VERSION" ] || [ "$DRIVER_VERSION" = "Not Found" ]; then
-            echo "Gagal mendapatkan versi untuk Chrome $CHROME_VERSION, menggunakan fallback 114.0.5735.90"
+          if [ -z "$DRIVER_VERSION" ]; then
+            echo "Gagal mendapatkan versi untuk Chrome $CHROME_MAJOR, menggunakan fallback 114.0.5735.90"
             DRIVER_VERSION="114.0.5735.90"
           fi
-          
+
           echo "Mengunduh ChromeDriver versi: $DRIVER_VERSION"
-          wget -q "https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip"
-          unzip chromedriver_linux64.zip
-          sudo mv chromedriver /usr/local/bin/
+          wget -q "https://storage.googleapis.com/chrome-for-testing-public/$DRIVER_VERSION/linux64/chromedriver-linux64.zip"
+          unzip chromedriver-linux64.zip
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver
           chromedriver --version
 
