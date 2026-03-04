@@ -2,7 +2,7 @@ name: Update PetoMic Data
 
 on:
   schedule:
-    - cron: '0 * */4 * *'
+    - cron: '0 */4 * * *'   # Setiap 4 jam
   workflow_dispatch:
     inputs:
       target_slug:
@@ -46,19 +46,15 @@ jobs:
         run: |
           python asn/scraper.py --catalog --pages 2 --limit 3
 
-      - name: Generate list.json from db
-        run: python generate_list.py
-
-      - name: Generate stats.json (komik dengan chapter < 20)
-        run: python generate_stats.py
-
+      # Opsional: Generate missing.json jika diperlukan
       - name: Generate missing.json
         run: python miss.py
 
+      # Opsional: Generate missing_fields.json
       - name: Check missing fields (source, online, Chs)
         run: python check_fields.py
 
-      - name: Sync and Push
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
