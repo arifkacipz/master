@@ -314,6 +314,7 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
     """
     Memproses satu komik dari manhuaplus.
     Hanya mengambil chapter yang belum ada di file db/{slug}.json.
+    Semua chapter yang memiliki daftar gambar akan disimpan, meskipun gambar pertama tidak bisa diakses.
     """
     print(f"--- ManhuaPlus memproses: {judul} ---")
     try:
@@ -386,19 +387,19 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
 
         # Ambil gambar setiap chapter baru
         healthy_chapters = []
-    for ch in ch_to_scrape:
-        print(f"   -> Scraping Chapter baru: {ch['nama']}")
-        imgs = get_images_manhuaplus(ch['url'])
-        if imgs:
-            if check_health:
+        for ch in ch_to_scrape:
+            print(f"   -> Scraping Chapter baru: {ch['nama']}")
+            imgs = get_images_manhuaplus(ch['url'])
+            if imgs:
+                # Lakukan health check untuk informasi, tetap simpan meskipun gagal
                 if check_image_url(imgs[0]):
                     print(f"      [✓] Gambar pertama OK.")
                 else:
                     print(f"      [⚠️] Gambar pertama gagal diakses, tetapi tetap disimpan.")
-            healthy_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
-        else:
-            print(f"      [⚠️] Chapter {ch['nama']} tidak memiliki gambar, dilewati.")
-        time.sleep(0.8)
+                healthy_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
+            else:
+                print(f"      [⚠️] Chapter {ch['nama']} tidak memiliki gambar, dilewati.")
+            time.sleep(0.8)
 
         if not healthy_chapters and not return_all:
             print(f"Tidak ada chapter baru yang sehat untuk {slug}")
@@ -412,7 +413,7 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
                 "thumb": thumb_cloud if save else thumb_url,
                 "source": "manhuaplus",
                 "online": len(all_chapters),
-                "chapterCount": len(healthy_chapters),  # jumlah yang berhasil di-download
+                "chapterCount": len(healthy_chapters),
                 "Chs": ", ".join(all_chapters),
                 "chapters": healthy_chapters
             }
@@ -422,10 +423,12 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
         print(f"Gagal memproses {judul}: {e}")
         return None
 
+
 def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False):
     """
     Memproses satu komik dari arenascan.
     Hanya mengambil chapter yang belum ada di file db/{slug}.json.
+    Semua chapter yang memiliki daftar gambar akan disimpan, meskipun gambar pertama tidak bisa diakses.
     """
     print(f"--- Arenascan memproses: {judul} ---")
     try:
@@ -504,11 +507,11 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
             print(f"   -> Scraping Chapter baru: {ch['nama']}")
             imgs = get_images_arenascan(ch['url'])
             if imgs:
-                if check_health:
-                    if check_image_url(imgs[0]):
-                        print(f"      [✓] Gambar pertama OK.")
-                    else:
-                        print(f"      [⚠️] Gambar pertama gagal diakses, tetapi tetap disimpan.")
+                # Lakukan health check untuk informasi, tetap simpan meskipun gagal
+                if check_image_url(imgs[0]):
+                    print(f"      [✓] Gambar pertama OK.")
+                else:
+                    print(f"      [⚠️] Gambar pertama gagal diakses, tetapi tetap disimpan.")
                 healthy_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
             else:
                 print(f"      [⚠️] Chapter {ch['nama']} tidak memiliki gambar, dilewati.")
@@ -535,6 +538,7 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
     except Exception as e:
         print(f"Gagal memproses {judul}: {e}")
         return None
+
 
 # ================== FUNGSI KATALOG ==================
 def scrape_manhuaplus_catalog(max_pages=10):
@@ -900,7 +904,8 @@ def main():
         if not args.slug:
             print("Slug diperlukan untuk mode compare")
             return
-        compare_sources(args.slug)  # fungsi ini ada di kode sebelumnya, pastikan didefinisikan
+        # Fungsi compare_sources belum didefinisikan, mungkin akan ditambahkan nanti
+        print("Fungsi compare_sources belum diimplementasikan.")
         return
 
     if args.catalog:
