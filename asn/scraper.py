@@ -183,7 +183,7 @@ def get_images_manhuaplus(chapter_url):
     Mengambil semua URL gambar dari halaman chapter manhuaplus.
     Prioritas:
     1. Menggunakan endpoint AJAX (untuk gambar dari cdn.manhuaplus.cc).
-    2. Jika gagal, parsing langsung halaman HTML dari div#chapterContent.
+    2. Jika gagal, parsing langsung halaman HTML dari berbagai kemungkinan wadah konten.
     """
     try:
         # --- METODE 1: AJAX ---
@@ -224,8 +224,11 @@ def get_images_manhuaplus(chapter_url):
 
 def get_images_manhuaplus_fallback(chapter_url):
     """
-    Fallback sederhana: ambil semua gambar dari div#chapterContent tanpa filter domain.
-    Hanya mengecualikan loading.gif dan file .svg.
+    Fallback: ambil semua URL gambar dari halaman chapter.
+    Strategi:
+    1. Cari div#chapterContent, lalu cari semua a.readImg (ambil href) dan img di dalamnya.
+    2. Jika tidak, cari di container umum lainnya (readerarea, chapter-content, dll).
+    3. Terakhir, ambil semua img di halaman.
     """
     try:
         res = requests.get(chapter_url, headers=HEADERS, timeout=20)
@@ -233,16 +236,66 @@ def get_images_manhuaplus_fallback(chapter_url):
             print(f"   Gagal mengakses {chapter_url} (status {res.status_code})")
             return []
         soup = BeautifulSoup(res.text, 'html.parser')
-        chapter_content = soup.find('div', id='chapterContent')
-        if not chapter_content:
-            print(f"   Tidak menemukan div#chapterContent")
-            return []
+        
         images = []
-        for img in chapter_content.find_all('img'):
-            src = img.get('src')
-            if src and src.startswith('http') and 'loading.gif' not in src and '.svg' not in src:
-                images.append(src)
-        return images
+        
+        # --- PRIORITAS: div#chapterContent ---
+        chapter_div = soup.find('div', id='chapterContent')
+        if chapter_div:
+            # Cari semua a.readImg
+            for a in chapter_div.find_all('a', class_='readImg'):
+                href = a.get('href')
+                if href and href.startswith('http') and 'loading.gif' not in href:
+                    images.append(href)
+                # Juga cari img di dalam a
+                img = a.find('img')
+                if img:
+                    src = img.get('src') or img.get('data-src')
+                    if src and src.startswith('http') and 'loading.gif' not in src:
+                        images.append(src)
+            # Jika belum dapat, cari semua img di dalam chapter_div
+            if not images:
+                for img in chapter_div.find_all('img'):
+                    src = img.get('src') or img.get('data-src')
+                    if src and src.startswith('http') and 'loading.gif' not in src and '.svg' not in src:
+                        images.append(src)
+        
+        # --- JIKA MASIH KOSONG, coba container umum ---
+        if not images:
+            possible_containers = [
+                'div#readerarea',
+                'div.reader-area',
+                'div.chapter-content',
+                'div.entry-content',
+                'div.separator',
+                'a.readImg'
+            ]
+            for selector in possible_containers:
+                container = soup.select_one(selector)
+                if container:
+                    for img in container.find_all('img'):
+                        src = img.get('src') or img.get('data-src')
+                        if src and src.startswith('http') and 'loading.gif' not in src and '.svg' not in src:
+                            images.append(src)
+                    if images:
+                        break
+        
+        # --- TERAKHIR, ambil semua img di halaman ---
+        if not images:
+            all_imgs = soup.find_all('img')
+            for img in all_imgs:
+                src = img.get('src') or img.get('data-src')
+                if src and src.startswith('http') and 'loading.gif' not in src and '.svg' not in src:
+                    images.append(src)
+        
+        # Hapus duplikat
+        seen = set()
+        unique = []
+        for url in images:
+            if url not in seen:
+                unique.append(url)
+                seen.add(url)
+        return unique
     except Exception as e:
         print(f"Error get_images_manhuaplus_fallback: {e}")
         return []
