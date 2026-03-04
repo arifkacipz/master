@@ -263,7 +263,7 @@ def get_images_manhuaplus_fallback(chapter_url):
         # --- JIKA MASIH KOSONG, coba container umum ---
         if not images:
             possible_containers = [
-                'div#readerarea',
+                'div#chapterContent.check-box',
                 'div.reader-area',
                 'div.chapter-content',
                 'div.entry-content',
