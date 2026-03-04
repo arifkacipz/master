@@ -386,14 +386,19 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
 
         # Ambil gambar setiap chapter baru
         healthy_chapters = []
-        for ch in ch_to_scrape:
-            print(f"   -> Scraping Chapter baru: {ch['nama']}")
-            imgs = get_images_manhuaplus(ch['url'])
-            if imgs and check_image_url(imgs[0]):
-                healthy_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
-            else:
-                print(f"      [⚠️] Chapter {ch['nama']} rusak atau gambar tidak dapat diakses, dilewati.")
-            time.sleep(0.8)
+    for ch in ch_to_scrape:
+        print(f"   -> Scraping Chapter baru: {ch['nama']}")
+        imgs = get_images_manhuaplus(ch['url'])
+        if imgs:
+            if check_health:
+                if check_image_url(imgs[0]):
+                    print(f"      [✓] Gambar pertama OK.")
+                else:
+                    print(f"      [⚠️] Gambar pertama gagal diakses, tetapi tetap disimpan.")
+            healthy_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
+        else:
+            print(f"      [⚠️] Chapter {ch['nama']} tidak memiliki gambar, dilewati.")
+        time.sleep(0.8)
 
         if not healthy_chapters and not return_all:
             print(f"Tidak ada chapter baru yang sehat untuk {slug}")
@@ -498,10 +503,15 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
         for ch in ch_to_scrape:
             print(f"   -> Scraping Chapter baru: {ch['nama']}")
             imgs = get_images_arenascan(ch['url'])
-            if imgs and check_image_url(imgs[0]):
+            if imgs:
+                if check_health:
+                    if check_image_url(imgs[0]):
+                        print(f"      [✓] Gambar pertama OK.")
+                    else:
+                        print(f"      [⚠️] Gambar pertama gagal diakses, tetapi tetap disimpan.")
                 healthy_chapters.append({"nama": ch['nama'], "url": ch['url'], "images": imgs})
             else:
-                print(f"      [⚠️] Chapter {ch['nama']} rusak atau gambar tidak dapat diakses, dilewati.")
+                print(f"      [⚠️] Chapter {ch['nama']} tidak memiliki gambar, dilewati.")
             time.sleep(0.8)
 
         if not healthy_chapters and not return_all:
