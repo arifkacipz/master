@@ -131,15 +131,41 @@ def save_to_db(slug, new_data):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, indent=4)
 
+def get_headers_for_url(url, default_headers=None):
+    """
+    Mengembalikan headers yang sesuai untuk URL tertentu.
+    Untuk domain WordPress, header Referer dihapus karena dapat memicu blokade.
+    """
+    if default_headers is None:
+        default_headers = HEADERS.copy()
+    # Deteksi domain WordPress
+    if 'wordpress.com' in url or 'wp.com' in url:
+        headers = default_headers.copy()
+        headers.pop('Referer', None)   # hapus referer
+        # Opsional: hapus juga X-Requested-With jika dianggap mencurigakan
+        # headers.pop('X-Requested-With', None)
+        return headers
+    return default_headers
+
 def check_image_url(url):
     """
     Periksa apakah URL gambar dapat diakses dengan GET request (stream=True).
-    Lebih toleran daripada HEAD karena beberapa server membatasi HEAD.
+    Gunakan headers yang sesuai berdasarkan domain.
     """
+    # Coba dengan header yang sesuai
+    headers = get_headers_for_url(url)
     try:
-        # Gunakan GET dengan stream=True agar hanya membaca header
-        r = requests.get(url, headers=HEADERS, timeout=10, stream=True)
-        return r.status_code == 200
+        r = requests.get(url, headers=headers, timeout=10, stream=True)
+        if r.status_code == 200:
+            return True
+        else:
+            # Jika gagal dan domain WordPress, mungkin header masih bermasalah?
+            # Coba sekali lagi dengan header sangat minimal (hanya User-Agent)
+            if 'wordpress.com' in url or 'wp.com' in url:
+                minimal_headers = {'User-Agent': HEADERS['User-Agent']}
+                r2 = requests.get(url, headers=minimal_headers, timeout=10, stream=True)
+                return r2.status_code == 200
+            return False
     except Exception as e:
         print(f"   [Health Check Error] {e}")
         return False
