@@ -83,13 +83,22 @@
         </div>
 
         <!-- ===== SECTION: POPULER ===== -->
-        <div class="mb-12">
-            <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
-                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                </svg>
-                <span>🔥 Hot & Populer</span>
-            </h2>
+        <div id="popular-section" class="mb-12">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                    <span>🔥 Hot & Populer</span>
+                </h2>
+                <!-- Tombol Sembunyikan/Tampilkan -->
+                <button id="toggle-popular" class="p-2 rounded-lg hover:bg-zinc-800 transition" title="Sembunyikan bagian ini">
+                    <svg id="eye-icon" class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                </button>
+            </div>
             
             <!-- Tab Navigator -->
             <div class="flex gap-2 mb-6 bg-zinc-900 p-1 rounded-xl border border-white/5 w-fit">
@@ -205,6 +214,9 @@
         // Elemen DOM
         const container = document.getElementById('manga-list');
         const popularContainer = document.getElementById('popular-list');
+        const popularSection = document.getElementById('popular-section');
+        const togglePopularBtn = document.getElementById('toggle-popular');
+        const eyeIcon = document.getElementById('eye-icon');
         const searchInput = document.getElementById('search-input');
         const modeGridBtn = document.getElementById('mode-grid');
         const modeListBtn = document.getElementById('mode-list');
@@ -259,6 +271,34 @@
                     </a>
                 `;
             });
+        }
+
+        // ==================== FUNGSI TOGGLE POPULAR ====================
+        function togglePopular(hide) {
+            if (hide) {
+                popularSection.classList.add('hidden');
+                // Ubah ikon menjadi mata tertutup (eye-off)
+                eyeIcon.innerHTML = `
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                `;
+                togglePopularBtn.title = 'Tampilkan bagian ini';
+            } else {
+                popularSection.classList.remove('hidden');
+                // Ubah ikon menjadi mata terbuka (eye)
+                eyeIcon.innerHTML = `
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                `;
+                togglePopularBtn.title = 'Sembunyikan bagian ini';
+            }
+            // Simpan preferensi
+            localStorage.setItem('petomic_hide_popular', hide ? 'true' : 'false');
+        }
+
+        // Inisialisasi status popular dari localStorage
+        function initPopularToggle() {
+            const hide = localStorage.getItem('petomic_hide_popular') === 'true';
+            togglePopular(hide);
         }
 
         // ==================== FUNGSI RENDER UTAMA ====================
@@ -355,6 +395,9 @@
                 } catch (e) {
                     console.warn('Gagal memuat riwayat:', e);
                 }
+
+                // Inisialisasi status popular
+                initPopularToggle();
             })
             .catch(err => {
                 console.error('Gagal memuat data', err);
@@ -419,6 +462,12 @@
         pageLast.addEventListener('click', () => {
             currentPage = Math.ceil(filteredData.length / itemsPerPage);
             render();
+        });
+
+        // Tombol toggle popular
+        togglePopularBtn.addEventListener('click', () => {
+            const isHidden = popularSection.classList.contains('hidden');
+            togglePopular(!isHidden); // jika hidden sekarang, maka tampilkan (!isHidden = false -> show)
         });
     </script>
 </body>
