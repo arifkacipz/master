@@ -132,11 +132,16 @@ def save_to_db(slug, new_data):
         json.dump(final_data, f, indent=4)
 
 def check_image_url(url):
-    """Periksa apakah URL gambar dapat diakses (HEAD request)."""
+    """
+    Periksa apakah URL gambar dapat diakses dengan GET request (stream=True).
+    Lebih toleran daripada HEAD karena beberapa server membatasi HEAD.
+    """
     try:
-        r = requests.head(url, headers=HEADERS, timeout=10, allow_redirects=True)
+        # Gunakan GET dengan stream=True agar hanya membaca header
+        r = requests.get(url, headers=HEADERS, timeout=10, stream=True)
         return r.status_code == 200
-    except:
+    except Exception as e:
+        print(f"   [Health Check Error] {e}")
         return False
 
 def check_chapter_health(chapter):
