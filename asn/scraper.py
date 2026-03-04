@@ -150,6 +150,7 @@ def check_chapter_health(chapter):
 def get_images_manhuaplus(chapter_url):
     """Mengambil semua URL gambar dari halaman chapter manhuaplus."""
     try:
+        # Coba metode AJAX dulu
         chapter_id = chapter_url.strip('/').split('/')[-1]
         if not chapter_id.isdigit():
             res = requests.get(chapter_url, headers=HEADERS, timeout=20)
@@ -157,14 +158,17 @@ def get_images_manhuaplus(chapter_url):
             if match:
                 chapter_id = match.group(1)
             else:
-                return []
+                # Jika tidak dapat chapter_id, langsung fallback
+                return get_images_manhuaplus_fallback(chapter_url)
+
         ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
         ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
         if ajax_res.status_code == 200:
             data = ajax_res.json()
             if data.get('status') and 'html' in data:
                 html_content = data['html']
-                list_gambar = re.findall(r'https?://cdn\.manhuaplus\.cc/[^\s"\']+', html_content)
+                # Tambahkan domain baru
+                list_gambar = re.findall(r'https?://cdn\.manhuaplus\.(?:cc|org)/[^\s"\']+', html_content)
                 seen = set()
                 temp_list = []
                 for img in list_gambar:
@@ -173,10 +177,57 @@ def get_images_manhuaplus(chapter_url):
                         temp_list.append(img)
                         seen.add(img)
                 temp_list.sort()
-                return temp_list
-        return []
+                if temp_list:
+                    return temp_list
+        # Jika gagal, fallback
+        return get_images_manhuaplus_fallback(chapter_url)
     except Exception as e:
         print(f"Error get_images_manhuaplus: {e}")
+        return get_images_manhuaplus_fallback(chapter_url)
+
+def get_images_manhuaplus_fallback(chapter_url):
+    """
+    Fallback: scraping langsung halaman chapter dan mengambil gambar dari div#chapterContent.
+    Hasil diurutkan berdasarkan data-index.
+    """
+    try:
+        res = requests.get(chapter_url, headers=HEADERS, timeout=20)
+        if res.status_code != 200:
+            print(f"   Gagal mengakses {chapter_url} (status {res.status_code})")
+            return []
+        soup = BeautifulSoup(res.text, 'html.parser')
+        images = []
+        # Cari div#chapterContent
+        chapter_content = soup.find('div', id='chapterContent')
+        if chapter_content:
+            # Cari semua div dengan class 'separator'
+            separators = chapter_content.find_all('div', class_='separator')
+            items = []
+            for sep in separators:
+                img = sep.find('img')
+                if img:
+                    src = img.get('src')
+                    if src and src.startswith('http') and 'loading.gif' not in src:
+                        idx = sep.get('data-index')
+                        if idx is not None:
+                            try:
+                                idx = int(idx)
+                            except:
+                                idx = 0
+                        items.append((idx, src))
+            # Urutkan berdasarkan data-index
+            items.sort(key=lambda x: x[0])
+            images = [src for _, src in items]
+            if images:
+                return images
+        # Jika tidak ketemu, coba cari semua img dengan src mengandung cdn.manhuaplus.org
+        for img in soup.find_all('img', src=re.compile(r'cdn\.manhuaplus\.org')):
+            src = img.get('src')
+            if src and src not in images:
+                images.append(src)
+        return images
+    except Exception as e:
+        print(f"Error get_images_manhuaplus_fallback: {e}")
         return []
 
 def get_images_arenascan(chapter_url):
