@@ -54,8 +54,8 @@ on:
         required: false
         default: ''
   schedule:
-    - cron: '* * */6 * *'
-    - cron: '* * */3 * *'
+    - cron: '* */4 * * *'
+    - cron: '* */3 * * *'
 
 concurrency:
   group: matrix-full-scrape
@@ -181,11 +181,7 @@ jobs:
                       data = load_json_file('missing.json')
                       if data:
                           # missing.json mungkin tidak memiliki field online/chapterCount, jadi kita tidak filter
-                          # atau kita bisa filter berdasarkan total_online jika ada
-                          # Asumsikan missing.json memiliki field 'total_online' (dari miss.py)
-                          # Kita bisa gunakan filter_by juga, tapi tergantung format
-                          # Untuk sederhana, kita tidak filter missing.json
-                          filtered = data  # tidak filter
+                          filtered = data
                           new_slugs = [item['slug'] for item in filtered if item['slug'] not in candidates]
                           candidates.extend(new_slugs)
                           used_sources.append(src)
@@ -200,7 +196,7 @@ jobs:
               else:
                   print("Tidak ada kandidat yang tersedia.")
 
-          # Update tracker (hanya untuk logging)
+          # Update tracker
           if selected:
               if os.path.exists(TRACKER_FILE):
                   with open(TRACKER_FILE, 'r') as f:
@@ -263,14 +259,28 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 cloudinary
+        run: pip install requests beautifulsoup4 cloudinary selenium
 
-      - name: Run full scrape for ${{ matrix.slug }} (auto merge)
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install ChromeDriver
+        run: |
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}')
+          DRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          wget -q "https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip"
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Run full scrape for ${{ matrix.slug }} (auto merge with Selenium)
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
-        run: python asn/scraper.py --slug "${{ matrix.slug }}" --source auto
+        run: python asn/scraper.py --slug "${{ matrix.slug }}" --source auto --selenium
 
       - name: Upload updated JSON for ${{ matrix.slug }}
         uses: actions/upload-artifact@v4
@@ -306,11 +316,9 @@ jobs:
           mkdir -p db
           cp -v downloaded-artifacts/*.json db/ 2>/dev/null || true
 
-      # Opsional: Update missing.json jika diperlukan
       - name: Update missing.json
         run: python miss.py
 
-      # Opsional: Check missing fields
       - name: Check missing fields (source, online, Chs)
         run: python check_fields.py
 
