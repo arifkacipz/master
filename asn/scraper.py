@@ -9,6 +9,17 @@ import cloudinary.uploader
 import argparse
 from collections import OrderedDict
 
+# ================== SELENIUM ==================
+try:
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    SELENIUM_AVAILABLE = True
+except ImportError:
+    SELENIUM_AVAILABLE = False
+
 # ================== KONFIGURASI CLOUDINARY ==================
 cloudinary.config(
     cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
@@ -141,9 +152,7 @@ def get_headers_for_url(url, default_headers=None):
     # Deteksi domain WordPress
     if 'wordpress.com' in url or 'wp.com' in url:
         headers = default_headers.copy()
-        headers.pop('Referer', None)   # hapus referer
-        # Opsional: hapus juga X-Requested-With jika dianggap mencurigakan
-        # headers.pop('X-Requested-With', None)
+        headers.pop('Referer', None)
         return headers
     return default_headers
 
@@ -152,15 +161,12 @@ def check_image_url(url):
     Periksa apakah URL gambar dapat diakses dengan GET request (stream=True).
     Gunakan headers yang sesuai berdasarkan domain.
     """
-    # Coba dengan header yang sesuai
     headers = get_headers_for_url(url)
     try:
         r = requests.get(url, headers=headers, timeout=10, stream=True)
         if r.status_code == 200:
             return True
         else:
-            # Jika gagal dan domain WordPress, mungkin header masih bermasalah?
-            # Coba sekali lagi dengan header sangat minimal (hanya User-Agent)
             if 'wordpress.com' in url or 'wp.com' in url:
                 minimal_headers = {'User-Agent': HEADERS['User-Agent']}
                 r2 = requests.get(url, headers=minimal_headers, timeout=10, stream=True)
@@ -177,66 +183,57 @@ def check_chapter_health(chapter):
         return False
     return check_image_url(images[0])
 
-# ================== FUNGSI AMBIL GAMBAR CHAPTER ==================
-def get_images_manhuaplus(chapter_url):
+# ================== FUNGSI AMBIL GAMBAR CHAPTER DENGAN SELENIUM ==================
+def get_images_manhuaplus_with_selenium(chapter_url):
     """
-    Mengambil semua URL gambar dari halaman chapter manhuaplus.
-    Prioritas:
-    1. Menggunakan endpoint AJAX (untuk gambar dari cdn.manhuaplus.cc).
-    2. Jika gagal, parsing langsung halaman HTML dari berbagai kemungkinan wadah konten.
+    Menggunakan Selenium untuk memuat halaman chapter sepenuhnya,
+    lalu mengekstrak semua URL gambar dari elemen <a class="readImg"> dan <img>.
     """
+    if not SELENIUM_AVAILABLE:
+        print("   Selenium tidak terinstall. Install dengan: pip install selenium")
+        return []
+
+    print("   [Selenium] Memuat halaman...")
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--window-size=1920x1080")
+    chrome_options.add_argument(f"user-agent={HEADERS['User-Agent']}")
+
+    driver = None
     try:
-        # --- METODE 1: AJAX ---
-        chapter_id = chapter_url.strip('/').split('/')[-1]
-        if not chapter_id.isdigit():
-            res = requests.get(chapter_url, headers=HEADERS, timeout=20)
-            match = re.search(r'CHAPTER_ID\s*=\s*(\d+)', res.text)
-            if match:
-                chapter_id = match.group(1)
-            else:
-                print(f"   Tidak dapat menemukan CHAPTER_ID, beralih ke parsing langsung.")
-                return get_images_manhuaplus_fallback(chapter_url)
+        driver = webdriver.Chrome(options=chrome_options)
+        driver.get(chapter_url)
 
-        ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
-        ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
-        if ajax_res.status_code == 200:
-            data = ajax_res.json()
-            if data.get('status') and 'html' in data:
-                html_content = data['html']
-                list_gambar = re.findall(r'https?://cdn\.manhuaplus\.(?:cc|org)/[^\s"\']+', html_content)
-                seen = set()
-                temp_list = []
-                for img in list_gambar:
-                    img = img.strip()
-                    if "loading.gif" not in img and img not in seen:
-                        temp_list.append(img)
-                        seen.add(img)
-                temp_list.sort()
-                if temp_list:
-                    return temp_list
-        print(f"   Metode AJAX gagal, beralih ke parsing langsung.")
-        return get_images_manhuaplus_fallback(chapter_url)
+        # Tunggu hingga elemen chapterContent muncul (maks 15 detik)
+        try:
+            WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.ID, "chapterContent"))
+            )
+        except:
+            pass  # tetap lanjutkan, mungkin tidak ada ID itu
 
-    except Exception as e:
-        print(f"Error get_images_manhuaplus (AJAX): {e}")
-        return get_images_manhuaplus_fallback(chapter_url)
+        # Beri waktu ekstra untuk gambar-gambar yang dimuat secara lambat
+        time.sleep(3)
 
+        # Cari semua elemen a dengan class readImg (href)
+        links = driver.find_elements(By.CSS_SELECTOR, "a.readImg")
+        urls = []
+        for a in links:
+            href = a.get_attribute("href")
+            if href and href.startswith("http") and "loading.gif" not in href:
+                urls.append(href)
 
-def get_images_manhuaplus_fallback(chapter_url):
-    """
-    Fallback: ambil semua URL gambar dari halaman chapter menggunakan regex.
-    Pola mencocokkan URL dengan ekstensi gambar umum (jpg, jpeg, png, webp).
-    """
-    try:
-        res = requests.get(chapter_url, headers=HEADERS, timeout=20)
-        if res.status_code != 200:
-            print(f"   Gagal mengakses {chapter_url} (status {res.status_code})")
-            return []
-        
-        # Pola regex untuk menangkap URL gambar
-        img_pattern = r'(https?://[^\s"\']+\.(?:jpg|jpeg|png|webp)(?:\?[^\s"\']*)?)'
-        urls = re.findall(img_pattern, res.text, re.IGNORECASE)
-        
+        # Jika tidak ada, cari semua elemen img
+        if not urls:
+            imgs = driver.find_elements(By.TAG_NAME, "img")
+            for img in imgs:
+                src = img.get_attribute("src") or img.get_attribute("data-src")
+                if src and src.startswith("http") and "loading.gif" not in src and ".svg" not in src:
+                    urls.append(src)
+
         # Hapus duplikat
         seen = set()
         unique = []
@@ -244,19 +241,74 @@ def get_images_manhuaplus_fallback(chapter_url):
             if url not in seen:
                 unique.append(url)
                 seen.add(url)
-        
-        if unique:
-            print(f"      [ℹ️] Ditemukan {len(unique)} URL gambar via regex.")
-        else:
-            print(f"      [⚠️] Tidak menemukan URL gambar di halaman.")
-        
+
+        print(f"   [Selenium] Ditemukan {len(unique)} URL gambar.")
         return unique
+
     except Exception as e:
-        print(f"Error get_images_manhuaplus_fallback: {e}")
+        print(f"   [Selenium Error] {e}")
         return []
+    finally:
+        if driver:
+            driver.quit()
+
+# ================== FUNGSI AMBIL GAMBAR CHAPTER (MANHUAPLUS) ==================
+def get_images_manhuaplus(chapter_url, use_selenium=False):
+    """
+    Mengambil semua URL gambar dari halaman chapter manhuaplus.
+    Prioritas:
+    1. Menggunakan endpoint AJAX.
+    2. Jika gagal dan use_selenium=True, gunakan Selenium.
+    3. Jika Selenium juga gagal atau tidak diaktifkan, kembalikan list kosong.
+    """
+    # --- METODE 1: AJAX ---
+    try:
+        chapter_id = chapter_url.strip('/').split('/')[-1]
+        if not chapter_id.isdigit():
+            res = requests.get(chapter_url, headers=HEADERS, timeout=20)
+            match = re.search(r'CHAPTER_ID\s*=\s*(\d+)', res.text)
+            if match:
+                chapter_id = match.group(1)
+            else:
+                print("   Tidak dapat menemukan CHAPTER_ID.")
+
+        if chapter_id.isdigit():
+            ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
+            ajax_res = requests.post(ajax_url, headers=HEADERS, timeout=20)
+            if ajax_res.status_code == 200:
+                data = ajax_res.json()
+                if data.get('status') and 'html' in data:
+                    html_content = data['html']
+                    list_gambar = re.findall(r'https?://cdn\.manhuaplus\.(?:cc|org)/[^\s"\']+', html_content)
+                    seen = set()
+                    temp_list = []
+                    for img in list_gambar:
+                        img = img.strip()
+                        if "loading.gif" not in img and img not in seen:
+                            temp_list.append(img)
+                            seen.add(img)
+                    temp_list.sort()
+                    if temp_list:
+                        return temp_list
+            print("   Metode AJAX gagal.")
+    except Exception as e:
+        print(f"   Error AJAX: {e}")
+
+    # --- METODE 2: Selenium (jika diaktifkan) ---
+    if use_selenium:
+        print("   Mencoba dengan Selenium...")
+        selenium_images = get_images_manhuaplus_with_selenium(chapter_url)
+        if selenium_images:
+            return selenium_images
+        else:
+            print("   Selenium tidak menemukan gambar.")
+    else:
+        print("   Selenium tidak diaktifkan (gunakan --selenium untuk mengaktifkan).")
+
+    return []
 
 def get_images_arenascan(chapter_url):
-    """Ambil semua URL gambar dari halaman chapter arenascan."""
+    """Ambil semua URL gambar dari halaman chapter arenascan (tetap sama)."""
     try:
         res = requests.get(chapter_url, headers=HEADERS, timeout=20)
         soup = BeautifulSoup(res.text, 'html.parser')
@@ -318,7 +370,7 @@ def get_images_arenascan(chapter_url):
         return []
 
 # ================== FUNGSI MEMPROSES SATU SUMBER ==================
-def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False):
+def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False, use_selenium=False):
     """
     Memproses satu komik dari manhuaplus.
     Hanya mengambil chapter yang belum ada di file db/{slug}.json.
@@ -397,7 +449,7 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
         healthy_chapters = []
         for ch in ch_to_scrape:
             print(f"   -> Scraping Chapter baru: {ch['nama']}")
-            imgs = get_images_manhuaplus(ch['url'])
+            imgs = get_images_manhuaplus(ch['url'], use_selenium=use_selenium)
             if imgs:
                 # Lakukan health check untuk informasi, tetap simpan meskipun gagal
                 if check_image_url(imgs[0]):
@@ -431,16 +483,10 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
         print(f"Gagal memproses {judul}: {e}")
         return None
 
-
 def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False):
-    """
-    Memproses satu komik dari arenascan.
-    Hanya mengambil chapter yang belum ada di file db/{slug}.json.
-    Semua chapter yang memiliki daftar gambar akan disimpan, meskipun gambar pertama tidak bisa diakses.
-    """
+    """Sama seperti sebelumnya, tidak berubah."""
     print(f"--- Arenascan memproses: {judul} ---")
     try:
-        # Load chapter yang sudah ada
         existing_nums = load_existing_chapter_numbers(slug)
         print(f"   Chapter sudah ada di db: {len(existing_nums)}")
 
@@ -450,12 +496,10 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
             return None
         soup = BeautifulSoup(res.text, 'html.parser')
 
-        # Ambil judul dari h1
         h1 = soup.select_one('h1.entry-title')
         if h1:
             judul = h1.get_text(strip=True)
 
-        # Ambil thumbnail jika belum ada
         if not thumb_url:
             og_img = soup.find('meta', property='og:image')
             if og_img and og_img.get('content'):
@@ -469,7 +513,6 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
 
         thumb_cloud = upload_to_cloudinary(thumb_url, slug) if thumb_url else ""
 
-        # Ambil daftar chapter
         chapterlist = soup.select_one('#chapterlist ul')
         if not chapterlist:
             print(f"Tidak ada daftar chapter ditemukan untuk {slug}")
@@ -491,7 +534,6 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
 
         all_chapters = [ch['nama'] for ch in ch_list]
 
-        # Filter chapter yang belum ada di db
         ch_to_scrape = []
         for ch in ch_list:
             num = extract_chapter_number(ch['nama'])
@@ -502,20 +544,15 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
 
         print(f"   Chapter baru ditemukan: {len(ch_to_scrape)}")
 
-        # Terapkan limit jika diminta (hanya untuk chapter baru)
         if limit_ch:
             ch_to_scrape = ch_to_scrape[:limit_ch]
-
-        # Balik urutan menjadi terlama -> terbaru
         ch_to_scrape.reverse()
 
-        # Ambil gambar setiap chapter baru
         healthy_chapters = []
         for ch in ch_to_scrape:
             print(f"   -> Scraping Chapter baru: {ch['nama']}")
             imgs = get_images_arenascan(ch['url'])
             if imgs:
-                # Lakukan health check untuk informasi, tetap simpan meskipun gagal
                 if check_image_url(imgs[0]):
                     print(f"      [✓] Gambar pertama OK.")
                 else:
@@ -542,15 +579,12 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
                 "chapters": healthy_chapters
             }
             return result
-
     except Exception as e:
         print(f"Gagal memproses {judul}: {e}")
         return None
 
-
 # ================== FUNGSI KATALOG ==================
 def scrape_manhuaplus_catalog(max_pages=10):
-    """Ambil daftar manga dari halaman katalog manhuaplus."""
     base_url = "https://manhuaplus.org/all-manga/"
     list_manga = []
     for page in range(1, max_pages + 1):
@@ -585,7 +619,6 @@ def scrape_manhuaplus_catalog(max_pages=10):
     return list_manga
 
 def scrape_arenascan_catalog(max_pages=10):
-    """Ambil daftar manga dari halaman katalog arenascan."""
     base_url = "https://arenascan.com/manga/"
     list_manga = []
     for page in range(1, max_pages + 1):
@@ -614,8 +647,7 @@ def scrape_arenascan_catalog(max_pages=10):
         time.sleep(1)
     return list_manga
 
-def run_catalog_mode(max_pages=8, limit_ch=3):
-    """Menjalankan scraping katalog dari kedua sumber."""
+def run_catalog_mode(max_pages=8, limit_ch=3, use_selenium=False):
     print("=== SCRAPING KATALOG MANHUAPLUS ===")
     manga_list_manhuaplus = scrape_manhuaplus_catalog(max_pages=max_pages)
     for manga in manga_list_manhuaplus:
@@ -627,7 +659,8 @@ def run_catalog_mode(max_pages=8, limit_ch=3):
             thumb_url=manga['thumb'],
             limit_ch=limit_ch,
             save=False,
-            return_all=True
+            return_all=True,
+            use_selenium=use_selenium
         )
         if result:
             healthy, all_ch, judul, thumb = result
@@ -681,8 +714,7 @@ def run_catalog_mode(max_pages=8, limit_ch=3):
         time.sleep(2)
 
 # ================== FUNGSI PERBANDINGAN & MERGE ==================
-def compare_and_merge_sources(slug):
-    """Ambil data dari kedua sumber, periksa kesehatan, gabungkan, dan simpan."""
+def compare_and_merge_sources(slug, use_selenium=False):
     print(f"\n=== MEMBANDINGKAN DAN MENGGABUNGKAN {slug} ===")
 
     data_manhua = process_comic_manhuaplus(
@@ -692,7 +724,8 @@ def compare_and_merge_sources(slug):
         thumb_url=None,
         limit_ch=None,
         save=False,
-        return_all=True
+        return_all=True,
+        use_selenium=use_selenium
     )
     data_arena = process_comic_arenascan(
         judul=slug.replace('-', ' ').title(),
@@ -704,12 +737,10 @@ def compare_and_merge_sources(slug):
         return_all=True
     )
 
-    # Jika kedua sumber gagal
     if not data_manhua and not data_arena:
         print(f"Gagal mengambil data untuk {slug} dari kedua sumber.")
         return
 
-    # Gabungkan daftar semua chapter untuk online count
     all_numbers = set()
     all_names = []
     if data_manhua:
@@ -729,7 +760,6 @@ def compare_and_merge_sources(slug):
     online_count = len(all_names)
     chs_string = ", ".join(all_names)
 
-    # Jika hanya satu sumber berhasil
     if not data_manhua:
         print("Hanya data dari arenascan tersedia, menyimpan...")
         healthy, _, judul, thumb = data_arena
@@ -765,11 +795,9 @@ def compare_and_merge_sources(slug):
         generate_missing_report(slug, all_names, healthy)
         return
 
-    # Kedua sumber berhasil
     healthy_m, all_m, judul_m, thumb_m = data_manhua
     healthy_a, all_a, judul_a, thumb_a = data_arena
 
-    # Gabungkan chapter sehat berdasarkan nomor
     chapters_by_num = {}
     for ch in healthy_m:
         num = extract_chapter_number(ch['nama'])
@@ -780,7 +808,6 @@ def compare_and_merge_sources(slug):
         if num is not None:
             if num not in chapters_by_num:
                 chapters_by_num[num] = (ch, 'arenascan')
-            # jika sudah ada, biarkan pakai manhuaplus
 
     merged_chapters = []
     for num in sorted(chapters_by_num.keys()):
@@ -807,7 +834,6 @@ def compare_and_merge_sources(slug):
 
 # ================== LAPORAN MISSING ==================
 def generate_missing_report(slug, online_names, downloaded_chapters):
-    """Menyimpan daftar chapter yang hilang ke missing.json."""
     downloaded_names = [ch['nama'] for ch in downloaded_chapters]
     missing = [name for name in online_names if name not in downloaded_names]
 
@@ -841,7 +867,6 @@ def generate_missing_report(slug, online_names, downloaded_chapters):
 
 # ================== GENERATE LIST ==================
 def generate_list():
-    """Membaca semua file di db/ dan menghasilkan list.json."""
     all_manga = []
     for filename in os.listdir('db'):
         if filename.endswith('.json'):
@@ -858,7 +883,6 @@ def generate_list():
 
 # ================== GENERATE STATS ==================
 def generate_stats():
-    """Membaca semua file di db/ dan menghasilkan stats.json (online < 15)."""
     stats = []
     for filename in os.listdir('db'):
         if filename.endswith('.json'):
@@ -880,7 +904,6 @@ def generate_stats():
                     "chapterCount": chapterCount,
                     "Chs": chs
                 })
-    # Filter komik dengan online < 15
     low_chapter = [c for c in stats if c['online'] < 15]
     with open('stats.json', 'w', encoding='utf-8') as f:
         json.dump(low_chapter, f, indent=2, ensure_ascii=False)
@@ -898,6 +921,7 @@ def main():
     parser.add_argument('--compare', action='store_true', help='Bandingkan dua sumber tanpa simpan')
     parser.add_argument('--generate-list', action='store_true', help='Hasilkan list.json dari db/')
     parser.add_argument('--generate-stats', action='store_true', help='Hasilkan stats.json dari db/')
+    parser.add_argument('--selenium', action='store_true', help='Gunakan Selenium jika AJAX gagal (tanpa regex)')
     args = parser.parse_args()
 
     if args.generate_list:
@@ -912,19 +936,18 @@ def main():
         if not args.slug:
             print("Slug diperlukan untuk mode compare")
             return
-        # Fungsi compare_sources belum didefinisikan, mungkin akan ditambahkan nanti
         print("Fungsi compare_sources belum diimplementasikan.")
         return
 
     if args.catalog:
-        run_catalog_mode(max_pages=args.pages, limit_ch=args.limit)
+        run_catalog_mode(max_pages=args.pages, limit_ch=args.limit, use_selenium=args.selenium)
         generate_list()
         generate_stats()
         return
 
     if args.slug:
         if args.source == 'auto':
-            compare_and_merge_sources(args.slug)
+            compare_and_merge_sources(args.slug, use_selenium=args.selenium)
         elif args.source == 'manhuaplus':
             result = process_comic_manhuaplus(
                 judul=args.slug.replace('-', ' ').title(),
@@ -933,7 +956,8 @@ def main():
                 thumb_url=None,
                 limit_ch=None,
                 save=False,
-                return_all=True
+                return_all=True,
+                use_selenium=args.selenium
             )
             if result:
                 healthy, all_ch, judul, thumb = result
@@ -995,7 +1019,8 @@ def main():
                 thumb_url=None,
                 limit_ch=None,
                 save=False,
-                return_all=True
+                return_all=True,
+                use_selenium=args.selenium if 'args' in locals() else False
             )
             if result:
                 healthy, all_ch, judul, thumb = result
@@ -1046,7 +1071,7 @@ def main():
         generate_list()
         generate_stats()
     else:
-        run_catalog_mode(max_pages=8, limit_ch=3)
+        run_catalog_mode(max_pages=8, limit_ch=3, use_selenium=args.selenium if 'args' in locals() else False)
         generate_list()
         generate_stats()
 
