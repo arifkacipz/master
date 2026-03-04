@@ -268,12 +268,25 @@ jobs:
 
       - name: Install ChromeDriver
         run: |
-          CHROME_VERSION=$(google-chrome --version | awk '{print $3}')
+          # Ambil major version Chrome (misal 130 dari 130.0.6723.116)
+          CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
+          echo "Chrome major version: $CHROME_VERSION"
+          
+          # Coba dapatkan versi ChromeDriver yang cocok
           DRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          
+          # Fallback jika gagal
+          if [ -z "$DRIVER_VERSION" ] || [ "$DRIVER_VERSION" = "Not Found" ]; then
+            echo "Gagal mendapatkan versi untuk Chrome $CHROME_VERSION, menggunakan fallback 114.0.5735.90"
+            DRIVER_VERSION="114.0.5735.90"
+          fi
+          
+          echo "Mengunduh ChromeDriver versi: $DRIVER_VERSION"
           wget -q "https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip"
           unzip chromedriver_linux64.zip
           sudo mv chromedriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver
+          chromedriver --version
 
       - name: Run full scrape for ${{ matrix.slug }} (auto merge with Selenium)
         env:
