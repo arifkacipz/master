@@ -148,9 +148,14 @@ def check_chapter_health(chapter):
 
 # ================== FUNGSI AMBIL GAMBAR CHAPTER ==================
 def get_images_manhuaplus(chapter_url):
-    """Mengambil semua URL gambar dari halaman chapter manhuaplus."""
+    """
+    Mengambil semua URL gambar dari halaman chapter manhuaplus.
+    Prioritas:
+    1. Menggunakan endpoint AJAX (untuk gambar dari cdn.manhuaplus.cc).
+    2. Jika gagal, parsing langsung halaman HTML dari div#chapterContent.
+    """
     try:
-        # Coba metode AJAX dulu
+        # --- METODE 1: AJAX ---
         chapter_id = chapter_url.strip('/').split('/')[-1]
         if not chapter_id.isdigit():
             res = requests.get(chapter_url, headers=HEADERS, timeout=20)
@@ -158,7 +163,7 @@ def get_images_manhuaplus(chapter_url):
             if match:
                 chapter_id = match.group(1)
             else:
-                # Jika tidak dapat chapter_id, langsung fallback
+                print(f"   Tidak dapat menemukan CHAPTER_ID, beralih ke parsing langsung.")
                 return get_images_manhuaplus_fallback(chapter_url)
 
         ajax_url = f"https://manhuaplus.org/ajax/image/list/chap/{chapter_id}"
@@ -167,7 +172,6 @@ def get_images_manhuaplus(chapter_url):
             data = ajax_res.json()
             if data.get('status') and 'html' in data:
                 html_content = data['html']
-                # Tambahkan domain baru
                 list_gambar = re.findall(r'https?://cdn\.manhuaplus\.(?:cc|org)/[^\s"\']+', html_content)
                 seen = set()
                 temp_list = []
@@ -179,16 +183,18 @@ def get_images_manhuaplus(chapter_url):
                 temp_list.sort()
                 if temp_list:
                     return temp_list
-        # Jika gagal, fallback
+        print(f"   Metode AJAX gagal, beralih ke parsing langsung.")
         return get_images_manhuaplus_fallback(chapter_url)
+
     except Exception as e:
-        print(f"Error get_images_manhuaplus: {e}")
+        print(f"Error get_images_manhuaplus (AJAX): {e}")
         return get_images_manhuaplus_fallback(chapter_url)
+
 
 def get_images_manhuaplus_fallback(chapter_url):
     """
-    Fallback: scraping langsung halaman chapter dan mengambil gambar dari div#chapterContent.
-    Hasil diurutkan berdasarkan data-index.
+    Fallback sederhana: ambil semua gambar dari div#chapterContent tanpa filter domain.
+    Hanya mengecualikan loading.gif dan file .svg.
     """
     try:
         res = requests.get(chapter_url, headers=HEADERS, timeout=20)
@@ -196,34 +202,14 @@ def get_images_manhuaplus_fallback(chapter_url):
             print(f"   Gagal mengakses {chapter_url} (status {res.status_code})")
             return []
         soup = BeautifulSoup(res.text, 'html.parser')
-        images = []
-        # Cari div#chapterContent
         chapter_content = soup.find('div', id='chapterContent')
-        if chapter_content:
-            # Cari semua div dengan class 'separator'
-            separators = chapter_content.find_all('div', class_='separator')
-            items = []
-            for sep in separators:
-                img = sep.find('img')
-                if img:
-                    src = img.get('src')
-                    if src and src.startswith('http') and 'loading.gif' not in src:
-                        idx = sep.get('data-index')
-                        if idx is not None:
-                            try:
-                                idx = int(idx)
-                            except:
-                                idx = 0
-                        items.append((idx, src))
-            # Urutkan berdasarkan data-index
-            items.sort(key=lambda x: x[0])
-            images = [src for _, src in items]
-            if images:
-                return images
-        # Jika tidak ketemu, coba cari semua img dengan src mengandung cdn.manhuaplus.org
-        for img in soup.find_all('img', src=re.compile(r'cdn\.manhuaplus\.org')):
+        if not chapter_content:
+            print(f"   Tidak menemukan div#chapterContent")
+            return []
+        images = []
+        for img in chapter_content.find_all('img'):
             src = img.get('src')
-            if src and src not in images:
+            if src and src.startswith('http') and 'loading.gif' not in src and '.svg' not in src:
                 images.append(src)
         return images
     except Exception as e:
