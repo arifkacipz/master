@@ -181,9 +181,33 @@
                 scrollTimeout = requestAnimationFrame(updateMenuOnScroll);
             });
 
-            // ========== TAP TO HIDE (tetap ada) ==========
-            document.body.addEventListener('click', (e) => {
-                if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
+            // ========== TAP AREA BAGI PROPORSI ==========
+            document.addEventListener('click', function(e) {
+                // Abaikan klik pada header atau bottom navigation (termasuk elemen di dalamnya)
+                if (e.target.closest('#top-header') || e.target.closest('#bottom-nav')) {
+                    return;
+                }
+
+                const viewportHeight = window.innerHeight;
+                const clickY = e.clientY;
+
+                const topThreshold = viewportHeight * 0.4; // 2/5
+                const bottomThreshold = viewportHeight * 0.6; // 3/5
+
+                if (clickY < topThreshold) {
+                    // Area atas: scroll ke atas (sekitar 80% tinggi layar)
+                    window.scrollBy({
+                        top: -viewportHeight * 0.8,
+                        behavior: 'smooth'
+                    });
+                } else if (clickY > bottomThreshold) {
+                    // Area bawah: scroll ke bawah
+                    window.scrollBy({
+                        top: viewportHeight * 0.8,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // Area tengah: toggle navigator
                     menuVisible = !menuVisible;
                     header.classList.toggle('menu-hidden-top', !menuVisible);
                     bottomNav.classList.toggle('menu-hidden-bottom', !menuVisible);
