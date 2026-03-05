@@ -256,73 +256,113 @@
                         nextBtn.onclick = () => location.href = `/asn/${slug}/ch-${nextNumber}`;
                     }
 
-                    // ========== RENDER GAMBAR DENGAN WEBP & PRELOAD ==========
+                    // ========== RENDER GAMBAR DENGAN PARALLEL LOADING ==========
                     const container = document.getElementById('tap-area');
                     const images = chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true}));
-                    let imageIndex = 0;
+                    
+                    // Data untuk mengelola pemuatan paralel
+                    const loadedImages = []; // array of img elements yang sudah selesai dimuat, index sesuai urutan
+                    let currentDisplayIndex = 0; // indeks gambar yang akan ditampilkan berikutnya
+                    let inProgress = 0; // jumlah gambar sedang dimuat
+                    const maxConcurrent = 3; // maksimal 3 gambar sekaligus
 
-                    // Fungsi untuk memuat gambar berikutnya
-                    function loadNextImage() {
-                        if (imageIndex >= images.length) return;
-
-                        const imgUrl = images[imageIndex];
-                        const img = document.createElement('img');
-                        img.loading = "lazy";
-                        img.alt = "";
-
-                        // Cek apakah URL sudah menggunakan ekstensi .webp
-                        const isWebp = imgUrl.toLowerCase().endsWith('.webp');
-
-                        // Event error: fallback ke URL asli jika WebP gagal
-                        img.onerror = () => {
-                            if (!isWebp && img.src.includes('weserv.nl')) {
-                                // Coba dengan URL asli
-                                img.src = imgUrl;
-                            } else {
-                                img.remove(); // asli juga gagal
-                            }
-                            // Tetap lanjut ke gambar berikutnya
-                            imageIndex++;
-                            loadNextImage();
-                        };
-
-                        img.onload = () => {
-                            imageIndex++;
-                            // Preload gambar berikutnya (cache)
-                            if (imageIndex < images.length) {
-                                const nextUrl = images[imageIndex];
-                                const preload = new Image();
-                                const nextIsWebp = nextUrl.toLowerCase().endsWith('.webp');
-                                if (window.webpSupported && !nextIsWebp) {
-                                    preload.src = `https://images.weserv.nl/?url=${encodeURIComponent(nextUrl)}&output=webp`;
-                                } else {
-                                    preload.src = nextUrl;
-                                }
-                            }
-                            loadNextImage(); // muat gambar berikutnya setelah yang ini selesai
-                        };
-
-                        // Tentukan src: 
-                        // - Jika URL sudah .webp, pakai langsung
-                        // - Jika browser dukung WebP dan URL bukan .webp, gunakan weserv
-                        // - Selain itu, pakai URL asli
-                        if (window.webpSupported && !isWebp) {
-                            img.src = `https://images.weserv.nl/?url=${encodeURIComponent(imgUrl)}&output=webp`;
-                        } else {
-                            img.src = imgUrl;
+                    // Fungsi untuk memulai pemuatan gambar berikutnya jika ada slot
+                    function startLoading() {
+                        while (inProgress < maxConcurrent && loadedImages.length < images.length) {
+                            const index = loadedImages.length; // gambar berikutnya yang belum dimulai
+                            loadImage(index);
                         }
-
-                        container.appendChild(img);
                     }
 
-                    // Deteksi WebP sebelum memulai loading
+                    // Fungsi untuk memuat satu gambar berdasarkan indeks
+                    function loadImage(index) {
+                        if (index >= images.length) return;
+                        inProgress++;
+
+                        const imgUrl = images[index];
+                        const img = document.createElement('img');
+                        img.loading = "lazy"; // tetap tambahkan lazy loading
+                        img.alt = "";
+
+                        // Cek ekstensi .webp
+                        const isWebp = imgUrl.toLowerCase().endsWith('.webp');
+
+                        // Tentukan src
+                        let src;
+                        if (window.webpSupported && !isWebp) {
+                            src = `https://images.weserv.nl/?url=${encodeURIComponent(imgUrl)}&output=webp`;
+                        } else {
+                            src = imgUrl;
+                        }
+
+                        // Handler sukses
+                        img.onload = () => {
+                            // Simpan elemen yang sudah selesai
+                            loadedImages[index] = img;
+                            inProgress--;
+
+                            // Coba tampilkan gambar yang sudah siap secara berurutan
+                            displayReadyImages();
+
+                            // Mulai loading berikutnya
+                            startLoading();
+                        };
+
+                        // Handler error
+                        img.onerror = () => {
+                            // Jika gagal dan menggunakan weserv, coba dengan URL asli
+                            if (src.includes('weserv.nl') && !isWebp) {
+                                // Coba ulang dengan URL asli
+                                const retryImg = new Image();
+                                retryImg.onload = () => {
+                                    loadedImages[index] = retryImg;
+                                    inProgress--;
+                                    displayReadyImages();
+                                    startLoading();
+                                };
+                                retryImg.onerror = () => {
+                                    // Gagal total, lewati gambar ini
+                                    console.warn('Gambar gagal dimuat:', imgUrl);
+                                    loadedImages[index] = null; // tanda gagal
+                                    inProgress--;
+                                    displayReadyImages(); // tetap panggil untuk maju (null akan dilewati)
+                                    startLoading();
+                                };
+                                retryImg.src = imgUrl;
+                            } else {
+                                // Gagal total
+                                console.warn('Gambar gagal dimuat:', imgUrl);
+                                loadedImages[index] = null;
+                                inProgress--;
+                                displayReadyImages();
+                                startLoading();
+                            }
+                        };
+
+                        // Mulai pemuatan
+                        img.src = src;
+                    }
+
+                    // Fungsi untuk menampilkan gambar yang sudah siap secara berurutan
+                    function displayReadyImages() {
+                        while (currentDisplayIndex < images.length && loadedImages[currentDisplayIndex] !== undefined) {
+                            const img = loadedImages[currentDisplayIndex];
+                            if (img !== null) {
+                                container.appendChild(img);
+                            }
+                            // Jika null, lewati (gambar gagal)
+                            currentDisplayIndex++;
+                        }
+                    }
+
+                    // Deteksi dukungan WebP lalu mulai loading
                     if (window.webpSupported === undefined) {
                         checkWebPSupport((supported) => {
                             window.webpSupported = supported;
-                            loadNextImage();
+                            startLoading();
                         });
                     } else {
-                        loadNextImage();
+                        startLoading();
                     }
                 })
                 .catch(err => {
