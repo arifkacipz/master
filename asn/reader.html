@@ -18,7 +18,7 @@
             margin: 0 auto;
             background: #0a0a0a;
             border-bottom: 1px solid rgba(255,255,255,0.05);
-            pointer-events: none; /* agar tap tidak terhalang gambar */
+            pointer-events: none;
         }
         .nav-btn {
             flex: 1;
@@ -50,7 +50,6 @@
             background-position: right 1rem center;
             background-size: 1rem;
         }
-        /* Loading shimmer */
         .loader-shine {
             background: linear-gradient(90deg, #1e1e1e 25%, #2d2d2d 50%, #1e1e1e 75%);
             background-size: 200% 100%;
@@ -105,37 +104,35 @@
 
     <script>
         // ==================== FUNGSI RECENT (localStorage) ====================
-        // Fungsi untuk menambah komik ke daftar terakhir dibaca
         function addToRecent(slug, judul, thumb) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
-                
-                // Hapus jika sudah ada (pindahkan ke paling atas)
                 recentData = recentData.filter(item => item.slug !== slug);
-                
-                // Tambah ke awal
                 recentData.unshift({
                     slug: slug,
                     judul: judul,
                     thumb: thumb,
                     waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
                 });
-                
-                // Batasi hanya 4
-                if (recentData.length > 4) {
-                    recentData = recentData.slice(0, 4);
-                }
-                
+                if (recentData.length > 4) recentData = recentData.slice(0, 4);
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
             } catch (e) {
                 console.warn('Gagal menyimpan riwayat:', e);
             }
         }
 
+        // ========== FUNGSI CEK DUKUNGAN WebP ==========
+        function checkWebPSupport(callback) {
+            const webP = new Image();
+            webP.onload = webP.onerror = function() {
+                callback(webP.height === 2);
+            };
+            webP.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoCAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
+        }
+
         // ========== FUNGSI UTAMA READER ==========
         (function() {
-            // Fungsi ekstrak nomor chapter
             function getChapterNumber(chapterName) {
                 const match = chapterName.match(/\d+(\.\d+)?/);
                 return match ? match[0] : '';
@@ -145,43 +142,37 @@
             let lastScrollTop = 0;
             const header = document.getElementById('top-header');
             const bottomNav = document.getElementById('bottom-nav');
-            const tapArea = document.getElementById('tap-area');
-            let menuVisible = true; // status saat ini (true = tampil)
+            let menuVisible = true;
             let scrollTimeout;
 
             function updateMenuOnScroll() {
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 const windowHeight = window.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
-                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50; // 50px dari bawah
+                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50;
 
-                // Arah scroll
                 if (scrollTop > lastScrollTop && scrollTop > 50) {
-                    // Scroll ke bawah, sembunyikan menu
                     if (menuVisible) {
                         menuVisible = false;
                         header.classList.add('menu-hidden-top');
                         bottomNav.classList.add('menu-hidden-bottom');
                     }
                 } else if (scrollTop < lastScrollTop || isNearBottom) {
-                    // Scroll ke atas atau sudah di bawah, tampilkan menu
                     if (!menuVisible) {
                         menuVisible = true;
                         header.classList.remove('menu-hidden-top');
                         bottomNav.classList.remove('menu-hidden-bottom');
                     }
                 }
-
                 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             }
 
             window.addEventListener('scroll', () => {
-                // Throttle performa
                 if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
                 scrollTimeout = requestAnimationFrame(updateMenuOnScroll);
             });
 
-            // ========== TAP TO HIDE (tetap ada) ==========
+            // ========== TAP TO HIDE ==========
             document.body.addEventListener('click', (e) => {
                 if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
                     menuVisible = !menuVisible;
@@ -232,7 +223,6 @@
                     const chapter = manga.chapters[currentIndex];
                     const currentChapterNumber = getChapterNumber(chapter.nama);
 
-                    // Catat kunjungan ke recent
                     addToRecent(slug, manga.judul, manga.thumb);
 
                     document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
@@ -266,16 +256,74 @@
                         nextBtn.onclick = () => location.href = `/asn/${slug}/ch-${nextNumber}`;
                     }
 
-                    // Render gambar
+                    // ========== RENDER GAMBAR DENGAN WEBP & PRELOAD ==========
                     const container = document.getElementById('tap-area');
-                    chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(imgUrl => {
+                    const images = chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true}));
+                    let imageIndex = 0;
+
+                    // Fungsi untuk memuat gambar berikutnya
+                    function loadNextImage() {
+                        if (imageIndex >= images.length) return;
+
+                        const imgUrl = images[imageIndex];
                         const img = document.createElement('img');
-                        img.src = imgUrl;
                         img.loading = "lazy";
                         img.alt = "";
-                        img.onerror = () => img.remove();
+
+                        // Cek apakah URL sudah menggunakan ekstensi .webp
+                        const isWebp = imgUrl.toLowerCase().endsWith('.webp');
+
+                        // Event error: fallback ke URL asli jika WebP gagal
+                        img.onerror = () => {
+                            if (!isWebp && img.src.includes('weserv.nl')) {
+                                // Coba dengan URL asli
+                                img.src = imgUrl;
+                            } else {
+                                img.remove(); // asli juga gagal
+                            }
+                            // Tetap lanjut ke gambar berikutnya
+                            imageIndex++;
+                            loadNextImage();
+                        };
+
+                        img.onload = () => {
+                            imageIndex++;
+                            // Preload gambar berikutnya (cache)
+                            if (imageIndex < images.length) {
+                                const nextUrl = images[imageIndex];
+                                const preload = new Image();
+                                const nextIsWebp = nextUrl.toLowerCase().endsWith('.webp');
+                                if (window.webpSupported && !nextIsWebp) {
+                                    preload.src = `https://images.weserv.nl/?url=${encodeURIComponent(nextUrl)}&output=webp`;
+                                } else {
+                                    preload.src = nextUrl;
+                                }
+                            }
+                            loadNextImage(); // muat gambar berikutnya setelah yang ini selesai
+                        };
+
+                        // Tentukan src: 
+                        // - Jika URL sudah .webp, pakai langsung
+                        // - Jika browser dukung WebP dan URL bukan .webp, gunakan weserv
+                        // - Selain itu, pakai URL asli
+                        if (window.webpSupported && !isWebp) {
+                            img.src = `https://images.weserv.nl/?url=${encodeURIComponent(imgUrl)}&output=webp`;
+                        } else {
+                            img.src = imgUrl;
+                        }
+
                         container.appendChild(img);
-                    });
+                    }
+
+                    // Deteksi WebP sebelum memulai loading
+                    if (window.webpSupported === undefined) {
+                        checkWebPSupport((supported) => {
+                            window.webpSupported = supported;
+                            loadNextImage();
+                        });
+                    } else {
+                        loadNextImage();
+                    }
                 })
                 .catch(err => {
                     console.error(err);
