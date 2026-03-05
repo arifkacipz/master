@@ -18,7 +18,7 @@
             margin: 0 auto;
             background: #0a0a0a;
             border-bottom: 1px solid rgba(255,255,255,0.05);
-            pointer-events: none;
+            pointer-events: none; /* agar tap tidak terhalang gambar */
         }
         .nav-btn {
             flex: 1;
@@ -50,6 +50,7 @@
             background-position: right 1rem center;
             background-size: 1rem;
         }
+        /* Loading shimmer */
         .loader-shine {
             background: linear-gradient(90deg, #1e1e1e 25%, #2d2d2d 50%, #1e1e1e 75%);
             background-size: 200% 100%;
@@ -104,35 +105,37 @@
 
     <script>
         // ==================== FUNGSI RECENT (localStorage) ====================
+        // Fungsi untuk menambah komik ke daftar terakhir dibaca
         function addToRecent(slug, judul, thumb) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
+                
+                // Hapus jika sudah ada (pindahkan ke paling atas)
                 recentData = recentData.filter(item => item.slug !== slug);
+                
+                // Tambah ke awal
                 recentData.unshift({
                     slug: slug,
                     judul: judul,
                     thumb: thumb,
                     waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
                 });
-                if (recentData.length > 4) recentData = recentData.slice(0, 4);
+                
+                // Batasi hanya 4
+                if (recentData.length > 4) {
+                    recentData = recentData.slice(0, 4);
+                }
+                
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
             } catch (e) {
                 console.warn('Gagal menyimpan riwayat:', e);
             }
         }
 
-        // ========== FUNGSI CEK DUKUNGAN WebP ==========
-        function checkWebPSupport(callback) {
-            const webP = new Image();
-            webP.onload = webP.onerror = function() {
-                callback(webP.height === 2);
-            };
-            webP.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoCAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
-        }
-
         // ========== FUNGSI UTAMA READER ==========
         (function() {
+            // Fungsi ekstrak nomor chapter
             function getChapterNumber(chapterName) {
                 const match = chapterName.match(/\d+(\.\d+)?/);
                 return match ? match[0] : '';
@@ -142,37 +145,43 @@
             let lastScrollTop = 0;
             const header = document.getElementById('top-header');
             const bottomNav = document.getElementById('bottom-nav');
-            let menuVisible = true;
+            const tapArea = document.getElementById('tap-area');
+            let menuVisible = true; // status saat ini (true = tampil)
             let scrollTimeout;
 
             function updateMenuOnScroll() {
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 const windowHeight = window.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
-                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50;
+                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50; // 50px dari bawah
 
+                // Arah scroll
                 if (scrollTop > lastScrollTop && scrollTop > 50) {
+                    // Scroll ke bawah, sembunyikan menu
                     if (menuVisible) {
                         menuVisible = false;
                         header.classList.add('menu-hidden-top');
                         bottomNav.classList.add('menu-hidden-bottom');
                     }
                 } else if (scrollTop < lastScrollTop || isNearBottom) {
+                    // Scroll ke atas atau sudah di bawah, tampilkan menu
                     if (!menuVisible) {
                         menuVisible = true;
                         header.classList.remove('menu-hidden-top');
                         bottomNav.classList.remove('menu-hidden-bottom');
                     }
                 }
+
                 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             }
 
             window.addEventListener('scroll', () => {
+                // Throttle performa
                 if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
                 scrollTimeout = requestAnimationFrame(updateMenuOnScroll);
             });
 
-            // ========== TAP TO HIDE ==========
+            // ========== TAP TO HIDE (tetap ada) ==========
             document.body.addEventListener('click', (e) => {
                 if (!e.target.closest('#bottom-nav') && !e.target.closest('#top-header')) {
                     menuVisible = !menuVisible;
@@ -223,6 +232,7 @@
                     const chapter = manga.chapters[currentIndex];
                     const currentChapterNumber = getChapterNumber(chapter.nama);
 
+                    // Catat kunjungan ke recent
                     addToRecent(slug, manga.judul, manga.thumb);
 
                     document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
@@ -256,114 +266,16 @@
                         nextBtn.onclick = () => location.href = `/asn/${slug}/ch-${nextNumber}`;
                     }
 
-                    // ========== RENDER GAMBAR DENGAN PARALLEL LOADING ==========
+                    // Render gambar
                     const container = document.getElementById('tap-area');
-                    const images = chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true}));
-                    
-                    // Data untuk mengelola pemuatan paralel
-                    const loadedImages = []; // array of img elements yang sudah selesai dimuat, index sesuai urutan
-                    let currentDisplayIndex = 0; // indeks gambar yang akan ditampilkan berikutnya
-                    let inProgress = 0; // jumlah gambar sedang dimuat
-                    const maxConcurrent = 3; // maksimal 3 gambar sekaligus
-
-                    // Fungsi untuk memulai pemuatan gambar berikutnya jika ada slot
-                    function startLoading() {
-                        while (inProgress < maxConcurrent && loadedImages.length < images.length) {
-                            const index = loadedImages.length; // gambar berikutnya yang belum dimulai
-                            loadImage(index);
-                        }
-                    }
-
-                    // Fungsi untuk memuat satu gambar berdasarkan indeks
-                    function loadImage(index) {
-                        if (index >= images.length) return;
-                        inProgress++;
-
-                        const imgUrl = images[index];
+                    chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(imgUrl => {
                         const img = document.createElement('img');
-                        img.loading = "lazy"; // tetap tambahkan lazy loading
+                        img.src = imgUrl;
+                        img.loading = "lazy";
                         img.alt = "";
-
-                        // Cek ekstensi .webp
-                        const isWebp = imgUrl.toLowerCase().endsWith('.webp');
-
-                        // Tentukan src
-                        let src;
-                        if (window.webpSupported && !isWebp) {
-                            src = `https://images.weserv.nl/?url=${encodeURIComponent(imgUrl)}&output=webp`;
-                        } else {
-                            src = imgUrl;
-                        }
-
-                        // Handler sukses
-                        img.onload = () => {
-                            // Simpan elemen yang sudah selesai
-                            loadedImages[index] = img;
-                            inProgress--;
-
-                            // Coba tampilkan gambar yang sudah siap secara berurutan
-                            displayReadyImages();
-
-                            // Mulai loading berikutnya
-                            startLoading();
-                        };
-
-                        // Handler error
-                        img.onerror = () => {
-                            // Jika gagal dan menggunakan weserv, coba dengan URL asli
-                            if (src.includes('weserv.nl') && !isWebp) {
-                                // Coba ulang dengan URL asli
-                                const retryImg = new Image();
-                                retryImg.onload = () => {
-                                    loadedImages[index] = retryImg;
-                                    inProgress--;
-                                    displayReadyImages();
-                                    startLoading();
-                                };
-                                retryImg.onerror = () => {
-                                    // Gagal total, lewati gambar ini
-                                    console.warn('Gambar gagal dimuat:', imgUrl);
-                                    loadedImages[index] = null; // tanda gagal
-                                    inProgress--;
-                                    displayReadyImages(); // tetap panggil untuk maju (null akan dilewati)
-                                    startLoading();
-                                };
-                                retryImg.src = imgUrl;
-                            } else {
-                                // Gagal total
-                                console.warn('Gambar gagal dimuat:', imgUrl);
-                                loadedImages[index] = null;
-                                inProgress--;
-                                displayReadyImages();
-                                startLoading();
-                            }
-                        };
-
-                        // Mulai pemuatan
-                        img.src = src;
-                    }
-
-                    // Fungsi untuk menampilkan gambar yang sudah siap secara berurutan
-                    function displayReadyImages() {
-                        while (currentDisplayIndex < images.length && loadedImages[currentDisplayIndex] !== undefined) {
-                            const img = loadedImages[currentDisplayIndex];
-                            if (img !== null) {
-                                container.appendChild(img);
-                            }
-                            // Jika null, lewati (gambar gagal)
-                            currentDisplayIndex++;
-                        }
-                    }
-
-                    // Deteksi dukungan WebP lalu mulai loading
-                    if (window.webpSupported === undefined) {
-                        checkWebPSupport((supported) => {
-                            window.webpSupported = supported;
-                            startLoading();
-                        });
-                    } else {
-                        startLoading();
-                    }
+                        img.onerror = () => img.remove();
+                        container.appendChild(img);
+                    });
                 })
                 .catch(err => {
                     console.error(err);
