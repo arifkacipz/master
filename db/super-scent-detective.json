@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/4e6e4ae2-24d3-4a6f-8229-00556d9ca8ba.jpg",
     "source": "merged",
     "online": 13,
-    "chapterCount": 12,
+    "chapterCount": 13,
     "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13",
     "chapters": [
         {
@@ -23,6 +23,24 @@
                 "https://arenascan.com/wp-content/uploads/manga/super-scent-detective/1/011.jpg",
                 "https://arenascan.com/wp-content/uploads/manga/super-scent-detective/1/012.jpg",
                 "https://arenascan.com/wp-content/uploads/manga/super-scent-detective/1/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/super-scent-detective-2-2/",
+            "images": [
+                "https://arenascan.com/wp-content/uploads/2026/01/001-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/002-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/003-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/004-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/005-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/006-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/007-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/008-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/009-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/010-22.jpg",
+                "https://arenascan.com/wp-content/uploads/2026/01/011-22.jpg"
             ],
             "source_chapter": "arenascan"
         },
