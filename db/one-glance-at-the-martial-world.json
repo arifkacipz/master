@@ -1,11 +1,22 @@
 {
     "judul": "One Glance at the Martial World",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/One-Glance-at-the-Martial-World-193x278.jpg",
-    "source": "arenascan",
+    "source": "merged",
     "online": 7,
-    "chapterCount": 6,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "chapterCount": 7,
+    "Chs": "Chapter 0, Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6",
     "chapters": [
+        {
+            "nama": "Chapter 0",
+            "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-0/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378256/0/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/0/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/0/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/0/004.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 1",
             "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-1/",
