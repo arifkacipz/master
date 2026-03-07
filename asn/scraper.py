@@ -496,12 +496,11 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
 
         print(f"   Chapter baru ditemukan: {len(ch_to_scrape)}")
 
-        # Terapkan limit jika diminta (hanya untuk chapter baru)
-        if limit_ch:
-            ch_to_scrape = ch_to_scrape[:limit_ch]
-
-        # Balik urutan menjadi terlama -> terbaru
-        ch_to_scrape.reverse()
+        # --- PERBAIKAN: Urutkan ascending lalu ambil chapter terbaru (nomor terbesar) ---
+        if ch_to_scrape:
+            ch_to_scrape.sort(key=lambda x: extract_chapter_number(x['nama']) or 0)  # ascending
+            if limit_ch:
+                ch_to_scrape = ch_to_scrape[-limit_ch:]   # ambil chapter dengan nomor terbesar
 
         # Ambil gambar setiap chapter baru
         healthy_chapters = []
@@ -542,7 +541,10 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
         return None
 
 def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False):
-    """Sama seperti sebelumnya, tidak berubah."""
+    """
+    Memproses satu komik dari arenascan.
+    Hanya mengambil chapter yang belum ada di file db/{slug}.json.
+    """
     print(f"--- Arenascan memproses: {judul} ---")
     try:
         existing_nums = load_existing_chapter_numbers(slug)
@@ -592,6 +594,7 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
 
         all_chapters = [ch['nama'] for ch in ch_list]
 
+        # Filter chapter yang belum ada di db
         ch_to_scrape = []
         for ch in ch_list:
             num = extract_chapter_number(ch['nama'])
@@ -602,10 +605,13 @@ def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, sa
 
         print(f"   Chapter baru ditemukan: {len(ch_to_scrape)}")
 
-        if limit_ch:
-            ch_to_scrape = ch_to_scrape[:limit_ch]
-        ch_to_scrape.reverse()
+        # --- PERBAIKAN: Urutkan ascending lalu ambil chapter terbaru ---
+        if ch_to_scrape:
+            ch_to_scrape.sort(key=lambda x: extract_chapter_number(x['nama']) or 0)
+            if limit_ch:
+                ch_to_scrape = ch_to_scrape[-limit_ch:]
 
+        # Ambil gambar setiap chapter baru
         healthy_chapters = []
         for ch in ch_to_scrape:
             print(f"   -> Scraping Chapter baru: {ch['nama']}")
