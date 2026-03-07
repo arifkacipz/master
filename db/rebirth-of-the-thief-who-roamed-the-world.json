@@ -1,10 +1,10 @@
 {
     "judul": "Rebirth of the Thief Who Roamed the World",
     "thumb": "https://manhuaplus.org/uploads/covers/rebirth-of-the-thief-who-roamed-the-world.jpg",
-    "source": "merged",
-    "online": 5,
-    "chapterCount": 5,
-    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
+    "source": "manhuaplus",
+    "online": 6,
+    "chapterCount": 6,
+    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -136,6 +136,20 @@
                 "https://cdn.manhuaplus.cc/2026/02/28/10-44-00-129039385448359.webp",
                 "https://cdn.manhuaplus.cc/2026/02/28/10-44-03-129042622775190.webp"
             ]
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://manhuaplus.org/manga/rebirth-of-the-thief-who-roamed-the-world/chapter-6",
+            "images": [
+                "https://cdn.manhuaplus.cc/2026/03/07/08-21-01-725260850524843.webp",
+                "https://cdn.manhuaplus.cc/2026/03/07/08-20-58-725257815042483.webp",
+                "https://cdn.manhuaplus.cc/2026/03/07/08-20-55-725254813285627.webp",
+                "https://cdn.manhuaplus.cc/2026/03/07/08-21-07-725267022562086.webp",
+                "https://cdn.manhuaplus.cc/2026/03/07/08-20-47-725246778444275.webp",
+                "https://cdn.manhuaplus.cc/2026/03/07/08-21-04-725263943332933.webp",
+                "https://cdn.manhuaplus.cc/2026/03/07/08-20-51-725250374753155.webp"
+            ],
+            "source_chapter": "manhuaplus"
         }
     ]
 }
