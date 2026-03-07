@@ -1,3 +1,5 @@
+ubah heirarki otomatis menjadi missing - stats - missing_fields
+
 name: Matrix Full Scrape (Random)
 
 on:
@@ -147,7 +149,7 @@ jobs:
               if source:
                   source_order = [source]
               else:
-                  source_order = ['stats', 'missing_fields', 'missing']
+                  source_order = ['mssing', 'stats', 'missing_fields']
 
               candidates = []
               used_sources = []
