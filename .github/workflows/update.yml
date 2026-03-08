@@ -2,7 +2,7 @@ name: Update PetoMic Data
 
 on:
   schedule:
-    - cron: '0 */4 * * *'   # Setiap 4 jam
+    - cron: '0 */2 * * *'   # Setiap 4 jam
   workflow_dispatch:
     inputs:
       target_slug:
