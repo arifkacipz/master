@@ -149,7 +149,7 @@ jobs:
               if source:
                   source_order = [source]
               else:
-                  source_order = ['mssing', 'stats', 'missing_fields']
+                  source_order = ['missing', 'stats', 'missing_fields']
 
               candidates = []
               used_sources = []
