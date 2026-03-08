@@ -51,13 +51,15 @@ on:
           - '30'
           - '40'
           - '50'
+          - '75'
+          - '100'
+          
       manual_slugs:
         description: 'Daftar slug manual (pisah dengan koma atau baris baru, maksimal 20)'
         required: false
         default: ''
   schedule:
-    - cron: '* */4 * * *'
-    - cron: '* */3 * * *'
+    - cron: '30 * * * *'
 
 concurrency:
   group: matrix-full-scrape
