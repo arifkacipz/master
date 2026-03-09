@@ -173,6 +173,12 @@ jobs:
           print(f"stats.json diperbarui dengan {len(stats)} komik (chapterCount < 15).")
           EOF
 
+      # ==========================================================
+      # Generate missing.json untuk semua komik di db (laporan lengkap)
+      # ==========================================================
+      - name: Generate missing.json for all comics
+        run: python miss.py
+
       # Commit dan push perubahan
       - name: Commit and push changes
         id: commit
