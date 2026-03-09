@@ -2,13 +2,21 @@ name: Update PetoMic Data
 
 on:
   schedule:
-    - cron: '0 */2 * * *'   # Setiap 4 jam
+    - cron: '5 */2 * * *' 
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Slug komik (contoh: virus-king) - kosongkan untuk mode katalog'
+        description: 'Slug - kosong = katalog'
         required: false
         default: ''
+      pages:
+        description: 'Jumlah halaman katalog (default: 2)'
+        required: false
+        default: '2'
+      chapters:
+        description: 'Jumlah chapter terbaru (default: 3)'
+        required: false
+        default: '3'
 
 jobs:
   build:
@@ -28,23 +36,30 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 cloudinary
 
-      - name: Run Scraper (mode auto untuk slug tertentu)
+      # Mode untuk slug tertentu (satu komik)
+      - name: Run Scraper (single comic mode)
         if: github.event.inputs.target_slug != ''
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
-          python asn/scraper.py --slug "${{ github.event.inputs.target_slug }}"
+          python asn/scraper.py \
+            --slug "${{ github.event.inputs.target_slug }}" \
+            --limit ${{ github.event.inputs.chapters }}
 
-      - name: Run Scraper (mode katalog default)
+      # Mode katalog (banyak komik)
+      - name: Run Scraper (catalog mode)
         if: github.event.inputs.target_slug == ''
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
-          python asn/scraper.py --catalog --pages 2 --limit 3
+          python asn/scraper.py \
+            --catalog \
+            --pages ${{ github.event.inputs.pages }} \
+            --limit ${{ github.event.inputs.chapters }}
 
       # Opsional: Generate missing.json jika diperlukan
       - name: Generate missing.json
