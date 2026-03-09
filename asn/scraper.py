@@ -8,7 +8,7 @@ import cloudinary
 import cloudinary.uploader
 import argparse
 from collections import OrderedDict
-import datetime  # <-- tambahan untuk timestamp
+import datetime  # untuk timestamp
 
 # ================== SELENIUM ==================
 try:
@@ -54,9 +54,23 @@ def upload_to_cloudinary(image_url, public_id, folder="petomic_thumbs"):
         print(f"Cloudinary upload gagal: {e}")
         return image_url  # Fallback ke URL asli
 
+def get_db_path(slug):
+    """
+    Menentukan path file JSON berdasarkan huruf pertama slug.
+    Contoh: virus-king -> db/v/virus-king.json
+    """
+    first_char = slug[0].lower() if slug else 'others'
+    if first_char.isalnum():
+        folder = first_char
+    else:
+        folder = 'others'
+    # Buat folder jika belum ada
+    os.makedirs(os.path.join('db', folder), exist_ok=True)
+    return os.path.join('db', folder, f'{slug}.json')
+
 def load_existing_chapter_numbers(slug):
-    """Mengembalikan set nomor chapter yang sudah ada di file db/{slug}.json."""
-    path = f'db/{slug}.json'
+    """Mengembalikan set nomor chapter yang sudah ada di file db/.../{slug}.json."""
+    path = get_db_path(slug)
     if os.path.exists(path):
         try:
             with open(path, 'r', encoding='utf-8') as f:
@@ -74,8 +88,8 @@ def load_existing_chapter_numbers(slug):
     return set()
 
 def load_from_db(slug):
-    """Load data dari file db/{slug}.json jika ada dan valid."""
-    path = f'db/{slug}.json'
+    """Load data dari file db/.../{slug}.json jika ada dan valid."""
+    path = get_db_path(slug)
     if os.path.exists(path):
         try:
             with open(path, 'r', encoding='utf-8') as f:
@@ -108,14 +122,12 @@ def merge_chapters_by_number(old_chapters, new_chapters):
 
 def save_to_db(slug, new_data):
     """
-    Menyimpan data ke db/{slug}.json dengan menggabungkan chapter baru
+    Menyimpan data ke db/.../{slug}.json dengan menggabungkan chapter baru
     dengan chapter yang sudah ada (berdasarkan nomor chapter).
     Field `online`, `chapterCount`, dan `Chs` akan diperbarui sesuai nilai di new_data.
     Field `last_scraped` diupdate **hanya jika ada chapter baru yang ditambahkan**.
     """
-    os.makedirs('db', exist_ok=True)
-    path = f'db/{slug}.json'
-
+    path = get_db_path(slug)
     old_data = load_from_db(slug)
     if old_data:
         # Gabungkan chapter
@@ -146,15 +158,14 @@ def save_to_db(slug, new_data):
             # Pertahankan timestamp lama jika ada
             if 'last_scraped' in old_data:
                 final_data['last_scraped'] = old_data['last_scraped']
-            else:
-                # Jika belum ada sama sekali (komik lama upgrade) dan tidak ada chapter baru, jangan tambahkan
-                # Biarkan tanpa field last_scraped
-                pass
+            # Jika belum ada (komik lama tanpa last_scraped) dan tidak ada chapter baru, jangan tambahkan
     else:
         # Komik baru – pasti ada chapter baru (karena new_data hanya dibuat jika ada chapter)
         final_data = new_data
         final_data['last_scraped'] = datetime.datetime.now().isoformat()
 
+    # Pastikan folder tujuan sudah ada (seharusnya sudah dibuat oleh get_db_path saat memanggil path)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, indent=4)
 
@@ -447,7 +458,7 @@ def get_images_arenascan(chapter_url):
 def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False, use_selenium=False):
     """
     Memproses satu komik dari manhuaplus.
-    Hanya mengambil chapter yang belum ada di file db/{slug}.json.
+    Hanya mengambil chapter yang belum ada di file db/.../{slug}.json.
     Semua chapter yang memiliki daftar gambar akan disimpan, meskipun gambar pertama tidak bisa diakses.
     """
     print(f"--- ManhuaPlus memproses: {judul} ---")
@@ -560,7 +571,7 @@ def process_comic_manhuaplus(judul, link, slug, thumb_url=None, limit_ch=None, s
 def process_comic_arenascan(judul, link, slug, thumb_url=None, limit_ch=None, save=True, return_all=False):
     """
     Memproses satu komik dari arenascan.
-    Hanya mengambil chapter yang belum ada di file db/{slug}.json.
+    Hanya mengambil chapter yang belum ada di file db/.../{slug}.json.
     """
     print(f"--- Arenascan memproses: {judul} ---")
     try:
@@ -946,7 +957,7 @@ def compare_and_merge_sources(slug, use_selenium=False):
 # ================== LAPORAN MISSING ==================
 def generate_missing_report(slug, online_names, downloaded_chapters):
     # Coba baca file db untuk mendapatkan chapter yang sudah didownload (data terkini)
-    db_path = f'db/{slug}.json'
+    db_path = get_db_path(slug)
     downloaded_names = []
     judul = slug
 
@@ -1012,28 +1023,30 @@ def generate_missing_report(slug, online_names, downloaded_chapters):
 def generate_list():
     import datetime
     all_manga = []
-    for filename in os.listdir('db'):
-        if filename.endswith('.json'):
-            filepath = os.path.join('db', filename)
-            try:
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                slug = filename[:-5]
-                judul = data.get('judul', slug)
-                thumb = data.get('thumb', '')
-                last_scraped = data.get('last_scraped')
-                if not last_scraped:
-                    # Fallback ke waktu modifikasi file untuk komik lama
-                    mtime = os.path.getmtime(filepath)
-                    last_scraped = datetime.datetime.fromtimestamp(mtime).isoformat()
-                all_manga.append({
-                    "judul": judul,
-                    "slug": slug,
-                    "thumb": thumb,
-                    "Updated": last_scraped
-                })
-            except Exception as e:
-                print(f"Gagal membaca {filepath}: {e}")
+    # Scan semua subfolder di dalam db/
+    for root, dirs, files in os.walk('db'):
+        for filename in files:
+            if filename.endswith('.json'):
+                filepath = os.path.join(root, filename)
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    slug = filename[:-5]
+                    judul = data.get('judul', slug)
+                    thumb = data.get('thumb', '')
+                    last_scraped = data.get('last_scraped')
+                    if not last_scraped:
+                        # Fallback ke waktu modifikasi file untuk komik lama
+                        mtime = os.path.getmtime(filepath)
+                        last_scraped = datetime.datetime.fromtimestamp(mtime).isoformat()
+                    all_manga.append({
+                        "judul": judul,
+                        "slug": slug,
+                        "thumb": thumb,
+                        "Updated": last_scraped
+                    })
+                except Exception as e:
+                    print(f"Gagal membaca {filepath}: {e}")
     # Urutkan berdasarkan Updated terbaru
     all_manga.sort(key=lambda x: x["Updated"], reverse=True)
     with open('list.json', 'w', encoding='utf-8') as f:
@@ -1043,26 +1056,31 @@ def generate_list():
 # ================== GENERATE STATS ==================
 def generate_stats():
     stats = []
-    for filename in os.listdir('db'):
-        if filename.endswith('.json'):
-            with open(os.path.join('db', filename), 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                slug = filename[:-5]
-                judul = data.get("judul", slug)
-                thumb = data.get("thumb", "")
-                online = data.get("online", len(data.get("chapters", [])))
-                chapterCount = data.get("chapterCount", 0)
-                chs = data.get("Chs", "")
-                source = data.get("source", "unknown")
-                stats.append({
-                    "slug": slug,
-                    "judul": judul,
-                    "thumb": thumb,
-                    "source": source,
-                    "online": online,
-                    "chapterCount": chapterCount,
-                    "Chs": chs
-                })
+    for root, dirs, files in os.walk('db'):
+        for filename in files:
+            if filename.endswith('.json'):
+                filepath = os.path.join(root, filename)
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    slug = filename[:-5]
+                    judul = data.get("judul", slug)
+                    thumb = data.get("thumb", "")
+                    online = data.get("online", len(data.get("chapters", [])))
+                    chapterCount = data.get("chapterCount", 0)
+                    chs = data.get("Chs", "")
+                    source = data.get("source", "unknown")
+                    stats.append({
+                        "slug": slug,
+                        "judul": judul,
+                        "thumb": thumb,
+                        "source": source,
+                        "online": online,
+                        "chapterCount": chapterCount,
+                        "Chs": chs
+                    })
+                except Exception as e:
+                    print(f"Gagal membaca {filepath}: {e}")
     low_chapter = [c for c in stats if c['online'] < 15]
     with open('stats.json', 'w', encoding='utf-8') as f:
         json.dump(low_chapter, f, indent=2, ensure_ascii=False)
