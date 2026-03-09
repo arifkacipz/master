@@ -8,6 +8,7 @@ import cloudinary
 import cloudinary.uploader
 import argparse
 from collections import OrderedDict
+import datetime  # <-- tambahan untuk timestamp
 
 # ================== SELENIUM ==================
 try:
@@ -110,6 +111,7 @@ def save_to_db(slug, new_data):
     Menyimpan data ke db/{slug}.json dengan menggabungkan chapter baru
     dengan chapter yang sudah ada (berdasarkan nomor chapter).
     Field `online`, `chapterCount`, dan `Chs` akan diperbarui sesuai nilai di new_data.
+    Field `last_scraped` diupdate **hanya jika ada chapter baru yang ditambahkan**.
     """
     os.makedirs('db', exist_ok=True)
     path = f'db/{slug}.json'
@@ -136,8 +138,22 @@ def save_to_db(slug, new_data):
             "Chs": chs,
             "chapters": merged_chapters
         }
+        # Tentukan apakah ada chapter baru yang berhasil ditambahkan
+        has_new_chapters = len(new_chapters) > 0
+        if has_new_chapters:
+            final_data['last_scraped'] = datetime.datetime.now().isoformat()
+        else:
+            # Pertahankan timestamp lama jika ada
+            if 'last_scraped' in old_data:
+                final_data['last_scraped'] = old_data['last_scraped']
+            else:
+                # Jika belum ada sama sekali (komik lama upgrade) dan tidak ada chapter baru, jangan tambahkan
+                # Biarkan tanpa field last_scraped
+                pass
     else:
+        # Komik baru – pasti ada chapter baru (karena new_data hanya dibuat jika ada chapter)
         final_data = new_data
+        final_data['last_scraped'] = datetime.datetime.now().isoformat()
 
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, indent=4)
@@ -992,18 +1008,34 @@ def generate_missing_report(slug, online_names, downloaded_chapters):
         json.dump(all_reports, f, indent=2, ensure_ascii=False)
     print(f"Laporan missing diperbarui di {missing_file}")
 
-# ================== GENERATE LIST ==================
+# ================== GENERATE LIST (versi scraper) ==================
 def generate_list():
+    import datetime
     all_manga = []
     for filename in os.listdir('db'):
         if filename.endswith('.json'):
-            with open(os.path.join('db', filename), 'r', encoding='utf-8') as f:
-                data = json.load(f)
+            filepath = os.path.join('db', filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                slug = filename[:-5]
+                judul = data.get('judul', slug)
+                thumb = data.get('thumb', '')
+                last_scraped = data.get('last_scraped')
+                if not last_scraped:
+                    # Fallback ke waktu modifikasi file untuk komik lama
+                    mtime = os.path.getmtime(filepath)
+                    last_scraped = datetime.datetime.fromtimestamp(mtime).isoformat()
                 all_manga.append({
-                    "judul": data.get("judul", ""),
-                    "slug": filename[:-5],
-                    "thumb": data.get("thumb", "")
+                    "judul": judul,
+                    "slug": slug,
+                    "thumb": thumb,
+                    "Updated": last_scraped
                 })
+            except Exception as e:
+                print(f"Gagal membaca {filepath}: {e}")
+    # Urutkan berdasarkan Updated terbaru
+    all_manga.sort(key=lambda x: x["Updated"], reverse=True)
     with open('list.json', 'w', encoding='utf-8') as f:
         json.dump(all_manga, f, indent=4)
     print(f"list.json diperbarui dengan {len(all_manga)} manga.")
