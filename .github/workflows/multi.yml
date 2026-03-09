@@ -57,7 +57,7 @@ on:
         required: false
         default: ''
   schedule:
-    - cron: '30 * * * *'
+    - cron: '30 */1 * * *'
 
 jobs:
   select-slugs:
@@ -142,13 +142,13 @@ jobs:
           source = os.environ.get('SOURCE', '').strip()
           filter_by = os.environ.get('FILTER_BY', 'online').strip()
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '').strip()
-          count_str = os.environ.get('COUNT', '5').strip()
+          count_str = os.environ.get('COUNT', '10').strip()
 
           try:
-              count = int(count_str) if count_str else 5
+              count = int(count_str) if count_str else 10
           except:
-              count = 5
-          count = min(max(count, 1), 50)
+              count = 10
+          count = min(max(count, 1), 100)
 
           TRACKER_FILE = 'tracker.json'
           selected = []
@@ -289,7 +289,7 @@ jobs:
     strategy:
       matrix:
         slug: ${{ fromJson(needs.select-slugs.outputs.slugs) }}
-      max-parallel: 50
+      max-parallel: 20
     steps:
       - uses: actions/checkout@v4
 
