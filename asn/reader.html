@@ -133,6 +133,19 @@
             }
         }
 
+        // ==================== FUNGSI MENENTUKAN PATH FILE JSON ====================
+        function getDbPath(slug) {
+            if (!slug) return '';
+            const firstChar = slug[0].toLowerCase();
+            let folder;
+            if (/[a-z0-9]/.test(firstChar)) {
+                folder = firstChar;
+            } else {
+                folder = 'others';
+            }
+            return `/db/${folder}/${slug}.json`;
+        }
+
         // ========== FUNGSI UTAMA READER ==========
         (function() {
             // Fungsi ekstrak nomor chapter
@@ -240,8 +253,11 @@
             document.getElementById('back-detail').href = `/asn/${slug}`;
 
             // ========== FETCH DATA ==========
-            fetch(`/db/${slug}.json`)
-                .then(res => res.json())
+            fetch(getDbPath(slug))
+                .then(res => {
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    return res.json();
+                })
                 .then(manga => {
                     let currentIndex;
                     if (chapterNumber !== undefined) {
