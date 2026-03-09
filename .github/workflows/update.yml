@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      actions: write   # Diperlukan untuk membaca daftar workflow dan membatalkan diri sendiri
+      actions: write
     steps:
       # ==========================================================
       # Langkah 1: Batalkan diri sendiri jika ada workflow lain yang sedang berjalan
@@ -49,38 +49,26 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const currentRunId = context.runId;
-
-            // Dapatkan semua workflow yang sedang berjalan (in_progress)
             const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
               owner,
               repo,
               status: 'in_progress',
               per_page: 100
             });
-
-            // Cari workflow lain selain diri sendiri
             const otherRunning = runs.workflow_runs.filter(run => run.id !== currentRunId);
-
             if (otherRunning.length > 0) {
               console.log(`🔴 Ada ${otherRunning.length} workflow lain yang sedang berjalan. Membatalkan diri sendiri...`);
               otherRunning.forEach(r => console.log(`   - ${r.name} (${r.id})`));
-
-              // Batalkan run saat ini
               await github.rest.actions.cancelWorkflowRun({
                 owner,
                 repo,
                 run_id: currentRunId
               });
-
-              // Keluar dengan kode error agar step dianggap gagal dan workflow berhenti
               process.exit(1);
             } else {
               console.log('✅ Tidak ada workflow lain yang berjalan, melanjutkan...');
             }
 
-      # ==========================================================
-      # Langkah selanjutnya (checkout, setup, scraping, dll.)
-      # ==========================================================
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -92,6 +80,15 @@ jobs:
 
       - name: Install dependencies
         run: pip install requests beautifulsoup4 cloudinary
+
+      # ==========================================================
+      # Untuk mode katalog, kita perlu menghitung komik baru
+      # ==========================================================
+      - name: Count existing comics (for catalog mode)
+        if: github.event.inputs.target_slug == ''
+        run: |
+          mkdir -p db
+          ls db > before_list.txt || true
 
       # Mode untuk slug tertentu (satu komik) - TANPA LIMIT
       - name: Run Scraper (single comic mode)
@@ -114,13 +111,28 @@ jobs:
           PAGES: ${{ github.event.inputs.pages }}
           LIMIT: ${{ github.event.inputs.chapters }}
         run: |
-          # Fallback jika kosong (sebenarnya tidak perlu karena required)
-          PAGES=${PAGES:-1}
+          # Tentukan jumlah halaman: jika schedule, default 1; jika dispatch, gunakan input
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            PAGES=1
+          else
+            PAGES=${PAGES:-3}
+          fi
           LIMIT=${LIMIT:-3}
           python asn/scraper.py \
             --catalog \
             --pages $PAGES \
             --limit $LIMIT
+
+      # Hitung komik baru untuk mode katalog
+      - name: Count new comics (for catalog mode)
+        if: github.event.inputs.target_slug == ''
+        id: new_comics
+        run: |
+          ls db > after_list.txt || true
+          # Hitung file baru (yang ada di after tapi tidak di before)
+          new_files=$(comm -13 <(sort before_list.txt) <(sort after_list.txt) | wc -l)
+          echo "new_comics=$new_files" >> $GITHUB_OUTPUT
+          echo "Jumlah komik baru: $new_files"
 
       # Generate list.json dari semua data di db/
       - name: Generate list.json
@@ -163,6 +175,7 @@ jobs:
 
       # Commit dan push perubahan
       - name: Commit and push changes
+        id: commit
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -172,6 +185,28 @@ jobs:
             git commit -m "PetoMic: Scrape Sync [$(date)]"
             git pull --rebase origin main
             git push origin main
+            echo "committed=true" >> $GITHUB_OUTPUT
           else
             echo "Tidak ada data baru yang ditemukan."
+            echo "committed=false" >> $GITHUB_OUTPUT
           fi
+
+      # Kirim notifikasi Telegram
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          format: html
+          message: |
+            <b>Workflow:</b> ${{ github.workflow }}
+            <b>Status:</b> ${{ job.status }}
+            <b>Run ID:</b> ${{ github.run_id }}
+            <b>Trigger:</b> ${{ github.event_name }}
+            <b>Mode:</b> ${{ github.event.inputs.target_slug != '' && 'Single Comic' || 'Catalog' }}
+            <b>Pages:</b> ${{ github.event.inputs.pages || (github.event_name == 'schedule' && '1' || 'N/A') }}
+            <b>New Comics Added:</b> ${{ steps.new_comics.outputs.new_comics || '0' }}
+            <b>Changes committed:</b> ${{ steps.commit.outputs.committed }}
+            <b>Repository:</b> ${{ github.repository }}
+            <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">🔗 View Run</a>
