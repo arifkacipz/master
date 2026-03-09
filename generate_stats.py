@@ -1,37 +1,39 @@
 import os
 import json
-import glob
 
 def generate_stats(db_folder='db', output_file='stats.json'):
     """
-    Membaca semua file JSON di folder db, menghitung jumlah chapter,
-    dan menyimpan komik dengan chapter < 20 ke stats.json.
+    Membaca semua file JSON di folder db (termasuk subfolder), menghitung jumlah chapter,
+    dan menyimpan komik dengan chapter < 15 ke stats.json.
     """
-    # Cari semua file JSON di folder db
-    json_files = glob.glob(os.path.join(db_folder, '*.json'))
     stats = []
 
-    for filepath in json_files:
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+    # Gunakan os.walk untuk memindai semua subfolder
+    for root, dirs, files in os.walk(db_folder):
+        for filename in files:
+            if not filename.endswith('.json'):
+                continue
+            filepath = os.path.join(root, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
 
-            # Ambil slug dari nama file
-            slug = os.path.splitext(os.path.basename(filepath))[0]
-            judul = data.get('judul', slug)
-            thumb = data.get('thumb', '')
-            chapter_count = len(data.get('chapters', []))
+                # Ambil slug dari nama file (tanpa ekstensi)
+                slug = os.path.splitext(filename)[0]
+                judul = data.get('judul', slug)
+                thumb = data.get('thumb', '')
+                chapter_count = len(data.get('chapters', []))
 
-            stats.append({
-                'slug': slug,
-                'judul': judul,
-                'thumb': thumb,
-                'chapterCount': chapter_count
-            })
-        except Exception as e:
-            print(f"Error membaca {filepath}: {e}")
+                stats.append({
+                    'slug': slug,
+                    'judul': judul,
+                    'thumb': thumb,
+                    'chapterCount': chapter_count
+                })
+            except Exception as e:
+                print(f"Error membaca {filepath}: {e}")
 
-    # Filter komik dengan chapter < 20
+    # Filter komik dengan chapter < 15
     low_chapter = [c for c in stats if c['chapterCount'] < 15]
 
     # Simpan ke file stats.json
@@ -43,5 +45,4 @@ def generate_stats(db_folder='db', output_file='stats.json'):
 
 if __name__ == "__main__":
     # Secara default membaca dari folder 'db' dan output ke 'stats.json'
-    # Jika Anda menggunakan folder db2, ubah parameter db_folder='db2'
     generate_stats(db_folder='db', output_file='stats.json')
