@@ -929,11 +929,30 @@ def compare_and_merge_sources(slug, use_selenium=False):
 
 # ================== LAPORAN MISSING ==================
 def generate_missing_report(slug, online_names, downloaded_chapters):
-    downloaded_names = [ch['nama'] for ch in downloaded_chapters]
-    missing = [name for name in online_names if name not in downloaded_names]
+    # Coba baca file db untuk mendapatkan chapter yang sudah didownload (data terkini)
+    db_path = f'db/{slug}.json'
+    downloaded_names = []
+    judul = slug
 
-    if not missing:
-        return
+    if os.path.exists(db_path):
+        try:
+            with open(db_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            downloaded_names = [ch['nama'] for ch in data.get('chapters', [])]
+            judul = data.get('judul', slug)
+        except Exception as e:
+            print(f"Error membaca {db_path}: {e}")
+            # Fallback ke parameter jika file corrupt
+            downloaded_names = [ch['nama'] for ch in downloaded_chapters]
+            if downloaded_chapters:
+                judul = downloaded_chapters[0].get('judul', slug)
+    else:
+        # File belum ada, gunakan parameter (biasanya untuk komik baru)
+        downloaded_names = [ch['nama'] for ch in downloaded_chapters]
+        if downloaded_chapters:
+            judul = downloaded_chapters[0].get('judul', slug)
+
+    missing = [name for name in online_names if name not in downloaded_names]
 
     missing_file = 'missing.json'
     if os.path.exists(missing_file):
@@ -942,19 +961,32 @@ def generate_missing_report(slug, online_names, downloaded_chapters):
     else:
         all_reports = []
 
-    existing = next((r for r in all_reports if r['slug'] == slug), None)
-    if existing:
-        existing['missing'] = missing
-        existing['total_online'] = len(online_names)
-        existing['total_downloaded'] = len(downloaded_names)
-    else:
+    # Update atau tambah laporan
+    updated = False
+    for report in all_reports:
+        if report.get('slug') == slug:
+            report.update({
+                'judul': judul,
+                'total_online': len(online_names),
+                'total_downloaded': len(downloaded_names),
+                'missing': missing
+            })
+            updated = True
+            break
+
+    if not updated:
         all_reports.append({
             'slug': slug,
-            'judul': downloaded_chapters[0].get('judul', slug) if downloaded_chapters else slug,
+            'judul': judul,
             'total_online': len(online_names),
             'total_downloaded': len(downloaded_names),
             'missing': missing
         })
+
+    # Hanya simpan jika ada missing, jika tidak, hapus dari laporan
+    if not missing:
+        all_reports = [r for r in all_reports if r.get('slug') != slug]
+        print(f"Tidak ada missing untuk {slug}, dihapus dari missing.json.")
 
     with open(missing_file, 'w', encoding='utf-8') as f:
         json.dump(all_reports, f, indent=2, ensure_ascii=False)
