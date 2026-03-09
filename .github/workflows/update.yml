@@ -2,7 +2,7 @@ name: Update PetoMic Data
 
 on:
   schedule:
-    - cron: '0 */2 * * *' 
+    - cron: '*/20 * * * *' 
   workflow_dispatch:
     inputs:
       target_slug:
@@ -115,7 +115,7 @@ jobs:
           LIMIT: ${{ github.event.inputs.chapters }}
         run: |
           # Fallback jika kosong (sebenarnya tidak perlu karena required)
-          PAGES=${PAGES:-3}
+          PAGES=${PAGES:-1}
           LIMIT=${LIMIT:-3}
           python asn/scraper.py \
             --catalog \
