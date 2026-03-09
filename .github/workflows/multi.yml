@@ -1,5 +1,3 @@
-#ubah heirarki otomatis menjadi missing - stats - missing_fields
-
 name: Matrix Full Scrape (Random)
 
 on:
@@ -61,17 +59,55 @@ on:
   schedule:
     - cron: '30 * * * *'
 
-concurrency:
-  group: matrix-full-scrape
-  cancel-in-progress: false
-
 jobs:
   select-slugs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write   # Diperlukan untuk membaca daftar workflow dan membatalkan diri sendiri
     outputs:
       slugs: ${{ steps.select.outputs.slugs }}
       selected_count: ${{ steps.select.outputs.selected_count }}
     steps:
+      # ==========================================================
+      # Langkah 1: Batalkan diri sendiri jika ada workflow lain yang sedang berjalan
+      # ==========================================================
+      - name: Cancel self if another workflow is running
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const currentRunId = context.runId;
+
+            // Dapatkan semua workflow yang sedang berjalan (in_progress)
+            const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+              owner,
+              repo,
+              status: 'in_progress',
+              per_page: 100
+            });
+
+            // Cari workflow lain selain diri sendiri
+            const otherRunning = runs.workflow_runs.filter(run => run.id !== currentRunId);
+
+            if (otherRunning.length > 0) {
+              console.log(`🔴 Ada ${otherRunning.length} workflow lain yang sedang berjalan. Membatalkan diri sendiri...`);
+              otherRunning.forEach(r => console.log(`   - ${r.name} (${r.id})`));
+
+              // Batalkan run saat ini
+              await github.rest.actions.cancelWorkflowRun({
+                owner,
+                repo,
+                run_id: currentRunId
+              });
+
+              // Keluar dengan kode error agar step dianggap gagal dan workflow berhenti
+              process.exit(1);
+            } else {
+              console.log('✅ Tidak ada workflow lain yang berjalan, melanjutkan...');
+            }
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
