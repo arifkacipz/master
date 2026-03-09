@@ -1,14 +1,16 @@
 import os
 import json
 import glob
+import datetime
 
 def generate_list_from_db():
     """
     Membaca semua file JSON di folder db/ dan menghasilkan list.json
-    yang berisi daftar komik (judul, slug, thumb) diurutkan berdasarkan
-    waktu modifikasi file terbaru (descending).
+    yang berisi daftar komik (judul, slug, thumb, Updated) diurutkan berdasarkan
+    last_scraped terbaru (descending).
+    Field 'Updated' diambil dari field 'last_scraped' di dalam file JSON.
+    Jika tidak ada, fallback ke waktu modifikasi file (untuk komik lama).
     """
-    # Cari semua file JSON di folder db
     json_files = glob.glob('db/*.json')
     comics = []
 
@@ -17,29 +19,32 @@ def generate_list_from_db():
             with open(filepath, 'r', encoding='utf-8') as f:
                 data = json.load(f)
 
-            # Ambil slug dari nama file (tanpa ekstensi)
             slug = os.path.splitext(os.path.basename(filepath))[0]
-            judul = data.get('judul', slug)  # fallback ke slug jika judul tidak ada
+            judul = data.get('judul', slug)
             thumb = data.get('thumb', '')
 
-            # Dapatkan waktu modifikasi file (timestamp)
-            mtime = os.path.getmtime(filepath)
+            # Ambil last_scraped dari data, fallback ke mtime file
+            last_scraped = data.get('last_scraped')
+            if not last_scraped:
+                mtime = os.path.getmtime(filepath)
+                last_scraped = datetime.datetime.fromtimestamp(mtime).isoformat()
 
             comics.append({
                 "judul": judul,
                 "slug": slug,
                 "thumb": thumb,
-                "mtime": mtime  # sementara untuk sorting
+                "Updated": last_scraped,
+                "_sort": last_scraped  # untuk sorting
             })
         except Exception as e:
             print(f"Gagal membaca {filepath}: {e}")
 
-    # Urutkan berdasarkan mtime terbaru (descending)
-    comics.sort(key=lambda x: x['mtime'], reverse=True)
+    # Urutkan berdasarkan Updated terbaru (descending)
+    comics.sort(key=lambda x: x['_sort'], reverse=True)
 
-    # Hapus field mtime sebelum disimpan
+    # Hapus field temporary sebelum disimpan
     for comic in comics:
-        del comic['mtime']
+        del comic['_sort']
 
     # Simpan ke list.json
     with open('list.json', 'w', encoding='utf-8') as f:
