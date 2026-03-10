@@ -3,9 +3,60 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/That-Night-I-Was-Driven-by-Despair-193x278.jpg",
     "source": "arenascan",
     "online": 7,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380589/2/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/2/009.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380589/3/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/3/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380589/4/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380589/4/010.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 5",
             "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-5/",
@@ -55,5 +106,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-10T06:07:00.735186"
+    "last_scraped": "2026-03-10T07:14:43.113258"
 }
