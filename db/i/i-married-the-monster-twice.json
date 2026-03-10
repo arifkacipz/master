@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/e03172b0-6fb2-47f7-9e25-1d185ccca87b.jpg",
     "source": "arenascan",
     "online": 42,
-    "chapterCount": 40,
+    "chapterCount": 42,
     "Chs": "Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -827,6 +827,37 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 38",
+            "url": "https://arenascan.com/i-married-the-monster-twice-chapter-38/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/324952/38/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/38/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 39",
+            "url": "https://arenascan.com/i-married-the-monster-twice-chapter-39/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/324952/39/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/39/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/39/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/324952/39/004.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 40",
             "url": "https://arenascan.com/i-married-the-monster-twice-chapter-40/",
             "images": [
@@ -905,5 +936,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-10T05:22:55.833833"
+    "last_scraped": "2026-03-10T06:07:00.808480"
 }
