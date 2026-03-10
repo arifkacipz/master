@@ -3,9 +3,68 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Punk-Devoted-to-Pure-Love-193x278.webp",
     "source": "arenascan",
     "online": 10,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/a-punk-devoted-to-pure-love-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378370/5/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/5/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/a-punk-devoted-to-pure-love-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378370/6/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/6/016.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/a-punk-devoted-to-pure-love-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378370/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378370/7/010.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 8",
             "url": "https://arenascan.com/a-punk-devoted-to-pure-love-chapter-8/",
@@ -64,5 +123,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-10T09:58:21.549726"
+    "last_scraped": "2026-03-10T10:51:47.912882"
 }
