@@ -581,11 +581,8 @@
     "judul": "For The Queendom",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/5f18f486-2b80-453b-9d81-c53553560ade.jpg",
     "total_online": 101,
-    "total_downloaded": 21,
+    "total_downloaded": 24,
     "missing": [
-      "Chapter 81",
-      "Chapter 80",
-      "Chapter 79",
       "Chapter 78",
       "Chapter 77",
       "Chapter 76",
@@ -719,11 +716,8 @@
     "judul": "My Husband Was Stolen Twice",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/e7eff4d7-d184-45f1-9c25-4a202ff0c474.webp",
     "total_online": 42,
-    "total_downloaded": 9,
+    "total_downloaded": 12,
     "missing": [
-      "Chapter 33",
-      "Chapter 32",
-      "Chapter 31",
       "Chapter 30",
       "Chapter 29",
       "Chapter 28",
@@ -1493,11 +1487,8 @@
     "judul": "Return of the Namgung Clan’s Granddaughter",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/d0b12a41-5a5a-4669-990c-7bd852144eb4.webp",
     "total_online": 44,
-    "total_downloaded": 12,
+    "total_downloaded": 15,
     "missing": [
-      "Chapter 32",
-      "Chapter 31",
-      "Chapter 30",
       "Chapter 29",
       "Chapter 28",
       "Chapter 27",
@@ -1892,6 +1883,37 @@
     ]
   },
   {
+    "slug": "to-the-perfect-duke",
+    "judul": "To the Perfect Duke",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/10/0748e884-9110-41bb-ba59-17facfb10733.jpg",
+    "total_online": 25,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 22",
+      "Chapter 21",
+      "Chapter 20",
+      "Chapter 19",
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
+    ]
+  },
+  {
     "slug": "the-knight-of-the-closed-eyes-sky",
     "judul": "The Knight Of The Closed-Eyes Sky",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/6b0faae8-23c8-4ef6-b529-3feb757fe09c.webp",
@@ -2229,11 +2251,8 @@
     "judul": "The Grand Cudgel Order",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Grand-Cudgel-Order-193x278.jpeg",
     "total_online": 22,
-    "total_downloaded": 18,
+    "total_downloaded": 21,
     "missing": [
-      "Chapter 4",
-      "Chapter 3",
-      "Chapter 2",
       "Chapter 1"
     ]
   },
@@ -2514,6 +2533,32 @@
     ]
   },
   {
+    "slug": "the-secret-garden",
+    "judul": "The Secret Garden",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/a96a593c-9b96-4090-b656-bd4d7ddd1b51.webp",
+    "total_online": 20,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
+    ]
+  },
+  {
     "slug": "zombie-herd",
     "judul": "Zombie Herd",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/0cc3725d-ea2d-4a27-ab06-d7d3003ca989.jpg",
@@ -2541,16 +2586,6 @@
       "Chapter 4",
       "Chapter 3",
       "Chapter 2",
-      "Chapter 1"
-    ]
-  },
-  {
-    "slug": "a-punk-devoted-to-pure-love",
-    "judul": "A Punk, Devoted to Pure Love",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Punk-Devoted-to-Pure-Love-193x278.webp",
-    "total_online": 10,
-    "total_downloaded": 9,
-    "missing": [
       "Chapter 1"
     ]
   },
