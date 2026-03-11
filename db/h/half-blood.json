@@ -2,8 +2,9 @@
     "judul": "Half Blood",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/09/d72c0621-34c4-4dbc-8782-bc6efd445361.webp",
     "source": "arenascan",
-    "online": 40,
-    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40",
+    "online": 41,
+    "chapterCount": 41,
+    "Chs": "Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1860,6 +1861,28 @@
                 "https://arenascan.com/wp-content/uploads/manga/half-blood/40/010.jpg",
                 "https://arenascan.com/wp-content/uploads/manga/half-blood/40/011.jpg"
             ]
+        },
+        {
+            "nama": "Chapter 41",
+            "url": "https://arenascan.com/half-blood-chapter-41/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/333531/41/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/333531/41/014.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
-    ]
+    ],
+    "last_scraped": "2026-03-11T05:56:49.499833"
 }
