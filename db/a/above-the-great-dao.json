@@ -3,9 +3,71 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/12/d9ae19c0-6cc5-4ab0-8a22-a141acf2ff5d.webp",
     "source": "arenascan",
     "online": 16,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/above-the-great-dao-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/353894/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/11/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/above-the-great-dao-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/353894/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/12/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/above-the-great-dao-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/353894/13/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/353894/13/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 14",
             "url": "https://arenascan.com/above-the-great-dao-14/",
@@ -72,5 +134,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-11T20:43:20.418360"
+    "last_scraped": "2026-03-11T21:08:29.784049"
 }
