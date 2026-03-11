@@ -1,4 +1,6 @@
 name: Update PetoMic Data
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   schedule:
@@ -15,7 +17,9 @@ on:
         type: choice
         options:
           - 1
+          - 2
           - 3
+          - 4
           - 5
           - 7
           - 10
@@ -173,9 +177,7 @@ jobs:
           print(f"stats.json diperbarui dengan {len(stats)} komik (chapterCount < 15).")
           EOF
 
-      # ==========================================================
       # Generate missing.json untuk semua komik di db (laporan lengkap)
-      # ==========================================================
       - name: Generate missing.json for all comics
         run: python miss.py
 
