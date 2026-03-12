@@ -1,3 +1,6 @@
+ini file miss.html, adakah yg perlu diubah?
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -322,7 +325,7 @@
 
                     if (!item.judul || !item.thumb) {
                         try {
-                            const dbRes = await fetch(`../db/${slug}.json`);
+                            const dbRes = await fetch(getDbPath(slug));
                             if (dbRes.ok) {
                                 const dbData = await dbRes.json();
                                 judul = dbData.judul || judul;
