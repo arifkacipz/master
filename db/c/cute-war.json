@@ -3,9 +3,78 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/12/2f51f8f2-af53-4c1d-bda2-e907f3d3f991.jpg",
     "source": "arenascan",
     "online": 9,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/cute-war-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/357442/4/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/4/16.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/cute-war-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/357442/5/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/5/17.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/cute-war-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/357442/6/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/6/15.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 7",
             "url": "https://arenascan.com/cute-war-7/",
@@ -123,5 +192,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-12T13:26:13.958959"
+    "last_scraped": "2026-03-12T14:35:02.593424"
 }
