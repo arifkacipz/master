@@ -51,20 +51,19 @@ on:
           - '50'
           - '75'
           - '100'
-          
       manual_slugs:
         description: 'Daftar slug manual (pisah dengan koma atau baris baru, maksimal 20)'
         required: false
         default: ''
   schedule:
-    - cron: '30 */1 * * *'
+    - cron: '30 * * * *'
 
 jobs:
   select-slugs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      actions: write   # Diperlukan untuk membaca daftar workflow dan membatalkan diri sendiri
+      actions: write
     outputs:
       slugs: ${{ steps.select.outputs.slugs }}
       selected_count: ${{ steps.select.outputs.selected_count }}
@@ -79,30 +78,21 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const currentRunId = context.runId;
-
-            // Dapatkan semua workflow yang sedang berjalan (in_progress)
             const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
               owner,
               repo,
               status: 'in_progress',
               per_page: 100
             });
-
-            // Cari workflow lain selain diri sendiri
             const otherRunning = runs.workflow_runs.filter(run => run.id !== currentRunId);
-
             if (otherRunning.length > 0) {
               console.log(`🔴 Ada ${otherRunning.length} workflow lain yang sedang berjalan. Membatalkan diri sendiri...`);
               otherRunning.forEach(r => console.log(`   - ${r.name} (${r.id})`));
-
-              // Batalkan run saat ini
               await github.rest.actions.cancelWorkflowRun({
                 owner,
                 repo,
                 run_id: currentRunId
               });
-
-              // Keluar dengan kode error agar step dianggap gagal dan workflow berhenti
               process.exit(1);
             } else {
               console.log('✅ Tidak ada workflow lain yang berjalan, melanjutkan...');
@@ -142,13 +132,13 @@ jobs:
           source = os.environ.get('SOURCE', '').strip()
           filter_by = os.environ.get('FILTER_BY', 'online').strip()
           max_chapters_str = os.environ.get('MAX_CHAPTERS', '').strip()
-          count_str = os.environ.get('COUNT', '10').strip()
+          count_str = os.environ.get('COUNT', '50').strip()
 
           try:
-              count = int(count_str) if count_str else 10
+              count = int(count_str) if count_str else 50
           except:
-              count = 10
-          count = min(max(count, 1), 100)
+              count = 50
+          count = min(max(count, 1), 90)
 
           TRACKER_FILE = 'tracker.json'
           selected = []
@@ -289,7 +279,7 @@ jobs:
     strategy:
       matrix:
         slug: ${{ fromJson(needs.select-slugs.outputs.slugs) }}
-      max-parallel: 20
+      max-parallel: 50
     steps:
       - uses: actions/checkout@v4
 
@@ -339,12 +329,33 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: python asn/scraper.py --slug "${{ matrix.slug }}" --source auto --selenium
 
+      # ========== PERBAIKAN: Cari file JSON di subfolder ==========
+      - name: Find and prepare JSON file for ${{ matrix.slug }}
+        id: find_json
+        run: |
+          slug="${{ matrix.slug }}"
+          first_char=$(echo "${slug:0:1}" | tr '[:upper:]' '[:lower:]')
+          if [[ "$first_char" =~ [a-z0-9] ]]; then
+            folder="$first_char"
+          else
+            folder="others"
+          fi
+          file_path="db/$folder/$slug.json"
+          if [ -f "$file_path" ]; then
+            echo "Found file: $file_path"
+            cp "$file_path" ./upload.json
+            echo "upload_path=./upload.json" >> $GITHUB_OUTPUT
+          else
+            echo "File not found: $file_path"
+            exit 1
+          fi
+
       - name: Upload updated JSON for ${{ matrix.slug }}
         uses: actions/upload-artifact@v4
         with:
           name: db-${{ matrix.slug }}
-          path: db/${{ matrix.slug }}.json
-          if-no-files-found: ignore
+          path: ${{ steps.find_json.outputs.upload_path }}
+          if-no-files-found: error
 
   commit-changes:
     needs: scrape
@@ -368,10 +379,24 @@ jobs:
           name: tracker-json
           path: .
 
-      - name: Copy to db folder
+      # ========== PERBAIKAN: Salin ke subfolder yang benar ==========
+      - name: Copy to db folder with correct subfolders
         run: |
           mkdir -p db
-          cp -v downloaded-artifacts/*.json db/ 2>/dev/null || true
+          for file in downloaded-artifacts/*.json; do
+            if [ -f "$file" ]; then
+              slug=$(basename "$file" .json)
+              first_char=$(echo "${slug:0:1}" | tr '[:upper:]' '[:lower:]')
+              if [[ "$first_char" =~ [a-z0-9] ]]; then
+                folder="$first_char"
+              else
+                folder="others"
+              fi
+              mkdir -p "db/$folder"
+              cp "$file" "db/$folder/$slug.json"
+              echo "Copied $file to db/$folder/$slug.json"
+            fi
+          done
 
       - name: Update missing.json
         run: python miss.py
