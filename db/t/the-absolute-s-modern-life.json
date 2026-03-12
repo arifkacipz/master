@@ -2,9 +2,9 @@
     "judul": "The Absolute\u2019s Modern Life",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Absolutes-Modern-Life-193x278.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -337,7 +337,37 @@
                 "https://cdn.arenascan.com/arena-bucket/380588/10/16.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/the-absolute-s-modern-life-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380588/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380588/11/023.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-10T17:04:06.464361"
+    "last_scraped": "2026-03-12T15:44:36.664538"
 }
