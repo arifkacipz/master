@@ -3,9 +3,68 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/13121b99-73a8-414b-a066-eee7df6f4e9b.jpg",
     "source": "arenascan",
     "online": 8,
-    "chapterCount": 6,
+    "chapterCount": 8,
     "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/pregnant-and-gone-in-five-months-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/364306/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/1/024.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/pregnant-and-gone-in-five-months-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/364306/2/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/364306/2/021.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 3",
             "url": "https://arenascan.com/pregnant-and-gone-in-five-months-3/",
@@ -155,5 +214,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-12T05:59:16.515145"
+    "last_scraped": "2026-03-12T07:07:11.803986"
 }
