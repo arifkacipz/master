@@ -35,7 +35,7 @@ on:
       count:
         description: 'Jumlah slug yang dipilih (1-50)'
         required: false
-        default: '5'
+        default: '50'
         type: choice
         options:
           - '1'
@@ -50,7 +50,7 @@ on:
           - '40'
           - '50'
           - '75'
-          - '100'
+          - '90'
       manual_slugs:
         description: 'Daftar slug manual (pisah dengan koma atau baris baru, maksimal 20)'
         required: false
