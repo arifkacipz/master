@@ -2,10 +2,32 @@
     "judul": "The Great Villain of Gods and Demons: I Set Up the Chosen One",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Great-Villain-of-Gods-and-Demons-I-Set-Up-the-Chosen-One-193x278.webp",
     "source": "arenascan",
-    "online": 18,
-    "chapterCount": 3,
-    "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 19,
+    "chapterCount": 6,
+    "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/the-great-villain-of-gods-and-demons-i-set-up-the-chosen-one-chapter-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381496/14/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/14/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/14/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/14/004.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/the-great-villain-of-gods-and-demons-i-set-up-the-chosen-one-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381496/15/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/15/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/15/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/15/004.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 16",
             "url": "https://arenascan.com/the-great-villain-of-gods-and-demons-i-set-up-the-chosen-one-chapter-16/",
@@ -46,7 +68,21 @@
                 "https://cdn.arenascan.com/arena-bucket/381496/18/012.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/the-great-villain-of-gods-and-demons-i-set-up-the-chosen-one-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381496/19/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/19/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/19/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/19/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/19/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/19/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381496/19/007.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-11T17:04:31.136379"
+    "last_scraped": "2026-03-12T19:58:59.890611"
 }
