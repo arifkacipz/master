@@ -35,7 +35,7 @@ on:
       count:
         description: 'Jumlah slug yang dipilih (1-50)'
         required: false
-        default: '50'
+        default: '5'
         type: choice
         options:
           - '1'
@@ -69,33 +69,34 @@ jobs:
       selected_count: ${{ steps.select.outputs.selected_count }}
     steps:
       # ==========================================================
-      # Langkah 1: Batalkan diri sendiri jika ada workflow lain yang sedang berjalan
+      # Batalkan diri sendiri jika ada workflow lain yang berjalan (termasuk queued)
       # ==========================================================
-      - name: Cancel self if another workflow is running
+      - name: Cancel self if another workflow is running or queued
         uses: actions/github-script@v7
         with:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const currentRunId = context.runId;
-            const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
-              owner,
-              repo,
-              status: 'in_progress',
-              per_page: 100
-            });
-            const otherRunning = runs.workflow_runs.filter(run => run.id !== currentRunId);
-            if (otherRunning.length > 0) {
-              console.log(`🔴 Ada ${otherRunning.length} workflow lain yang sedang berjalan. Membatalkan diri sendiri...`);
-              otherRunning.forEach(r => console.log(`   - ${r.name} (${r.id})`));
-              await github.rest.actions.cancelWorkflowRun({
-                owner,
-                repo,
-                run_id: currentRunId
+            async function getRunningWorkflows() {
+              const { data: runsInProgress } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner, repo, status: 'in_progress', per_page: 100
               });
+              const { data: runsQueued } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner, repo, status: 'queued', per_page: 100
+              });
+              const allRuns = [...runsInProgress.workflow_runs, ...runsQueued.workflow_runs];
+              const otherRunning = allRuns.filter(run => run.id !== currentRunId);
+              return otherRunning;
+            }
+            const otherRunning = await getRunningWorkflows();
+            if (otherRunning.length > 0) {
+              console.log(`🔴 Ada ${otherRunning.length} workflow lain yang sedang berjalan atau antri. Membatalkan diri sendiri...`);
+              otherRunning.forEach(r => console.log(`   - ${r.name} (${r.id}) status: ${r.status}`));
+              await github.rest.actions.cancelWorkflowRun({ owner, repo, run_id: currentRunId });
               process.exit(1);
             } else {
-              console.log('✅ Tidak ada workflow lain yang berjalan, melanjutkan...');
+              console.log('✅ Tidak ada workflow lain yang berjalan atau antri, melanjutkan...');
             }
 
       - uses: actions/checkout@v4
@@ -301,20 +302,14 @@ jobs:
 
       - name: Install ChromeDriver
         run: |
-          # Ambil major version Chrome
           CHROME_MAJOR=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f1)
           echo "Chrome major version: $CHROME_MAJOR"
-
-          # Ambil versi terbaru dari API JSON
           JSON_URL="https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json"
           DRIVER_VERSION=$(curl -s $JSON_URL | jq -r --arg VERSION "$CHROME_MAJOR" '.versions[] | select(.version | startswith($VERSION + ".")) | .version' | head -1)
-
-          # Fallback jika gagal
           if [ -z "$DRIVER_VERSION" ]; then
             echo "Gagal mendapatkan versi untuk Chrome $CHROME_MAJOR, menggunakan fallback 114.0.5735.90"
             DRIVER_VERSION="114.0.5735.90"
           fi
-
           echo "Mengunduh ChromeDriver versi: $DRIVER_VERSION"
           wget -q "https://storage.googleapis.com/chrome-for-testing-public/$DRIVER_VERSION/linux64/chromedriver-linux64.zip"
           unzip chromedriver-linux64.zip
@@ -329,9 +324,8 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: python asn/scraper.py --slug "${{ matrix.slug }}" --source auto --selenium
 
-      # ========== PERBAIKAN: Cari file JSON di subfolder ==========
-      - name: Find and prepare JSON file for ${{ matrix.slug }}
-        id: find_json
+      # ========== Salin file JSON dengan nama asli ke root workspace ==========
+      - name: Copy JSON file for upload
         run: |
           slug="${{ matrix.slug }}"
           first_char=$(echo "${slug:0:1}" | tr '[:upper:]' '[:lower:]')
@@ -343,8 +337,7 @@ jobs:
           file_path="db/$folder/$slug.json"
           if [ -f "$file_path" ]; then
             echo "Found file: $file_path"
-            cp "$file_path" ./upload.json
-            echo "upload_path=./upload.json" >> $GITHUB_OUTPUT
+            cp "$file_path" "./$slug.json"
           else
             echo "File not found: $file_path"
             exit 1
@@ -354,7 +347,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: db-${{ matrix.slug }}
-          path: ${{ steps.find_json.outputs.upload_path }}
+          path: ./${{ matrix.slug }}.json
           if-no-files-found: error
 
   commit-changes:
@@ -379,7 +372,7 @@ jobs:
           name: tracker-json
           path: .
 
-      # ========== PERBAIKAN: Salin ke subfolder yang benar ==========
+      # ========== Salin ke subfolder yang benar ==========
       - name: Copy to db folder with correct subfolders
         run: |
           mkdir -p db
@@ -398,12 +391,49 @@ jobs:
             fi
           done
 
-      - name: Update missing.json
+      # ========== Generate semua laporan ==========
+      - name: Generate list.json
+        run: python asn/scraper.py --generate-list
+
+      - name: Generate stats.json (chapterCount < 15)
+        run: |
+          python << EOF
+          import os, json
+          stats = []
+          for root, dirs, files in os.walk('db'):
+              for filename in files:
+                  if filename.endswith('.json'):
+                      with open(os.path.join(root, filename), 'r', encoding='utf-8') as f:
+                          data = json.load(f)
+                      slug = filename[:-5]
+                      judul = data.get('judul', slug)
+                      thumb = data.get('thumb', '')
+                      online = data.get('online', len(data.get('chapters', [])))
+                      chapterCount = data.get('chapterCount', len(data.get('chapters', [])))
+                      chs = data.get('Chs', '')
+                      source = data.get('source', 'unknown')
+                      if chapterCount < 15:
+                          stats.append({
+                              'slug': slug,
+                              'judul': judul,
+                              'thumb': thumb,
+                              'source': source,
+                              'online': online,
+                              'chapterCount': chapterCount,
+                              'Chs': chs
+                          })
+          with open('stats.json', 'w', encoding='utf-8') as f:
+              json.dump(stats, f, indent=2, ensure_ascii=False)
+          print(f"stats.json diperbarui dengan {len(stats)} komik (chapterCount < 15).")
+          EOF
+
+      - name: Generate missing.json for all comics
         run: python miss.py
 
       - name: Check missing fields (source, online, Chs)
         run: python check_fields.py
 
+      # ========== Commit ==========
       - name: Commit and push all changes
         id: commit
         run: |
