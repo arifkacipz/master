@@ -3,9 +3,34 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/When-My-Enemies-Began-to-Regret-193x278.jpg",
     "source": "arenascan",
     "online": 19,
-    "chapterCount": 18,
+    "chapterCount": 19,
     "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/when-my-enemies-began-to-regret-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377668/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377668/1/018.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/when-my-enemies-began-to-regret-chapter-2/",
@@ -420,5 +445,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-12T23:36:34.203268"
+    "last_scraped": "2026-03-13T03:57:25.166381"
 }
