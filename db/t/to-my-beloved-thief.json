@@ -2,9 +2,9 @@
     "judul": "To My Beloved Thief",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/3318bdc9-12a5-4938-b7f2-07a0430c0ee1.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -213,6 +213,28 @@
                 "https://cdn.arenascan.com/arena-bucket/360742/10/13.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/to-my-beloved-thief-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360742/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/11/014.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
-    ]
+    ],
+    "last_scraped": "2026-03-13T22:50:10.683341"
 }
