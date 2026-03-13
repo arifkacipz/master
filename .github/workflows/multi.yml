@@ -393,7 +393,7 @@ jobs:
 
       # ========== Generate semua laporan ==========
       - name: Generate list.json
-        run: python asn/scraper.py --generate-list
+        run: python generate_list.py
 
       - name: Generate stats.json (chapterCount < 15)
         run: |
