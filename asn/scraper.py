@@ -951,6 +951,7 @@ def compare_and_merge_sources(slug, use_selenium=False):
         }
 
     save_to_db(slug, final_data)
+    # Tambahkan baris ini untuk mendapatkan path yang benar
     path = get_db_path(slug)
     print(f"Data tersimpan di {path} (total {final_data['chapterCount']} chapter sehat dari {final_data['online']} online)")
     generate_missing_report(slug, final_data['Chs'].split(', '), final_data['chapters'])
