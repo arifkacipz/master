@@ -1,10 +1,10 @@
 {
     "judul": "Ultimate Trump Card",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/10/3c9b872a-c540-4881-9585-5364c36dcba6.webp",
-    "source": "merged",
-    "online": 34,
-    "chapterCount": 34,
-    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34",
+    "source": "arenascan",
+    "online": 35,
+    "chapterCount": 35,
+    "Chs": "Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -504,6 +504,20 @@
                 "https://cdn.arenascan.com/arena-bucket/336041/34/4.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 35",
+            "url": "https://arenascan.com/ultimate-trump-card-chapter-35/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/336041/35/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336041/35/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336041/35/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336041/35/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336041/35/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336041/35/5.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
-    ]
+    ],
+    "last_scraped": "2026-03-14T14:42:46.808405"
 }
