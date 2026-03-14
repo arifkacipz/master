@@ -1,10 +1,10 @@
 {
     "judul": "Rebirth of the Thief Who Roamed the World",
     "thumb": "https://manhuaplus.org/uploads/covers/rebirth-of-the-thief-who-roamed-the-world.jpg",
-    "source": "manhuaplus",
-    "online": 8,
-    "chapterCount": 8,
-    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "source": "merged",
+    "online": 10,
+    "chapterCount": 10,
+    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -192,7 +192,53 @@
                 "https://manhuaus.com/wp-content/uploads/WP-manga/data/manga_69909b6929860/1814196b84da286e100c985e079ded4d/002.webp"
             ],
             "source_chapter": "manhuaplus"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/rebirth-of-the-thief-who-roamed-the-world-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377863/9/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/9/017.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/rebirth-of-the-thief-who-roamed-the-world-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377863/10/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377863/10/015.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-14T04:50:34.567936"
+    "last_scraped": "2026-03-14T05:34:35.542876"
 }
