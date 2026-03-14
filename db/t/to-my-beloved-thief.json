@@ -2,9 +2,9 @@
     "judul": "To My Beloved Thief",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/3318bdc9-12a5-4938-b7f2-07a0430c0ee1.jpg",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 13,
+    "chapterCount": 13,
+    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -234,7 +234,51 @@
                 "https://cdn.arenascan.com/arena-bucket/360742/11/014.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/to-my-beloved-thief-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360742/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/12/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/to-my-beloved-thief-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360742/13/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/13/016.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-13T22:50:10.683341"
+    "last_scraped": "2026-03-14T06:58:29.330222"
 }
