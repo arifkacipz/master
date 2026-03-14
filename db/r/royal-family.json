@@ -3,9 +3,76 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/53780539-490c-4548-b4b8-d3a559603eec.webp",
     "source": "arenascan",
     "online": 11,
-    "chapterCount": 9,
+    "chapterCount": 11,
     "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/royal-family-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360728/1/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/24.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/25.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/26.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/27.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/28.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/29.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/30.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/31.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/1/32.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/royal-family-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360728/2/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/2/21.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 3",
             "url": "https://arenascan.com/royal-family-3/",
@@ -288,5 +355,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-14T20:37:57.199059"
+    "last_scraped": "2026-03-14T21:01:55.709375"
 }
