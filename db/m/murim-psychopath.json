@@ -1,10 +1,10 @@
 {
     "judul": "Murim Psychopath",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/601e6246-2847-4a65-befd-8453443384fe.jpg",
-    "source": "merged",
-    "online": 16,
-    "chapterCount": 16,
-    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16",
+    "source": "arenascan",
+    "online": 17,
+    "chapterCount": 17,
+    "Chs": "Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -425,6 +425,37 @@
                 "https://cdn.arenascan.com/arena-bucket/360719/16/022.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/murim-psychopath-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360719/17/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360719/17/023.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
-    ]
+    ],
+    "last_scraped": "2026-03-14T13:11:12.031087"
 }
