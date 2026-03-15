@@ -3,9 +3,65 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/11/4ec328c3-1ffe-4d0e-9c8d-1a4d945d7182.webp",
     "source": "arenascan",
     "online": 27,
-    "chapterCount": 12,
+    "chapterCount": 15,
     "Chs": "Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/the-fake-princess-doesnt-want-to-die-so-she-founds-a-nation-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/346271/13/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/13/15.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/the-fake-princess-doesnt-want-to-die-so-she-founds-a-nation-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/346271/14/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/14/12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/the-fake-princess-doesnt-want-to-die-so-she-founds-a-nation-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/346271/15/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/15/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 16",
             "url": "https://arenascan.com/the-fake-princess-doesnt-want-to-die-so-she-founds-a-nation-16/",
@@ -246,5 +302,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-15T17:36:16.197516"
+    "last_scraped": "2026-03-15T18:02:02.248426"
 }

@@ -3,9 +3,26 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/2d45f6c7-3114-43ce-b54c-54b88c0c2456.webp",
     "source": "arenascan",
     "online": 10,
-    "chapterCount": 9,
+    "chapterCount": 10,
     "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/the-girl-who-leapt-through-time-to-the-titanic-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/93798/1/ch_1_10.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/the-girl-who-leapt-through-time-to-the-titanic-2/",
@@ -192,5 +209,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-15T17:36:16.181852"
+    "last_scraped": "2026-03-15T18:02:02.500903"
 }
