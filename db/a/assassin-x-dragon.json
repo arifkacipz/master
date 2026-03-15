@@ -2,9 +2,9 @@
     "judul": "Assassin X Dragon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Assassin-X-Dragon-193x278.jpg",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 8,
+    "chapterCount": 8,
+    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -222,6 +222,45 @@
                 "https://cdn.arenascan.com/arena-bucket/379847/7/024.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/assassin-x-dragon-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/379847/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/026.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/027.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/028.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/029.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/030.jpg",
+                "https://cdn.arenascan.com/arena-bucket/379847/8/031.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
-    ]
+    ],
+    "last_scraped": "2026-03-15T03:30:10.612789"
 }
