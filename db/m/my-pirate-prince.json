@@ -3,9 +3,74 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Pirate-Prince-193x278.jpg",
     "source": "arenascan",
     "online": 18,
-    "chapterCount": 9,
+    "chapterCount": 12,
     "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/my-pirate-prince-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/384171/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/7/016.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/my-pirate-prince-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/384171/10/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/10/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/my-pirate-prince-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/384171/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/11/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 12",
             "url": "https://arenascan.com/my-pirate-prince-chapter-12/",
@@ -211,5 +276,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-16T20:08:29.804760"
+    "last_scraped": "2026-03-16T21:03:38.562999"
 }
