@@ -3,9 +3,821 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/03ebed83-d68f-4993-aef4-3405865fc953.webp",
     "source": "arenascan",
     "online": 43,
-    "chapterCount": 3,
+    "chapterCount": 43,
     "Chs": "Chapter 44, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/the-villainess-starts-over-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_24.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_25.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_26.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_27.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_28.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/1/ch_1_29.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/the-villainess-starts-over-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_24.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_25.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_26.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_27.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_28.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/2/ch_2_29.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/the-villainess-starts-over-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/3/ch_3_12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/the-villainess-starts-over-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/4/ch_4_12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/the-villainess-starts-over-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/5/ch_5_24.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/the-villainess-starts-over-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/6/ch_6_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/6/ch_6_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/6/ch_6_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/6/ch_6_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/6/ch_6_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/6/ch_6_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/the-villainess-starts-over-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/7/ch_7_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/7/ch_7_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/7/ch_7_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/7/ch_7_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/7/ch_7_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/7/ch_7_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/the-villainess-starts-over-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/8/ch_8_8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/the-villainess-starts-over-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/9/ch_9_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/9/ch_9_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/9/ch_9_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/9/ch_9_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/9/ch_9_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/9/ch_9_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/the-villainess-starts-over-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/10/ch_10_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/10/ch_10_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/10/ch_10_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/10/ch_10_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/10/ch_10_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/10/ch_10_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/the-villainess-starts-over-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/11/ch_11_7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/the-villainess-starts-over-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/12/ch_12_8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/the-villainess-starts-over-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/13/ch_13_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/13/ch_13_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/13/ch_13_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/13/ch_13_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/13/ch_13_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/13/ch_13_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/the-villainess-starts-over-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/14/ch_14_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/14/ch_14_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/14/ch_14_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/14/ch_14_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/14/ch_14_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/14/ch_14_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/the-villainess-starts-over-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/15/ch_15_7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/the-villainess-starts-over-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/16/ch_16_8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/the-villainess-starts-over-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/17/ch_17_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/17/ch_17_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/17/ch_17_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/17/ch_17_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/17/ch_17_5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-villainess-starts-over-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/18/ch_18_7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/the-villainess-starts-over-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/19/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/19/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/19/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/19/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/19/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/19/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/the-villainess-starts-over-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/20/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/20/12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/the-villainess-starts-over-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/21/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/21/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/21/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/21/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/21/5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/the-villainess-starts-over-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/22/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/22/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/22/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/22/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/22/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/22/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/the-villainess-starts-over-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/23/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/23/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/23/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/23/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/23/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/23/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/23/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/the-villainess-starts-over-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/24/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/14.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/15.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/16.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/17.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/18.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/19.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/20.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/21.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/22.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/23.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/24.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/25.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/26.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/27.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/28.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/29.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/30.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/31.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/32.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/33.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/34.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/35.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/36.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/37.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/38.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/39.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/40.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/41.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/42.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/43.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/44.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/45.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/46.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/47.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/48.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/49.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/50.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/51.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/52.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/53.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/54.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/55.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/56.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/57.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/58.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/59.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/60.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/61.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/62.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/63.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/64.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/65.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/66.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/67.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/68.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/69.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/70.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/71.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/72.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/73.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/74.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/75.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/76.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/77.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/78.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/79.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/80.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/81.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/82.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/24/83.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/the-villainess-starts-over-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/25/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/14.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/15.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/16.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/17.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/18.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/19.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/20.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/21.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/22.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/23.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/24.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/25.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/26.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/27.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/28.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/29.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/30.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/31.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/32.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/33.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/34.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/35.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/36.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/37.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/38.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/39.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/40.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/41.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/42.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/43.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/44.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/45.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/46.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/47.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/48.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/49.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/50.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/51.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/52.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/53.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/54.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/55.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/56.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/57.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/58.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/59.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/60.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/61.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/62.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/63.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/64.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/65.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/66.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/67.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/68.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/69.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/70.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/71.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/72.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/73.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/74.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/75.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/76.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/77.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/78.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/79.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/80.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/81.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/82.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/83.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/84.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/85.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/86.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/87.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/88.webp",
+                "https://cdn.arenascan.com/arena-bucket/223839/25/89.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/the-villainess-starts-over-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/26/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/26/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/the-villainess-starts-over-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/27/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/27/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/27/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/27/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/27/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/27/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/27/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/the-villainess-starts-over-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/28/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/28/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/the-villainess-starts-over-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/29/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/29/24.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/the-villainess-starts-over-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/30/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/30/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/30/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/30/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/30/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/30/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/30/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/the-villainess-starts-over-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/31/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/31/08.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/the-villainess-starts-over-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/32/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/32/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/32/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/32/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/32/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/32/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/32/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/the-villainess-starts-over-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/33/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/33/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 34",
+            "url": "https://arenascan.com/the-villainess-starts-over-34/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/34/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/34/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/34/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/34/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/34/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/34/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 35",
+            "url": "https://arenascan.com/the-villainess-starts-over-35/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/35/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/35/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/35/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/35/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/35/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/35/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 36",
+            "url": "https://arenascan.com/the-villainess-starts-over-36/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/36/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/36/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/36/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/36/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/36/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/36/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 37",
+            "url": "https://arenascan.com/the-villainess-starts-over-37/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/37/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/37/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/37/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/37/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/37/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/37/12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 38",
+            "url": "https://arenascan.com/the-villainess-starts-over-38/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/38/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/38/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/38/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/38/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/38/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/38/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/38/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 39",
+            "url": "https://arenascan.com/the-villainess-starts-over-39/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/39/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/39/11.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 40",
+            "url": "https://arenascan.com/the-villainess-starts-over-chapter-40/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223839/40/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/223839/40/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 41",
             "url": "https://arenascan.com/the-villainess-starts-over-chapter-41/",
@@ -55,5 +867,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-17T16:47:44.613811"
+    "last_scraped": "2026-03-17T17:39:10.250460"
 }
