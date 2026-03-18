@@ -47,6 +47,9 @@
         .recent-scroll {
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
         }
         .recent-scroll::-webkit-scrollbar {
             height: 4px;
@@ -57,6 +60,41 @@
         .recent-scroll::-webkit-scrollbar-thumb {
             background: #9333ea;
             border-radius: 20px;
+        }
+        /* Hide scrollbar for desktop when using buttons? We'll keep it visible but small */
+        .recent-container {
+            display: flex;
+            gap: 1rem;
+        }
+        .recent-item {
+            flex: 0 0 auto;
+            width: 144px; /* 36 * 4 = 144px, sesuai dengan w-36 */
+        }
+        .nav-button {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .nav-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 9999px;
+                background: #1a1a1a;
+                border: 1px solid rgba(255,255,255,0.1);
+                color: #9333ea;
+                cursor: pointer;
+                transition: all 0.2s;
+                flex-shrink: 0;
+            }
+            .nav-button:hover {
+                background: #2a2a2a;
+                color: white;
+            }
+            .nav-button:active {
+                transform: scale(0.95);
+            }
         }
     </style>
 </head>
@@ -77,8 +115,16 @@
                 </svg>
                 <span>Last Read Chapter</span>
             </h2>
-            <div id="recent-list" class="flex gap-4 overflow-x-auto pb-4 recent-scroll">
-                <!-- Will be filled by JavaScript -->
+            <div class="flex items-center gap-2">
+                <button id="recent-prev" class="nav-button" aria-label="Previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div id="recent-list" class="recent-scroll flex gap-4 pb-4 flex-1">
+                    <!-- Will be filled by JavaScript -->
+                </div>
+                <button id="recent-next" class="nav-button" aria-label="Next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
             </div>
         </div>
 
@@ -166,9 +212,10 @@
                     waktu: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
                 });
                 
-                // Limit to 4
-                if (recentData.length > 4) {
-                    recentData = recentData.slice(0, 4);
+                // Limit to 20 items (instead of 4)
+                const MAX_RECENT = 20;
+                if (recentData.length > MAX_RECENT) {
+                    recentData = recentData.slice(0, MAX_RECENT);
                 }
                 
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
@@ -205,6 +252,63 @@
                     </a>
                 `;
             });
+
+            // After rendering, check if we need to show/hide navigation buttons
+            updateNavButtons();
+        }
+
+        // ==================== RECENT NAVIGATION ====================
+        const recentList = document.getElementById('recent-list');
+        const prevBtn = document.getElementById('recent-prev');
+        const nextBtn = document.getElementById('recent-next');
+
+        function updateNavButtons() {
+            if (!recentList) return;
+            // Check if scroll width > client width
+            if (recentList.scrollWidth > recentList.clientWidth) {
+                // Show buttons (they are already visible via CSS at md+)
+                // But we can enable/disable them based on scroll position
+                prevBtn.disabled = recentList.scrollLeft <= 0;
+                nextBtn.disabled = recentList.scrollLeft + recentList.clientWidth >= recentList.scrollWidth - 1;
+            } else {
+                // If content fits, buttons are hidden via CSS (they have display:flex at md, but we can disable them)
+                // We'll keep them but disable and hide? Better to hide them with a class.
+                // We'll handle by CSS media query, but if content fits, we can add a class to hide them.
+                // For simplicity, we'll just disable them and they will be invisible? No, they still occupy space.
+                // Let's hide them by adding a class 'hidden' if content fits.
+                if (recentList.scrollWidth <= recentList.clientWidth) {
+                    prevBtn.classList.add('hidden');
+                    nextBtn.classList.add('hidden');
+                } else {
+                    prevBtn.classList.remove('hidden');
+                    nextBtn.classList.remove('hidden');
+                }
+            }
+        }
+
+        // Scroll left/right
+        function scrollRecent(direction) {
+            if (!recentList) return;
+            const scrollAmount = recentList.clientWidth * 0.8; // scroll 80% of visible width
+            recentList.scrollBy({
+                left: direction === 'next' ? scrollAmount : -scrollAmount,
+                behavior: 'smooth'
+            });
+            // Update button states after scroll (with a small delay)
+            setTimeout(updateNavButtons, 100);
+        }
+
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => scrollRecent('prev'));
+            nextBtn.addEventListener('click', () => scrollRecent('next'));
+            // Update on scroll
+            recentList.addEventListener('scroll', () => {
+                // Use requestAnimationFrame to throttle
+                if (window.rAF) cancelAnimationFrame(window.rAF);
+                window.rAF = requestAnimationFrame(updateNavButtons);
+            });
+            // Update on resize
+            window.addEventListener('resize', updateNavButtons);
         }
 
         // ==================== MAIN CONFIG ====================
