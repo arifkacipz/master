@@ -122,7 +122,9 @@
                     chapterNumber: chapterNumber || '',
                     waktu: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
                 });
-                if (recentData.length > 4) recentData = recentData.slice(0, 4);
+                // Limit to 20 items (consisten dengan index.html)
+                const MAX_RECENT = 20;
+                if (recentData.length > MAX_RECENT) recentData = recentData.slice(0, MAX_RECENT);
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
             } catch (e) {
                 console.warn('Failed to save history:', e);
@@ -233,7 +235,7 @@
                     const chapter = manga.chapters[currentIndex];
                     const currentChapterNumber = getChapterNumber(chapter.nama);
 
-                    // Save progress and recent
+                    // Save progress and recent (dengan info chapter)
                     saveProgress(slug, currentChapterNumber);
                     addToRecent(slug, manga.judul, manga.thumb, chapter.nama, currentChapterNumber);
 
