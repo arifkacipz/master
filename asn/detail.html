@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memuat Detail... - PetoMic</title>
+    <title>Loading Detail... - PetoMic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Scroll horizontal kustom */
+        /* Custom horizontal scroll */
         .horizontal-scroll {
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
@@ -37,42 +37,43 @@
 
     <div id="content" class="container mx-auto px-4 py-8 max-w-xl"></div>
 
-    <!-- Daftar komik dengan total chapter kurang dari 15 -->
+    <!-- List of comics with less than 15 chapters -->
     <div id="low-chapter-section" class="container mx-auto px-4 py-8 max-w-xl hidden">
         <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
             <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
-            <span id="low-chapter-title">Komik <15 Chapter</span>
+            <span id="low-chapter-title">Comics &lt;15 Chapters</span>
         </h2>
         <div id="low-chapter-list" class="flex gap-4 overflow-x-auto pb-4 horizontal-scroll">
-            <!-- Akan diisi JavaScript -->
+            <!-- Will be filled by JavaScript -->
         </div>
     </div>
 
     <script>
-        // ==================== FUNGSI COPY DENGAN NOTIFIKASI ====================
-        function copyWithNotification(slug, buttonElement) {
-            navigator.clipboard.writeText(slug).then(() => {
-                const toast = document.createElement('span');
-                toast.className = 'absolute -top-8 right-0 bg-green-600 text-white text-xs px-2 py-1 rounded opacity-0 toast-notify pointer-events-none';
-                toast.innerText = 'Tersalin!';
-                const parent = buttonElement.closest('.relative') || buttonElement.parentElement;
-                if (!parent.classList.contains('relative')) {
-                    parent.classList.add('relative');
-                }
-                parent.appendChild(toast);
-                setTimeout(() => toast.classList.add('opacity-100'), 10);
-                setTimeout(() => {
-                    toast.classList.remove('opacity-100');
-                    setTimeout(() => toast.remove(), 300);
-                }, 2000);
-            }).catch(err => {
-                console.error('Gagal menyalin:', err);
-            });
+        // ==================== READING PROGRESS FUNCTIONS ====================
+        // Save the last read chapter per comic
+        function saveProgress(slug, chapterNumber) {
+            try {
+                const key = `petomic_progress_${slug}`;
+                localStorage.setItem(key, chapterNumber);
+            } catch (e) {
+                console.warn('Failed to save progress:', e);
+            }
         }
 
-        // ==================== FUNGSI MENENTUKAN PATH FILE JSON ====================
+        // Get the last read chapter for this comic
+        function getProgress(slug) {
+            try {
+                const key = `petomic_progress_${slug}`;
+                return localStorage.getItem(key);
+            } catch (e) {
+                console.warn('Failed to read progress:', e);
+                return null;
+            }
+        }
+
+        // ==================== FUNCTION TO DETERMINE JSON FILE PATH ====================
         function getDbPath(slug) {
             if (!slug) return '';
             const firstChar = slug[0].toLowerCase();
@@ -85,84 +86,101 @@
             return `../db/${folder}/${slug}.json`;
         }
 
-        // ==================== FUNGSI UTAMA DETAIL ====================
+        // ==================== MAIN DETAIL FUNCTIONS ====================
         function getChapterNumber(chapterName) {
             const match = chapterName.match(/\d+(\.\d+)?/);
             return match ? match[0] : '';
         }
 
-        // Ambil slug dari URL (clean URL: /asn/{slug})
+        // Get slug from URL (clean URL: /asn/{slug})
         let slug = window.location.pathname.split('/').filter(Boolean).pop();
         if (!slug) {
             const urlParams = new URLSearchParams(window.location.search);
             slug = urlParams.get('slug');
         }
         if (!slug) {
-            document.getElementById('content').innerHTML = '<p class="text-center text-red-500">Slug tidak ditemukan.</p>';
-            throw new Error('Slug tidak ditemukan');
+            document.getElementById('content').innerHTML = '<p class="text-center text-red-500">Slug not found.</p>';
+            throw new Error('Slug not found');
         }
 
-        // ==================== LOAD DATA KOMIK UTAMA ====================
+        // ==================== LOAD MAIN COMIC DATA ====================
         Promise.all([
             fetch(getDbPath(slug)).then(res => {
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 return res.json();
             }),
-            fetch('../stats.json').then(res => res.json()).catch(() => []) // file statistik
+            fetch('../stats.json').then(res => res.json()).catch(() => []) // stats file
         ])
         .then(([manga, stats]) => {
             document.title = `${manga.judul} - PetoMic`;
 
-            // Buat daftar chapter
+            // Determine first and last chapter
+            const firstChapter = manga.chapters[0];
+            const lastChapter = manga.chapters[manga.chapters.length - 1];
+            const firstChapterNumber = getChapterNumber(firstChapter.nama) || 0;
+            const lastChapterNumber = getChapterNumber(lastChapter.nama) || (manga.chapters.length - 1);
+
+            // Check progress
+            const savedProgress = getProgress(slug);
+            let continueChapterNumber = savedProgress;
+            let continueChapter = null;
+            if (continueChapterNumber) {
+                // Find chapter with matching number
+                continueChapter = manga.chapters.find(ch => getChapterNumber(ch.nama) === continueChapterNumber);
+            }
+
+            // Build chapter list
             let listHtml = manga.chapters.map((ch, i) => {
                 const chapterNumber = getChapterNumber(ch.nama) || i;
                 return `
                     <a href="/asn/${slug}/ch-${chapterNumber}" class="flex justify-between items-center p-5 bg-zinc-900 border-b border-white/5 hover:bg-purple-900/20 transition group">
                         <span class="font-bold text-sm text-zinc-300 group-hover:text-white">${ch.nama}</span>
-                        <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">BACA</span>
+                        <span class="text-[10px] text-purple-500 font-black border border-purple-500/30 px-2 py-1 rounded">READ</span>
                     </a>
                 `;
             }).reverse().join('');
 
-            // Tampilkan konten utama
-            document.getElementById('content').innerHTML = `
-                <div class="flex flex-col items-center mb-10 text-center">
-                    <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl mb-6 object-cover h-72 border-2 border-white/5">
-                    <h1 class="text-3xl font-black mb-1 uppercase">${manga.judul}</h1>
-                </div>
-                <div class="bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-white/5 mb-8">
-                    <div class="p-5 bg-zinc-900/50 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b border-white/5 flex justify-between">
-                        <span>Daftar Chapter</span><span class="text-purple-500">${manga.chapters.length} Total</span>
-                    </div>
-                    <div class="max-h-[500px] overflow-y-auto">${listHtml}</div>
-                </div>
-                <div class="space-y-4 mb-10">
-                    <div class="flex flex-col items-center gap-3 bg-zinc-900/50 p-4 rounded-2xl border border-white/5">
-                        <span class="text-[10px] text-zinc-500 font-black uppercase">Manga Identification</span>
-                        <div class="flex items-center gap-2 bg-black p-2 px-4 rounded-full border border-white/10">
-                            <code class="text-purple-400 text-xs font-mono font-bold">${slug}</code>
-                            <button onclick="copyWithNotification('${slug}', this)" class="bg-white text-black text-[10px] px-4 py-1.5 rounded-full font-black uppercase">Copy</button>
-                        </div>
-                    </div>
-                    <div class="bg-indigo-900/20 border border-indigo-500/30 rounded-2xl p-6 text-[10px] text-zinc-400 leading-relaxed">
-                        <p class="font-bold text-indigo-300 uppercase mb-3 italic">💡 Panduan Komplit:</p>
-                        <ul class="space-y-2 list-disc ml-4">
-                            <li>Buka <b>Actions</b> > Pilih <b>Update Data</b>.</li>
-                            <li>Klik <b>Run</b> dan masukkan: <b class="text-white">${slug}</b>.</li>
-                        </ul>
-                    </div>
+            // Build action buttons
+            let actionButtons = `
+                <div class="flex flex-wrap gap-3 justify-center mb-8">
+                    <a href="/asn/${slug}/ch-${firstChapterNumber}" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition flex-1 min-w-[120px] text-center">Start Reading</a>
+            `;
+
+            if (continueChapter) {
+                actionButtons += `
+                    <a href="/asn/${slug}/ch-${continueChapterNumber}" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition flex-1 min-w-[120px] text-center">Continue Reading</a>
+                `;
+            }
+
+            actionButtons += `
+                    <a href="/asn/${slug}/ch-${lastChapterNumber}" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition flex-1 min-w-[120px] text-center">Read Latest Chapter</a>
                 </div>
             `;
 
-            // ==================== TAMPILKAN KOMIK DENGAN CHAPTER < 15 ====================
+            // Display main content (without Manga Identification and tips)
+            document.getElementById('content').innerHTML = `
+                <div class="flex flex-col items-center mb-6 text-center">
+                    <img src="${manga.thumb}" class="w-48 rounded-2xl shadow-2xl mb-6 object-cover h-72 border-2 border-white/5">
+                    <h1 class="text-3xl font-black mb-1 uppercase">${manga.judul}</h1>
+                </div>
+                ${actionButtons}
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-white/5 mb-8">
+                    <div class="p-5 bg-zinc-900/50 text-[10px] font-black uppercase text-zinc-500 tracking-widest border-b border-white/5 flex justify-between">
+                        <span>Chapter List</span><span class="text-purple-500">${manga.chapters.length} Total</span>
+                    </div>
+                    <div class="max-h-[500px] overflow-y-auto">${listHtml}</div>
+                </div>
+            `;
+
+            // ==================== DISPLAY COMICS WITH CHAPTERS < 15 ====================
             if (stats.length > 0) {
-                // Filter komik dengan chapter < 15
+                // Filter comics with chapters < 15
                 const lowChapterComics = stats.filter(comic => comic.chapterCount < 15);
                 if (lowChapterComics.length > 0) {
-                    // Update judul dengan total komik
-                    document.getElementById('low-chapter-title').innerText = `Komik <15 Chapter = (${lowChapterComics.length})`;
+                    // Update title with total count
+                    document.getElementById('low-chapter-title').innerText = `Comics <15 Chapters = (${lowChapterComics.length})`;
 
-                    // Ambil maksimal 10 atau semua
+                    // Take max 10 or all
                     const limited = lowChapterComics.slice(0, 10);
                     const listContainer = document.getElementById('low-chapter-list');
                     listContainer.innerHTML = limited.map(comic => `
@@ -170,7 +188,7 @@
                             <img src="${comic.thumb}" class="w-full h-36 object-cover" loading="lazy">
                             <div class="p-2">
                                 <div class="text-xs font-bold truncate">${comic.judul}</div>
-                                <div class="text-[10px] text-zinc-500">${comic.chapterCount} chapter</div>
+                                <div class="text-[10px] text-zinc-500">${comic.chapterCount} chapters</div>
                             </div>
                         </a>
                     `).join('');
@@ -180,7 +198,7 @@
         })
         .catch(err => {
             console.error(err);
-            document.getElementById('content').innerHTML = '<p class="text-center text-zinc-500">Gagal memuat data.</p>';
+            document.getElementById('content').innerHTML = '<p class="text-center text-zinc-500">Failed to load data.</p>';
         });
     </script>
 </body>
