@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
             margin: 0 auto;
             background: #0a0a0a;
             border-bottom: 1px solid rgba(255,255,255,0.05);
-            pointer-events: none; /* agar tap tidak terhalang gambar */
+            pointer-events: none;
         }
         .nav-btn {
             flex: 1;
@@ -50,7 +50,6 @@
             background-position: right 1rem center;
             background-size: 1rem;
         }
-        /* Loading shimmer */
         .loader-shine {
             background: linear-gradient(90deg, #1e1e1e 25%, #2d2d2d 50%, #1e1e1e 75%);
             background-size: 200% 100%;
@@ -63,14 +62,13 @@
     </style>
 </head>
 <body class="text-white">
-    <!-- Header -->
     <header id="top-header" class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-zinc-900/95 to-zinc-900/80 backdrop-blur-lg border-b border-white/10 p-3 shadow-xl">
         <div class="flex justify-between items-center max-w-3xl mx-auto">
             <a href="/asn" class="flex items-center gap-1 text-[10px] font-black uppercase text-zinc-400 hover:text-white transition">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 <span>Home</span>
             </a>
-            <span id="top-title" class="text-[10px] font-bold truncate max-w-[200px] bg-black/40 px-3 py-1.5 rounded-full text-purple-300 border border-purple-500/20">Memuat...</span>
+            <span id="top-title" class="text-[10px] font-bold truncate max-w-[200px] bg-black/40 px-3 py-1.5 rounded-full text-purple-300 border border-purple-500/20">Loading...</span>
             <a href="javascript:history.back()" class="flex items-center gap-1 text-[10px] font-black uppercase text-purple-400 hover:text-purple-300 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                 <span>Back</span>
@@ -78,12 +76,10 @@
         </div>
     </header>
 
-    <!-- Konten gambar -->
     <div id="tap-area" class="flex flex-col items-center min-h-screen pt-16 pb-32">
         <div id="loader" class="mt-40 loader-shine w-48 h-8 rounded-full"></div>
     </div>
 
-    <!-- Bottom Navigation -->
     <div id="bottom-nav" class="fixed bottom-0 left-0 w-full p-4 bg-gradient-to-t from-zinc-900/95 via-zinc-900/90 to-transparent backdrop-blur-xl border-t border-white/10 z-50">
         <div class="max-w-md mx-auto flex flex-col gap-3">
             <select id="ch-selector" class="w-full bg-black/60 border border-purple-500/30 text-xs rounded-xl p-3 outline-none text-purple-300 font-bold text-center cursor-pointer hover:border-purple-400 transition"></select>
@@ -104,222 +100,186 @@
     </div>
 
     <script>
-        // ==================== FUNGSI RECENT (localStorage) ====================
-        // Fungsi untuk menambah komik ke daftar terakhir dibaca
-        function addToRecent(slug, judul, thumb) {
+        // ==================== READING PROGRESS ====================
+        function saveProgress(slug, chapterNumber) {
+            try {
+                const key = `petomic_progress_${slug}`;
+                localStorage.setItem(key, chapterNumber);
+            } catch (e) {
+                console.warn('Failed to save progress:', e);
+            }
+        }
+
+        // ==================== RECENT (for index page) ====================
+        function addToRecent(slug, judul, thumb, chapterName, chapterNumber) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
-                
-                // Hapus jika sudah ada (pindahkan ke paling atas)
                 recentData = recentData.filter(item => item.slug !== slug);
-                
-                // Tambah ke awal
                 recentData.unshift({
-                    slug: slug,
-                    judul: judul,
-                    thumb: thumb,
-                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
+                    slug, judul, thumb,
+                    chapterName: chapterName || '',
+                    chapterNumber: chapterNumber || '',
+                    waktu: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
                 });
-                
-                // Batasi hanya 4
-                if (recentData.length > 4) {
-                    recentData = recentData.slice(0, 4);
-                }
-                
+                if (recentData.length > 4) recentData = recentData.slice(0, 4);
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
             } catch (e) {
-                console.warn('Gagal menyimpan riwayat:', e);
+                console.warn('Failed to save history:', e);
             }
         }
 
-        // ==================== FUNGSI MENENTUKAN PATH FILE JSON ====================
+        // ==================== PATH HELPER ====================
         function getDbPath(slug) {
             if (!slug) return '';
             const firstChar = slug[0].toLowerCase();
-            let folder;
-            if (/[a-z0-9]/.test(firstChar)) {
-                folder = firstChar;
-            } else {
-                folder = 'others';
-            }
+            const folder = /[a-z0-9]/.test(firstChar) ? firstChar : 'others';
             return `/db/${folder}/${slug}.json`;
         }
 
-        // ========== FUNGSI UTAMA READER ==========
+        // ==================== MAIN READER ====================
         (function() {
-            // Fungsi ekstrak nomor chapter
             function getChapterNumber(chapterName) {
                 const match = chapterName.match(/\d+(\.\d+)?/);
                 return match ? match[0] : '';
             }
 
-            // ========== SCROLL HANDLER ==========
+            // Scroll handler
             let lastScrollTop = 0;
             const header = document.getElementById('top-header');
             const bottomNav = document.getElementById('bottom-nav');
-            const tapArea = document.getElementById('tap-area');
-            let menuVisible = true; // status saat ini (true = tampil)
+            let menuVisible = true;
             let scrollTimeout;
 
             function updateMenuOnScroll() {
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 const windowHeight = window.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
-                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50; // 50px dari bawah
+                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50;
 
-                // Arah scroll
                 if (scrollTop > lastScrollTop && scrollTop > 50) {
-                    // Scroll ke bawah, sembunyikan menu
                     if (menuVisible) {
                         menuVisible = false;
                         header.classList.add('menu-hidden-top');
                         bottomNav.classList.add('menu-hidden-bottom');
                     }
                 } else if (scrollTop < lastScrollTop || isNearBottom) {
-                    // Scroll ke atas atau sudah di bawah, tampilkan menu
                     if (!menuVisible) {
                         menuVisible = true;
                         header.classList.remove('menu-hidden-top');
                         bottomNav.classList.remove('menu-hidden-bottom');
                     }
                 }
-
                 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             }
 
             window.addEventListener('scroll', () => {
-                // Throttle performa
                 if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
                 scrollTimeout = requestAnimationFrame(updateMenuOnScroll);
             });
 
-            // ========== TAP AREA BAGI PROPORSI ==========
+            // Tap handling
             document.addEventListener('click', function(e) {
-                // Abaikan klik pada header atau bottom navigation (termasuk elemen di dalamnya)
-                if (e.target.closest('#top-header') || e.target.closest('#bottom-nav')) {
-                    return;
-                }
-
+                if (e.target.closest('#top-header') || e.target.closest('#bottom-nav')) return;
                 const viewportHeight = window.innerHeight;
                 const clickY = e.clientY;
-
-                const topThreshold = viewportHeight * 0.4; // 2/5
-                const bottomThreshold = viewportHeight * 0.6; // 3/5
+                const topThreshold = viewportHeight * 0.4;
+                const bottomThreshold = viewportHeight * 0.6;
 
                 if (clickY < topThreshold) {
-                    // Area atas: scroll ke atas (sekitar 80% tinggi layar)
-                    window.scrollBy({
-                        top: -viewportHeight * 0.8,
-                        behavior: 'smooth'
-                    });
+                    window.scrollBy({ top: -viewportHeight * 0.8, behavior: 'smooth' });
                 } else if (clickY > bottomThreshold) {
-                    // Area bawah: scroll ke bawah
-                    window.scrollBy({
-                        top: viewportHeight * 0.8,
-                        behavior: 'smooth'
-                    });
+                    window.scrollBy({ top: viewportHeight * 0.8, behavior: 'smooth' });
                 } else {
-                    // Area tengah: toggle navigator
                     menuVisible = !menuVisible;
                     header.classList.toggle('menu-hidden-top', !menuVisible);
                     bottomNav.classList.toggle('menu-hidden-bottom', !menuVisible);
                 }
             });
 
-            // ========== PARSING URL ==========
+            // Parse URL
             let slug, chapterNumber, chapterIndex;
             const pathParts = window.location.pathname.split('/').filter(Boolean);
             if (pathParts.length >= 3 && pathParts[0] === 'asn') {
                 slug = pathParts[1];
                 const chPart = pathParts[2];
-                if (chPart.startsWith('ch-')) {
-                    chapterNumber = chPart.substring(3);
-                }
+                if (chPart.startsWith('ch-')) chapterNumber = chPart.substring(3);
             }
-
             if (!slug) {
-                const urlParams = new URLSearchParams(window.location.search);
-                slug = urlParams.get('slug');
-                const chParam = urlParams.get('ch');
+                const params = new URLSearchParams(window.location.search);
+                slug = params.get('slug');
+                const chParam = params.get('ch');
                 if (chParam) chapterIndex = parseInt(chParam);
             }
-
             if (!slug) {
-                alert('Slug tidak ditemukan');
+                alert('Slug not found');
                 return;
             }
 
             document.getElementById('back-detail').href = `/asn/${slug}`;
 
-            // ========== FETCH DATA ==========
+            // Fetch data
             fetch(getDbPath(slug))
-                .then(res => {
-                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                    return res.json();
-                })
+                .then(res => { if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.json(); })
                 .then(manga => {
-                    let currentIndex;
+                    let currentIndex = 0;
                     if (chapterNumber !== undefined) {
                         currentIndex = manga.chapters.findIndex(ch => getChapterNumber(ch.nama) === chapterNumber);
                         if (currentIndex === -1) currentIndex = 0;
                     } else if (chapterIndex !== undefined && !isNaN(chapterIndex) && chapterIndex >= 0 && chapterIndex < manga.chapters.length) {
                         currentIndex = chapterIndex;
-                    } else {
-                        currentIndex = 0;
                     }
 
                     const chapter = manga.chapters[currentIndex];
                     const currentChapterNumber = getChapterNumber(chapter.nama);
 
-                    // Catat kunjungan ke recent
-                    addToRecent(slug, manga.judul, manga.thumb);
+                    // Save progress and recent
+                    saveProgress(slug, currentChapterNumber);
+                    addToRecent(slug, manga.judul, manga.thumb, chapter.nama, currentChapterNumber);
 
                     document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
                     document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
                     document.getElementById('loader').remove();
 
-                    // Dropdown chapter
+                    // Dropdown
                     const selector = document.getElementById('ch-selector');
                     const reversedChapters = [...manga.chapters].reverse();
                     selector.innerHTML = reversedChapters.map(ch => {
-                        const number = getChapterNumber(ch.nama);
-                        const selected = (number === currentChapterNumber) ? 'selected' : '';
-                        return `<option value="${number}" ${selected}>${ch.nama}</option>`;
+                        const num = getChapterNumber(ch.nama);
+                        const selected = (num === currentChapterNumber) ? 'selected' : '';
+                        return `<option value="${num}" ${selected}>${ch.nama}</option>`;
                     }).join('');
+                    selector.onchange = (e) => location.href = `/asn/${slug}/ch-${e.target.value}`;
 
-                    selector.onchange = (e) => {
-                        location.href = `/asn/${slug}/ch-${e.target.value}`;
-                    };
-
-                    // Tombol prev/next
+                    // Prev/Next
                     const prevBtn = document.getElementById('prev-btn');
                     const nextBtn = document.getElementById('next-btn');
                     if (currentIndex > 0) {
-                        const prevNumber = getChapterNumber(manga.chapters[currentIndex - 1].nama);
+                        const prevNum = getChapterNumber(manga.chapters[currentIndex - 1].nama);
                         prevBtn.classList.remove('opacity-20', 'pointer-events-none');
-                        prevBtn.onclick = () => location.href = `/asn/${slug}/ch-${prevNumber}`;
+                        prevBtn.onclick = () => location.href = `/asn/${slug}/ch-${prevNum}`;
                     }
                     if (currentIndex < manga.chapters.length - 1) {
-                        const nextNumber = getChapterNumber(manga.chapters[currentIndex + 1].nama);
+                        const nextNum = getChapterNumber(manga.chapters[currentIndex + 1].nama);
                         nextBtn.classList.remove('opacity-20', 'pointer-events-none');
-                        nextBtn.onclick = () => location.href = `/asn/${slug}/ch-${nextNumber}`;
+                        nextBtn.onclick = () => location.href = `/asn/${slug}/ch-${nextNum}`;
                     }
 
-                    // Render gambar
+                    // Render images
                     const container = document.getElementById('tap-area');
-                    chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(imgUrl => {
-                        const img = document.createElement('img');
-                        img.src = imgUrl;
-                        img.loading = "lazy";
-                        img.alt = "";
-                        img.onerror = () => img.remove();
-                        container.appendChild(img);
-                    });
+                    chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true}))
+                        .forEach(imgUrl => {
+                            const img = document.createElement('img');
+                            img.src = imgUrl;
+                            img.loading = "lazy";
+                            img.alt = "";
+                            img.onerror = () => img.remove();
+                            container.appendChild(img);
+                        });
                 })
                 .catch(err => {
                     console.error(err);
-                    document.getElementById('loader').innerHTML = '<span class="text-red-500">Gagal memuat data.</span>';
+                    document.getElementById('loader').innerHTML = '<span class="text-red-500">Failed to load data.</span>';
                 });
         })();
     </script>
