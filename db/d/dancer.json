@@ -2,9 +2,9 @@
     "judul": "Dancer",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Dancer-193x278.jpg",
     "source": "arenascan",
-    "online": 5,
-    "chapterCount": 5,
-    "Chs": "Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 7,
+    "chapterCount": 7,
+    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -117,7 +117,79 @@
                 "https://cdn.arenascan.com/arena-bucket/381493/4/018.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/dancer-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381493/5/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/026.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/027.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/028.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/029.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/030.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/5/031.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/dancer-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381493/6/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/026.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/6/027.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-13T03:56:13.250356"
+    "last_scraped": "2026-03-18T04:51:48.519508"
 }
