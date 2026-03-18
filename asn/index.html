@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetoMic - Katalog</title>
+    <title>PetoMic - Catalog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Mode daftar (list) */
+        /* List mode */
         .list-mode {
             display: flex;
             flex-direction: column;
@@ -43,7 +43,7 @@
             color: white;
         }
         
-        /* Scroll horizontal untuk recent */
+        /* Horizontal scroll for recent */
         .recent-scroll {
             scrollbar-width: thin;
             scrollbar-color: #9333ea #1a1a1a;
@@ -69,30 +69,30 @@
     </header>
 
     <div class="container mx-auto px-4 py-8">
-        <!-- ===== SECTION: CHAPTER TERAKHIR DIBACA ===== -->
+        <!-- ===== SECTION: LAST READ CHAPTER ===== -->
         <div id="recent-section" class="mb-12 hidden">
             <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
                 <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span>Chapter Terakhir Dibaca</span>
+                <span>Last Read Chapter</span>
             </h2>
             <div id="recent-list" class="flex gap-4 overflow-x-auto pb-4 recent-scroll">
-                <!-- Akan diisi JavaScript -->
+                <!-- Will be filled by JavaScript -->
             </div>
         </div>
 
-        <!-- ===== SECTION: POPULER ===== -->
+        <!-- ===== SECTION: HOT & POPULAR ===== -->
         <div id="popular-section" class="mb-12">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-bold flex items-center gap-2">
                     <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                     </svg>
-                    <span>🔥 Hot & Populer</span>
+                    <span>🔥 Hot & Popular</span>
                 </h2>
-                <!-- Tombol Sembunyikan/Tampilkan -->
-                <button id="toggle-popular" class="p-2 rounded-lg hover:bg-zinc-800 transition" title="Sembunyikan bagian ini">
+                <!-- Hide/Show button -->
+                <button id="toggle-popular" class="p-2 rounded-lg hover:bg-zinc-800 transition" title="Hide this section">
                     <svg id="eye-icon" class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -107,34 +107,34 @@
                 <button id="tab-monthly" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg text-zinc-400 hover:bg-zinc-800">Monthly</button>
             </div>
             
-            <!-- Container Popular -->
+            <!-- Popular Container -->
             <div id="popular-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <!-- Akan diisi JavaScript -->
+                <!-- Will be filled by JavaScript -->
             </div>
         </div>
 
-        <!-- ===== SECTION: SEMUA KOMIK ===== -->
+        <!-- ===== SECTION: ALL COMICS ===== -->
         <div class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Semua Komik</h2>
+            <h2 class="text-xl font-bold mb-4">All Comics</h2>
             
-            <!-- Kontrol: Search, Mode Toggle -->
+            <!-- Controls: Search, Mode Toggle -->
             <div class="flex flex-col sm:flex-row gap-4 items-center justify-between mb-8">
                 <div class="relative w-full sm:w-64">
-                    <input type="text" id="search-input" placeholder="Cari komik..." class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-2 pl-10 text-sm focus:outline-none focus:border-purple-500 transition">
+                    <input type="text" id="search-input" placeholder="Search comics..." class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-2 pl-10 text-sm focus:outline-none focus:border-purple-500 transition">
                     <svg class="absolute left-3 top-2.5 h-4 w-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
                 <div class="flex gap-2 bg-zinc-900 p-1 rounded-xl border border-white/5">
-                    <button id="mode-grid" class="px-4 py-1.5 text-xs font-bold rounded-lg bg-purple-600 text-white transition">Thumbnail</button>
-                    <button id="mode-list" class="px-4 py-1.5 text-xs font-bold rounded-lg text-zinc-400 hover:bg-zinc-800 transition">Daftar</button>
+                    <button id="mode-grid" class="px-4 py-1.5 text-xs font-bold rounded-lg bg-purple-600 text-white transition">Grid</button>
+                    <button id="mode-list" class="px-4 py-1.5 text-xs font-bold rounded-lg text-zinc-400 hover:bg-zinc-800 transition">List</button>
                 </div>
             </div>
 
-            <!-- Container All Comics -->
+            <!-- All Comics Container -->
             <div id="manga-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6"></div>
 
-            <!-- Navigasi Halaman -->
+            <!-- Page Navigation -->
             <div class="flex flex-wrap items-center justify-center gap-2 mt-12 pb-10">
                 <button id="page-first" class="px-3 py-2 bg-zinc-900 border border-white/5 rounded-lg text-xs font-bold hover:bg-zinc-800 transition disabled:opacity-20 disabled:pointer-events-none">« First</button>
                 <button id="page-prev" class="px-3 py-2 bg-zinc-900 border border-white/5 rounded-lg text-xs font-bold hover:bg-zinc-800 transition disabled:opacity-20 disabled:pointer-events-none">‹ Prev</button>
@@ -146,41 +146,41 @@
     </div>
 
     <script>
-        // ==================== FUNGSI RECENT (localStorage) ====================
-        // Fungsi untuk menambah chapter ke daftar terakhir dibaca (dipanggil dari halaman reader)
+        // ==================== RECENT FUNCTIONS (localStorage) ====================
+        // Function to add chapter to last read list (called from detail/reader page)
         window.addToRecent = function(slug, judul, thumb, chapterName, chapterNumber) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
                 
-                // Hapus jika sudah ada (pindahkan ke paling atas)
+                // Remove if already exists (move to top)
                 recentData = recentData.filter(item => item.slug !== slug);
                 
-                // Tambah ke awal
+                // Add to beginning
                 recentData.unshift({
                     slug: slug,
                     judul: judul,
                     thumb: thumb,
                     chapterName: chapterName || '',
                     chapterNumber: chapterNumber || '',
-                    waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
+                    waktu: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
                 });
                 
-                // Batasi hanya 4
+                // Limit to 4
                 if (recentData.length > 4) {
                     recentData = recentData.slice(0, 4);
                 }
                 
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
                 
-                // Update tampilan recent di halaman ini (jika ada)
+                // Update recent display on this page (if any)
                 renderRecentComics(recentData);
             } catch (e) {
-                console.warn('Gagal menyimpan riwayat:', e);
+                console.warn('Failed to save history:', e);
             }
         };
 
-        // Fungsi untuk menampilkan daftar recent
+        // Function to display recent list
         function renderRecentComics(recentData) {
             const recentSection = document.getElementById('recent-section');
             const recentList = document.getElementById('recent-list');
@@ -193,7 +193,7 @@
             recentSection.classList.remove('hidden');
             recentList.innerHTML = '';
             recentData.forEach(item => {
-                // Tampilkan chapter jika ada
+                // Show chapter if available
                 const chapterInfo = item.chapterName ? ` · ${item.chapterName}` : '';
                 recentList.innerHTML += `
                     <a href="/asn/${item.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
@@ -207,7 +207,7 @@
             });
         }
 
-        // ==================== KONFIGURASI UTAMA ====================
+        // ==================== MAIN CONFIG ====================
         const itemsPerPage = 20;
         let allData = [];
         let filteredData = [];
@@ -215,7 +215,7 @@
         let mode = 'grid';
         let popularData = [];
 
-        // Elemen DOM
+        // DOM elements
         const container = document.getElementById('manga-list');
         const popularContainer = document.getElementById('popular-list');
         const popularSection = document.getElementById('popular-section');
@@ -235,7 +235,7 @@
         const tabWeekly = document.getElementById('tab-weekly');
         const tabMonthly = document.getElementById('tab-monthly');
 
-        // ==================== FUNGSI POPULER ====================
+        // ==================== POPULAR FUNCTIONS ====================
         function generatePopularData() {
             if (!allData.length) return;
             popularData = allData.map((comic, index) => ({
@@ -277,41 +277,41 @@
             });
         }
 
-        // ==================== FUNGSI TOGGLE POPULAR (PERBAIKAN) ====================
+        // ==================== TOGGLE POPULAR (FIXED) ====================
         function setPopularVisibility(hide) {
             if (hide) {
                 popularSection.classList.add('hidden');
-                // Ikon mata tertutup (eye-off)
+                // Eye-off icon
                 eyeIcon.innerHTML = `
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
                 `;
-                togglePopularBtn.title = 'Tampilkan bagian ini';
+                togglePopularBtn.title = 'Show this section';
                 localStorage.setItem('petomic_hide_popular', 'true');
             } else {
                 popularSection.classList.remove('hidden');
-                // Ikon mata terbuka (eye)
+                // Eye-open icon
                 eyeIcon.innerHTML = `
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 `;
-                togglePopularBtn.title = 'Sembunyikan bagian ini';
+                togglePopularBtn.title = 'Hide this section';
                 localStorage.setItem('petomic_hide_popular', 'false');
             }
         }
 
-        // Inisialisasi status popular dari localStorage
+        // Initialize popular toggle from localStorage
         function initPopularToggle() {
             const hide = localStorage.getItem('petomic_hide_popular') === 'true';
             setPopularVisibility(hide);
         }
 
-        // Event listener untuk tombol toggle
+        // Event listener for toggle button
         togglePopularBtn.addEventListener('click', () => {
             const isHidden = popularSection.classList.contains('hidden');
             setPopularVisibility(!isHidden);
         });
 
-        // ==================== FUNGSI RENDER UTAMA ====================
+        // ==================== MAIN RENDER FUNCTIONS ====================
         function render() {
             const start = (currentPage - 1) * itemsPerPage;
             const pagedData = filteredData.slice(start, start + itemsPerPage);
@@ -320,7 +320,7 @@
             container.innerHTML = '';
             pagedData.forEach(manga => {
                 const a = document.createElement('a');
-                a.href = `/asn/${manga.slug}`; // Clean URL (akan di-rewrite oleh Cloudflare)
+                a.href = `/asn/${manga.slug}`; // Clean URL (rewritten by Cloudflare)
                 a.className = 'block';
                 if (mode === 'grid') {
                     a.innerHTML = `
@@ -387,7 +387,7 @@
         }
 
         // ==================== LOAD DATA ====================
-        fetch('../list.json') // Ambil dari root
+        fetch('../list.json') // Fetch from root
             .then(res => res.json())
             .then(data => {
                 allData = data;
@@ -396,22 +396,22 @@
                 render();
                 renderPopular('daily');
 
-                // Muat recent dari localStorage
+                // Load recent from localStorage
                 try {
                     const recent = localStorage.getItem('petomic_recent');
                     if (recent) {
                         renderRecentComics(JSON.parse(recent));
                     }
                 } catch (e) {
-                    console.warn('Gagal memuat riwayat:', e);
+                    console.warn('Failed to load history:', e);
                 }
 
-                // Inisialisasi status popular
+                // Initialize popular toggle
                 initPopularToggle();
             })
             .catch(err => {
-                console.error('Gagal memuat data', err);
-                container.innerHTML = '<p class="text-center text-red-500">Gagal memuat katalog.</p>';
+                console.error('Failed to load data', err);
+                container.innerHTML = '<p class="text-center text-red-500">Failed to load catalog.</p>';
             });
 
         // ==================== EVENT LISTENERS ====================
