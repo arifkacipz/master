@@ -69,13 +69,13 @@
     </header>
 
     <div class="container mx-auto px-4 py-8">
-        <!-- ===== SECTION: TERAKHIR DIBACA ===== -->
+        <!-- ===== SECTION: CHAPTER TERAKHIR DIBACA ===== -->
         <div id="recent-section" class="mb-12 hidden">
             <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
                 <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span>Terakhir Dibaca</span>
+                <span>Chapter Terakhir Dibaca</span>
             </h2>
             <div id="recent-list" class="flex gap-4 overflow-x-auto pb-4 recent-scroll">
                 <!-- Akan diisi JavaScript -->
@@ -147,8 +147,8 @@
 
     <script>
         // ==================== FUNGSI RECENT (localStorage) ====================
-        // Fungsi untuk menambah komik ke daftar terakhir dibaca (dipanggil dari halaman detail/reader)
-        window.addToRecent = function(slug, judul, thumb) {
+        // Fungsi untuk menambah chapter ke daftar terakhir dibaca (dipanggil dari halaman reader)
+        window.addToRecent = function(slug, judul, thumb, chapterName, chapterNumber) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
@@ -161,6 +161,8 @@
                     slug: slug,
                     judul: judul,
                     thumb: thumb,
+                    chapterName: chapterName || '',
+                    chapterNumber: chapterNumber || '',
                     waktu: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })
                 });
                 
@@ -191,12 +193,14 @@
             recentSection.classList.remove('hidden');
             recentList.innerHTML = '';
             recentData.forEach(item => {
+                // Tampilkan chapter jika ada
+                const chapterInfo = item.chapterName ? ` · ${item.chapterName}` : '';
                 recentList.innerHTML += `
                     <a href="/asn/${item.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
                         <img src="${item.thumb}" class="w-full h-36 object-cover" loading="lazy">
                         <div class="p-2">
                             <div class="text-xs font-bold truncate">${item.judul}</div>
-                            <div class="text-[10px] text-zinc-500 mt-1">${item.waktu}</div>
+                            <div class="text-[10px] text-zinc-500 mt-1">${item.waktu}${chapterInfo}</div>
                         </div>
                     </a>
                 `;
