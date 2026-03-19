@@ -3,9 +3,64 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/261eda7e-01aa-4d91-8e0d-26cf104dd2cd.jpg",
     "source": "arenascan",
     "online": 8,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/even-if-you-dont-have-a-third-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196806/3/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/3/22.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/even-if-you-dont-have-a-third-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196806/4/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/4/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/4/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/4/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/4/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/4/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/even-if-you-dont-have-a-third-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196806/5/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/5/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/5/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/5/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/5/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196806/5/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 6",
             "url": "https://arenascan.com/even-if-you-dont-have-a-third-6/",
@@ -49,5 +104,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-19T17:21:34.806326"
+    "last_scraped": "2026-03-19T18:10:43.047101"
 }
