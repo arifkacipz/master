@@ -2,9 +2,9 @@
     "judul": "The Collector\u2019s Cage",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/12/488b932c-1960-49a0-a0b3-e9476ac9c0de.jpg",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 21,
+    "chapterCount": 21,
+    "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -382,7 +382,37 @@
                 "https://cdn.arenascan.com/arena-bucket/358672/20/016.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/the-collectors-cage-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/358672/21/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/21/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/the-collectors-cage-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/358672/22/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/358672/22/8.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-17T15:36:51.995752"
+    "last_scraped": "2026-03-19T02:44:23.372571"
 }
