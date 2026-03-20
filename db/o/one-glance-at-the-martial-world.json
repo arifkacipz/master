@@ -2,9 +2,9 @@
     "judul": "One Glance at the Martial World",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/One-Glance-at-the-Martial-World-193x278.jpg",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 9,
+    "chapterCount": 9,
+    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -123,6 +123,36 @@
                 "https://cdn.arenascan.com/arena-bucket/378256/6/011.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378256/7/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/7/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378256/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/8/006.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
-    ]
+    ],
+    "last_scraped": "2026-03-20T19:54:44.268673"
 }
