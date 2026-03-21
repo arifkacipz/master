@@ -2,9 +2,9 @@
     "judul": "Burning for You",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/02/d05dd319-9299-457e-95d0-5cdc8b722e94.jpg",
     "source": "arenascan",
-    "online": 15,
-    "chapterCount": 15,
-    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 16,
+    "chapterCount": 16,
+    "Chs": "Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -326,7 +326,26 @@
                 "https://cdn.arenascan.com/arena-bucket/370932/16/015.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/burning-for-you-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/370932/17/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/370932/17/012.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-14T13:11:11.904880"
+    "last_scraped": "2026-03-21T15:38:47.844318"
 }
