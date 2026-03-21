@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Generate piano tiles patterns from MP3 files.
-- Download MP3 from URLs in songs.json to ../game/sg/
+- Read songs.json from the same directory as this script
+- Download MP3 to ../game/sg/
 - Analyze beat using librosa
-- Generate pattern JSON for easy and hard modes
-- Save JSON to ../game/db/
+- Generate pattern JSON (easy/hard) to ../game/db/
 """
 
 import os
@@ -15,11 +15,12 @@ import librosa
 import sys
 from pathlib import Path
 
-# Konfigurasi path (relatif terhadap lokasi script)
-BASE_DIR = Path(__file__).parent.parent  # ke repo root
-SONGS_CONFIG = BASE_DIR / "songs.json"
-MP3_DIR = BASE_DIR / "game" / "sg"
-DB_DIR = BASE_DIR / "game" / "db"
+# Path setup
+SCRIPT_DIR = Path(__file__).parent.resolve()           # folder game/
+BASE_DIR = SCRIPT_DIR.parent                           # repo root (jika diperlukan)
+SONGS_CONFIG = SCRIPT_DIR / "songs.json"                # songs.json di folder game/
+MP3_DIR = SCRIPT_DIR / "sg"                            # game/sg/
+DB_DIR = SCRIPT_DIR / "db"                             # game/db/
 
 # Buat folder jika belum ada
 MP3_DIR.mkdir(parents=True, exist_ok=True)
