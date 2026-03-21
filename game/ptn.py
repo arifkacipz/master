@@ -46,8 +46,13 @@ def save_songs(songs_dict):
         json.dump(songs_list, f, indent=2, ensure_ascii=False)
 
 def estimate_bpm(y, sr):
-    """Estimasi BPM dari audio."""
+    """Estimasi BPM dari audio. Kembalikan float."""
     tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
+    # tempo bisa berupa array numpy (misal shape (1,)), kita ekstrak scalar
+    if isinstance(tempo, np.ndarray):
+        tempo = float(tempo[0]) if tempo.size > 0 else 120.0
+    else:
+        tempo = float(tempo)
     return tempo
 
 def generate_pattern_from_beat(beat_times, bpm, is_hard=False):
@@ -108,52 +113,65 @@ def process_mp3_file(mp3_path, song_id=None, force=False):
     """
     # Generate id from filename if not provided
     if song_id is None:
-        song_id = mp3_path.stem.replace(' ', '_').lower()
-        # Bersihkan karakter yang tidak valid
-        song_id = ''.join(c for c in song_id if c.isalnum() or c == '_')
-        # Batasi panjang
-        song_id = song_id[:50]
+        # Gunakan nama file tanpa ekstensi, bersihkan untuk dijadikan id
+        raw_name = mp3_path.stem
+        # Ganti spasi dengan underscore, hilangkan karakter non-alnum (kecuali underscore)
+        clean = ''.join(c if c.isalnum() or c == '_' else '_' for c in raw_name)
+        # Hapus underscore berulang
+        clean = '_'.join(filter(None, clean.split('_')))
+        song_id = clean[:50] if clean else f"file_{mp3_path.stem[:20]}"
+        # Jika masih kosong, beri default
+        if not song_id:
+            song_id = f"unknown_{hashlib.md5(mp3_path.name.encode()).hexdigest()[:8]}"
 
     # Check if patterns already exist and not force
     easy_file = DB_DIR / f"{song_id}_easy.json"
     hard_file = DB_DIR / f"{song_id}_hard.json"
+    skip_generate = False
     if not force and easy_file.exists() and hard_file.exists():
         print(f"Pola untuk {song_id} sudah ada, lewati (gunakan --force untuk generate ulang).")
-        # Baca bpm dari file JSON? Lebih baik simpan bpm di metadata.
-        # Kita akan membaca bpm dari pola (tidak ada bpm di pola). Kita bisa return dummy.
-        # Untuk update songs.json, kita perlu bpm. Bisa baca dari file pola atau generate ulang.
-        # Kita asumsikan bpm tidak tersimpan, jadi kita generate ulang untuk mendapatkan bpm.
-        # Atau kita bisa menyimpan bpm di file metadata terpisah, tapi untuk sederhana kita generate ulang.
-        # Untuk efisiensi, jika force=False, kita hanya skip generate tapi tetap return info dari file yang ada?
-        # Tapi songs.json perlu bpm, jadi kita tetap perlu load audio.
-        # Kita proses ulang tapi skip save pattern.
-        pass  # kita tetap lanjut untuk menghitung bpm, tapi skip save pattern.
+        skip_generate = True
 
     # Load audio
     print(f"Menganalisis {mp3_path}")
-    y, sr = librosa.load(mp3_path, sr=None, mono=True)
+    try:
+        y, sr = librosa.load(mp3_path, sr=None, mono=True)
+    except Exception as e:
+        print(f"Error loading audio {mp3_path}: {e}")
+        return None
 
     # Estimasi BPM
-    bpm = estimate_bpm(y, sr)
-    print(f"Estimasi BPM: {bpm:.2f}")
+    try:
+        bpm = estimate_bpm(y, sr)
+        print(f"Estimasi BPM: {bpm:.2f}")
+    except Exception as e:
+        print(f"Error estimating BPM for {mp3_path}: {e}")
+        bpm = 120.0  # default fallback
 
     # Dapatkan waktu beat
-    _, beat_frames = librosa.beat.beat_track(y=y, sr=sr, units='time')
-    beat_times = beat_frames
+    try:
+        _, beat_frames = librosa.beat.beat_track(y=y, sr=sr, units='time')
+        beat_times = beat_frames
+    except Exception as e:
+        print(f"Error detecting beats for {mp3_path}: {e}")
+        beat_times = []
 
-    # Generate pola
-    pattern_easy = generate_pattern_from_beat(beat_times, bpm, is_hard=False)
-    pattern_hard = generate_pattern_from_beat(beat_times, bpm, is_hard=True)
+    if skip_generate:
+        # Tidak perlu generate ulang, hanya return info dari file yang sudah ada
+        # Kita tetap butuh bpm untuk songs.json, jadi kita gunakan bpm yang baru dihitung
+        pass
+    else:
+        # Generate pola
+        pattern_easy = generate_pattern_from_beat(beat_times, bpm, is_hard=False)
+        pattern_hard = generate_pattern_from_beat(beat_times, bpm, is_hard=True)
 
-    # Simpan ke file JSON (hanya jika force atau file belum ada)
-    if force or not easy_file.exists():
+        # Simpan ke file JSON
         with open(easy_file, 'w') as f:
             json.dump(pattern_easy, f, indent=2)
-        print(f"Pola easy disimpan ke {easy_file}")
-    if force or not hard_file.exists():
+        print(f"Pola easy disimpan ke {easy_file} ({len(pattern_easy)} tile)")
         with open(hard_file, 'w') as f:
             json.dump(pattern_hard, f, indent=2)
-        print(f"Pola hard disimpan ke {hard_file}")
+        print(f"Pola hard disimpan ke {hard_file} ({len(pattern_hard)} tile)")
 
     return {
         "id": song_id,
@@ -174,27 +192,36 @@ def main():
     mp3_files = list(MP3_DIR.glob("*.mp3"))
     print(f"Ditemukan {len(mp3_files)} file MP3 di folder sg")
 
+    processed_count = 0
     # Proses setiap file MP3
     for mp3_file in mp3_files:
         # Tentukan ID dari nama file
-        # Nama file dijadikan id, misal "song1.mp3" -> id "song1"
-        song_id = mp3_file.stem.replace(' ', '_').lower()
-        song_id = ''.join(c for c in song_id if c.isalnum() or c == '_')
-        # Periksa apakah sudah ada di songs_dict
+        raw_name = mp3_file.stem
+        clean = ''.join(c if c.isalnum() or c == '_' else '_' for c in raw_name)
+        clean = '_'.join(filter(None, clean.split('_')))
+        song_id = clean[:50] if clean else f"file_{mp3_file.stem[:20]}"
+        if not song_id:
+            song_id = f"unknown_{hashlib.md5(mp3_file.name.encode()).hexdigest()[:8]}"
+
+        # Periksa apakah sudah ada di songs_dict dan tidak force
         if song_id in songs_dict and not args.force:
             print(f"Lagu {song_id} sudah ada di songs.json, lewati.")
             continue
 
         # Proses file
-        song_info = process_mp3_file(mp3_file, song_id, force=args.force)
-
-        # Tambahkan ke songs_dict
-        songs_dict[song_id] = song_info
+        try:
+            song_info = process_mp3_file(mp3_file, song_id, force=args.force)
+            if song_info:
+                songs_dict[song_info["id"]] = song_info
+                processed_count += 1
+        except Exception as e:
+            print(f"Error processing {mp3_file}: {e}")
+            continue
 
     # Jika ada perubahan, simpan songs.json
-    if songs_dict:
+    if processed_count > 0:
         save_songs(songs_dict)
-        print(f"songs.json diperbarui dengan {len(songs_dict)} lagu.")
+        print(f"songs.json diperbarui dengan {len(songs_dict)} lagu (ditambahkan {processed_count} baru).")
     else:
         print("Tidak ada lagu baru diproses.")
 
