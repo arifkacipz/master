@@ -1,0 +1,43 @@
+name: Generate Song Patterns
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force regenerate all patterns (overwrite existing)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install librosa numpy requests soundfile
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Run pattern generator
+        run: |
+          python game/ptn.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add game/db/ game/sg/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update song patterns"
+          git push
