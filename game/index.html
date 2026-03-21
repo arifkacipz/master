@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Magic Tiles Style - Tap the Black Tile</title>
+    <style>
+        body {
+            background: linear-gradient(145deg, #1a2a3a 0%, #0f1a24 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .game-container {
+            background: #2c3e2f;
+            padding: 20px;
+            border-radius: 48px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border-radius: 24px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        .info-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0f1a1fcc;
+            backdrop-filter: blur(4px);
+            border-radius: 60px;
+            color: white;
+            font-weight: bold;
+        }
+        .score-box {
+            background: #00000066;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+        }
+        button {
+            background: #ffb347;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 8px 24px;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.1s linear;
+            font-family: inherit;
+            box-shadow: 0 4px 0 #a05e15;
+        }
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 1px 0 #a05e15;
+        }
+        .status {
+            background: #222;
+            padding: 6px 18px;
+            border-radius: 36px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 500px) {
+            .score-box { font-size: 1.2rem; padding: 4px 16px; }
+            button { font-size: 1rem; padding: 6px 18px; }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div class="info-panel">
+            <span class="status">⚫ Klik Tile Hitam</span>
+            <span class="score-box">Skor: <span id="scoreValue">0</span></span>
+            <button id="resetButton">↺ Mulai Ulang</button>
+        </div>
+    </div>
+    <p style="text-align: center; margin-top: 18px; color: #ddd; font-size: 13px;">✅ Klik tile hitam ➕ skor<br>❌ Klik tile putih ATAU tile hitam jatuh ke bawah → GAME OVER</p>
+</div>
+
+<script>
+    (function(){
+        // ---------- KONFIGURASI ----------
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const scoreSpan = document.getElementById('scoreValue');
+
+        // Ukuran tile
+        const TILE_W = canvas.width / 4;   // 100px
+        const TILE_H = 80;                 // tinggi tile
+        
+        // Pengaturan gameplay
+        let tiles = [];           // array tile: { col, y, isBlack }
+        let score = 0;
+        let gameOver = false;
+        let animationId = null;
+        let lastTimestamp = 0;
+        
+        // Kecepatan gerak tile (px per detik) -> agar smooth di berbagai frame rate
+        const SPEED = 180;        // 180 pixel/detik
+        
+        // Interval spawn tile (detik)
+        let spawnInterval = 0.65;  // detik
+        let timeSinceLastSpawn = 0;
+        
+        // batas bawah game over (y > canvas.height - margin bawah)
+        const BOTTOM_LIMIT = canvas.height;
+        
+        // ---------- UTILITY ----------
+        function updateScoreUI() {
+            scoreSpan.innerText = score;
+        }
+        
+        // Menambah tile baru di kolom acak, dengan kemungkinan hitam/putih
+        // Magic tiles biasanya tile hitam yang harus ditekan, tile putih hanya jebakan.
+        // Supaya menantang, kita buat 80% tile hitam, 20% putih (jebakan).
+        function spawnTile() {
+            if (gameOver) return;
+            
+            const col = Math.floor(Math.random() * 4);
+            // tentukan hitam (true) atau putih (false)
+            // agar mirip magic tiles, tile hitam lebih dominan
+            const isBlack = Math.random() < 0.8;  // 80% hitam
+            
+            tiles.push({
+                col: col,
+                y: -TILE_H,          // mulai dari atas canvas
+                isBlack: isBlack
+            });
+        }
+        
+        // reset semua state
+        function resetGame() {
+            gameOver = false;
+            score = 0;
+            tiles = [];
+            timeSinceLastSpawn = 0;
+            updateScoreUI();
+            
+            // spawn 2 tile awal agar tidak kosong
+            for(let i = 0; i < 2; i++) {
+                spawnTile();
+            }
+        }
+        
+        // Proses klik: deteksi tile mana yang terkena berdasarkan posisi klik
+        function handleTap(e) {
+            if (gameOver) return;
+            
+            // dapatkan posisi klik relatif terhadap canvas
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvas.width / rect.width;   // untuk responsive
+            const scaleY = canvas.height / rect.height;
+            
+            let clientX, clientY;
+            if (e.touches) {
+                // touch event
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+                e.preventDefault();  // mencegah scroll
+            } else {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            }
+            
+            let canvasX = (clientX - rect.left) * scaleX;
+            let canvasY = (clientY - rect.top) * scaleY;
+            
+            // cek apakah klik berada dalam area tile (x dalam kolom, y dalam tinggi tile)
+            // kolom ke berapa?
+            if (canvasX < 0 || canvasX > canvas.width) return;
+            const colClicked = Math.floor(canvasX / TILE_W);
+            if (colClicked < 0 || colClicked > 3) return;
+            
+            // cari tile yang paling atas (dengan y terbesar? karena tile jatuh ke bawah, 
+            // yang paling bawah adalah yang paling mendekati batas bawah)
+            // biasanya di magic tiles, yang paling bawah di kolom itu yang akan ditekan.
+            // kita cari tile dengan col = colClicked dan y terbesar (paling bawah)
+            let bottomTile = null;
+            let maxY = -Infinity;
+            for(let i = 0; i < tiles.length; i++) {
+                const t = tiles[i];
+                if(t.col === colClicked && t.y + TILE_H > 0) {  // tile yang sudah masuk layar
+                    if(t.y > maxY) {
+                        maxY = t.y;
+                        bottomTile = t;
+                    }
+                }
+            }
+            
+            if(!bottomTile) return; // tidak ada tile di kolom itu
+            
+            // cek apakah klik berada dalam area tile tersebut (secara vertikal)
+            const tileTop = bottomTile.y;
+            const tileBottom = bottomTile.y + TILE_H;
+            if(canvasY >= tileTop && canvasY <= tileBottom) {
+                // klik tepat pada tile
+                if(bottomTile.isBlack) {
+                    // tile hitam -> benar, hapus tile dan tambah skor
+                    const index = tiles.indexOf(bottomTile);
+                    if(index !== -1) tiles.splice(index, 1);
+                    score++;
+                    updateScoreUI();
+                } else {
+                    // tile putih -> game over
+                    gameOver = true;
+                }
+            }
+            // jika klik di luar area tile, tidak terjadi apa-apa
+        }
+        
+        // update posisi tile berdasarkan delta time
+        function updateGame(deltaSec) {
+            if (gameOver) return;
+            
+            // 1. gerakkan semua tile ke bawah
+            for(let i = 0; i < tiles.length; i++) {
+                tiles[i].y += SPEED * deltaSec;
+            }
+            
+            // 2. cek tile yang melewati batas bawah -> game over jika tile hitam (putih juga game over)
+            //    di magic tiles asli, tile hitam yang lolos bawah = game over
+            for(let i = 0; i < tiles.length; i++) {
+                if(tiles[i].y + TILE_H >= BOTTOM_LIMIT) {
+                    // tile mencapai bawah
+                    if(tiles[i].isBlack) {
+                        gameOver = true;  // tile hitam jatuh -> game over
+                        break;
+                    } else {
+                        // tile putih yang mencapai bawah juga seharusnya game over (karena gagal?)
+                        // tapi agar konsisten, kita beri game over juga
+                        gameOver = true;
+                        break;
+                    }
+                }
+            }
+            
+            // 3. hapus tile yang sudah melewati batas bawah (setelah pengecekan game over, kita hapus untuk efisiensi)
+            tiles = tiles.filter(t => t.y + TILE_H < BOTTOM_LIMIT + 10); // +10 buffer
+            
+            // 4. spawn tile secara berkala
+            if(!gameOver) {
+                timeSinceLastSpawn += deltaSec;
+                while(timeSinceLastSpawn >= spawnInterval) {
+                    spawnTile();
+                    timeSinceLastSpawn -= spawnInterval;
+                    // sesuaikan spawn interval agar makin seru (opsional: makin cepat seiring skor)
+                    let dynamicSpawn = Math.max(0.35, 0.65 - Math.floor(score / 30) * 0.03);
+                    spawnInterval = dynamicSpawn;
+                }
+            }
+        }
+        
+        // ---------- RENDER GRAFIS ----------
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Gambar grid & latar
+            ctx.strokeStyle = "#3a5e3f";
+            ctx.lineWidth = 2;
+            for(let i = 1; i <= 3; i++) {
+                ctx.beginPath();
+                ctx.moveTo(i * TILE_W, 0);
+                ctx.lineTo(i * TILE_W, canvas.height);
+                ctx.stroke();
+            }
+            
+            // Gambar semua tile
+            for(let t of tiles) {
+                const x = t.col * TILE_W;
+                const y = t.y;
+                // gradasi tile
+                if(t.isBlack) {
+                    ctx.fillStyle = "#1e1e2f";
+                    ctx.shadowBlur = 4;
+                    ctx.shadowColor = "rgba(0,0,0,0.5)";
+                    ctx.fillRect(x, y, TILE_W - 1, TILE_H - 1);
+                    ctx.fillStyle = "#2d2d44";
+                    ctx.fillRect(x+2, y+2, TILE_W - 5, TILE_H - 5);
+                } else {
+                    ctx.fillStyle = "#f4f1de";
+                    ctx.shadowBlur = 2;
+                    ctx.fillRect(x, y, TILE_W - 1, TILE_H - 1);
+                    ctx.fillStyle = "#ffffff";
+                    ctx.fillRect(x+2, y+2, TILE_W - 5, TILE_H - 5);
+                }
+                ctx.shadowBlur = 0;
+                ctx.strokeStyle = "#00000044";
+                ctx.strokeRect(x, y, TILE_W - 1, TILE_H - 1);
+            }
+            
+            // Tampilkan pesan game over
+            if(gameOver) {
+                ctx.font = "bold 34px 'Segoe UI'";
+                ctx.fillStyle = "#ffcc44";
+                ctx.shadowBlur = 0;
+                ctx.fillText("GAME OVER", canvas.width/2 - 110, canvas.height/2 - 40);
+                ctx.font = "18px monospace";
+                ctx.fillStyle = "#ffaa88";
+                ctx.fillText("Tekan 'Mulai Ulang'", canvas.width/2 - 90, canvas.height/2 + 30);
+            }
+            
+            // Efek instruksi kecil
+            ctx.font = "bold 16px 'Segoe UI'";
+            ctx.fillStyle = "#ffd966";
+            ctx.fillText("⚫ Klik tile hitam", 12, 40);
+        }
+        
+        // ---------- GAME LOOP (requestAnimationFrame) ----------
+        let lastFrameTime = null;
+        function gameLoop(nowMs) {
+            if(!lastFrameTime) {
+                lastFrameTime = nowMs;
+                requestAnimationFrame(gameLoop);
+                return;
+            }
+            
+            let delta = Math.min(0.033, (nowMs - lastFrameTime) / 1000); // batas max 33ms
+            if(delta > 0) {
+                updateGame(delta);
+                draw();
+            }
+            lastFrameTime = nowMs;
+            animationId = requestAnimationFrame(gameLoop);
+        }
+        
+        // ---------- EVENT LISTENER ----------
+        function attachEvents() {
+            canvas.addEventListener('mousedown', handleTap);
+            canvas.addEventListener('touchstart', handleTap, { passive: false });
+            // mencegah klik kanan
+            canvas.addEventListener('contextmenu', (e) => e.preventDefault());
+        }
+        
+        // tombol reset
+        const resetBtn = document.getElementById('resetButton');
+        resetBtn.addEventListener('click', () => {
+            resetGame();
+            gameOver = false;
+            // reset interval spawn ke default
+            spawnInterval = 0.65;
+            timeSinceLastSpawn = 0;
+            updateScoreUI();
+        });
+        
+        // inisialisasi
+        function init() {
+            attachEvents();
+            resetGame();   // spawn tile awal
+            animationId = requestAnimationFrame(gameLoop);
+        }
+        
+        init();
+    })();
+</script>
+</body>
+</html>
