@@ -1,0 +1,20 @@
+[
+    {
+        "id": "song1",
+        "name": "Piano Beat 1",
+        "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        "bpm": 120
+    },
+    {
+        "id": "song2",
+        "name": "Electro Pop",
+        "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        "bpm": 128
+    },
+    {
+        "id": "song3",
+        "name": "Acoustic Rock",
+        "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+        "bpm": 110
+    }
+]
