@@ -3,9 +3,719 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/c0426506-1c87-4956-816d-ee3cb54d8827.webp",
     "source": "arenascan",
     "online": 54,
-    "chapterCount": 3,
+    "chapterCount": 54,
     "Chs": "Chapter 54, Chapter 53, Chapter 52, Chapter 51, Chapter 50, Chapter 49, Chapter 48, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/1/ch_1_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/1/ch_1_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/1/ch_1_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/1/ch_1_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/1/ch_1_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/1/ch_1_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/2/ch_2_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/2/ch_2_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/2/ch_2_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/2/ch_2_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/2/ch_2_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/2/ch_2_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/3/ch_3_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/3/ch_3_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/3/ch_3_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/3/ch_3_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/3/ch_3_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/3/ch_3_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/4/ch_4_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/4/ch_4_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/4/ch_4_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/4/ch_4_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/4/ch_4_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/4/ch_4_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/5/ch_5_8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/6/ch_6_7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/7/ch_7_7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/8/ch_8_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/8/ch_8_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/8/ch_8_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/8/ch_8_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/8/ch_8_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/8/ch_8_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/9/ch_9_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/9/ch_9_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/9/ch_9_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/9/ch_9_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/9/ch_9_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/9/ch_9_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/10/ch_10_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/10/ch_10_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/10/ch_10_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/10/ch_10_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/10/ch_10_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/10/ch_10_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/11/ch_11_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/11/ch_11_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/11/ch_11_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/11/ch_11_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/11/ch_11_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/11/ch_11_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/12/ch_12_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/12/ch_12_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/12/ch_12_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/12/ch_12_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/12/ch_12_5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/13/ch_13_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/13/ch_13_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/13/ch_13_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/13/ch_13_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/13/ch_13_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/13/ch_13_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/14/ch_14_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/14/ch_14_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/14/ch_14_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/14/ch_14_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/14/ch_14_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/14/ch_14_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/15/ch_15_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/15/ch_15_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/15/ch_15_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/15/ch_15_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/15/ch_15_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/15/ch_15_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/16/ch_16_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/16/ch_16_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/16/ch_16_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/16/ch_16_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/16/ch_16_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/16/ch_16_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/17/ch_17_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/17/ch_17_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/17/ch_17_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/17/ch_17_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/17/ch_17_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/17/ch_17_6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/18/ch_18_7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/19/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/19/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/19/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/19/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/19/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/19/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/20/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/20/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/20/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/20/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/20/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/20/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/21/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/21/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/21/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/21/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/21/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/21/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/22/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/22/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/22/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/22/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/22/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/22/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/23/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/23/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/23/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/23/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/23/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/23/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/24/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/24/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/24/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/24/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/24/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/24/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/25/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/25/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/25/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/25/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/25/5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/26/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/26/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/26/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/26/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/26/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/26/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/26/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/27/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/27/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/27/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/27/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/27/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/27/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/28/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/28/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/28/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/28/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/28/5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/29/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/29/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/29/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/29/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/29/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/29/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/29/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/30/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/30/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/30/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/30/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/30/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/30/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/31/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/31/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/31/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/31/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/31/5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/32/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/32/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/32/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/32/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/32/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/32/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/33/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/33/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/33/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/33/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/33/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/33/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 34",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-34/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/34/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/34/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/34/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/34/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/34/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/34/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 35",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-35/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/35/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/35/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/35/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/35/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/35/5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 36",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-36/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/36/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/36/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/36/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/36/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/36/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/36/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 37",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-37/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/37/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/37/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/37/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/37/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/37/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/37/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 38",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-38/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/38/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/38/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/38/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/38/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/38/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/38/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 39",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-39/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/39/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/39/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/39/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/39/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/39/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/39/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 40",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-40/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/40/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/40/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/40/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/40/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/40/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/40/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 41",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-41/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/41/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/41/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/41/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/41/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/41/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/41/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 42",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-42/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/42/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/42/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/42/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/42/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/42/5.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 43",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-43/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/43/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/43/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/43/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/43/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/43/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/43/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 44",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-44/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/44/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/44/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 45",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-45/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/45/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/45/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 46",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-46/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/46/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/46/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 47",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-47/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/47/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/47/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 48",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-48/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/48/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/48/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 49",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-49/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/49/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/49/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 50",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-50/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/50/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/50/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 51",
+            "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-51/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/96071/51/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/96071/51/009.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 52",
             "url": "https://arenascan.com/after-relinquishing-my-talent-i-became-a-favorite-of-the-wizarding-world-chapter-52/",
@@ -45,5 +755,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-21T04:21:28.946576"
+    "last_scraped": "2026-03-21T04:55:31.648504"
 }
