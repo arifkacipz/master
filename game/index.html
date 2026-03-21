@@ -82,7 +82,7 @@
             box-shadow: 0 0 8px #ffb347aa;
         }
 
-        .reset-btn {
+        .reset-btn, .export-btn {
             background: #ff5e5e;
             border: none;
             font-weight: bold;
@@ -91,6 +91,10 @@
             font-size: 0.85rem;
             color: white;
             cursor: pointer;
+        }
+
+        .export-btn {
+            background: #4a90e2;
         }
 
         /* Playlist Panel */
@@ -121,6 +125,8 @@
         .song-list {
             list-style: none;
             margin-top: 6px;
+            max-height: 300px;
+            overflow-y: auto;
         }
 
         .song-item {
@@ -159,7 +165,7 @@
         @media (max-width: 550px) {
             .score-card { font-size: 1rem; padding: 4px 14px; }
             .mode-btn { padding: 4px 12px; font-size: 0.7rem; }
-            .reset-btn { padding: 4px 16px; font-size: 0.75rem; }
+            .reset-btn, .export-btn { padding: 4px 16px; font-size: 0.75rem; }
             .playlist-panel { top: 10px; right: 10px; padding: 8px 14px; min-width: 130px; }
             .song-item { padding: 4px 8px; font-size: 0.7rem; }
             .info-tap { bottom: 80px; font-size: 8px; }
@@ -180,7 +186,9 @@
     </div>
     <div class="playlist-panel">
         <div class="playlist-title">🎧 DAFTAR LAGU</div>
-        <ul class="song-list" id="songList"></ul>
+        <ul class="song-list" id="songList">
+            <li style="padding: 8px; text-align: center;">Memuat...</li>
+        </ul>
     </div>
     <div class="info-tap">
         ✨ 2 jari untuk 2 tile | ➖ Tile panjang: tahan
@@ -197,7 +205,7 @@
         let TILE_W, TILE_H;
         
         // ---------- GAME STATE ----------
-        let tiles = [];           // { id, col, y, duration, startTime, isHolding, holdEndTime, pressed }
+        let tiles = [];           // { id, col, y, duration, isHolding, pressed, holdStartTime }
         let nextTileId = 1;
         let score = 0;
         let currentMode = 'easy';   // 'easy' or 'hard'
@@ -205,31 +213,23 @@
         let animationId = null;
         let lastFrameTime = null;
         
-        // Parameter gameplay
-        let scrollSpeedPercent = 0.22;   // easy default (22% tinggi canvas/detik)
-        let baseSpawnDelay = 0.65;
-        let currentSpawnDelay = baseSpawnDelay;
-        let timeSinceLastSpawn = 0;
+        // Parameter gameplay (kecepatan scroll dalam persen tinggi canvas/detik)
+        let scrollSpeedPercent = 0.22;   // easy default
+        let pattern = [];                // array { time, col, duration }
+        let patternIndex = 0;
         
         // ---------- AUDIO & SONG ----------
         let audioContext = null;
-        let currentAudio = null;
+        let currentSource = null;
         let currentSong = null;
-        let songPattern = [];      // { time, col, duration, id }
+        let songsList = [];
         let songStartTime = 0;
         let songDuration = 0;
-        let patternIndex = 0;
         let isPlaying = false;
+        let isLoading = false;
         
-        // Database pola lagu (disimpan di localStorage)
-        let songPatternsDB = {};
-        
-        // Daftar lagu (URL MP3 online - pastikan CORS diizinkan)
-        const songs = [
-            { id: 'song1', name: '🎹 Piano Beat 1', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', bpm: 120 },
-            { id: 'song2', name: '🎵 Electro Pop', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', bpm: 128 },
-            { id: 'song3', name: '🎸 Acoustic Rock', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', bpm: 110 }
-        ];
+        // ---------- MULTI-TOUCH ----------
+        let activeTouches = new Map(); // pointerId -> { tileId, col, isHolding }
         
         // ---------- FUNGSI UTAMA ----------
         function updateCanvasSize() {
@@ -238,134 +238,234 @@
             canvas.width = canvasWidth;
             canvas.height = canvasHeight;
             TILE_W = canvasWidth / 4;
-            TILE_H = Math.min(TILE_W * 0.9, canvasHeight * 0.2); // tile lebih panjang
+            TILE_H = Math.min(TILE_W * 0.9, canvasHeight * 0.2);
         }
         
         function updateScoreUI() {
             scoreSpan.innerText = score;
         }
         
-        // ---------- GENERATE POLA LAGU BERDASARKAN BEAT ----------
-        function generatePatternFromSong(song, isHard = false) {
-            // Simulasi analisis beat: kita buat pola berdasarkan BPM dan durasi lagu (asumsi durasi 30 detik untuk demo)
-            // Dalam implementasi nyata, bisa menggunakan Web Audio API untuk mendeteksi beat.
-            // Di sini kita buat pola yang konsisten untuk lagu yang sama, dengan kompleksitas berbeda untuk hard mode.
-            const bpm = song.bpm;
-            const beatInterval = 60 / bpm; // detik per beat
-            // Durasi lagu tidak diketahui pasti, kita gunakan durasi default 30 detik atau dari metadata jika ada
-            const duration = 30; // simulasi durasi 30 detik
-            
-            let pattern = [];
-            let time = 0;
-            let beatCounter = 0;
-            
-            // Untuk easy: pattern sederhana, setiap 2 beat spawn tile dengan kolom bergantian
-            // Untuk hard: lebih rapat dan tile panjang muncul
-            const complexity = isHard ? 1 : 0.5;
-            const step = isHard ? beatInterval / 2 : beatInterval;
-            
-            while (time < duration) {
-                // Tentukan kolom (0-3) berdasarkan pola berulang
-                let col = (beatCounter % 4);
-                // Tambahkan variasi
-                if (isHard && (beatCounter % 3 === 0)) col = (col + 2) % 4;
-                if (isHard && (beatCounter % 7 === 0)) col = 3 - col;
-                
-                // Apakah tile panjang? Hanya di hard mode dan beat tertentu
-                let durationHold = 0;
-                if (isHard && (beatCounter % 4 === 0) && Math.random() < 0.3) {
-                    durationHold = beatInterval * 1.5; // hold selama 1.5 beat
+        // ---------- LOAD DATA ----------
+        async function loadSongsList() {
+            try {
+                const response = await fetch('../game/songs.json');
+                if (!response.ok) throw new Error('songs.json not found');
+                const songs = await response.json();
+                songsList = songs;
+                renderSongList();
+                if (songsList.length > 0 && !currentSong) {
+                    selectSong(songsList[0]);
                 }
-                
-                pattern.push({
-                    time: time,
-                    col: col,
-                    duration: durationHold
-                });
-                
-                time += step;
-                beatCounter++;
+            } catch(e) {
+                console.error('Gagal memuat songs.json:', e);
+                document.getElementById('songList').innerHTML = '<li style="padding:8px; text-align:center;">Gagal memuat daftar lagu</li>';
             }
-            
-            // Simpan pola di database
-            const key = `${song.id}_${isHard ? 'hard' : 'easy'}`;
-            songPatternsDB[key] = pattern;
-            localStorage.setItem('pianoTilesPatterns', JSON.stringify(songPatternsDB));
-            
-            return pattern;
         }
         
-        // Ambil pola dari database atau generate baru
-        function getSongPattern(song, isHard) {
-            const key = `${song.id}_${isHard ? 'hard' : 'easy'}`;
-            if (songPatternsDB[key]) {
-                return songPatternsDB[key];
+        function renderSongList() {
+            const listEl = document.getElementById('songList');
+            listEl.innerHTML = '';
+            songsList.forEach(song => {
+                const li = document.createElement('li');
+                li.className = 'song-item';
+                if (currentSong && currentSong.id === song.id) li.classList.add('active');
+                li.textContent = song.name || song.id;
+                li.onclick = () => selectSong(song);
+                listEl.appendChild(li);
+            });
+        }
+        
+        async function loadPattern(songId, mode) {
+            const filename = `${songId}_${mode}.json`;
+            const url = `../game/db/${filename}`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Pattern ${filename} not found`);
+                const patternData = await response.json();
+                return patternData;
+            } catch(e) {
+                console.warn(`Pola ${filename} tidak ditemukan, menggunakan kosong.`);
+                return [];
+            }
+        }
+        
+        async function selectSong(song) {
+            if (isLoading) return;
+            isLoading = true;
+            // Stop current playback
+            stopAudio();
+            currentSong = song;
+            // Load pattern for current mode
+            pattern = await loadPattern(song.id, currentMode);
+            patternIndex = 0;
+            // Reset game state
+            resetGameState();
+            // Update UI
+            renderSongList();
+            // Load and play audio
+            await loadAndPlayAudio(song.url);
+            isLoading = false;
+        }
+        
+        async function loadAndPlayAudio(url) {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            // Resume if suspended (user gesture needed)
+            if (audioContext.state === 'suspended') {
+                await audioContext.resume();
+            }
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Failed to fetch audio: ${url}`);
+                const arrayBuffer = await response.arrayBuffer();
+                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+                songDuration = audioBuffer.duration;
+                // Create source
+                const source = audioContext.createBufferSource();
+                source.buffer = audioBuffer;
+                source.connect(audioContext.destination);
+                source.onended = () => {
+                    isPlaying = false;
+                    gameActive = false;
+                    console.log('Lagu selesai');
+                };
+                source.start(0);
+                currentSource = source;
+                songStartTime = audioContext.currentTime;
+                isPlaying = true;
+                gameActive = true;
+                // Reset pattern index (just in case)
+                patternIndex = 0;
+                // Spawn initial tiles might be empty; we'll rely on update loop to spawn based on time.
+            } catch(e) {
+                console.error('Gagal memutar lagu:', e);
+                isPlaying = false;
+                gameActive = false;
+            }
+        }
+        
+        function stopAudio() {
+            if (currentSource) {
+                try {
+                    currentSource.stop();
+                } catch(e) {}
+                currentSource = null;
+            }
+            isPlaying = false;
+            gameActive = false;
+        }
+        
+        function resetGameState() {
+            tiles = [];
+            score = 0;
+            updateScoreUI();
+            patternIndex = 0;
+            activeTouches.clear();
+            if (currentMode === 'hard') {
+                scrollSpeedPercent = 0.32;
             } else {
-                const newPattern = generatePatternFromSong(song, isHard);
-                return newPattern;
+                scrollSpeedPercent = 0.22;
             }
         }
         
-        // ---------- MULTI-TOUCH HANDLING ----------
-        let activeTouches = new Map(); // key: pointerId, value: { tileId, col, isHolding }
+        // ---------- TILE SPAWNING (based on pattern time) ----------
+        function updateSpawn(currentTime) {
+            if (!isPlaying || !gameActive) return;
+            while (patternIndex < pattern.length && pattern[patternIndex].time <= currentTime) {
+                const ev = pattern[patternIndex];
+                // Spawn tile
+                tiles.push({
+                    id: nextTileId++,
+                    col: ev.col,
+                    y: -TILE_H,
+                    duration: ev.duration,
+                    isHolding: false,
+                    pressed: false,
+                    holdStartTime: 0
+                });
+                patternIndex++;
+            }
+        }
         
+        // ---------- UPDATE TILES (movement, miss, hold finish) ----------
+        function updateTiles(deltaSec) {
+            if (!isPlaying || !gameActive) return;
+            // Move tiles down
+            const moveDist = scrollSpeedPercent * canvasHeight * deltaSec;
+            for (let t of tiles) {
+                t.y += moveDist;
+            }
+            // Check for tiles that reached bottom (miss)
+            let missed = [];
+            for (let i = 0; i < tiles.length; i++) {
+                const t = tiles[i];
+                if (t.y + TILE_H >= canvasHeight) {
+                    if (!t.pressed && !t.isHolding) {
+                        // Tile missed
+                        score = Math.max(0, score - 5);
+                        updateScoreUI();
+                    }
+                    missed.push(t);
+                }
+            }
+            tiles = tiles.filter(t => t.y + TILE_H < canvasHeight);
+            
+            // For hold tiles that are still held, we check if hold duration is completed? Actually hold completion is when user releases after required duration. We'll handle that in tap end.
+            // But we also need to remove hold tiles that are finished? Hold tiles are only removed on release (success or fail) or if they reach bottom (already removed).
+        }
+        
+        // ---------- HANDLE TAP (multi-touch) ----------
         function handleTapStart(e) {
             if (!gameActive || !isPlaying) return;
             e.preventDefault();
             const rect = canvas.getBoundingClientRect();
             const scaleX = canvas.width / rect.width;
             const scaleY = canvas.height / rect.height;
-            
             const touches = e.touches ? e.touches : [e];
             for (let i = 0; i < touches.length; i++) {
                 const touch = touches[i];
                 const pointerId = touch.identifier !== undefined ? touch.identifier : 'mouse';
-                if (activeTouches.has(pointerId)) continue; // sudah ada
-                
+                if (activeTouches.has(pointerId)) continue;
                 let clientX = touch.clientX;
                 let clientY = touch.clientY;
                 let canvasX = (clientX - rect.left) * scaleX;
                 let canvasY = (clientY - rect.top) * scaleY;
-                
                 if (canvasX < 0 || canvasX > canvas.width) continue;
                 const colClicked = Math.floor(canvasX / TILE_W);
                 if (colClicked < 0 || colClicked > 3) continue;
-                
-                // Cari tile paling bawah di kolom tersebut yang belum ditekan dan belum dihold
+                // Find the lowest tile in that column that is not pressed and not already held
                 let bottomTile = null;
                 let maxY = -Infinity;
-                for(let t of tiles) {
-                    if(t.col === colClicked && !t.pressed && t.y + TILE_H > 0 && !t.isHolding) {
-                        if(t.y > maxY) {
+                for (let t of tiles) {
+                    if (t.col === colClicked && !t.pressed && !t.isHolding && t.y + TILE_H > 0) {
+                        if (t.y > maxY) {
                             maxY = t.y;
                             bottomTile = t;
                         }
                     }
                 }
-                if(!bottomTile) continue;
-                
-                // Cek apakah tap berada dalam area tile
+                if (!bottomTile) continue;
+                // Check if click is within tile bounds
                 const tileTop = bottomTile.y;
                 const tileBottom = bottomTile.y + TILE_H;
-                if(canvasY >= tileTop && canvasY <= tileBottom) {
-                    // Tile normal atau mulai hold
-                    if(bottomTile.duration > 0) {
-                        // Tile panjang: mulai hold
+                if (canvasY >= tileTop && canvasY <= tileBottom) {
+                    if (bottomTile.duration > 0) {
+                        // Hold tile: start hold
                         bottomTile.isHolding = true;
                         bottomTile.holdStartTime = performance.now() / 1000;
                         bottomTile.pressed = true;
                         activeTouches.set(pointerId, { tileId: bottomTile.id, col: bottomTile.col, isHolding: true });
-                        // Mainkan nada awal
                         playPianoNote(bottomTile.col);
                     } else {
-                        // Tile biasa: langsung hapus dan tambah skor
+                        // Normal tile: immediate success
                         bottomTile.pressed = true;
                         score += 10;
                         updateScoreUI();
                         playPianoNote(bottomTile.col);
-                        // Hapus tile
+                        // Remove tile
                         const idx = tiles.indexOf(bottomTile);
-                        if(idx !== -1) tiles.splice(idx, 1);
+                        if (idx !== -1) tiles.splice(idx, 1);
                     }
                 }
             }
@@ -374,31 +474,24 @@
         function handleTapEnd(e) {
             if (!gameActive || !isPlaying) return;
             e.preventDefault();
-            const rect = canvas.getBoundingClientRect();
             const touches = e.touches ? e.touches : [];
-            // Untuk mouse up
             if (!e.touches) {
                 // mouse up
                 const pointerId = 'mouse';
                 if (activeTouches.has(pointerId)) {
                     const touchData = activeTouches.get(pointerId);
-                    // Cari tile yang sedang dihold
-                    for(let t of tiles) {
-                        if(t.id === touchData.tileId && t.isHolding) {
-                            // Akhiri hold, beri skor penuh jika durasi hold cukup
+                    for (let t of tiles) {
+                        if (t.id === touchData.tileId && t.isHolding) {
                             const holdDuration = (performance.now() / 1000) - t.holdStartTime;
                             if (holdDuration >= t.duration - 0.05) {
-                                // hold penuh
                                 score += 10;
                                 updateScoreUI();
                             } else {
-                                // kurang dari durasi, miss
                                 score = Math.max(0, score - 5);
                                 updateScoreUI();
                             }
-                            // Hapus tile
                             const idx = tiles.indexOf(t);
-                            if(idx !== -1) tiles.splice(idx, 1);
+                            if (idx !== -1) tiles.splice(idx, 1);
                             break;
                         }
                     }
@@ -406,15 +499,14 @@
                 }
                 return;
             }
-            
             // Touch end
             for (let i = 0; i < touches.length; i++) {
                 const touch = touches[i];
                 const pointerId = touch.identifier;
                 if (activeTouches.has(pointerId)) {
                     const touchData = activeTouches.get(pointerId);
-                    for(let t of tiles) {
-                        if(t.id === touchData.tileId && t.isHolding) {
+                    for (let t of tiles) {
+                        if (t.id === touchData.tileId && t.isHolding) {
                             const holdDuration = (performance.now() / 1000) - t.holdStartTime;
                             if (holdDuration >= t.duration - 0.05) {
                                 score += 10;
@@ -424,7 +516,7 @@
                                 updateScoreUI();
                             }
                             const idx = tiles.indexOf(t);
-                            if(idx !== -1) tiles.splice(idx, 1);
+                            if (idx !== -1) tiles.splice(idx, 1);
                             break;
                         }
                     }
@@ -433,13 +525,7 @@
             }
         }
         
-        // ---------- AUDIO ----------
-        function initAudio() {
-            if (!audioContext) {
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            }
-        }
-        
+        // ---------- AUDIO FEEDBACK ----------
         function playPianoNote(col) {
             if (!audioContext) return;
             const now = audioContext.currentTime;
@@ -456,145 +542,24 @@
             osc.stop(now + 0.6);
         }
         
-        async function loadAndPlaySong(song, isHardMode) {
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio = null;
-            }
-            initAudio();
-            if (audioContext.state === 'suspended') {
-                await audioContext.resume();
-            }
-            
-            // Ambil pola untuk lagu ini (dengan mode hard/soft)
-            const pattern = getSongPattern(song, isHardMode);
-            songPattern = pattern;
-            patternIndex = 0;
-            songStartTime = audioContext.currentTime;
-            
-            // Fetch dan decode audio
-            try {
-                const response = await fetch(song.url);
-                const arrayBuffer = await response.arrayBuffer();
-                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-                songDuration = audioBuffer.duration;
-                
-                // Play menggunakan buffer source
-                const source = audioContext.createBufferSource();
-                source.buffer = audioBuffer;
-                source.connect(audioContext.destination);
-                source.start(0);
-                currentAudio = source;
-                isPlaying = true;
-                
-                // Reset game state
-                resetGameForNewSong();
-                
-            } catch(e) {
-                console.error('Error loading audio:', e);
-                isPlaying = false;
-            }
-        }
-        
-        function resetGameForNewSong() {
-            tiles = [];
-            score = 0;
-            updateScoreUI();
-            gameActive = true;
-            patternIndex = 0;
-            activeTouches.clear();
-            if (currentMode === 'hard') {
-                scrollSpeedPercent = 0.32; // hard lebih cepat
-                currentSpawnDelay = 0.45;
-            } else {
-                scrollSpeedPercent = 0.22;
-                currentSpawnDelay = 0.65;
-            }
-        }
-        
-        // ---------- UPDATE GAME (setiap frame) ----------
-        function updateGame(deltaSec) {
-            if (!gameActive || !isPlaying) return;
-            
-            const currentTime = audioContext ? audioContext.currentTime - songStartTime : 0;
-            
-            // Spawn tile berdasarkan pola
-            while (patternIndex < songPattern.length && songPattern[patternIndex].time <= currentTime) {
-                const ev = songPattern[patternIndex];
-                // Cek apakah tile sudah ada di kolom yang sama (jika masih ada tile lama, jangan spawn baru)
-                // Untuk tile panjang, kita spawn dengan durasi
-                tiles.push({
-                    id: nextTileId++,
-                    col: ev.col,
-                    y: -TILE_H,
-                    duration: ev.duration,
-                    isHolding: false,
-                    pressed: false,
-                    holdStartTime: 0
-                });
-                patternIndex++;
-            }
-            
-            // Gerakkan semua tile ke bawah
-            const moveDistance = scrollSpeedPercent * canvasHeight * deltaSec;
-            for(let t of tiles) {
-                t.y += moveDistance;
-            }
-            
-            // Cek tile yang mencapai bawah (miss)
-            let missed = [];
-            for(let t of tiles) {
-                if(t.y + TILE_H >= canvasHeight) {
-                    if(!t.pressed) {
-                        score = Math.max(0, score - 5);
-                        updateScoreUI();
-                    }
-                    missed.push(t);
-                }
-            }
-            tiles = tiles.filter(t => t.y + TILE_H < canvasHeight);
-            
-            // Mode Hard: kecepatan meningkat seiring skor
-            if(currentMode === 'hard') {
-                let bonusSpeed = Math.min(0.35, Math.floor(score / 100) * 0.025);
-                scrollSpeedPercent = Math.min(0.68, 0.32 + bonusSpeed);
-                // spawn delay tidak dipakai karena pola sudah ditentukan, hanya kecepatan scroll
-            } else {
-                scrollSpeedPercent = 0.22;
-            }
-            
-            // Jika lagu selesai dan tidak ada tile lagi, game selesai? Bisa loop atau stop
-            if (currentTime >= songDuration && tiles.length === 0 && patternIndex >= songPattern.length) {
-                isPlaying = false;
-                gameActive = false;
-                // Tampilkan pesan selesai
-                ctx.fillStyle = "white";
-                ctx.font = "30px bold";
-                ctx.fillText("LAGU SELESAI!", canvasWidth/2-100, canvasHeight/2);
-            }
-        }
-        
         // ---------- RENDER ----------
         function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = "#0f1f1c";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
             // Grid
             ctx.strokeStyle = "#3e6b5c";
             ctx.lineWidth = 2;
-            for(let i = 1; i <= 3; i++) {
+            for (let i = 1; i <= 3; i++) {
                 ctx.beginPath();
                 ctx.moveTo(i * TILE_W, 0);
                 ctx.lineTo(i * TILE_W, canvas.height);
                 ctx.stroke();
             }
-            
-            // Gambar semua tile
-            for(let t of tiles) {
+            // Tiles
+            for (let t of tiles) {
                 const x = t.col * TILE_W;
                 const y = t.y;
-                // Gradien tile
                 const grad = ctx.createLinearGradient(x, y, x+10, y+TILE_H);
                 grad.addColorStop(0, "#1e1e2f");
                 grad.addColorStop(1, "#2d2d44");
@@ -602,119 +567,106 @@
                 ctx.fillRect(x, y, TILE_W-1, TILE_H-1);
                 ctx.fillStyle = "#4a4e69";
                 ctx.fillRect(x+3, y+3, TILE_W-7, TILE_H-7);
-                if(t.duration > 0) {
-                    // Tandai tile panjang dengan garis merah
+                if (t.duration > 0) {
                     ctx.fillStyle = "#ff6b6b";
                     ctx.fillRect(x+5, y+5, TILE_W-11, 5);
                 }
             }
-            
-            // Info mode & skor
+            // Info
             ctx.font = `bold ${Math.max(14, canvasWidth/30)}px 'Segoe UI'`;
             ctx.fillStyle = "#e0ffe0";
-            ctx.fillText(`${currentMode.toUpperCase()}  |  ${Math.round(scrollSpeedPercent*canvasHeight)} px/s`, 12, 40);
+            let speedText = `${currentMode.toUpperCase()}  |  ${Math.round(scrollSpeedPercent*canvasHeight)} px/s`;
+            ctx.fillText(speedText, 12, 40);
+            if (!isPlaying && !isLoading && currentSong) {
+                ctx.fillStyle = "#ffaa88";
+                ctx.font = "20px sans-serif";
+                ctx.fillText("Tekan lagu untuk mulai", canvasWidth/2-120, canvasHeight/2);
+            }
         }
         
         // ---------- GAME LOOP ----------
         let lastTimestamp = null;
         function gameLoop(nowMs) {
-            if(!lastTimestamp) {
+            if (!lastTimestamp) {
                 lastTimestamp = nowMs;
                 requestAnimationFrame(gameLoop);
                 return;
             }
             let delta = Math.min(0.033, (nowMs - lastTimestamp) / 1000);
-            if(delta > 0) {
-                updateGame(delta);
+            if (delta > 0) {
+                // Get current playback time
+                let currentTime = 0;
+                if (isPlaying && audioContext) {
+                    currentTime = audioContext.currentTime - songStartTime;
+                }
+                updateSpawn(currentTime);
+                updateTiles(delta);
                 draw();
             }
             lastTimestamp = nowMs;
             requestAnimationFrame(gameLoop);
         }
         
-        // ---------- UI & MODE ----------
-        function setMode(mode) {
+        // ---------- MODE & RESET ----------
+        async function setMode(mode) {
             currentMode = mode;
-            if (currentSong) {
-                // Ganti pola sesuai mode
-                const newPattern = getSongPattern(currentSong, mode === 'hard');
-                songPattern = newPattern;
-                patternIndex = 0;
-                resetGameForNewSong();
-                // restart lagu dengan mode baru
-                if (isPlaying && currentAudio) {
-                    currentAudio.stop();
-                    loadAndPlaySong(currentSong, mode === 'hard');
-                }
+            if (currentMode === 'easy') {
+                scrollSpeedPercent = 0.22;
+            } else {
+                scrollSpeedPercent = 0.32;
             }
             document.getElementById('easyModeBtn').classList.toggle('active', mode === 'easy');
             document.getElementById('hardModeBtn').classList.toggle('active', mode === 'hard');
-        }
-        
-        function selectSong(song) {
-            currentSong = song;
-            // Reset game
-            if (currentAudio) {
-                currentAudio.stop();
+            if (currentSong) {
+                // Reload pattern for new mode
+                pattern = await loadPattern(currentSong.id, currentMode);
+                patternIndex = 0;
+                resetGameState();
+                // If currently playing, restart the song? Better to restart from beginning.
+                if (isPlaying) {
+                    stopAudio();
+                    await loadAndPlayAudio(currentSong.url);
+                }
             }
-            loadAndPlaySong(song, currentMode === 'hard');
-            // Update UI active song
-            document.querySelectorAll('.song-item').forEach(el => el.classList.remove('active'));
-            const activeEl = document.querySelector(`.song-item[data-id="${song.id}"]`);
-            if(activeEl) activeEl.classList.add('active');
         }
         
         function resetGame() {
             if (currentSong) {
-                selectSong(currentSong);
+                stopAudio();
+                resetGameState();
+                patternIndex = 0;
+                loadAndPlayAudio(currentSong.url);
             }
         }
         
-        // ---------- INIT ----------
-        function loadPatternsFromStorage() {
-            const stored = localStorage.getItem('pianoTilesPatterns');
-            if(stored) {
-                songPatternsDB = JSON.parse(stored);
-            }
-        }
-        
-        function buildSongList() {
-            const listEl = document.getElementById('songList');
-            listEl.innerHTML = '';
-            songs.forEach(song => {
-                const li = document.createElement('li');
-                li.className = 'song-item';
-                li.setAttribute('data-id', song.id);
-                li.textContent = song.name;
-                li.onclick = () => selectSong(song);
-                listEl.appendChild(li);
-            });
-        }
-        
+        // ---------- EVENT LISTENERS ----------
         function attachEvents() {
             window.addEventListener('resize', () => {
                 updateCanvasSize();
-                resetGameForNewSong();
+                resetGameState();
             });
             canvas.addEventListener('mousedown', handleTapStart);
             canvas.addEventListener('mouseup', handleTapEnd);
             canvas.addEventListener('touchstart', handleTapStart, { passive: false });
             canvas.addEventListener('touchend', handleTapEnd, { passive: false });
             canvas.addEventListener('contextmenu', (e) => e.preventDefault());
-            
             document.getElementById('easyModeBtn').addEventListener('click', () => setMode('easy'));
             document.getElementById('hardModeBtn').addEventListener('click', () => setMode('hard'));
             document.getElementById('resetButton').addEventListener('click', () => resetGame());
         }
         
-        function init() {
-            loadPatternsFromStorage();
-            buildSongList();
+        // ---------- INIT ----------
+        async function init() {
             updateCanvasSize();
             attachEvents();
-            // Pilih lagu pertama secara default
-            if(songs.length) selectSong(songs[0]);
+            await loadSongsList();
             gameLoop();
+            // Initial audio context needs user interaction
+            canvas.addEventListener('click', () => {
+                if (audioContext && audioContext.state === 'suspended') {
+                    audioContext.resume();
+                }
+            }, { once: true });
         }
         
         init();
