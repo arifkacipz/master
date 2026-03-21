@@ -12,21 +12,17 @@
             user-select: none;
             -webkit-tap-highlight-color: transparent;
         }
-
         body {
             background: #0a0f0e;
             overflow: hidden;
             font-family: 'Segoe UI', 'Poppins', system-ui, sans-serif;
         }
-
         canvas {
             display: block;
             width: 100vw;
             height: 100vh;
             cursor: pointer;
         }
-
-        /* UI Overlay */
         .game-ui {
             position: fixed;
             bottom: 20px;
@@ -45,7 +41,6 @@
             flex-wrap: wrap;
             pointer-events: auto;
         }
-
         .score-card {
             background: #000000aa;
             padding: 6px 20px;
@@ -55,7 +50,6 @@
             font-size: 1.4rem;
             font-family: monospace;
         }
-
         .mode-group {
             display: flex;
             gap: 8px;
@@ -63,7 +57,6 @@
             padding: 4px 12px;
             border-radius: 60px;
         }
-
         .mode-btn {
             background: #2c3e2e;
             border: none;
@@ -75,14 +68,12 @@
             transition: 0.1s;
             cursor: pointer;
         }
-
         .mode-btn.active {
             background: #ffb347;
             color: #1e2a1f;
             box-shadow: 0 0 8px #ffb347aa;
         }
-
-        .reset-btn, .export-btn {
+        .reset-btn {
             background: #ff5e5e;
             border: none;
             font-weight: bold;
@@ -92,12 +83,6 @@
             color: white;
             cursor: pointer;
         }
-
-        .export-btn {
-            background: #4a90e2;
-        }
-
-        /* Playlist Panel */
         .playlist-panel {
             position: fixed;
             top: 20px;
@@ -113,7 +98,6 @@
             text-align: right;
             pointer-events: auto;
         }
-
         .playlist-title {
             font-weight: bold;
             margin-bottom: 8px;
@@ -121,14 +105,12 @@
             border-bottom: 1px solid #ffb347;
             display: inline-block;
         }
-
         .song-list {
             list-style: none;
             margin-top: 6px;
             max-height: 300px;
             overflow-y: auto;
         }
-
         .song-item {
             padding: 6px 12px;
             margin: 4px 0;
@@ -138,17 +120,14 @@
             text-align: left;
             font-size: 0.8rem;
         }
-
         .song-item.active {
             background: #ffb347;
             color: #1e2a1f;
             font-weight: bold;
         }
-
         .song-item:hover {
             background: #ffb34766;
         }
-
         .info-tap {
             position: fixed;
             bottom: 90px;
@@ -161,11 +140,10 @@
             pointer-events: none;
             z-index: 20;
         }
-
         @media (max-width: 550px) {
             .score-card { font-size: 1rem; padding: 4px 14px; }
             .mode-btn { padding: 4px 12px; font-size: 0.7rem; }
-            .reset-btn, .export-btn { padding: 4px 16px; font-size: 0.75rem; }
+            .reset-btn { padding: 4px 16px; font-size: 0.75rem; }
             .playlist-panel { top: 10px; right: 10px; padding: 8px 14px; min-width: 130px; }
             .song-item { padding: 4px 8px; font-size: 0.7rem; }
             .info-tap { bottom: 80px; font-size: 8px; }
@@ -205,17 +183,15 @@
         let TILE_W, TILE_H;
         
         // ---------- GAME STATE ----------
-        let tiles = [];           // { id, col, y, duration, isHolding, pressed, holdStartTime }
+        let tiles = [];
         let nextTileId = 1;
         let score = 0;
-        let currentMode = 'easy';   // 'easy' or 'hard'
+        let currentMode = 'easy';
         let gameActive = true;
-        let animationId = null;
         let lastFrameTime = null;
         
-        // Parameter gameplay (kecepatan scroll dalam persen tinggi canvas/detik)
-        let scrollSpeedPercent = 0.22;   // easy default
-        let pattern = [];                // array { time, col, duration }
+        let scrollSpeedPercent = 0.22;
+        let pattern = [];
         let patternIndex = 0;
         
         // ---------- AUDIO & SONG ----------
@@ -224,12 +200,11 @@
         let currentSong = null;
         let songsList = [];
         let songStartTime = 0;
-        let songDuration = 0;
         let isPlaying = false;
         let isLoading = false;
         
         // ---------- MULTI-TOUCH ----------
-        let activeTouches = new Map(); // pointerId -> { tileId, col, isHolding }
+        let activeTouches = new Map();
         
         // ---------- FUNGSI UTAMA ----------
         function updateCanvasSize() {
@@ -248,8 +223,8 @@
         // ---------- LOAD DATA ----------
         async function loadSongsList() {
             try {
-                const response = await fetch('../game/songs.json');
-                if (!response.ok) throw new Error('songs.json not found');
+                const response = await fetch('../game/playlist.json');
+                if (!response.ok) throw new Error('playlist.json not found');
                 const songs = await response.json();
                 songsList = songs;
                 renderSongList();
@@ -257,7 +232,7 @@
                     selectSong(songsList[0]);
                 }
             } catch(e) {
-                console.error('Gagal memuat songs.json:', e);
+                console.error('Gagal memuat playlist.json:', e);
                 document.getElementById('songList').innerHTML = '<li style="padding:8px; text-align:center;">Gagal memuat daftar lagu</li>';
             }
         }
@@ -281,8 +256,7 @@
             try {
                 const response = await fetch(url);
                 if (!response.ok) throw new Error(`Pattern ${filename} not found`);
-                const patternData = await response.json();
-                return patternData;
+                return await response.json();
             } catch(e) {
                 console.warn(`Pola ${filename} tidak ditemukan, menggunakan kosong.`);
                 return [];
@@ -292,17 +266,12 @@
         async function selectSong(song) {
             if (isLoading) return;
             isLoading = true;
-            // Stop current playback
             stopAudio();
             currentSong = song;
-            // Load pattern for current mode
             pattern = await loadPattern(song.id, currentMode);
             patternIndex = 0;
-            // Reset game state
             resetGameState();
-            // Update UI
             renderSongList();
-            // Load and play audio
             await loadAndPlayAudio(song.url);
             isLoading = false;
         }
@@ -311,33 +280,31 @@
             if (!audioContext) {
                 audioContext = new (window.AudioContext || window.webkitAudioContext)();
             }
-            // Resume if suspended (user gesture needed)
             if (audioContext.state === 'suspended') {
                 await audioContext.resume();
             }
+            let fullUrl = url;
+            if (!url.startsWith('http')) {
+                fullUrl = './sg/' + url;
+            }
             try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error(`Failed to fetch audio: ${url}`);
+                const response = await fetch(fullUrl);
+                if (!response.ok) throw new Error(`Failed to fetch audio: ${fullUrl}`);
                 const arrayBuffer = await response.arrayBuffer();
                 const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-                songDuration = audioBuffer.duration;
-                // Create source
                 const source = audioContext.createBufferSource();
                 source.buffer = audioBuffer;
                 source.connect(audioContext.destination);
                 source.onended = () => {
                     isPlaying = false;
                     gameActive = false;
-                    console.log('Lagu selesai');
                 };
                 source.start(0);
                 currentSource = source;
                 songStartTime = audioContext.currentTime;
                 isPlaying = true;
                 gameActive = true;
-                // Reset pattern index (just in case)
                 patternIndex = 0;
-                // Spawn initial tiles might be empty; we'll rely on update loop to spawn based on time.
             } catch(e) {
                 console.error('Gagal memutar lagu:', e);
                 isPlaying = false;
@@ -347,9 +314,7 @@
         
         function stopAudio() {
             if (currentSource) {
-                try {
-                    currentSource.stop();
-                } catch(e) {}
+                try { currentSource.stop(); } catch(e) {}
                 currentSource = null;
             }
             isPlaying = false;
@@ -362,19 +327,14 @@
             updateScoreUI();
             patternIndex = 0;
             activeTouches.clear();
-            if (currentMode === 'hard') {
-                scrollSpeedPercent = 0.32;
-            } else {
-                scrollSpeedPercent = 0.22;
-            }
+            scrollSpeedPercent = currentMode === 'hard' ? 0.32 : 0.22;
         }
         
-        // ---------- TILE SPAWNING (based on pattern time) ----------
+        // ---------- UPDATE GAME ----------
         function updateSpawn(currentTime) {
             if (!isPlaying || !gameActive) return;
             while (patternIndex < pattern.length && pattern[patternIndex].time <= currentTime) {
                 const ev = pattern[patternIndex];
-                // Spawn tile
                 tiles.push({
                     id: nextTileId++,
                     col: ev.col,
@@ -388,34 +348,26 @@
             }
         }
         
-        // ---------- UPDATE TILES (movement, miss, hold finish) ----------
         function updateTiles(deltaSec) {
             if (!isPlaying || !gameActive) return;
-            // Move tiles down
             const moveDist = scrollSpeedPercent * canvasHeight * deltaSec;
+            for (let t of tiles) t.y += moveDist;
+            // Check miss
+            const newTiles = [];
             for (let t of tiles) {
-                t.y += moveDist;
-            }
-            // Check for tiles that reached bottom (miss)
-            let missed = [];
-            for (let i = 0; i < tiles.length; i++) {
-                const t = tiles[i];
                 if (t.y + TILE_H >= canvasHeight) {
                     if (!t.pressed && !t.isHolding) {
-                        // Tile missed
                         score = Math.max(0, score - 5);
                         updateScoreUI();
                     }
-                    missed.push(t);
+                } else {
+                    newTiles.push(t);
                 }
             }
-            tiles = tiles.filter(t => t.y + TILE_H < canvasHeight);
-            
-            // For hold tiles that are still held, we check if hold duration is completed? Actually hold completion is when user releases after required duration. We'll handle that in tap end.
-            // But we also need to remove hold tiles that are finished? Hold tiles are only removed on release (success or fail) or if they reach bottom (already removed).
+            tiles = newTiles;
         }
         
-        // ---------- HANDLE TAP (multi-touch) ----------
+        // ---------- HANDLE TAP ----------
         function handleTapStart(e) {
             if (!gameActive || !isPlaying) return;
             e.preventDefault();
@@ -427,43 +379,33 @@
                 const touch = touches[i];
                 const pointerId = touch.identifier !== undefined ? touch.identifier : 'mouse';
                 if (activeTouches.has(pointerId)) continue;
-                let clientX = touch.clientX;
-                let clientY = touch.clientY;
-                let canvasX = (clientX - rect.left) * scaleX;
-                let canvasY = (clientY - rect.top) * scaleY;
+                let canvasX = (touch.clientX - rect.left) * scaleX;
+                let canvasY = (touch.clientY - rect.top) * scaleY;
                 if (canvasX < 0 || canvasX > canvas.width) continue;
-                const colClicked = Math.floor(canvasX / TILE_W);
-                if (colClicked < 0 || colClicked > 3) continue;
-                // Find the lowest tile in that column that is not pressed and not already held
+                const col = Math.floor(canvasX / TILE_W);
+                if (col < 0 || col > 3) continue;
+                // cari tile paling bawah di kolom
                 let bottomTile = null;
                 let maxY = -Infinity;
                 for (let t of tiles) {
-                    if (t.col === colClicked && !t.pressed && !t.isHolding && t.y + TILE_H > 0) {
-                        if (t.y > maxY) {
-                            maxY = t.y;
-                            bottomTile = t;
-                        }
+                    if (t.col === col && !t.pressed && !t.isHolding && t.y + TILE_H > 0 && t.y > maxY) {
+                        maxY = t.y;
+                        bottomTile = t;
                     }
                 }
                 if (!bottomTile) continue;
-                // Check if click is within tile bounds
-                const tileTop = bottomTile.y;
-                const tileBottom = bottomTile.y + TILE_H;
-                if (canvasY >= tileTop && canvasY <= tileBottom) {
+                if (canvasY >= bottomTile.y && canvasY <= bottomTile.y + TILE_H) {
                     if (bottomTile.duration > 0) {
-                        // Hold tile: start hold
                         bottomTile.isHolding = true;
                         bottomTile.holdStartTime = performance.now() / 1000;
                         bottomTile.pressed = true;
-                        activeTouches.set(pointerId, { tileId: bottomTile.id, col: bottomTile.col, isHolding: true });
+                        activeTouches.set(pointerId, { tileId: bottomTile.id });
                         playPianoNote(bottomTile.col);
                     } else {
-                        // Normal tile: immediate success
                         bottomTile.pressed = true;
                         score += 10;
                         updateScoreUI();
                         playPianoNote(bottomTile.col);
-                        // Remove tile
                         const idx = tiles.indexOf(bottomTile);
                         if (idx !== -1) tiles.splice(idx, 1);
                     }
@@ -476,20 +418,18 @@
             e.preventDefault();
             const touches = e.touches ? e.touches : [];
             if (!e.touches) {
-                // mouse up
                 const pointerId = 'mouse';
                 if (activeTouches.has(pointerId)) {
-                    const touchData = activeTouches.get(pointerId);
+                    const data = activeTouches.get(pointerId);
                     for (let t of tiles) {
-                        if (t.id === touchData.tileId && t.isHolding) {
+                        if (t.id === data.tileId && t.isHolding) {
                             const holdDuration = (performance.now() / 1000) - t.holdStartTime;
                             if (holdDuration >= t.duration - 0.05) {
                                 score += 10;
-                                updateScoreUI();
                             } else {
                                 score = Math.max(0, score - 5);
-                                updateScoreUI();
                             }
+                            updateScoreUI();
                             const idx = tiles.indexOf(t);
                             if (idx !== -1) tiles.splice(idx, 1);
                             break;
@@ -499,22 +439,20 @@
                 }
                 return;
             }
-            // Touch end
             for (let i = 0; i < touches.length; i++) {
                 const touch = touches[i];
                 const pointerId = touch.identifier;
                 if (activeTouches.has(pointerId)) {
-                    const touchData = activeTouches.get(pointerId);
+                    const data = activeTouches.get(pointerId);
                     for (let t of tiles) {
-                        if (t.id === touchData.tileId && t.isHolding) {
+                        if (t.id === data.tileId && t.isHolding) {
                             const holdDuration = (performance.now() / 1000) - t.holdStartTime;
                             if (holdDuration >= t.duration - 0.05) {
                                 score += 10;
-                                updateScoreUI();
                             } else {
                                 score = Math.max(0, score - 5);
-                                updateScoreUI();
                             }
+                            updateScoreUI();
                             const idx = tiles.indexOf(t);
                             if (idx !== -1) tiles.splice(idx, 1);
                             break;
@@ -525,7 +463,6 @@
             }
         }
         
-        // ---------- AUDIO FEEDBACK ----------
         function playPianoNote(col) {
             if (!audioContext) return;
             const now = audioContext.currentTime;
@@ -547,7 +484,6 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = "#0f1f1c";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-            // Grid
             ctx.strokeStyle = "#3e6b5c";
             ctx.lineWidth = 2;
             for (let i = 1; i <= 3; i++) {
@@ -556,7 +492,6 @@
                 ctx.lineTo(i * TILE_W, canvas.height);
                 ctx.stroke();
             }
-            // Tiles
             for (let t of tiles) {
                 const x = t.col * TILE_W;
                 const y = t.y;
@@ -572,11 +507,9 @@
                     ctx.fillRect(x+5, y+5, TILE_W-11, 5);
                 }
             }
-            // Info
             ctx.font = `bold ${Math.max(14, canvasWidth/30)}px 'Segoe UI'`;
             ctx.fillStyle = "#e0ffe0";
-            let speedText = `${currentMode.toUpperCase()}  |  ${Math.round(scrollSpeedPercent*canvasHeight)} px/s`;
-            ctx.fillText(speedText, 12, 40);
+            ctx.fillText(`${currentMode.toUpperCase()} | ${Math.round(scrollSpeedPercent*canvasHeight)} px/s`, 12, 40);
             if (!isPlaying && !isLoading && currentSong) {
                 ctx.fillStyle = "#ffaa88";
                 ctx.font = "20px sans-serif";
@@ -594,7 +527,6 @@
             }
             let delta = Math.min(0.033, (nowMs - lastTimestamp) / 1000);
             if (delta > 0) {
-                // Get current playback time
                 let currentTime = 0;
                 if (isPlaying && audioContext) {
                     currentTime = audioContext.currentTime - songStartTime;
@@ -610,19 +542,13 @@
         // ---------- MODE & RESET ----------
         async function setMode(mode) {
             currentMode = mode;
-            if (currentMode === 'easy') {
-                scrollSpeedPercent = 0.22;
-            } else {
-                scrollSpeedPercent = 0.32;
-            }
+            scrollSpeedPercent = mode === 'hard' ? 0.32 : 0.22;
             document.getElementById('easyModeBtn').classList.toggle('active', mode === 'easy');
             document.getElementById('hardModeBtn').classList.toggle('active', mode === 'hard');
             if (currentSong) {
-                // Reload pattern for new mode
                 pattern = await loadPattern(currentSong.id, currentMode);
                 patternIndex = 0;
                 resetGameState();
-                // If currently playing, restart the song? Better to restart from beginning.
                 if (isPlaying) {
                     stopAudio();
                     await loadAndPlayAudio(currentSong.url);
@@ -639,7 +565,7 @@
             }
         }
         
-        // ---------- EVENT LISTENERS ----------
+        // ---------- INIT ----------
         function attachEvents() {
             window.addEventListener('resize', () => {
                 updateCanvasSize();
@@ -655,20 +581,17 @@
             document.getElementById('resetButton').addEventListener('click', () => resetGame());
         }
         
-        // ---------- INIT ----------
         async function init() {
             updateCanvasSize();
             attachEvents();
             await loadSongsList();
             gameLoop();
-            // Initial audio context needs user interaction
             canvas.addEventListener('click', () => {
                 if (audioContext && audioContext.state === 'suspended') {
                     audioContext.resume();
                 }
             }, { once: true });
         }
-        
         init();
     })();
 </script>
