@@ -32,12 +32,12 @@ jobs:
 
       - name: Run pattern generator
         run: |
-          python game/ptn.py
+          python game/ptn.py ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
       - name: Commit and push changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add game/db/ game/sg/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update song patterns"
+          git add game/db/ game/playlist.json game/songs.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update song patterns and playlist"
           git push
