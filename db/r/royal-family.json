@@ -2,9 +2,9 @@
     "judul": "Royal Family",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/53780539-490c-4548-b4b8-d3a559603eec.webp",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -353,7 +353,38 @@
                 "https://cdn.arenascan.com/arena-bucket/360728/11/024.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/royal-family-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360728/12/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360728/12/24.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-14T21:01:55.709375"
+    "last_scraped": "2026-03-22T05:00:17.426404"
 }
