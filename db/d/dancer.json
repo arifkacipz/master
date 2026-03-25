@@ -2,9 +2,9 @@
     "judul": "Dancer",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Dancer-193x278.jpg",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 8,
+    "chapterCount": 8,
+    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -189,7 +189,28 @@
                 "https://cdn.arenascan.com/arena-bucket/381493/6/027.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/dancer-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381493/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/7/014.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-18T04:51:48.519508"
+    "last_scraped": "2026-03-25T19:05:46.532095"
 }
