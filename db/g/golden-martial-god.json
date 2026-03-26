@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Golden-Martial-God-193x278.jpg",
     "source": "arenascan",
     "online": 6,
-    "chapterCount": 4,
+    "chapterCount": 6,
     "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -46,6 +46,46 @@
                 "https://cdn.arenascan.com/arena-bucket/385661/1/34.jpg",
                 "https://cdn.arenascan.com/arena-bucket/385661/1/35.jpg",
                 "https://cdn.arenascan.com/arena-bucket/385661/1/36.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/golden-martial-god-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/385661/2/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/2/13.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/golden-martial-god-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/385661/3/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/3/13.jpg"
             ],
             "source_chapter": "arenascan"
         },
@@ -112,5 +152,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-26T17:12:28.812934"
+    "last_scraped": "2026-03-26T17:37:31.688493"
 }
