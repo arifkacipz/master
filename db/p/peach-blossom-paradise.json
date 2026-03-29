@@ -2,9 +2,9 @@
     "judul": "Peach Blossom Paradise",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Peach-Blossom-Paradise-193x278.webp",
     "source": "arenascan",
-    "online": 5,
-    "chapterCount": 5,
-    "Chs": "Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 6,
+    "chapterCount": 6,
+    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -140,7 +140,32 @@
                 "https://cdn.arenascan.com/arena-bucket/383438/5/23.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/peach-blossom-paradise-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/383438/6/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/383438/6/018.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-22T02:55:31.561604"
+    "last_scraped": "2026-03-29T13:19:39.121427"
 }
