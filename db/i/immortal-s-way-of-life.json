@@ -3,9 +3,22 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Immortals-Way-of-Life-193x278.jpg",
     "source": "arenascan",
     "online": 4,
-    "chapterCount": 3,
+    "chapterCount": 4,
     "Chs": "Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
+        {
+            "nama": "Chapter 0",
+            "url": "https://arenascan.com/immortal-s-way-of-life-chapter-0/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/389653/0/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/0/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/0/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/0/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/0/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/0/006.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 1",
             "url": "https://arenascan.com/immortal-s-way-of-life-chapter-1/",
@@ -67,5 +80,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-30T22:12:37.261624"
+    "last_scraped": "2026-03-30T23:02:21.930447"
 }
