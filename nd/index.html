@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Method Redirect Checker</title>
+    <title>Multi-Method Redirect Checker (tanpa API JSON)</title>
     <style>
         * {
             box-sizing: border-box;
@@ -104,15 +104,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>🔍 Multi-Method Redirect Checker</h1>
-        <p>Masukkan URL awal, dan tool ini akan menggunakan beberapa metode untuk mendapatkan URL akhir setelah redirect (termasuk jika berakhir dengan 403, 404, dll).</p>
+        <h1>🔍 Multi-Method Redirect Checker (Tanpa API JSON)</h1>
+        <p>Masukkan URL awal, tool ini akan menggunakan 4 metode untuk mendapatkan URL akhir setelah redirect (termasuk jika berakhir dengan 403, 404, dll).</p>
         <div class="input-group">
-            <input type="text" id="urlInput" placeholder="https://contoh.com/link" value="https://nadim100.xyz/">
+            <input type="text" id="urlInput" placeholder="https://contoh.com/link" value="https://nadimtogel.site">
             <button id="checkAllBtn">Cek Semua Metode</button>
         </div>
 
         <div class="methods-grid" id="methodsGrid">
-            <!-- Metode 1: Direct -->
+            <!-- Metode 1: Direct fetch -->
             <div class="method-card">
                 <div class="method-title">1️⃣ Direct (fetch)</div>
                 <div id="directResult" class="result-box">Belum dicek</div>
@@ -122,34 +122,31 @@
                 <div class="method-title">2️⃣ Proxy CORS (corsproxy.io)</div>
                 <div id="proxyResult" class="result-box">Belum dicek</div>
             </div>
-            <!-- Metode 3: AllOrigins -->
+            <!-- Metode 3: AllOrigins (alternatif proxy) -->
             <div class="method-card">
                 <div class="method-title">3️⃣ AllOrigins</div>
                 <div id="alloriginsResult" class="result-box">Belum dicek</div>
             </div>
-            <!-- Metode 4: Redirect.li API -->
+            <!-- Metode 4: Redirect.li HTTP page (HTML parse) -->
             <div class="method-card">
-                <div class="method-title">4️⃣ Redirect.li API</div>
-                <div id="redirectLiResult" class="result-box">Belum dicek</div>
+                <div class="method-title">4️⃣ Redirect.li (HTML parse)</div>
+                <div id="redirectLiHtmlResult" class="result-box">Belum dicek</div>
             </div>
         </div>
 
         <div class="info">
-            ⚠️ Metode Direct sering gagal karena CORS. Gunakan metode proxy atau API untuk hasil paling akurat.<br>
-            ✅ Redirect.li mengembalikan riwayat redirect lengkap, termasuk URL akhir meskipun status akhir error (403, 404, dll).
+            ⚠️ Metode Direct sering gagal karena CORS. Metode proxy (2 & 3) mengikuti redirect dan mengembalikan URL akhir.<br>
+            ✅ Metode 4 mengambil halaman <strong>redirect.li/http/?url=...</strong> dan mengekstrak URL akhir dari tampilan HTML (bukan API JSON), sehingga tetap bisa mendapatkan riwayat redirect meskipun API JSON bermasalah.
         </div>
     </div>
 
     <script>
-        // Helper untuk mengupdate tampilan hasil
+        // Helper untuk update tampilan
         function setResult(element, text, isError = false) {
             element.innerHTML = text;
             element.classList.remove('loading');
-            if (isError) {
-                element.classList.add('error');
-            } else {
-                element.classList.remove('error');
-            }
+            if (isError) element.classList.add('error');
+            else element.classList.remove('error');
         }
 
         function setLoading(element) {
@@ -214,39 +211,77 @@
                 const response = await fetch(proxiedUrl);
                 const data = await response.json();
                 // AllOrigins tidak memberikan URL setelah redirect secara langsung.
-                // Alternatif: gunakan endpoint yang mengembalikan header, tetapi lebih mudah gunakan corsproxy.io.
-                // Di sini kita coba dengan memanfaatkan bahwa AllOrigins mengikuti redirect.
-                // Kita bisa mem-parsing URL dari response.url, tapi response.url adalah URL API.
-                // Solusi: kita lakukan request HEAD melalui AllOrigins? Tidak ada.
-                // Karena AllOrigins tidak mengembalikan URL akhir, kita tampilkan pesan dan sarankan gunakan metode lain.
-                setResult(resultDiv, `⚠️ AllOrigins tidak mengembalikan URL redirect secara langsung.<br>Gunakan metode Proxy CORS atau Redirect.li untuk hasil lebih akurat.`, true);
+                // Kita coba gunakan bahwa ia mengikuti redirect, tetapi response.url adalah URL API.
+                // Karena tidak ada cara mudah, kita tampilkan peringatan dan sarankan gunakan metode lain.
+                setResult(resultDiv, `⚠️ AllOrigins tidak mengembalikan URL redirect secara langsung.<br>Gunakan metode Proxy CORS atau Redirect.li HTML untuk hasil lebih akurat.`, true);
             } catch (err) {
                 setResult(resultDiv, `❌ AllOrigins error: ${escapeHtml(err.message)}`, true);
             }
         }
 
-        // ========== METODE 4: Redirect.li API ==========
-        async function checkRedirectLi(url) {
-            const resultDiv = document.getElementById('redirectLiResult');
+        // ========== METODE 4: Redirect.li HTTP page (HTML parse) ==========
+        async function checkRedirectLiHtml(url) {
+            const resultDiv = document.getElementById('redirectLiHtmlResult');
             setLoading(resultDiv);
-            const apiUrl = `https://redirect.li/api/?url=${encodeURIComponent(url)}&format=json`;
+            // Gunakan proxy CORS untuk mengambil halaman redirect.li (karena berbeda asal)
+            const redirectLiUrl = `https://redirect.li/http/?url=${encodeURIComponent(url)}`;
+            const proxy = 'https://corsproxy.io/';
+            const proxiedUrl = proxy + '?' + encodeURIComponent(redirectLiUrl);
+            
             try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-                if (data && data.history && data.history.length > 0) {
-                    // Riwayat redirect, ambil yang terakhir
-                    const lastEntry = data.history[data.history.length - 1];
-                    const finalUrl = lastEntry.to || url; // 'to' adalah URL tujuan setelah redirect
-                    const status = lastEntry.status || '?';
-                    setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(finalUrl)}</span><br>Status akhir: ${status}<br>Jumlah redirect: ${data.history.length}`);
-                } else if (data && data.final_url) {
-                    // Format alternatif
-                    setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(data.final_url)}</span><br>Status: ${data.http_code || '?'}`);
+                const response = await fetch(proxiedUrl, {
+                    method: 'GET',
+                    redirect: 'follow'
+                });
+                const htmlText = await response.text();
+                
+                // Parsing HTML untuk mengekstrak URL akhir
+                // Struktur halaman redirect.li: biasanya menampilkan daftar redirect dengan format:
+                // "301 → https://example.com" atau "302 → https://..."
+                // Kita cari semua baris yang mengandung panah "→", ambil yang terakhir.
+                const lines = htmlText.split('\n');
+                let finalUrl = null;
+                let lastRedirectLine = '';
+                
+                // Regex untuk menangkap URL setelah panah
+                const arrowRegex = /→\s*(https?:\/\/[^\s<]+)/i;
+                
+                for (let line of lines) {
+                    if (line.includes('→')) {
+                        const match = line.match(arrowRegex);
+                        if (match) {
+                            lastRedirectLine = match[1];
+                        }
+                    }
+                }
+                
+                // Jika tidak ditemukan dengan regex, coba cari pola lain: kadang URL muncul dalam <a> tag
+                if (!lastRedirectLine) {
+                    const linkRegex = /<a\s+href="(https?:\/\/[^"]+)"/gi;
+                    let match;
+                    let lastLink = null;
+                    while ((match = linkRegex.exec(htmlText)) !== null) {
+                        lastLink = match[1];
+                    }
+                    if (lastLink) finalUrl = lastLink;
                 } else {
-                    setResult(resultDiv, `⚠️ Tidak dapat mengambil riwayat redirect. Respons API: ${JSON.stringify(data)}`, true);
+                    finalUrl = lastRedirectLine;
+                }
+                
+                // Jika masih tidak ada, coba cari teks "Final URL:" atau "Location:"
+                if (!finalUrl) {
+                    const finalRegex = /(?:Final URL|Location):\s*(https?:\/\/[^\s<]+)/i;
+                    const match = htmlText.match(finalRegex);
+                    if (match) finalUrl = match[1];
+                }
+                
+                if (finalUrl) {
+                    setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(finalUrl)}</span><br>Data diambil dari redirect.li (HTML parse)`);
+                } else {
+                    setResult(resultDiv, `⚠️ Tidak dapat mengekstrak URL akhir dari halaman redirect.li. Mungkin struktur halaman berubah.`, true);
                 }
             } catch (err) {
-                setResult(resultDiv, `❌ Redirect.li error: ${escapeHtml(err.message)}`, true);
+                setResult(resultDiv, `❌ Gagal mengambil halaman redirect.li: ${escapeHtml(err.message)}`, true);
             }
         }
 
@@ -263,7 +298,7 @@
             }
 
             // Reset semua tampilan
-            const results = ['directResult', 'proxyResult', 'alloriginsResult', 'redirectLiResult'];
+            const results = ['directResult', 'proxyResult', 'alloriginsResult', 'redirectLiHtmlResult'];
             results.forEach(id => {
                 const el = document.getElementById(id);
                 el.innerHTML = 'Belum dicek';
@@ -275,7 +310,7 @@
                 checkDirect(url),
                 checkProxyCors(url),
                 checkAllOrigins(url),
-                checkRedirectLi(url)
+                checkRedirectLiHtml(url)
             ]);
         }
 
