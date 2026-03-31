@@ -57,7 +57,7 @@
                 buildUrl: (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`,
                 transform: async (response) => {
                     const data = await response.json();
-                    if (!data.contents) throw new Error('Konten kosong');
+                    if (!data.contents) throw new Error(' ');
                     return data.contents;
                 }
             },
@@ -82,7 +82,7 @@
             if (!steps || steps.length === 0) throw new Error('.');
             const lastStep = steps[steps.length - 1];
             const finalUrl = lastStep?.request?.url;
-            if (!finalUrl) throw new Error('URL akhir tidak ditemukan');
+            if (!finalUrl) throw new Error('.');
             return finalUrl;
         }
 
