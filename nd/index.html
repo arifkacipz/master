@@ -3,120 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Checker – Hanya URL Akhir</title>
+    <title>Mengalihkan ke Halaman Pendaftaran</title>
     <style>
-        * { box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 20px;
+            text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        .message {
             background: white;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 25px;
         }
-        h1 {
-            font-size: 1.6rem;
-            margin-top: 0;
-            color: #1a73e8;
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1a73e8;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
         }
-        .info {
-            background: #e8f0fe;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        button {
-            padding: 12px 24px;
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-        button:hover {
-            background-color: #0c5db3;
-        }
-        .progress {
-            font-family: monospace;
-            font-size: 0.8rem;
-            color: #5f6368;
-            margin: 10px 0;
-            background: #f1f3f4;
-            padding: 8px;
-            border-radius: 4px;
-        }
-        .result-item {
-            background: #e6f4ea;
-            border-left: 4px solid #34a853;
-            margin-bottom: 15px;
-            padding: 12px;
-            border-radius: 8px;
-        }
-        .proxy-name {
-            font-weight: bold;
-            color: #137333;
-            margin-bottom: 6px;
-        }
-        .final-url {
-            font-family: monospace;
-            word-break: break-all;
-            font-size: 1rem;
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         .error {
             color: #d93025;
         }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .details {
-            font-size: 0.85rem;
-            color: #5f6368;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>🔍 Redirect Checker – Hanya URL Akhir</h1>
-    <div class="info">
-        Target URL: <code>https://redirect.li/http/?url=https%3A%2F%2Fnadimtogel.site</code><br>
-        Menggunakan tiga proxy yang terbukti berhasil: <strong>api.allorigins.win</strong>, <strong>cors.eu.org</strong>, dan <strong>cors-anywhere.fly.dev</strong>.<br>
-        Klik tombol untuk menampilkan URL akhir dari masing‑masing sumber.
-    </div>
-    <button id="startBtn">Dapatkan URL Akhir</button>
-    <div id="progress" class="progress">Klik tombol untuk memulai.</div>
-    <div id="results"></div>
-    <iframe src="https://redirect.li/http/?url=https%3A%2F%2Fnadimtogel.site" title="redirect.li"></iframe>
-    <div class="details">
-        <strong>Jika semua proxy gagal, lihat manual di iframe:</strong> gulir ke bagian <strong>Details</strong>, langkah terakhir adalah URL akhir.
-    </div>
+<div class="message">
+    <div class="loader"></div>
+    <p>Mempersiapkan halaman pendaftaran...</p>
+    <p id="status" style="font-size: 0.8rem; color: #5f6368;">Mencari server tercepat</p>
 </div>
 
 <script>
     const targetUrl = 'https://redirect.li/http/?url=https%3A%2F%2Fnadimtogel.site';
-    const startBtn = document.getElementById('startBtn');
-    const progressDiv = document.getElementById('progress');
-    const resultsDiv = document.getElementById('results');
+    const statusDiv = document.getElementById('status');
 
+    // Tiga proxy yang terbukti berhasil
     const proxies = [
         {
             name: 'api.allorigins.win',
             buildUrl: (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`,
             transform: async (response) => {
                 const data = await response.json();
-                if (!data.contents) throw new Error('Tidak ada konten');
+                if (!data.contents) throw new Error('Konten kosong');
                 return data.contents;
             }
         },
@@ -132,7 +73,7 @@
         }
     ];
 
-    // Ekstrak URL akhir dari HTML redirect.li (langkah terakhir)
+    // Ekstrak URL akhir dari HTML redirect.li
     function extractFinalUrl(html) {
         const match = html.match(/<script\s+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
         if (!match) throw new Error('Tidak menemukan __NEXT_DATA__');
@@ -145,60 +86,67 @@
         return finalUrl;
     }
 
-    async function testProxy(proxy, index, total) {
-        progressDiv.textContent = `[${index+1}/${total}] Mencoba: ${proxy.name} ...`;
+    // Membangun URL pendaftaran dengan format: [base_url]/register?referral_code=cellyn
+    function buildRegisterUrl(finalUrl) {
         try {
-            const url = proxy.buildUrl(targetUrl);
-            const response = await fetch(url, { method: 'GET', redirect: 'follow' });
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const html = await proxy.transform(response);
-            if (!html || typeof html !== 'string') throw new Error('Konten tidak valid');
-            const finalUrl = extractFinalUrl(html);
-            return { success: true, name: proxy.name, finalUrl };
-        } catch (err) {
-            console.warn(`${proxy.name} gagal:`, err.message);
-            return { success: false, name: proxy.name, error: err.message };
-        }
-    }
-
-    async function runAllProxies() {
-        resultsDiv.innerHTML = '';
-        startBtn.disabled = true;
-        let successCount = 0;
-        const total = proxies.length;
-        for (let i = 0; i < total; i++) {
-            const result = await testProxy(proxies[i], i, total);
-            if (result.success) {
-                successCount++;
-                const block = document.createElement('div');
-                block.className = 'result-item';
-                block.innerHTML = `
-                    <div class="proxy-name">✅ ${escapeHtml(result.name)}</div>
-                    <div class="final-url">${escapeHtml(result.finalUrl)}</div>
-                `;
-                resultsDiv.appendChild(block);
+            // Parsing URL untuk mendapatkan base (protocol + hostname + port jika ada)
+            const urlObj = new URL(finalUrl);
+            const baseUrl = `${urlObj.protocol}//${urlObj.hostname}${urlObj.port ? ':' + urlObj.port : ''}`;
+            // Gabungkan dengan path /register dan query parameter
+            return `${baseUrl}/register?referral_code=cellyn`;
+        } catch (e) {
+            // Fallback jika parsing gagal (misal URL tidak valid)
+            // Bersihkan path terlebih dahulu
+            let cleanUrl = finalUrl.split('?')[0].split('#')[0];
+            if (cleanUrl.endsWith('/')) {
+                return `${cleanUrl}register?referral_code=cellyn`;
+            } else {
+                return `${cleanUrl}/register?referral_code=cellyn`;
             }
-            // jeda singkat
-            await new Promise(r => setTimeout(r, 200));
         }
-        progressDiv.textContent = `Selesai. ${successCount} dari ${total} proxy berhasil.`;
-        if (successCount === 0) {
-            resultsDiv.innerHTML = '<div class="error">❌ Tidak ada proxy yang berhasil. Coba lihat manual di iframe di bawah.</div>';
-        }
-        startBtn.disabled = false;
     }
 
-    function escapeHtml(str) {
-        if (!str) return '';
-        return str.replace(/[&<>]/g, m => {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
+    // Fungsi untuk menjalankan satu proxy
+    async function getFinalUrlFromProxy(proxy) {
+        const url = proxy.buildUrl(targetUrl);
+        const response = await fetch(url, { method: 'GET', redirect: 'follow' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const html = await proxy.transform(response);
+        if (!html || typeof html !== 'string') throw new Error('Konten tidak valid');
+        return extractFinalUrl(html);
     }
 
-    startBtn.addEventListener('click', runAllProxies);
+    // Buat promise untuk setiap proxy, masing-masing akan resolve dengan { success, value, proxyName }
+    const promises = proxies.map(proxy =>
+        getFinalUrlFromProxy(proxy)
+            .then(finalUrl => ({ success: true, finalUrl, proxyName: proxy.name }))
+            .catch(err => ({ success: false, error: err.message, proxyName: proxy.name }))
+    );
+
+    // Jalankan race: ambil yang tercepat selesai
+    Promise.race(promises).then(winner => {
+        if (winner.success) {
+            statusDiv.textContent = `Menggunakan ${winner.proxyName} (tercepat) → Mengalihkan ke halaman pendaftaran...`;
+            const redirectUrl = buildRegisterUrl(winner.finalUrl);
+            window.location.href = redirectUrl;
+        } else {
+            // Yang tercepat gagal, kita tunggu promise lain yang berhasil
+            statusDiv.textContent = `Proxy ${winner.proxyName} gagal, mencoba yang lain...`;
+            Promise.allSettled(promises).then(results => {
+                const successResult = results.find(r => r.status === 'fulfilled' && r.value.success);
+                if (successResult) {
+                    const { finalUrl, proxyName } = successResult.value;
+                    statusDiv.textContent = `Menggunakan ${proxyName} → Mengalihkan...`;
+                    const redirectUrl = buildRegisterUrl(finalUrl);
+                    window.location.href = redirectUrl;
+                } else {
+                    // Semua gagal
+                    statusDiv.innerHTML = '<span class="error">Gagal mendapatkan URL akhir. <a href="https://redirect.li/http/?url=https%3A%2F%2Fnadimtogel.site" target="_blank">Klik di sini untuk melihat manual</a></span>';
+                    document.querySelector('.loader').style.display = 'none';
+                }
+            });
+        }
+    });
 </script>
 </body>
 </html>
