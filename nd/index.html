@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Steps - via view-page-source.com</title>
+    <title>Redirect Steps via view-page-source.com</title>
     <style>
         * { box-sizing: border-box; }
         body {
@@ -81,9 +81,10 @@
             font-weight: bold;
             color: #1a73e8;
             background: #e8f0fe;
-            padding: 10px;
-            border-radius: 6px;
-            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1.1rem;
         }
         .loading {
             color: #f9ab00;
@@ -98,24 +99,26 @@
         .details {
             font-size: 0.85rem;
             color: #5f6368;
-            margin-top: 10px;
+            margin-top: 15px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>🔍 Tampilkan Semua Langkah Redirect</h1>
+    <h1>🔍 Lihat Semua Langkah Redirect (Mentah)</h1>
     <div class="info">
         Menggunakan API <strong>view-page-source.com</strong> untuk mengambil halaman redirect.li.<br>
         URL yang dimasukkan harus berupa halaman redirect.li (contoh: <code>https://redirect.li/http/?url=https://nadimtogel.site</code>).<br>
-        Hasil akan menampilkan setiap langkah redirect (301, 302, dll) secara mentah.
+        Setiap langkah redirect (301, 302, dll.) akan ditampilkan beserta URL tujuan, waktu, dan IP server.
     </div>
     <div class="form-group">
         <input type="text" id="urlInput" placeholder="https://redirect.li/http/?url=https://nadimtogel.site" value="https://redirect.li/http/?url=https://nadimtogel.site">
-        <button id="checkBtn">Ambil Data & Tampilkan Step</button>
+        <button id="checkBtn">Ambil Data Redirect</button>
     </div>
     <div id="result" class="result">
-        <div class="loading">Klik tombol di atas untuk memulai.</div>
+        <div class="loading">Klik tombol di atas untuk melihat semua langkah redirect.</div>
     </div>
 </div>
 
@@ -125,12 +128,12 @@
     const resultDiv = document.getElementById('result');
 
     async function fetchViaViewPageSource(targetUrl) {
-        // 1. Dapatkan token
+        // 1. Dapatkan token dari view-page-source.com
         const tokenRes = await fetch('https://www.view-page-source.com/api/token');
         if (!tokenRes.ok) throw new Error('Gagal mendapatkan token dari view-page-source.com');
         const { token } = await tokenRes.json();
 
-        // 2. Kirim permintaan fetch
+        // 2. Kirim permintaan fetch melalui view-page-source.com
         const fetchRes = await fetch('https://www.view-page-source.com/api/fetch', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -150,7 +153,7 @@
     }
 
     function parseRedirectSteps(html) {
-        // Ekstrak JSON __NEXT_DATA__
+        // Ekstrak JSON dari <script id="__NEXT_DATA__">
         const match = html.match(/<script\s+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
         if (!match) throw new Error('Tidak menemukan __NEXT_DATA__ di halaman redirect.li');
         const jsonData = JSON.parse(match[1]);
@@ -158,14 +161,15 @@
         if (!steps || steps.length === 0) throw new Error('Tidak ada data redirect dalam JSON');
 
         // Format setiap step
-        return steps.map((step, index) => {
-            const requestUrl = step.request?.url || '?';
-            const status = step.status;
-            const statusMessage = step.statusMessage || '';
-            const time = step.timeTotal || 0;
-            const ip = step.ip || '';
-            return { index, requestUrl, status, statusMessage, time, ip };
-        });
+        return steps.map((step, index) => ({
+            index: index + 1,
+            status: step.status,
+            statusMessage: step.statusMessage || '',
+            url: step.request?.url || '?',
+            time: step.timeTotal || 0,
+            ip: step.ip || '',
+            httpVersion: step.httpVersion || ''
+        }));
     }
 
     async function handleCheck() {
@@ -187,35 +191,37 @@
 
             // Buat tabel
             let tableHtml = `
-                <h3>📋 Hasil Redirect (${steps.length} langkah)</h3>
+                <h3>📋 Detail Setiap Langkah Redirect (${steps.length} langkah)</h3>
+                <div style="overflow-x: auto;">
                 <table>
                     <thead>
-                        <tr><th>#</th><th>Status</th><th>URL Tujuan</th><th>Waktu (ms)</th><th>IP Server</th></tr>
+                        <tr><th>#</th><th>Status</th><th>URL Tujuan</th><th>Waktu (ms)</th><th>IP Server</th><th>HTTP Version</th></tr>
                     </thead>
                     <tbody>
             `;
             steps.forEach(step => {
                 tableHtml += `
                     <tr>
-                        <td>${step.index + 1}</td>
-                        <td>${step.status} ${step.statusMessage}</td>
-                        <td class="step-url">${escapeHtml(step.requestUrl)}</td>
+                        <td>${step.index}</td>
+                        <td><strong>${step.status}</strong> ${escapeHtml(step.statusMessage)}</td>
+                        <td class="step-url">${escapeHtml(step.url)}</td>
                         <td>${step.time}</td>
-                        <td>${step.ip || '-'}</td>
+                        <td>${escapeHtml(step.ip) || '-'}</td>
+                        <td>${escapeHtml(step.httpVersion) || '-'}</td>
                     </tr>
                 `;
             });
-            tableHtml += `</tbody></table>`;
+            tableHtml += `</tbody></table></div>`;
 
-            // URL akhir (langkah terakhir)
-            const finalUrl = steps[steps.length - 1].requestUrl;
+            // URL akhir adalah langkah terakhir
+            const finalUrl = steps[steps.length - 1].url;
             tableHtml += `
                 <div class="final-url">
                     🎯 URL Akhir: ${escapeHtml(finalUrl)}
                 </div>
                 <div class="details">
-                    Data diambil dari halaman redirect.li melalui <strong>view-page-source.com</strong>.<br>
-                    Sumber: ${escapeHtml(redirectLiUrl)}
+                    ✅ Data diambil dari halaman redirect.li melalui <strong>view-page-source.com</strong>.<br>
+                    📡 Sumber: <code>${escapeHtml(redirectLiUrl)}</code>
                 </div>
             `;
 
@@ -223,11 +229,11 @@
         } catch (err) {
             resultDiv.innerHTML = `
                 <div class="error">
-                    ❌ Gagal: ${escapeHtml(err.message)}
+                    ❌ Gagal mendapatkan langkah redirect: ${escapeHtml(err.message)}
                 </div>
                 <div class="details">
-                    Pastikan URL redirect.li valid dan view-page-source.com dapat diakses.<br>
-                    Contoh URL yang benar: <code>https://redirect.li/http/?url=https://nadimtogel.site</code>
+                    Pastikan URL yang dimasukkan adalah halaman redirect.li yang valid.<br>
+                    Contoh: <code>https://redirect.li/http/?url=https://nadimtogel.site</code>
                 </div>
             `;
         }
