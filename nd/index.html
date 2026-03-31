@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Checker</title>
+</head>
+<body>
+    <input type="text" id="urlInput" placeholder="Masukkan URL">
+    <button onclick="checkRedirect()">Cek Redirect</button>
+    <div id="result"></div>
+
+    <script>
+        async function checkRedirect() {
+            const url = document.getElementById('urlInput').value;
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = "Mengecek...";
+
+            try {
+                // fetch dengan mode 'no-cors' tidak bisa membaca response.url
+                // Jadi kita harus menggunakan mode normal, yang membutuhkan CORS
+                const response = await fetch(url, { method: 'HEAD', redirect: 'follow' });
+                // Atau method 'GET' jika HEAD tidak diizinkan
+                resultDiv.innerHTML = `URL Akhir: ${response.url}`;
+            } catch (err) {
+                resultDiv.innerHTML = `Error: ${err.message}<br>Kemungkinan karena CORS.`;
+            }
+        }
+    </script>
+</body>
+</html>
