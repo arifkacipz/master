@@ -3,137 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Checker - Semua Metode</title>
+    <title>Multi-Method Redirect Checker</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
             background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
         }
         .container {
-            max-width: 900px;
-            margin: auto;
+            max-width: 1000px;
+            margin: 0 auto;
             background: white;
-            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 25px;
         }
         h1 {
+            font-size: 1.6rem;
             margin-top: 0;
             color: #1a73e8;
         }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
         input {
-            width: 70%;
+            flex: 1;
             padding: 12px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 6px;
-            margin-right: 10px;
         }
         button {
-            padding: 12px 20px;
-            font-size: 16px;
+            padding: 12px 24px;
             background-color: #1a73e8;
             color: white;
             border: none;
             border-radius: 6px;
+            font-size: 16px;
             cursor: pointer;
-            margin: 5px;
+            transition: background 0.2s;
         }
         button:hover {
             background-color: #0c5db3;
         }
-        .method-section {
-            margin-top: 30px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
+        .methods-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .method-card {
+            flex: 1;
+            min-width: 220px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            border-top: 4px solid #1a73e8;
         }
         .method-title {
             font-weight: bold;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #202124;
         }
-        .result {
-            background: #f8f9fa;
-            padding: 12px;
-            border-radius: 8px;
-            margin-top: 10px;
+        .result-box {
+            background: white;
+            border-radius: 6px;
+            padding: 10px;
             font-family: monospace;
+            font-size: 0.85rem;
             word-break: break-all;
-            border-left: 4px solid #1a73e8;
+            margin-top: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .final-url {
+            font-weight: bold;
+            color: #1a73e8;
         }
         .error {
             color: #d93025;
-            border-left-color: #d93025;
-        }
-        .success {
-            border-left-color: #34a853;
         }
         .loading {
             color: #f9ab00;
         }
-        .note {
-            font-size: 0.85em;
+        .info {
+            font-size: 0.85rem;
             color: #5f6368;
-            margin-top: 15px;
-            background: #e8f0fe;
-            padding: 10px;
-            border-radius: 6px;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🔍 Pengecek Redirect URL Akhir</h1>
-        <p>Masukkan URL yang ingin dicek (contoh: <strong>https://nadimtogel.site/abc</strong>)</p>
-        <div>
-            <input type="text" id="urlInput" placeholder="https://..." value="https://nadimtogel.site">
-            <button id="checkAllBtn">🔁 Cek Semua Metode</button>
-        </div>
-        <div class="note">
-            📌 Metode Langsung sering gagal karena CORS. <br>
-            📌 Proxy CORS dan Redirect.li adalah alternatif yang lebih andal tanpa perlu kunci API.
+        <h1>🔍 Multi-Method Redirect Checker</h1>
+        <p>Masukkan URL awal, dan tool ini akan menggunakan beberapa metode untuk mendapatkan URL akhir setelah redirect (termasuk jika berakhir dengan 403, 404, dll).</p>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="https://contoh.com/link" value="https://nadim100.xyz/">
+            <button id="checkAllBtn">Cek Semua Metode</button>
         </div>
 
-        <!-- Metode 1: Langsung -->
-        <div class="method-section">
-            <div class="method-title">1️⃣ Metode Langsung (fetch dengan header)</div>
-            <div id="directResult" class="result">Belum dicek</div>
+        <div class="methods-grid" id="methodsGrid">
+            <!-- Metode 1: Direct -->
+            <div class="method-card">
+                <div class="method-title">1️⃣ Direct (fetch)</div>
+                <div id="directResult" class="result-box">Belum dicek</div>
+            </div>
+            <!-- Metode 2: Proxy CORS (corsproxy.io) -->
+            <div class="method-card">
+                <div class="method-title">2️⃣ Proxy CORS (corsproxy.io)</div>
+                <div id="proxyResult" class="result-box">Belum dicek</div>
+            </div>
+            <!-- Metode 3: AllOrigins -->
+            <div class="method-card">
+                <div class="method-title">3️⃣ AllOrigins</div>
+                <div id="alloriginsResult" class="result-box">Belum dicek</div>
+            </div>
+            <!-- Metode 4: Redirect.li API -->
+            <div class="method-card">
+                <div class="method-title">4️⃣ Redirect.li API</div>
+                <div id="redirectLiResult" class="result-box">Belum dicek</div>
+            </div>
         </div>
 
-        <!-- Metode 2: Proxy CORS -->
-        <div class="method-section">
-            <div class="method-title">2️⃣ Proxy CORS (corsproxy.io)</div>
-            <div id="proxyResult" class="result">Belum dicek</div>
-        </div>
-
-        <!-- Metode 3: Redirect.li API -->
-        <div class="method-section">
-            <div class="method-title">3️⃣ Redirect.li API (tanpa kunci)</div>
-            <div id="redirectLiResult" class="result">Belum dicek</div>
+        <div class="info">
+            ⚠️ Metode Direct sering gagal karena CORS. Gunakan metode proxy atau API untuk hasil paling akurat.<br>
+            ✅ Redirect.li mengembalikan riwayat redirect lengkap, termasuk URL akhir meskipun status akhir error (403, 404, dll).
         </div>
     </div>
 
     <script>
-        const urlInput = document.getElementById('urlInput');
-        const checkAllBtn = document.getElementById('checkAllBtn');
-
-        // Helper untuk menampilkan hasil
-        function setResult(element, text, isError = false, isSuccess = false) {
+        // Helper untuk mengupdate tampilan hasil
+        function setResult(element, text, isError = false) {
             element.innerHTML = text;
-            element.classList.remove('error', 'success', 'loading');
-            if (isError) element.classList.add('error');
-            else if (isSuccess) element.classList.add('success');
+            element.classList.remove('loading');
+            if (isError) {
+                element.classList.add('error');
+            } else {
+                element.classList.remove('error');
+            }
         }
 
         function setLoading(element) {
             element.innerHTML = '⏳ Sedang memproses...';
             element.classList.add('loading');
-            element.classList.remove('error', 'success');
+            element.classList.remove('error');
         }
 
-        // Metode 1: Langsung dengan fetch
+        // ========== METODE 1: Direct fetch ==========
         async function checkDirect(url) {
             const resultDiv = document.getElementById('directResult');
             setLoading(resultDiv);
@@ -149,79 +174,126 @@
                     headers: headers,
                     mode: 'cors'
                 });
-                setResult(resultDiv, `✅ URL Akhir: ${response.url}<br>✅ Status: ${response.status}`, false, true);
+                setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(response.url)}</span><br>Status: ${response.status}`);
             } catch (err) {
-                setResult(resultDiv, `❌ Gagal: ${err.message}<br>Kemungkinan karena CORS.`, true);
+                setResult(resultDiv, `❌ Gagal: ${escapeHtml(err.message)}<br>Kemungkinan karena CORS.`, true);
             }
         }
 
-        // Metode 2: Proxy CORS menggunakan corsproxy.io
-        async function checkProxy(url) {
+        // ========== METODE 2: corsproxy.io ==========
+        async function checkProxyCors(url) {
             const resultDiv = document.getElementById('proxyResult');
             setLoading(resultDiv);
-            const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(url)}`;
+            const proxy = 'https://corsproxy.io/';
+            const proxiedUrl = proxy + '?' + encodeURIComponent(url);
             try {
-                const response = await fetch(proxyUrl, {
+                const response = await fetch(proxiedUrl, {
                     method: 'GET',
                     redirect: 'follow'
                 });
-                // URL akhir adalah response.url setelah redirect melalui proxy
-                // Namun proxy ini mungkin memberikan URL asli yang sudah di-decode
                 let finalUrl = response.url;
-                // Jika URL proxy masih mengandung prefix, kita bersihkan
-                if (finalUrl.startsWith('https://corsproxy.io/?')) {
-                    // Ekstrak parameter asli dari URL proxy (opsional, lebih baik ambil dari response.url)
-                    // Karena setelah redirect, finalUrl sudah merupakan URL tujuan
+                // Bersihkan jika proxy menyisipkan prefix
+                if (finalUrl.startsWith(proxy)) {
+                    const urlParams = new URLSearchParams(finalUrl.split('?')[1]);
+                    const original = urlParams.get('url');
+                    if (original) finalUrl = decodeURIComponent(original);
                 }
-                setResult(resultDiv, `✅ URL Akhir: ${finalUrl}<br>✅ Status: ${response.status}`, false, true);
+                setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(finalUrl)}</span><br>Status: ${response.status}`);
             } catch (err) {
-                setResult(resultDiv, `❌ Proxy gagal: ${err.message}`, true);
+                setResult(resultDiv, `❌ Proxy gagal: ${escapeHtml(err.message)}`, true);
             }
         }
 
-        // Metode 3: Redirect.li API (dokumentasi: https://redirect.li/api/)
+        // ========== METODE 3: AllOrigins ==========
+        async function checkAllOrigins(url) {
+            const resultDiv = document.getElementById('alloriginsResult');
+            setLoading(resultDiv);
+            const proxy = 'https://api.allorigins.win/get?url=';
+            const proxiedUrl = proxy + encodeURIComponent(url);
+            try {
+                const response = await fetch(proxiedUrl);
+                const data = await response.json();
+                // AllOrigins tidak memberikan URL setelah redirect secara langsung.
+                // Alternatif: gunakan endpoint yang mengembalikan header, tetapi lebih mudah gunakan corsproxy.io.
+                // Di sini kita coba dengan memanfaatkan bahwa AllOrigins mengikuti redirect.
+                // Kita bisa mem-parsing URL dari response.url, tapi response.url adalah URL API.
+                // Solusi: kita lakukan request HEAD melalui AllOrigins? Tidak ada.
+                // Karena AllOrigins tidak mengembalikan URL akhir, kita tampilkan pesan dan sarankan gunakan metode lain.
+                setResult(resultDiv, `⚠️ AllOrigins tidak mengembalikan URL redirect secara langsung.<br>Gunakan metode Proxy CORS atau Redirect.li untuk hasil lebih akurat.`, true);
+            } catch (err) {
+                setResult(resultDiv, `❌ AllOrigins error: ${escapeHtml(err.message)}`, true);
+            }
+        }
+
+        // ========== METODE 4: Redirect.li API ==========
         async function checkRedirectLi(url) {
             const resultDiv = document.getElementById('redirectLiResult');
             setLoading(resultDiv);
-            const apiUrl = `https://redirect.li/api/?url=${encodeURIComponent(url)}`;
+            const apiUrl = `https://redirect.li/api/?url=${encodeURIComponent(url)}&format=json`;
             try {
                 const response = await fetch(apiUrl);
                 const data = await response.json();
-                if (data && data.status && data.status === 'success') {
-                    let finalUrl = data.final_url || data.url || 'Tidak diketahui';
-                    let statusCode = data.http_code || '?';
-                    setResult(resultDiv, `✅ URL Akhir: ${finalUrl}<br>✅ Status HTTP: ${statusCode}`, false, true);
+                if (data && data.history && data.history.length > 0) {
+                    // Riwayat redirect, ambil yang terakhir
+                    const lastEntry = data.history[data.history.length - 1];
+                    const finalUrl = lastEntry.to || url; // 'to' adalah URL tujuan setelah redirect
+                    const status = lastEntry.status || '?';
+                    setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(finalUrl)}</span><br>Status akhir: ${status}<br>Jumlah redirect: ${data.history.length}`);
+                } else if (data && data.final_url) {
+                    // Format alternatif
+                    setResult(resultDiv, `✅ URL Akhir: <span class="final-url">${escapeHtml(data.final_url)}</span><br>Status: ${data.http_code || '?'}`);
                 } else {
-                    setResult(resultDiv, `❌ API redirect.li mengembalikan error: ${data.message || 'Unknown'}`, true);
+                    setResult(resultDiv, `⚠️ Tidak dapat mengambil riwayat redirect. Respons API: ${JSON.stringify(data)}`, true);
                 }
             } catch (err) {
-                setResult(resultDiv, `❌ Gagal mengakses redirect.li: ${err.message}`, true);
+                setResult(resultDiv, `❌ Redirect.li error: ${escapeHtml(err.message)}`, true);
             }
         }
 
-        // Jalankan semua metode
+        // Fungsi utama: jalankan semua metode
         async function runAllChecks() {
             const url = urlInput.value.trim();
             if (!url) {
                 alert('Masukkan URL terlebih dahulu.');
                 return;
             }
-            // Validasi URL sederhana
             if (!url.startsWith('http://') && !url.startsWith('https://')) {
                 alert('URL harus diawali dengan http:// atau https://');
                 return;
             }
+
+            // Reset semua tampilan
+            const results = ['directResult', 'proxyResult', 'alloriginsResult', 'redirectLiResult'];
+            results.forEach(id => {
+                const el = document.getElementById(id);
+                el.innerHTML = 'Belum dicek';
+                el.classList.remove('loading', 'error');
+            });
+
             // Jalankan secara paralel
             await Promise.all([
                 checkDirect(url),
-                checkProxy(url),
+                checkProxyCors(url),
+                checkAllOrigins(url),
                 checkRedirectLi(url)
             ]);
         }
 
-        checkAllBtn.addEventListener('click', runAllChecks);
+        // Helper escape HTML
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
 
-        // Opsional: jika ingin cek saat load dengan nilai default
+        // Event listener
+        document.getElementById('checkAllBtn').addEventListener('click', runAllChecks);
+
+        // Opsional: jalankan otomatis dengan URL default saat halaman dimuat
         // runAllChecks();
     </script>
 </body>
