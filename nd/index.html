@@ -76,7 +76,7 @@
         <h1>🔍 Cek URL Akhir Redirect</h1>
         <div class="info">
             <strong>URL yang dicek:</strong> https://nadimtogel.site<br>
-            Menggunakan layanan <strong>redirect.li</strong> untuk mengikuti semua redirect HTTP.
+            Menggunakan layanan <strong>redirect.li</strong> (data diambil dari halaman HTML).
         </div>
         <button id="checkBtn">Cek URL Akhir</button>
         <div id="result" class="result">
@@ -103,26 +103,33 @@
                 });
                 const htmlText = await response.text();
                 
-                // Cari data JSON dalam tag <script id="__NEXT_DATA__" ...>
-                const jsonMatch = htmlText.match(/<script id="__NEXT_DATA__"[^>]*>(.*?)<\/script>/s);
-                if (!jsonMatch) {
-                    throw new Error('Tidak dapat menemukan data JSON di halaman redirect.li.');
+                // Gunakan DOMParser untuk parsing HTML
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(htmlText, 'text/html');
+                
+                // Cari script dengan id "__NEXT_DATA__"
+                const scriptTag = doc.getElementById('__NEXT_DATA__');
+                if (!scriptTag) {
+                    throw new Error('Tidak menemukan tag script __NEXT_DATA__ di halaman redirect.li.');
                 }
                 
-                const jsonData = JSON.parse(jsonMatch[1]);
-                // Navigasi ke steps terakhir
+                // Ambil konten JSON
+                const jsonText = scriptTag.textContent || scriptTag.innerText;
+                const jsonData = JSON.parse(jsonText);
+                
+                // Navigasi ke steps
                 const steps = jsonData?.props?.pageProps?.response?.steps;
                 if (!steps || steps.length === 0) {
-                    throw new Error('Tidak ada data redirect.');
+                    throw new Error('Tidak ada data redirect dalam JSON.');
                 }
                 
-                // Ambil langkah terakhir (URL akhir)
+                // Ambil langkah terakhir
                 const lastStep = steps[steps.length - 1];
                 const finalUrl = lastStep?.request?.url;
                 const statusCode = lastStep?.status;
                 
                 if (!finalUrl) {
-                    throw new Error('URL akhir tidak ditemukan.');
+                    throw new Error('URL akhir tidak ditemukan dalam data.');
                 }
                 
                 return { success: true, finalUrl, statusCode, totalSteps: steps.length };
