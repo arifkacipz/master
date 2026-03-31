@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Checker - Semua Proxy (Tampilkan Setiap Sukses)</title>
+    <title>Redirect Checker – Hanya URL Akhir</title>
     <style>
         * { box-sizing: border-box; }
         body {
@@ -13,7 +13,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 1400px;
+            max-width: 800px;
             margin: 0 auto;
             background: white;
             border-radius: 12px;
@@ -53,44 +53,22 @@
             padding: 8px;
             border-radius: 4px;
         }
-        .success-block {
+        .result-item {
             background: #e6f4ea;
             border-left: 4px solid #34a853;
-            margin-bottom: 20px;
-            padding: 15px;
+            margin-bottom: 15px;
+            padding: 12px;
             border-radius: 8px;
         }
-        .success-title {
+        .proxy-name {
             font-weight: bold;
-            font-size: 1.1rem;
             color: #137333;
-            margin-bottom: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background: #f5f5f5;
-        }
-        .step-url {
-            word-break: break-all;
-            font-family: monospace;
+            margin-bottom: 6px;
         }
         .final-url {
-            font-weight: bold;
-            color: #1a73e8;
-            background: #e8f0fe;
-            padding: 8px;
-            border-radius: 6px;
-            margin-top: 10px;
+            font-family: monospace;
+            word-break: break-all;
+            font-size: 1rem;
         }
         .error {
             color: #d93025;
@@ -107,29 +85,22 @@
             color: #5f6368;
             margin-top: 10px;
         }
-        .results-area {
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>🔍 Redirect Checker - Semua Proxy (Tampilkan Setiap Sukses)</h1>
+    <h1>🔍 Redirect Checker – Hanya URL Akhir</h1>
     <div class="info">
         Target URL: <code>https://redirect.li/http/?url=https%3A%2F%2Fnadimtogel.site</code><br>
-        Menguji semua proxy CORS yang diketahui. Setiap proxy yang berhasil akan langsung ditampilkan di bawah.
+        Menggunakan tiga proxy yang terbukti berhasil: <strong>api.allorigins.win</strong>, <strong>cors.eu.org</strong>, dan <strong>cors-anywhere.fly.dev</strong>.<br>
+        Klik tombol untuk menampilkan URL akhir dari masing‑masing sumber.
     </div>
-    <button id="startBtn">Mulai Uji Semua Proxy</button>
+    <button id="startBtn">Dapatkan URL Akhir</button>
     <div id="progress" class="progress">Klik tombol untuk memulai.</div>
-    <div id="results" class="results-area"></div>
+    <div id="results"></div>
     <iframe src="https://redirect.li/http/?url=https%3A%2F%2Fnadimtogel.site" title="redirect.li"></iframe>
     <div class="details">
-        <strong>Jika semua proxy gagal, lihat manual di iframe:</strong>
-        <ol>
-            <li>Gulir ke bawah hingga menemukan bagian <strong>Details</strong>.</li>
-            <li>Di sana ada daftar langkah redirect (301, 302, dll) beserta URL tujuannya.</li>
-            <li>Langkah terakhir adalah URL akhir: <strong>https://nadim100.xyz/</strong>.</li>
-        </ol>
+        <strong>Jika semua proxy gagal, lihat manual di iframe:</strong> gulir ke bagian <strong>Details</strong>, langkah terakhir adalah URL akhir.
     </div>
 </div>
 
@@ -139,143 +110,51 @@
     const progressDiv = document.getElementById('progress');
     const resultsDiv = document.getElementById('results');
 
-    // ========== DAFTAR PROXY CORS (LENGKAP) ==========
     const proxies = [
-        // Kategori umum
-        { name: 'corsproxy.io', buildUrl: (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.herokuapp.com', buildUrl: (u) => `https://cors-anywhere.herokuapp.com/${u}`, transform: (r) => r.text() },
-        { name: 'api.allorigins.win', buildUrl: (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, transform: async (r) => { const d = await r.json(); if (!d.contents) throw new Error('Konten kosong'); return d.contents; } },
-        { name: 'cors.sh', buildUrl: (u) => `https://cors.sh/${u}`, transform: (r) => r.text() },
-        { name: 'cors.jigsaw.net', buildUrl: (u) => `https://cors.jigsaw.net/${u}`, transform: (r) => r.text() },
-        { name: 'cors.worker.dev', buildUrl: (u) => `https://cors.worker.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors.bridged.cc', buildUrl: (u) => `https://cors.bridged.cc/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.akk.workers.dev', buildUrl: (u) => `https://cors-proxy.akk.workers.dev/?url=${encodeURIComponent(u)}`, transform: (r) => r.text() },
-        { name: 'cors.eu.org', buildUrl: (u) => `https://cors.eu.org/${u}`, transform: (r) => r.text() },
-        { name: 'cors.deno.dev', buildUrl: (u) => `https://cors.deno.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.xyz', buildUrl: (u) => `https://cors-proxy.xyz/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.herokuapp.com', buildUrl: (u) => `https://cors-proxy.herokuapp.com/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.glitch.me', buildUrl: (u) => `https://cors-proxy.glitch.me/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.replit.app', buildUrl: (u) => `https://cors-proxy.replit.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.cyclic.app', buildUrl: (u) => `https://cors-proxy.cyclic.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.vercel.app', buildUrl: (u) => `https://cors-proxy.vercel.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.netlify.app', buildUrl: (u) => `https://cors-proxy.netlify.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.onrender.com', buildUrl: (u) => `https://cors-proxy.onrender.com/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.fly.dev', buildUrl: (u) => `https://cors-proxy.fly.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors.railway.app', buildUrl: (u) => `https://cors.railway.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.koyeb.app', buildUrl: (u) => `https://cors-proxy.koyeb.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.zeabur.app', buildUrl: (u) => `https://cors-proxy.zeabur.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors.bot', buildUrl: (u) => `https://cors.bot/${u}`, transform: (r) => r.text() },
-        { name: 'cors.now.sh', buildUrl: (u) => `https://cors.now.sh/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.now.sh', buildUrl: (u) => `https://cors-proxy.now.sh/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.now.sh', buildUrl: (u) => `https://cors-anywhere.now.sh/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.glitch.me', buildUrl: (u) => `https://cors-anywhere.glitch.me/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.repl.co', buildUrl: (u) => `https://cors-anywhere.repl.co/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.cyclic.app', buildUrl: (u) => `https://cors-anywhere.cyclic.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.vercel.app', buildUrl: (u) => `https://cors-anywhere.vercel.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.netlify.app', buildUrl: (u) => `https://cors-anywhere.netlify.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.onrender.com', buildUrl: (u) => `https://cors-anywhere.onrender.com/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.fly.dev', buildUrl: (u) => `https://cors-anywhere.fly.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.railway.app', buildUrl: (u) => `https://cors-anywhere.railway.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.koyeb.app', buildUrl: (u) => `https://cors-anywhere.koyeb.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.zeabur.app', buildUrl: (u) => `https://cors-anywhere.zeabur.app/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.deno.dev', buildUrl: (u) => `https://cors-anywhere.deno.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.workers.dev', buildUrl: (u) => `https://cors-anywhere.workers.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.workers.dev', buildUrl: (u) => `https://cors-proxy.workers.dev/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.xyz:8080', buildUrl: (u) => `https://cors-proxy.xyz:8080/${u}`, transform: (r) => r.text() },
-        { name: 'cors.jam.systems', buildUrl: (u) => `https://cors.jam.systems/${u}`, transform: (r) => r.text() },
-        { name: 'cors-relay.workers.dev', buildUrl: (u) => `https://cors-relay.workers.dev/?url=${encodeURIComponent(u)}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.tk', buildUrl: (u) => `https://cors-proxy.tk/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.ml', buildUrl: (u) => `https://cors-proxy.ml/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.ga', buildUrl: (u) => `https://cors-proxy.ga/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.cf', buildUrl: (u) => `https://cors-proxy.cf/${u}`, transform: (r) => r.text() },
-        { name: 'cors-proxy.gq', buildUrl: (u) => `https://cors-proxy.gq/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.tk', buildUrl: (u) => `https://cors-anywhere.tk/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.ml', buildUrl: (u) => `https://cors-anywhere.ml/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.ga', buildUrl: (u) => `https://cors-anywhere.ga/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.cf', buildUrl: (u) => `https://cors-anywhere.cf/${u}`, transform: (r) => r.text() },
-        { name: 'cors-anywhere.gq', buildUrl: (u) => `https://cors-anywhere.gq/${u}`, transform: (r) => r.text() },
-        // Metode khusus view-page-source.com
         {
-            name: 'view-page-source.com (API)',
-            customFetch: async () => {
-                const tokenRes = await fetch('https://www.view-page-source.com/api/token');
-                if (!tokenRes.ok) throw new Error('Token gagal');
-                const { token } = await tokenRes.json();
-                const fetchRes = await fetch('https://www.view-page-source.com/api/fetch', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ url: targetUrl, token, stylize: false })
-                });
-                if (!fetchRes.ok) {
-                    const err = await fetchRes.json();
-                    throw new Error(err.error || 'Gagal fetch');
-                }
-                const data = await fetchRes.json();
-                if (!data.html) throw new Error('Konten kosong');
-                return data.html;
+            name: 'api.allorigins.win',
+            buildUrl: (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`,
+            transform: async (response) => {
+                const data = await response.json();
+                if (!data.contents) throw new Error('Tidak ada konten');
+                return data.contents;
             }
+        },
+        {
+            name: 'cors.eu.org',
+            buildUrl: (u) => `https://cors.eu.org/${u}`,
+            transform: (response) => response.text()
+        },
+        {
+            name: 'cors-anywhere.fly.dev',
+            buildUrl: (u) => `https://cors-anywhere.fly.dev/${u}`,
+            transform: (response) => response.text()
         }
     ];
 
-    // Fungsi ekstraksi langkah redirect
-    function parseRedirectSteps(html) {
+    // Ekstrak URL akhir dari HTML redirect.li (langkah terakhir)
+    function extractFinalUrl(html) {
         const match = html.match(/<script\s+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
         if (!match) throw new Error('Tidak menemukan __NEXT_DATA__');
         const jsonData = JSON.parse(match[1]);
         const steps = jsonData?.props?.pageProps?.response?.steps;
         if (!steps || steps.length === 0) throw new Error('Tidak ada data redirect');
-        return steps;
-    }
-
-    // Fungsi untuk membuat blok HTML dari steps yang sukses
-    function formatSuccessBlock(proxyName, steps) {
-        let html = `<div class="success-block"><div class="success-title">✅ ${escapeHtml(proxyName)}</div>`;
-        html += '<div style="overflow-x: auto;">';
-        html += '<table><thead><tr><th>#</th><th>Status</th><th>URL Tujuan</th><th>Waktu (ms)</th><th>IP Server</th></tr></thead><tbody>';
-        steps.forEach((step, idx) => {
-            const statusCode = step.status;
-            const statusMsg = step.statusMessage || '';
-            const url = step.request?.url || '?';
-            const time = step.timeTotal || 0;
-            const ip = step.ip || '-';
-            html += `<tr>
-                        <td>${idx+1}</td>
-                        <td><strong>${statusCode}</strong> ${escapeHtml(statusMsg)}</td>
-                        <td class="step-url">${escapeHtml(url)}</td>
-                        <td>${time}</td>
-                        <td>${escapeHtml(ip)}</td>
-                     </tr>`;
-        });
-        const finalUrl = steps[steps.length - 1].request?.url;
-        html += `</tbody></table></div><div class="final-url">🎯 URL Akhir: ${escapeHtml(finalUrl)}</div></div>`;
-        return html;
-    }
-
-    function escapeHtml(str) {
-        if (!str) return '';
-        return str.replace(/[&<>]/g, m => {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
+        const lastStep = steps[steps.length - 1];
+        const finalUrl = lastStep?.request?.url;
+        if (!finalUrl) throw new Error('URL akhir tidak ditemukan');
+        return finalUrl;
     }
 
     async function testProxy(proxy, index, total) {
         progressDiv.textContent = `[${index+1}/${total}] Mencoba: ${proxy.name} ...`;
         try {
-            let html;
-            if (proxy.customFetch) {
-                html = await proxy.customFetch();
-            } else {
-                const url = proxy.buildUrl(targetUrl);
-                const response = await fetch(url, { method: 'GET', redirect: 'follow' });
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                html = await proxy.transform(response);
-            }
+            const url = proxy.buildUrl(targetUrl);
+            const response = await fetch(url, { method: 'GET', redirect: 'follow' });
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const html = await proxy.transform(response);
             if (!html || typeof html !== 'string') throw new Error('Konten tidak valid');
-            const steps = parseRedirectSteps(html);
-            return { success: true, name: proxy.name, steps };
+            const finalUrl = extractFinalUrl(html);
+            return { success: true, name: proxy.name, finalUrl };
         } catch (err) {
             console.warn(`${proxy.name} gagal:`, err.message);
             return { success: false, name: proxy.name, error: err.message };
@@ -291,10 +170,15 @@
             const result = await testProxy(proxies[i], i, total);
             if (result.success) {
                 successCount++;
-                const blockHtml = formatSuccessBlock(result.name, result.steps);
-                resultsDiv.insertAdjacentHTML('beforeend', blockHtml);
+                const block = document.createElement('div');
+                block.className = 'result-item';
+                block.innerHTML = `
+                    <div class="proxy-name">✅ ${escapeHtml(result.name)}</div>
+                    <div class="final-url">${escapeHtml(result.finalUrl)}</div>
+                `;
+                resultsDiv.appendChild(block);
             }
-            // jeda singkat agar tidak overload
+            // jeda singkat
             await new Promise(r => setTimeout(r, 200));
         }
         progressDiv.textContent = `Selesai. ${successCount} dari ${total} proxy berhasil.`;
@@ -302,6 +186,16 @@
             resultsDiv.innerHTML = '<div class="error">❌ Tidak ada proxy yang berhasil. Coba lihat manual di iframe di bawah.</div>';
         }
         startBtn.disabled = false;
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, m => {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
     }
 
     startBtn.addEventListener('click', runAllProxies);
