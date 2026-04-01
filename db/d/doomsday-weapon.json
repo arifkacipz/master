@@ -2,9 +2,9 @@
     "judul": "Doomsday Weapon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Doomsday-Weapon-193x278.webp",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 8,
+    "chapterCount": 8,
+    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -220,7 +220,23 @@
                 "https://cdn.arenascan.com/arena-bucket/378402/7/012.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/doomsday-weapon-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378402/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/8/009.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-01T20:28:16.533498"
+    "last_scraped": "2026-04-01T21:30:08.523825"
 }
