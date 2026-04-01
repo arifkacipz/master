@@ -1,5 +1,22 @@
 [
   {
+    "slug": "love-starts-with-parenting",
+    "judul": "Love Starts with Parenting",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/Love-Starts-with-Parenting-193x278.jpg",
+    "total_online": 11,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -8,6 +25,30 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "the-return-of-the-unrivaled-genius-ranker",
+    "judul": "The Return of the Unrivaled Genius Ranker",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Return-of-the-Unrivaled-Genius-Ranker-193x278.jpg",
+    "total_online": 18,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
     ]
   },
   {
@@ -61,6 +102,16 @@
       "Chapter 4",
       "Chapter 3",
       "Chapter 2",
+      "Chapter 1"
+    ]
+  },
+  {
+    "slug": "the-villainess-is-collared-by-her-loyal-guard",
+    "judul": "The Villainess Is Collared by Her Loyal Guard",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Villainess-Is-Collared-by-Her-Loyal-Guard-193x278.jpg",
+    "total_online": 4,
+    "total_downloaded": 3,
+    "missing": [
       "Chapter 1"
     ]
   },
@@ -300,6 +351,16 @@
     "total_downloaded": 269,
     "missing": [
       "Chapter 077"
+    ]
+  },
+  {
+    "slug": "devious-son-of-heaven",
+    "judul": "Devious Son Of Heaven",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/d327cc96-10bf-42ab-9182-1ccbdee89b7b.webp",
+    "total_online": 175,
+    "total_downloaded": 174,
+    "missing": [
+      "Chapter 172"
     ]
   }
 ]

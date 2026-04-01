@@ -1,0 +1,81 @@
+{
+    "judul": "Titan Forge",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/Titan-Forge-193x278.jpg",
+    "source": "arenascan",
+    "online": 3,
+    "chapterCount": 3,
+    "Chs": "Chapter 3, Chapter 2, Chapter 1",
+    "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/titan-forge-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390091/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/1/023.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/titan-forge-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390091/2/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/2/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/titan-forge-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390091/3/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390091/3/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        }
+    ],
+    "last_scraped": "2026-04-01T15:51:52.871878"
+}
