@@ -2,9 +2,9 @@
     "judul": "Doomsday Weapon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Doomsday-Weapon-193x278.webp",
     "source": "arenascan",
-    "online": 8,
-    "chapterCount": 8,
-    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 11,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -236,7 +236,72 @@
                 "https://cdn.arenascan.com/arena-bucket/378402/8/009.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/doomsday-weapon-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378402/10/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/10/016.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/doomsday-weapon-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378402/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/11/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/doomsday-weapon-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378402/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378402/12/014.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-01T21:30:08.523825"
+    "last_scraped": "2026-04-02T05:11:02.558783"
 }
