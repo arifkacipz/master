@@ -1,0 +1,26 @@
+{
+    "judul": "The Sole",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/tall-2-2.jpg",
+    "source": "arenascan",
+    "online": 1,
+    "chapterCount": 1,
+    "Chs": "Chapter 1",
+    "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/the-sole-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/1/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/1/08.jpg"
+            ],
+            "source_chapter": "arenascan"
+        }
+    ],
+    "last_scraped": "2026-04-02T17:16:39.648261"
+}
