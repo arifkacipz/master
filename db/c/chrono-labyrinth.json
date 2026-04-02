@@ -3,9 +3,162 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Chrono-Labyrinth-193x278.jpg",
     "source": "arenascan",
     "online": 10,
-    "chapterCount": 3,
+    "chapterCount": 10,
     "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/026.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/027.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/028.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/029.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/030.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/031.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/1/032.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/2/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/2/010.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/3/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/3/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/4/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/4/008.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/5/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/5/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/6/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/6/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390336/7/016.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 8",
             "url": "https://arenascan.com/chrono-labyrinth-chapter-8/",
@@ -91,5 +244,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-02T17:16:39.520084"
+    "last_scraped": "2026-04-02T17:27:10.147758"
 }
