@@ -2,9 +2,9 @@
     "judul": "Chronicles of the Moonlit Night",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Chronicles-of-the-Moonlit-Night-193x278.jpg",
     "source": "arenascan",
-    "online": 27,
-    "chapterCount": 27,
-    "Chs": "Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 28,
+    "chapterCount": 28,
+    "Chs": "Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -595,7 +595,24 @@
                 "https://cdn.arenascan.com/arena-bucket/378640/26/013.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/chronicles-of-the-moonlit-night-chapter-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378640/27/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378640/27/010.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-26T15:49:21.066913"
+    "last_scraped": "2026-04-02T16:18:40.915773"
 }
