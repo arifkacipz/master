@@ -3,9 +3,57 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Husband-Thief-193x278.webp",
     "source": "arenascan",
     "online": 8,
-    "chapterCount": 6,
+    "chapterCount": 8,
     "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
+        {
+            "nama": "Chapter 0",
+            "url": "https://arenascan.com/husband-thief-chapter-0/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390611/0/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/0/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/husband-thief-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390611/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390611/1/019.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/husband-thief-chapter-2/",
@@ -163,5 +211,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-04T08:02:03.490328"
+    "last_scraped": "2026-04-04T08:57:18.169422"
 }
