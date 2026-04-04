@@ -2,9 +2,9 @@
     "judul": "One Glance at the Martial World",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/One-Glance-at-the-Martial-World-193x278.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -168,7 +168,20 @@
                 "https://cdn.arenascan.com/arena-bucket/378256/9/009.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378256/10/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/10/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/10/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/10/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/10/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378256/10/6.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-27T21:02:08.217789"
+    "last_scraped": "2026-04-04T13:08:49.096543"
 }
