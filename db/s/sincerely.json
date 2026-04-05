@@ -2,9 +2,9 @@
     "judul": "Sincerely",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sincerely-193x278.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -301,7 +301,39 @@
                 "https://cdn.arenascan.com/arena-bucket/377820/10/025.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/sincerely-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377820/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/11/025.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-29T18:06:21.209128"
+    "last_scraped": "2026-04-05T19:55:57.545769"
 }
