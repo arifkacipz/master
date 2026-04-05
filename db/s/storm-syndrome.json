@@ -2,9 +2,9 @@
     "judul": "Storm Syndrome",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/10/0eb2c52b-3498-47cd-b949-732d01f9ab02.webp",
     "source": "arenascan",
-    "online": 23,
-    "chapterCount": 23,
-    "Chs": "Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 25,
+    "chapterCount": 25,
+    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -441,7 +441,38 @@
                 "https://cdn.arenascan.com/arena-bucket/336043/23/10.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/storm-syndrome-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/336043/24/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/24/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/24/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/24/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/24/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/24/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/24/007.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/storm-syndrome-chapter-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/336043/25/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/336043/25/010.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-22T09:01:07.707222"
+    "last_scraped": "2026-04-05T07:17:01.353551"
 }
