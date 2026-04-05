@@ -15,11 +15,8 @@
     "judul": "The Child of CEO",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/4580c33a-b0a4-496e-8c11-9e1f0148af34.jpg",
     "total_online": 27,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 24",
-      "Chapter 23",
-      "Chapter 22",
       "Chapter 21",
       "Chapter 20",
       "Chapter 19",
@@ -41,6 +38,19 @@
       "Chapter 3",
       "Chapter 2",
       "Chapter 1"
+    ]
+  },
+  {
+    "slug": "a-fighting-dogs-way-of-courtship",
+    "judul": "A Fighting Dog’s Way of Courtship",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/30fb72a1-a294-4291-8b88-279220642aac.webp",
+    "total_online": 27,
+    "total_downloaded": 23,
+    "missing": [
+      "Chapter 25",
+      "Chapter 24",
+      "Chapter 23",
+      "Chapter 22"
     ]
   },
   {
