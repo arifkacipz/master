@@ -2,9 +2,9 @@
     "judul": "The Sole",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/tall-2-2.jpg",
     "source": "arenascan",
-    "online": 1,
-    "chapterCount": 1,
-    "Chs": "Chapter 1",
+    "online": 4,
+    "chapterCount": 4,
+    "Chs": "Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -20,7 +20,56 @@
                 "https://cdn.arenascan.com/arena-bucket/390342/1/08.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/the-sole-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/2/01_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/02_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/03_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/04_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/05_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/06_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/07_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/08_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/09_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/10_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/2/11_1.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/the-sole-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/3/01_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/02_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/03_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/04_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/05_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/06_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/07_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/3/08_2.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/the-sole-chapter-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/4/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/4/09.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-02T17:16:39.648261"
+    "last_scraped": "2026-04-07T17:43:15.642417"
 }
