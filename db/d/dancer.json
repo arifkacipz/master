@@ -2,9 +2,9 @@
     "judul": "Dancer",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Dancer-193x278.jpg",
     "source": "arenascan",
-    "online": 8,
-    "chapterCount": 8,
-    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 9,
+    "chapterCount": 9,
+    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -210,7 +210,30 @@
                 "https://cdn.arenascan.com/arena-bucket/381493/7/014.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/dancer-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381493/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/381493/8/016.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-25T19:05:46.532095"
+    "last_scraped": "2026-04-08T02:53:44.671444"
 }
