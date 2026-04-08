@@ -2,9 +2,9 @@
     "judul": "Cute War",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/12/2f51f8f2-af53-4c1d-bda2-e907f3d3f991.jpg",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -336,7 +336,34 @@
                 "https://cdn.arenascan.com/arena-bucket/357442/11/019.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/cute-war-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/357442/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/357442/12/020.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-23T16:17:20.391391"
+    "last_scraped": "2026-04-08T05:19:08.383188"
 }
