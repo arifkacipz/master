@@ -1,15 +1,5 @@
 [
   {
-    "slug": "how-far-are-you-okay-with",
-    "judul": "How Far Are You Okay With?",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
-    "total_online": 270,
-    "total_downloaded": 269,
-    "missing": [
-      "Chapter 077"
-    ]
-  },
-  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +8,29 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "breakers",
+    "judul": "Breakers",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/abbdb5fa-34f8-46ac-9cab-4a3b7b965c0c.jpg",
+    "total_online": 71,
+    "total_downloaded": 67,
+    "missing": [
+      "Chapter 68",
+      "Chapter 67",
+      "Chapter 66",
+      "Chapter 65"
+    ]
+  },
+  {
+    "slug": "how-far-are-you-okay-with",
+    "judul": "How Far Are You Okay With?",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
+    "total_online": 270,
+    "total_downloaded": 269,
+    "missing": [
+      "Chapter 077"
     ]
   }
 ]
