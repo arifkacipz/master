@@ -2,9 +2,9 @@
     "judul": "The Mad Dog",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Mad-Dog-193x278.jpg",
     "source": "arenascan",
-    "online": 25,
-    "chapterCount": 25,
-    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 26,
+    "chapterCount": 26,
+    "Chs": "Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -653,7 +653,27 @@
                 "https://cdn.arenascan.com/arena-bucket/377558/25/021.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/the-mad-dog-chapter-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377558/26/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/26/013.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-07T18:41:27.581271"
+    "last_scraped": "2026-04-09T03:34:24.472692"
 }
