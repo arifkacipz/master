@@ -2,9 +2,9 @@
     "judul": "To My Beloved Thief",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/3318bdc9-12a5-4938-b7f2-07a0430c0ee1.jpg",
     "source": "arenascan",
-    "online": 14,
-    "chapterCount": 14,
-    "Chs": "Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 15,
+    "chapterCount": 15,
+    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -300,7 +300,28 @@
                 "https://cdn.arenascan.com/arena-bucket/360742/14/15.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/to-my-beloved-thief-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360742/15/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360742/15/014.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-04T07:10:04.924564"
+    "last_scraped": "2026-04-10T19:18:44.759311"
 }
