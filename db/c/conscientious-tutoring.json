@@ -2,9 +2,9 @@
     "judul": "Conscientious Tutoring",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Conscientious-Tutoring-193x278.webp",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -176,7 +176,25 @@
                 "https://cdn.arenascan.com/arena-bucket/377814/10/015.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/conscientious-tutoring-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377814/11/ch_11_11.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-05T19:55:57.487909"
+    "last_scraped": "2026-04-11T17:40:49.489423"
 }
