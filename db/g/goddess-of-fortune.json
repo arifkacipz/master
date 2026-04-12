@@ -2,9 +2,9 @@
     "judul": "Goddess of Fortune",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Goddess-of-Fortune-193x278.jpg",
     "source": "arenascan",
-    "online": 5,
-    "chapterCount": 5,
-    "Chs": "Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 6,
+    "chapterCount": 6,
+    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -124,7 +124,32 @@
                 "https://cdn.arenascan.com/arena-bucket/392651/5/018.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/goddess-of-fortune-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392651/6/ch_6_18.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-11T19:58:33.830831"
+    "last_scraped": "2026-04-12T21:01:16.198318"
 }
