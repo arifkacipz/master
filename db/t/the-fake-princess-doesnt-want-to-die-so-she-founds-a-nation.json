@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/11/4ec328c3-1ffe-4d0e-9c8d-1a4d945d7182.webp",
     "source": "arenascan",
     "online": 31,
-    "chapterCount": 30,
+    "chapterCount": 31,
     "Chs": "Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -540,6 +540,36 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/the-fake-princess-doesnt-want-to-die-so-she-founds-a-nation-chapter-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/346271/29/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346271/29/23.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 30",
             "url": "https://arenascan.com/the-fake-princess-doesnt-want-to-die-so-she-founds-a-nation-chapter-30/",
             "images": [
@@ -633,5 +663,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-12T03:22:30.413580"
+    "last_scraped": "2026-04-12T03:53:01.736306"
 }
