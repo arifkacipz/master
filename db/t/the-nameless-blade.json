@@ -3,9 +3,63 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/cde0a1e2-39e3-4d71-b337-f0b218b70fe2.jpg",
     "source": "arenascan",
     "online": 15,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/the-nameless-blade-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/363764/10/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/10/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/10/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/10/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/10/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/10/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/10/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/the-nameless-blade-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/363764/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/11/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/the-nameless-blade-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/363764/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/363764/12/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 13",
             "url": "https://arenascan.com/the-nameless-blade-chapter-13/",
@@ -69,5 +123,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-12T14:09:19.445616"
+    "last_scraped": "2026-04-12T15:03:00.465197"
 }
