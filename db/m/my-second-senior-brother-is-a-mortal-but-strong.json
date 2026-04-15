@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/32b4c352-47e5-4f94-83a2-bd264617fe2d.jpg",
     "source": "arenascan",
     "online": 21,
-    "chapterCount": 19,
+    "chapterCount": 21,
     "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
@@ -688,6 +688,42 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/my-second-senior-brother-is-a-mortal-but-strong-chapter-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/16/ch_16_8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/my-second-senior-brother-is-a-mortal-but-strong-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/278223/17/ch_17_14.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 18",
             "url": "https://arenascan.com/my-second-senior-brother-is-a-mortal-but-strong-chapter-18/",
             "images": [
@@ -747,5 +783,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-15T03:46:59.900621"
+    "last_scraped": "2026-04-15T03:50:01.902194"
 }
