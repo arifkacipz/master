@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Healing-Agency-193x278.jpg",
     "source": "arenascan",
     "online": 8,
-    "chapterCount": 7,
+    "chapterCount": 8,
     "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -219,6 +219,48 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/healing-agency-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387368/5/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/026.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/027.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/028.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/029.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/030.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/031.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/032.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/033.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/034.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387368/5/035.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 6",
             "url": "https://arenascan.com/healing-agency-chapter-6/",
             "images": [
@@ -311,5 +353,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-17T11:04:39.626511"
+    "last_scraped": "2026-04-17T11:32:23.703386"
 }
