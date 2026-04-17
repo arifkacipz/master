@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Losers-Love-193x278.webp",
     "source": "arenascan",
     "online": 11,
-    "chapterCount": 10,
+    "chapterCount": 11,
     "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -157,6 +157,31 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/a-loser-s-love-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377555/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377555/8/018.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 9",
             "url": "https://arenascan.com/a-loser-s-love-chapter-9/",
             "images": [
@@ -226,5 +251,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-17T09:54:14.482614"
+    "last_scraped": "2026-04-17T09:56:36.783264"
 }
