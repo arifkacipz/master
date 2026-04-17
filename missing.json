@@ -10,6 +10,16 @@
     ]
   },
   {
+    "slug": "healing-agency",
+    "judul": "Healing Agency",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/Healing-Agency-193x278.jpg",
+    "total_online": 8,
+    "total_downloaded": 7,
+    "missing": [
+      "Chapter 5"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +28,17 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "devil-summoner-i-am-the-abyss-lord",
+    "judul": "Devil Summoner, I Am the Abyss Lord",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/7495e36a-3bae-4ca0-8a01-0594f095ddf2.jpg",
+    "total_online": 62,
+    "total_downloaded": 60,
+    "missing": [
+      "Chapter 59",
+      "Chapter 58"
     ]
   }
 ]
