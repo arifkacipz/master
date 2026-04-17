@@ -10,6 +10,16 @@
     ]
   },
   {
+    "slug": "how-to-build-a-time-machine",
+    "judul": "How to Build a Time Machine",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/570aeba6-0622-47f7-81d2-f30f087f91fe.webp",
+    "total_online": 31,
+    "total_downloaded": 30,
+    "missing": [
+      "Chapter 28"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +28,16 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "a-loser-s-love",
+    "judul": "A Loser’s Love",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Losers-Love-193x278.webp",
+    "total_online": 11,
+    "total_downloaded": 10,
+    "missing": [
+      "Chapter 8"
     ]
   }
 ]

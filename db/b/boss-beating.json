@@ -2,9 +2,9 @@
     "judul": "Boss Beating",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Boss-Beating-193x278.jpg",
     "source": "arenascan",
-    "online": 6,
-    "chapterCount": 6,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 7,
+    "chapterCount": 7,
+    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -273,7 +273,43 @@
                 "https://cdn.arenascan.com/arena-bucket/390335/6/065.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/boss-beating-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390335/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/026.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/027.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/028.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390335/7/029.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-03T05:15:07.323262"
+    "last_scraped": "2026-04-17T09:54:14.250817"
 }
