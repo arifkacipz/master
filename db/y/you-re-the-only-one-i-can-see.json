@@ -2,9 +2,9 @@
     "judul": "You\u2019re the Only One I Can See",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Youre-the-Only-One-I-Can-See-193x278.jpg",
     "source": "arenascan",
-    "online": 6,
-    "chapterCount": 6,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 8,
+    "chapterCount": 8,
+    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -153,7 +153,55 @@
                 "https://cdn.arenascan.com/arena-bucket/391438/6/026.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/you-re-the-only-one-i-can-see-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391438/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/7/019.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/you-re-the-only-one-i-can-see-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391438/8/ch_8_15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-06T22:02:21.238259"
+    "last_scraped": "2026-04-18T19:33:33.245465"
 }
