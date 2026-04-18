@@ -2,9 +2,9 @@
     "judul": "Demonic Beast Hunter Survival Guide",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Demonic-Beast-Hunter-Survival-Guide-193x278.webp",
     "source": "arenascan",
-    "online": 12,
-    "chapterCount": 12,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 13,
+    "chapterCount": 13,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -376,7 +376,29 @@
                 "https://cdn.arenascan.com/arena-bucket/377546/11/022.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/demonic-beast-hunter-survival-guide-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377546/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377546/12/015.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-09T05:34:11.505246"
+    "last_scraped": "2026-04-18T11:55:30.431177"
 }
