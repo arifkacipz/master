@@ -2,9 +2,9 @@
     "judul": "My Pirate Prince",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Pirate-Prince-193x278.jpg",
     "source": "arenascan",
-    "online": 21,
-    "chapterCount": 21,
-    "Chs": "Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 22,
+    "chapterCount": 22,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -480,7 +480,30 @@
                 "https://cdn.arenascan.com/arena-bucket/384171/23/ch_23_14.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/my-pirate-prince-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/384171/24/ch_24_16.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-12T06:59:57.059228"
+    "last_scraped": "2026-04-19T07:53:33.686663"
 }
