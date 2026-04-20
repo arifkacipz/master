@@ -2,9 +2,9 @@
     "judul": "Rural Ace",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Rural-Ace-193x278.jpg",
     "source": "arenascan",
-    "online": 14,
-    "chapterCount": 14,
-    "Chs": "Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 16,
+    "chapterCount": 16,
+    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -426,7 +426,51 @@
                 "https://cdn.arenascan.com/arena-bucket/377905/14/027.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/rural-ace-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/15/ch_15_15.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/rural-ace-chapter-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377905/16/ch_16_15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-06T15:56:43.149686"
+    "last_scraped": "2026-04-20T18:04:38.109954"
 }
