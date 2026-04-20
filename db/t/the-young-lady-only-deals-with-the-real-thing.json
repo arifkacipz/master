@@ -2,9 +2,9 @@
     "judul": "The Young Lady Only Deals with the Real Thing",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Young-Lady-Only-Accepts-Authentics-193x278.jpg",
     "source": "arenascan",
-    "online": 25,
-    "chapterCount": 25,
-    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 26,
+    "chapterCount": 26,
+    "Chs": "Chapter 25.5, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -610,7 +610,15 @@
                 "https://cdn.arenascan.com/arena-bucket/377592/25/020.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25.5",
+            "url": "https://arenascan.com/the-young-lady-only-deals-with-the-real-thing-chapter-25-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377592/25.5/ch_25.5_1.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-06T07:14:47.959819"
+    "last_scraped": "2026-04-20T19:40:41.391054"
 }
