@@ -2,9 +2,9 @@
     "judul": "The Swordmaster in a Magic-Supremacy World",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Swordmaster-in-a-Magic-Supremacy-World-193x278.jpg",
     "source": "arenascan",
-    "online": 12,
-    "chapterCount": 12,
-    "Chs": "Chapter 13, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 13,
+    "chapterCount": 13,
+    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -308,6 +308,28 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/the-swordmaster-in-a-magic-supremacy-world-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391434/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391434/12/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 13",
             "url": "https://arenascan.com/the-swordmaster-in-a-magic-supremacy-world-chapter-13/",
             "images": [
@@ -342,5 +364,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-11T19:55:56.966452"
+    "last_scraped": "2026-04-21T08:21:12.844196"
 }
