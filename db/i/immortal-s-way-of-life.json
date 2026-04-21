@@ -2,9 +2,9 @@
     "judul": "Immortal\u2019s Way of Life",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Immortals-Way-of-Life-193x278.jpg",
     "source": "arenascan",
-    "online": 9,
-    "chapterCount": 9,
-    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 10,
+    "chapterCount": 10,
+    "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -220,7 +220,29 @@
                 "https://cdn.arenascan.com/arena-bucket/389653/8/ch_8_24.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/immortal-s-way-of-life-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/9/ch_9_15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-15T14:10:54.331079"
+    "last_scraped": "2026-04-21T10:04:17.262943"
 }
