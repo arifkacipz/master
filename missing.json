@@ -1,5 +1,25 @@
 [
   {
+    "slug": "how-far-are-you-okay-with",
+    "judul": "How Far Are You Okay With?",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
+    "total_online": 270,
+    "total_downloaded": 269,
+    "missing": [
+      "Chapter 077"
+    ]
+  },
+  {
+    "slug": "the-presepe-outside-the-cage",
+    "judul": "The Presepe Outside the Cage",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/3f8ab9d8-e6fc-412b-8b8a-0444092be81a.jpg",
+    "total_online": 62,
+    "total_downloaded": 61,
+    "missing": [
+      "Chapter 59"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -11,13 +31,34 @@
     ]
   },
   {
-    "slug": "how-far-are-you-okay-with",
-    "judul": "How Far Are You Okay With?",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
-    "total_online": 270,
-    "total_downloaded": 269,
+    "slug": "worlds-strongest-survivor",
+    "judul": "World’s Strongest Survivor",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/614a3e78-5a18-4bf2-80d8-b9b0714625b0.webp",
+    "total_online": 25,
+    "total_downloaded": 3,
     "missing": [
-      "Chapter 077"
+      "Chapter 22",
+      "Chapter 21",
+      "Chapter 20",
+      "Chapter 19",
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
     ]
   }
 ]
