@@ -1,1425 +1,1569 @@
 [
     {
+        "judul": "Magic Emperor",
+        "slug": "demon-magic-emperor",
+        "thumb": "https://manhuaplus.org/uploads/covers/demon-magic-emperor.jpg?1697626580",
+        "Updated": "2026-04-24T03:57:00.081115"
+    },
+    {
+        "judul": "The Fake Master Who Accidentally Became the Strongest",
+        "slug": "the-fake-master-who-accidentally-became-the-strongest",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/7dffb806-4da6-4eaf-a03c-4f14ae03013a.jpg",
+        "Updated": "2026-04-24T03:57:00.063812"
+    },
+    {
+        "judul": "Reborn on the Demonic Cult Battlefield",
+        "slug": "reborn-on-the-demonic-cult-battlefield",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/09/1f16c5f4-c6ef-40f1-a7b3-7edb4999acd1.jpg",
+        "Updated": "2026-04-24T03:57:00.048152"
+    },
+    {
+        "judul": "Shut up, Evil Dragon, I don\u2019t want to raise a child with you anymore",
+        "slug": "shut-up-evil-dragon-i-dont-want-to-raise-a-child-with-you-anymore",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/ab9f2663-a7a5-47b7-994b-b6d12e9f24d1.webp",
+        "Updated": "2026-04-24T03:57:00.045369"
+    },
+    {
+        "judul": "Apocalypse Sword God",
+        "slug": "doomsday-sword-god",
+        "thumb": "https://manhuaplus.org/uploads/covers/doomsday-sword-god.jpg",
+        "Updated": "2026-04-24T03:57:00.034824"
+    },
+    {
+        "judul": "Manager Kim",
+        "slug": "manager-kim",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/d8530583-6cb7-42ba-8fe8-055a567bc817.jpg",
+        "Updated": "2026-04-24T03:57:00.008608"
+    },
+    {
+        "judul": "Do You Want Me to Lend You a Lighter?",
+        "slug": "do-you-want-me-to-lend-you-a-lighter",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/07/bc60740f-f164-44e5-a72a-bcff0af342cc.webp",
+        "Updated": "2026-04-24T03:57:00.005679"
+    },
+    {
+        "judul": "The Wandering Knight\u2019s Survival Manual",
+        "slug": "the-wandering-knights-survival-manual",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/1f180f70-9fa1-4cdc-a36d-09205366e6c4.jpg",
+        "Updated": "2026-04-24T03:57:00.003542"
+    },
+    {
+        "judul": "Return of the SSS-Class Ranker",
+        "slug": "the-sss-ranker-returns",
+        "thumb": "https://manhuaplus.org/uploads/covers/the-sss-ranker-returns.jpg",
+        "Updated": "2026-04-24T03:56:59.957800"
+    },
+    {
+        "judul": "The Beginning After The End",
+        "slug": "the-beginning-after-the-end",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/57f5b4f4-4229-4f31-8647-e1f4465b2528.jpg",
+        "Updated": "2026-04-24T03:56:59.946488"
+    },
+    {
+        "judul": "I don\u2019t know the original, I\u2019m too busy trying to make a living",
+        "slug": "i-dont-know-the-original-im-too-busy-trying-to-make-a-living",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/07/cc5a6bef-1900-486a-906e-41a9a4674117.jpg",
+        "Updated": "2026-04-24T03:56:59.942995"
+    },
+    {
+        "judul": "After I Died, My Childhood Husband",
+        "slug": "after-i-died-my-childhood-husband",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/272b2f2f-c160-4be9-93a1-7128547425e8.webp",
+        "Updated": "2026-04-24T03:56:59.925624"
+    },
+    {
+        "judul": "My Simulated Path to Immortality",
+        "slug": "my-simulated-path-to-immortality",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/de5a41c2-263c-4f20-a4b2-d784c06f150f.webp",
+        "Updated": "2026-04-24T03:56:59.923578"
+    },
+    {
+        "judul": "The Corrupted Paladin Is Obsessed With Me",
+        "slug": "the-corrupted-paladin-is-obsessed-with-me",
+        "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Corrupted-Paladin-Is-Obsessed-With-Me-193x278.webp",
+        "Updated": "2026-04-24T03:56:59.918978"
+    },
+    {
+        "judul": "Shut Up, Evil Dragon! I Don't Want to Raise a Child With You Anymore",
+        "slug": "shut-up-evil-dragon-i-don-t-want-to-raise-a-child-with-you-anymore",
+        "thumb": "https://manhuaplus.org/uploads/covers/shut-up-evil-dragon-i-don-t-want-to-raise-a-child-with-you-anymore.jpg",
+        "Updated": "2026-04-24T03:56:59.798106"
+    },
+    {
+        "judul": "Look-Alike Daughter",
+        "slug": "look-alike-daughter",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/6a75eef5-eb58-42e5-a1de-0996393ad8de.jpg",
+        "Updated": "2026-04-24T03:56:59.790196"
+    },
+    {
+        "judul": "Wild Ranker",
+        "slug": "wild-ranker",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/5d0cc9d3-d544-4d9c-bd77-79b8915b1d6a.jpg",
+        "Updated": "2026-04-24T03:56:59.785676"
+    },
+    {
+        "judul": "I Owe Billions in Debt, So I Was Forced to Work for an Evil God",
+        "slug": "i-owe-billions-in-debt-so-i-was-forced-to-work-for-an-evil-god",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/3bf67cde-abaf-4c4a-8fae-6a8b280a1771.jpg",
+        "Updated": "2026-04-24T03:56:59.784451"
+    },
+    {
+        "judul": "The Witch Sings Fairy Tales",
+        "slug": "the-witch-sings-fairy-tales",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/f73a4ff6-41c2-4218-9e47-01f4c0afee68.webp",
+        "Updated": "2026-04-24T03:56:59.783883"
+    },
+    {
+        "judul": "You Are My Thousands of Stars",
+        "slug": "you-are-my-thousands-of-stars",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/b37d7305-d51a-42df-90af-e20716682c38.webp",
+        "Updated": "2026-04-24T03:56:59.782752"
+    },
+    {
+        "judul": "Murim Psychopath",
+        "slug": "murim-psychopath",
+        "thumb": "https://arenascan.com/wp-content/uploads/2026/01/601e6246-2847-4a65-befd-8453443384fe.jpg",
+        "Updated": "2026-04-24T03:56:59.779040"
+    },
+    {
+        "judul": "It turns out that I am the second generation of demons",
+        "slug": "it-turns-out-that-i-am-the-second-generation-of-demons",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/fc785439-a630-4a0d-9c64-2284af675070.jpg",
+        "Updated": "2026-04-24T03:56:59.777871"
+    },
+    {
+        "judul": "The Closet Fan Princess",
+        "slug": "the-closet-fan-princess",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/The-Closet-Fan-Princess-a.webp",
+        "Updated": "2026-04-24T03:56:59.777224"
+    },
+    {
+        "judul": "The Toy Doll Princess Weds in the Wilds",
+        "slug": "the-toy-doll-princess-weds-in-the-wilds",
+        "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Toy-Doll-Princess-Weds-in-the-Wilds-193x278.jpg",
+        "Updated": "2026-04-24T03:56:59.660651"
+    },
+    {
         "judul": "Zombie Dad",
         "slug": "zombie-dad",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/86c09e92-0739-4997-8367-a93011825b1e.jpg",
-        "Updated": "2026-04-24T00:11:20.049781"
+        "Updated": "2026-04-24T03:54:11.564931"
     },
     {
         "judul": "Your Talent is Mine",
         "slug": "your-talent-is-mine",
         "thumb": "https://manhuaplus.org/uploads/covers/your-talent-is-mine.jpg",
-        "Updated": "2026-04-24T00:11:20.047781"
+        "Updated": "2026-04-24T03:54:11.562931"
     },
     {
         "judul": "The Evil Alchemist Can't Handle His Own Experiment",
         "slug": "xie-e-lianjin-shushi-gao-buding-ziji-de-shiyan-ti",
         "thumb": "https://manhuaplus.org/uploads/covers/xie-e-lianjin-shushi-gao-buding-ziji-de-shiyan-ti.jpg",
-        "Updated": "2026-04-24T00:11:20.039781"
+        "Updated": "2026-04-24T03:54:11.556931"
     },
     {
         "judul": "World's Strongest Survivor",
         "slug": "world-s-strongest-survivor",
         "thumb": "https://manhuaplus.org/uploads/covers/world-s-strongest-survivor.jpg",
-        "Updated": "2026-04-24T00:11:20.034781"
+        "Updated": "2026-04-24T03:54:11.552931"
     },
     {
         "judul": "Wicked Husband",
         "slug": "wicked-husband",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/09/cd429c91-6b10-4615-b47a-aa6d36e0d77c.webp",
-        "Updated": "2026-04-24T00:11:20.030780"
+        "Updated": "2026-04-24T03:54:11.549931"
     },
     {
         "judul": "Welcome to Dungeon Hotel",
         "slug": "welcome-to-dungeon-hotel",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/b66efc3a-6403-44dd-a220-468db4f833bb.jpg",
-        "Updated": "2026-04-24T00:11:20.017780"
+        "Updated": "2026-04-24T03:54:11.538931"
     },
     {
         "judul": "Villain to Kill",
         "slug": "villain-to-kill5001",
         "thumb": "https://manhuaplus.org/uploads/covers/villain-to-kill5001.jpg?1753522736",
-        "Updated": "2026-04-24T00:11:20.014780"
+        "Updated": "2026-04-24T03:54:11.535931"
     },
     {
         "judul": "Urban Legend Maker",
         "slug": "urban-legend-maker",
         "thumb": "https://manhuaplus.org/uploads/covers/urban-legend-maker.jpg",
-        "Updated": "2026-04-24T00:11:20.009780"
+        "Updated": "2026-04-24T03:54:11.531931"
     },
     {
         "judul": "I Became the Tyrant of a Defence Game",
         "slug": "tyrant-of-the-tower-defense-game",
         "thumb": "https://manhuaplus.org/uploads/covers/tyrant-of-the-tower-defense-game.jpg",
-        "Updated": "2026-04-24T00:11:19.992780"
+        "Updated": "2026-04-24T03:54:11.517930"
     },
     {
         "judul": "To Be an Actor",
         "slug": "to-be-an-actor",
         "thumb": "https://manhuaplus.org/uploads/covers/to-be-an-actor.jpg",
-        "Updated": "2026-04-24T00:11:19.961780"
+        "Updated": "2026-04-24T03:54:11.492930"
     },
     {
         "judul": "Three Months of Summer",
         "slug": "three-months-of-summer",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/8b004207-f1c5-4586-982a-380f4768c5a1.jpg",
-        "Updated": "2026-04-24T00:11:19.946779"
+        "Updated": "2026-04-24T03:54:11.479929"
     },
     {
         "judul": "There Are No Bad Warriors in This World",
         "slug": "there-are-no-bad-warriors-in-this-world",
         "thumb": "https://manhuaplus.org/uploads/covers/there-are-no-bad-warriors-in-this-world.jpg",
-        "Updated": "2026-04-24T00:11:19.938779"
+        "Updated": "2026-04-24T03:54:11.473929"
     },
     {
         "judul": "The Youngest Son of the Eunhae Merchant Group",
         "slug": "the-youngest-son-of-the-eunhae-merchant-group",
         "thumb": "https://manhuaplus.org/uploads/covers/the-youngest-son-of-the-eunhae-merchant-group.jpg",
-        "Updated": "2026-04-24T00:11:19.936779"
+        "Updated": "2026-04-24T03:54:11.471929"
     },
     {
         "judul": "The Yellow-Haired Villain in the Female Main Character's Novel Wants Happiness",
         "slug": "the-yellow-haired-villain-in-the-female-main-character-s-novel-wants-happiness",
         "thumb": "https://manhuaplus.org/uploads/covers/the-yellow-haired-villain-in-the-female-main-character-s-novel-wants-happiness.jpg",
-        "Updated": "2026-04-24T00:11:19.925779"
+        "Updated": "2026-04-24T03:54:11.462929"
     },
     {
         "judul": "The World-Class Extra's Walkthrough",
         "slug": "the-world-class-extra-s-walkthrough",
         "thumb": "https://manhuaplus.org/uploads/covers/the-world-class-extra-s-walkthrough.jpg",
-        "Updated": "2026-04-24T00:11:19.920779"
+        "Updated": "2026-04-24T03:54:11.458929"
     },
     {
         "judul": "The Witch and The Bull",
         "slug": "the-witch-and-the-bull",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/d5dfaa36-14e9-4d78-a9c5-9eaa09a6b835.jpg",
-        "Updated": "2026-04-24T00:11:19.914779"
+        "Updated": "2026-04-24T03:54:11.453929"
     },
     {
         "judul": "The Magic Tower's Problem Child",
         "slug": "the-white-tower-s-rogue-mage5",
         "thumb": "https://manhuaplus.org/uploads/covers/the-white-tower-s-rogue-mage.jpg",
-        "Updated": "2026-04-24T00:11:19.906779"
+        "Updated": "2026-04-24T03:54:11.447929"
     },
     {
         "judul": "Wail of a Dragon\u2019s Rage",
         "slug": "the-wailing-perversion",
         "thumb": "https://manhuaplus.org/uploads/covers/the-wailing-perversion.jpg",
-        "Updated": "2026-04-24T00:11:19.905779"
+        "Updated": "2026-04-24T03:54:11.445929"
     },
     {
         "judul": "The Villainess Tames a Capricious Demon",
         "slug": "the-villainess-tames-a-capricious-demon",
         "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Villainess-Tames-a-Capricious-Demon-193x278.webp",
-        "Updated": "2026-04-24T00:11:19.896779"
+        "Updated": "2026-04-24T03:54:11.438929"
     },
     {
         "judul": "The Villain Wants to Live",
         "slug": "the-villain-wants-to-live",
         "thumb": "https://manhuaplus.org/uploads/covers/the-villain-wants-to-live.jpg",
-        "Updated": "2026-04-24T00:11:19.890779"
+        "Updated": "2026-04-24T03:54:11.434929"
     },
     {
         "judul": "The Tutorial Is Too Tough!",
         "slug": "the-tutorial-is-too-tough",
         "thumb": "https://manhuaplus.org/uploads/covers/the-tutorial-is-too-tough.jpg",
-        "Updated": "2026-04-24T00:11:19.878778"
+        "Updated": "2026-04-24T03:54:11.424928"
     },
     {
         "judul": "The Terminally Ill Young Master of the Baek Clan",
         "slug": "the-terminally-ill-young-master-of-the-baek-clan",
         "thumb": "https://manhuaplus.org/uploads/covers/the-terminally-ill-young-master-of-the-baek-clan.jpg",
-        "Updated": "2026-04-24T00:11:19.859778"
+        "Updated": "2026-04-24T03:54:11.409928"
     },
     {
         "judul": "The Swordmaster's Son",
         "slug": "the-swordmaster-s-son",
         "thumb": "https://manhuaplus.org/uploads/covers/the-swordmaster-s-son.jpg?1748130687",
-        "Updated": "2026-04-24T00:11:19.847778"
+        "Updated": "2026-04-24T03:54:11.400928"
     },
     {
         "judul": "The Sword God from a Ruined World",
         "slug": "the-sword-god-from-a-ruined-world",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/4f36d4ff-39af-4ea2-8936-1c69ad954573.jpg",
-        "Updated": "2026-04-24T00:11:19.845778"
+        "Updated": "2026-04-24T03:54:11.398928"
     },
     {
         "judul": "The Sword God From a Fallen World",
         "slug": "the-sword-god-from-the-destroyed-world",
         "thumb": "https://manhuaplus.org/uploads/covers/the-sword-god-from-the-destroyed-world.jpg",
-        "Updated": "2026-04-24T00:11:19.845778"
+        "Updated": "2026-04-24T03:54:11.398928"
     },
     {
         "judul": "The Strongest Evolutionary Necromancer",
         "slug": "the-strongest-evolutionary-necromancer",
         "thumb": "https://manhuaplus.org/uploads/covers/the-strongest-evolutionary-necromancer.jpg",
-        "Updated": "2026-04-24T00:11:19.836778"
+        "Updated": "2026-04-24T03:54:11.391928"
     },
     {
         "judul": "The Spring Scent of the Sea",
         "slug": "the-spring-scent-of-the-sea",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dab8d4da-bb51-456b-bd02-e1403e8d3473.jpg",
-        "Updated": "2026-04-24T00:11:19.823778"
+        "Updated": "2026-04-24T03:54:11.379927"
     },
     {
         "judul": "The Saint Who Wishes for Death Makes a Pact with the Cursed Prince",
         "slug": "the-saint-who-wishes-for-death-makes-a-pact-with-the-cursed-prince",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/c17929c1-e3f0-4935-b9de-851ce4687dc8.webp",
-        "Updated": "2026-04-24T00:11:19.805778"
+        "Updated": "2026-04-24T03:54:11.365927"
     },
     {
         "judul": "The S-Rank Hunter\u2019s Healing Life with Monsters",
         "slug": "the-s-rank-hunter-s-healing-life-with-monsters",
         "thumb": "https://manhuaplus.org/uploads/covers/the-s-rank-hunter-s-healing-life-with-monsters.jpg",
-        "Updated": "2026-04-24T00:11:19.799778"
+        "Updated": "2026-04-24T03:54:11.360927"
     },
     {
         "judul": "The S-Class Little Princess Is Too Strong",
         "slug": "the-s-class-little-princess-is-too-strong",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/a7f21452-f0d7-477e-abc6-8ce94af51177.jpg",
-        "Updated": "2026-04-24T00:11:19.797777"
+        "Updated": "2026-04-24T03:54:11.358927"
     },
     {
         "judul": "The Rune Wars",
         "slug": "the-rune-wars",
         "thumb": "https://manhuaplus.org/uploads/covers/the-rune-wars.jpg",
-        "Updated": "2026-04-24T00:11:19.793777"
+        "Updated": "2026-04-24T03:54:11.355927"
     },
     {
         "judul": "The Returned C-Rank Tank Won't Die!",
         "slug": "the-returned-c-rank-tank-won-t-die",
         "thumb": "https://manhuaplus.org/uploads/covers/the-returned-c-rank-tank-won-t-die.jpg",
-        "Updated": "2026-04-24T00:11:19.792778"
+        "Updated": "2026-04-24T03:54:11.354927"
     },
     {
         "judul": "The Reset Life of a Game Addict",
         "slug": "the-reset-life-of-a-game-addict",
         "thumb": "https://manhuaplus.org/uploads/covers/the-reset-life-of-a-game-addict.jpg",
-        "Updated": "2026-04-24T00:11:19.788777"
+        "Updated": "2026-04-24T03:54:11.351927"
     },
     {
         "judul": "The Reincarnated Assassin Is a Swordmaster",
         "slug": "the-reincarnated-assassin-is-a-swordmaster",
         "thumb": "https://manhuaplus.org/uploads/covers/the-reincarnated-assassin-is-a-swordmaster.jpg",
-        "Updated": "2026-04-24T00:11:19.783777"
+        "Updated": "2026-04-24T03:54:11.346927"
     },
     {
         "judul": "Heavenly Inquisition Sword",
         "slug": "the-nine-heavens-swordmaster",
         "thumb": "https://manhuaplus.org/uploads/covers/the-nine-heavens-swordmaster.jpg",
-        "Updated": "2026-04-24T00:11:19.740777"
+        "Updated": "2026-04-24T03:54:11.311926"
     },
     {
         "judul": "The Necromancer Family's Young Heir",
         "slug": "the-necromancer-family-s-young-heir",
         "thumb": "https://manhuaplus.org/uploads/covers/the-necromancer-family-s-young-heir.jpg",
-        "Updated": "2026-04-24T00:11:19.736777"
+        "Updated": "2026-04-24T03:54:11.307926"
     },
     {
         "judul": "Max Level Player",
         "slug": "the-maxed-out-player",
         "thumb": "https://manhuaplus.org/uploads/covers/the-maxed-out-player.jpg",
-        "Updated": "2026-04-24T00:11:19.727777"
+        "Updated": "2026-04-24T03:54:11.300926"
     },
     {
         "judul": "The Max Level Hero has Returned!",
         "slug": "the-max-level-hero-strikes-back",
         "thumb": "https://manhuaplus.org/uploads/covers/the-max-level-hero-strikes-back.jpg",
-        "Updated": "2026-04-24T00:11:19.725777"
+        "Updated": "2026-04-24T03:54:11.298926"
     },
     {
         "judul": "Martial God Regressed to Level 2",
         "slug": "the-martial-god-who-regressed-back-to-level-2",
         "thumb": "https://manhuaplus.org/uploads/covers/the-martial-god-who-regressed-back-to-level-2.jpg",
-        "Updated": "2026-04-24T00:11:19.718776"
+        "Updated": "2026-04-24T03:54:11.292926"
     },
     {
         "judul": "The Loner Girl Who Holds the Heirs\u2019 Fate",
         "slug": "the-loner-girl-who-holds-the-heirs-fate",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/d1a0304f-beeb-4a85-9372-b47902a0d2a3.webp",
-        "Updated": "2026-04-24T00:11:19.706776"
+        "Updated": "2026-04-24T03:54:11.283925"
     },
     {
         "judul": "The Heavenly Path Is Not Stupid",
         "slug": "the-heavenly-path-is-not-stupid",
         "thumb": "https://manhuaplus.org/uploads/covers/the-heavenly-path-is-not-stupid.jpg",
-        "Updated": "2026-04-24T00:11:19.674776"
+        "Updated": "2026-04-24T03:54:11.256925"
     },
     {
         "judul": "The Great Ruler",
         "slug": "the-great-rulera01",
         "thumb": "https://manhuaplus.org/uploads/covers/the-great-rulera01.jpg?1699414811",
-        "Updated": "2026-04-24T00:11:19.648776"
+        "Updated": "2026-04-24T03:54:11.234924"
     },
     {
         "judul": "The Rebirth of the Hero\u2019s Party\u2019s Archmage",
         "slug": "the-great-mage-of-the-hero-s-party-reincarnates",
         "thumb": "https://manhuaplus.org/uploads/covers/the-great-mage-of-the-hero-s-party-reincarnates.jpg",
-        "Updated": "2026-04-24T00:11:19.643775"
+        "Updated": "2026-04-24T03:54:11.230924"
     },
     {
         "judul": "The Grand Mudang Saga",
         "slug": "the-grand-mudang-saga",
         "thumb": "https://manhuaplus.org/uploads/covers/the-grand-mudang-saga.jpg",
-        "Updated": "2026-04-24T00:11:19.642776"
+        "Updated": "2026-04-24T03:54:11.229924"
     },
     {
         "judul": "The Gilded Cage",
         "slug": "the-gilded-cage",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/91c5299f-9035-4e39-acc4-84677be59e8f.webp",
-        "Updated": "2026-04-24T00:11:19.631775"
-    },
-    {
-        "judul": "The Genius Swordsman of Mount Hua",
-        "slug": "the-genius-swordsman-of-mount-hua",
-        "thumb": "https://manhuaplus.org/uploads/covers/the-genius-swordsman-of-mount-hua.jpg",
-        "Updated": "2026-04-24T00:11:19.630775"
+        "Updated": "2026-04-24T03:54:11.221924"
     },
     {
         "judul": "The Genius Prismatic Mage",
         "slug": "the-genius-prismatic-mage",
         "thumb": "https://manhuaplus.org/uploads/covers/the-genius-prismatic-mage.jpg",
-        "Updated": "2026-04-24T00:11:19.629775"
+        "Updated": "2026-04-24T03:54:11.219924"
+    },
+    {
+        "judul": "The Genius Swordsman of Mount Hua",
+        "slug": "the-genius-swordsman-of-mount-hua",
+        "thumb": "https://manhuaplus.org/uploads/covers/the-genius-swordsman-of-mount-hua.jpg",
+        "Updated": "2026-04-24T03:54:11.219924"
     },
     {
         "judul": "The Fox-Eyed Villain of the Demon Academy",
         "slug": "the-fox-eyed-villain-of-the-demon-academy",
         "thumb": "https://manhuaplus.org/uploads/covers/the-fox-eyed-villain-of-the-demon-academy.jpg",
-        "Updated": "2026-04-24T00:11:19.624775"
+        "Updated": "2026-04-24T03:54:11.215924"
     },
     {
         "judul": "The Fatal Kiss",
         "slug": "the-fatal-kiss",
         "thumb": "https://arenascan.com/wp-content/uploads/2026/03/The-Fatal-Kiss.webp",
-        "Updated": "2026-04-24T00:11:19.621775"
+        "Updated": "2026-04-24T03:54:11.212924"
     },
     {
         "judul": "The Fake Saint of a Reverse Harem Game",
         "slug": "the-fake-saint-of-a-reverse-harem-game",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/04de97fb-b3b1-466f-abfd-44d04087080e.webp",
-        "Updated": "2026-04-24T00:11:19.619775"
+        "Updated": "2026-04-24T03:54:11.210924"
     },
     {
         "judul": "The End of a Fake Marriage",
         "slug": "the-end-of-a-fake-marriage",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/f23836ed-4622-4cc2-863b-40e0280699ad.webp",
-        "Updated": "2026-04-24T00:11:19.607775"
+        "Updated": "2026-04-24T03:54:11.201924"
     },
     {
         "judul": "The Demon Lord Reincarnated as a Slave ~Rising to the Top to Rewrite History~",
         "slug": "the-demon-lord-reincarnated-as-a-slave-rising-to-the-top-to-rewrite-history",
         "thumb": "https://manhuaplus.org/uploads/covers/the-demon-lord-reincarnated-as-a-slave-rising-to-the-top-to-rewrite-history.jpg",
-        "Updated": "2026-04-24T00:11:19.580775"
+        "Updated": "2026-04-24T03:54:11.179923"
     },
     {
         "judul": "The Delivery Man From Murim",
         "slug": "the-delivery-man-from-murim",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/5e44075f-b6f8-46d9-9792-c52e3d010e32.jpg",
-        "Updated": "2026-04-24T00:11:19.577775"
+        "Updated": "2026-04-24T03:54:11.176923"
     },
     {
         "judul": "The Count\u2019s Youngest Son Is a Player",
         "slug": "the-count-s-youngest-son-is-a-playerdfg",
         "thumb": "https://manhuaplus.org/uploads/covers/the-count-s-youngest-son-is-a-player.jpg",
-        "Updated": "2026-04-24T00:11:19.552774"
+        "Updated": "2026-04-24T03:54:11.156923"
     },
     {
         "judul": "The Constellations Are My Disciples",
         "slug": "the-constellations-are-my-disciples001",
         "thumb": "https://manhuaplus.org/uploads/covers/the-constellations-are-my-disciples001.jpg?1753521522",
-        "Updated": "2026-04-24T00:11:19.546774"
+        "Updated": "2026-04-24T03:54:11.151922"
     },
     {
         "judul": "The Chosen SSS-Rank",
         "slug": "the-chosen-sss-rank",
         "thumb": "https://manhuaplus.org/uploads/covers/the-chosen-sss-rank.jpg",
-        "Updated": "2026-04-24T00:11:19.538774"
+        "Updated": "2026-04-24T03:54:11.144922"
     },
     {
         "judul": "The Battle of Nations: I Will Subdue the World Through Pangu",
         "slug": "the-battle-of-nations-i-will-subdue-the-world-through-pangu",
         "thumb": "https://manhuaplus.org/uploads/covers/the-battle-of-nations-i-will-subdue-the-world-through-pangu.jpg",
-        "Updated": "2026-04-24T00:11:19.523774"
+        "Updated": "2026-04-24T03:54:11.132922"
     },
     {
         "judul": "The Art of Reincarnation",
         "slug": "the-art-of-reincarnation",
         "thumb": "https://manhuaplus.org/uploads/covers/the-art-of-reincarnation.jpg",
-        "Updated": "2026-04-24T00:11:19.518774"
+        "Updated": "2026-04-24T03:54:11.128922"
     },
     {
         "judul": "The Arrogant Man\u2019s Secretary",
         "slug": "the-arrogant-mans-secretary",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/ee1f81f3-1d92-4c41-acfa-7a16ba8cc006.webp",
-        "Updated": "2026-04-24T00:11:19.514774"
+        "Updated": "2026-04-24T03:54:11.124922"
     },
     {
         "judul": "The Arrogant President Wants to Change the Scenario and Fall in Love!",
         "slug": "the-arrogant-president-wants-to-change-the-scenario-and-fall-in-love",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/bc374b58-82ba-405f-a4bc-78b4bd20442a.jpg",
-        "Updated": "2026-04-24T00:11:19.514774"
+        "Updated": "2026-04-24T03:54:11.124922"
     },
     {
         "judul": "The Archmage's Restaurant",
         "slug": "the-archmage-s-restaurant",
         "thumb": "https://manhuaplus.org/uploads/covers/the-archmage-s-restaurant.jpg",
-        "Updated": "2026-04-24T00:11:19.513774"
+        "Updated": "2026-04-24T03:54:11.124922"
     },
     {
         "judul": "The Crown Prince That Sells Medicine",
         "slug": "the-apothecary-prince",
         "thumb": "https://manhuaplus.org/uploads/covers/the-apothecary-prince.jpg",
-        "Updated": "2026-04-24T00:11:19.504774"
+        "Updated": "2026-04-24T03:54:11.117922"
     },
     {
         "judul": "The Almighty Daughter Runs The World",
         "slug": "the-almighty-daughter-runs-the-world",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/62cbc0d4-25df-4acd-a978-b90c53da0df4.jpg",
-        "Updated": "2026-04-24T00:11:19.503774"
+        "Updated": "2026-04-24T03:54:11.116922"
     },
     {
         "judul": "The Academy\u2019s Sashimi Sword Master",
         "slug": "the-academy-s-sashimi-sword-master",
         "thumb": "https://manhuaplus.org/uploads/covers/the-academy-s-sashimi-sword-master.jpg",
-        "Updated": "2026-04-24T00:11:19.502774"
+        "Updated": "2026-04-24T03:54:11.116922"
     },
     {
         "judul": "The Academy's Genius Swordsman",
         "slug": "the-academy-s-genius-swordsman",
         "thumb": "https://manhuaplus.org/uploads/covers/the-academy-s-genius-swordsman.jpg",
-        "Updated": "2026-04-24T00:11:19.501774"
+        "Updated": "2026-04-24T03:54:11.114922"
     },
     {
         "judul": "The 100th Regression of the Max-Level Player",
         "slug": "the-100th-regression-of-the-max-level-player",
         "thumb": "https://manhuaplus.org/uploads/covers/the-100th-regression-of-the-max-level-player.jpg",
-        "Updated": "2026-04-24T00:11:19.497774"
+        "Updated": "2026-04-24T03:54:11.111922"
     },
     {
         "judul": "Terrarium Adventure",
         "slug": "terrarium-adventure",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/c3cfd630-62be-49fb-8e4f-0b56d2f63679.jpg",
-        "Updated": "2026-04-24T00:11:19.496774"
+        "Updated": "2026-04-24T03:54:11.110922"
     },
     {
         "judul": "Swordmaster\u2019s Youngest Son",
         "slug": "swordmasters-youngest-son",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/3e348d4e-33e2-4dbf-9c7a-db20edef6edc.jpg",
-        "Updated": "2026-04-24T00:11:19.488774"
+        "Updated": "2026-04-24T03:54:11.103922"
     },
     {
         "judul": "Surviving in a Romance Fantasy Novel",
         "slug": "surviving-in-a-romance-fantasy-novel",
         "thumb": "https://manhuaplus.org/uploads/covers/surviving-in-a-romance-fantasy-novel.jpg",
-        "Updated": "2026-04-24T00:11:19.482774"
+        "Updated": "2026-04-24T03:54:11.098922"
     },
     {
         "judul": "Surviving as a Genius on Borrowed Time",
         "slug": "surviving-as-a-genius-on-borrowed-time",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/846f0f9a-a1cd-4163-8e7c-1b2bd6f99af6.webp",
-        "Updated": "2026-04-24T00:11:19.478774"
+        "Updated": "2026-04-24T03:54:11.096921"
     },
     {
         "judul": "Supremely Talented Player",
         "slug": "supremely-talented-player",
         "thumb": "https://manhuaplus.org/uploads/covers/supremely-talented-player.jpg",
-        "Updated": "2026-04-24T00:11:19.475774"
+        "Updated": "2026-04-24T03:54:11.093921"
     },
     {
         "judul": "Steel-Eating Player",
         "slug": "steel-eating-player",
         "thumb": "https://manhuaplus.org/uploads/covers/steel-eating-player.jpg",
-        "Updated": "2026-04-24T00:11:19.448773"
+        "Updated": "2026-04-24T03:54:11.072921"
     },
     {
         "judul": "Starting as the Black Dragon Boss, I Am Invincible",
         "slug": "starting-as-the-black-dragon-boss-i-am-invincible",
         "thumb": "https://manhuaplus.org/uploads/covers/starting-as-the-black-dragon-boss-i-am-invincible.jpg",
-        "Updated": "2026-04-24T00:11:19.446773"
+        "Updated": "2026-04-24T03:54:11.070921"
     },
     {
         "judul": "SSS-Rank Lone Summoner",
         "slug": "sss-rank-lone-summoner",
         "thumb": "https://manhuaplus.org/uploads/covers/sss-rank-lone-summoner.jpg",
-        "Updated": "2026-04-24T00:11:19.442773"
+        "Updated": "2026-04-24T03:54:11.067921"
     },
     {
         "judul": "Solo Resurrection",
         "slug": "solo-resurrection",
         "thumb": "https://manhuaplus.org/uploads/covers/solo-resurrection.jpg",
-        "Updated": "2026-04-24T00:11:19.411773"
+        "Updated": "2026-04-24T03:54:11.043920"
     },
     {
         "judul": "Solo Leveling: Ragnarok",
         "slug": "solo-leveling-ragnarok",
         "thumb": "https://manhuaplus.org/uploads/covers/solo-leveling-ragnarok.jpg?1722441063",
-        "Updated": "2026-04-24T00:11:19.407773"
+        "Updated": "2026-04-24T03:54:11.039920"
     },
     {
         "judul": "Sir, Don't Show Off",
         "slug": "sir-don-t-show-off",
         "thumb": "https://manhuaplus.org/uploads/covers/sir-don-t-show-off.jpg",
-        "Updated": "2026-04-24T00:11:19.397773"
+        "Updated": "2026-04-24T03:54:11.031920"
     },
     {
         "judul": "Shadow\u2019s Resurgence",
         "slug": "shadow-s-resurgence",
         "thumb": "https://manhuaplus.org/uploads/covers/shadow-s-resurgence.jpg",
-        "Updated": "2026-04-24T00:11:19.378772"
+        "Updated": "2026-04-24T03:54:11.016920"
     },
     {
         "judul": "Shadow of the Supreme",
         "slug": "shadow-of-the-supreme",
         "thumb": "https://manhuaplus.org/uploads/covers/shadow-of-the-supreme.jpg",
-        "Updated": "2026-04-24T00:11:19.378772"
+        "Updated": "2026-04-24T03:54:11.016920"
     },
     {
         "judul": "I was more overpowered than the hero, so I hid my power!",
         "slug": "secretly-more-powerful-than-the-hero",
         "thumb": "https://manhuaplus.org/uploads/covers/secretly-more-powerful-than-the-hero.jpg",
-        "Updated": "2026-04-24T00:11:19.374772"
+        "Updated": "2026-04-24T03:54:11.013920"
     },
     {
         "judul": "Scoring the Sacred Body of the Ancients from the Get-go",
         "slug": "scoring-the-sacred-body-of-the-ancients-from-the-get-go",
         "thumb": "https://manhuaplus.org/uploads/covers/scoring-the-sacred-body-of-the-ancients-from-the-get-go.jpg",
-        "Updated": "2026-04-24T00:11:19.368772"
+        "Updated": "2026-04-24T03:54:11.007920"
     },
     {
         "judul": "Roses And Champagne",
         "slug": "roses-and-champagne",
         "thumb": "https://cdn.arenascan.com/arena-bucket/images/dflazy.jpg",
-        "Updated": "2026-04-24T00:11:19.357772"
+        "Updated": "2026-04-24T03:54:10.999919"
     },
     {
         "judul": "Rise of the Fallen Kingdom's Third Prince",
         "slug": "rise-of-the-fallen-kingdom-s-third-prince",
         "thumb": "https://manhuaplus.org/uploads/covers/rise-of-the-fallen-kingdom-s-third-prince.jpg",
-        "Updated": "2026-04-24T00:11:19.350772"
+        "Updated": "2026-04-24T03:54:10.993919"
     },
     {
         "judul": "Worthless Regression",
         "slug": "returning-with-absolutely-nothing",
         "thumb": "https://manhuaplus.org/uploads/covers/returning-with-absolutely-nothing.jpg",
-        "Updated": "2026-04-24T00:11:19.346772"
+        "Updated": "2026-04-24T03:54:10.990919"
     },
     {
         "judul": "Return of the Mad Demon",
         "slug": "return-of-the-mad-demonyugh5001",
         "thumb": "https://manhuaplus.org/uploads/covers/return-of-the-mad-demonyugh5001.jpg?1753522806",
-        "Updated": "2026-04-24T00:11:19.335772"
+        "Updated": "2026-04-24T03:54:10.981919"
     },
     {
         "judul": "Bloodhound\u2019s Regression Instinct",
         "slug": "return-of-the-hound",
         "thumb": "https://manhuaplus.org/uploads/covers/return-of-the-hound.jpg",
-        "Updated": "2026-04-24T00:11:19.330772"
+        "Updated": "2026-04-24T03:54:10.976919"
     },
     {
         "judul": "Return of the Apocalypse-Class Death Knight",
         "slug": "return-of-the-calamity-class-death-knight",
         "thumb": "https://manhuaplus.org/uploads/covers/return-of-the-calamity-class-death-knight.jpg",
-        "Updated": "2026-04-24T00:11:19.321772"
+        "Updated": "2026-04-24T03:54:10.968919"
     },
     {
         "judul": "Return of the Back Alley Wizard",
         "slug": "return-of-the-back-alley-wizard",
         "thumb": "https://manhuaplus.org/uploads/covers/return-of-the-back-alley-wizard.jpg",
-        "Updated": "2026-04-24T00:11:19.317771"
+        "Updated": "2026-04-24T03:54:10.965919"
     },
     {
         "judul": "Return From The Abyss",
         "slug": "return-from-the-depths",
         "thumb": "https://manhuaplus.org/uploads/covers/return-from-the-depths.jpg",
-        "Updated": "2026-04-24T00:11:19.316772"
+        "Updated": "2026-04-24T03:54:10.964919"
     },
     {
         "judul": "Return From The Depth",
         "slug": "return-from-the-depth",
         "thumb": "https://manhuaplus.org/uploads/covers/return-from-the-depth.jpg",
-        "Updated": "2026-04-24T00:11:19.316772"
+        "Updated": "2026-04-24T03:54:10.964919"
     },
     {
         "judul": "Reincarnation of the Hero Party's Grand Mage",
         "slug": "reincarnation-of-the-hero-party-s-grand-mage",
         "thumb": "https://manhuaplus.org/uploads/covers/reincarnation-of-the-hero-party-s-grand-mage.jpg",
-        "Updated": "2026-04-24T00:11:19.302771"
+        "Updated": "2026-04-24T03:54:10.952918"
     },
     {
         "judul": "Regressed, but the World Didn\u2019t End",
         "slug": "regressed-but-the-world-didn-t-end",
         "thumb": "https://manhuaplus.org/uploads/covers/regressed-but-the-world-didn-t-end.jpg",
-        "Updated": "2026-04-24T00:11:19.288771"
+        "Updated": "2026-04-24T03:54:10.941918"
     },
     {
         "judul": "Regenerate Top Players",
         "slug": "regenerate-top-players",
         "thumb": "https://manhuaplus.org/uploads/covers/regenerate-top-players.jpg",
-        "Updated": "2026-04-24T00:11:19.284771"
+        "Updated": "2026-04-24T03:54:10.939918"
     },
     {
         "judul": "The Chaebeol\u2019s Youngest Son",
         "slug": "reborn-rich4001",
         "thumb": "https://manhuaplus.org/uploads/covers/reborn-rich4001.jpg?1753522000",
-        "Updated": "2026-04-24T00:11:19.279771"
+        "Updated": "2026-04-24T03:54:10.934918"
     },
     {
         "judul": "The Ultimate Wantless Godly Rich System",
         "slug": "reckless-riches-the-divine-system",
         "thumb": "https://manhuaplus.org/uploads/covers/reckless-riches-the-divine-system.jpg",
-        "Updated": "2026-04-24T00:11:19.279771"
+        "Updated": "2026-04-24T03:54:10.934918"
     },
     {
         "judul": "Reborn as a Monster 2: Rise of the Beast God",
         "slug": "reborn-as-a-monster-2-rise-of-the-beast-god",
         "thumb": "https://manhuaplus.org/uploads/covers/reborn-as-a-monster-2-rise-of-the-beast-god.jpg",
-        "Updated": "2026-04-24T00:11:19.275771"
+        "Updated": "2026-04-24T03:54:10.931918"
     },
     {
         "judul": "Reborn as a Demonic Cultivator: Starting with a Zombie Planet",
         "slug": "reborn-as-a-demonic-cultivator-starting-with-a-zombie-planet",
         "thumb": "https://manhuaplus.org/uploads/covers/reborn-as-a-demonic-cultivator-starting-with-a-zombie-planet.jpg",
-        "Updated": "2026-04-24T00:11:19.273771"
+        "Updated": "2026-04-24T03:54:10.929918"
     },
     {
         "judul": "Rebirth Of The Ultimate Master",
         "slug": "rebirth-of-the-ultimate-master",
         "thumb": "https://manhuaplus.org/uploads/covers/rebirth-of-the-ultimate-master.jpg",
-        "Updated": "2026-04-24T00:11:19.273771"
+        "Updated": "2026-04-24T03:54:10.929918"
     },
     {
         "judul": "Reasons Not to Enter a Haunted house",
         "slug": "reasons-not-to-enter-a-haunted-house",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/8e73f1a4-5fe9-45f9-a0ad-f32d4e0522e6.webp",
-        "Updated": "2026-04-24T00:11:19.257771"
+        "Updated": "2026-04-24T03:54:10.915918"
     },
     {
         "judul": "Ranker's Return",
         "slug": "ranker-s-return",
         "thumb": "https://manhuaplus.org/uploads/covers/ranker-s-return.jpg",
-        "Updated": "2026-04-24T00:11:19.247771"
+        "Updated": "2026-04-24T03:54:10.907917"
     },
     {
         "judul": "Mood Disorder",
         "slug": "qingxu-bing",
         "thumb": "https://manhuaplus.org/uploads/covers/qingxu-bing.jpg",
-        "Updated": "2026-04-24T00:11:19.236770"
+        "Updated": "2026-04-24T03:54:10.898917"
     },
     {
         "judul": "Princess player",
         "slug": "princess-player",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/2987fe21-e8fd-4ff7-87b2-32a9dc2f4e03.jpg",
-        "Updated": "2026-04-24T00:11:19.232770"
+        "Updated": "2026-04-24T03:54:10.895917"
     },
     {
         "judul": "Playing the Perfect Fox-Eyed Villain",
         "slug": "playing-the-perfect-fox-eyed-villain",
         "thumb": "https://manhuaplus.org/uploads/covers/playing-the-perfect-fox-eyed-villain.jpg",
-        "Updated": "2026-04-24T00:11:19.219770"
+        "Updated": "2026-04-24T03:54:10.884917"
     },
     {
         "judul": "The Player Who Can't Level Up",
         "slug": "player-who-can-t-level-up",
         "thumb": "https://manhuaplus.org/uploads/covers/player-who-can-t-level-up.jpg",
-        "Updated": "2026-04-24T00:11:19.217770"
+        "Updated": "2026-04-24T03:54:10.883917"
     },
     {
         "judul": "Player Elimination Plan! When Anomalies Descend Upon The Human World",
         "slug": "player-elimination-plan-when-anomalies-descend-upon-the-human-world",
         "thumb": "https://manhuaplus.org/uploads/covers/player-elimination-plan-when-anomalies-descend-upon-the-human-world.jpg",
-        "Updated": "2026-04-24T00:11:19.215770"
+        "Updated": "2026-04-24T03:54:10.882917"
     },
     {
         "judul": "Overgeared",
         "slug": "overgeared",
         "thumb": "https://manhuaplus.org/uploads/covers/overgeared.jpg",
-        "Updated": "2026-04-24T00:11:19.190770"
+        "Updated": "2026-04-24T03:54:10.861916"
     },
     {
         "judul": "Our Guild\u2019s Idol",
         "slug": "our-guilds-idol",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/2eaba00c-b9ea-4427-b4e8-671bf7068089.webp",
-        "Updated": "2026-04-24T00:11:19.185770"
+        "Updated": "2026-04-24T03:54:10.857916"
     },
     {
         "judul": "One Hundred Thousand Years of Tribulation by Heavenly Thunder",
         "slug": "one-hundred-thousand-years-of-tribulation-by-heavenly-thunder",
         "thumb": "https://manhuaplus.org/uploads/covers/one-hundred-thousand-years-of-tribulation-by-heavenly-thunder.jpg",
-        "Updated": "2026-04-24T00:11:19.176770"
+        "Updated": "2026-04-24T03:54:10.849916"
     },
     {
         "judul": "Omae wa Tsuyo sugita to Nakama ni Uragirareta \"Moto S Rank Boukensha\" wa, Inaka de Slow Life o Okuritai",
         "slug": "omae-wa-tsuyo-sugita-to-nakama-ni-uragirareta-moto-s-rank-boukensha-wa-inaka-de-slow-life-o-okuritai",
         "thumb": "https://manhuaplus.org/uploads/covers/omae-wa-tsuyo-sugita-to-nakama-ni-uragirareta-moto-s-rank-boukensha-wa-inaka-de-slow-life-o-okuritai.jpg",
-        "Updated": "2026-04-24T00:11:19.170770"
+        "Updated": "2026-04-24T03:54:10.845916"
     },
     {
         "judul": "Odalisque",
         "slug": "odalisque",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/647cdda9-c534-4509-bcec-e72a7862b7cb.webp",
-        "Updated": "2026-04-24T00:11:19.164770"
+        "Updated": "2026-04-24T03:54:10.841916"
     },
     {
         "judul": "Nuclear Explosion Swordsmanship: One Slash, One Kill",
         "slug": "nuclear-explosion-swordsmanship-one-slash-one-kill",
         "thumb": "https://manhuaplus.org/uploads/covers/nuclear-explosion-swordsmanship-one-slash-one-kill.jpg",
-        "Updated": "2026-04-24T00:11:19.160769"
+        "Updated": "2026-04-24T03:54:10.838916"
     },
     {
         "judul": "Night of the Soulless Heathens",
         "slug": "night-of-the-soulless-heathens",
         "thumb": "https://manhuaplus.org/uploads/covers/night-of-the-soulless-heathens.jpg",
-        "Updated": "2026-04-24T00:11:19.151769"
+        "Updated": "2026-04-24T03:54:10.831916"
     },
     {
         "judul": "Necromancer Academy and the Genius Summoner",
         "slug": "necromancer-academy-and-the-genius-summoner",
         "thumb": "https://manhuaplus.org/uploads/covers/necromancer-academy-and-the-genius-summoner.jpg",
-        "Updated": "2026-04-24T00:11:19.149769"
+        "Updated": "2026-04-24T03:54:10.829916"
     },
     {
         "judul": "Nebula's Civilization",
         "slug": "nebula-s-civilization",
         "thumb": "https://manhuaplus.org/uploads/covers/nebula-s-civilization.jpg",
-        "Updated": "2026-04-24T00:11:19.147769"
+        "Updated": "2026-04-24T03:54:10.827916"
     },
     {
         "judul": "My Wife Is From a Thousand Years Ago",
         "slug": "my-wife-is-from-a-thousand-years-ago",
         "thumb": "https://manhuaplus.org/uploads/covers/my-wife-is-from-a-thousand-years-ago.jpg",
-        "Updated": "2026-04-24T00:11:19.132769"
+        "Updated": "2026-04-24T03:54:10.815915"
     },
     {
         "judul": "My Wife is a Heavenly Big Shot",
         "slug": "my-wife-is-a-heavenly-big-shot",
         "thumb": "https://manhuaplus.org/uploads/covers/my-wife-is-a-heavenly-big-shot.jpg",
-        "Updated": "2026-04-24T00:11:19.102769"
+        "Updated": "2026-04-24T03:54:10.790915"
     },
     {
         "judul": "My Status Window Went on Strike",
         "slug": "my-status-window-went-on-strike",
         "thumb": "https://manhuaplus.org/uploads/covers/my-status-window-went-on-strike.jpg",
-        "Updated": "2026-04-24T00:11:19.096769"
+        "Updated": "2026-04-24T03:54:10.785915"
     },
     {
         "judul": "My enemies became my companions",
         "slug": "my-enemies-became-my-companions",
         "thumb": "https://manhuaplus.org/uploads/covers/my-enemies-became-my-companions.jpg",
-        "Updated": "2026-04-24T00:11:19.067768"
+        "Updated": "2026-04-24T03:54:10.761914"
     },
     {
         "judul": "My Disciples Are All Big Villains",
         "slug": "my-disciples-are-all-big-villains001",
         "thumb": "https://manhuaplus.org/uploads/covers/my-disciples-are-all-big-villains.jpg",
-        "Updated": "2026-04-24T00:11:19.066768"
+        "Updated": "2026-04-24T03:54:10.760914"
     },
     {
         "judul": "My Disciples Cultivate, While I Slack Off!",
         "slug": "my-disciples-cultivate-while-i-slack-off",
         "thumb": "https://manhuaplus.org/uploads/covers/my-disciples-cultivate-while-i-slack-off.jpg",
-        "Updated": "2026-04-24T00:11:19.066768"
+        "Updated": "2026-04-24T03:54:10.760914"
     },
     {
         "judul": "My Brothers Dote On Me",
         "slug": "my-brothers-dote-on-me",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/31147f4b-837b-4c30-bd5e-0cd34d07d618.jpg",
-        "Updated": "2026-04-24T00:11:19.058768"
+        "Updated": "2026-04-24T03:54:10.753914"
     },
     {
         "judul": "All My Alter Egos Are Tycoons",
         "slug": "my-avatars-path-to-greatness",
         "thumb": "https://manhuaplus.org/uploads/covers/my-avatars-path-to-greatness.jpg",
-        "Updated": "2026-04-24T00:11:19.056768"
+        "Updated": "2026-04-24T03:54:10.752914"
     },
     {
         "judul": "My Apocalypse System Is Broken",
         "slug": "my-apocalypse-system-is-broken",
         "thumb": "https://manhuaplus.org/uploads/covers/my-apocalypse-system-is-broken.jpg",
-        "Updated": "2026-04-24T00:11:19.055768"
+        "Updated": "2026-04-24T03:54:10.751914"
     },
     {
         "judul": "Mr. Zombie",
         "slug": "mr-zombie",
         "thumb": "https://manhuaplus.org/uploads/covers/mr-zombie.jpg",
-        "Updated": "2026-04-24T00:11:19.055768"
+        "Updated": "2026-04-24T03:54:10.751914"
     },
     {
         "judul": "Monster Pet Evolution",
         "slug": "monster-pet-evolution",
         "thumb": "https://manhuaplus.org/uploads/covers/monster-pet-evolution.jpg",
-        "Updated": "2026-04-24T00:11:19.046768"
+        "Updated": "2026-04-24T03:54:10.743914"
     },
     {
         "judul": "Mirror Prepayment",
         "slug": "mirror-prepayment",
         "thumb": "https://manhuaplus.org/uploads/covers/mirror-prepayment.jpg",
-        "Updated": "2026-04-24T00:11:19.036768"
+        "Updated": "2026-04-24T03:54:10.735914"
     },
     {
         "judul": "Masters of Lightning Knives",
         "slug": "masters-of-lightning-knives",
         "thumb": "https://manhuaplus.org/uploads/covers/masters-of-lightning-knives.jpg",
-        "Updated": "2026-04-24T00:11:19.024768"
-    },
-    {
-        "judul": "Mary Psycho",
-        "slug": "mary-psycho",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/07/51e188ab-cf2d-4921-b738-ba379d5eb99b.jpg",
-        "Updated": "2026-04-24T00:11:19.019768"
+        "Updated": "2026-04-24T03:54:10.726913"
     },
     {
         "judul": "Martial Wild West",
         "slug": "martial-wild-west",
         "thumb": "https://manhuaplus.org/uploads/covers/martial-wild-west.jpg",
-        "Updated": "2026-04-24T00:11:19.018768"
+        "Updated": "2026-04-24T03:54:10.721913"
+    },
+    {
+        "judul": "Mary Psycho",
+        "slug": "mary-psycho",
+        "thumb": "https://arenascan.com/wp-content/uploads/2025/07/51e188ab-cf2d-4921-b738-ba379d5eb99b.jpg",
+        "Updated": "2026-04-24T03:54:10.721913"
     },
     {
         "judul": "Martial Peak",
         "slug": "martial-peak01",
         "thumb": "https://manhuaplus.org/uploads/covers/martial-peak.jpg?1695402656",
-        "Updated": "2026-04-24T00:11:19.015768"
+        "Updated": "2026-04-24T03:54:10.718913"
     },
     {
         "judul": "Lv.99 Burning Flame Princess",
         "slug": "lv-99-burning-flame-princess",
         "thumb": "https://manhuaplus.org/uploads/covers/lv-99-burning-flame-princess.jpg",
-        "Updated": "2026-04-24T00:11:18.961767"
+        "Updated": "2026-04-24T03:54:10.673913"
     },
     {
         "judul": "Love Is a Luxury!",
         "slug": "love-is-a-luxury",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/11/2459e996-d394-44b5-886d-b9b34622493f.webp",
-        "Updated": "2026-04-24T00:11:18.953767"
-    },
-    {
-        "judul": "Lout of Count's Family",
-        "slug": "lout-of-count-s-family",
-        "thumb": "https://manhuaplus.org/uploads/covers/lout-of-count-s-family.jpg",
-        "Updated": "2026-04-24T00:11:18.953767"
+        "Updated": "2026-04-24T03:54:10.667912"
     },
     {
         "judul": "Lord of The Apocalypse",
         "slug": "lord-of-the-apocalypse",
         "thumb": "https://manhuaplus.org/uploads/covers/lord-of-the-apocalypse.jpg",
-        "Updated": "2026-04-24T00:11:18.952767"
+        "Updated": "2026-04-24T03:54:10.666912"
+    },
+    {
+        "judul": "Lout of Count's Family",
+        "slug": "lout-of-count-s-family",
+        "thumb": "https://manhuaplus.org/uploads/covers/lout-of-count-s-family.jpg",
+        "Updated": "2026-04-24T03:54:10.666912"
     },
     {
         "judul": "Lord of Summoning! When Anomalies Descend Upon The Human World",
         "slug": "lord-of-summoning-when-anomalies-descend-upon-the-human-world",
         "thumb": "https://manhuaplus.org/uploads/covers/lord-of-summoning-when-anomalies-descend-upon-the-human-world.jpg",
-        "Updated": "2026-04-24T00:11:18.946767"
+        "Updated": "2026-04-24T03:54:10.661912"
     },
     {
         "judul": "Log-in Murim",
         "slug": "log-in-murim",
         "thumb": "https://manhuaplus.org/uploads/covers/log-in-murim.jpg",
-        "Updated": "2026-04-24T00:11:18.929767"
+        "Updated": "2026-04-24T03:54:10.647912"
     },
     {
         "judul": "Level Up with the Gods",
         "slug": "level-up-with-the-gods",
         "thumb": "https://manhuaplus.org/uploads/covers/level-up-with-the-gods.jpg",
-        "Updated": "2026-04-24T00:11:18.915766"
+        "Updated": "2026-04-24T03:54:10.635912"
     },
     {
         "judul": "Legendary Car-Hailing System",
         "slug": "legendary-car-hailing-system",
         "thumb": "https://manhuaplus.org/uploads/covers/legendary-car-hailing-system.jpg",
-        "Updated": "2026-04-24T00:11:18.905766"
+        "Updated": "2026-04-24T03:54:10.627911"
     },
     {
         "judul": "Leaving for My Younger Husband\u2019s Future: A Divorce Decision",
         "slug": "leaving-for-my-younger-husbands-future-a-divorce-decision",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/9ef736ae-5352-4edd-888b-07e1534067c1.jpg",
-        "Updated": "2026-04-24T00:11:18.902766"
+        "Updated": "2026-04-24T03:54:10.624911"
     },
     {
         "judul": "Infinite Leveling: Murim",
         "slug": "infinite-leveling-murim",
         "thumb": "https://manhuaplus.org/uploads/covers/infinite-leveling-murim.jpg",
-        "Updated": "2026-04-24T00:11:18.863766"
+        "Updated": "2026-04-24T03:54:10.592911"
     },
     {
         "judul": "I\u2019m the Villainous Male Lead\u2019s Terminally Ill Aunt",
         "slug": "im-the-villainous-male-leads-terminally-ill-aunt",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/0d928583-0acb-408a-8374-a6ed71dd792c.jpg",
-        "Updated": "2026-04-24T00:11:18.848766"
+        "Updated": "2026-04-24T03:54:10.579911"
     },
     {
         "judul": "I\u2019ll Retire After Saving the World",
         "slug": "ill-retire-after-saving-the-world",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/7aa2da2e-9cd9-4e17-a170-2bea3614197e.jpg",
-        "Updated": "2026-04-24T00:11:18.817765"
+        "Updated": "2026-04-24T03:54:10.555910"
     },
     {
         "judul": "I\u2019ll Enjoy My Route Even If I Can\u2019t Change It",
         "slug": "ill-enjoy-my-route-even-if-i-cant-change-it",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/11/8d82e8b1-b591-43b7-935c-42281dc99d58.webp",
-        "Updated": "2026-04-24T00:11:18.815765"
+        "Updated": "2026-04-24T03:54:10.553910"
     },
     {
         "judul": "I\u2019ll be Taking a Break for Personal Reasons",
         "slug": "ill-be-taking-a-break-for-personal-reasons",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/72670c67-3f84-46f7-8ad8-19b475a645df.jpg",
-        "Updated": "2026-04-24T00:11:18.814765"
+        "Updated": "2026-04-24T03:54:10.552910"
     },
     {
         "judul": "If I Don\u2019t Die Soon, I Will Rule The Demon Realm",
         "slug": "if-i-don-t-die-soon-i-ll-become-the-ruler-of-the-demon-realm",
         "thumb": "https://manhuaplus.org/uploads/covers/if-i-don-t-die-soon-i-ll-become-the-ruler-of-the-demon-realm.jpg",
-        "Updated": "2026-04-24T00:11:18.811765"
+        "Updated": "2026-04-24T03:54:10.550910"
     },
     {
         "judul": "Ice Master",
         "slug": "ice-master",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/12/1b755407-f21c-4ed4-b621-7bfe15406334.jpg",
-        "Updated": "2026-04-24T00:11:18.809765"
+        "Updated": "2026-04-24T03:54:10.548910"
     },
     {
         "judul": "Ice Lord",
         "slug": "ice-lord",
         "thumb": "https://manhuaplus.org/uploads/covers/ice-lord.jpg",
-        "Updated": "2026-04-24T00:11:18.808765"
+        "Updated": "2026-04-24T03:54:10.547910"
     },
     {
         "judul": "I Work Nine to Five in the Immortal Cultivation World",
         "slug": "i-work-nine-to-five-in-the-immortal-cultivation-world",
         "thumb": "https://manhuaplus.org/uploads/covers/i-work-nine-to-five-in-the-immortal-cultivation-world.jpg",
-        "Updated": "2026-04-24T00:11:18.807765"
+        "Updated": "2026-04-24T03:54:10.546910"
     },
     {
         "judul": "I Will Raise This Family to Greatness",
         "slug": "i-will-raise-this-family-to-greatness",
         "thumb": "https://manhuaplus.org/uploads/covers/i-will-raise-this-family-to-greatness.jpg",
-        "Updated": "2026-04-24T00:11:18.803765"
+        "Updated": "2026-04-24T03:54:10.543910"
     },
     {
         "judul": "I Will Become the Villain\u2019s Poison Detector",
         "slug": "i-will-become-the-villains-poison-detector",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/186d3fe1-cd0d-4286-91a9-947c13aa9a92.jpg",
-        "Updated": "2026-04-24T00:11:18.795765"
+        "Updated": "2026-04-24T03:54:10.537910"
     },
     {
         "judul": "I Used to be a Boss",
         "slug": "i-was-the-final-boss002",
         "thumb": "https://manhuaplus.org/uploads/covers/i-was-the-final-boss002.jpg?1753521749",
-        "Updated": "2026-04-24T00:11:18.793765"
+        "Updated": "2026-04-24T03:54:10.535909"
     },
     {
         "judul": "I Was Mistaken As a Monstrous Genius Actor",
         "slug": "i-was-immediately-mistaken-for-a-monster-genius-actor",
         "thumb": "https://manhuaplus.org/uploads/covers/i-was-immediately-mistaken-for-a-monster-genius-actor.jpg",
-        "Updated": "2026-04-24T00:11:18.775765"
+        "Updated": "2026-04-24T03:54:10.519909"
     },
     {
         "judul": "I Took Away the Tyrant\u2019s Virginity",
         "slug": "i-took-away-the-tyrants-virginity",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/a484d96b-b061-4f06-a981-c972b4c19407.jpg",
-        "Updated": "2026-04-24T00:11:18.761765"
+        "Updated": "2026-04-24T03:54:10.507909"
     },
     {
         "judul": "I Raised My Childhood Friend as a Tyrant",
         "slug": "i-raised-my-childhood-friend-as-a-tyrant",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/aa39175d-f22b-4238-871a-5500c9e76120.jpg",
-        "Updated": "2026-04-24T00:11:18.734764"
+        "Updated": "2026-04-24T03:54:10.485909"
     },
     {
         "judul": "I Opened an Illegal Veterinary Clinic in Another World",
         "slug": "i-opened-an-illegal-veterinary-clinic-in-another-world",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/10/952ceacb-c0a8-48b0-be99-f0ff1c536dde.webp",
-        "Updated": "2026-04-24T00:11:18.732764"
+        "Updated": "2026-04-24T03:54:10.483908"
     },
     {
         "judul": "I\u2019m the Master of this Life",
         "slug": "i-m-the-master-of-this-life",
         "thumb": "https://arenascan.com/wp-content/uploads/2026/03/Im-the-Master-of-this-Life.jpg",
-        "Updated": "2026-04-24T00:11:18.725764"
+        "Updated": "2026-04-24T03:54:10.478908"
     },
     {
         "judul": "I'm Really Not the Evil God's Lackey",
         "slug": "i-m-really-not-the-evil-god-s-lackey",
         "thumb": "https://manhuaplus.org/uploads/covers/i-m-really-not-the-evil-god-s-lackey.jpg",
-        "Updated": "2026-04-24T00:11:18.721764"
+        "Updated": "2026-04-24T03:54:10.475908"
     },
     {
         "judul": "I'm Really Not the Demon God's Lackey",
         "slug": "i-m-really-not-the-demon-god-s-lackey",
         "thumb": "https://manhuaplus.org/uploads/covers/i-m-really-not-the-demon-god-s-lackey.jpg",
-        "Updated": "2026-04-24T00:11:18.714764"
+        "Updated": "2026-04-24T03:54:10.468908"
     },
     {
         "judul": "I\u2019m Not That Kind of Talent",
         "slug": "i-m-not-that-kind-of-talent",
         "thumb": "https://manhuaplus.org/uploads/covers/i-m-not-that-kind-of-talent.jpg",
-        "Updated": "2026-04-24T00:11:18.713764"
+        "Updated": "2026-04-24T03:54:10.468908"
     },
     {
         "judul": "I\u2019m Going to Destroy this Country",
         "slug": "i-m-going-to-wipe-out-this-country",
         "thumb": "https://manhuaplus.org/uploads/covers/i-m-going-to-wipe-out-this-country.jpg",
-        "Updated": "2026-04-24T00:11:18.710764"
+        "Updated": "2026-04-24T03:54:10.465908"
     },
     {
         "judul": "I'm Being Mistaken for a Soccer Genius",
         "slug": "i-m-being-mistaken-for-a-soccer-genius",
         "thumb": "https://manhuaplus.org/uploads/covers/i-m-being-mistaken-for-a-soccer-genius.jpg",
-        "Updated": "2026-04-24T00:11:18.709764"
+        "Updated": "2026-04-24T03:54:10.464908"
     },
     {
         "judul": "I Grabbed The Leash Of The Blind Beast",
         "slug": "i-grabbed-the-leash-of-the-blind-beast",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/aacd6a3e-7f5f-4a54-8c11-d9a38d07ecfc.jpg",
-        "Updated": "2026-04-24T00:11:18.700764"
+        "Updated": "2026-04-24T03:54:10.457908"
     },
     {
         "judul": "Worthless Profession: Dragon Tamer",
         "slug": "i-got-the-weakest-class-dragon-tamer",
         "thumb": "https://manhuaplus.org/uploads/covers/i-got-the-weakest-class-dragon-tamer.jpg",
-        "Updated": "2026-04-24T00:11:18.700764"
+        "Updated": "2026-04-24T03:54:10.457908"
     },
     {
         "judul": "I Can See the Title",
         "slug": "i-can-see-the-title",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/12/0e96ac51-259e-43fc-bfa8-5a69f0f439fb.webp",
-        "Updated": "2026-04-24T00:11:18.679764"
+        "Updated": "2026-04-24T03:54:10.440907"
     },
     {
         "judul": "Returned as a Martial Genius",
         "slug": "i-came-back-as-a-martial-genius",
         "thumb": "https://manhuaplus.org/uploads/covers/i-came-back-as-a-martial-genius.jpg",
-        "Updated": "2026-04-24T00:11:18.677763"
+        "Updated": "2026-04-24T03:54:10.438907"
     },
     {
         "judul": "I Became the Villain\u2019s Trainer",
         "slug": "i-became-the-villain-s-trainer",
         "thumb": "https://arenascan.com/wp-content/uploads/2026/03/I-Became-the-Villains-Trainer.jpg",
-        "Updated": "2026-04-24T00:11:18.669763"
+        "Updated": "2026-04-24T03:54:10.431907"
     },
     {
         "judul": "I Became the Successor of the Martial God",
         "slug": "i-became-the-successor-of-the-martial-god",
         "thumb": "https://manhuaplus.org/uploads/covers/i-became-the-successor-of-the-martial-god.jpg",
-        "Updated": "2026-04-24T00:11:18.662763"
+        "Updated": "2026-04-24T03:54:10.427907"
     },
     {
         "judul": "I Became the Servant That Was Obsessed by the Crown Prince",
         "slug": "i-became-the-servant-that-was-obsessed-by-the-crown-prince",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/84339110-9c80-430e-920d-cb366b56ff41.jpg",
-        "Updated": "2026-04-24T00:11:18.662763"
+        "Updated": "2026-04-24T03:54:10.426907"
     },
     {
         "judul": "I Became The King by Scavenging",
         "slug": "i-became-the-king-by-scavenging",
         "thumb": "https://manhuaplus.org/uploads/covers/i-became-the-king-by-scavenging.jpg?1757940350",
-        "Updated": "2026-04-24T00:11:18.659763"
+        "Updated": "2026-04-24T03:54:10.424907"
     },
     {
         "judul": "I Became the First Prince: Legend of Sword\u2019s Song",
         "slug": "i-became-the-first-prince-legend-of-sword-s-song",
         "thumb": "https://manhuaplus.org/uploads/covers/i-became-the-first-prince-legend-of-sword-s-song.jpg",
-        "Updated": "2026-04-24T00:11:18.651763"
+        "Updated": "2026-04-24T03:54:10.416907"
     },
     {
         "judul": "I Became the Chef of the Dragon King",
         "slug": "i-became-the-chef-of-the-dragon-king",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/abe8691b-76cc-422c-9f59-1b889e8adc62.jpg",
-        "Updated": "2026-04-24T00:11:18.646763"
+        "Updated": "2026-04-24T03:54:10.413907"
     },
     {
         "judul": "I Became My Son\u2019s First Love",
         "slug": "i-became-my-sons-first-love",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/cf923580-f246-4dc0-8d1d-a61362cb7251.jpg",
-        "Updated": "2026-04-24T00:11:18.637763"
+        "Updated": "2026-04-24T03:54:10.406907"
     },
     {
         "judul": "I Am the Evil Wife of a Young Husband",
         "slug": "i-am-the-evil-wife-of-a-young-husband",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/bafb6b60-9528-441a-891a-5b4e393c46bd.jpg",
-        "Updated": "2026-04-24T00:11:18.619763"
+        "Updated": "2026-04-24T03:54:10.391906"
     },
     {
         "judul": "How to Use a Returner",
         "slug": "how-to-use-a-returner",
         "thumb": "https://manhuaplus.org/uploads/covers/how-to-use-a-returner.jpg",
-        "Updated": "2026-04-24T00:11:18.610763"
+        "Updated": "2026-04-24T03:54:10.383906"
     },
     {
         "judul": "How to Survive Restructuring",
         "slug": "how-to-survive-restructuring",
         "thumb": "https://manhuaplus.org/uploads/covers/how-to-survive-restructuring.jpg",
-        "Updated": "2026-04-24T00:11:18.602762"
+        "Updated": "2026-04-24T03:54:10.377906"
     },
     {
         "judul": "How a Catastrophic Necromancer Retires",
         "slug": "how-a-catastrophic-necromancer-retires",
         "thumb": "https://manhuaplus.org/uploads/covers/how-a-catastrophic-necromancer-retires.jpg",
-        "Updated": "2026-04-24T00:11:18.581762"
+        "Updated": "2026-04-24T03:54:10.359906"
     },
     {
         "judul": "Holy Hella's Ultimate End",
         "slug": "holy-hella-s-ultimate-end",
         "thumb": "https://manhuaplus.org/uploads/covers/holy-hella-s-ultimate-end.jpg",
-        "Updated": "2026-04-24T00:11:18.579762"
+        "Updated": "2026-04-24T03:54:10.358906"
     },
     {
         "judul": "Hiding a Warehouse in the Apocalypse",
         "slug": "hiding-a-warehouse-in-the-apocalypse",
         "thumb": "https://manhuaplus.org/uploads/covers/hiding-a-warehouse-in-the-apocalypse.jpg",
-        "Updated": "2026-04-24T00:11:18.574762"
+        "Updated": "2026-04-24T03:54:10.354906"
     },
     {
         "judul": "Hero X Demon Queen",
         "slug": "hero-x-demon-queen",
         "thumb": "https://manhuaplus.org/uploads/covers/hero-x-demon-queen.jpg",
-        "Updated": "2026-04-24T00:11:18.570762"
+        "Updated": "2026-04-24T03:54:10.350906"
     },
     {
         "judul": "Gods of all people: I sacrificed hundreds of millions of living beings to become a god",
         "slug": "gods-of-all-people-i-sacrificed-hundreds-of-millions-of-living-beings-to-become-a-god",
         "thumb": "https://manhuaplus.org/uploads/covers/gods-of-all-people-i-sacrificed-hundreds-of-millions-of-living-beings-to-become-a-god.jpg",
-        "Updated": "2026-04-24T00:11:18.546762"
+        "Updated": "2026-04-24T03:54:10.330905"
     },
     {
         "judul": "God of the Apocalypse",
         "slug": "god-of-the-apocalypse",
         "thumb": "https://manhuaplus.org/uploads/covers/god-of-the-apocalypse.jpg",
-        "Updated": "2026-04-24T00:11:18.543762"
+        "Updated": "2026-04-24T03:54:10.328905"
     },
     {
         "judul": "God-level Assassin, I\u2019m the Shadow",
         "slug": "god-level-assassin-i-m-the-shadow",
         "thumb": "https://manhuaplus.org/uploads/covers/god-level-assassin-i-m-the-shadow.jpg",
-        "Updated": "2026-04-24T00:11:18.541762"
+        "Updated": "2026-04-24T03:54:10.326905"
     },
     {
         "judul": "Goblin\u2019s Night",
         "slug": "goblin-s-night",
         "thumb": "https://manhuaplus.org/uploads/covers/goblin-s-night.jpg",
-        "Updated": "2026-04-24T00:11:18.539762"
+        "Updated": "2026-04-24T03:54:10.325905"
     },
     {
         "judul": "Ghost Romance",
         "slug": "ghost-romance",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/4254d3ce-424b-4ddb-80cf-09925614dec9.jpg",
-        "Updated": "2026-04-24T00:11:18.519762"
+        "Updated": "2026-04-24T03:54:10.308905"
     },
     {
         "judul": "Genius of the Unique Lineage",
         "slug": "genius-of-the-unique-lineage",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/c8b0a357-4392-4ecf-9a59-f1b6d4788085.jpg",
-        "Updated": "2026-04-24T00:11:18.512761"
+        "Updated": "2026-04-24T03:54:10.301904"
     },
     {
         "judul": "Genius Archer\u2019s Livestreaming",
         "slug": "genius-archer-s-livestreaming",
         "thumb": "https://manhuaplus.org/uploads/covers/genius-archer-s-livestreaming.jpg",
-        "Updated": "2026-04-24T00:11:18.508761"
+        "Updated": "2026-04-24T03:54:10.299904"
     },
     {
         "judul": "Fell Into the Arms of a Mad Villain",
         "slug": "fell-into-the-arms-of-a-mad-villain",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/531868b3-c74c-478f-99b3-78b3e9923374.jpg",
-        "Updated": "2026-04-24T00:11:18.482761"
+        "Updated": "2026-04-24T03:54:10.277904"
     },
     {
         "judul": "Fated to Be Loved by Villains",
         "slug": "fated-to-be-loved-by-villains",
         "thumb": "https://manhuaplus.org/uploads/covers/fated-to-be-loved-by-villains.jpg",
-        "Updated": "2026-04-24T00:11:18.475761"
+        "Updated": "2026-04-24T03:54:10.272904"
     },
     {
         "judul": "F-Class Destiny Hunter",
         "slug": "f-rank-fortune-hunter",
         "thumb": "https://manhuaplus.org/uploads/covers/f-rank-fortune-hunter.jpg",
-        "Updated": "2026-04-24T00:11:18.475761"
+        "Updated": "2026-04-24T03:54:10.271904"
     },
     {
         "judul": "Esteemed Female Masters All Want to Possess Me",
         "slug": "esteemed-female-masters-all-want-to-possess-me",
         "thumb": "https://manhuaplus.org/uploads/covers/esteemed-female-masters-all-want-to-possess-me.jpg",
-        "Updated": "2026-04-24T00:11:18.466761"
+        "Updated": "2026-04-24T03:54:10.264904"
     },
     {
         "judul": "Transcension Academy",
         "slug": "enrolling-in-the-transcendent-academyswetf5001",
         "thumb": "https://manhuaplus.org/uploads/covers/enrolling-in-the-transcendent-academyswetf566.jpg?1753521056",
-        "Updated": "2026-04-24T00:11:18.464761"
+        "Updated": "2026-04-24T03:54:10.262904"
     },
     {
         "judul": "Emperor of Steel",
         "slug": "emperor-of-steel",
         "thumb": "https://manhuaplus.org/uploads/covers/emperor-of-steel.jpg",
-        "Updated": "2026-04-24T00:11:18.461761"
+        "Updated": "2026-04-24T03:54:10.260904"
     },
     {
         "judul": "Elqueeness",
         "slug": "elqueeness",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/d3d81fbf-0548-42e0-9173-24582a184f9a.jpg",
-        "Updated": "2026-04-24T00:11:18.446761"
+        "Updated": "2026-04-24T03:54:10.248903"
     },
     {
         "judul": "Dukedom\u2019s Legendary Prodigy",
         "slug": "dukedom-s-legendary-prodigy",
         "thumb": "https://manhuaplus.org/uploads/covers/dukedom-s-legendary-prodigy.jpg",
-        "Updated": "2026-04-24T00:11:18.432760"
+        "Updated": "2026-04-24T03:54:10.237903"
     },
     {
         "judul": "Dragon Master",
         "slug": "dragon-master",
         "thumb": "https://manhuaplus.org/uploads/covers/dragon-master.jpg",
-        "Updated": "2026-04-24T00:11:18.426760"
+        "Updated": "2026-04-24T03:54:10.232903"
     },
     {
         "judul": "Doomspawn: I Evolve to Ultimate Therianthrope",
         "slug": "doomspawn-i-evolve-to-ultimate-therianthrope",
         "thumb": "https://manhuaplus.org/uploads/covers/doomspawn-i-evolve-to-ultimate-therianthrope.jpg",
-        "Updated": "2026-04-24T00:11:18.424760"
+        "Updated": "2026-04-24T03:54:10.230903"
     },
     {
         "judul": "Doomsday Game: Rise of the Villain",
         "slug": "doomsday-game-rise-of-the-villain",
         "thumb": "https://manhuaplus.org/uploads/covers/doomsday-game-rise-of-the-villain.jpg",
-        "Updated": "2026-04-24T00:11:18.423760"
+        "Updated": "2026-04-24T03:54:10.229903"
     },
     {
         "judul": "Dominating the Wasteland: I Control an Immortal Sect in the Apocalypse",
         "slug": "dominating-the-wasteland-i-control-an-immortal-sect-in-the-apocalypse",
         "thumb": "https://manhuaplus.org/uploads/covers/dominating-the-wasteland-i-control-an-immortal-sect-in-the-apocalypse.jpg",
-        "Updated": "2026-04-24T00:11:18.415760"
+        "Updated": "2026-04-24T03:54:10.223903"
     },
     {
         "judul": "Disaster Is Always Nearby",
         "slug": "disaster-is-always-nearby",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/09cab828-63e6-4ed3-9e8c-4ef45ae4feb8.webp",
-        "Updated": "2026-04-24T00:11:18.407760"
-    },
-    {
-        "judul": "Talent-Swallowing Magician",
-        "slug": "demon-devourer",
-        "thumb": "https://manhuaplus.org/uploads/covers/demon-devourer.jpg",
-        "Updated": "2026-04-24T00:11:18.380760"
+        "Updated": "2026-04-24T03:54:10.216903"
     },
     {
         "judul": "Demon Instructor's Return",
         "slug": "demon-instructor-s-return",
         "thumb": "https://manhuaplus.org/uploads/covers/demon-instructor-s-return.jpg",
-        "Updated": "2026-04-24T00:11:18.380760"
+        "Updated": "2026-04-24T03:54:10.194902"
+    },
+    {
+        "judul": "Talent-Swallowing Magician",
+        "slug": "demon-devourer",
+        "thumb": "https://manhuaplus.org/uploads/covers/demon-devourer.jpg",
+        "Updated": "2026-04-24T03:54:10.193902"
     },
     {
         "judul": "Creepy Pharmacist: All My Patients are Horrific",
         "slug": "creepy-pharmacist-all-my-patients-are-horrific",
         "thumb": "https://manhuaplus.org/uploads/covers/creepy-pharmacist-all-my-patients-are-horrific.jpg",
-        "Updated": "2026-04-24T00:11:18.364759"
+        "Updated": "2026-04-24T03:54:10.180902"
     },
     {
         "judul": "Chronicles of the Reincarnated Demon God",
         "slug": "chronicles-of-the-reincarnated-demon-god555456",
         "thumb": "https://manhuaplus.org/uploads/covers/chronicles-of-the-reincarnated-demon-god.jpg",
-        "Updated": "2026-04-24T00:11:18.359760"
+        "Updated": "2026-04-24T03:54:10.176902"
     },
     {
         "judul": "Surviving as a Genius on Borrowed Time",
         "slug": "chronicles-of-a-doomed-prodigy0542",
         "thumb": "https://manhuaplus.org/uploads/covers/chronicles-of-a-doomed-prodigy.jpg",
-        "Updated": "2026-04-24T00:11:18.355759"
+        "Updated": "2026-04-24T03:54:10.173902"
     },
     {
         "judul": "Heavenly Grand Archive's Young Master",
         "slug": "cheonhwa-archive-s-young-master",
         "thumb": "https://manhuaplus.org/uploads/covers/cheonhwa-archive-s-young-master.jpg",
-        "Updated": "2026-04-24T00:11:18.351759"
+        "Updated": "2026-04-24T03:54:10.170902"
     },
     {
         "judul": "Celebrating the Remaining Life",
         "slug": "celebrating-the-remaining-life",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/09/86aa2f46-e4b9-4026-80a7-00ac0f7f813e.webp",
-        "Updated": "2026-04-24T00:11:18.349759"
+        "Updated": "2026-04-24T03:54:10.168902"
     },
     {
         "judul": "Catastrophic Priest",
         "slug": "catastrophic-priest",
         "thumb": "https://manhuaplus.org/uploads/covers/catastrophic-priest.jpg",
-        "Updated": "2026-04-24T00:11:18.340759"
+        "Updated": "2026-04-24T03:54:10.160902"
     },
     {
         "judul": "Breaking Into the Body of the Emperor's Daughter",
         "slug": "breaking-into-the-body-of-the-emperor-s-daughter",
         "thumb": "https://manhuaplus.org/uploads/covers/breaking-into-the-body-of-the-emperor-s-daughter.jpg",
-        "Updated": "2026-04-24T00:11:18.334759"
+        "Updated": "2026-04-24T03:54:10.155901"
     },
     {
         "judul": "Don't Tell Me You Think Cultivating Immortality Is Difficult?",
         "slug": "bu-hui-zhen-youren-juede-xiuxian-nan-ba",
         "thumb": "https://manhuaplus.org/uploads/covers/bu-hui-zhen-youren-juede-xiuxian-nan-ba.jpg",
-        "Updated": "2026-04-24T00:11:18.334759"
+        "Updated": "2026-04-24T03:54:10.155901"
     },
     {
         "judul": "Boundless Ascension",
         "slug": "boundless-ascensionasdw7001",
         "thumb": "https://manhuaplus.org/uploads/covers/boundless-ascensionasdw7001.jpg?1753521666",
-        "Updated": "2026-04-24T00:11:18.332759"
+        "Updated": "2026-04-24T03:54:10.154901"
     },
     {
         "judul": "Bluebird Lady and The White Lion Family",
         "slug": "bluebird-lady-and-the-white-lion-family",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/00121e77-e33a-4984-a2e9-e8e0ebd2ae8d.jpg",
-        "Updated": "2026-04-24T00:11:18.317759"
+        "Updated": "2026-04-24T03:54:10.142901"
     },
     {
         "judul": "Blink Master of the Magic Academy",
         "slug": "blink-master-of-the-magic-academy",
         "thumb": "https://manhuaplus.org/uploads/covers/blink-master-of-the-magic-academy.jpg",
-        "Updated": "2026-04-24T00:11:18.316759"
+        "Updated": "2026-04-24T03:54:10.140901"
     },
     {
         "judul": "Biography of Hwiyeong Sword",
         "slug": "biography-of-hwiyeong-sword",
         "thumb": "https://manhuaplus.org/uploads/covers/biography-of-hwiyeong-sword.jpg",
-        "Updated": "2026-04-24T00:11:18.311759"
+        "Updated": "2026-04-24T03:54:10.136901"
     },
     {
         "judul": "Best Teacher Baek",
         "slug": "best-teacher-baek4001",
         "thumb": "https://manhuaplus.org/uploads/covers/best-teacher-baek4001.jpg?1753522631",
-        "Updated": "2026-04-24T00:11:18.305759"
+        "Updated": "2026-04-24T03:54:10.132901"
     },
     {
         "judul": "Becoming a God, Starting as water monkey",
         "slug": "becoming-a-god-starting-as-water-monkey",
         "thumb": "https://manhuaplus.org/uploads/covers/becoming-a-god-starting-as-water-monkey.jpg",
-        "Updated": "2026-04-24T00:11:18.289759"
+        "Updated": "2026-04-24T03:54:10.118901"
     },
     {
         "judul": "Become the Strongest Hero Through the Cheat System",
         "slug": "become-the-strongest-hero-through-the-cheat-system",
         "thumb": "https://manhuaplus.org/uploads/covers/become-the-strongest-hero-through-the-cheat-system.jpg",
-        "Updated": "2026-04-24T00:11:18.288759"
+        "Updated": "2026-04-24T03:54:10.117901"
     },
     {
         "judul": "Beast Taming: Starting With the Classic of Mountains and Seas, Sweeping Across the Globe",
         "slug": "beast-taming-starting-with-the-classic-of-mountains-and-seas-sweeping-across-the-globe",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/12/ec0af2ad-2a6a-4505-9100-d6bca4a9eca9.jpg",
-        "Updated": "2026-04-24T00:11:18.284759"
+        "Updated": "2026-04-24T03:54:10.114901"
     },
     {
         "judul": "Barbarian's Adventure in a Fantasy World",
         "slug": "barbarian-s-adventure-in-a-fantasy-world",
         "thumb": "https://manhuaplus.org/uploads/covers/barbarian-s-adventure-in-a-fantasy-world.jpg",
-        "Updated": "2026-04-24T00:11:18.278759"
+        "Updated": "2026-04-24T03:54:10.109900"
     },
     {
         "judul": "Aristocrat\u2019s Revenge",
         "slug": "aristocrat-s-revenge",
         "thumb": "https://manhuaplus.org/uploads/covers/aristocrat-s-revenge.jpg",
-        "Updated": "2026-04-24T00:11:18.254758"
+        "Updated": "2026-04-24T03:54:10.090900"
     },
     {
         "judul": "Arctic Cold War",
         "slug": "arctic-cold-war",
         "thumb": "https://manhuaplus.org/uploads/covers/arctic-cold-war.jpg",
-        "Updated": "2026-04-24T00:11:18.253758"
+        "Updated": "2026-04-24T03:54:10.089900"
     },
     {
         "judul": "Apocalypse: Cockroaches Gives Me Buff",
         "slug": "apocalypse-cockroaches-gives-me-buff",
         "thumb": "https://manhuaplus.org/uploads/covers/apocalypse-cockroaches-gives-me-buff.jpg",
-        "Updated": "2026-04-24T00:11:18.250758"
+        "Updated": "2026-04-24T03:54:10.086900"
     },
     {
         "judul": "Anti-hero at the bottom of the job caste system",
         "slug": "anti-hero-at-the-bottom-of-the-job-caste-system",
         "thumb": "https://manhuaplus.org/uploads/covers/anti-hero-at-the-bottom-of-the-job-caste-system.jpg",
-        "Updated": "2026-04-24T00:11:18.248758"
+        "Updated": "2026-04-24T03:54:10.085900"
     },
     {
         "judul": "Ancestor is beautiful and elegant",
         "slug": "ancestor-is-beautiful-and-elegant",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/a2b973dd-ff85-4935-8c35-f70bf2258011.webp",
-        "Updated": "2026-04-24T00:11:18.247758"
+        "Updated": "2026-04-24T03:54:10.084900"
     },
     {
         "judul": "All Soccer Talents Are Mine",
         "slug": "all-soccer-talents-are-mine",
         "thumb": "https://manhuaplus.org/uploads/covers/all-soccer-talents-are-mine.jpg",
-        "Updated": "2026-04-24T00:11:18.239758"
+        "Updated": "2026-04-24T03:54:10.078900"
     },
     {
         "judul": "All People Scramble for the Tower, I Cleared 999 Floors in Advance Manga",
         "slug": "all-people-scramble-for-the-tower-i-cleared-999-floors-in-advance-manga",
         "thumb": "https://manhuaplus.org/uploads/covers/all-people-scramble-for-the-tower-i-cleared-999-floors-in-advance-manga.jpg",
-        "Updated": "2026-04-24T00:11:18.239758"
+        "Updated": "2026-04-24T03:54:10.077900"
     },
     {
         "judul": "All-Master Necromancer",
         "slug": "all-master-necromancer",
         "thumb": "https://manhuaplus.org/uploads/covers/all-master-necromancer.jpg",
-        "Updated": "2026-04-24T00:11:18.239758"
+        "Updated": "2026-04-24T03:54:10.077900"
     },
     {
         "judul": "After Prison: The Real Heiress Claps Back",
         "slug": "after-prison-the-real-heiress-claps-back",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/09/b63e25e8-60cb-468f-8f35-29e92c105de0.webp",
-        "Updated": "2026-04-24T00:11:18.221758"
+        "Updated": "2026-04-24T03:54:10.062899"
     },
     {
         "judul": "Adopted by a Murderous Duke Family",
         "slug": "adopted-by-a-murderous-duke-family",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Adopted-by-a-Murderous-Duke-Family.jpg",
-        "Updated": "2026-04-24T00:11:18.217758"
+        "Updated": "2026-04-24T03:54:10.059899"
     },
     {
         "judul": "Admission is a Waste of Time",
         "slug": "admission-is-a-waste-of-time",
         "thumb": "https://manhuaplus.org/uploads/covers/admission-is-a-waste-of-time.jpg",
-        "Updated": "2026-04-24T00:11:18.214758"
+        "Updated": "2026-04-24T03:54:10.056899"
     },
     {
         "judul": "Academy's Undercover Professor",
         "slug": "academy-s-undercover-professor",
         "thumb": "https://manhuaplus.org/uploads/covers/academy-s-undercover-professor.jpg",
-        "Updated": "2026-04-24T00:11:18.211758"
+        "Updated": "2026-04-24T03:54:10.054899"
     },
     {
         "judul": "A Tree Without Roots",
         "slug": "a-tree-without-roots",
         "thumb": "https://cdn.arenascan.com/arena-bucket/images/dflazy.jpg",
-        "Updated": "2026-04-24T00:11:18.181757"
+        "Updated": "2026-04-24T03:54:10.028899"
     },
     {
         "judul": "A Stepmother\u2019s M\u00e4rchen",
         "slug": "a-stepmothers-marchen",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/f34f8461-6efc-4558-8b46-a9db7a8f09c8.jpg",
-        "Updated": "2026-04-24T00:11:18.179757"
+        "Updated": "2026-04-24T03:54:10.026899"
     },
     {
         "judul": "A Regressor\u2019s Tale of Cultivation",
         "slug": "a-regressor-s-tale-of-cultivation",
         "thumb": "https://manhuaplus.org/uploads/covers/a-regressor-s-tale-of-cultivation.jpg",
-        "Updated": "2026-04-24T00:11:18.170757"
+        "Updated": "2026-04-24T03:54:10.019898"
     },
     {
         "judul": "A happy ending without romance",
         "slug": "a-happy-ending-without-romance",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/78075f2e-05b2-4b74-b3b8-939d6915f29b.webp",
-        "Updated": "2026-04-24T00:11:18.161757"
+        "Updated": "2026-04-24T03:54:10.010898"
     },
     {
         "judul": "A Genius Wizard Who Breaks Boundaries",
         "slug": "a-genius-wizard-who-breaks-boundaries",
         "thumb": "https://manhuaplus.org/uploads/covers/a-genius-wizard-who-breaks-boundaries.jpg?1748348304",
-        "Updated": "2026-04-24T00:11:18.155757"
+        "Updated": "2026-04-24T03:54:10.005898"
     },
     {
         "judul": "A Cadet Becomes a Prophet?!",
         "slug": "a-cadet-becomes-a-prophet",
         "thumb": "https://manhuaplus.org/uploads/covers/a-cadet-becomes-a-prophet.jpg",
-        "Updated": "2026-04-24T00:11:18.127757"
+        "Updated": "2026-04-24T03:54:09.982898"
     },
     {
         "judul": "I\u2019m Actually a Cultivation Bigshot",
         "slug": "a-big-shot-actually",
         "thumb": "https://manhuaplus.org/uploads/covers/a-big-shot-actually.jpg",
-        "Updated": "2026-04-24T00:11:18.125757"
+        "Updated": "2026-04-24T03:54:09.981898"
     },
     {
         "judul": "The Fundamental Law",
@@ -1704,12 +1848,6 @@
         "Updated": "2026-04-23T17:53:56.663815"
     },
     {
-        "judul": "The Fake Master Who Accidentally Became the Strongest",
-        "slug": "the-fake-master-who-accidentally-became-the-strongest",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/7dffb806-4da6-4eaf-a03c-4f14ae03013a.jpg",
-        "Updated": "2026-04-23T17:53:56.661522"
-    },
-    {
         "judul": "Reincarnator",
         "slug": "reincarnator",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/def2727a-c908-485c-9115-1200da66d9f4.jpg",
@@ -1778,7 +1916,7 @@
     {
         "judul": "Crimson Reset",
         "slug": "crimson-reset",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/8cae79cb-ca02-4b51-9704-f96baced26f8.webp",
+        "thumb": "https://manhuaplus.org/uploads/covers/crimson-reset.jpg",
         "Updated": "2026-04-23T16:16:54.179496"
     },
     {
@@ -1994,7 +2132,7 @@
     {
         "judul": "I Rely on My Invincibility to Deal Tons of Damage Passively!",
         "slug": "i-rely-on-my-invincibility-to-deal-tons-of-damage-passively",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/3d1ded42-dbcb-48ce-8a7d-4bfc1a28c26f.webp",
+        "thumb": "https://manhuaplus.org/uploads/covers/i-rely-on-my-invincibility-to-deal-tons-of-damage-passively.jpg",
         "Updated": "2026-04-23T10:02:24.617327"
     },
     {
@@ -2038,12 +2176,6 @@
         "slug": "lord-of-summons-sudden-mutation",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/f1311ace-b17b-4504-b37d-a0ecdc2b9e76.webp",
         "Updated": "2026-04-23T10:02:24.435675"
-    },
-    {
-        "judul": "After I Died, My Childhood Husband",
-        "slug": "after-i-died-my-childhood-husband",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/272b2f2f-c160-4be9-93a1-7128547425e8.webp",
-        "Updated": "2026-04-23T10:02:24.422853"
     },
     {
         "judul": "Escaping from the Prince\u2019s Broken Engagement",
@@ -2878,12 +3010,6 @@
         "slug": "terminally-ill-genius-dark-knight",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/45465274-fb98-4e52-a70a-4aff60061f84.jpg",
         "Updated": "2026-04-22T03:00:28.955499"
-    },
-    {
-        "judul": "The Wandering Knight\u2019s Survival Manual",
-        "slug": "the-wandering-knights-survival-manual",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/1f180f70-9fa1-4cdc-a36d-09205366e6c4.jpg",
-        "Updated": "2026-04-22T03:00:28.943819"
     },
     {
         "judul": "Regas",
@@ -5202,12 +5328,6 @@
         "Updated": "2026-04-19T06:05:21.712163"
     },
     {
-        "judul": "You Are My Thousands of Stars",
-        "slug": "you-are-my-thousands-of-stars",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/b37d7305-d51a-42df-90af-e20716682c38.webp",
-        "Updated": "2026-04-19T06:05:21.710425"
-    },
-    {
         "judul": "I Really Don\u2019t Want to Learn Forbidden Spells",
         "slug": "i-really-dont-want-to-learn-forbidden-spells",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/a66468fc-f201-475a-afdf-ba44b631f41e.jpg",
@@ -5308,12 +5428,6 @@
         "slug": "elegant-aubrey",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/5ce6ab02-660d-4369-8192-582b3ff4f569.jpg",
         "Updated": "2026-04-19T03:47:04.980027"
-    },
-    {
-        "judul": "Magic Emperor",
-        "slug": "demon-magic-emperor",
-        "thumb": "https://manhuaplus.org/uploads/covers/demon-magic-emperor.jpg?1697626580",
-        "Updated": "2026-04-19T03:47:04.943984"
     },
     {
         "judul": "I Was Captured by the Yandere Duke Who Was My Husband in My Previous Life",
@@ -6366,12 +6480,6 @@
         "Updated": "2026-04-17T06:09:00.832643"
     },
     {
-        "judul": "I don\u2019t know the original, I\u2019m too busy trying to make a living",
-        "slug": "i-dont-know-the-original-im-too-busy-trying-to-make-a-living",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/07/cc5a6bef-1900-486a-906e-41a9a4674117.jpg",
-        "Updated": "2026-04-17T06:09:00.767664"
-    },
-    {
         "judul": "I\u2019d Rather Marry a Memorial Tablet Than Serve as a Concubine",
         "slug": "id-rather-marry-a-memorial-tablet-than-serve-as-a-concubine",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/11/126b3ece-5830-4e79-a2a2-b81fb56bc218.webp",
@@ -6388,18 +6496,6 @@
         "slug": "how-to-protect-the-master-of-the-monster-mansion",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/6779a5a5-7b4a-4a05-a827-ccce9c700181.jpg",
         "Updated": "2026-04-17T06:09:00.610816"
-    },
-    {
-        "judul": "Shut Up, Evil Dragon! I Don't Want to Raise a Child With You Anymore",
-        "slug": "shut-up-evil-dragon-i-don-t-want-to-raise-a-child-with-you-anymore",
-        "thumb": "https://manhuaplus.org/uploads/covers/shut-up-evil-dragon-i-don-t-want-to-raise-a-child-with-you-anymore.jpg",
-        "Updated": "2026-04-17T03:50:57.977349"
-    },
-    {
-        "judul": "Look-Alike Daughter",
-        "slug": "look-alike-daughter",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/6a75eef5-eb58-42e5-a1de-0996393ad8de.jpg",
-        "Updated": "2026-04-17T03:50:57.970943"
     },
     {
         "judul": "Reincarnated Murim Lord",
@@ -6424,12 +6520,6 @@
         "slug": "see-you-my-king",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/See-You-My-King.jpg",
         "Updated": "2026-04-17T03:50:57.811117"
-    },
-    {
-        "judul": "Do You Want Me to Lend You a Lighter?",
-        "slug": "do-you-want-me-to-lend-you-a-lighter",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/07/bc60740f-f164-44e5-a72a-bcff0af342cc.webp",
-        "Updated": "2026-04-17T03:50:57.797923"
     },
     {
         "judul": "Monster Eater",
@@ -6486,12 +6576,6 @@
         "Updated": "2026-04-17T03:50:57.725839"
     },
     {
-        "judul": "Apocalypse Sword God",
-        "slug": "doomsday-sword-god",
-        "thumb": "https://manhuaplus.org/uploads/covers/doomsday-sword-god.jpg",
-        "Updated": "2026-04-17T03:50:57.705351"
-    },
-    {
         "judul": "Hidden House in the Apocalypse",
         "slug": "hidden-house-in-the-apocalypse",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/1ab670f1-a9e2-4b41-ae52-b7b806b7b301.webp",
@@ -6522,34 +6606,10 @@
         "Updated": "2026-04-16T21:08:37.594944"
     },
     {
-        "judul": "I Owe Billions in Debt, So I Was Forced to Work for an Evil God",
-        "slug": "i-owe-billions-in-debt-so-i-was-forced-to-work-for-an-evil-god",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/3bf67cde-abaf-4c4a-8fae-6a8b280a1771.jpg",
-        "Updated": "2026-04-16T20:04:11.133610"
-    },
-    {
         "judul": "Your Highness, Won\u2019t You Try This Tonight?",
         "slug": "your-highness-won-t-you-try-this-tonight",
         "thumb": "https://cdn.arenascan.com/arena-bucket/images/Your-Highness-Wont-You-Try-This-Tonight-193x278.jpg",
         "Updated": "2026-04-16T20:04:11.039448"
-    },
-    {
-        "judul": "The Beginning After The End",
-        "slug": "the-beginning-after-the-end",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/57f5b4f4-4229-4f31-8647-e1f4465b2528.jpg",
-        "Updated": "2026-04-16T20:04:11.014531"
-    },
-    {
-        "judul": "Shut up, Evil Dragon, I don\u2019t want to raise a child with you anymore",
-        "slug": "shut-up-evil-dragon-i-dont-want-to-raise-a-child-with-you-anymore",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/06/ab9f2663-a7a5-47b7-994b-b6d12e9f24d1.webp",
-        "Updated": "2026-04-16T20:04:11.006094"
-    },
-    {
-        "judul": "The Toy Doll Princess Weds in the Wilds",
-        "slug": "the-toy-doll-princess-weds-in-the-wilds",
-        "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Toy-Doll-Princess-Weds-in-the-Wilds-193x278.jpg",
-        "Updated": "2026-04-16T20:04:10.964761"
     },
     {
         "judul": "Surviving The Game as a Barbarian",
@@ -6568,12 +6628,6 @@
         "slug": "shining-nana-nana",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/b76bacc7-212e-4c08-a3c1-6028066368ff.jpg",
         "Updated": "2026-04-16T18:51:30.928197"
-    },
-    {
-        "judul": "My Simulated Path to Immortality",
-        "slug": "my-simulated-path-to-immortality",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/11/de5a41c2-263c-4f20-a4b2-d784c06f150f.webp",
-        "Updated": "2026-04-16T18:51:30.926505"
     },
     {
         "judul": "I Will Fall With the Emperor",
@@ -6604,12 +6658,6 @@
         "slug": "the-corrupt-official-hides-the-status-window",
         "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Corrupt-Official-Hides-the-Status-Window-193x278.jpg",
         "Updated": "2026-04-16T17:29:33.783020"
-    },
-    {
-        "judul": "Wild Ranker",
-        "slug": "wild-ranker",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/5d0cc9d3-d544-4d9c-bd77-79b8915b1d6a.jpg",
-        "Updated": "2026-04-16T17:29:33.751318"
     },
     {
         "judul": "Her Lies \u2013 Manhua",
@@ -6798,12 +6846,6 @@
         "Updated": "2026-04-16T05:53:51.973844"
     },
     {
-        "judul": "Murim Psychopath",
-        "slug": "murim-psychopath",
-        "thumb": "https://arenascan.com/wp-content/uploads/2026/01/601e6246-2847-4a65-befd-8453443384fe.jpg",
-        "Updated": "2026-04-16T05:53:51.972552"
-    },
-    {
         "judul": "The Hashtag is First Love",
         "slug": "the-hashtag-is-first-love",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/11/35ce0568-9351-44bd-800d-64e8c6217179.webp",
@@ -6948,12 +6990,6 @@
         "Updated": "2026-04-15T18:21:49.420034"
     },
     {
-        "judul": "The Corrupted Paladin Is Obsessed With Me",
-        "slug": "the-corrupted-paladin-is-obsessed-with-me",
-        "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Corrupted-Paladin-Is-Obsessed-With-Me-193x278.webp",
-        "Updated": "2026-04-15T18:21:49.386794"
-    },
-    {
         "judul": "You Didn\u2019t Say the Start of the Regression Was a Gate",
         "slug": "you-didnt-say-the-start-of-the-regression-was-a-gate",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/08/3f333e0f-26e3-4da6-bf5d-eedc48384e04.jpg",
@@ -7036,12 +7072,6 @@
         "slug": "returned-by-the-king",
         "thumb": "https://manhuaplus.org/uploads/covers/returned-by-the-king.jpg",
         "Updated": "2026-04-15T08:12:06.937016"
-    },
-    {
-        "judul": "Return of the SSS-Class Ranker",
-        "slug": "the-sss-ranker-returns",
-        "thumb": "https://manhuaplus.org/uploads/covers/the-sss-ranker-returns.jpg",
-        "Updated": "2026-04-15T08:12:06.861924"
     },
     {
         "judul": "After relinquishing my talent, I became a favorite of the wizarding world",
@@ -8304,12 +8334,6 @@
         "Updated": "2026-04-10T18:08:09.806343"
     },
     {
-        "judul": "Reborn on the Demonic Cult Battlefield",
-        "slug": "reborn-on-the-demonic-cult-battlefield",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/09/1f16c5f4-c6ef-40f1-a7b3-7edb4999acd1.jpg",
-        "Updated": "2026-04-10T18:08:09.799250"
-    },
-    {
         "judul": "Blood Rain: Zero",
         "slug": "blood-rain-zero",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/11/1d5e8bae-4dac-47e9-bf65-d0a80d3c58ff.webp",
@@ -9546,12 +9570,6 @@
         "Updated": "2026-04-03T19:29:18.300466"
     },
     {
-        "judul": "It turns out that I am the second generation of demons",
-        "slug": "it-turns-out-that-i-am-the-second-generation-of-demons",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/fc785439-a630-4a0d-9c64-2284af675070.jpg",
-        "Updated": "2026-04-03T18:28:05.138383"
-    },
-    {
         "judul": "Even If You Don\u2019t Have a Third",
         "slug": "even-if-you-dont-have-a-third",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/07/261eda7e-01aa-4d91-8e0d-26cf104dd2cd.jpg",
@@ -10192,12 +10210,6 @@
         "slug": "the-secret-bedroom-of-a-dejected-royal-daughter",
         "thumb": "https://arenascan.com/wp-content/uploads/2025/06/5a8829e3-9cf4-46a1-8f7f-85aa1411c15b.jpg",
         "Updated": "2026-03-28T06:41:04.388688"
-    },
-    {
-        "judul": "Manager Kim",
-        "slug": "manager-kim",
-        "thumb": "https://arenascan.com/wp-content/uploads/2025/08/d8530583-6cb7-42ba-8fe8-055a567bc817.jpg",
-        "Updated": "2026-03-28T05:46:45.256139"
     },
     {
         "judul": "My Sister Is the Main Character",
