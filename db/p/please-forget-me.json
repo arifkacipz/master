@@ -2,9 +2,9 @@
     "judul": "Please Forget Me",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Please-Forget-Me-193x278.jpg",
     "source": "arenascan",
-    "online": 21,
-    "chapterCount": 21,
-    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 50,
+    "chapterCount": 24,
+    "Chs": "Chapter 33.1, Chapter 32.2, Chapter 32.1, Chapter 31.2, Chapter 31.1, Chapter 30.3, Chapter 30.2, Chapter 30.1, Chapter 29.2, Chapter 29.1, Chapter 28.2, Chapter 28.1, Chapter 27.2, Chapter 27.1, Chapter 26.3, Chapter 26.2, Chapter 26.1, Chapter 25.3, Chapter 25.2, Chapter 25.1, Chapter 24.2, Chapter 24.1, Chapter 23.3, Chapter 23.2, Chapter 23.1, Chapter 22.2, Chapter 22.1, Chapter 21.2, Chapter 21.1, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -674,7 +674,65 @@
                 "https://cdn.arenascan.com/arena-bucket/393397/21/024.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32.1",
+            "url": "https://arenascan.com/please-forget-me-chapter-32-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.1/12.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32.2",
+            "url": "https://arenascan.com/please-forget-me-chapter-32-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/32.2/12.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33.1",
+            "url": "https://arenascan.com/please-forget-me-chapter-33-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/393397/33.1/13.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-16T05:53:51.985470"
+    "last_scraped": "2026-04-24T06:13:56.594515"
 }
