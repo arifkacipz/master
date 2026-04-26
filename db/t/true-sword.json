@@ -3,9 +3,636 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/06c6f6e9-8da6-4a2d-8e1f-584722fc9210.webp",
     "source": "arenascan",
     "online": 36,
-    "chapterCount": 3,
+    "chapterCount": 36,
     "Chs": "Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/true-sword-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/1/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/1/20.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/true-sword-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/2/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/2/19.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/true-sword-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/3/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/3/20.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/true-sword-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/4/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/4/20.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/true-sword-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/5/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/5/18.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/true-sword-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/6/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/14.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/15.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/6/16.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/true-sword-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/7/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/14.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/15.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/16.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/17.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/18.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/7/19.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/true-sword-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/8/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/8/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/true-sword-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/9/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/9/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/true-sword-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/10/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/10/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/true-sword-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/11/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/11/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/11/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/11/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/11/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/11/6.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/true-sword-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/12/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/12/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/true-sword-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/13/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/13/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/true-sword-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/14/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/14/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/true-sword-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/15/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/15/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/true-sword-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/16/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/16/8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/true-sword-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/17/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/8.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/17/9.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/true-sword-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/18/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/8.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/18/9.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/true-sword-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/19/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/8.webp",
+                "https://cdn.arenascan.com/arena-bucket/264688/19/9.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/true-sword-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/20/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/20/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/true-sword-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/21/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/21/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/true-sword-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/22/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/22/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/true-sword-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/23/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/23/09.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/true-sword-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/24/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/24/10.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/true-sword-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/25/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/25/10.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/true-sword-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/26/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/26/15.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/true-sword-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/27/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/27/12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/true-sword-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/28/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/28/14.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/true-sword-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/29/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/29/13.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/true-sword-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/30/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/30/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/true-sword-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/31/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/31/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/true-sword-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/32/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/32/021.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/true-sword-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/264688/33/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/264688/33/020.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 34",
             "url": "https://arenascan.com/true-sword-chapter-34/",
@@ -79,5 +706,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-26T17:28:47.334748"
+    "last_scraped": "2026-04-26T18:09:57.243130"
 }
