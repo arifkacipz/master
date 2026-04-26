@@ -2,9 +2,9 @@
     "judul": "Greetings, Sect Leader",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/a34b33fa-0eb0-41d1-81a7-27f34dda9a9f.jpg",
     "source": "arenascan",
-    "online": 13,
-    "chapterCount": 13,
-    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 15,
+    "chapterCount": 15,
+    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -298,7 +298,53 @@
                 "https://cdn.arenascan.com/arena-bucket/360734/13/015.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/greetings-sect-leader-chapter-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/14/ch_14_17.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/greetings-sect-leader-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360734/15/ch_15_15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-05T19:55:57.461862"
+    "last_scraped": "2026-04-26T19:37:58.040746"
 }
