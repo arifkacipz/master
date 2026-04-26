@@ -3,9 +3,75 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Lingering-Pain-193x278.webp",
     "source": "arenascan",
     "online": 5,
-    "chapterCount": 3,
+    "chapterCount": 5,
     "Chs": "Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/lingering-pain-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398670/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/1/026.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/lingering-pain-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398670/2/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/019.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/020.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/021.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/022.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/023.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/024.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/025.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398670/2/026.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 3",
             "url": "https://arenascan.com/lingering-pain-chapter-3/",
@@ -100,5 +166,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-26T03:32:39.816894"
+    "last_scraped": "2026-04-26T04:04:38.843165"
 }
