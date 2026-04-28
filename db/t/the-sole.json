@@ -2,9 +2,9 @@
     "judul": "The Sole",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/tall-2-2.jpg",
     "source": "arenascan",
-    "online": 6,
-    "chapterCount": 6,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 8,
+    "chapterCount": 8,
+    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -100,7 +100,38 @@
                 "https://cdn.arenascan.com/arena-bucket/390342/6/09.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/the-sole-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/7/01_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/02_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/03_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/04_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/05_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/06_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/07_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/7/08_1.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/the-sole-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/8/01_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/02_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/03_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/04_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/05_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/06_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/07_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/08_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/8/09_1.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-21T14:51:53.699201"
+    "last_scraped": "2026-04-28T15:45:31.184120"
 }
