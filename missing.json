@@ -10,6 +10,27 @@
     ]
   },
   {
+    "slug": "the-oracle-of-the-villainous-baby",
+    "judul": "The Oracle of the Villainous Baby",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Oracle-of-the-Villainous-Baby-193x278.jpg",
+    "total_online": 16,
+    "total_downloaded": 15,
+    "missing": [
+      "Chapter 16"
+    ]
+  },
+  {
+    "slug": "the-mysterious-worlds-greatest-martial-artist-little-prince",
+    "judul": "The Mysterious World’s Greatest Martial Artist Little Prince",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/56efbfcc-3174-4fc7-8a43-7549e4221104.jpg",
+    "total_online": 117,
+    "total_downloaded": 115,
+    "missing": [
+      "Chapter 115",
+      "Chapter 114"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +39,19 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "shadow-moon",
+    "judul": "Shadow Moon",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f26923e0-1f58-4280-9e2e-91ea1b22920f.jpg",
+    "total_online": 7,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 5",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
     ]
   }
 ]
