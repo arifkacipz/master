@@ -2,10 +2,53 @@
     "judul": "Shadow Moon",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f26923e0-1f58-4280-9e2e-91ea1b22920f.jpg",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 3,
-    "Chs": "Chapter 9, Chapter 8, Chapter 6, Chapter 5, Chapter 3, Chapter 2, Chapter 1",
+    "online": 8,
+    "chapterCount": 6,
+    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 6, Chapter 5, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/shadow-moon-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/163643/3/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/3/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/shadow-moon-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/163643/5/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/5/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 6",
             "url": "https://arenascan.com/shadow-moon-chapter-6/",
@@ -76,7 +119,32 @@
                 "https://cdn.arenascan.com/arena-bucket/163643/9/017.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/shadow-moon-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/163643/10/ch_10_18.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-30T19:01:23.085805"
+    "last_scraped": "2026-04-30T20:19:06.433707"
 }

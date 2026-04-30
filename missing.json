@@ -45,13 +45,21 @@
     "slug": "shadow-moon",
     "judul": "Shadow Moon",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f26923e0-1f58-4280-9e2e-91ea1b22920f.jpg",
-    "total_online": 7,
-    "total_downloaded": 3,
+    "total_online": 8,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 5",
-      "Chapter 3",
       "Chapter 2",
       "Chapter 1"
+    ]
+  },
+  {
+    "slug": "warrior-of-the-mind-sword",
+    "judul": "Warrior of the Mind Sword",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/93673b69-7ae0-44e0-aab8-bf0cd1182f0a.webp",
+    "total_online": 46,
+    "total_downloaded": 45,
+    "missing": [
+      "Chapter 43"
     ]
   }
 ]
