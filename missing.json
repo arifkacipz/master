@@ -10,6 +10,44 @@
     ]
   },
   {
+    "slug": "the-hero-returns",
+    "judul": "The Hero Returns",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/91f0874e-21b1-4e54-8e1d-eb06d6858f7f.jpg",
+    "total_online": 154,
+    "total_downloaded": 156,
+    "missing": [
+      "Chapter 09",
+      "Chapter 08",
+      "Chapter 07",
+      "Chapter 06",
+      "Chapter 05",
+      "Chapter 04",
+      "Chapter 03",
+      "Chapter 02",
+      "Chapter 01"
+    ]
+  },
+  {
+    "slug": "the-white-tiger-clan-s-baby-cotton-ball",
+    "judul": "The White Tiger Clan’s Baby Cotton Ball",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-White-Tiger-Clans-Baby-Cotton-Ball-193x278.jpg",
+    "total_online": 15,
+    "total_downloaded": 4,
+    "missing": [
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +56,16 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "skill-master-levels-up",
+    "judul": "Level Up with Skills",
+    "thumb": "https://manhuaplus.org/uploads/covers/skill-master-levels-up.jpg",
+    "total_online": 151,
+    "total_downloaded": 150,
+    "missing": [
+      "Chapter 146"
     ]
   }
 ]
