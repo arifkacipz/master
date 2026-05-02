@@ -2,9 +2,9 @@
     "judul": "King of the Cartel",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/King-of-the-Cartel-193x278.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -358,7 +358,26 @@
                 "https://cdn.arenascan.com/arena-bucket/387360/10/ch_10_11.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/king-of-the-cartel-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387360/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387360/11/012.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-30T16:01:26.699385"
+    "last_scraped": "2026-05-02T19:11:00.390820"
 }
