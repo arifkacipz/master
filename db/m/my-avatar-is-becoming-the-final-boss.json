@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Avatar-Is-Becoming-the-Final-Boss-193x278.jpg",
     "source": "arenascan",
     "online": 11,
-    "chapterCount": 10,
+    "chapterCount": 11,
     "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -183,6 +183,29 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/my-avatar-is-becoming-the-final-boss-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/392069/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/8/016.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 9",
             "url": "https://arenascan.com/my-avatar-is-becoming-the-final-boss-chapter-9/",
             "images": [
@@ -250,5 +273,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-04T04:15:58.607857"
+    "last_scraped": "2026-05-04T04:29:35.269261"
 }
