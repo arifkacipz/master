@@ -10,6 +10,28 @@
     ]
   },
   {
+    "slug": "the-executioner",
+    "judul": "The Executioner",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/81c182c5-9ce4-46c2-bb3c-001b1758bc75.jpg",
+    "total_online": 56,
+    "total_downloaded": 54,
+    "missing": [
+      "Chapter 54",
+      "Chapter 53"
+    ]
+  },
+  {
+    "slug": "the-tyrants-overprotective-contract-mother",
+    "judul": "The Tyrant’s Overprotective Contract Mother",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/4e6c3e2e-3c11-4c9c-8451-69e485b2fb24.webp",
+    "total_online": 32,
+    "total_downloaded": 30,
+    "missing": [
+      "Chapter 29",
+      "Chapter 28"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +40,17 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "i-gave-up-being-stronger",
+    "judul": "I Gave Up Being Stronger",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/I-Gave-Up-Being-Stronger-193x278.jpg",
+    "total_online": 35,
+    "total_downloaded": 33,
+    "missing": [
+      "Chapter 32",
+      "Chapter 31"
     ]
   }
 ]
