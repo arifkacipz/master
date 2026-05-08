@@ -10,6 +10,16 @@
     ]
   },
   {
+    "slug": "the-extras-academy-survival-guide",
+    "judul": "The Extra’s Academy Survival Guide",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/d1094d2a-111c-436d-9157-51f4385d5dab.jpg",
+    "total_online": 105,
+    "total_downloaded": 104,
+    "missing": [
+      "Chapter 102"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +28,16 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "i-returned-thinking-it-was-the-ending-but-the-genre-changed",
+    "judul": "I Returned Thinking It Was the Ending, But the Genre Changed",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/I-Returned-Thinking-It-Was-the-Ending-But-the-Genre-Changed-193x278.jpg",
+    "total_online": 30,
+    "total_downloaded": 29,
+    "missing": [
+      "Chapter 27"
     ]
   }
 ]
