@@ -2,9 +2,9 @@
     "judul": "The Hero Directed by The Demon King",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Hero-Directed-by-The-Demon-King-193x278.jpg",
     "source": "arenascan",
-    "online": 14,
-    "chapterCount": 14,
-    "Chs": "Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 15,
+    "chapterCount": 15,
+    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -300,7 +300,26 @@
                 "https://cdn.arenascan.com/arena-bucket/391435/14/ch_14_23.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/the-hero-directed-by-the-demon-king-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391435/15/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/391435/15/012.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-21T04:25:37.303463"
+    "last_scraped": "2026-05-10T05:07:53.315361"
 }

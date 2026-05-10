@@ -2,9 +2,9 @@
     "judul": "The Lawyer Who Sees Souls",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Lawyer-Who-Sees-Souls-193x278.webp",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 9,
+    "chapterCount": 9,
+    "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -296,7 +296,49 @@
                 "https://cdn.arenascan.com/arena-bucket/397245/7/ch_7_35.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/the-lawyer-who-sees-souls-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397245/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/8/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/the-lawyer-who-sees-souls-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397245/9/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397245/9/014.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-26T19:37:58.069256"
+    "last_scraped": "2026-05-10T05:07:10.084973"
 }
