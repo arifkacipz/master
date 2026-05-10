@@ -10,6 +10,16 @@
     ]
   },
   {
+    "slug": "to-my-darling",
+    "judul": "To My Darling",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/69409ef6-4dfc-45b2-bc42-ce7f2cb5af7e.webp",
+    "total_online": 30,
+    "total_downloaded": 29,
+    "missing": [
+      "Chapter 27"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -18,6 +28,17 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "a-sibling-s-pov",
+    "judul": "A Sibling’s POV",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Siblings-POV-193x278.jpg",
+    "total_online": 5,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 2",
+      "Chapter 1"
     ]
   }
 ]
