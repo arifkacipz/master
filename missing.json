@@ -14,11 +14,8 @@
     "judul": "Heavenly Grand Archive’s Young Master",
     "thumb": "https://manhuaplus.org/uploads/covers/heavenly-grand-archive-s-young-master.jpg",
     "total_online": 178,
-    "total_downloaded": 6,
+    "total_downloaded": 9,
     "missing": [
-      "Chapter 172",
-      "Chapter 171",
-      "Chapter 170",
       "Chapter 169",
       "Chapter 168",
       "Chapter 167",
@@ -199,6 +196,37 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "fatal-favoritism",
+    "judul": "Fatal Favoritism",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/e2516b5d-693b-4db9-a006-1fd033b3cab9.jpg",
+    "total_online": 51,
+    "total_downloaded": 50,
+    "missing": [
+      "Chapter 48"
+    ]
+  },
+  {
+    "slug": "ankle-breaker",
+    "judul": "Ankle Breaker",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/0aa168f6-ec97-48c0-8835-75a98439dcd1.jpg",
+    "total_online": 31,
+    "total_downloaded": 29,
+    "missing": [
+      "Chapter 28",
+      "Chapter 27"
+    ]
+  },
+  {
+    "slug": "assistant-manager-kim-hates-idols",
+    "judul": "Assistant Manager Kim Hates Idols",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/68ec0f33-6b81-401c-9d42-544dd4bed1b5.webp",
+    "total_online": 29,
+    "total_downloaded": 28,
+    "missing": [
+      "Chapter 27"
     ]
   }
 ]

@@ -2,9 +2,9 @@
     "judul": "Sincerely",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sincerely-193x278.jpg",
     "source": "arenascan",
-    "online": 15,
-    "chapterCount": 15,
-    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 16,
+    "chapterCount": 16,
+    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -449,7 +449,27 @@
                 "https://cdn.arenascan.com/arena-bucket/377820/15/ch_15_15.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/sincerely-chapter-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377820/16/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377820/16/013.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-03T15:57:27.408264"
+    "last_scraped": "2026-05-10T15:07:16.535444"
 }
