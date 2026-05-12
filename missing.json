@@ -1,5 +1,15 @@
 [
   {
+    "slug": "primal-hunter",
+    "judul": "Primal Hunter",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/1b8e949a-7ef7-49f1-8357-eb468c6e8fe6.jpg",
+    "total_online": 119,
+    "total_downloaded": 118,
+    "missing": [
+      "Chapter 117"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -10,27 +20,12 @@
     ]
   },
   {
-    "slug": "7-days-from-now-i-will-save-the-cursed-duke",
-    "judul": "7 Days From Now, I Will Save the Cursed Duke",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/7-Days-From-Now-I-Will-Save-the-Cursed-Duke-193x278.webp",
-    "total_online": 6,
-    "total_downloaded": 3,
-    "missing": [
-      "Chapter 3",
-      "Chapter 2",
-      "Chapter 1"
-    ]
-  },
-  {
     "slug": "the-fortune-making-crafter-unrivaled-in-business-with-an-unfavored-class",
     "judul": "The Fortune-Making Crafter: Unrivaled in Business with an Unfavored Class",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Fortune-Making-Crafter-Unrivaled-in-Business-with-an-Unfavored-Class-193x278.jpg",
     "total_online": 17,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 14",
-      "Chapter 13",
-      "Chapter 12",
       "Chapter 11",
       "Chapter 10",
       "Chapter 9",
@@ -49,11 +44,8 @@
     "judul": "The ’Leftover’ Saint’s Supposedly Loveless Marriage:The Sister Her Younger Siblings Called Unlovable Is Cherished by a Younger Crown Prince Who Vows, ’I Want to Give Everything Only to You",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Forsaken-Saint-Became-the-Crown-Princes-Beloved-Wife-193x278.jpg",
     "total_online": 13,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 10",
-      "Chapter 9",
-      "Chapter 8",
       "Chapter 7",
       "Chapter 6",
       "Chapter 5",
@@ -79,11 +71,8 @@
     "judul": "Seal Evils and the Pursuit of Truth",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Seal-Evils-and-the-Pursuit-of-Truth-193x278.jpg",
     "total_online": 51,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 47",
-      "Chapter 46",
-      "Chapter 45",
       "Chapter 44",
       "Chapter 43",
       "Chapter 42",
@@ -136,11 +125,8 @@
     "judul": "Ninja Royale: The Mightiest Ninja Across Time",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Ninja-Royale-The-Legendary-Ninja-Reborn-After-500-Years-193x278.webp",
     "total_online": 11,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 8",
-      "Chapter 7",
-      "Chapter 6",
       "Chapter 5",
       "Chapter 4",
       "Chapter 3",
@@ -153,11 +139,8 @@
     "judul": "I’ll Bring You to Your Knees In This Life!",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Ill-Bring-You-to-Your-Knees-In-This-Life-193x278.jpg",
     "total_online": 14,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 12",
-      "Chapter 11",
-      "Chapter 9",
       "Chapter 8",
       "Chapter 7",
       "Chapter 6",

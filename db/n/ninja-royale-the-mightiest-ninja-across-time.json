@@ -3,9 +3,60 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Ninja-Royale-The-Legendary-Ninja-Reborn-After-500-Years-193x278.webp",
     "source": "arenascan",
     "online": 11,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/ninja-royale-the-mightiest-ninja-across-time-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/402756/6/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/6/009.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/ninja-royale-the-mightiest-ninja-across-time-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/402756/7/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/7/009.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/ninja-royale-the-mightiest-ninja-across-time-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/402756/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/402756/8/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 9",
             "url": "https://arenascan.com/ninja-royale-the-mightiest-ninja-across-time-chapter-9/",
@@ -63,5 +114,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-12T10:06:35.660031"
+    "last_scraped": "2026-05-12T12:24:39.737697"
 }
