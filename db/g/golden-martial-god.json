@@ -2,9 +2,9 @@
     "judul": "Golden Martial God",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Golden-Martial-God-193x278.jpg",
     "source": "arenascan",
-    "online": 13,
-    "chapterCount": 13,
-    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 14,
+    "chapterCount": 14,
+    "Chs": "Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -366,7 +366,22 @@
                 "https://cdn.arenascan.com/arena-bucket/385661/13/ch_13_27.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/golden-martial-god-chapter-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/385661/14/ch_14_8.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-08T19:29:41.188804"
+    "last_scraped": "2026-05-14T16:35:12.698483"
 }
