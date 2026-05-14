@@ -10,12 +10,17 @@
     ]
   },
   {
-    "slug": "the-debtor-s-lover",
-    "judul": "The Debtor’s Lover",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Debtors-Lover-193x278.webp",
-    "total_online": 6,
-    "total_downloaded": 3,
+    "slug": "the-absolutely-unbeatable-dungeon",
+    "judul": "The Absolutely Unbeatable Dungeon",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Absolutely-Unbeatable-Dungeon-193x278.jpg",
+    "total_online": 14,
+    "total_downloaded": 6,
     "missing": [
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
       "Chapter 3",
       "Chapter 2",
       "Chapter 1"
@@ -26,32 +31,9 @@
     "judul": "The Lost City of Alien Beasts",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/44fac9cb-7380-4544-8891-a95066b4e6ca.webp",
     "total_online": 29,
-    "total_downloaded": 25,
+    "total_downloaded": 28,
     "missing": [
-      "Chapter 28",
-      "Chapter 27",
-      "Chapter 26",
       "Chapter 25"
-    ]
-  },
-  {
-    "slug": "the-absolutely-unbeatable-dungeon",
-    "judul": "The Absolutely Unbeatable Dungeon",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Absolutely-Unbeatable-Dungeon-193x278.jpg",
-    "total_online": 14,
-    "total_downloaded": 3,
-    "missing": [
-      "Chapter 11",
-      "Chapter 10",
-      "Chapter 9",
-      "Chapter 8",
-      "Chapter 7",
-      "Chapter 6",
-      "Chapter 5",
-      "Chapter 4",
-      "Chapter 3",
-      "Chapter 2",
-      "Chapter 1"
     ]
   },
   {
