@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/44fac9cb-7380-4544-8891-a95066b4e6ca.webp",
     "source": "arenascan",
     "online": 29,
-    "chapterCount": 28,
+    "chapterCount": 29,
     "Chs": "Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -442,6 +442,26 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/the-lost-city-of-alien-beasts-chapter-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/291741/25/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/291741/25/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 26",
             "url": "https://arenascan.com/the-lost-city-of-alien-beasts-chapter-26/",
             "images": [
@@ -574,5 +594,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-14T22:44:42.674045"
+    "last_scraped": "2026-05-14T23:31:11.283106"
 }
