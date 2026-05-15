@@ -2,9 +2,9 @@
     "judul": "The Berserker\u2019s Second Playthrough",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/683aac7d-fc2a-4110-9d1d-978e3e00fa49.jpg",
     "source": "arenascan",
-    "online": 26,
-    "chapterCount": 26,
-    "Chs": "Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 28,
+    "chapterCount": 28,
+    "Chs": "Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1327,7 +1327,52 @@
                 "https://cdn.arenascan.com/arena-bucket/360709/26/ch_26_32.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/the-berserkers-second-playthrough-chapter-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360709/27/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/27/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/the-berserkers-second-playthrough-chapter-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360709/28/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/360709/28/017.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-06T15:43:18.502183"
+    "last_scraped": "2026-05-15T04:16:59.078116"
 }
