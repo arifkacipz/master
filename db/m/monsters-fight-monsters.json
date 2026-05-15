@@ -2,9 +2,9 @@
     "judul": "Monsters Fight Monsters",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Monsters-Fight-Monsters-193x278.jpg",
     "source": "arenascan",
-    "online": 20,
-    "chapterCount": 20,
-    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 21,
+    "chapterCount": 21,
+    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -762,7 +762,27 @@
                 "https://cdn.arenascan.com/arena-bucket/377534/20/015.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/monsters-fight-monsters-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377534/21/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377534/21/013.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-01T11:41:13.449131"
+    "last_scraped": "2026-05-15T16:58:03.606031"
 }
