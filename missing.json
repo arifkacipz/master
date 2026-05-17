@@ -1,5 +1,15 @@
 [
   {
+    "slug": "i-really-dont-want-to-learn-forbidden-spells",
+    "judul": "I Really Don’t Want to Learn Forbidden Spells",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/a66468fc-f201-475a-afdf-ba44b631f41e.jpg",
+    "total_online": 175,
+    "total_downloaded": 174,
+    "missing": [
+      "Chapter 171"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -18,6 +28,27 @@
     "missing": [
       "Chapter 64.20",
       "Chapter 64.10"
+    ]
+  },
+  {
+    "slug": "academys-genius-swordmaster",
+    "judul": "Academy’s Genius Swordmaster",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/2be7e43e-6069-4948-a9ed-0a397c214492.jpg",
+    "total_online": 137,
+    "total_downloaded": 135,
+    "missing": [
+      "Chapter 133",
+      "Chapter 132"
+    ]
+  },
+  {
+    "slug": "around-forty",
+    "judul": "Around Forty",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/50815097-e033-4e2f-92d9-300e9c12bfb3.webp",
+    "total_online": 37,
+    "total_downloaded": 36,
+    "missing": [
+      "Chapter 35"
     ]
   }
 ]
