@@ -2,9 +2,9 @@
     "judul": "The Postman Walking Through the Apocalypse",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Postman-Walking-Through-the-Apocalypse-193x278.jpg",
     "source": "arenascan",
-    "online": 16,
-    "chapterCount": 16,
-    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 17,
+    "chapterCount": 17,
+    "Chs": "Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -349,7 +349,33 @@
                 "https://cdn.arenascan.com/arena-bucket/386707/16/16.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/the-postman-walking-through-the-apocalypse-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_19.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-10T05:25:20.127852"
+    "last_scraped": "2026-05-17T14:04:19.713607"
 }
