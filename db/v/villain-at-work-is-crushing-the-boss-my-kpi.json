@@ -3,9 +3,50 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Villain-at-Work-Is-Crushing-the-Boss-My-KPI-193x278.jpg",
     "source": "arenascan",
     "online": 5,
-    "chapterCount": 3,
+    "chapterCount": 5,
     "Chs": "Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/villain-at-work-is-crushing-the-boss-my-kpi-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401128/1/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/1/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/villain-at-work-is-crushing-the-boss-my-kpi-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401128/2/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401128/2/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 3",
             "url": "https://arenascan.com/villain-at-work-is-crushing-the-boss-my-kpi-chapter-3/",
@@ -75,5 +116,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-17T14:04:19.729244"
+    "last_scraped": "2026-05-17T15:40:17.684249"
 }
