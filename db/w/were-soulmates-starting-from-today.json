@@ -3,9 +3,57 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/1152ddb4-2e39-47b9-ac90-e67dc6ab0890.jpg",
     "source": "arenascan",
     "online": 22,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/were-soulmates-starting-from-today-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/310416/17/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/17/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/17/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/17/4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/were-soulmates-starting-from-today-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/310416/18/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/18/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/18/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/18/4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/were-soulmates-starting-from-today-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/310416/19/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/014.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/015.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/016.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/017.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/018.jpg",
+                "https://cdn.arenascan.com/arena-bucket/310416/19/019.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 20",
             "url": "https://arenascan.com/were-soulmates-starting-from-today-chapter-20/",
@@ -90,5 +138,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-18T04:50:30.199852"
+    "last_scraped": "2026-05-18T08:50:39.228956"
 }
