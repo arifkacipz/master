@@ -1,10 +1,10 @@
 {
     "judul": "An Affair with My Knight",
-    "thumb": "https://arenascan.com/wp-content/uploads/2026/01/03fb3f3b-754a-4e07-aee4-d0db185e0105-768x1145.jpg",
+    "thumb": "https://arenascan.com/wp-content/uploads/2026/01/03fb3f3b-754a-4e07-aee4-d0db185e0105.jpg",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 13,
+    "chapterCount": 10,
+    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -143,7 +143,64 @@
                 "https://cdn.arenascan.com/arena-bucket/367592/7/ch_7_13.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/an-affair-with-my-knight-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/367592/11/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/11/012.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/an-affair-with-my-knight-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/367592/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/12/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/an-affair-with-my-knight-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/367592/13/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/367592/13/013.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-17T05:31:32.622394"
+    "last_scraped": "2026-05-18T04:50:30.174371"
 }
