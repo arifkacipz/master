@@ -2,9 +2,9 @@
     "judul": "The Sole",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/tall-2-2.jpg",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -175,7 +175,22 @@
                 "https://cdn.arenascan.com/arena-bucket/390342/11/07_1.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/the-sole-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390342/12/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/390342/12/08.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-17T19:20:09.325752"
+    "last_scraped": "2026-05-19T18:30:31.918534"
 }
