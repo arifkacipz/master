@@ -2,9 +2,9 @@
     "judul": "This killer is a son-in-law",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/This-killer-is-a-son-in-law-193x278.jpg",
     "source": "arenascan",
-    "online": 3,
-    "chapterCount": 3,
-    "Chs": "Chapter 3, Chapter 2, Chapter 1",
+    "online": 5,
+    "chapterCount": 5,
+    "Chs": "Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -74,7 +74,49 @@
                 "https://cdn.arenascan.com/arena-bucket/397250/3/ch_3_18.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/this-killer-is-a-son-in-law-chapter-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/4/ch_4_13.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/this-killer-is-a-son-in-law-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397250/5/ch_5_15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-10T05:07:02.497035"
+    "last_scraped": "2026-05-19T01:30:00.317149"
 }
