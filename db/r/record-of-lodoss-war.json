@@ -2,9 +2,9 @@
     "judul": "Record of Lodoss War",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Record-of-Lodoss-War-193x278.webp",
     "source": "arenascan",
-    "online": 7,
-    "chapterCount": 7,
-    "Chs": "Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 8,
+    "chapterCount": 8,
+    "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -230,7 +230,50 @@
                 "https://cdn.arenascan.com/arena-bucket/401878/6/ch_6_23.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/record-of-lodoss-war-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_24.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_25.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_26.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_27.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_28.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_29.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_30.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_31.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_32.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_33.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_34.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_35.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401878/7/ch_7_36.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-09T17:10:19.063616"
+    "last_scraped": "2026-05-19T12:47:43.253468"
 }
