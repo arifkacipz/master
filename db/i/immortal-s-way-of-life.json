@@ -2,9 +2,9 @@
     "judul": "Immortal\u2019s Way of Life",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Immortals-Way-of-Life-193x278.jpg",
     "source": "arenascan",
-    "online": 13,
-    "chapterCount": 13,
-    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 14,
+    "chapterCount": 14,
+    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -323,7 +323,36 @@
                 "https://cdn.arenascan.com/arena-bucket/389653/12/ch_12_15.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/immortal-s-way-of-life-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389653/13/ch_13_22.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-13T06:53:09.415452"
+    "last_scraped": "2026-05-19T09:57:42.407856"
 }
