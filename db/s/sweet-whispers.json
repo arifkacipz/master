@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/3740e4dc-e758-4dad-8544-1e9d9e55ff51.webp",
     "source": "arenascan",
     "online": 44,
-    "chapterCount": 42,
+    "chapterCount": 44,
     "Chs": "Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -608,6 +608,39 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 41",
+            "url": "https://arenascan.com/sweet-whispers-chapter-41/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/41/ch_41_13.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 42",
+            "url": "https://arenascan.com/sweet-whispers-chapter-42/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/232870/42/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/42/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/42/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/42/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/42/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/232870/42/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 43",
             "url": "https://arenascan.com/sweet-whispers-chapter-43/",
             "images": [
@@ -661,5 +694,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-20T05:54:02.712666"
+    "last_scraped": "2026-05-20T06:34:09.495781"
 }
