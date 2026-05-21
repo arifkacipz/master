@@ -2,9 +2,9 @@
     "judul": "The Return of the Star Player",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Return-of-the-Star-Player-193x278.png",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -385,7 +385,27 @@
                 "https://cdn.arenascan.com/arena-bucket/397247/11/ch_11_29.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/the-return-of-the-star-player-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397247/12/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397247/12/013.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-06T20:52:18.012204"
+    "last_scraped": "2026-05-21T17:16:39.875445"
 }
