@@ -2,9 +2,9 @@
     "judul": "The Lemon Forest",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Lemon-Forest-193x278.jpg",
     "source": "arenascan",
-    "online": 15,
-    "chapterCount": 15,
-    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 16,
+    "chapterCount": 16,
+    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -463,7 +463,31 @@
                 "https://cdn.arenascan.com/arena-bucket/377525/15/ch_15_19.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/the-lemon-forest-chapter-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377525/16/0.png",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-02.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-03.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-04.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-05.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-06.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-07.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-08.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-09.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-10.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-11.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-12.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-13.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-14.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-15.webp",
+                "https://cdn.arenascan.com/arena-bucket/377525/16/image-16.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-19T12:47:43.422826"
+    "last_scraped": "2026-05-26T22:13:36.283313"
 }
