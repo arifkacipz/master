@@ -3,9 +3,663 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/4085c4ea-b69d-4738-bafb-da239032ff7b.jpg",
     "source": "arenascan",
     "online": 43,
-    "chapterCount": 3,
+    "chapterCount": 43,
     "Chs": "Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/im-here-to-destroy-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/1/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/1/17.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/im-here-to-destroy-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/2/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/2/13.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/im-here-to-destroy-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/3/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/3/15.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/im-here-to-destroy-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/4/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/4/12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/im-here-to-destroy-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/5/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/5/12.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/im-here-to-destroy-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/6/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/6/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/6/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/6/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/6/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/6/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/6/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/im-here-to-destroy-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/7/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/7/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/7/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/7/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/7/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/7/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/7/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/im-here-to-destroy-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/8/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/8/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/8/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/8/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/8/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/8/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/8/007.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/im-here-to-destroy-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/9/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/9/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/9/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/9/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/9/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/9/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/9/007.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/im-here-to-destroy-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/10/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/10/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/10/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/10/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/10/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/10/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/10/007.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/im-here-to-destroy-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/11/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/11/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/11/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/11/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/11/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/11/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/11/7.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/im-here-to-destroy-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/12/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/12/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/12/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/12/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/12/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/12/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/12/7.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/im-here-to-destroy-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/13/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/13/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/13/3.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/im-here-to-destroy-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/14/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/14/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/14/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/14/4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/im-here-to-destroy-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/15/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/15/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/15/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/15/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/15/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/15/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/196264/15/7.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/im-here-to-destroy-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/16/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/16/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/16/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/16/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/16/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/16/006.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/im-here-to-destroy-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/17/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/17/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/17/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/17/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/17/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/17/006.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/im-here-to-destroy-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/18/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/18/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/18/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/18/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/18/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/18/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/18/007.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/im-here-to-destroy-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/19/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/19/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/19/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/19/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/19/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/19/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/19/007.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/im-here-to-destroy-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/20/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/20/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/20/003.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/im-here-to-destroy-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/21/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/21/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/21/003.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/im-here-to-destroy-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/22/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/22/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/22/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/22/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/22/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/22/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/22/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/im-here-to-destroy-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/23/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/23/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/23/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/23/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/23/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/23/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/23/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/im-here-to-destroy-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/24/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/24/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/24/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/24/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/24/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/24/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/24/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/im-here-to-destroy-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/25/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/25/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/25/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/25/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/25/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/25/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/im-here-to-destroy-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/26/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/26/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/26/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/26/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/26/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/26/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/26/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/im-here-to-destroy-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/27/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/27/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/27/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/27/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/27/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/27/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/im-here-to-destroy-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/28/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/20.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/21.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/22.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/23.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/24.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/25.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/26.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/27.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/28.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/29.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/30.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/31.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/32.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/33.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/34.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/35.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/36.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/37.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/38.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/39.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/40.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/41.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/42.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/43.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/44.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/45.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/46.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/47.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/48.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/49.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/50.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/51.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/52.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/53.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/54.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/55.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/56.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/57.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/58.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/59.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/60.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/61.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/62.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/63.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/64.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/65.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/66.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/67.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/68.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/69.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/70.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/71.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/72.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/28/73.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/im-here-to-destroy-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/29/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/29/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/im-here-to-destroy-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/30/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/30/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/30/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/30/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/30/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/30/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/im-here-to-destroy-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/31/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/31/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/31/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/31/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/31/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/31/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/im-here-to-destroy-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/32/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/32/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/32/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/32/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/32/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/32/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/im-here-to-destroy-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/33/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/33/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/33/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/33/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/33/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/33/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 34",
+            "url": "https://arenascan.com/im-here-to-destroy-34/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/34/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/34/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/34/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/34/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/34/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/34/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 35",
+            "url": "https://arenascan.com/im-here-to-destroy-35/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/35/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/35/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/35/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/35/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/35/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/35/6.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 36",
+            "url": "https://arenascan.com/im-here-to-destroy-36/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/36/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/36/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/36/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/36/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/36/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/36/17.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 37",
+            "url": "https://arenascan.com/im-here-to-destroy-37/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/37/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/37/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/37/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/37/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/37/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/37/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/37/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 38",
+            "url": "https://arenascan.com/im-here-to-destroy-38/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/38/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/38/013.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 39",
+            "url": "https://arenascan.com/im-here-to-destroy-39/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/39/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/39/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 40",
+            "url": "https://arenascan.com/im-here-to-destroy-40/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/196264/40/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/196264/40/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 41",
             "url": "https://arenascan.com/im-here-to-destroy-41/",
@@ -88,5 +742,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-26T22:13:36.216270"
+    "last_scraped": "2026-05-26T22:52:21.363168"
 }
