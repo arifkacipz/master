@@ -2,9 +2,9 @@
     "judul": "Demon God",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Demon-God-193x278.jpg",
     "source": "arenascan",
-    "online": 31,
-    "chapterCount": 31,
-    "Chs": "Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 32,
+    "chapterCount": 32,
+    "Chs": "Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -890,7 +890,33 @@
                 "https://cdn.arenascan.com/arena-bucket/378589/31/ch_31_30.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/demon-god-chapter-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378589/32/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/012.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/014.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/015.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/016.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/017.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/018.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/019.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/020.webp",
+                "https://cdn.arenascan.com/arena-bucket/378589/32/021.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-15T04:16:58.932524"
+    "last_scraped": "2026-05-27T14:33:25.521002"
 }
