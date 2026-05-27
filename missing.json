@@ -1,5 +1,16 @@
 [
   {
+    "slug": "under-the-oak-tree",
+    "judul": "Under the Oak Tree",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
+    "total_online": 174,
+    "total_downloaded": 172,
+    "missing": [
+      "Chapter 64.20",
+      "Chapter 64.10"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -7,117 +18,6 @@
     "total_downloaded": 269,
     "missing": [
       "Chapter 077"
-    ]
-  },
-  {
-    "slug": "becoming-the-guide-of-the-mysophobic-villain-absolutely-not",
-    "judul": "Becoming the Guide of the Mysophobic Villain? Absolutely Not!",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/3a6808ed-0aa5-4e6f-b6cb-c975390184b4.webp",
-    "total_online": 40,
-    "total_downloaded": 36,
-    "missing": [
-      "Chapter 38",
-      "Chapter 37",
-      "Chapter 36",
-      "Chapter 35"
-    ]
-  },
-  {
-    "slug": "what-remains-in-the-damaged-place",
-    "judul": "What Remains in the Damaged Place",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/b1e384b2-7b30-4a2e-9df7-9dc62657e01b.jpg",
-    "total_online": 45,
-    "total_downloaded": 44,
-    "missing": [
-      "Chapter 43"
-    ]
-  },
-  {
-    "slug": "under-the-oak-tree",
-    "judul": "Under the Oak Tree",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
-    "total_online": 173,
-    "total_downloaded": 171,
-    "missing": [
-      "Chapter 64.20",
-      "Chapter 64.10"
-    ]
-  },
-  {
-    "slug": "my-daddy-hides-his-power",
-    "judul": "My Daddy Hides His Power",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/001c2a0e-567a-446e-95a2-d355f39c3851.jpg",
-    "total_online": 71,
-    "total_downloaded": 3,
-    "missing": [
-      "Chapter 68",
-      "Chapter 67",
-      "Chapter 66",
-      "Chapter 65",
-      "Chapter 64",
-      "Chapter 63",
-      "Chapter 62",
-      "Chapter 61",
-      "Chapter 60",
-      "Chapter 59",
-      "Chapter 58",
-      "Chapter 57",
-      "Chapter 56",
-      "Chapter 55",
-      "Chapter 54",
-      "Chapter 53",
-      "Chapter 52",
-      "Chapter 51",
-      "Chapter 50",
-      "Chapter 49",
-      "Chapter 48",
-      "Chapter 47",
-      "Chapter 46",
-      "Chapter 45",
-      "Chapter 44",
-      "Chapter 43",
-      "Chapter 42",
-      "Chapter 41",
-      "Chapter 40",
-      "Chapter 39",
-      "Chapter 38",
-      "Chapter 37",
-      "Chapter 36",
-      "Chapter 35",
-      "Chapter 34",
-      "Chapter 33",
-      "Chapter 32",
-      "Chapter 31",
-      "Chapter 30",
-      "Chapter 29",
-      "Chapter 28",
-      "Chapter 27",
-      "Chapter 26",
-      "Chapter 25",
-      "Chapter 24",
-      "Chapter 23",
-      "Chapter 22",
-      "Chapter 21",
-      "Chapter 20",
-      "Chapter 19",
-      "Chapter 18",
-      "Chapter 17",
-      "Chapter 16",
-      "Chapter 15",
-      "Chapter 14",
-      "Chapter 13",
-      "Chapter 12",
-      "Chapter 11",
-      "Chapter 10",
-      "Chapter 9",
-      "Chapter 8",
-      "Chapter 7",
-      "Chapter 6",
-      "Chapter 5",
-      "Chapter 4",
-      "Chapter 3",
-      "Chapter 2",
-      "Chapter 1"
     ]
   }
 ]
