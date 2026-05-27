@@ -2,9 +2,9 @@
     "judul": "I Leave You Because I Love You",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/I-Leave-You-Because-I-Love-You-193x278.jpg",
     "source": "arenascan",
-    "online": 22,
-    "chapterCount": 22,
-    "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 23,
+    "chapterCount": 23,
+    "Chs": "Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -530,7 +530,26 @@
                 "https://cdn.arenascan.com/arena-bucket/383958/22/ch_22_40.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/i-leave-you-because-i-love-you-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/383958/23/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/5.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/6.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/7.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/8.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/9.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/383958/23/14.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T20:58:28.068615"
+    "last_scraped": "2026-05-27T01:53:20.746067"
 }

@@ -1,13 +1,15 @@
 [
   {
-    "slug": "under-the-oak-tree",
-    "judul": "Under the Oak Tree",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
-    "total_online": 174,
-    "total_downloaded": 172,
+    "slug": "i-dont-want-to-work",
+    "judul": "I Don’t Want to Work!",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/39f2e838-687a-49e9-911f-30761e37a4f3.jpg",
+    "total_online": 124,
+    "total_downloaded": 120,
     "missing": [
-      "Chapter 64.20",
-      "Chapter 64.10"
+      "Chapter 121",
+      "Chapter 120",
+      "Chapter 119",
+      "Chapter 118"
     ]
   },
   {
@@ -18,6 +20,17 @@
     "total_downloaded": 269,
     "missing": [
       "Chapter 077"
+    ]
+  },
+  {
+    "slug": "under-the-oak-tree",
+    "judul": "Under the Oak Tree",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
+    "total_online": 174,
+    "total_downloaded": 172,
+    "missing": [
+      "Chapter 64.20",
+      "Chapter 64.10"
     ]
   }
 ]
