@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Avatar-Is-Becoming-the-Final-Boss-193x278.jpg",
     "source": "arenascan",
     "online": 18,
-    "chapterCount": 17,
+    "chapterCount": 18,
     "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -323,6 +323,20 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/my-avatar-is-becoming-the-final-boss-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/392069/15/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/15/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/15/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/15/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/15/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/15/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/392069/15/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 16",
             "url": "https://arenascan.com/my-avatar-is-becoming-the-final-boss-chapter-16/",
             "images": [
@@ -370,5 +384,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-28T11:57:37.536184"
+    "last_scraped": "2026-05-28T14:53:34.641335"
 }

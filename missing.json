@@ -1,15 +1,5 @@
 [
   {
-    "slug": "unrivaled-spear-demon",
-    "judul": "Unrivaled Spear Demon",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/85c890ce-552c-442e-8ba9-eeca50917d05.jpg",
-    "total_online": 51,
-    "total_downloaded": 50,
-    "missing": [
-      "Chapter 48"
-    ]
-  },
-  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -21,37 +11,6 @@
     ]
   },
   {
-    "slug": "insanely-talented-player",
-    "judul": "Insanely-Talented Player",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/ebd8cddf-7068-4326-afc5-752a9e1ad7b4.jpg",
-    "total_online": 120,
-    "total_downloaded": 118,
-    "missing": [
-      "Chapter 117",
-      "Chapter 116"
-    ]
-  },
-  {
-    "slug": "i-will-grind-my-way-to-lord-hood",
-    "judul": "I Will Grind My Way to Lord hood",
-    "thumb": "https://arenascan.com/wp-content/uploads/2026/01/df26aed1-254f-4a86-a814-e173f2b4c7e6.jpg",
-    "total_online": 55,
-    "total_downloaded": 54,
-    "missing": [
-      "Chapter 51"
-    ]
-  },
-  {
-    "slug": "my-avatar-is-becoming-the-final-boss",
-    "judul": "My Avatar Is Becoming the Final Boss",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Avatar-Is-Becoming-the-Final-Boss-193x278.jpg",
-    "total_online": 18,
-    "total_downloaded": 17,
-    "missing": [
-      "Chapter 15"
-    ]
-  },
-  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -59,28 +18,6 @@
     "total_downloaded": 269,
     "missing": [
       "Chapter 077"
-    ]
-  },
-  {
-    "slug": "ending-maker",
-    "judul": "Ending Maker",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/e8a680c8-d879-4bf7-95d4-b5ba91a43992.jpg",
-    "total_online": 76,
-    "total_downloaded": 75,
-    "missing": [
-      "Chapter 71"
-    ]
-  },
-  {
-    "slug": "the-clans-failure-is-the-former-strongest-in-the-continent",
-    "judul": "The Clan’s Failure is the Former Strongest in the Continent",
-    "thumb": "https://arenascan.com/wp-content/uploads/2026/01/85a35d0e-da51-4321-be6a-bf09a5f8e4b1.jpg",
-    "total_online": 41,
-    "total_downloaded": 38,
-    "missing": [
-      "Chapter 38",
-      "Chapter 37",
-      "Chapter 36"
     ]
   }
 ]
