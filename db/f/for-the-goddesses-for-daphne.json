@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/10/579b93bd-c627-4804-9314-691c10918ffe.webp",
     "source": "arenascan",
     "online": 42,
-    "chapterCount": 41,
+    "chapterCount": 42,
     "Chs": "Chapter 41.5, Chapter 41, Chapter 40, Chapter 39, Chapter 38.1, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23.1, Chapter 23, Chapter 22, Chapter 21.5, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 1",
     "chapters": [
         {
@@ -1884,6 +1884,22 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 39",
+            "url": "https://arenascan.com/for-the-goddesses-for-daphne-chapter-39/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/342436/39/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/342436/39/009.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 40",
             "url": "https://arenascan.com/for-the-goddesses-for-daphne-chapter-40/",
             "images": [
@@ -1949,5 +1965,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-30T18:49:22.122039"
+    "last_scraped": "2026-05-30T19:51:10.018602"
 }
