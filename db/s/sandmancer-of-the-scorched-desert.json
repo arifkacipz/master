@@ -2,9 +2,9 @@
     "judul": "Sandmancer of the Scorched Desert",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sandmancer-of-the-Scorched-Desert-193x278.webp",
     "source": "arenascan",
-    "online": 18,
-    "chapterCount": 18,
-    "Chs": "Chapter 22, Chapter 21, Chapter 20.5, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 14, Chapter 12, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 20,
+    "chapterCount": 20,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20.5, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 14, Chapter 12, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -326,7 +326,40 @@
                 "https://cdn.arenascan.com/arena-bucket/398376/22/023.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/sandmancer-of-the-scorched-desert-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398376/23/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/23/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/23/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/23/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/23/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/23/013.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/sandmancer-of-the-scorched-desert-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398376/24/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/015.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/016.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/017.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/018.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/019.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/24/020.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T17:32:40.106563"
+    "last_scraped": "2026-05-30T18:49:21.845451"
 }
