@@ -2,9 +2,9 @@
     "judul": "A Note from Violet",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Note-from-Violet-193x278.jpg",
     "source": "arenascan",
-    "online": 20,
-    "chapterCount": 20,
-    "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 22,
+    "chapterCount": 22,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -587,7 +587,47 @@
                 "https://cdn.arenascan.com/arena-bucket/398669/22/ch_22_28.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/a-note-from-violet-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398669/23/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/23/14.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/a-note-from-violet-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398669/24/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/398669/24/11.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T05:02:42.915119"
+    "last_scraped": "2026-05-31T16:17:53.673855"
 }
