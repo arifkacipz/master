@@ -2,9 +2,9 @@
     "judul": "Nation-Class Dungeon Architect",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Nation-Class-Dungeon-Architect-193x278.jpg",
     "source": "arenascan",
-    "online": 18,
-    "chapterCount": 18,
-    "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 20,
+    "chapterCount": 20,
+    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -616,7 +616,46 @@
                 "https://cdn.arenascan.com/arena-bucket/389182/18/010.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/nation-class-dungeon-architect-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/389182/19/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/19/10.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/nation-class-dungeon-architect-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/389182/20/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/389182/20/15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T17:32:40.074672"
+    "last_scraped": "2026-06-01T20:50:28.670042"
 }
