@@ -2,9 +2,9 @@
     "judul": "Titan Forge",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Titan-Forge-193x278.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -227,7 +227,36 @@
                 "https://cdn.arenascan.com/arena-bucket/390091/10/ch_10_26.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/titan-forge-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390091/11/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/11/08.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/titan-forge-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390091/12/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/12/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/12/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/12/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/12/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/12/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/390091/12/07.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-19T01:30:00.325783"
+    "last_scraped": "2026-06-02T06:27:17.171043"
 }
