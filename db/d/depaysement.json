@@ -2,9 +2,9 @@
     "judul": "D\u00e9paysement",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Depaysement-193x278.webp",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 21,
+    "chapterCount": 21,
+    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -401,7 +401,46 @@
                 "https://cdn.arenascan.com/arena-bucket/393696/19/ch_19_17.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/depaysement-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393696/20/0.png",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/20/COFFEEMANGA-NOTE.png"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/depaysement-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393696/21/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/21/COFFEEMANGA-NOTE.png"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-19T06:33:39.481512"
+    "last_scraped": "2026-06-03T21:58:24.179108"
 }
