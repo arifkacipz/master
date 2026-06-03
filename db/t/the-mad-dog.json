@@ -2,9 +2,9 @@
     "judul": "The Mad Dog",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Mad-Dog-193x278.jpg",
     "source": "arenascan",
-    "online": 32,
-    "chapterCount": 32,
-    "Chs": "Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 34,
+    "chapterCount": 34,
+    "Chs": "Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -809,7 +809,49 @@
                 "https://cdn.arenascan.com/arena-bucket/377558/32/ch_32_23.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/the-mad-dog-chapter-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377558/33/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/33/14.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 34",
+            "url": "https://arenascan.com/the-mad-dog-chapter-34/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377558/34/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377558/34/14.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-19T20:23:06.074022"
+    "last_scraped": "2026-06-03T14:52:48.574577"
 }
