@@ -3,9 +3,75 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/add2c14c-7c63-4e3f-8e39-b38268942504.jpg",
     "source": "arenascan",
     "online": 9,
-    "chapterCount": 3,
+    "chapterCount": 9,
     "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/61085/1/ch_1_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/1/ch_1_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/1/ch_1_3.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/61085/2/ch_2_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/2/ch_2_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/2/ch_2_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/2/ch_2_4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/61085/3/ch_3_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/3/ch_3_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/3/ch_3_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/3/ch_3_4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/61085/4/ch_4_1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/4/ch_4_2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/4/ch_4_3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/4/ch_4_4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/61085/5/1.webp",
+                "https://cdn.arenascan.com/arena-bucket/61085/5/2.webp",
+                "https://cdn.arenascan.com/arena-bucket/61085/5/3.webp",
+                "https://cdn.arenascan.com/arena-bucket/61085/5/4.webp",
+                "https://cdn.arenascan.com/arena-bucket/61085/5/5.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/61085/6/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/6/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/6/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/61085/6/4.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 7",
             "url": "https://arenascan.com/raised-by-my-stepmother-to-believe-i-wasnt-cute-until-i-was-doted-on-by-the-dukes-son-7/",
@@ -42,5 +108,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-05T22:09:56.358704"
+    "last_scraped": "2026-06-05T22:45:22.103813"
 }
