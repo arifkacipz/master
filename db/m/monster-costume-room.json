@@ -2,9 +2,9 @@
     "judul": "Monster costume room",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/7f5c1d80-e686-437d-8cee-d7a255ac6b44.webp",
     "source": "arenascan",
-    "online": 43,
-    "chapterCount": 43,
-    "Chs": "Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 50,
+    "chapterCount": 46,
+    "Chs": "Chapter 50, Chapter 49, Chapter 48, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1025,7 +1025,59 @@
                 "https://cdn.arenascan.com/arena-bucket/53694/43/ch_43_22.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 48",
+            "url": "https://arenascan.com/monster-costume-room-chapter-48/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/53694/48/aa9d8bb4b5bd.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/da2a4ed9d60c.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/f4ef3d0081eb.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/09a2db62d688.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/f78b8db88a6c.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/fbedcf5a3eaa.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/133f8b133a38.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/6f375c93cc8f.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/37aea4671acb.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/c24c39b4fcc2.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/48/aaa0c934f29c.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 49",
+            "url": "https://arenascan.com/monster-costume-room-chapter-49/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/53694/49/c8bafe87a78f.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/f5fdea32cb6a.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/b7ec6c054592.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/ec077122aff7.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/bf57547a904b.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/64aeb99fffb3.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/b8be2e3c411e.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/d92c7b573c3b.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/ee5febc095e0.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/49/7f60c8a8e26e.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 50",
+            "url": "https://arenascan.com/monster-costume-room-chapter-50/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/53694/50/ec1a5238ca80.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/1ee758688070.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/aacb57c805f3.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/b9c520519575.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/f704fee17693.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/a888ca6893b1.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/9e1d4ea40669.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/0b70738d57af.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/3f40b698dc88.webp",
+                "https://cdn.arenascan.com/arena-bucket/53694/50/45806162c5e1.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-05T17:59:19.312513"
+    "last_scraped": "2026-06-06T03:57:27.734161"
 }
