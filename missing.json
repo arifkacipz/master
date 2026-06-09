@@ -1,24 +1,5 @@
 [
   {
-    "slug": "according-to-their-own-instincts",
-    "judul": "According to Their Own Instincts",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/9705bbd86da7.webp",
-    "total_online": 13,
-    "total_downloaded": 3,
-    "missing": [
-      "Chapter 8",
-      "Chapter 7",
-      "Chapter 6",
-      "Chapter 5",
-      "Chapter 4",
-      "Chapter 3",
-      "Chapter 2",
-      "Chapter 1.2",
-      "Chapter 1.1",
-      "Chapter 1"
-    ]
-  },
-  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
@@ -30,81 +11,6 @@
     ]
   },
   {
-    "slug": "immortal-s-way-of-life",
-    "judul": "Immortal’s Way of Life",
-    "thumb": "https://cdn.arenascan.com/arena-bucket/images/Immortals-Way-of-Life-193x278.jpg",
-    "total_online": 85,
-    "total_downloaded": 19,
-    "missing": [
-      "Chapter 81",
-      "Chapter 80",
-      "Chapter 79",
-      "Chapter 78",
-      "Chapter 77",
-      "Chapter 76",
-      "Chapter 75",
-      "Chapter 74",
-      "Chapter 73",
-      "Chapter 72",
-      "Chapter 71",
-      "Chapter 70",
-      "Chapter 69",
-      "Chapter 68",
-      "Chapter 67",
-      "Chapter 66",
-      "Chapter 65",
-      "Chapter 64",
-      "Chapter 63",
-      "Chapter 62",
-      "Chapter 61",
-      "Chapter 60",
-      "Chapter 59",
-      "Chapter 58",
-      "Chapter 57",
-      "Chapter 56",
-      "Chapter 55",
-      "Chapter 54",
-      "Chapter 53",
-      "Chapter 52",
-      "Chapter 51",
-      "Chapter 50",
-      "Chapter 49",
-      "Chapter 48",
-      "Chapter 47",
-      "Chapter 46",
-      "Chapter 45",
-      "Chapter 44",
-      "Chapter 43",
-      "Chapter 42",
-      "Chapter 41",
-      "Chapter 40",
-      "Chapter 39",
-      "Chapter 38",
-      "Chapter 37",
-      "Chapter 36",
-      "Chapter 35",
-      "Chapter 34",
-      "Chapter 33",
-      "Chapter 32",
-      "Chapter 31",
-      "Chapter 30",
-      "Chapter 29",
-      "Chapter 28",
-      "Chapter 27",
-      "Chapter 26",
-      "Chapter 25",
-      "Chapter 24",
-      "Chapter 23",
-      "Chapter 22",
-      "Chapter 21",
-      "Chapter 20",
-      "Chapter 19",
-      "Chapter 18",
-      "Chapter 17",
-      "Chapter 16"
-    ]
-  },
-  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -112,79 +18,6 @@
     "total_downloaded": 269,
     "missing": [
       "Chapter 077"
-    ]
-  },
-  {
-    "slug": "liberal-artsxsciences",
-    "judul": "Liberal ArtsXSciences",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/034a94e0-d7d3-44de-bf73-c9c8c087324a.jpg",
-    "total_online": 28,
-    "total_downloaded": 27,
-    "missing": [
-      "Chapter 25"
-    ]
-  },
-  {
-    "slug": "long-awaited-feelings",
-    "judul": "Long-awaited Feelings",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f20e5a23-c1c0-46d9-affe-bf0d231d1837.jpg",
-    "total_online": 165,
-    "total_downloaded": 163,
-    "missing": [
-      "Chapter 13",
-      "Chapter 10"
-    ]
-  },
-  {
-    "slug": "evil-dragon-is-reincarnated-revenge-begins-at-the-age-of-five",
-    "judul": "Evil Dragon Is Reincarnated! Revenge Begins at the Age of Five!",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/12db5d7d-351f-4a66-b216-dfa3c2efc2fe.jpg",
-    "total_online": 293,
-    "total_downloaded": 292,
-    "missing": [
-      "Chapter 118"
-    ]
-  },
-  {
-    "slug": "9000-years-old-empress",
-    "judul": "9000 Years Old Empress",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/867ed96a-f2cf-48e7-8d76-ccd365fa49c0.jpg",
-    "total_online": 106,
-    "total_downloaded": 105,
-    "missing": [
-      "Chapter 30"
-    ]
-  },
-  {
-    "slug": "the-rabbit-trapped-in-rumors",
-    "judul": "The Rabbit Trapped In Rumors",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/e2c2f40b-e67e-4ea9-8c4f-0f37e303efc7.jpg",
-    "total_online": 26,
-    "total_downloaded": 25,
-    "missing": [
-      "Chapter 19"
-    ]
-  },
-  {
-    "slug": "top-rankers-life-guide-for-aspiring-writers",
-    "judul": "Top Ranker’s Life Guide for Aspiring Writers",
-    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/5c7fa54d-d3aa-4806-ac45-8cef38738040.jpg",
-    "total_online": 85,
-    "total_downloaded": 72,
-    "missing": [
-      "Chapter 81",
-      "Chapter 80",
-      "Chapter 79",
-      "Chapter 78",
-      "Chapter 77",
-      "Chapter 76",
-      "Chapter 75",
-      "Chapter 74",
-      "Chapter 73",
-      "Chapter 72",
-      "Chapter 71",
-      "Chapter 70",
-      "Chapter 69"
     ]
   }
 ]
