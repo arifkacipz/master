@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/44fac9cb-7380-4544-8891-a95066b4e6ca.webp",
     "source": "arenascan",
     "online": 33,
-    "chapterCount": 32,
+    "chapterCount": 33,
     "Chs": "Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -594,6 +594,28 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/the-lost-city-of-alien-beasts-chapter-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/291741/32/46e9cd68b3ea.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/3b5b1ab5b7e8.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/a6e98c8faeff.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/595edea72696.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/f0c49199c2df.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/9ae7fb227113.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/6b82545953fa.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/e8282c02791a.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/d7a2325db768.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/ce35d7bc2c2f.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/01be0993b2cc.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/59f634a269e6.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/a2a71d702be1.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/671c7c6fbd41.webp",
+                "https://cdn.arenascan.com/arena-bucket/291741/32/b31aedb7a6f3.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 33",
             "url": "https://arenascan.com/the-lost-city-of-alien-beasts-chapter-33/",
             "images": [
@@ -660,5 +682,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-11T21:53:53.300529"
+    "last_scraped": "2026-06-11T22:24:11.653701"
 }
