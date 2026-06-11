@@ -2,9 +2,9 @@
     "judul": "The Absolutely Unbeatable Dungeon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Absolutely-Unbeatable-Dungeon-193x278.jpg",
     "source": "arenascan",
-    "online": 16,
-    "chapterCount": 16,
-    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 20,
+    "chapterCount": 19,
+    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -400,7 +400,68 @@
                 "https://cdn.arenascan.com/arena-bucket/401875/16/012.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-absolutely-unbeatable-dungeon-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401875/18/5239f980d1ef.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/6d9a2eea4230.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/54fc11b1172c.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/28bde182b369.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/00de51e69127.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/c6e3d527e4a5.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/e3b1c71b3929.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/bd3b26d78126.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/57c1c3cd4b65.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/b890b66473d6.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/04b7007277b4.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/18/67cb5a0f7a17.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/the-absolutely-unbeatable-dungeon-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401875/19/6ff81e0dd3f7.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/ecbdfd02e9bb.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/8c1c70459d8b.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/3cb30c428cf2.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/49eafc6e4831.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/775d074350da.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/7897ae6a3634.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/4c8dae6e33ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/9f81bed90b96.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/2b2126db3412.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/b21ef05cd867.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/e858d33c5b2c.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/97bf13661bff.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/9b1e1b7934bb.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/19/3596f4846b01.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/the-absolutely-unbeatable-dungeon-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401875/20/57ace3e60be4.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/9437f95f4283.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/bb3ed9ed2f40.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/96b12d12c133.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/efd939b5d0b6.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/8f36f7c1f2ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/4265e8aa28af.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/eebd69ddbe90.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/9704cca6089d.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/1bf87447eb28.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/b0c7d7c279a6.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/331e1aca4e84.webp",
+                "https://cdn.arenascan.com/arena-bucket/401875/20/41b2d51ea267.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-21T17:18:17.332944"
+    "last_scraped": "2026-06-11T19:43:14.724189"
 }

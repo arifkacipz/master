@@ -2,9 +2,9 @@
     "judul": "The Oracle of the Villainous Baby",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Oracle-of-the-Villainous-Baby-193x278.jpg",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 21,
+    "chapterCount": 21,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -492,7 +492,52 @@
                 "https://cdn.arenascan.com/arena-bucket/397240/22/ch_22_19.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/the-oracle-of-the-villainous-baby-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397240/23/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/23/COFFEEMANGA-NOTE.png"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/the-oracle-of-the-villainous-baby-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397240/24/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/14.webp",
+                "https://cdn.arenascan.com/arena-bucket/397240/24/15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T13:45:25.706726"
+    "last_scraped": "2026-06-11T19:43:14.939315"
 }
