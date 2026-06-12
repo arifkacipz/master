@@ -2,9 +2,9 @@
     "judul": "One Glance at the Martial World",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/One-Glance-at-the-Martial-World-193x278.jpg",
     "source": "arenascan",
-    "online": 16,
-    "chapterCount": 16,
-    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 18,
+    "chapterCount": 18,
+    "Chs": "Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -269,7 +269,35 @@
                 "https://cdn.arenascan.com/arena-bucket/378256/15/ch_15_13.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378256/16/aafa788d147c.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/16/9d4376ddf193.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/16/2ed80a67cbdb.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/16/338c3493f547.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/16/b16d635307f1.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/16/a5301ddad6bf.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/16/e9d872a655ce.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/one-glance-at-the-martial-world-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378256/17/bd5e70751d48.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/17/d594dd2d21ef.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/17/cf42ef0dc67d.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/17/9170b317c863.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/17/fca8c0d8a703.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/17/9acbe5d01d38.webp",
+                "https://cdn.arenascan.com/arena-bucket/378256/17/2c4b304dc49f.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-20T05:54:02.717423"
+    "last_scraped": "2026-06-12T22:56:13.934391"
 }
