@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/I-May-Be-Cursed-But-the-Legendary-Saint-Is-on-My-Side-193x278.jpg",
     "source": "arenascan",
     "online": 19,
-    "chapterCount": 17,
+    "chapterCount": 19,
     "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13.5, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -384,6 +384,24 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/i-may-be-cursed-but-the-legendary-saint-is-on-my-side-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377591/15/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377591/15/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 16",
             "url": "https://arenascan.com/i-may-be-cursed-but-the-legendary-saint-is-on-my-side-chapter-16/",
             "images": [
@@ -398,6 +416,23 @@
                 "https://cdn.arenascan.com/arena-bucket/377591/16/858db91ee032.webp",
                 "https://cdn.arenascan.com/arena-bucket/377591/16/6d43ea737c37.webp",
                 "https://cdn.arenascan.com/arena-bucket/377591/16/37e18be083f5.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/i-may-be-cursed-but-the-legendary-saint-is-on-my-side-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377591/17/0ee8f68d4145.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/93691d76ce67.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/29b1405f9b07.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/211f62ac3690.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/5868735606a5.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/5985e063058d.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/76c8f30522da.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/e66278aa544a.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/844e6ea3413e.webp",
+                "https://cdn.arenascan.com/arena-bucket/377591/17/41614424b73b.webp"
             ],
             "source_chapter": "arenascan"
         },
@@ -423,5 +458,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-12T19:31:20.941370"
+    "last_scraped": "2026-06-12T22:10:51.230845"
 }

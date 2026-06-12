@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Glitch-Utopia-193x278.jpg",
     "source": "arenascan",
     "online": 25,
-    "chapterCount": 23,
+    "chapterCount": 25,
     "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
@@ -398,6 +398,41 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/glitch-utopia-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377901/20/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377901/20/011.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/glitch-utopia-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377901/21/db008bc312c2.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/6a3e01835537.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/41701535226f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/9943dc6cdfa9.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/8b79c43a71be.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/f751099abe46.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/62bb0526faf9.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/5c767398667b.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/8973bb352bae.webp",
+                "https://cdn.arenascan.com/arena-bucket/377901/21/edaa6af741b7.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 22",
             "url": "https://arenascan.com/glitch-utopia-chapter-22/",
             "images": [
@@ -461,5 +496,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-12T21:25:07.306792"
+    "last_scraped": "2026-06-12T22:09:29.910214"
 }
