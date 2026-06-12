@@ -1,10 +1,10 @@
 {
     "judul": "Crimson Reset",
     "thumb": "https://manhuaplus.org/uploads/covers/crimson-reset.jpg",
-    "source": "manhuaplus",
-    "online": 46,
-    "chapterCount": 46,
-    "Chs": "Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "source": "merged",
+    "online": 47,
+    "chapterCount": 47,
+    "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1119,7 +1119,34 @@
                 "https://cdn.arenascan.com/arena-bucket/352206/46/022.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 47",
+            "url": "https://manhuaplus.org/manga/crimson-reset/chapter-47",
+            "images": [
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-37-9100636724031296.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-56-9100655393208807.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-11-9100671260667555.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-14-9100674076956202.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-52-9100651395898761.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-30-9100629315278417.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-02-9100661984182781.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-42-9100641516775835.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-07-9100666566220421.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-58-9100657902186354.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-00-9100659377560335.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-34-9100633933556096.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-19-9100679098601740.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-39-9100639161111920.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-46-9100646092125725.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-44-9100644225845214.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-50-54-9100653848680820.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-17-9100676697807496.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-04-9100663796598661.webp",
+                "https://cdn.manhuaplus.cc/2026/06/12/06-51-09-9100668754382057.webp"
+            ],
+            "source_chapter": "manhuaplus"
         }
     ],
-    "last_scraped": "2026-06-05T01:34:45.539943"
+    "last_scraped": "2026-06-12T02:04:02.453815"
 }
