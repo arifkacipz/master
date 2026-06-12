@@ -1,5 +1,35 @@
 [
   {
+    "slug": "war-of-the-stray-dogs",
+    "judul": "War of the Stray Dogs",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/War-of-the-Stray-Dogs-193x278.jpg",
+    "total_online": 19,
+    "total_downloaded": 18,
+    "missing": [
+      "Chapter 16"
+    ]
+  },
+  {
+    "slug": "blood-rain-zero",
+    "judul": "Blood Rain: Zero",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/1d5e8bae-4dac-47e9-bf65-d0a80d3c58ff.webp",
+    "total_online": 47,
+    "total_downloaded": 46,
+    "missing": [
+      "Chapter 44"
+    ]
+  },
+  {
+    "slug": "how-to-build-a-time-machine",
+    "judul": "How to Build a Time Machine",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/570aeba6-0622-47f7-81d2-f30f087f91fe.webp",
+    "total_online": 38,
+    "total_downloaded": 37,
+    "missing": [
+      "Chapter 35"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -7,6 +37,57 @@
     "total_downloaded": 269,
     "missing": [
       "Chapter 077"
+    ]
+  },
+  {
+    "slug": "sisters-in-law-i-m-really-not-stupid-anymore",
+    "judul": "Sisters-in-law, I’m Really Not Stupid Anymore",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/d62ad6ecc3dc.webp",
+    "total_online": 45,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 42",
+      "Chapter 41",
+      "Chapter 40",
+      "Chapter 39",
+      "Chapter 38",
+      "Chapter 37",
+      "Chapter 36",
+      "Chapter 35",
+      "Chapter 34",
+      "Chapter 33",
+      "Chapter 32",
+      "Chapter 31",
+      "Chapter 30",
+      "Chapter 29",
+      "Chapter 28",
+      "Chapter 27",
+      "Chapter 26",
+      "Chapter 25",
+      "Chapter 24",
+      "Chapter 23",
+      "Chapter 22",
+      "Chapter 21",
+      "Chapter 20",
+      "Chapter 19",
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
     ]
   },
   {
@@ -19,6 +100,84 @@
       "Chapter 22",
       "Chapter 21",
       "Chapter 20"
+    ]
+  },
+  {
+    "slug": "murim-salon",
+    "judul": "Murim Salon",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/6036c258-6634-4887-88f0-5c7dbaa3b37d.jpg",
+    "total_online": 34,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 31",
+      "Chapter 30",
+      "Chapter 29",
+      "Chapter 28",
+      "Chapter 27",
+      "Chapter 26",
+      "Chapter 25",
+      "Chapter 24",
+      "Chapter 23",
+      "Chapter 22",
+      "Chapter 21",
+      "Chapter 20",
+      "Chapter 19",
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
+    ]
+  },
+  {
+    "slug": "leu-leu-leu",
+    "judul": "Leu Leu Leu",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/e8123c47-623b-4b78-b069-ea4ca397c4fe.webp",
+    "total_online": 24,
+    "total_downloaded": 23,
+    "missing": [
+      "Chapter 21"
+    ]
+  },
+  {
+    "slug": "dont-obsess-over-the-fake-princess",
+    "judul": "Don’t Obsess Over the Fake Princess!",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/10/6635ec1d-1d3f-47f4-a354-6f14934a407f.webp",
+    "total_online": 21,
+    "total_downloaded": 2,
+    "missing": [
+      "Chapter 20",
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
+      "Chapter 12",
+      "Chapter 11",
+      "Chapter 10",
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
     ]
   },
   {
@@ -55,6 +214,16 @@
     "missing": [
       "Chapter 67",
       "Chapter 66"
+    ]
+  },
+  {
+    "slug": "the-art-of-leaving-work-on-time",
+    "judul": "The Art of Leaving Work on Time",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/5a8751f2-e099-4caa-b11c-1eeb5333ae2f.jpg",
+    "total_online": 36,
+    "total_downloaded": 35,
+    "missing": [
+      "Chapter 34"
     ]
   },
   {
