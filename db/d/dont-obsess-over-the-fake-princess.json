@@ -3,9 +3,53 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/10/6635ec1d-1d3f-47f4-a354-6f14934a407f.webp",
     "source": "arenascan",
     "online": 21,
-    "chapterCount": 2,
+    "chapterCount": 5,
     "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/dont-obsess-over-the-fake-princess-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/340101/17/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/340101/17/14.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/dont-obsess-over-the-fake-princess-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/340101/18/04cc02e90e8d.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/861380df0761.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/fceb515ece10.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/0f7edeadd8b6.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/a8de9fa31333.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/b5590a7b87eb.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/3b02e455f326.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/f3330319fba2.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/9bf8d2b86f0c.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/080d9330d98f.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/437e23be427e.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/9e5281b40a3d.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/02c27735aa97.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/011fa4c4c8a1.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/c124bfb0ff75.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/18/1fd4aad1cc9e.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 19",
             "url": "https://arenascan.com/dont-obsess-over-the-fake-princess-chapter-19/",
@@ -19,6 +63,22 @@
                 "https://cdn.arenascan.com/arena-bucket/340101/19/57651f88a9e2.webp",
                 "https://cdn.arenascan.com/arena-bucket/340101/19/ca4e90ae276d.webp",
                 "https://cdn.arenascan.com/arena-bucket/340101/19/d9b7a454dc4b.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/dont-obsess-over-the-fake-princess-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/340101/20/aa7e90c65cca.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/e4a02db9b4a0.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/20da0efb1787.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/f01eab4e556e.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/3f59731463f1.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/a38b72b9e6f0.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/ecf7f10883d7.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/f17fc3161e88.webp",
+                "https://cdn.arenascan.com/arena-bucket/340101/20/1de140583f33.webp"
             ],
             "source_chapter": "arenascan"
         },
@@ -38,5 +98,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-12T17:23:32.057538"
+    "last_scraped": "2026-06-12T19:31:21.181278"
 }
