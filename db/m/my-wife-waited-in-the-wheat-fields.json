@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/2026-06-12-12-25-02-1781267102926.webp",
     "source": "arenascan",
     "online": 15,
-    "chapterCount": 14,
+    "chapterCount": 15,
     "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -38,6 +38,23 @@
                 "https://cdn.arenascan.com/arena-bucket/425779/2/315adff178f1.webp",
                 "https://cdn.arenascan.com/arena-bucket/425779/2/3b803a69e7fc.webp",
                 "https://cdn.arenascan.com/arena-bucket/425779/2/1063aa8f7f3a.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/my-wife-waited-in-the-wheat-fields-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425779/3/12a9f45b66ba.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/446d1ffbf550.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/c755d3fa4bc8.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/44f37f8fc97c.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/7dd661f4c335.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/b9ee9ce3a1f7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/b9037667ad50.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/5f6abbe1ef6e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/bfc4c5da09dc.webp",
+                "https://cdn.arenascan.com/arena-bucket/425779/3/07cb72ff7830.webp"
             ],
             "source_chapter": "arenascan"
         },
@@ -363,5 +380,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-13T20:51:38.213869"
+    "last_scraped": "2026-06-13T22:39:41.785768"
 }

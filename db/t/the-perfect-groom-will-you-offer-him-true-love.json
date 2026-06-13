@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Perfect-Groom-Will-You-Offer-Him-True-Love-193x278.jpg",
     "source": "arenascan",
     "online": 21,
-    "chapterCount": 20,
+    "chapterCount": 21,
     "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -342,6 +342,23 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-perfect-groom-will-you-offer-him-true-love-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398884/18/44ce66cabe16.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/b5cc51c06d1b.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/216ffa26bc40.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/aabdb3d8aab7.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/9c49a1f79385.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/7f528239780a.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/47b9bcf96397.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/bc09c2e13f94.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/2abacaa3bca9.webp",
+                "https://cdn.arenascan.com/arena-bucket/398884/18/21cec4d30286.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 19",
             "url": "https://arenascan.com/the-perfect-groom-will-you-offer-him-true-love-chapter-19/",
             "images": [
@@ -384,5 +401,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-13T21:29:07.297849"
+    "last_scraped": "2026-06-13T22:39:34.013030"
 }

@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/An-Emergency-Blind-Date-193x278.jpg",
     "source": "arenascan",
     "online": 32,
-    "chapterCount": 31,
+    "chapterCount": 32,
     "Chs": "Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -754,6 +754,21 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/an-emergency-blind-date-chapter-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/385436/29/208f3d3a4d8b.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/15ca108dd914.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/05044092b27f.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/4421c96d786e.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/91175bccac71.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/48de027c2314.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/5a86718a8838.webp",
+                "https://cdn.arenascan.com/arena-bucket/385436/29/12c200791b3b.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 30",
             "url": "https://arenascan.com/an-emergency-blind-date-chapter-30/",
             "images": [
@@ -808,5 +823,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-13T21:29:07.221996"
+    "last_scraped": "2026-06-13T22:39:47.033561"
 }
