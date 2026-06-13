@@ -1,5 +1,16 @@
 [
   {
+    "slug": "book-of-the-dead",
+    "judul": "Book of the Dead",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/f9982000-4392-433a-a926-5bbc06fda24d.webp",
+    "total_online": 85,
+    "total_downloaded": 83,
+    "missing": [
+      "Chapter 82",
+      "Chapter 81"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -18,6 +29,36 @@
       "Chapter 80",
       "Chapter 79",
       "Chapter 78"
+    ]
+  },
+  {
+    "slug": "golden-chevalier",
+    "judul": "Golden Chevalier",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/9c28d5ae-5b7d-4e2f-afbe-5276d1bdfebe.webp",
+    "total_online": 48,
+    "total_downloaded": 47,
+    "missing": [
+      "Chapter 45"
+    ]
+  },
+  {
+    "slug": "my-sweet-heart",
+    "judul": "My Sweet Heart",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/12/577bb4da-f5f2-4b80-929e-ad4bc456633a.webp",
+    "total_online": 42,
+    "total_downloaded": 41,
+    "missing": [
+      "Chapter 42"
+    ]
+  },
+  {
+    "slug": "the-youngest-member-filming-a-parenting-show-is-adorable",
+    "judul": "The Youngest Member Filming a Parenting Show is Adorable",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Youngest-Member-Filming-a-Parenting-Show-is-Adorable-193x278.jpg",
+    "total_online": 27,
+    "total_downloaded": 26,
+    "missing": [
+      "Chapter 25"
     ]
   },
   {
