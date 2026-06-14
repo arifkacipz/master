@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Conscientious-Tutoring-193x278.webp",
     "source": "arenascan",
     "online": 20,
-    "chapterCount": 19,
+    "chapterCount": 20,
     "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -298,6 +298,26 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/conscientious-tutoring-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377814/17/fde827de4d67.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/60f4bd94d99c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/404bd2f3d669.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/ad0e8fb9cd50.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/0c33871701f3.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/56d4c029ff4d.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/7373db8d20cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/a44fc908d218.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/5d2c815093b3.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/7f4969e01382.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/42683d21c26f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/0638a3302565.webp",
+                "https://cdn.arenascan.com/arena-bucket/377814/17/eeff4f1e9d05.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 18",
             "url": "https://arenascan.com/conscientious-tutoring-chapter-18/",
             "images": [
@@ -405,5 +425,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T18:50:48.564923"
+    "last_scraped": "2026-06-14T20:49:54.067956"
 }

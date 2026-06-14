@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Selling-It-Because-We-Broke-Up-193x278.webp",
     "source": "arenascan",
     "online": 11,
-    "chapterCount": 9,
+    "chapterCount": 11,
     "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -142,6 +142,44 @@
                 "https://cdn.arenascan.com/arena-bucket/406461/6/013.jpg",
                 "https://cdn.arenascan.com/arena-bucket/406461/6/014.jpg",
                 "https://cdn.arenascan.com/arena-bucket/406461/6/015.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/selling-it-because-we-broke-up-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/406461/7/26796c912dc1.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/a06cc7c47641.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/8012f8e76c3e.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/5e7b3bb60b1c.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/85f7249418f3.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/6bb8a16d55a6.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/636cb4fb7011.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/2f4de3a0d256.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/fd1632726c8e.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/7/db492e91ecaa.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/selling-it-because-we-broke-up-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/406461/8/c34ac2d2a063.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/95b09e495110.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/1f3e8d154dd0.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/278145d2b685.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/5ac8eec078e1.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/789bfd7c16e3.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/3fa48a8851f2.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/65af026ce32a.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/6b9cd568c967.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/c9b6bb1dc03c.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/49420d3e2d11.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/16dd628fa239.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/b9c5070cf884.webp",
+                "https://cdn.arenascan.com/arena-bucket/406461/8/5576f095b0b5.webp"
             ],
             "source_chapter": "arenascan"
         },
@@ -302,5 +340,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T18:50:48.503311"
+    "last_scraped": "2026-06-14T20:49:52.469154"
 }
