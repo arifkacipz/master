@@ -2,9 +2,9 @@
     "judul": "Ties that Bind Us",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Ties-that-Bind-Us-193x278.jpg",
     "source": "arenascan",
-    "online": 13,
-    "chapterCount": 13,
-    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 22,
+    "chapterCount": 16,
+    "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1897,7 +1897,54 @@
                 "https://cdn.arenascan.com/arena-bucket/381494/13/ch_13_94.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/ties-that-bind-us-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381494/20/25e1d199efb8.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/33a76cb1ab73.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/9cc583e258ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/3997fe34dbd5.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/c009527c324a.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/70858748c908.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/32348defcfab.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/20/9fc99807c7ff.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/ties-that-bind-us-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381494/21/29f9a1a7da4a.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/424feca4028b.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/95731e5d8f9b.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/2c64a81e064c.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/abf40fd16a78.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/e3322d0baee8.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/fae7444fdb97.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/eada3f59d1c7.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/2aa4c68288e0.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/21/0ef70f49d8c2.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/ties-that-bind-us-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/381494/22/c020e68b492b.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/9e41fe898ba2.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/edab73b17ebd.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/d3e60e96a05c.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/fa93501b8812.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/613fd26da437.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/e0bec3f5cad2.webp",
+                "https://cdn.arenascan.com/arena-bucket/381494/22/45418639502c.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-20T05:54:02.821554"
+    "last_scraped": "2026-06-14T15:28:09.379618"
 }

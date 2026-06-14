@@ -21,6 +21,51 @@
     ]
   },
   {
+    "slug": "my-meddler-in-love",
+    "judul": "My Meddler in Love",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/3523b56a-9a4f-480d-9ffb-58c14f9c3211.webp",
+    "total_online": 34,
+    "total_downloaded": 33,
+    "missing": [
+      "Chapter 31"
+    ]
+  },
+  {
+    "slug": "ankle-breaker",
+    "judul": "Ankle Breaker",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/0aa168f6-ec97-48c0-8835-75a98439dcd1.jpg",
+    "total_online": 36,
+    "total_downloaded": 35,
+    "missing": [
+      "Chapter 33"
+    ]
+  },
+  {
+    "slug": "colorist",
+    "judul": "Colorist",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/52955d44-71ee-41f6-9be9-20aa68566f48.webp",
+    "total_online": 33,
+    "total_downloaded": 32,
+    "missing": [
+      "Chapter 31"
+    ]
+  },
+  {
+    "slug": "ties-that-bind-us",
+    "judul": "Ties that Bind Us",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/Ties-that-Bind-Us-193x278.jpg",
+    "total_online": 22,
+    "total_downloaded": 16,
+    "missing": [
+      "Chapter 19",
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
