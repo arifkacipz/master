@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/50815097-e033-4e2f-92d9-300e9c12bfb3.webp",
     "source": "arenascan",
     "online": 41,
-    "chapterCount": 40,
+    "chapterCount": 41,
     "Chs": "Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -1072,6 +1072,28 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 39",
+            "url": "https://arenascan.com/around-forty-chapter-39/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/276432/39/0c907a66b2cc.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/5d3cb612dc26.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/89d28dee229c.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/57f7ff79035f.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/504f0e0e5881.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/69ae046dd9f1.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/5316883a25ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/541cbcc27be1.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/d1f9ee9c8ac4.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/cc785df215e4.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/30d5d46e667b.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/817671d79386.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/69df09538414.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/87ec39b87ed1.webp",
+                "https://cdn.arenascan.com/arena-bucket/276432/39/689fb34499f5.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 40",
             "url": "https://arenascan.com/around-forty-chapter-40/",
             "images": [
@@ -1379,5 +1401,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T05:15:33.505579"
+    "last_scraped": "2026-06-14T07:08:18.418723"
 }
