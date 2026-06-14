@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Monsters-Fight-Monsters-193x278.jpg",
     "source": "arenascan",
     "online": 26,
-    "chapterCount": 24,
+    "chapterCount": 26,
     "Chs": "Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -810,6 +810,62 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/monsters-fight-monsters-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377534/23/c215470e8250.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/299a2a424209.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/384ab8dcc26d.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/d89fe032ba1b.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/db2444bdc17a.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/3575308c6b1a.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/bc7a49168b5f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/733cc4b9c4f6.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/dbd65934a22d.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/fc1342239462.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/dc6119b39368.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/a26e6bdfceb9.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/36b966e79deb.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/9f53358baf08.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/3771ff11e41b.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/e1ef75526dc1.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/826aa2b89d8f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/2a6fa431437a.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/ed8c8f878ec8.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/c431d5880635.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/23/4374978d1a23.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/monsters-fight-monsters-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377534/24/5b65c3ed6115.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/2219cd1206d8.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/2416aa34e20c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/524925bf0eef.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/24a4c3c275b9.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/84612ee627b6.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/79f897743551.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/600fe21ab830.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/b6066edf7d0b.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/a07cde8b11db.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/8e3d458b37fb.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/18626004ff16.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/8c4a0ac026ed.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/d2be2073c66a.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/c19a243a3c88.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/ee84bb6c575c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/b3737d5d0a84.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/ac87de2dc34d.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/2ffc4fa31993.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/54cff0b12131.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/24/28987107ec05.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 25",
             "url": "https://arenascan.com/monsters-fight-monsters-chapter-25/",
             "images": [
@@ -849,5 +905,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T22:01:00.848381"
+    "last_scraped": "2026-06-14T22:45:03.696288"
 }

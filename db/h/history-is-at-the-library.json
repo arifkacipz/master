@@ -3,9 +3,295 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/67f5f3d8d481.webp",
     "source": "arenascan",
     "online": 16,
-    "chapterCount": 3,
+    "chapterCount": 16,
     "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
+        {
+            "nama": "Chapter 0",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-0/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/0/392d9681f695.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/0/51522e5c68cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/0/f96abd476d92.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/0/144d8a2c9557.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/0/5e668ffcd716.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/1/94267d5165d5.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/7fb772302f1f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/fed16a180d74.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/346afabd8461.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/deb45fbf3b19.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/3a2656f16e51.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/6b6a219c02fc.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/0d80788bd60f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/8fc34b33597f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/9f932324dda8.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/7790491c8524.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/6205327548d8.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/406e9f523a0a.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/9884cb543822.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/b57eb1a066a2.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/d3b946bc3748.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/1/51a1eb0e1026.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/2/0e8c24e532fa.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/a0ebc5b8a6b4.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/131e35334fcc.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/eba1909ef70a.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/7962bd958027.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/68a955b6ead5.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/ce23d7063130.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/103fd621294d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/a851c9b677fa.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/cddce8b46aab.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/6ade06c5c614.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/d5ce54417998.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/e5ae2af41140.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/a95928e57d06.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/653d0f2ef962.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/54f5a3d69052.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/bfc087509632.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/a3b049a69824.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/e63329690ae9.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/90b83ca8d6e7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/2/8feea4886606.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 3",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-3/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/3/cc33a76c0ba8.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/cafd2867d542.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/e447c816691d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/e2699c550827.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/2d598d5c7f79.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/af56ccfc6a25.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/b18899372109.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/341c12f97602.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/7af1ed64918e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/b435c2e8e814.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/9efa5d80d9cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/c172e99d2019.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/4acafab85181.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/3/614e8214f0c3.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 4",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-4/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/4/278c801516b2.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/4/2bfb2bedf2cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/4/5abc52641b0f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/4/334a839ca606.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/4/ba97c0418c7d.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 5",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-5/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/5/a895a05e8cf1.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/73cca08b8a26.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/82ebc42cd6e4.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/26a44de94221.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/a711b36722ad.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/42cb6d5bbd07.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/e4b4829e06d7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/f91f48aa1b9b.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/183d6f8e958f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/95ea7149db64.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/4e2ae47beb18.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/e12e64c42913.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/3d781e08af0f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/86a628901cfa.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/dee77219cf94.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/5/3c0d716a8f4f.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/6/16464596952e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/2d9159898f98.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/c789a34874ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/26e9801cc2a9.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/b4639f76feec.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/eb122e1e3387.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/f745d89f6ca9.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/6/1e4f078daeba.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/7/e743a4ccd5a4.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/8381501f343a.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/bb2e8273c65d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/af3ae3fabd21.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/7483f093e341.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/ab10e9583793.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/a3c36a91b767.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/982c5ca2b9ea.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/5e0a4959f939.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/3d61f00edec7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/7/853cf59fe52f.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/8/28fb293a4b13.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/2dbe3cc1fb74.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/eeac8ab44879.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/c17764961cfa.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/b9733c8e313d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/b43c03112c1d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/f805f4159e1b.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/22e35857c393.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/52002f4d29e6.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/18089c7eaafc.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/b6a33646e260.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/1fbdda5be1a7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/f93bcd1ae9ba.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/8/f03b687ef686.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/9/802a1049468e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/4848e498a52d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/f8190ed1888e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/7f6d2e39ac7e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/d9c9187caead.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/3da6ad68c076.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/dc4ecaff1c2d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/9d6a25605a61.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/9/4dbd9c3d55fc.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/10/8414ccf75f02.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/85309f4d159c.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/fc3ec988dff3.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/0705296e2165.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/20f10af5d2f1.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/4b9165c125ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/9365fe88cfea.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/b3ad65a6d383.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/c4f67d7f5edc.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/69a52ffb6998.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/10/180a545ac06d.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/11/811dce5d29fd.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/7cc9e3980513.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/a07823f62e0c.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/d0e792e4992f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/416d4a1d9862.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/7ec06338c010.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/55a61b0bad8b.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/259a5f18f71c.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/99f6cce98a4f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/dc961aa56d73.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/306ebb7e5fc6.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/363b8cc76a86.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/3e2335b7b498.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/11/f0ecab8c5724.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/history-is-at-the-library-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/425956/12/76aa1979d936.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/95cf1ea1e8f7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/05be3867dc11.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/e207cc9f114d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/4fb6ed7bb94b.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/492f45018c71.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/97f961ffdc90.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/9c821c31bebd.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/7b98f51e88f4.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/870a4fb5e6c1.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/0f77388ee8ad.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/6bd7bb32db00.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/9a46f71220e2.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/74c46af474e2.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/92ac505f94e7.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/80d0bd831364.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/f191d43369d4.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/132461dc2f3a.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/df4e9f5e2188.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/877cc258092f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/01af757e23c4.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/731ad87fca75.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/bba5a6caf5d3.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/ce41f2d51792.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/e16089945d07.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/059b37bfdfbf.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/54e14735bd1e.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/f386fe033a28.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/d51872b07e27.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/caba286a158d.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/0947dd626def.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/1b064201e271.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/60a9e81f689b.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/1fbe64389ca3.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/f7f5dc3e36cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/7e34b6a691e9.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/2da06325aa75.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/cee511bb51ea.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/7f3b5185268a.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/2fb1ed0887d2.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/5a17306b70de.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/3897d171f98f.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/5377f63567f6.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/2095c0cf92af.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/001a59b8a293.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/2469f9d6be24.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/5f862c0164ec.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/225d9d0b15cc.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/07caea85658b.webp",
+                "https://cdn.arenascan.com/arena-bucket/425956/12/6a7df1628dd0.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 13",
             "url": "https://arenascan.com/history-is-at-the-library-chapter-13/",
@@ -177,5 +463,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T22:01:00.925311"
+    "last_scraped": "2026-06-14T22:45:28.797099"
 }
