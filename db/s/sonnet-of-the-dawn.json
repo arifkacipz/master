@@ -2,9 +2,9 @@
     "judul": "Sonnet of the Dawn",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sonnet-of-the-Dawn-193x278.jpg",
     "source": "arenascan",
-    "online": 27,
-    "chapterCount": 27,
-    "Chs": "Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 29,
+    "chapterCount": 29,
+    "Chs": "Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -687,7 +687,52 @@
                 "https://cdn.arenascan.com/arena-bucket/387356/29/14.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/sonnet-of-the-dawn-chapter-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387356/30/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/30/COFFEEMANGA-NOTE.png"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/sonnet-of-the-dawn-chapter-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387356/31/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/08.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/09.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/10.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/11.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/12.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/13.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/14.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/15.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/16.webp",
+                "https://cdn.arenascan.com/arena-bucket/387356/31/17.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-30T18:49:22.147482"
+    "last_scraped": "2026-06-14T08:56:27.752217"
 }
