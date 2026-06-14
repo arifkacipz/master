@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/A-Siblings-POV-193x278.jpg",
     "source": "arenascan",
     "online": 10,
-    "chapterCount": 9,
+    "chapterCount": 10,
     "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -194,6 +194,29 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/a-sibling-s-pov-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401130/7/29f9148f7569.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/37620dbfef43.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/edcb74841da3.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/f16f09303a36.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/927c3a2fd93c.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/0cf06f9aad10.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/fc81bd6c313f.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/dcd52866125e.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/dc927f75b486.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/732fc6d7ae4d.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/70daf122eb9e.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/a9b3b597e6a0.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/ef75b0577c4f.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/ab206b01c674.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/0a44a5cf75f1.webp",
+                "https://cdn.arenascan.com/arena-bucket/401130/7/6bf83a1d80c2.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 8",
             "url": "https://arenascan.com/a-sibling-s-pov-chapter-8/",
             "images": [
@@ -266,5 +289,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T11:36:46.398682"
+    "last_scraped": "2026-06-14T13:16:08.088912"
 }
