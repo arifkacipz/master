@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/a1c4c8b8-0cf6-4211-b749-9f5a4befefa9.jpg",
     "source": "arenascan",
     "online": 48,
-    "chapterCount": 47,
+    "chapterCount": 48,
     "Chs": "Chapter 48, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -1043,6 +1043,26 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 45",
+            "url": "https://arenascan.com/hello-griffin-the-fluffy-bird-chapter-45/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/223837/45/662d3af7a3d1.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/0e2c0c95b820.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/f70ecbe4b478.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/6d91dcbf3e4c.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/fd21a627b6f5.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/8b0b1ff36a9a.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/2ff75877b116.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/44ddf1aaf837.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/d5df25723651.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/0bdfd97f970b.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/d282372c4204.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/db261a7833b9.webp",
+                "https://cdn.arenascan.com/arena-bucket/223837/45/4ccb14d7cda8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 46",
             "url": "https://arenascan.com/hello-griffin-the-fluffy-bird-chapter-46/",
             "images": [
@@ -1109,5 +1129,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-15T07:32:07.203702"
+    "last_scraped": "2026-06-15T08:38:05.984113"
 }
