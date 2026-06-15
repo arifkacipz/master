@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/How-to-Love-Ma-Doae-193x278.webp",
     "source": "arenascan",
     "online": 13,
-    "chapterCount": 12,
+    "chapterCount": 13,
     "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -234,6 +234,28 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/how-to-love-ma-doae-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/396591/10/9f9a3677921c.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/273ba9f8f298.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/606088785458.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/79d1bee007b7.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/5bd1513e85a3.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/68de4a394b31.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/3b4cb29f5210.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/69ae4d797d90.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/660fdb3c1c9e.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/7847b195e6c0.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/5dabb4d6339c.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/508492333b3c.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/1a7c9eacea6d.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/f4fd995a84d8.webp",
+                "https://cdn.arenascan.com/arena-bucket/396591/10/5fb43dc3c6d6.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 11",
             "url": "https://arenascan.com/how-to-love-ma-doae-chapter-11/",
             "images": [
@@ -306,5 +328,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-15T18:20:21.326776"
+    "last_scraped": "2026-06-15T19:31:16.670876"
 }
