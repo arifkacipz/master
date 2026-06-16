@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/96ec3e4a-fb34-4b14-8f1a-6d28b2e5856e.jpg",
     "source": "arenascan",
     "online": 33,
-    "chapterCount": 32,
+    "chapterCount": 33,
     "Chs": "Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -1034,6 +1034,26 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/empire-of-the-ants-chapter-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360717/30/a2ba3a4d8286.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/9b5705e0de2f.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/548dbcfcb833.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/a14d2bd36ef2.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/78a59fd6fb6f.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/8c24ed9f7765.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/4f4256d664e3.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/d0758822b3d4.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/d55b1f2bae54.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/3c8272732411.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/f647b8042060.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/88f2f9e15b9c.webp",
+                "https://cdn.arenascan.com/arena-bucket/360717/30/98ccc94f510a.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 31",
             "url": "https://arenascan.com/empire-of-the-ants-chapter-31/",
             "images": [
@@ -1089,5 +1109,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-16T18:13:18.145586"
+    "last_scraped": "2026-06-16T23:07:56.944662"
 }

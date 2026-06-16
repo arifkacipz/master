@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Healing-Agency-193x278.jpg",
     "source": "arenascan",
     "online": 16,
-    "chapterCount": 14,
+    "chapterCount": 16,
     "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -469,6 +469,49 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/healing-agency-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387368/12/8a6d839b3cb3.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/8823956034f4.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/edcbfd0f556d.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/6b4737597368.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/7f387e8c5331.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/209622e0ace5.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/f489f773e25c.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/d94ac8bff439.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/e826d141c66c.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/a67457980875.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/7376786d105a.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/afe84f98db82.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/12/cfe03145cab5.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/healing-agency-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387368/13/cccf54433dd1.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/dc992dafb2b3.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/6088c9928e30.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/04436c8ec300.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/b80cde10b2fc.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/a0ad0ddaa705.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/d44ce5989485.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/dbadc4d5b12d.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/96c3205bbe79.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/d3237324e07f.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/b6350234793f.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/5fd955500c53.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/ad3a610dcc8b.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/1afc23ad024e.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/e714862781a4.webp",
+                "https://cdn.arenascan.com/arena-bucket/387368/13/da4cc5bb7916.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 14",
             "url": "https://arenascan.com/healing-agency-chapter-14/",
             "images": [
@@ -539,5 +582,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-16T13:01:58.891388"
+    "last_scraped": "2026-06-16T23:07:56.185997"
 }

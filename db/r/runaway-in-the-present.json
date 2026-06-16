@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Runaway-in-the-Present-193x278.jpg",
     "source": "arenascan",
     "online": 22,
-    "chapterCount": 21,
+    "chapterCount": 22,
     "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -466,6 +466,31 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/runaway-in-the-present-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/403828/19/453c2039d963.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/cc438d54862f.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/5a61161eb8e3.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/c985b3f3c91a.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/d1a48887a2c3.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/ab0a81c32e57.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/55b58e28a641.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/7007840163bc.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/728e1203fb5f.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/b46a32a39309.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/fc00ca7f12c7.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/5798298e45bd.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/0212eca6a86f.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/994141f3210d.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/11a9b30558d1.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/15dd60efde9d.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/4a8e16043d0c.webp",
+                "https://cdn.arenascan.com/arena-bucket/403828/19/b286a62b9d74.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 20",
             "url": "https://arenascan.com/runaway-in-the-present-chapter-20/",
             "images": [
@@ -541,5 +566,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-16T21:27:51.089528"
+    "last_scraped": "2026-06-16T23:07:51.365018"
 }
