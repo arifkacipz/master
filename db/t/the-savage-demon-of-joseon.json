@@ -2,9 +2,9 @@
     "judul": "The Savage Demon of Joseon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Savage-Demon-of-Joseon-193x278.jpg",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -356,7 +356,37 @@
                 "https://cdn.arenascan.com/arena-bucket/399504/11/6ca4e77c37af.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/the-savage-demon-of-joseon-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/399504/12/98ce5bbe480b.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/5e7909a3067d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/b777302e6d8d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/a0754e47ddc1.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/69194b99228e.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/c1099e01d730.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/d9743e81d76f.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/914512728e65.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/1ee74f3133cd.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/941ceeec0360.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/3e235fd318e6.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/33be9a32f092.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/c0c908162c8a.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/a9025ad92a64.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/3cd62b54fac6.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/2935c42f687d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/74066f7e41cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/c5cdece3ef39.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/dfbbf386a136.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/ea05f1c9ae8b.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/c3a45b6eb0e0.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/7b08a1f3885c.webp",
+                "https://cdn.arenascan.com/arena-bucket/399504/12/7c6e290eae6a.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-16T11:43:45.172684"
+    "last_scraped": "2026-06-16T18:13:18.128283"
 }
