@@ -2,9 +2,9 @@
     "judul": "The Postman Walking Through the Apocalypse",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Postman-Walking-Through-the-Apocalypse-193x278.jpg",
     "source": "arenascan",
-    "online": 17,
-    "chapterCount": 17,
-    "Chs": "Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 19,
+    "chapterCount": 19,
+    "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -375,7 +375,42 @@
                 "https://cdn.arenascan.com/arena-bucket/386707/17/ch_17_19.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-postman-walking-through-the-apocalypse-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/386707/18/c28f1fec328b.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/16548f48338c.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/bb0a27782d2a.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/b47ac967a018.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/576c8d49ac79.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/95761200f965.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/52358691327c.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/4b78e2a236d6.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/3cb4a93902d0.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/18/05813aad86ee.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/the-postman-walking-through-the-apocalypse-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/386707/19/8a51cc05bad8.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/1134a2ed0ef4.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/e4bcbf22857f.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/33ceed6d6dd6.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/7d3a249da76e.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/47e362d2c23a.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/c8cf56f0e29b.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/9079ae08e1cb.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/737c1f313c61.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/8c6e4ae4d887.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/19/f1d19fe92453.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-17T14:04:19.713607"
+    "last_scraped": "2026-06-16T02:16:25.228354"
 }
