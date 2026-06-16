@@ -2,9 +2,9 @@
     "judul": "This killer is a son-in-law",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/This-killer-is-a-son-in-law-193x278.jpg",
     "source": "arenascan",
-    "online": 8,
-    "chapterCount": 8,
-    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 10,
+    "chapterCount": 10,
+    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -158,7 +158,37 @@
                 "https://cdn.arenascan.com/arena-bucket/397250/8/06.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/this-killer-is-a-son-in-law-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397250/9/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/9/08.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/this-killer-is-a-son-in-law-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/397250/10/01.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/02.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/03.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/04.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/05.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/06.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/07.webp",
+                "https://cdn.arenascan.com/arena-bucket/397250/10/08.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-02T19:01:24.249898"
+    "last_scraped": "2026-06-16T07:51:47.976929"
 }
