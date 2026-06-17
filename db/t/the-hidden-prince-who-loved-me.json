@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/11/a1845196-d114-4a29-9f65-06d326d1e7e2.webp",
     "source": "arenascan",
     "online": 21,
-    "chapterCount": 20,
+    "chapterCount": 21,
     "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -1046,6 +1046,22 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-hidden-prince-who-loved-me-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/346366/18/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/346366/18/009.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 19",
             "url": "https://arenascan.com/the-hidden-prince-who-loved-me-chapter-19/",
             "images": [
@@ -1093,5 +1109,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-17T07:19:50.765333"
+    "last_scraped": "2026-06-17T07:36:42.244052"
 }
