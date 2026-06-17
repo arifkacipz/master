@@ -2,9 +2,9 @@
     "judul": "That Night, I Was Driven by Despair",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/That-Night-I-Was-Driven-by-Despair-193x278.jpg",
     "source": "arenascan",
-    "online": 13,
-    "chapterCount": 13,
-    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 23,
+    "chapterCount": 16,
+    "Chs": "Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -232,7 +232,58 @@
                 "https://cdn.arenascan.com/arena-bucket/380589/13/ch_13_9.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380589/21/e1fc0264f69a.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/b58d16c04b0c.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/8a7e0003248c.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/20df4c987168.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/6e4aaf68648f.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/b6147e74cc67.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/b079d7459f20.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/ecc0aaf0d80a.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/125c625f2732.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/21/742e8efcb4df.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380589/22/38da6ac3e290.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/8107e7006168.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/7d0efa49108b.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/c7f42415ad1f.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/189b9e4dde12.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/e0dd543388fb.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/78f411eaaca2.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/7e4ae37445a9.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/2872575d731a.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/22/01525c62cf7c.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/that-night-i-was-driven-by-despair-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380589/23/d89d4f9c1af8.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/0adde67c6f4e.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/3a6c47971a46.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/3570ab31bfda.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/c68c29d7cff4.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/4026e913d577.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/738b10da5add.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/2b757ffb9e2b.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/ee0c65dac6f2.webp",
+                "https://cdn.arenascan.com/arena-bucket/380589/23/24ff1897c849.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-19T16:30:10.843472"
+    "last_scraped": "2026-06-17T16:02:30.668078"
 }
