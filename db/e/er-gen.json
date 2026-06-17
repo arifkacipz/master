@@ -2,9 +2,9 @@
     "judul": "Er Gen",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/12/4cc6c699-da08-41e6-854e-f391d9db3046.jpg",
     "source": "arenascan",
-    "online": 34,
-    "chapterCount": 34,
-    "Chs": "Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 38,
+    "chapterCount": 37,
+    "Chs": "Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -638,7 +638,47 @@
                 "https://cdn.arenascan.com/arena-bucket/356443/34/ch_34_5.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 36",
+            "url": "https://arenascan.com/er-gen-chapter-36/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/356443/36/5372ac1a64dc.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/36/dda1e4a67e0a.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/36/6367d29cc96c.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/36/cb93ef058a76.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/36/383d13d428ce.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/36/2f19cd2d8336.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 37",
+            "url": "https://arenascan.com/er-gen-chapter-37/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/356443/37/9a2aa328067c.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/37/3dc7394253cc.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/37/e0dd2fd9aff2.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/37/d4ed74fb0900.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/37/2a783b54b0f0.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/37/42d1c2df8f6f.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/37/2eff471d2930.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 38",
+            "url": "https://arenascan.com/er-gen-chapter-38/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/356443/38/024c1b9fa33f.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/38/fbc3bc829423.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/38/5fe597953b62.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/38/ce54ae0cf9cf.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/38/7068956d810e.webp",
+                "https://cdn.arenascan.com/arena-bucket/356443/38/264c2fcff965.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-07T07:24:48.409586"
+    "last_scraped": "2026-06-17T07:19:50.764041"
 }
