@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Peach-Blossom-Paradise-193x278.webp",
     "source": "arenascan",
     "online": 14,
-    "chapterCount": 12,
+    "chapterCount": 14,
     "Chs": "Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -292,6 +292,46 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/peach-blossom-paradise-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/383438/10/46a09d29553a.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/f91ba45dc273.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/9651fa10e53c.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/ac0f4ddc4469.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/3099a8e375fa.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/f7809aba2a78.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/72e7500106b1.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/0f58931b7b19.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/8b8e96687bf9.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/ea6745e375ac.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/bc2a6e59f4c4.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/33078fdf4e59.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/77b3598173e5.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/dff708dea3ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/10/1d136c09f95b.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/peach-blossom-paradise-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/383438/11/3eeb707ddd68.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/983051fdb225.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/995b16579399.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/5f9afa970ede.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/295ed52da512.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/d5e2cdec49f6.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/5d80341dce31.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/3e2390795cda.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/97cbe9c4a8dc.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/c553df6d78c3.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/11/150fccfc881d.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 12",
             "url": "https://arenascan.com/peach-blossom-paradise-chapter-12/",
             "images": [
@@ -358,5 +398,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-18T21:40:58.843055"
+    "last_scraped": "2026-06-18T23:20:11.117797"
 }
