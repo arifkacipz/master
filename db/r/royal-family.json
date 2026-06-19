@@ -2,9 +2,9 @@
     "judul": "Royal Family",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/53780539-490c-4548-b4b8-d3a559603eec.webp",
     "source": "arenascan",
-    "online": 18,
-    "chapterCount": 18,
-    "Chs": "Chapter 19, Chapter 18, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 23,
+    "chapterCount": 21,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -584,7 +584,66 @@
                 "https://cdn.arenascan.com/arena-bucket/360728/19/ch_19_31.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/royal-family-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360728/22/0510ae5d9e1b.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/6310abd4529c.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/8b3828c8c55e.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/d0300284f72c.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/6d8a59c46334.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/eabf197b9688.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/6d9805d37f8a.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/885b4c9f8cca.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/4ad7272a9d0a.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/b76ef31de3ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/6bde6809083e.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/fcf44ed61c4c.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/dce37457a9f3.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/609da555b091.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/22/a82c0c7b4951.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/royal-family-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360728/23/377b6560cf69.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/10f4d16323cf.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/2e9aa26a75e1.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/126123997702.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/f261a6df106a.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/8de30f33a50b.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/fc07620342ad.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/660a2b8bc9e6.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/e97fc6adc30d.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/c5ca48140e0d.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/4ffa371545f6.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/ac8db8252f1f.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/9e081260aeb0.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/d53ace29379b.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/23/1dc2747fda45.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/royal-family-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360728/24/8fb7f6e614af.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/ddb2f384cf95.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/b97e2b865df0.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/6b56c42208fc.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/e9adabce137e.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/19345eed5a23.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/d62a83cb48ff.webp",
+                "https://cdn.arenascan.com/arena-bucket/360728/24/8bb5a85d1ec7.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-04-20T15:24:53.357997"
+    "last_scraped": "2026-06-19T08:22:14.475710"
 }
