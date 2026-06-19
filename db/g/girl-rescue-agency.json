@@ -2,9 +2,9 @@
     "judul": "Girl Rescue Agency",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Girl-Rescue-Agency-193x278.webp",
     "source": "arenascan",
-    "online": 8,
-    "chapterCount": 8,
-    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 10,
+    "chapterCount": 10,
+    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -251,7 +251,62 @@
                 "https://cdn.arenascan.com/arena-bucket/399499/8/ch_8_25.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/girl-rescue-agency-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/399499/9/32455cf29c44.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/171e8eb8187a.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/dc4b8e53932c.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/3716594f82da.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/37dc266b936f.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/075f58f13ba8.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/4273f7c20be4.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/9a1b7d09f264.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/4b43e58b5b5a.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/e51ce359c0fc.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/96bc5df4a0ba.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/98e844291ddc.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/8ee9ae52939d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/6bd916fb3b3d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/e185f1db54b5.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/e8fe5f810752.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/7e6be56d8476.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/9eb40a71085a.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/75a5d337a526.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/08ebc8f29e53.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/384df2b9da19.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/85d7e7972955.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/296b95890587.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/68cf8a2bb53d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/9/5b376ab1f0bd.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/girl-rescue-agency-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/399499/10/ca584befd124.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/6eda02c3f849.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/47cf3407adc3.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/0362df07637e.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/c2ebabd7c231.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/488328d69a74.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/6d1085af348e.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/8564b08ed18e.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/7d7bd379bec9.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/ccd91bc367df.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/21b47a6775c7.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/7371e5c359f0.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/b030cdb6474e.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/f545212e714d.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/dae1e1341801.webp",
+                "https://cdn.arenascan.com/arena-bucket/399499/10/f8ea17a8fd4d.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-18T04:50:30.127101"
+    "last_scraped": "2026-06-19T07:42:03.981292"
 }

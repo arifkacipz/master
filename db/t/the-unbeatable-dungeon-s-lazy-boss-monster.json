@@ -2,9 +2,9 @@
     "judul": "The Unbeatable Dungeon\u2019s Lazy Boss Monster",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/dflazy.jpg",
     "source": "arenascan",
-    "online": 1,
-    "chapterCount": 1,
-    "Chs": "Chapter 128",
+    "online": 3,
+    "chapterCount": 3,
+    "Chs": "Chapter 130, Chapter 129, Chapter 128",
     "chapters": [
         {
             "nama": "Chapter 128",
@@ -25,7 +25,49 @@
                 "https://cdn.arenascan.com/arena-bucket/410799/128/015.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 129",
+            "url": "https://arenascan.com/the-unbeatable-dungeon-s-lazy-boss-monster-chapter-129/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/410799/129/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/012.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/014.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/015.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/129/016.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 130",
+            "url": "https://arenascan.com/the-unbeatable-dungeon-s-lazy-boss-monster-chapter-130/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/410799/130/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/012.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/014.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/015.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/130/016.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-03T09:59:26.270238"
+    "last_scraped": "2026-06-19T07:42:13.179068"
 }

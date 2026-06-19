@@ -2,9 +2,9 @@
     "judul": "Purely Delinquent",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Purely-Delinquent-193x278.jpg",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 14,
+    "chapterCount": 14,
+    "Chs": "Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -292,7 +292,56 @@
                 "https://cdn.arenascan.com/arena-bucket/394868/11/ch_11_17.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 12",
+            "url": "https://arenascan.com/purely-delinquent-chapter-12/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/394868/12/b355f5a65f9b.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/6ae6152080e1.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/b48433aa316f.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/2b64e096fbf1.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/f6a7442f7a5e.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/8d25e8fd1cff.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/0052a6ec5d8a.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/1e59972004f7.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/12/dc4475e9cfc8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/purely-delinquent-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/394868/13/6a6dac6bdd86.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/fb78d5ba7de9.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/e548cef6e36b.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/0bf1c9c853c5.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/5c080904564c.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/c605a1acec9b.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/5acf0c67680d.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/a5cb97e14755.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/eb8c299aec04.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/4b40602d88d9.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/13/cc308d03f477.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/purely-delinquent-chapter-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/394868/14/c67593d195d4.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/5cff8e8f1d12.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/733384d083b2.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/3a19f57eaf4a.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/b4c29d8988b1.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/9a215a2341a8.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/54dd9522bee8.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/14/368635fba06b.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T01:25:44.649406"
+    "last_scraped": "2026-06-19T07:43:23.534050"
 }
