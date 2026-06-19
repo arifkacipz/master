@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Black-Haired-Knight-King-193x278.webp",
     "source": "arenascan",
     "online": 21,
-    "chapterCount": 20,
+    "chapterCount": 21,
     "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -599,6 +599,29 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-black-haired-knight-king-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378466/18/e029f820b61b.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/a32b7836d949.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/6819633f5b2d.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/7222ddc7597e.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/41c68e5f8fbd.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/90e64b6fbbb8.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/83a5d242971d.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/1152a294d830.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/9bf51dfd834b.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/efffe604af8c.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/7245760d8a33.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/16c581a0e127.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/4394390b46e5.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/4505a25994c0.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/8cc07cd248fa.webp",
+                "https://cdn.arenascan.com/arena-bucket/378466/18/87203a55bfbe.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 20",
             "url": "https://arenascan.com/the-black-haired-knight-king-chapter-20/",
             "images": [
@@ -671,5 +694,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T08:22:14.745547"
+    "last_scraped": "2026-06-19T12:31:58.509999"
 }
