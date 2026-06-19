@@ -2,9 +2,9 @@
     "judul": "Doomsday Weapon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Doomsday-Weapon-193x278.webp",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 20,
+    "chapterCount": 20,
+    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -479,7 +479,25 @@
                 "https://cdn.arenascan.com/arena-bucket/378402/19/6922e7339f0c.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/doomsday-weapon-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378402/20/8e30a8e0637c.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/10dccaec735f.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/67e7cc2b2059.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/84ee78807cf4.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/d88d09bc26de.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/5497628d1f00.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/b46f07301ec0.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/e5a2ca66dcfa.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/fc741535bb6f.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/37f0e703bb86.webp",
+                "https://cdn.arenascan.com/arena-bucket/378402/20/ba02119f99b4.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T07:41:27.872236"
+    "last_scraped": "2026-06-19T20:11:02.790520"
 }
