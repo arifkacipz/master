@@ -2,9 +2,9 @@
     "judul": "Leu Leu Leu",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/11/e8123c47-623b-4b78-b069-ea4ca397c4fe.webp",
     "source": "arenascan",
-    "online": 24,
-    "chapterCount": 24,
-    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 25,
+    "chapterCount": 25,
+    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -606,7 +606,27 @@
                 "https://cdn.arenascan.com/arena-bucket/347946/24/63c075f9094a.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/leu-leu-leu-chapter-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/347946/25/cb2b0f1afa99.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/452999bea5ef.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/94a2752d4c68.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/a534501f7c20.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/a184c7ac0a3c.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/171694469202.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/d6ae7bb729c9.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/2c664b2e0ac5.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/d964a02a925c.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/450fbc6e2086.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/5474cc6498fd.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/4cb4d28f3340.webp",
+                "https://cdn.arenascan.com/arena-bucket/347946/25/6c9d66ce1e9f.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-12T22:10:13.709668"
+    "last_scraped": "2026-06-20T08:04:41.447647"
 }

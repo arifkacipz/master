@@ -2,9 +2,9 @@
     "judul": "Record of Lodoss War",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Record-of-Lodoss-War-193x278.webp",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -347,7 +347,25 @@
                 "https://cdn.arenascan.com/arena-bucket/401878/9/808f22b25120.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 10",
+            "url": "https://arenascan.com/record-of-lodoss-war-chapter-10/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401878/10/4c6d0c96a4b4.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/c879f78d832e.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/483fa591c782.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/4992b83d9528.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/890c9323d775.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/f6c6a89a0be7.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/3f99570e3266.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/8e435e0ae85f.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/836bafe67acc.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/76dd0d8558b0.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/10/555eebd29bee.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T07:41:30.546930"
+    "last_scraped": "2026-06-20T08:04:41.630966"
 }
