@@ -2,9 +2,9 @@
     "judul": "The Hero Directed by The Demon King",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Hero-Directed-by-The-Demon-King-193x278.jpg",
     "source": "arenascan",
-    "online": 15,
-    "chapterCount": 15,
-    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 18,
+    "chapterCount": 18,
+    "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -319,7 +319,59 @@
                 "https://cdn.arenascan.com/arena-bucket/391435/15/012.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 16",
+            "url": "https://arenascan.com/the-hero-directed-by-the-demon-king-chapter-16/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391435/16/b50d05040e5e.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/1507780c9d19.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/fdcd2be01dfe.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/db8b1af1ab79.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/db4edf58cd25.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/576cf6e08ee2.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/2e29db944414.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/16/3f31add00f47.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/the-hero-directed-by-the-demon-king-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391435/17/35c2cd9faf71.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/2c6c7f0094fc.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/5d64abc49815.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/56b0d47c7777.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/d89743a50a75.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/7d511cdb210a.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/5f495412469e.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/416baf45fe3d.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/9b60130718f4.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/c9af8ef3d597.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/17/d44766872748.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-hero-directed-by-the-demon-king-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/391435/18/0b5527564a69.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/cb8004ff940f.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/5f77f6f32013.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/5b0e8af30cec.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/1adcfdc8d03f.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/d684558d334d.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/22e2cf88c5b7.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/0bcd9d3a826d.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/7e4530f6f563.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/2b126452fc40.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/ffffb3404c22.webp",
+                "https://cdn.arenascan.com/arena-bucket/391435/18/8fbf2c60fe9f.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-10T05:07:53.315361"
+    "last_scraped": "2026-06-20T04:11:26.990934"
 }

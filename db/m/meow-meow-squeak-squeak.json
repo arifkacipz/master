@@ -2,9 +2,9 @@
     "judul": "Meow-Meow Squeak-Squeak!",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/11/c63452cf-929d-4578-b54e-fecb9a8e3973.webp",
     "source": "arenascan",
-    "online": 44,
-    "chapterCount": 44,
-    "Chs": "Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 54,
+    "chapterCount": 47,
+    "Chs": "Chapter 54, Chapter 53, Chapter 52, Chapter 51, Chapter 50, Chapter 49, Chapter 48, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -913,7 +913,48 @@
                 "https://cdn.arenascan.com/arena-bucket/350185/44/ch_44_5.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 52",
+            "url": "https://arenascan.com/meow-meow-squeak-squeak-chapter-52/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/350185/52/ab7e438d1ec6.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/52/3a8145d2dc38.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/52/d355ad709978.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/52/f4350b16af95.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/52/903156ecbafc.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/52/f79a08d4cba8.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 53",
+            "url": "https://arenascan.com/meow-meow-squeak-squeak-chapter-53/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/350185/53/dd1bde2c2937.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/53/185094c8b1ef.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/53/9eabf450fa4b.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/53/cf1c541cb62d.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/53/493523ead393.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/53/fd58c030c13a.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/53/5a16879a3119.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 54",
+            "url": "https://arenascan.com/meow-meow-squeak-squeak-chapter-54/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/350185/54/b38d7551be75.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/54/2cb3940ebeaf.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/54/01121128de15.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/54/b1022b0022db.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/54/b10c6226a990.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/54/7d31a9d6bfab.webp",
+                "https://cdn.arenascan.com/arena-bucket/350185/54/e14c10b2a376.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-05-16T13:45:25.532225"
+    "last_scraped": "2026-06-20T04:11:27.077875"
 }
