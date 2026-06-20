@@ -2,9 +2,9 @@
     "judul": "Assassin X Dragon",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Assassin-X-Dragon-193x278.jpg",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 20,
+    "chapterCount": 20,
+    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -618,7 +618,29 @@
                 "https://cdn.arenascan.com/arena-bucket/379847/20/298451124dde.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/assassin-x-dragon-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/379847/21/033cf04f5816.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/2212abe9a70e.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/516fd9423b52.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/25a04a7acdca.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/53ae69f6e210.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/9006817c4166.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/a1cd5809d3ec.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/b4f89cb3d4ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/832974b0d367.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/f2856ba3383e.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/1edee67cd8f5.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/015e97949550.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/3fc86b45e002.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/21a1a6f5302b.webp",
+                "https://cdn.arenascan.com/arena-bucket/379847/21/5d10e4a51d24.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-13T21:29:07.294609"
+    "last_scraped": "2026-06-20T21:25:18.483073"
 }
