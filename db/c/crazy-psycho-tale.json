@@ -2,9 +2,9 @@
     "judul": "Crazy Psycho Tale",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/11/74ce8b8f-a600-41f8-a7c1-90b2119b562e.webp",
     "source": "arenascan",
-    "online": 24,
-    "chapterCount": 24,
-    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 25,
+    "chapterCount": 25,
+    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1431,7 +1431,19 @@
                 "https://cdn.arenascan.com/arena-bucket/347961/24/4a44f3068c7e.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/crazy-psycho-tale-chapter-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/347961/25/238791581245.webp",
+                "https://cdn.arenascan.com/arena-bucket/347961/25/a7a202dcecde.webp",
+                "https://cdn.arenascan.com/arena-bucket/347961/25/e3181c29454e.webp",
+                "https://cdn.arenascan.com/arena-bucket/347961/25/085b4a7112b6.webp",
+                "https://cdn.arenascan.com/arena-bucket/347961/25/ec020b5ea9b9.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-13T16:57:39.174929"
+    "last_scraped": "2026-06-21T05:25:04.244100"
 }

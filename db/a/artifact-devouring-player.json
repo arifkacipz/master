@@ -1,10 +1,10 @@
 {
     "judul": "Artifact-Devouring Player",
     "thumb": "https://manhuaplus.org/uploads/covers/artifact-devouring-player.jpg",
-    "source": "manhuaplus",
-    "online": 47,
-    "chapterCount": 47,
-    "Chs": "Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "source": "merged",
+    "online": 48,
+    "chapterCount": 48,
+    "Chs": "Chapter 0, Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -1498,7 +1498,35 @@
                 "https://cdn.arenascan.com/arena-bucket/259613/46/019.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 47",
+            "url": "https://manhuaplus.org/manga/artifact-devouring-player/chapter-47",
+            "images": [
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-02-9881141767736803.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-34-9881113679892740.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-19-9881159219019712.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-08-9881147930677244.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-05-9881145138311489.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-11-9881150985543138.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-14-9881153699479762.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-57-9881136302042247.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-31-9881170947376737.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-48-9881127902316471.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-22-9881161855142959.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-54-9881133543713244.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-25-9881164633542783.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-17-9881156425292247.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-45-9881125175288371.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-51-9881130761244664.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-59-9881139068438554.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-43-9881122465967231.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-40-9881119730862689.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-39-28-9881167795294997.webp",
+                "https://cdn.manhuaplus.cc/2026/06/21/07-38-37-9881116760204617.webp"
+            ],
+            "source_chapter": "manhuaplus"
         }
     ],
-    "last_scraped": "2026-06-13T20:01:21.077452"
+    "last_scraped": "2026-06-21T05:25:04.368225"
 }
