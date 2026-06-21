@@ -2,9 +2,9 @@
     "judul": "Monsters Fight Monsters",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Monsters-Fight-Monsters-193x278.jpg",
     "source": "arenascan",
-    "online": 27,
-    "chapterCount": 27,
-    "Chs": "Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 28,
+    "chapterCount": 28,
+    "Chs": "Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -922,7 +922,27 @@
                 "https://cdn.arenascan.com/arena-bucket/377534/27/401abc675ef0.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/monsters-fight-monsters-chapter-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377534/28/4efc88d477b4.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/9a9b834ff60e.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/22242550514b.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/42696e21ffd0.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/c8396d49815c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/ada8c9e29de0.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/de46ebc28212.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/1c8ba64f695f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/1b8f2b610152.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/9a8b64696c38.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/941bbe00221b.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/3ec518cba8ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/377534/28/8b7edef324d5.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T15:56:05.984541"
+    "last_scraped": "2026-06-21T18:04:23.033950"
 }
