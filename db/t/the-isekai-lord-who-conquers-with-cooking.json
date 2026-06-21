@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Isekai-Lord-Who-Conquers-with-Cooking-193x278.jpg",
     "source": "arenascan",
     "online": 22,
-    "chapterCount": 20,
+    "chapterCount": 22,
     "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -627,6 +627,41 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/the-isekai-lord-who-conquers-with-cooking-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377552/18/85d1cfbea19f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/1d7dc556c159.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/5e3de4cd3fbe.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/956f9c153a22.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/518e464eef05.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/f23adb58e14d.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/46f223366ffb.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/0d4fceb67814.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/a6a3c6e4c9b4.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/18/30de297169e6.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/the-isekai-lord-who-conquers-with-cooking-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377552/19/ff6966767a2f.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/9ea01fc4ca0c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/a39c192cd3f9.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/f561cdaa66ce.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/847595b30a4a.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/71259402ae51.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/26fad619b6c0.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/150225ecc4fc.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/fc2a04dc0a88.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/9f78df614b1c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377552/19/a3c92f784501.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 20",
             "url": "https://arenascan.com/the-isekai-lord-who-conquers-with-cooking-chapter-20/",
             "images": [
@@ -680,5 +715,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-21T14:37:55.214456"
+    "last_scraped": "2026-06-21T15:28:45.079704"
 }
