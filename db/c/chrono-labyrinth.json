@@ -2,9 +2,9 @@
     "judul": "Chrono Labyrinth",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Chrono-Labyrinth-193x278.jpg",
     "source": "arenascan",
-    "online": 20,
-    "chapterCount": 20,
-    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 21,
+    "chapterCount": 21,
+    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -527,7 +527,32 @@
                 "https://cdn.arenascan.com/arena-bucket/390336/20/ba91824da42d.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/chrono-labyrinth-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/390336/21/2f3e1a438382.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/c117d8fa3d60.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/b631a20cac21.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/a91bea23e795.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/630b0e8f5925.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/070751559d95.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/6fafaf141407.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/f21c9df9749c.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/72843b4bee68.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/9ef6c49b7227.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/5bb15c7d81f2.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/b42fbfea687e.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/1567298fee83.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/f66de9e9c135.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/27d261b9e080.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/05542aa9f2b6.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/b823f397fc52.webp",
+                "https://cdn.arenascan.com/arena-bucket/390336/21/cbddba04df41.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-15T22:03:34.679368"
+    "last_scraped": "2026-06-22T22:10:21.990002"
 }
