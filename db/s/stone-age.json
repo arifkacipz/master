@@ -2,9 +2,9 @@
     "judul": "Stone Age",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Stone-Age-193x278.jpg",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 8, Chapter 7, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -219,7 +219,29 @@
                 "https://cdn.arenascan.com/arena-bucket/387357/12/97b46d4bda89.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/stone-age-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387357/13/9c521d70c7f3.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/dc74e09a1d65.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/4ab3e0ba76b5.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/1928db64197e.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/5053d44b4e5d.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/aa109c6bd05d.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/7863877131c4.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/32366b294563.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/b26192f778a9.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/96097b27eb5e.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/8a6760a8604d.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/bc12621d84b9.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/6a47eb7fae9c.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/1f64943f80af.webp",
+                "https://cdn.arenascan.com/arena-bucket/387357/13/c59e1ff17080.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-21T22:47:11.243846"
+    "last_scraped": "2026-06-23T16:49:06.251153"
 }
