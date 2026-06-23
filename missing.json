@@ -1,5 +1,16 @@
 [
   {
+    "slug": "watch-out-for-look-alikes",
+    "judul": "Watch Out For Look-alikes",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/09/fdcaf50c-cc58-4242-9bf6-bd0f1e7069b6.jpg",
+    "total_online": 26,
+    "total_downloaded": 24,
+    "missing": [
+      "Chapter 23",
+      "Chapter 22"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -19,6 +30,17 @@
       "Chapter 80",
       "Chapter 79",
       "Chapter 78"
+    ]
+  },
+  {
+    "slug": "one-day-my-sister-died",
+    "judul": "One Day My Sister Died",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/06/8b89c0be-182d-4b9d-8727-2bccd63f1e1b.webp",
+    "total_online": 63,
+    "total_downloaded": 61,
+    "missing": [
+      "Chapter 60",
+      "Chapter 59"
     ]
   },
   {
