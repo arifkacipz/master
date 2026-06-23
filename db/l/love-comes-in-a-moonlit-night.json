@@ -2,9 +2,9 @@
     "judul": "Love Comes in a Moonlit Night",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/2026-04-26-12-42-18-1777164138190.webp",
     "source": "arenascan",
-    "online": 13,
-    "chapterCount": 13,
-    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 15,
+    "chapterCount": 15,
+    "Chs": "Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -214,7 +214,35 @@
                 "https://cdn.arenascan.com/arena-bucket/398593/13/08_result.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/love-comes-in-a-moonlit-night-chapter-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398593/14/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/14/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/14/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/14/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/14/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/14/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/14/07_result.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/love-comes-in-a-moonlit-night-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398593/15/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/15/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/15/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/15/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/15/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/15/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/398593/15/07_result.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T07:42:04.322296"
+    "last_scraped": "2026-06-23T21:12:11.467709"
 }

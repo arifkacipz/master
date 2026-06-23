@@ -2,9 +2,9 @@
     "judul": "D\u00e9paysement",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Depaysement-193x278.webp",
     "source": "arenascan",
-    "online": 21,
-    "chapterCount": 21,
-    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 24,
+    "chapterCount": 24,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -440,7 +440,62 @@
                 "https://cdn.arenascan.com/arena-bucket/393696/21/COFFEEMANGA-NOTE.png"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/depaysement-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393696/22/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/22/11.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/depaysement-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393696/23/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/23/9.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/depaysement-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393696/24/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/07_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/08_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/09_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/10_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/11_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/393696/24/12_result.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-03T21:58:24.179108"
+    "last_scraped": "2026-06-23T21:12:11.483462"
 }
