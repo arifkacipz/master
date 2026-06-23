@@ -2,9 +2,9 @@
     "judul": "Sonnet of the Dawn",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sonnet-of-the-Dawn-193x278.jpg",
     "source": "arenascan",
-    "online": 29,
-    "chapterCount": 29,
-    "Chs": "Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 30,
+    "chapterCount": 30,
+    "Chs": "Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -732,7 +732,27 @@
                 "https://cdn.arenascan.com/arena-bucket/387356/31/17.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/sonnet-of-the-dawn-chapter-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387356/32/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/07_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/08_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/09_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/10_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/11_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/12_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/387356/32/13_result.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-14T08:56:27.752217"
+    "last_scraped": "2026-06-23T19:14:25.431775"
 }
