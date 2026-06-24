@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/932fc8ae-00c2-4af9-9040-924c7c97c3d0.webp",
     "source": "arenascan",
     "online": 41,
-    "chapterCount": 39,
+    "chapterCount": 41,
     "Chs": "Chapter 42, Chapter 41, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -747,6 +747,34 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 37",
+            "url": "https://arenascan.com/the-wild-rose-embraces-the-frost-chapter-37/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/233848/37/adf5d6a0845d.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/37/5e045787ede5.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/37/51e09862fcd5.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/37/9e5f080dfa01.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/37/959e9c2c4d10.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/37/d28daf8e569c.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/37/d5a57a0bf72a.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 38",
+            "url": "https://arenascan.com/the-wild-rose-embraces-the-frost-chapter-38/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/233848/38/a342d4d4c9b1.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/38/29d2763d4d06.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/38/842578967e57.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/38/1f0d2e666ab1.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/38/49b7c06c5500.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/38/7ed84c418f21.webp",
+                "https://cdn.arenascan.com/arena-bucket/233848/38/d15823077c08.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 39",
             "url": "https://arenascan.com/the-wild-rose-embraces-the-frost-chapter-39/",
             "images": [
@@ -791,5 +819,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-24T13:57:29.410815"
+    "last_scraped": "2026-06-24T15:53:05.280853"
 }
