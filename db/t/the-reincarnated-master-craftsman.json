@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Reincarnated-Master-Craftsman-193x278.jpg",
     "source": "arenascan",
     "online": 30,
-    "chapterCount": 28,
+    "chapterCount": 30,
     "Chs": "Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -625,6 +625,46 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/the-reincarnated-master-craftsman-chapter-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393393/26/765cb3d031a2.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/d66cbc2b7d50.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/f230321804f0.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/908815224797.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/b9587d83351b.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/ef1c9b02f31f.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/7406bb209844.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/c6ca974adb88.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/7b2b5ad86dad.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/988fae6a1cd5.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/3bd0a2d12351.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/26/37ab580c0edd.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/the-reincarnated-master-craftsman-chapter-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/393393/27/c4b95497481d.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/353211239635.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/563879a85001.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/df5062848ab6.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/cb85c9807699.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/098ce9611b8b.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/9aa9876e8c25.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/9fff96c98c65.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/4f972413ce53.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/a13d27a2bb26.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/f01f67761477.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/71c857941e57.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/3be68dc8dba5.webp",
+                "https://cdn.arenascan.com/arena-bucket/393393/27/42cd6c853672.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 28",
             "url": "https://arenascan.com/the-reincarnated-master-craftsman-chapter-28/",
             "images": [
@@ -694,5 +734,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-24T04:45:26.120220"
+    "last_scraped": "2026-06-24T05:45:34.750411"
 }
