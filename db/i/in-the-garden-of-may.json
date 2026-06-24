@@ -2,9 +2,9 @@
     "judul": "In the Garden of May",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/In-the-Garden-of-May-193x278.webp",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 1",
+    "online": 20,
+    "chapterCount": 20,
+    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -379,7 +379,29 @@
                 "https://cdn.arenascan.com/arena-bucket/403833/20/12.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/in-the-garden-of-may-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/403833/21/01_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/02_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/03_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/04_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/05_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/06_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/07_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/08_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/09_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/10_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/11_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/12_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/13_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/14_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403833/21/15_result.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-15T21:33:34.018469"
+    "last_scraped": "2026-06-24T11:30:21.014673"
 }
