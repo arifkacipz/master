@@ -2,9 +2,9 @@
     "judul": "Record of Lodoss War",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Record-of-Lodoss-War-193x278.webp",
     "source": "arenascan",
-    "online": 11,
-    "chapterCount": 11,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 12,
+    "chapterCount": 12,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -365,7 +365,24 @@
                 "https://cdn.arenascan.com/arena-bucket/401878/10/555eebd29bee.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/record-of-lodoss-war-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401878/11/7421e319fc2b.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/b47bf4055bdc.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/0c2f64bb546b.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/fce17f3251d1.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/cde18fb87913.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/68720e863184.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/29e63d5a21a4.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/1a32d7a2a178.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/728b3c1b84be.webp",
+                "https://cdn.arenascan.com/arena-bucket/401878/11/39b13cbe6a75.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-20T08:04:41.630966"
+    "last_scraped": "2026-06-26T23:14:16.516937"
 }
