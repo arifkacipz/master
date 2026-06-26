@@ -2,9 +2,9 @@
     "judul": "Greedy",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/greedy.jpg",
     "source": "arenascan",
-    "online": 26,
-    "chapterCount": 26,
-    "Chs": "Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 30,
+    "chapterCount": 29,
+    "Chs": "Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -516,7 +516,56 @@
                 "https://cdn.arenascan.com/arena-bucket/378856/27/8.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/greedy-chapter-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378856/29/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/29/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/greedy-chapter-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378856/30/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/30/8.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/greedy-chapter-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378856/31/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/31/9.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-01T20:50:28.668962"
+    "last_scraped": "2026-06-26T16:01:34.448246"
 }
