@@ -1,6 +1,7 @@
 {
   "judul": "Kakenai node Yatte Mita",
   "judul_alternatif": "Karena Tidak Bisa Menggambar, Jadi Kucoba Langsung",
+  "slug": "kakenai-node-yatte-mita",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/18/20260618143019_8070ac6d9be7ff70_5283181d.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -14,6 +15,10 @@
   "pembaca_total": 532,
   "pembaca_mingguan": 175,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -77,10 +82,5 @@
       ]
     }
   ],
-  "slug": "kakenai-node-yatte-mita",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-06-27T18:51:55.953825"
+  "last_scraped": "2026-06-27T19:11:15.810211"
 }

@@ -1,6 +1,7 @@
 {
   "judul": "AKUJO RANKING",
   "judul_alternatif": "Peringkat Penjahat Wanita",
+  "slug": "akujo-ranking",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313040007_b3a9fa22d6ec2819_d44c804e.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "Ongoing",
@@ -17,6 +18,10 @@
   "pembaca_total": 78,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -235,10 +240,5 @@
       ]
     }
   ],
-  "slug": "akujo-ranking",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-06-27T18:55:15.193580"
+  "last_scraped": "2026-06-27T19:14:30.487201"
 }

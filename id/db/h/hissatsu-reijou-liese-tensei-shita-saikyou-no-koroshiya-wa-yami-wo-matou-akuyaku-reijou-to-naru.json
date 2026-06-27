@@ -1,6 +1,7 @@
 {
   "judul": "Hissatsu Reijou Liese ~Tensei Shita Saikyou no Koroshiya wa, Yami wo Matou Akuyaku Reijou to Naru~",
   "judul_alternatif": "Lady Mematikan Liese ~Pembunuh Terkuat yang Bereinkarnasi Menjadi Putri Jahat Berselimut Kegelapan~",
+  "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627170011_5de6131170c74e98_ec1e629a.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -21,6 +22,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -51,10 +56,5 @@
       ]
     }
   ],
-  "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-06-27T18:55:58.620422"
+  "last_scraped": "2026-06-27T19:15:13.551617"
 }
