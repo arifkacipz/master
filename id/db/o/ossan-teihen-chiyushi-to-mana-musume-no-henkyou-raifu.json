@@ -20,10 +20,56 @@
   "pembaca_mingguan": 2590,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 15,
-  "chapterCount": 15,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16",
+  "online": 16,
+  "chapterCount": 16,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/ossan-teihen-chiyushi-to-mana-musume-no-henkyou-raifu-chapter-01/",
+      "tanggal_rilis": "09/09/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2567778-1.jpg",
+        "https://img.komiku.org/uploads2/2567778-2.jpg",
+        "https://img.komiku.org/uploads2/2567778-3.jpg",
+        "https://img.komiku.org/uploads2/2567778-4.jpg",
+        "https://img.komiku.org/uploads2/2567778-5.jpg",
+        "https://img.komiku.org/uploads2/2567778-6.jpg",
+        "https://img.komiku.org/uploads2/2567778-7.jpg",
+        "https://img.komiku.org/uploads2/2567778-8.jpg",
+        "https://img.komiku.org/uploads2/2567778-9.jpg",
+        "https://img.komiku.org/uploads2/2567778-10.jpg",
+        "https://img.komiku.org/uploads2/2567778-11.jpg",
+        "https://img.komiku.org/uploads2/2567778-12.jpg",
+        "https://img.komiku.org/uploads2/2567778-13.jpg",
+        "https://img.komiku.org/uploads2/2567778-14.jpg",
+        "https://img.komiku.org/uploads2/2567778-15.jpg",
+        "https://img.komiku.org/uploads2/2567778-16.jpg",
+        "https://img.komiku.org/uploads2/2567778-17.jpg",
+        "https://img.komiku.org/uploads2/2567778-18.jpg",
+        "https://img.komiku.org/uploads2/2567778-19.jpg",
+        "https://img.komiku.org/uploads2/2567778-20.jpg",
+        "https://img.komiku.org/uploads2/2567778-21.jpg",
+        "https://img.komiku.org/uploads2/2567778-22.jpg",
+        "https://img.komiku.org/uploads2/2567778-23.jpg",
+        "https://img.komiku.org/uploads2/2567778-24.jpg",
+        "https://img.komiku.org/uploads2/2567778-25.jpg",
+        "https://img.komiku.org/uploads2/2567778-26.jpg",
+        "https://img.komiku.org/uploads2/2567778-27.jpg",
+        "https://img.komiku.org/uploads2/2567778-28.jpg",
+        "https://img.komiku.org/uploads2/2567778-29.jpg",
+        "https://img.komiku.org/uploads2/2567778-30.jpg",
+        "https://img.komiku.org/uploads2/2567778-31.jpg",
+        "https://img.komiku.org/uploads2/2567778-32.jpg",
+        "https://img.komiku.org/uploads2/2567778-33.jpg",
+        "https://img.komiku.org/uploads2/2567778-34.jpg",
+        "https://img.komiku.org/uploads2/2567778-35.jpg",
+        "https://img.komiku.org/uploads2/2567778-36.jpg",
+        "https://img.komiku.org/uploads2/2567778-37.jpg",
+        "https://img.komiku.org/uploads2/2567778-38.jpg",
+        "https://img.komiku.org/uploads2/2567778-39.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/ossan-teihen-chiyushi-to-mana-musume-no-henkyou-raifu-chapter-02/",
@@ -648,5 +694,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-27T20:41:20.072082"
+  "last_scraped": "2026-06-27T20:58:24.718976"
 }
