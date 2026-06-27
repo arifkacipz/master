@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Milady-memoirs-of-a-villainess-193x278.jpg",
     "source": "arenascan",
     "online": 35,
-    "chapterCount": 32,
+    "chapterCount": 35,
     "Chs": "Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -1586,6 +1586,65 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/milady-memoirs-of-a-villainess-chapter-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377544/30/001.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/002.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/003.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/004.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/005.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/006.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/007.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/008.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/009.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/010.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/011.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/012.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/013.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377544/30/014.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 31",
+            "url": "https://arenascan.com/milady-memoirs-of-a-villainess-chapter-31/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377544/31/e1f0b2839ff3.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/21bac60be3ea.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/b9fde9c37772.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/57786e0e3fa1.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/f208df9abec4.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/a0beb75864cf.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/e117377854ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/c2f7d16bf6c6.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/4d6a788fc4a6.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/fbba3555aad7.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/0f46c30020a6.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/d51672902b1c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/31/8906dbe83179.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/milady-memoirs-of-a-villainess-chapter-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377544/32/bd2abf7a8b16.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/15ce8d55e8c4.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/1eb3602e3193.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/ef177430c885.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/ce085ced930c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/8ca5c57ccd34.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/ce8c2225d8bf.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/bf6623b5ceb3.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/cba84e87b344.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/b0bc1c9d1b13.webp",
+                "https://cdn.arenascan.com/arena-bucket/377544/32/ef4a3bc83540.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 33",
             "url": "https://arenascan.com/milady-memoirs-of-a-villainess-chapter-33/",
             "images": [
@@ -1748,5 +1807,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-27T01:28:22.828280"
+    "last_scraped": "2026-06-27T05:34:16.209155"
 }
