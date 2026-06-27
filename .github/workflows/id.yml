@@ -1,0 +1,217 @@
+name: Update Komik Indo
+
+on:
+  schedule:
+    # Katalog: setiap jam pada menit 02 (maks 8 halaman API)
+    - cron: '02 * * * *'
+    # Full random update: setiap jam pada menit 22 dan 39
+    - cron: '22,39 * * * *'
+  workflow_dispatch:
+    inputs:
+      target_slug:
+        description: 'Slug komik (kosongkan untuk mode otomatis)'
+        required: false
+        default: ''
+      mode:
+        description: 'Mode (abaikan jika slug diisi)'
+        required: false
+        type: choice
+        options:
+          - catalog
+          - random
+        default: 'catalog'
+      pages:
+        description: 'Halaman katalog (untuk mode catalog)'
+        required: false
+        type: choice
+        options:
+          - 1
+          - 3
+          - 5
+          - 7
+          - 8
+          - 10
+        default: '8'
+      limit:
+        description: 'Chapter terbaru yang diambil (untuk catalog / single)'
+        required: false
+        type: choice
+        options:
+          - 1
+          - 3
+          - 5
+          - 10
+          - 999
+        default: '3'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      # ============================================================
+      # 1. Batalkan diri jika ada workflow lain yang sedang berjalan
+      # ============================================================
+      - name: Cancel self if another workflow is running
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const currentRunId = context.runId;
+            const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+              owner,
+              repo,
+              status: 'in_progress',
+              per_page: 100
+            });
+            const others = runs.workflow_runs.filter(run => run.id !== currentRunId);
+            if (others.length > 0) {
+              console.log(`🔴 ${others.length} workflow lain sedang berjalan. Membatalkan diri...`);
+              others.forEach(r => console.log(`   - ${r.name} (${r.id})`));
+              await github.rest.actions.cancelWorkflowRun({
+                owner,
+                repo,
+                run_id: currentRunId
+              });
+              process.exit(1);
+            }
+            console.log('✅ Tidak ada workflow lain, lanjut...');
+
+      # ============================================================
+      # 2. Checkout repository
+      # ============================================================
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ============================================================
+      # 3. Setup Python & install dependencies (tanpa Cloudinary)
+      # ============================================================
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      # ============================================================
+      # 4. Tentukan mode dan jalankan scraper
+      # ============================================================
+      - name: Decide run mode
+        id: decide
+        shell: bash
+        run: |
+          # Jika dispatch dengan slug → mode single
+          if [ -n "${{ github.event.inputs.target_slug }}" ]; then
+            echo "MODE=single" >> $GITHUB_OUTPUT
+            echo "SLUG=${{ github.event.inputs.target_slug }}" >> $GITHUB_OUTPUT
+            echo "LIMIT=${{ github.event.inputs.limit || '999' }}" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Jika schedule → tentukan dari menit sekarang
+          MINUTE=$(date +%M)
+          if [ "$MINUTE" = "02" ]; then
+            echo "MODE=catalog" >> $GITHUB_OUTPUT
+            echo "PAGES=8" >> $GITHUB_OUTPUT
+            echo "LIMIT=5" >> $GITHUB_OUTPUT
+          elif [ "$MINUTE" = "22" ] || [ "$MINUTE" = "39" ]; then
+            echo "MODE=random" >> $GITHUB_OUTPUT
+            echo "LIMIT=999" >> $GITHUB_OUTPUT
+          else
+            # Dispatch tanpa slug, gunakan input mode
+            echo "MODE=${{ github.event.inputs.mode || 'catalog' }}" >> $GITHUB_OUTPUT
+            echo "PAGES=${{ github.event.inputs.pages || '8' }}" >> $GITHUB_OUTPUT
+            echo "LIMIT=${{ github.event.inputs.limit || '5' }}" >> $GITHUB_OUTPUT
+          fi
+
+      # Mode Catalog (atau Dispatch catalog)
+      - name: Run Scraper - Catalog Mode
+        if: steps.decide.outputs.MODE == 'catalog'
+        run: |
+          python id/scraper.py --catalog --pages ${{ steps.decide.outputs.PAGES || 8 }} --limit ${{ steps.decide.outputs.LIMIT || 3 }}
+
+      # Mode Random Update (full chapter untuk satu komik acak)
+      - name: Pick random slug & Run Scraper - Random Mode
+        if: steps.decide.outputs.MODE == 'random'
+        run: |
+          # Ambil slug acak dari list.json yang sudah ada
+          if [ -f id/list.json ]; then
+            SLUG=$(python -c "import json,random; data=json.load(open('id/list.json')); slug=random.choice(data)['slug']; print(slug)")
+          else
+            # Fallback: ambil dari folder db jika list.json belum ada
+            SLUG=$(ls id/db/*/*.json 2>/dev/null | shuf -n 1 | xargs basename | sed 's/.json//')
+          fi
+          echo "Random slug: $SLUG"
+          python id/scraper.py --slug "$SLUG" --limit ${{ steps.decide.outputs.LIMIT || 9999 }}
+
+      # Mode Single (slug diberikan manual lewat dispatch)
+      - name: Run Scraper - Single Comic Mode
+        if: steps.decide.outputs.MODE == 'single'
+        run: |
+          python id/scraper.py --slug "${{ steps.decide.outputs.SLUG }}" --limit ${{ steps.decide.outputs.LIMIT || 9999 }}
+
+      # ============================================================
+      # 5. Generate file statis: list.json, stats.json, missing.json, health.json
+      # ============================================================
+      - name: Generate list.json & stats.json
+        run: |
+          python id/scraper.py --generate-list --generate-stats
+
+      - name: Generate missing.json
+        if: always()
+        run: |
+          # Anda dapat membuat script terpisah miss.py atau jalankan via python inline
+          python id/miss.py || echo "miss.py not found, skipping"
+
+      - name: Generate health.json
+        if: always()
+        run: |
+          python -c "
+          import json, os, datetime
+          count = sum(len(files) for _, _, files in os.walk('id/db'))
+          health = {'last_run': datetime.datetime.now().isoformat(), 'total_files': count, 'status': 'ok'}
+          with open('id/health.json', 'w') as f: json.dump(health, f, indent=2)
+          print('health.json updated')
+          "
+
+      # ============================================================
+      # 6. Commit & push
+      # ============================================================
+      - name: Commit and push changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add id/
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update Komiku data [$(date +'%Y-%m-%d %H:%M')]"
+            git pull --rebase origin main
+            git push origin main
+            echo "committed=true" >> $GITHUB_OUTPUT
+          else
+            echo "Tidak ada perubahan."
+            echo "committed=false" >> $GITHUB_OUTPUT
+          fi
+
+      # ============================================================
+      # 7. Notifikasi Telegram
+      # ============================================================
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          format: html
+          message: |
+            <b>Workflow:</b> ${{ github.workflow }}
+            <b>Status:</b> ${{ job.status }}
+            <b>Run ID:</b> ${{ github.run_id }}
+            <b>Trigger:</b> ${{ github.event_name }}
+            <b>Mode:</b> ${{ steps.decide.outputs.MODE }}
+            <b>Changes committed:</b> ${{ steps.commit.outputs.committed }}
+            <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">🔗 Lihat Run</a>
