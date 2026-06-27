@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Reader</title>
+    <style>
+        img { max-width: 100%; display: block; margin: 10px auto; }
+        .nav { margin: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="reader"></div>
+    <div class="nav">
+        <button onclick="prevChapter()">Prev</button>
+        <button onclick="nextChapter()">Next</button>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(location.search);
+        const mangaSlug = params.get('manga');
+        const chapterName = params.get('chapter');
+        let currentIndex = 0;
+        let chapters = [];
+
+        if (mangaSlug && chapterName) {
+            fetch(`db/${mangaSlug[0].toLowerCase()}/${mangaSlug}.json`)
+                .then(res => res.json())
+                .then(data => {
+                    chapters = data.chapters;
+                    currentIndex = chapters.findIndex(ch => ch.nama === chapterName);
+                    if (currentIndex === -1) currentIndex = 0;
+                    loadChapter(currentIndex);
+                });
+        }
+
+        function loadChapter(index) {
+            const ch = chapters[index];
+            if (!ch) return;
+            const imagesHtml = ch.images.map(img => `<img src="${img}" loading="lazy">`).join('');
+            document.getElementById('reader').innerHTML = `<h2>${ch.nama}</h2>${imagesHtml}`;
+            // Update URL tanpa reload
+            const newUrl = new URL(location);
+            newUrl.searchParams.set('chapter', ch.nama);
+            history.pushState(null, '', newUrl);
+        }
+
+        function prevChapter() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                loadChapter(currentIndex);
+            }
+        }
+
+        function nextChapter() {
+            if (currentIndex < chapters.length - 1) {
+                currentIndex++;
+                loadChapter(currentIndex);
+            }
+        }
+    </script>
+</body>
+</html>
