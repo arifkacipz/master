@@ -129,7 +129,7 @@
 
         <!-- ===== SECTION: HOT & POPULAR ===== -->
         <div id="popular-section" class="mb-12">
-            <!-- ✅ HEADER: selalu terlihat (tempat tombol toggle) -->
+            <!-- ✅ HEADER: Allways shown -->
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-bold flex items-center gap-2">
                     <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -137,7 +137,7 @@
                     </svg>
                     <span>🔥 Hot & Popular</span>
                 </h2>
-                <!-- ✅ Tombol toggle SELALU terlihat karena di luar #popular-content -->
+                <!-- ✅ Toggle button ALLWAYS shown (outside #popular-content) -->
                 <button id="toggle-popular" class="p-2 rounded-lg hover:bg-zinc-800 transition flex-shrink-0" title="Hide this section">
                     <svg id="eye-icon" class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -146,7 +146,7 @@
                 </button>
             </div>
             
-            <!-- ✅ Konten yang bisa di-hide: tab + list -->
+            <!-- ✅ Content that can be hidden: tab + list -->
             <div id="popular-content">
                 <!-- Tab Navigator -->
                 <div class="flex gap-2 mb-6 bg-zinc-900 p-1 rounded-xl border border-white/5 w-fit">
@@ -303,7 +303,7 @@
         // DOM elements
         const container = document.getElementById('manga-list');
         const popularContainer = document.getElementById('popular-list');
-        const popularContent = document.getElementById('popular-content'); // ✅ target baru
+        const popularContent = document.getElementById('popular-content');
         const togglePopularBtn = document.getElementById('toggle-popular');
         const eyeIcon = document.getElementById('eye-icon');
         const searchInput = document.getElementById('search-input');
@@ -363,11 +363,11 @@
         }
 
         // ==================== TOGGLE POPULAR (FIXED) ====================
-        // ✅ Sekarang yang di-hide adalah #popular-content, bukan seluruh #popular-section
+    // ✅ Now hidden #popular-content, not #popular-section
         function setPopularVisibility(hide) {
             if (hide) {
                 popularContent.classList.add('hidden');
-                // Ikon mata tertutup (eye-off)
+                // Icon eye-off
                 eyeIcon.innerHTML = `
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
                 `;
@@ -390,7 +390,7 @@
             setPopularVisibility(hide);
         }
 
-        // ✅ Event listener tetap sama, tombol selalu bisa diklik
+        // ✅ No Change
         togglePopularBtn.addEventListener('click', () => {
             const isHidden = popularContent.classList.contains('hidden');
             setPopularVisibility(!isHidden);
