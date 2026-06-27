@@ -1,19 +1,19 @@
-name: Update Komik Indo
+name: Update Komiku Data
 
 on:
   schedule:
-    # Katalog: setiap jam pada menit 02 (maks 8 halaman API)
+    # Katalog: setiap jam pada menit 02 (maks 8 halaman)
     - cron: '02 * * * *'
     # Full random update: setiap jam pada menit 22 dan 39
     - cron: '22,39 * * * *'
   workflow_dispatch:
     inputs:
       target_slug:
-        description: 'Slug komik (kosongkan untuk mode otomatis)'
+        description: 'Slug komik (abaikan untuk mode otomatis)'
         required: false
         default: ''
       mode:
-        description: 'Mode (abaikan jika slug diisi)'
+        description: 'Mode (jika slug kosong)'
         required: false
         type: choice
         options:
@@ -33,7 +33,7 @@ on:
           - 10
         default: '8'
       limit:
-        description: 'Chapter terbaru yang diambil (untuk catalog / single)'
+        description: 'Jumlah chapter terbaru yang diambil (catalog/single)'
         required: false
         type: choice
         options:
@@ -42,7 +42,7 @@ on:
           - 5
           - 10
           - 999
-        default: '3'
+        default: '5'
 
 jobs:
   scrape:
@@ -52,7 +52,7 @@ jobs:
       actions: write
     steps:
       # ============================================================
-      # 1. Batalkan diri jika ada workflow lain yang sedang berjalan
+      # 1. Anti‑bentrok: batalkan diri sendiri jika ada workflow lain
       # ============================================================
       - name: Cancel self if another workflow is running
         uses: actions/github-script@v7
@@ -87,7 +87,7 @@ jobs:
           fetch-depth: 0
 
       # ============================================================
-      # 3. Setup Python & install dependencies (tanpa Cloudinary)
+      # 3. Setup Python (tanpa Cloudinary)
       # ============================================================
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -98,7 +98,7 @@ jobs:
         run: pip install requests beautifulsoup4
 
       # ============================================================
-      # 4. Tentukan mode dan jalankan scraper
+      # 4. Tentukan mode (catalog / random / single)
       # ============================================================
       - name: Decide run mode
         id: decide
@@ -112,7 +112,7 @@ jobs:
             exit 0
           fi
 
-          # Jika schedule → tentukan dari menit sekarang
+          # Jika schedule, tentukan dari menit sekarang
           MINUTE=$(date +%M)
           if [ "$MINUTE" = "02" ]; then
             echo "MODE=catalog" >> $GITHUB_OUTPUT
@@ -128,58 +128,65 @@ jobs:
             echo "LIMIT=${{ github.event.inputs.limit || '5' }}" >> $GITHUB_OUTPUT
           fi
 
-      # Mode Catalog (atau Dispatch catalog)
-      - name: Run Scraper - Catalog Mode
+      # ============================================================
+      # 5. Jalankan Scraper sesuai mode
+      # ============================================================
+      # Mode Catalog
+      - name: Run Scraper – Catalog
         if: steps.decide.outputs.MODE == 'catalog'
         run: |
-          python id/scraper.py --catalog --pages ${{ steps.decide.outputs.PAGES || 8 }} --limit ${{ steps.decide.outputs.LIMIT || 3 }}
+          python id/scraper.py \
+            --catalog \
+            --pages ${{ steps.decide.outputs.PAGES || 8 }} \
+            --limit ${{ steps.decide.outputs.LIMIT || 5 }}
 
-      # Mode Random Update (full chapter untuk satu komik acak)
-      - name: Pick random slug & Run Scraper - Random Mode
+      # Mode Random (pilih 1 slug acak dari list.json atau db)
+      - name: Run Scraper – Random Single
         if: steps.decide.outputs.MODE == 'random'
         run: |
-          # Ambil slug acak dari list.json yang sudah ada
+          # Cari slug acak dari list.json jika ada, kalau tidak dari folder db
           if [ -f id/list.json ]; then
             SLUG=$(python -c "import json,random; data=json.load(open('id/list.json')); slug=random.choice(data)['slug']; print(slug)")
           else
-            # Fallback: ambil dari folder db jika list.json belum ada
             SLUG=$(ls id/db/*/*.json 2>/dev/null | shuf -n 1 | xargs basename | sed 's/.json//')
           fi
           echo "Random slug: $SLUG"
-          python id/scraper.py --slug "$SLUG" --limit ${{ steps.decide.outputs.LIMIT || 9999 }}
+          python id/scraper.py \
+            --slug "$SLUG" \
+            --limit ${{ steps.decide.outputs.LIMIT || 999 }}
 
-      # Mode Single (slug diberikan manual lewat dispatch)
-      - name: Run Scraper - Single Comic Mode
+      # Mode Single (slug diberikan lewat dispatch)
+      - name: Run Scraper – Single
         if: steps.decide.outputs.MODE == 'single'
         run: |
-          python id/scraper.py --slug "${{ steps.decide.outputs.SLUG }}" --limit ${{ steps.decide.outputs.LIMIT || 9999 }}
+          python id/scraper.py \
+            --slug "${{ steps.decide.outputs.SLUG }}" \
+            --limit ${{ steps.decide.outputs.LIMIT || 999 }}
 
       # ============================================================
-      # 5. Generate file statis: list.json, stats.json, missing.json, health.json
+      # 6. Generate file statis: list.json, stats.json, missing.json
       # ============================================================
-      - name: Generate list.json & stats.json
-        run: |
-          python id/scraper.py --generate-list --generate-stats
+      - name: Generate list.json
+        run: python id/generate_list.py
+
+      - name: Generate stats.json
+        run: python id/generate_stats.py
 
       - name: Generate missing.json
-        if: always()
-        run: |
-          # Anda dapat membuat script terpisah miss.py atau jalankan via python inline
-          python id/miss.py || echo "miss.py not found, skipping"
+        run: python id/miss.py
 
       - name: Generate health.json
-        if: always()
         run: |
           python -c "
           import json, os, datetime
-          count = sum(len(files) for _, _, files in os.walk('id/db'))
-          health = {'last_run': datetime.datetime.now().isoformat(), 'total_files': count, 'status': 'ok'}
-          with open('id/health.json', 'w') as f: json.dump(health, f, indent=2)
+          total = sum(1 for _,_,files in os.walk('id/db') for f in files if f.endswith('.json'))
+          health = {'last_run': datetime.datetime.now().isoformat(), 'total_manga': total, 'status': 'ok'}
+          with open('id/health.json','w') as f: json.dump(health,f,indent=2)
           print('health.json updated')
           "
 
       # ============================================================
-      # 6. Commit & push
+      # 7. Commit & Push perubahan (hanya folder id/)
       # ============================================================
       - name: Commit and push changes
         id: commit
@@ -198,7 +205,7 @@ jobs:
           fi
 
       # ============================================================
-      # 7. Notifikasi Telegram
+      # 8. Notifikasi Telegram (opsional)
       # ============================================================
       - name: Send Telegram Notification
         if: always()
