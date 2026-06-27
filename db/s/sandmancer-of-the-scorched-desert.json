@@ -2,9 +2,9 @@
     "judul": "Sandmancer of the Scorched Desert",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sandmancer-of-the-Scorched-Desert-193x278.webp",
     "source": "arenascan",
-    "online": 21,
-    "chapterCount": 21,
-    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20.5, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 14, Chapter 12, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 22,
+    "chapterCount": 22,
+    "Chs": "Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20.5, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 14, Chapter 12, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -380,7 +380,27 @@
                 "https://cdn.arenascan.com/arena-bucket/398376/25/021.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 26",
+            "url": "https://arenascan.com/sandmancer-of-the-scorched-desert-chapter-26/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/398376/26/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/015.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/016.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/017.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/018.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/019.webp",
+                "https://cdn.arenascan.com/arena-bucket/398376/26/020.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-13T16:57:39.125502"
+    "last_scraped": "2026-06-27T15:47:02.635891"
 }

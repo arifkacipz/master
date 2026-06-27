@@ -2,9 +2,9 @@
     "judul": "Return of the Devourer",
     "thumb": "https://arenascan.com/wp-content/uploads/2026/01/44eb0bb6-d886-429c-a05f-472e91bb554b.jpg",
     "source": "arenascan",
-    "online": 32,
-    "chapterCount": 32,
-    "Chs": "Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 35,
+    "chapterCount": 35,
+    "Chs": "Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1623,7 +1623,59 @@
                 "https://cdn.arenascan.com/arena-bucket/360790/32/020.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/return-of-the-devourer-chapter-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360790/33/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/33/009.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 34",
+            "url": "https://arenascan.com/return-of-the-devourer-chapter-34/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360790/34/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/34/010.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 35",
+            "url": "https://arenascan.com/return-of-the-devourer-chapter-35/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/360790/35/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/360790/35/012.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-06T03:57:27.860003"
+    "last_scraped": "2026-06-27T15:47:02.651952"
 }
