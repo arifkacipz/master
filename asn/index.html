@@ -61,14 +61,13 @@
             background: #9333ea;
             border-radius: 20px;
         }
-        /* Hide scrollbar for desktop when using buttons? We'll keep it visible but small */
         .recent-container {
             display: flex;
             gap: 1rem;
         }
         .recent-item {
             flex: 0 0 auto;
-            width: 144px; /* 36 * 4 = 144px, sesuai dengan w-36 */
+            width: 144px;
         }
         .nav-button {
             display: none;
@@ -130,6 +129,7 @@
 
         <!-- ===== SECTION: HOT & POPULAR ===== -->
         <div id="popular-section" class="mb-12">
+            <!-- ✅ HEADER: selalu terlihat (tempat tombol toggle) -->
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-bold flex items-center gap-2">
                     <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -137,8 +137,8 @@
                     </svg>
                     <span>🔥 Hot & Popular</span>
                 </h2>
-                <!-- Hide/Show button -->
-                <button id="toggle-popular" class="p-2 rounded-lg hover:bg-zinc-800 transition" title="Hide this section">
+                <!-- ✅ Tombol toggle SELALU terlihat karena di luar #popular-content -->
+                <button id="toggle-popular" class="p-2 rounded-lg hover:bg-zinc-800 transition flex-shrink-0" title="Hide this section">
                     <svg id="eye-icon" class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -146,16 +146,19 @@
                 </button>
             </div>
             
-            <!-- Tab Navigator -->
-            <div class="flex gap-2 mb-6 bg-zinc-900 p-1 rounded-xl border border-white/5 w-fit">
-                <button id="tab-daily" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg tab-active">Daily</button>
-                <button id="tab-weekly" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg text-zinc-400 hover:bg-zinc-800">Weekly</button>
-                <button id="tab-monthly" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg text-zinc-400 hover:bg-zinc-800">Monthly</button>
-            </div>
-            
-            <!-- Popular Container -->
-            <div id="popular-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <!-- Will be filled by JavaScript -->
+            <!-- ✅ Konten yang bisa di-hide: tab + list -->
+            <div id="popular-content">
+                <!-- Tab Navigator -->
+                <div class="flex gap-2 mb-6 bg-zinc-900 p-1 rounded-xl border border-white/5 w-fit">
+                    <button id="tab-daily" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg tab-active">Daily</button>
+                    <button id="tab-weekly" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg text-zinc-400 hover:bg-zinc-800">Weekly</button>
+                    <button id="tab-monthly" class="tab-btn px-6 py-2 text-sm font-bold rounded-lg text-zinc-400 hover:bg-zinc-800">Monthly</button>
+                </div>
+                
+                <!-- Popular Container -->
+                <div id="popular-list" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Will be filled by JavaScript -->
+                </div>
             </div>
         </div>
 
@@ -193,16 +196,13 @@
 
     <script>
         // ==================== RECENT FUNCTIONS (localStorage) ====================
-        // Function to add chapter to last read list (called from detail/reader page)
         window.addToRecent = function(slug, judul, thumb, chapterName, chapterNumber) {
             try {
                 const recent = localStorage.getItem('petomic_recent');
                 let recentData = recent ? JSON.parse(recent) : [];
                 
-                // Remove if already exists (move to top)
                 recentData = recentData.filter(item => item.slug !== slug);
                 
-                // Add to beginning
                 recentData.unshift({
                     slug: slug,
                     judul: judul,
@@ -212,22 +212,18 @@
                     waktu: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
                 });
                 
-                // Limit to 20 items (instead of 4)
                 const MAX_RECENT = 20;
                 if (recentData.length > MAX_RECENT) {
                     recentData = recentData.slice(0, MAX_RECENT);
                 }
                 
                 localStorage.setItem('petomic_recent', JSON.stringify(recentData));
-                
-                // Update recent display on this page (if any)
                 renderRecentComics(recentData);
             } catch (e) {
                 console.warn('Failed to save history:', e);
             }
         };
 
-        // Function to display recent list
         function renderRecentComics(recentData) {
             const recentSection = document.getElementById('recent-section');
             const recentList = document.getElementById('recent-list');
@@ -240,7 +236,6 @@
             recentSection.classList.remove('hidden');
             recentList.innerHTML = '';
             recentData.forEach(item => {
-                // Show chapter if available
                 const chapterInfo = item.chapterName ? ` · ${item.chapterName}` : '';
                 recentList.innerHTML += `
                     <a href="/asn/${item.slug}" class="flex-none w-36 bg-zinc-900 rounded-xl overflow-hidden hover:scale-105 transition border border-white/5">
@@ -253,7 +248,6 @@
                 `;
             });
 
-            // After rendering, check if we need to show/hide navigation buttons
             updateNavButtons();
         }
 
@@ -264,18 +258,10 @@
 
         function updateNavButtons() {
             if (!recentList) return;
-            // Check if scroll width > client width
             if (recentList.scrollWidth > recentList.clientWidth) {
-                // Show buttons (they are already visible via CSS at md+)
-                // But we can enable/disable them based on scroll position
                 prevBtn.disabled = recentList.scrollLeft <= 0;
                 nextBtn.disabled = recentList.scrollLeft + recentList.clientWidth >= recentList.scrollWidth - 1;
             } else {
-                // If content fits, buttons are hidden via CSS (they have display:flex at md, but we can disable them)
-                // We'll keep them but disable and hide? Better to hide them with a class.
-                // We'll handle by CSS media query, but if content fits, we can add a class to hide them.
-                // For simplicity, we'll just disable them and they will be invisible? No, they still occupy space.
-                // Let's hide them by adding a class 'hidden' if content fits.
                 if (recentList.scrollWidth <= recentList.clientWidth) {
                     prevBtn.classList.add('hidden');
                     nextBtn.classList.add('hidden');
@@ -286,28 +272,23 @@
             }
         }
 
-        // Scroll left/right
         function scrollRecent(direction) {
             if (!recentList) return;
-            const scrollAmount = recentList.clientWidth * 0.8; // scroll 80% of visible width
+            const scrollAmount = recentList.clientWidth * 0.8;
             recentList.scrollBy({
                 left: direction === 'next' ? scrollAmount : -scrollAmount,
                 behavior: 'smooth'
             });
-            // Update button states after scroll (with a small delay)
             setTimeout(updateNavButtons, 100);
         }
 
         if (prevBtn && nextBtn) {
             prevBtn.addEventListener('click', () => scrollRecent('prev'));
             nextBtn.addEventListener('click', () => scrollRecent('next'));
-            // Update on scroll
             recentList.addEventListener('scroll', () => {
-                // Use requestAnimationFrame to throttle
                 if (window.rAF) cancelAnimationFrame(window.rAF);
                 window.rAF = requestAnimationFrame(updateNavButtons);
             });
-            // Update on resize
             window.addEventListener('resize', updateNavButtons);
         }
 
@@ -322,7 +303,7 @@
         // DOM elements
         const container = document.getElementById('manga-list');
         const popularContainer = document.getElementById('popular-list');
-        const popularSection = document.getElementById('popular-section');
+        const popularContent = document.getElementById('popular-content'); // ✅ target baru
         const togglePopularBtn = document.getElementById('toggle-popular');
         const eyeIcon = document.getElementById('eye-icon');
         const searchInput = document.getElementById('search-input');
@@ -382,18 +363,19 @@
         }
 
         // ==================== TOGGLE POPULAR (FIXED) ====================
+        // ✅ Sekarang yang di-hide adalah #popular-content, bukan seluruh #popular-section
         function setPopularVisibility(hide) {
             if (hide) {
-                popularSection.classList.add('hidden');
-                // Eye-off icon
+                popularContent.classList.add('hidden');
+                // Ikon mata tertutup (eye-off)
                 eyeIcon.innerHTML = `
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
                 `;
                 togglePopularBtn.title = 'Show this section';
                 localStorage.setItem('petomic_hide_popular', 'true');
             } else {
-                popularSection.classList.remove('hidden');
-                // Eye-open icon
+                popularContent.classList.remove('hidden');
+                // Ikon mata terbuka (eye)
                 eyeIcon.innerHTML = `
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -403,15 +385,14 @@
             }
         }
 
-        // Initialize popular toggle from localStorage
         function initPopularToggle() {
             const hide = localStorage.getItem('petomic_hide_popular') === 'true';
             setPopularVisibility(hide);
         }
 
-        // Event listener for toggle button
+        // ✅ Event listener tetap sama, tombol selalu bisa diklik
         togglePopularBtn.addEventListener('click', () => {
-            const isHidden = popularSection.classList.contains('hidden');
+            const isHidden = popularContent.classList.contains('hidden');
             setPopularVisibility(!isHidden);
         });
 
@@ -424,7 +405,7 @@
             container.innerHTML = '';
             pagedData.forEach(manga => {
                 const a = document.createElement('a');
-                a.href = `/asn/${manga.slug}`; // Clean URL (rewritten by Cloudflare)
+                a.href = `/asn/${manga.slug}`;
                 a.className = 'block';
                 if (mode === 'grid') {
                     a.innerHTML = `
@@ -491,7 +472,7 @@
         }
 
         // ==================== LOAD DATA ====================
-        fetch('../list.json') // Fetch from root
+        fetch('../list.json')
             .then(res => res.json())
             .then(data => {
                 allData = data;
@@ -500,7 +481,6 @@
                 render();
                 renderPopular('daily');
 
-                // Load recent from localStorage
                 try {
                     const recent = localStorage.getItem('petomic_recent');
                     if (recent) {
@@ -510,7 +490,6 @@
                     console.warn('Failed to load history:', e);
                 }
 
-                // Initialize popular toggle
                 initPopularToggle();
             })
             .catch(err => {
