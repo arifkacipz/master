@@ -16,10 +16,72 @@
   "pembaca_mingguan": 2236,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 30,
-  "chapterCount": 30,
-  "Chs": "Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130, Chapter 131, Chapter 132, Chapter 133, Chapter 134, Chapter 135, Chapter 136, Chapter 137, Chapter 138, Chapter 139, Chapter 140, Chapter 141, Chapter 142, Chapter 143, Chapter 144, Chapter 145",
+  "online": 35,
+  "chapterCount": 35,
+  "Chs": "Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130, Chapter 131, Chapter 132, Chapter 133, Chapter 134, Chapter 135, Chapter 136, Chapter 137, Chapter 138, Chapter 139, Chapter 140, Chapter 141, Chapter 142, Chapter 143, Chapter 144, Chapter 145",
   "chapters": [
+    {
+      "nama": "Chapter 111",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-111/",
+      "tanggal_rilis": "27/02/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2664480-1.jpg",
+        "https://img.komiku.org/uploads2/2664480-2.jpg",
+        "https://img.komiku.org/uploads2/2664480-3.jpg",
+        "https://img.komiku.org/uploads2/2664480-4.jpg",
+        "https://img.komiku.org/uploads2/2664480-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 112",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-112/",
+      "tanggal_rilis": "08/07/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2707727-1.jpg",
+        "https://img.komiku.org/uploads2/2707727-2.jpg",
+        "https://img.komiku.org/uploads2/2707727-3.jpg",
+        "https://img.komiku.org/uploads2/2707727-4.jpg",
+        "https://img.komiku.org/uploads2/2707727-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 113",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-113/",
+      "tanggal_rilis": "09/07/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2708326-1.jpg",
+        "https://img.komiku.org/uploads2/2708326-2.jpg",
+        "https://img.komiku.org/uploads2/2708326-3.jpg",
+        "https://img.komiku.org/uploads2/2708326-4.jpg",
+        "https://img.komiku.org/uploads2/2708326-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 114",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-114/",
+      "tanggal_rilis": "16/07/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2710287-1.jpg",
+        "https://img.komiku.org/uploads2/2710287-2.jpg",
+        "https://img.komiku.org/uploads2/2710287-3.jpg",
+        "https://img.komiku.org/uploads2/2710287-4.jpg",
+        "https://img.komiku.org/uploads2/2710287-5.jpg",
+        "https://img.komiku.org/uploads2/2710287-6.jpg",
+        "https://img.komiku.org/uploads2/2710287-7.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 115",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-115/",
+      "tanggal_rilis": "18/07/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2711251-1.jpg",
+        "https://img.komiku.org/uploads2/2711251-2.jpg",
+        "https://img.komiku.org/uploads2/2711251-3.jpg",
+        "https://img.komiku.org/uploads2/2711251-4.jpg",
+        "https://img.komiku.org/uploads2/2711251-5.jpg"
+      ]
+    },
     {
       "nama": "Chapter 116",
       "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-116/",
@@ -424,5 +486,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-27T22:03:35.061642"
+  "last_scraped": "2026-06-27T23:03:40.879389"
 }
