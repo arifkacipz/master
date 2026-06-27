@@ -2,9 +2,9 @@ name: Update Komiku Data
 
 on:
   schedule:
-    # Katalog: setiap jam pada menit 02 (maks 8 halaman)
+    # Mode Katalog: setiap jam pada menit ke-2, maks 8 halaman API
     - cron: '02 * * * *'
-    # Full random update: setiap jam pada menit 22 dan 39
+    # Mode Random Full Update: setiap jam pada menit ke-22 dan ke-39
     - cron: '22,39 * * * *'
   workflow_dispatch:
     inputs:
@@ -196,7 +196,7 @@ jobs:
           git add id/
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update Komiku data [$(date +'%Y-%m-%d %H:%M')]"
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main
             git push origin main
             echo "committed=true" >> $GITHUB_OUTPUT
           else
