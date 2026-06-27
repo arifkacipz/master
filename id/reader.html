@@ -1,63 +1,177 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta name="referrer" content="no-referrer">
     <meta charset="UTF-8">
-    <title>Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Baca Komik - Komiku Reader</title>
     <style>
-        img { max-width: 100%; display: block; margin: 10px auto; }
-        .nav { margin: 20px 0; text-align: center; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #1a1a1a;
+            color: #ccc;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin: 15px 0;
+            color: #fff;
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        #reader {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 10px auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        .nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            border-top: 1px solid #444;
+            z-index: 1000;
+        }
+        button {
+            background: #4164b2;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background: #555;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background: #5a7ad2;
+        }
+        .loading {
+            padding: 40px;
+            font-size: 18px;
+            color: #aaa;
+        }
     </style>
 </head>
 <body>
-    <div id="reader"></div>
+    <div id="reader">
+        <div class="loading">Memuat chapter...</div>
+    </div>
     <div class="nav">
-        <button onclick="prevChapter()">Prev</button>
-        <button onclick="nextChapter()">Next</button>
+        <button id="prevBtn" onclick="prevChapter()">← Prev</button>
+        <button id="nextBtn" onclick="nextChapter()">Next →</button>
     </div>
 
     <script>
         const params = new URLSearchParams(location.search);
         const mangaSlug = params.get('manga');
         const chapterName = params.get('chapter');
-        let currentIndex = 0;
-        let chapters = [];
 
-        if (mangaSlug && chapterName) {
+        let chapters = [];
+        let currentIndex = 0;
+
+        if (!mangaSlug || !chapterName) {
+            document.getElementById('reader').innerHTML = '<p style="color:red; padding:40px;">Parameter manga atau chapter tidak ditemukan.</p>';
+        } else {
+            // Ambil data manga dari db/
             fetch(`db/${mangaSlug[0].toLowerCase()}/${mangaSlug}.json`)
-                .then(res => res.json())
+                .then(res => {
+                    if (!res.ok) throw new Error('File manga tidak ditemukan.');
+                    return res.json();
+                })
                 .then(data => {
-                    chapters = data.chapters;
+                    chapters = data.chapters || [];
+                    if (chapters.length === 0) {
+                        throw new Error('Tidak ada chapter.');
+                    }
+                    // Cari index chapter yang diminta
                     currentIndex = chapters.findIndex(ch => ch.nama === chapterName);
+                    if (currentIndex === -1) {
+                        // Kalau tidak ketemu, cari berdasarkan nomor
+                        currentIndex = chapters.findIndex(ch => ch.nama.includes(chapterName));
+                    }
                     if (currentIndex === -1) currentIndex = 0;
                     loadChapter(currentIndex);
+                })
+                .catch(err => {
+                    document.getElementById('reader').innerHTML = `<p style="color:red; padding:40px;">Gagal memuat data: ${err.message}</p>`;
                 });
         }
 
         function loadChapter(index) {
+            if (index < 0 || index >= chapters.length) return;
             const ch = chapters[index];
-            if (!ch) return;
-            const imagesHtml = ch.images.map(img => `<img src="${img}" loading="lazy">`).join('');
-            document.getElementById('reader').innerHTML = `<h2>${ch.nama}</h2>${imagesHtml}`;
-            // Update URL tanpa reload
+            currentIndex = index;
+
+            // Update tombol
+            document.getElementById('prevBtn').disabled = (index === 0);
+            document.getElementById('nextBtn').disabled = (index === chapters.length - 1);
+
+            // Bangun HTML gambar
+            let imagesHtml = '';
+            if (ch.images && ch.images.length > 0) {
+                imagesHtml = ch.images.map(img =>
+                    `<img src="${img}" loading="lazy" alt="halaman">`
+                ).join('');
+            } else {
+                imagesHtml = '<p style="color:orange;">Belum ada gambar untuk chapter ini.</p>';
+            }
+
+            document.getElementById('reader').innerHTML = `
+                <h2>${ch.nama}</h2>
+                ${imagesHtml}
+            `;
+
+            // Update URL browser tanpa reload
             const newUrl = new URL(location);
             newUrl.searchParams.set('chapter', ch.nama);
-            history.pushState(null, '', newUrl);
+            history.replaceState(null, '', newUrl);
+
+            // Scroll ke atas
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function prevChapter() {
             if (currentIndex > 0) {
-                currentIndex--;
-                loadChapter(currentIndex);
+                loadChapter(currentIndex - 1);
             }
         }
 
         function nextChapter() {
             if (currentIndex < chapters.length - 1) {
-                currentIndex++;
-                loadChapter(currentIndex);
+                loadChapter(currentIndex + 1);
             }
         }
+
+        // Keyboard shortcut
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                prevChapter();
+            } else if (e.key === 'ArrowRight') {
+                nextChapter();
+            }
+        });
     </script>
 </body>
 </html>
