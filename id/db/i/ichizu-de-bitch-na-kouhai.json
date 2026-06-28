@@ -16,10 +16,75 @@
   "pembaca_mingguan": 2236,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 45,
-  "chapterCount": 45,
-  "Chs": "Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 108.5, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130, Chapter 131, Chapter 132, Chapter 133, Chapter 134, Chapter 135, Chapter 136, Chapter 137, Chapter 138, Chapter 139, Chapter 140, Chapter 141, Chapter 142, Chapter 143, Chapter 144, Chapter 145",
+  "online": 50,
+  "chapterCount": 50,
+  "Chs": "Chapter 96, Chapter 97, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 108.5, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130, Chapter 131, Chapter 132, Chapter 133, Chapter 134, Chapter 135, Chapter 136, Chapter 137, Chapter 138, Chapter 139, Chapter 140, Chapter 141, Chapter 142, Chapter 143, Chapter 144, Chapter 145",
   "chapters": [
+    {
+      "nama": "Chapter 96",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-96/",
+      "tanggal_rilis": "01/10/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2584914-1.jpg",
+        "https://img.komiku.org/uploads2/2584914-2.jpg",
+        "https://img.komiku.org/uploads2/2584914-3.jpg",
+        "https://img.komiku.org/uploads2/2584914-4.jpg",
+        "https://img.komiku.org/uploads2/2584914-5.jpg",
+        "https://img.komiku.org/uploads2/2584914-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 97",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-97/",
+      "tanggal_rilis": "01/10/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2584913-1.jpg",
+        "https://img.komiku.org/uploads2/2584913-2.jpg",
+        "https://img.komiku.org/uploads2/2584913-3.jpg",
+        "https://img.komiku.org/uploads2/2584913-4.jpg",
+        "https://img.komiku.org/uploads2/2584913-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 99",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-99/",
+      "tanggal_rilis": "07/10/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2590439-1.jpg",
+        "https://img.komiku.org/uploads2/2590439-2.jpg",
+        "https://img.komiku.org/uploads2/2590439-3.jpg",
+        "https://img.komiku.org/uploads2/2590439-4.jpg",
+        "https://img.komiku.org/uploads2/2590439-5.jpg",
+        "https://img.komiku.org/uploads2/2590439-6.jpg",
+        "https://img.komiku.org/uploads2/2590439-7.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 100",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-100/",
+      "tanggal_rilis": "10/10/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2592247-1.jpg",
+        "https://img.komiku.org/uploads2/2592247-2.jpg",
+        "https://img.komiku.org/uploads2/2592247-3.jpg",
+        "https://img.komiku.org/uploads2/2592247-4.jpg",
+        "https://img.komiku.org/uploads2/2592247-5.jpg",
+        "https://img.komiku.org/uploads2/2592247-6.jpg",
+        "https://img.komiku.org/uploads2/2592247-7.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 101",
+      "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-101/",
+      "tanggal_rilis": "11/12/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2630618-1.jpg",
+        "https://img.komiku.org/uploads2/2630618-2.jpg",
+        "https://img.komiku.org/uploads2/2630618-3.jpg",
+        "https://img.komiku.org/uploads2/2630618-4.jpg",
+        "https://img.komiku.org/uploads2/2630618-5.jpg"
+      ]
+    },
     {
       "nama": "Chapter 102",
       "url": "https://komiku.org/ichizu-de-bitch-na-kouhai-chapter-102/",
@@ -610,5 +675,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-28T00:05:18.021921"
+  "last_scraped": "2026-06-28T03:50:08.444402"
 }
