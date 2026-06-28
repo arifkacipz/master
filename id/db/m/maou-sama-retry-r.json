@@ -21,10 +21,135 @@
   "pembaca_mingguan": 102,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 45,
-  "chapterCount": 45,
-  "Chs": "Chapter 23.2, Chapter 23.3, Chapter 24.1, Chapter 24.2, Chapter 25.1, Chapter 25.2, Chapter 26.2, Chapter 27.1, Chapter 27.2, Chapter 27.3, Chapter 28.1, Chapter 28.2, Chapter 29.1, Chapter 29.2, Chapter 29.3, Chapter 30, Chapter 31, Chapter 32.1, Chapter 32.2, Chapter 33.1, Chapter 33.2, Chapter 34.1, Chapter 34.2, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56",
+  "online": 50,
+  "chapterCount": 50,
+  "Chs": "Chapter 21, Chapter 22.1, Chapter 22.2, Chapter 22.3, Chapter 23.1, Chapter 23.2, Chapter 23.3, Chapter 24.1, Chapter 24.2, Chapter 25.1, Chapter 25.2, Chapter 26.2, Chapter 27.1, Chapter 27.2, Chapter 27.3, Chapter 28.1, Chapter 28.2, Chapter 29.1, Chapter 29.2, Chapter 29.3, Chapter 30, Chapter 31, Chapter 32.1, Chapter 32.2, Chapter 33.1, Chapter 33.2, Chapter 34.1, Chapter 34.2, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56",
   "chapters": [
+    {
+      "nama": "Chapter 21",
+      "url": "https://komiku.org/maou-sama-retry-r-chapter-21/",
+      "tanggal_rilis": "17/05/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2513705-1.jpg",
+        "https://img.komiku.org/uploads2/2513705-2.jpg",
+        "https://img.komiku.org/uploads2/2513705-3.jpg",
+        "https://img.komiku.org/uploads2/2513705-4.jpg",
+        "https://img.komiku.org/uploads2/2513705-5.jpg",
+        "https://img.komiku.org/uploads2/2513705-6.jpg",
+        "https://img.komiku.org/uploads2/2513705-7.jpg",
+        "https://img.komiku.org/uploads2/2513705-8.jpg",
+        "https://img.komiku.org/uploads2/2513705-9.jpg",
+        "https://img.komiku.org/uploads2/2513705-10.jpg",
+        "https://img.komiku.org/uploads2/2513705-11.jpg",
+        "https://img.komiku.org/uploads2/2513705-12.jpg",
+        "https://img.komiku.org/uploads2/2513705-13.jpg",
+        "https://img.komiku.org/uploads2/2513705-14.jpg",
+        "https://img.komiku.org/uploads2/2513705-15.jpg",
+        "https://img.komiku.org/uploads2/2513705-16.jpg",
+        "https://img.komiku.org/uploads2/2513705-17.jpg",
+        "https://img.komiku.org/uploads2/2513705-18.jpg",
+        "https://img.komiku.org/uploads2/2513705-19.jpg",
+        "https://img.komiku.org/uploads2/2513705-20.jpg",
+        "https://img.komiku.org/uploads2/2513705-21.jpg",
+        "https://img.komiku.org/uploads2/2513705-22.jpg",
+        "https://img.komiku.org/uploads2/2513705-23.jpg",
+        "https://img.komiku.org/uploads2/2513705-24.jpg",
+        "https://img.komiku.org/uploads2/2513705-25.jpg",
+        "https://img.komiku.org/uploads2/2513705-26.jpg",
+        "https://img.komiku.org/uploads2/2513705-27.jpg",
+        "https://img.komiku.org/uploads2/2513705-28.jpg",
+        "https://img.komiku.org/uploads2/2513705-29.jpg",
+        "https://img.komiku.org/uploads2/2513705-30.jpg",
+        "https://img.komiku.org/uploads2/2513705-31.jpg",
+        "https://img.komiku.org/uploads2/2513705-32.jpg",
+        "https://img.komiku.org/uploads2/2513705-33.jpg",
+        "https://img.komiku.org/uploads2/2513705-34.jpg",
+        "https://img.komiku.org/uploads2/2513705-35.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 22.1",
+      "url": "https://komiku.org/maou-sama-retry-r-chapter-22-1/",
+      "tanggal_rilis": "30/05/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2517956-1.jpg",
+        "https://img.komiku.org/uploads2/2517956-2.jpg",
+        "https://img.komiku.org/uploads2/2517956-3.jpg",
+        "https://img.komiku.org/uploads2/2517956-4.jpg",
+        "https://img.komiku.org/uploads2/2517956-5.jpg",
+        "https://img.komiku.org/uploads2/2517956-6.jpg",
+        "https://img.komiku.org/uploads2/2517956-7.jpg",
+        "https://img.komiku.org/uploads2/2517956-8.jpg",
+        "https://img.komiku.org/uploads2/2517956-9.jpg",
+        "https://img.komiku.org/uploads2/2517956-10.jpg",
+        "https://img.komiku.org/uploads2/2517956-11.jpg",
+        "https://img.komiku.org/uploads2/2517956-12.jpg",
+        "https://img.komiku.org/uploads2/2517956-13.jpg",
+        "https://img.komiku.org/uploads2/2517956-14.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 22.2",
+      "url": "https://komiku.org/maou-sama-retry-r-chapter-22-2/",
+      "tanggal_rilis": "01/07/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2529377-1.jpg",
+        "https://img.komiku.org/uploads2/2529377-2.jpg",
+        "https://img.komiku.org/uploads2/2529377-3.jpg",
+        "https://img.komiku.org/uploads2/2529377-4.jpg",
+        "https://img.komiku.org/uploads2/2529377-5.jpg",
+        "https://img.komiku.org/uploads2/2529377-6.jpg",
+        "https://img.komiku.org/uploads2/2529377-7.jpg",
+        "https://img.komiku.org/uploads2/2529377-8.jpg",
+        "https://img.komiku.org/uploads2/2529377-9.jpg",
+        "https://img.komiku.org/uploads2/2529377-10.jpg",
+        "https://img.komiku.org/uploads2/2529377-11.jpg",
+        "https://img.komiku.org/uploads2/2529377-12.jpg",
+        "https://img.komiku.org/uploads2/2529377-13.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 22.3",
+      "url": "https://komiku.org/maou-sama-retry-r-chapter-22-3/",
+      "tanggal_rilis": "07/09/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2565453-1.jpg",
+        "https://img.komiku.org/uploads2/2565453-2.jpg",
+        "https://img.komiku.org/uploads2/2565453-3.jpg",
+        "https://img.komiku.org/uploads2/2565453-4.jpg",
+        "https://img.komiku.org/uploads2/2565453-5.jpg",
+        "https://img.komiku.org/uploads2/2565453-6.jpg",
+        "https://img.komiku.org/uploads2/2565453-7.jpg",
+        "https://img.komiku.org/uploads2/2565453-8.jpg",
+        "https://img.komiku.org/uploads2/2565453-9.jpg",
+        "https://img.komiku.org/uploads2/2565453-10.jpg",
+        "https://img.komiku.org/uploads2/2565453-11.jpg",
+        "https://img.komiku.org/uploads2/2565453-12.jpg",
+        "https://img.komiku.org/uploads2/2565453-13.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 23.1",
+      "url": "https://komiku.org/maou-sama-retry-r-chapter-23-1/",
+      "tanggal_rilis": "19/09/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2576244-1.jpg",
+        "https://img.komiku.org/uploads2/2576244-2.jpg",
+        "https://img.komiku.org/uploads2/2576244-3.jpg",
+        "https://img.komiku.org/uploads2/2576244-4.jpg",
+        "https://img.komiku.org/uploads2/2576244-5.jpg",
+        "https://img.komiku.org/uploads2/2576244-6.jpg",
+        "https://img.komiku.org/uploads2/2576244-7.jpg",
+        "https://img.komiku.org/uploads2/2576244-8.jpg",
+        "https://img.komiku.org/uploads2/2576244-9.jpg",
+        "https://img.komiku.org/uploads2/2576244-10.jpg",
+        "https://img.komiku.org/uploads2/2576244-11.jpg",
+        "https://img.komiku.org/uploads2/2576244-12.jpg",
+        "https://img.komiku.org/uploads2/2576244-13.jpg",
+        "https://img.komiku.org/uploads2/2576244-14.jpg",
+        "https://img.komiku.org/uploads2/2576244-15.jpg"
+      ]
+    },
     {
       "nama": "Chapter 23.2",
       "url": "https://komiku.org/maou-sama-retry-r-chapter-23-2/",
@@ -1442,5 +1567,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-28T15:04:59.212345"
+  "last_scraped": "2026-06-28T16:13:43.267005"
 }
