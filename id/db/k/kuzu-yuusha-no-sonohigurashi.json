@@ -1,6 +1,7 @@
 {
   "judul": "Kuzu Yuusha no Sonohigurashi",
   "judul_alternatif": "Kehidupan Sehari-hari Pahlawan Rendahan",
+  "slug": "kuzu-yuusha-no-sonohigurashi",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170046_91db53fe99b2d559_e13d607b.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -17,6 +18,10 @@
   "pembaca_total": 369,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -135,10 +140,5 @@
       ]
     }
   ],
-  "slug": "kuzu-yuusha-no-sonohigurashi",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-06-28T03:42:32.896278"
+  "last_scraped": "2026-06-28T06:04:35.662458"
 }
