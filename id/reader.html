@@ -81,16 +81,18 @@
         let chapters = [];
         let currentIndex = 0;
 
-        // Proxy gambar (gratis, cepat)
+        // Gunakan proxy gambar tanpa fallback ke URL asli
         const IMAGE_PROXY = 'https://images.weserv.nl/?url=';
 
         function proxyUrl(originalUrl) {
+            // Encode URL asli dan tambahkan output webp untuk efisiensi
             return IMAGE_PROXY + encodeURIComponent(originalUrl) + '&output=webp';
         }
 
         if (!mangaSlug || !chapterName) {
             document.getElementById('reader').innerHTML = '<p style="color:red; padding:40px;">Parameter tidak lengkap.</p>';
         } else {
+            // Ambil data manga dari db/
             fetch(`db/${mangaSlug[0].toLowerCase()}/${mangaSlug}.json`)
                 .then(res => {
                     if (!res.ok) throw new Error('Manga tidak ditemukan');
@@ -99,6 +101,7 @@
                 .then(data => {
                     chapters = data.chapters || [];
                     if (!chapters.length) throw new Error('Tidak ada chapter');
+                    // Cari index chapter
                     currentIndex = chapters.findIndex(ch => ch.nama === chapterName);
                     if (currentIndex === -1) {
                         currentIndex = chapters.findIndex(ch => ch.nama.includes(chapterName));
@@ -122,14 +125,9 @@
             let imagesHtml = '';
             if (ch.images && ch.images.length > 0) {
                 imagesHtml = ch.images.map(img => {
-                    // Coba dulu gambar asli, jika gagal pakai proxy
-                    const proxy = proxyUrl(img);
-                    return `
-                    <img src="${img}" 
-                         referrerpolicy="no-referrer"
-                         loading="lazy"
-                         onerror="if(this.src!=='${proxy}'){this.src='${proxy}';}else{this.alt='Gambar tidak dapat dimuat';this.classList.add('broken');}">
-                    `;
+                    // Langsung gunakan proxy untuk menghindari pemblokiran ORB
+                    const proxied = proxyUrl(img);
+                    return `<img src="${proxied}" loading="lazy" alt="halaman" crossorigin="anonymous" onerror="this.alt='Gambar gagal dimuat'; this.style.border='1px solid red';">`;
                 }).join('');
             } else {
                 imagesHtml = '<p style="color:orange;">Belum ada gambar untuk chapter ini.</p>';
@@ -140,7 +138,7 @@
                 ${imagesHtml}
             `;
 
-            // Update URL
+            // Update URL tanpa reload
             const newUrl = new URL(location);
             newUrl.searchParams.set('chapter', ch.nama);
             history.replaceState(null, '', newUrl);
@@ -154,7 +152,7 @@
             if (currentIndex < chapters.length - 1) loadChapter(currentIndex + 1);
         }
 
-        // Keyboard navigation
+        // Keyboard shortcut
         document.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft') prevChapter();
             else if (e.key === 'ArrowRight') nextChapter();
