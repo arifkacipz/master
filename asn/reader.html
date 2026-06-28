@@ -1,164 +1,289 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baca Komik - Komiku Reader</title>
+    <title>PetoMic Reader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: #1a1a1a;
-            color: #ccc;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            text-align: center;
-            padding-bottom: 100px;
-        }
-        h2 {
-            font-size: 1.2em;
-            margin: 15px 0;
-            color: #fff;
-            background: #2a2a2a;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        #reader {
-            max-width: 800px;
-            margin: 0 auto;
+            background-color: #000;
+            touch-action: manipulation;
+            overscroll-behavior: none;
         }
         img {
-            max-width: 100%;
             display: block;
-            margin: 10px auto;
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-        .nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
             width: 100%;
-            background: #222;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 12px;
-            border-top: 1px solid #444;
-            z-index: 1000;
+            max-width: 672px;
+            margin: 0 auto;
+            background: #0a0a0a;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            pointer-events: none;
         }
-        button {
-            background: #4164b2;
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
+        .nav-btn {
+            flex: 1;
+            padding: 14px;
+            font-weight: 800;
+            font-size: 11px;
+            text-transform: uppercase;
+            border-radius: 12px;
+            transition: all 0.2s;
         }
-        button:disabled {
-            background: #555;
-            cursor: not-allowed;
+        .nav-btn:not(.disabled):hover {
+            background-color: #9f7aea;
+            transform: scale(1.02);
         }
-        button:hover:not(:disabled) {
-            background: #5a7ad2;
+        #bottom-nav, #top-header {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
         }
-        .loading { padding: 40px; font-size: 18px; color: #aaa; }
-        .broken { color: #f55; padding: 20px; }
+        .menu-hidden-top {
+            transform: translateY(-110%);
+        }
+        .menu-hidden-bottom {
+            transform: translateY(115%);
+        }
+        #ch-selector {
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a78bfa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1rem;
+        }
+        .loader-shine {
+            background: linear-gradient(90deg, #1e1e1e 25%, #2d2d2d 50%, #1e1e1e 75%);
+            background-size: 200% 100%;
+            animation: shine 1.5s infinite;
+        }
+        @keyframes shine {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
     </style>
 </head>
-<body>
-    <div id="reader"><div class="loading">Memuat chapter...</div></div>
-    <div class="nav">
-        <button id="prevBtn" onclick="prevChapter()">← Prev</button>
-        <button id="nextBtn" onclick="nextChapter()">Next →</button>
+<body class="text-white">
+    <header id="top-header" class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-zinc-900/95 to-zinc-900/80 backdrop-blur-lg border-b border-white/10 p-3 shadow-xl">
+        <div class="flex justify-between items-center max-w-3xl mx-auto">
+            <a href="/asn" class="flex items-center gap-1 text-[10px] font-black uppercase text-zinc-400 hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span>Home</span>
+            </a>
+            <span id="top-title" class="text-[10px] font-bold truncate max-w-[200px] bg-black/40 px-3 py-1.5 rounded-full text-purple-300 border border-purple-500/20">Loading...</span>
+            <a href="javascript:history.back()" class="flex items-center gap-1 text-[10px] font-black uppercase text-purple-400 hover:text-purple-300 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <span>Back</span>
+            </a>
+        </div>
+    </header>
+
+    <div id="tap-area" class="flex flex-col items-center min-h-screen pt-16 pb-32">
+        <div id="loader" class="mt-40 loader-shine w-48 h-8 rounded-full"></div>
+    </div>
+
+    <div id="bottom-nav" class="fixed bottom-0 left-0 w-full p-4 bg-gradient-to-t from-zinc-900/95 via-zinc-900/90 to-transparent backdrop-blur-xl border-t border-white/10 z-50">
+        <div class="max-w-md mx-auto flex flex-col gap-3">
+            <select id="ch-selector" class="w-full bg-black/60 border border-purple-500/30 text-xs rounded-xl p-3 outline-none text-purple-300 font-bold text-center cursor-pointer hover:border-purple-400 transition"></select>
+            <div class="flex gap-2">
+                <button id="prev-btn" class="nav-btn bg-purple-800/80 text-white opacity-20 pointer-events-none flex items-center justify-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    Prev
+                </button>
+                <a id="back-detail" href="#" class="bg-zinc-800/80 px-6 rounded-xl flex items-center justify-center border border-white/10 text-xl font-black text-purple-400 hover:bg-purple-900/30 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </a>
+                <button id="next-btn" class="nav-btn bg-purple-800/80 text-white opacity-20 pointer-events-none flex items-center justify-center gap-1">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
     </div>
 
     <script>
-        const params = new URLSearchParams(location.search);
-        const mangaSlug = params.get('manga');
-        const chapterName = params.get('chapter');
-
-        let chapters = [];
-        let currentIndex = 0;
-
-        // Proxy gambar (gratis, cepat)
-        const IMAGE_PROXY = 'https://images.weserv.nl/?url=';
-
-        function proxyUrl(originalUrl) {
-            return IMAGE_PROXY + encodeURIComponent(originalUrl) + '&output=webp';
+        // ==================== READING PROGRESS ====================
+        function saveProgress(slug, chapterNumber) {
+            try {
+                const key = `petomic_progress_${slug}`;
+                localStorage.setItem(key, chapterNumber);
+            } catch (e) {
+                console.warn('Failed to save progress:', e);
+            }
         }
 
-        if (!mangaSlug || !chapterName) {
-            document.getElementById('reader').innerHTML = '<p style="color:red; padding:40px;">Parameter tidak lengkap.</p>';
-        } else {
-            fetch(`db/${mangaSlug[0].toLowerCase()}/${mangaSlug}.json`)
-                .then(res => {
-                    if (!res.ok) throw new Error('Manga tidak ditemukan');
-                    return res.json();
-                })
-                .then(data => {
-                    chapters = data.chapters || [];
-                    if (!chapters.length) throw new Error('Tidak ada chapter');
-                    currentIndex = chapters.findIndex(ch => ch.nama === chapterName);
-                    if (currentIndex === -1) {
-                        currentIndex = chapters.findIndex(ch => ch.nama.includes(chapterName));
-                    }
-                    if (currentIndex === -1) currentIndex = 0;
-                    loadChapter(currentIndex);
-                })
-                .catch(err => {
-                    document.getElementById('reader').innerHTML = `<p class="broken">Gagal memuat: ${err.message}</p>`;
+        // ==================== RECENT (for index page) ====================
+        function addToRecent(slug, judul, thumb, chapterName, chapterNumber) {
+            try {
+                const recent = localStorage.getItem('petomic_recent');
+                let recentData = recent ? JSON.parse(recent) : [];
+                recentData = recentData.filter(item => item.slug !== slug);
+                recentData.unshift({
+                    slug, judul, thumb,
+                    chapterName: chapterName || '',
+                    chapterNumber: chapterNumber || '',
+                    waktu: new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'short' })
                 });
+                // Limit to 20 items (consisten dengan index.html)
+                const MAX_RECENT = 20;
+                if (recentData.length > MAX_RECENT) recentData = recentData.slice(0, MAX_RECENT);
+                localStorage.setItem('petomic_recent', JSON.stringify(recentData));
+            } catch (e) {
+                console.warn('Failed to save history:', e);
+            }
         }
 
-        function loadChapter(index) {
-            if (index < 0 || index >= chapters.length) return;
-            const ch = chapters[index];
-            currentIndex = index;
+        // ==================== PATH HELPER ====================
+        function getDbPath(slug) {
+            if (!slug) return '';
+            const firstChar = slug[0].toLowerCase();
+            const folder = /[a-z0-9]/.test(firstChar) ? firstChar : 'others';
+            return `/db/${folder}/${slug}.json`;
+        }
 
-            document.getElementById('prevBtn').disabled = (index === 0);
-            document.getElementById('nextBtn').disabled = (index === chapters.length - 1);
-
-            let imagesHtml = '';
-            if (ch.images && ch.images.length > 0) {
-                imagesHtml = ch.images.map(img => {
-                    // Coba dulu gambar asli, jika gagal pakai proxy
-                    const proxy = proxyUrl(img);
-                    return `
-                    <img src="${img}" 
-                         referrerpolicy="no-referrer"
-                         loading="lazy"
-                         onerror="if(this.src!=='${proxy}'){this.src='${proxy}';}else{this.alt='Gambar tidak dapat dimuat';this.classList.add('broken');}">
-                    `;
-                }).join('');
-            } else {
-                imagesHtml = '<p style="color:orange;">Belum ada gambar untuk chapter ini.</p>';
+        // ==================== MAIN READER ====================
+        (function() {
+            function getChapterNumber(chapterName) {
+                const match = chapterName.match(/\d+(\.\d+)?/);
+                return match ? match[0] : '';
             }
 
-            document.getElementById('reader').innerHTML = `
-                <h2>${ch.nama}</h2>
-                ${imagesHtml}
-            `;
+            // Scroll handler
+            let lastScrollTop = 0;
+            const header = document.getElementById('top-header');
+            const bottomNav = document.getElementById('bottom-nav');
+            let menuVisible = true;
+            let scrollTimeout;
 
-            // Update URL
-            const newUrl = new URL(location);
-            newUrl.searchParams.set('chapter', ch.nama);
-            history.replaceState(null, '', newUrl);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+            function updateMenuOnScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const isNearBottom = scrollTop + windowHeight >= documentHeight - 50;
 
-        function prevChapter() {
-            if (currentIndex > 0) loadChapter(currentIndex - 1);
-        }
-        function nextChapter() {
-            if (currentIndex < chapters.length - 1) loadChapter(currentIndex + 1);
-        }
+                if (scrollTop > lastScrollTop && scrollTop > 50) {
+                    if (menuVisible) {
+                        menuVisible = false;
+                        header.classList.add('menu-hidden-top');
+                        bottomNav.classList.add('menu-hidden-bottom');
+                    }
+                } else if (scrollTop < lastScrollTop || isNearBottom) {
+                    if (!menuVisible) {
+                        menuVisible = true;
+                        header.classList.remove('menu-hidden-top');
+                        bottomNav.classList.remove('menu-hidden-bottom');
+                    }
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }
 
-        // Keyboard navigation
-        document.addEventListener('keydown', e => {
-            if (e.key === 'ArrowLeft') prevChapter();
-            else if (e.key === 'ArrowRight') nextChapter();
-        });
+            window.addEventListener('scroll', () => {
+                if (scrollTimeout) cancelAnimationFrame(scrollTimeout);
+                scrollTimeout = requestAnimationFrame(updateMenuOnScroll);
+            });
+
+            // Tap handling
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('#top-header') || e.target.closest('#bottom-nav')) return;
+                const viewportHeight = window.innerHeight;
+                const clickY = e.clientY;
+                const topThreshold = viewportHeight * 0.4;
+                const bottomThreshold = viewportHeight * 0.6;
+
+                if (clickY < topThreshold) {
+                    window.scrollBy({ top: -viewportHeight * 0.8, behavior: 'smooth' });
+                } else if (clickY > bottomThreshold) {
+                    window.scrollBy({ top: viewportHeight * 0.8, behavior: 'smooth' });
+                } else {
+                    menuVisible = !menuVisible;
+                    header.classList.toggle('menu-hidden-top', !menuVisible);
+                    bottomNav.classList.toggle('menu-hidden-bottom', !menuVisible);
+                }
+            });
+
+            // Parse URL
+            let slug, chapterNumber, chapterIndex;
+            const pathParts = window.location.pathname.split('/').filter(Boolean);
+            if (pathParts.length >= 3 && pathParts[0] === 'asn') {
+                slug = pathParts[1];
+                const chPart = pathParts[2];
+                if (chPart.startsWith('ch-')) chapterNumber = chPart.substring(3);
+            }
+            if (!slug) {
+                const params = new URLSearchParams(window.location.search);
+                slug = params.get('slug');
+                const chParam = params.get('ch');
+                if (chParam) chapterIndex = parseInt(chParam);
+            }
+            if (!slug) {
+                alert('Slug not found');
+                return;
+            }
+
+            document.getElementById('back-detail').href = `/asn/${slug}`;
+
+            // Fetch data
+            fetch(getDbPath(slug))
+                .then(res => { if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.json(); })
+                .then(manga => {
+                    let currentIndex = 0;
+                    if (chapterNumber !== undefined) {
+                        currentIndex = manga.chapters.findIndex(ch => getChapterNumber(ch.nama) === chapterNumber);
+                        if (currentIndex === -1) currentIndex = 0;
+                    } else if (chapterIndex !== undefined && !isNaN(chapterIndex) && chapterIndex >= 0 && chapterIndex < manga.chapters.length) {
+                        currentIndex = chapterIndex;
+                    }
+
+                    const chapter = manga.chapters[currentIndex];
+                    const currentChapterNumber = getChapterNumber(chapter.nama);
+
+                    // Save progress and recent (dengan info chapter)
+                    saveProgress(slug, currentChapterNumber);
+                    addToRecent(slug, manga.judul, manga.thumb, chapter.nama, currentChapterNumber);
+
+                    document.title = `${manga.judul} ${chapter.nama} - PetoMic`;
+                    document.getElementById('top-title').innerText = `${manga.judul} - ${chapter.nama}`;
+                    document.getElementById('loader').remove();
+
+                    // Dropdown
+                    const selector = document.getElementById('ch-selector');
+                    const reversedChapters = [...manga.chapters].reverse();
+                    selector.innerHTML = reversedChapters.map(ch => {
+                        const num = getChapterNumber(ch.nama);
+                        const selected = (num === currentChapterNumber) ? 'selected' : '';
+                        return `<option value="${num}" ${selected}>${ch.nama}</option>`;
+                    }).join('');
+                    selector.onchange = (e) => location.href = `/asn/${slug}/ch-${e.target.value}`;
+
+                    // Prev/Next
+                    const prevBtn = document.getElementById('prev-btn');
+                    const nextBtn = document.getElementById('next-btn');
+                    if (currentIndex > 0) {
+                        const prevNum = getChapterNumber(manga.chapters[currentIndex - 1].nama);
+                        prevBtn.classList.remove('opacity-20', 'pointer-events-none');
+                        prevBtn.onclick = () => location.href = `/asn/${slug}/ch-${prevNum}`;
+                    }
+                    if (currentIndex < manga.chapters.length - 1) {
+                        const nextNum = getChapterNumber(manga.chapters[currentIndex + 1].nama);
+                        nextBtn.classList.remove('opacity-20', 'pointer-events-none');
+                        nextBtn.onclick = () => location.href = `/asn/${slug}/ch-${nextNum}`;
+                    }
+
+                    // Render images
+                    const container = document.getElementById('tap-area');
+                    chapter.images.sort((a, b) => a.localeCompare(b, undefined, {numeric: true}))
+                        .forEach(imgUrl => {
+                            const img = document.createElement('img');
+                            img.src = imgUrl;
+                            img.loading = "lazy";
+                            img.alt = "";
+                            img.onerror = () => img.remove();
+                            container.appendChild(img);
+                        });
+                })
+                .catch(err => {
+                    console.error(err);
+                    document.getElementById('loader').innerHTML = '<span class="text-red-500">Failed to load data.</span>';
+                });
+        })();
     </script>
 </body>
 </html>
