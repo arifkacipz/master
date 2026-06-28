@@ -2,9 +2,9 @@
     "judul": "Rust",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/0adcd7ea-e878-4a08-81ef-02c09da9b9cd.jpg",
     "source": "arenascan",
-    "online": 51,
-    "chapterCount": 51,
-    "Chs": "Chapter 52, Chapter 51, Chapter 50, Chapter 49, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 52,
+    "chapterCount": 52,
+    "Chs": "Chapter 53, Chapter 52, Chapter 51, Chapter 50, Chapter 49, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1344,7 +1344,39 @@
                 "https://cdn.arenascan.com/arena-bucket/244458/52/026.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 53",
+            "url": "https://arenascan.com/rust-chapter-53/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/244458/53/11c11d14a4b4.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/da591ef35174.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/a5a1c6bf122f.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/b527e1d478a1.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/45209b9af4f4.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/7eb26ec6ad16.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/f548d3628d20.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/d7480435ba8c.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/39f99b1b2807.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/158ec4d20b2e.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/6d493c6cb465.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/ab68973f991c.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/f08786cf0af2.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/4a95ee43e778.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/f7d788180143.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/4412a86ed638.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/7c501a99742f.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/594083c2b76c.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/19ed43da8df1.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/bbb8ef2fd525.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/0f362c8f6c9d.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/7f0cd88f2826.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/96c875530f2c.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/5a565e45ab59.webp",
+                "https://cdn.arenascan.com/arena-bucket/244458/53/468d7fb30986.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-03-16T15:43:36.370754"
+    "last_scraped": "2026-06-28T16:50:39.525237"
 }
