@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
     <title>Baca Komik - Komiku Reader</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background: #1a1a1a;
             color: #ccc;
@@ -67,17 +62,12 @@
         button:hover:not(:disabled) {
             background: #5a7ad2;
         }
-        .loading {
-            padding: 40px;
-            font-size: 18px;
-            color: #aaa;
-        }
+        .loading { padding: 40px; font-size: 18px; color: #aaa; }
+        .broken { color: #f55; padding: 20px; }
     </style>
 </head>
 <body>
-    <div id="reader">
-        <div class="loading">Memuat chapter...</div>
-    </div>
+    <div id="reader"><div class="loading">Memuat chapter...</div></div>
     <div class="nav">
         <button id="prevBtn" onclick="prevChapter()">← Prev</button>
         <button id="nextBtn" onclick="nextChapter()">Next →</button>
@@ -91,31 +81,33 @@
         let chapters = [];
         let currentIndex = 0;
 
+        // Proxy gambar (gratis, cepat)
+        const IMAGE_PROXY = 'https://images.weserv.nl/?url=';
+
+        function proxyUrl(originalUrl) {
+            return IMAGE_PROXY + encodeURIComponent(originalUrl) + '&output=webp';
+        }
+
         if (!mangaSlug || !chapterName) {
-            document.getElementById('reader').innerHTML = '<p style="color:red; padding:40px;">Parameter manga atau chapter tidak ditemukan.</p>';
+            document.getElementById('reader').innerHTML = '<p style="color:red; padding:40px;">Parameter tidak lengkap.</p>';
         } else {
-            // Ambil data manga dari db/
             fetch(`db/${mangaSlug[0].toLowerCase()}/${mangaSlug}.json`)
                 .then(res => {
-                    if (!res.ok) throw new Error('File manga tidak ditemukan.');
+                    if (!res.ok) throw new Error('Manga tidak ditemukan');
                     return res.json();
                 })
                 .then(data => {
                     chapters = data.chapters || [];
-                    if (chapters.length === 0) {
-                        throw new Error('Tidak ada chapter.');
-                    }
-                    // Cari index chapter yang diminta
+                    if (!chapters.length) throw new Error('Tidak ada chapter');
                     currentIndex = chapters.findIndex(ch => ch.nama === chapterName);
                     if (currentIndex === -1) {
-                        // Kalau tidak ketemu, cari berdasarkan nomor
                         currentIndex = chapters.findIndex(ch => ch.nama.includes(chapterName));
                     }
                     if (currentIndex === -1) currentIndex = 0;
                     loadChapter(currentIndex);
                 })
                 .catch(err => {
-                    document.getElementById('reader').innerHTML = `<p style="color:red; padding:40px;">Gagal memuat data: ${err.message}</p>`;
+                    document.getElementById('reader').innerHTML = `<p class="broken">Gagal memuat: ${err.message}</p>`;
                 });
         }
 
@@ -124,16 +116,21 @@
             const ch = chapters[index];
             currentIndex = index;
 
-            // Update tombol
             document.getElementById('prevBtn').disabled = (index === 0);
             document.getElementById('nextBtn').disabled = (index === chapters.length - 1);
 
-            // Bangun HTML gambar
             let imagesHtml = '';
             if (ch.images && ch.images.length > 0) {
-                imagesHtml = ch.images.map(img =>
-                    `<img src="${img}" loading="lazy" alt="halaman">`
-                ).join('');
+                imagesHtml = ch.images.map(img => {
+                    // Coba dulu gambar asli, jika gagal pakai proxy
+                    const proxy = proxyUrl(img);
+                    return `
+                    <img src="${img}" 
+                         referrerpolicy="no-referrer"
+                         loading="lazy"
+                         onerror="if(this.src!=='${proxy}'){this.src='${proxy}';}else{this.alt='Gambar tidak dapat dimuat';this.classList.add('broken');}">
+                    `;
+                }).join('');
             } else {
                 imagesHtml = '<p style="color:orange;">Belum ada gambar untuk chapter ini.</p>';
             }
@@ -143,34 +140,24 @@
                 ${imagesHtml}
             `;
 
-            // Update URL browser tanpa reload
+            // Update URL
             const newUrl = new URL(location);
             newUrl.searchParams.set('chapter', ch.nama);
             history.replaceState(null, '', newUrl);
-
-            // Scroll ke atas
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function prevChapter() {
-            if (currentIndex > 0) {
-                loadChapter(currentIndex - 1);
-            }
+            if (currentIndex > 0) loadChapter(currentIndex - 1);
         }
-
         function nextChapter() {
-            if (currentIndex < chapters.length - 1) {
-                loadChapter(currentIndex + 1);
-            }
+            if (currentIndex < chapters.length - 1) loadChapter(currentIndex + 1);
         }
 
-        // Keyboard shortcut
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'ArrowLeft') {
-                prevChapter();
-            } else if (e.key === 'ArrowRight') {
-                nextChapter();
-            }
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowLeft') prevChapter();
+            else if (e.key === 'ArrowRight') nextChapter();
         });
     </script>
 </body>
