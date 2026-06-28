@@ -1,6 +1,7 @@
 {
   "judul": "Isekai Saikyou, Nippon de JK to Konkatsu Suru",
   "judul_alternatif": "Sang Terkuat dari Isekai, Ikut Konkatsu di Jepang Bareng JK",
+  "slug": "isekai-saikyou-nippon-de-jk-to-konkatsu-suru",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224529_d9f9012ab13e1f37_d55cd32f.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -16,6 +17,10 @@
   "pembaca_total": 430,
   "pembaca_mingguan": 18,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -172,10 +177,5 @@
       ]
     }
   ],
-  "slug": "isekai-saikyou-nippon-de-jk-to-konkatsu-suru",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-06-28T11:26:04.867997"
+  "last_scraped": "2026-06-28T12:14:24.675604"
 }

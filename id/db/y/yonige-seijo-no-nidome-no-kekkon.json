@@ -1,6 +1,7 @@
 {
   "judul": "Yonige Seijo no Nidome no Kekkon",
   "judul_alternatif": "Pernikahan Kedua Sang Saint yang Kabur",
+  "slug": "yonige-seijo-no-nidome-no-kekkon",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/25/20260625133011_811d004266cbd0a1_f312daa4.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -15,6 +16,10 @@
   "pembaca_total": 519,
   "pembaca_mingguan": 27,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -147,10 +152,5 @@
       ]
     }
   ],
-  "slug": "yonige-seijo-no-nidome-no-kekkon",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2",
-  "last_scraped": "2026-06-28T11:27:12.132139"
+  "last_scraped": "2026-06-28T12:15:11.961988"
 }

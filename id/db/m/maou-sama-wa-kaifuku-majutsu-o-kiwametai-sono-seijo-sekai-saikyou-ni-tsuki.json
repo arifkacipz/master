@@ -1,6 +1,7 @@
 {
   "judul": "Maou-sama wa Kaifuku Majutsu o Kiwametai: Sono Seijo, Sekai Saikyou ni Tsuki",
   "judul_alternatif": "Raja Iblis Ingin Menguasai Sihir Pemulihan: Putri Suci Itu Adalah yang Terkuat di Dunia",
+  "slug": "maou-sama-wa-kaifuku-majutsu-o-kiwametai-sono-seijo-sekai-saikyou-ni-tsuki",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424011512_a3b48ccf39ef6cbb_8756ef43.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 843,
   "pembaca_mingguan": 1,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -134,10 +139,5 @@
       ]
     }
   ],
-  "slug": "maou-sama-wa-kaifuku-majutsu-o-kiwametai-sono-seijo-sekai-saikyou-ni-tsuki",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-06-28T11:27:06.772000"
+  "last_scraped": "2026-06-28T12:15:10.475826"
 }

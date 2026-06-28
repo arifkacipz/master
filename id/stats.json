@@ -9,11 +9,20 @@
     "status": "Completed"
   },
   {
+    "slug": "prosecutor-kim-seojin",
+    "judul": "Prosecutor Kim Seojin",
+    "thumb": "https://thumbnail.komiku.org/img/upload/prosecutor_kim_seojin/img_696df020058939.12988070.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "heavenly-demon-goes-to-high-school",
     "judul": "Heavenly Demon Goes to High School",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030032_5fb29f6a4bafb152_3e290dc6.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -30,8 +39,8 @@
     "slug": "feasting-lord-in-another-world",
     "judul": "Feasting Lord in Another world",
     "thumb": "https://thumbnail.komiku.org/img/upload/feasting_lord_in_another_world/img_69a28b7327ed53.19193329.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -48,8 +57,8 @@
     "slug": "gakuen-no-madonna-no-watanabe-san-ga-naze-ka-maishu-yotei-wo-kitekuru",
     "judul": "Gakuen no Madonna no Watanabe san ga, Naze ka Maishu Yotei wo Kitekuru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415161514_2de788bc870093f2_e5625915.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manga",
     "status": ""
   },
@@ -90,6 +99,15 @@
     "status": ""
   },
   {
+    "slug": "mayonaka-heart-tune",
+    "judul": "Mayonaka Heart Tune",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/mayonaka-heart-tune/manga_thumbnail-Head-Mayonaka-Heart-Tune.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "osananajimitachi-ga-ninki-idol-ni-natta-amama-na-kanojotachi-wa-ore-ni-mitsuide-kureteiru",
     "judul": "Osananajimitachi ga Ninki Idol ni Natta: Amama na Kanojotachi wa Ore ni Mitsuide Kureteiru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/14/20260414144512_c0e1f4f2554191f2_58e0039b.jpg?w=1200",
@@ -102,8 +120,8 @@
     "slug": "namaiki-asahi-chan-wo-wakarasetai",
     "judul": "Namaiki Asahi-chan wo Wakarasetai",
     "thumb": "https://thumbnail.komiku.org/img/upload/namaiki_asahi-chan_wo_wakarasetai/img_684bdaaff0dda2.22663497.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -138,8 +156,8 @@
     "slug": "akuyaku-kizoku-ga-hirakinaotte-hametsu-flag-wo-jitsuryoku-de-tatakiotteitara-itsunomanika-heroine-tachi-kara-eiyuushi-sareru-you-ni-natta-ken",
     "judul": "Akuyaku Kizoku ga Hirakinaotte Hametsu Flag wo \"Jitsuryoku\" de Tatakiotteitara, Itsunomanika Heroine-tachi kara Eiyuushi Sareru you ni Natta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223058_c1fb0b109509759b_86392d03.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -174,8 +192,8 @@
     "slug": "isekai-de-haishin-katsudou-wo-shitara-tairyou-no-yandere-shinja-wo-umidashite-shimatta-ken",
     "judul": "Isekai de Haishin Katsudou wo Shitara Tairyou no Yandere Shinja wo Umidashite Shimatta Ken",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/isekai-de-haishin-katsudou-wo-shitara-tairyou-no-yandere-shinja-wo-umidashite-shimatta-ken/manga_thumbnail-Head-Isekai-de-Haishin-Katsudou-wo-Shitara-Tairyou-no-Yandere-Shinja-wo-Umidashite-Shimatta-Ken.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -192,8 +210,8 @@
     "slug": "ill-resign-and-have-a-fresh-start-in-this-world",
     "judul": "I’ll Resign and Have a Fresh Start in This World",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/ill-resign-and-have-a-fresh-start-in-this-world/manga_thumbnail-Manhwa-Ill-Resign-and-Have-a-Fresh-Start-in-This-World.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
