@@ -1,14 +1,5 @@
 [
   {
-    "slug": "rebirth-of-the-thief-who-roamed-the-world",
-    "judul": "Rebirth of the Thief Who Roamed the World",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324061600_9460e288bd8ab587_d1fed6a4.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "rabu-kome-suki-to-kossori-tsunagaritai",
     "judul": "#Rabu kome-suki to kossori tsunagaritai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140026_41e7c78383942870_58d068f2.jpg?w=1200",
@@ -18,36 +9,9 @@
     "status": "Completed"
   },
   {
-    "slug": "records-of-the-swordsman-scholar",
-    "judul": "Records Of The Swordsman Scholar",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/records-of-the-swordsman-scholar/manga_thumbnail-recordsoftheswordsmancover.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "become-the-lord-of-cthulhu",
-    "judul": "Become The Lord Of Cthulhu",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/become-the-lord-of-cthulhu/manga_thumbnail-Manhua-Become-The-Lord-Of-Cthulhu.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "black-killer-whale-baby",
     "judul": "Black Killer Whale Baby",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/black-killer-whale-baby/manga_thumbnail-A2-Black-Killer-Whale-Baby.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "black-haired-us-army-general",
-    "judul": "Black-Haired US Army General",
-    "thumb": "https://thumbnail.komiku.org/img/upload/black-haired_us_army_general/img_6992e27cc19f38.97033964.png?w=1200",
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manhwa",
@@ -66,8 +30,8 @@
     "slug": "evolution-frenzy",
     "judul": "Evolution Frenzy",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/evolution-frenzy/manga_thumbnail-Manhua-Evolution-Frenzy.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
@@ -84,18 +48,9 @@
     "slug": "gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu",
     "judul": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekake-chuu",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu/manga_thumbnail-Komik-Gaikotsu-Kishi-sama-Tadaima-Isekai-e-Odekake-chuu.jpeg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "surviving-as-a-genius-on-borrowed-time",
-    "judul": "Surviving as a Genius on Borrowed Time",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/surviving-as-a-genius-on-borrowed-time/manga_thumbnail-A2-Surviving-as-a-Genius-on-Borrowed-Time.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
-    "tipe": "Manhwa",
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -129,18 +84,9 @@
     "slug": "maou-sama-retry-r",
     "judul": "Maou-sama, Retry! R",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/maou-sama-retry-r/manga_thumbnail-Manga-Maou-sama-Retry-R.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "magic-emperor",
-    "judul": "Magic Emperor",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/magic-emperor/manga_thumbnail-Komik-Magic-Emperor.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
-    "tipe": "Manhua",
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -156,26 +102,17 @@
     "slug": "otherworldly-sword-kings-survival-records",
     "judul": "Sword King",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/otherworldly-sword-kings-survival-records/manga_thumbnail-Komik-Sword-King.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "disastrous-necromancer",
-    "judul": "Disastrous Necromancer",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/disastrous-necromancer/manga_thumbnail-Head-Disastrous-Necromancer.jpeg?w=1200",
     "chapterCount": 10,
     "online": 10,
-    "tipe": "Manhua",
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
     "slug": "danshi-kinsei-game-sekai-de-ore-ga-yarubeki-yuiitsu-no-koto-yuri-no-ma-ni-hasamaru-otoko-to-shite-tensei-shite-shimaimashita",
     "judul": "Danshi Kinsei Game Sekai de Ore ga Yarubeki Yuiitsu no Koto – Yuri no Ma ni Hasamaru Otoko to Shite Tensei shite shimaimashita",
     "thumb": "https://thumbnail.komiku.org/img/upload/danshi_kinsei_game_sekai_de_ore_ga_yarubeki_yuiitsu_no_koto/img_685f833c5fbbf9.79896498.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -183,8 +120,8 @@
     "slug": "nito-no-taidana-isekai-shoukougun",
     "judul": "Nito no Taidana Isekai Shoukougun",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/nito-no-taidana-isekai-shoukougun/manga_thumbnail-Manga-Nito-no-Taidana-Isekai-Shoukougun.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -216,20 +153,11 @@
     "status": "Ongoing"
   },
   {
-    "slug": "absolute-dominion",
-    "judul": "Absolute Dominion",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/absolute-dominion/manga_thumbnail-A2-Absolute-Dominion.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "absolute-domination-at-level-0-with-my-analysis-skill",
-    "judul": "Absolute Domination at Level 0 with My Analysis Skill",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/15/20260315020020_9af645b5be6308d4_efa33bbd.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "kuro-no-shoukanshi",
+    "judul": "Kuro no Shoukanshi",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/kuro-no-shoukanshi/manga_thumbnail-Komik-Kuro-no-Shoukanshi.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -243,30 +171,12 @@
     "status": "Ongoing"
   },
   {
-    "slug": "chronicles-of-the-lazy-sovereign",
-    "judul": "Chronicles Of The Lazy Sovereign",
-    "thumb": "https://thumbnail.komiku.org/img/upload/chronicles_of_the_lazy_sovereign/img_6874b13d061816.77732278.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "1-nen-a-gumi-no-monster",
     "judul": "1-nen A-gumi no Monster",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/1-nen-a-gumi-no-monster/manga_thumbnail-Komik-1-nen-A-gumi-no-Monster.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "12321-academys-genius-swordmaster",
-    "judul": "Academy’s Genius Swordmaster",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/12321-academys-genius-swordmaster/manga_thumbnail-Head-Academys-Genius-Swordmaster.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
-    "tipe": "Manhwa",
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -300,8 +210,8 @@
     "slug": "teto-x-egen",
     "judul": "Teto X Egen",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613153035_57411679d656db3e_0262edc0.webp?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -309,19 +219,10 @@
     "slug": "the-oracle-of-the-villainous-baby",
     "judul": "The Oracle of the Villainous Baby",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223142_54c509391c2b82b3_b85dac43.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
-    "slug": "the-magic-towers-problem-child",
-    "judul": "The Magic Tower's Problem Child",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_magic_tower_s/img_682c2791bdc974.13625931.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manhwa",
-    "status": "Ongoing"
+    "status": ""
   },
   {
     "slug": "the-classmate",
@@ -342,39 +243,21 @@
     "status": ""
   },
   {
-    "slug": "the-zero-magic-savior-using-my-unique-skill-to-save-the-world",
-    "judul": "The Zero-Magic Savior: Using My Unique Skill to Save the World",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_zero-magic_savior__using_my_unique_skill_to_save_the_world/img_695cbc5fbacdf5.88237457.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "tensei-teido-de-mune-no-ana-wa-umaranai",
+    "judul": "Tensei Teido de Mune no Ana wa Umaranai",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/28/20260628141511_e42b217e32e242cc_e875c388.jpg?w=1200",
+    "chapterCount": 0,
+    "online": 0,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "the-dark-magician-transmigrates-after-66666-years",
-    "judul": "The Dark Magician Transmigrates After 66666 Years",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-dark-magician-transmigrates-after-66666-years/manga_thumbnail-Manwha-The-Dark-Magician-Transmigrates-After-66666-Years.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
     "slug": "yuusha-party-wo-tsuihou-sareta-beast-tamer-saikyou-shuzoku-nekomimi-shojo-to",
     "judul": "Yuusha Party wo Tsuihou Sareta Beast Tamer, Saikyou Shuzoku Nekomimi Shojo to",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/yuusha-party-wo-tsuihou-sareta-beast-tamer-saikyou-shuzoku-nekomimi-shojo-to/manga_thumbnail-Manga-Yuusha-Party-wo-Tsuihou-Sareta-Beast-Tamer-Saikyou-Shuzoku-Nekomimi-Shojo-to.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "yarikon-de-ita-game-sekai-no-akuyaku-mob-ni-tensei-shimashita-game-chishiki-tsukatte-kimama-ni-iki-tetara-nazeka-aritoarayuru-tokoro-de-na-ga-shirewatatte-ita",
-    "judul": "Yarikon de Ita Game Sekai no Akuyaku Mob ni Tensei Shimashita ~Game Chishiki Tsukatte Kimama ni Iki Tetara, Nazeka Aritoarayuru Tokoro de na ga Shirewatatte Ita~",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517233055_bddb3997b1379f5c_4ebbc531.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
-    "tipe": "Manga",
+    "tipe": "",
     "status": "Ongoing"
   }
 ]
