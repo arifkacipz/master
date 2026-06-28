@@ -9,12 +9,30 @@
     "status": "Completed"
   },
   {
+    "slug": "heavenly-demon-goes-to-high-school",
+    "judul": "Heavenly Demon Goes to High School",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030032_5fb29f6a4bafb152_3e290dc6.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
     "judul": "Hissatsu Reijou Liese ~Tensei Shita Saikyou no Koroshiya wa, Yami wo Matou Akuyaku Reijou to Naru~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627170011_5de6131170c74e98_ec1e629a.jpg?w=1200",
     "chapterCount": 1,
     "online": 1,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "feasting-lord-in-another-world",
+    "judul": "Feasting Lord in Another world",
+    "thumb": "https://thumbnail.komiku.org/img/upload/feasting_lord_in_another_world/img_69a28b7327ed53.19193329.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -27,20 +45,20 @@
     "status": ""
   },
   {
-    "slug": "snake-immortal-the-tale-of-a-snakes-cultivation-to-immortality",
-    "judul": "Snake Immortal: The Tale of a Snake’s Cultivation to Immortality",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/snake-immortal-the-tale-of-a-snakes-cultivation-to-immortality/manga_thumbnail-A2-Snake-Immortal-The-Tale-of-a-Snakes-Cultivation-to-Immortality.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
+    "slug": "gakuen-no-madonna-no-watanabe-san-ga-naze-ka-maishu-yotei-wo-kitekuru",
+    "judul": "Gakuen no Madonna no Watanabe san ga, Naze ka Maishu Yotei wo Kitekuru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415161514_2de788bc870093f2_e5625915.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": ""
   },
   {
     "slug": "sekkaku-nouka-ni-tensei-shitanode-yuusha-wa-mezashimasen",
     "judul": "Sekkaku Nouka ni Tensei shitanode Yuusha wa Mezashimasen",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140019_7cc7174ba30380d8_8d08825f.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 3,
+    "online": 3,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -63,9 +81,27 @@
     "status": ""
   },
   {
+    "slug": "maou-sama-wa-kaifuku-majutsu-o-kiwametai-sono-seijo-sekai-saikyou-ni-tsuki",
+    "judul": "Maou-sama wa Kaifuku Majutsu o Kiwametai: Sono Seijo, Sekai Saikyou ni Tsuki",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424011512_a3b48ccf39ef6cbb_8756ef43.webp?w=1200",
+    "chapterCount": 3,
+    "online": 3,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
     "slug": "osananajimitachi-ga-ninki-idol-ni-natta-amama-na-kanojotachi-wa-ore-ni-mitsuide-kureteiru",
     "judul": "Osananajimitachi ga Ninki Idol ni Natta: Amama na Kanojotachi wa Ore ni Mitsuide Kureteiru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/14/20260414144512_c0e1f4f2554191f2_58e0039b.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "namaiki-asahi-chan-wo-wakarasetai",
+    "judul": "Namaiki Asahi-chan wo Wakarasetai",
+    "thumb": "https://thumbnail.komiku.org/img/upload/namaiki_asahi-chan_wo_wakarasetai/img_684bdaaff0dda2.22663497.jpg?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manga",
@@ -99,13 +135,13 @@
     "status": "Ongoing"
   },
   {
-    "slug": "after-improperly-licking-a-dog-i-became-a-billionaire",
-    "judul": "After Improperly Licking a Dog, I Became a Billionaire",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/after-improperly-licking-a-dog-i-became-a-billionaire/manga_thumbnail-Head-After-Improperly-Licking-a-Dog-I-Became-a-Billionaire-scaled.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": ""
+    "slug": "akuyaku-kizoku-ga-hirakinaotte-hametsu-flag-wo-jitsuryoku-de-tatakiotteitara-itsunomanika-heroine-tachi-kara-eiyuushi-sareru-you-ni-natta-ken",
+    "judul": "Akuyaku Kizoku ga Hirakinaotte Hametsu Flag wo \"Jitsuryoku\" de Tatakiotteitara, Itsunomanika Heroine-tachi kara Eiyuushi Sareru you ni Natta Ken",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223058_c1fb0b109509759b_86392d03.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "akujo-ranking",
@@ -133,6 +169,33 @@
     "online": 12,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "isekai-de-haishin-katsudou-wo-shitara-tairyou-no-yandere-shinja-wo-umidashite-shimatta-ken",
+    "judul": "Isekai de Haishin Katsudou wo Shitara Tairyou no Yandere Shinja wo Umidashite Shimatta Ken",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/isekai-de-haishin-katsudou-wo-shitara-tairyou-no-yandere-shinja-wo-umidashite-shimatta-ken/manga_thumbnail-Head-Isekai-de-Haishin-Katsudou-wo-Shitara-Tairyou-no-Yandere-Shinja-wo-Umidashite-Shimatta-Ken.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "isekai-saikyou-nippon-de-jk-to-konkatsu-suru",
+    "judul": "Isekai Saikyou, Nippon de JK to Konkatsu Suru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224529_d9f9012ab13e1f37_d55cd32f.jpg?w=1200",
+    "chapterCount": 4,
+    "online": 4,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "ill-resign-and-have-a-fresh-start-in-this-world",
+    "judul": "I’ll Resign and Have a Fresh Start in This World",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/ill-resign-and-have-a-fresh-start-in-this-world/manga_thumbnail-Manhwa-Ill-Resign-and-Have-a-Fresh-Start-in-This-World.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "itoko-no-onee-chan-ni-amaechau",
@@ -185,6 +248,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/28/20260628141511_e42b217e32e242cc_e875c388.jpg?w=1200",
     "chapterCount": 0,
     "online": 0,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "yonige-seijo-no-nidome-no-kekkon",
+    "judul": "Yonige Seijo no Nidome no Kekkon",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/25/20260625133011_811d004266cbd0a1_f312daa4.jpg?w=1200",
+    "chapterCount": 3,
+    "online": 3,
     "tipe": "Manga",
     "status": "Ongoing"
   }
