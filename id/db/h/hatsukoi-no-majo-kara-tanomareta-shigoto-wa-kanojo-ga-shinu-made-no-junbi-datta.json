@@ -1,6 +1,7 @@
 {
   "judul": "Hatsukoi no Majo kara Tanomareta Shigoto wa, Kanojo ga Shinu made no Junbi datta.",
   "judul_alternatif": "Tugas dari Penyihir Cinta Pertamaku: Mempersiapkan Kepergiannya",
+  "slug": "hatsukoi-no-majo-kara-tanomareta-shigoto-wa-kanojo-ga-shinu-made-no-junbi-datta",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613160002_5e93cdd275ce9568_0ba7f6c5.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -18,6 +19,10 @@
   "pembaca_total": 342,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -235,10 +240,5 @@
       ]
     }
   ],
-  "slug": "hatsukoi-no-majo-kara-tanomareta-shigoto-wa-kanojo-ga-shinu-made-no-junbi-datta",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-06-28T14:46:02.082776"
+  "last_scraped": "2026-06-28T15:01:03.259937"
 }

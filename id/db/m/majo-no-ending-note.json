@@ -1,6 +1,7 @@
 {
   "judul": "Majo no Ending Note",
   "judul_alternatif": "Catatan Akhir Sang Penyihir",
+  "slug": "majo-no-ending-note",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224506_60ec3919b8a89b47_f7272831.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 109,
   "pembaca_mingguan": 3,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -216,10 +221,5 @@
       ]
     }
   ],
-  "slug": "majo-no-ending-note",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-06-28T14:45:43.284669"
+  "last_scraped": "2026-06-28T15:00:51.545214"
 }
