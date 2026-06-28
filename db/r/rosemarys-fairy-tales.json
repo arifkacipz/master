@@ -3,7 +3,7 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/c5f6ce9f-a449-4758-88f3-624300399381.webp",
     "source": "arenascan",
     "online": 48,
-    "chapterCount": 46,
+    "chapterCount": 48,
     "Chs": "Chapter 48, Chapter 47, Chapter 46, Chapter 45, Chapter 44, Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -1616,6 +1616,38 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 44",
+            "url": "https://arenascan.com/rosemarys-fairy-tales-chapter-44/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/91783/44/3de1dd7f7cd4.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/21ba1795bbd3.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/4b8d7a3e81e6.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/aa984d81ce20.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/addcd0c36db4.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/c035f75e6aad.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/cedcf973d05d.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/cd39855ee965.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/44/95f090358966.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 45",
+            "url": "https://arenascan.com/rosemarys-fairy-tales-chapter-45/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/91783/45/66c12d879783.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/9fd2a8e303e9.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/6f7461ac0dcc.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/00413f79db49.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/87f6e6c3acc9.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/9b890f0568e0.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/64e0ac825638.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/969bbf9ab31e.webp",
+                "https://cdn.arenascan.com/arena-bucket/91783/45/52bf5902e53e.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 46",
             "url": "https://arenascan.com/rosemarys-fairy-tales-chapter-46/",
             "images": [
@@ -1661,5 +1693,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-28T11:52:56.442467"
+    "last_scraped": "2026-06-28T12:05:28.425679"
 }
