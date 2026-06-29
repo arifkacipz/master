@@ -1,14 +1,5 @@
 [
   {
-    "slug": "reborn-as-the-heavenly-demon",
-    "judul": "Reborn as The Heavenly Demon",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/reborn-as-the-heavenly-demon/manga_thumbnail-Head-Reborn-as-The-Heavenly-Demon.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "rabu-kome-suki-to-kossori-tsunagaritai",
     "judul": "#Rabu kome-suki to kossori tsunagaritai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140026_41e7c78383942870_58d068f2.jpg?w=1200",
@@ -63,15 +54,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "high-martial-world-one-hand-to-overwhelm-three-thousand-emperors",
-    "judul": "High-Martial World: One Hand to Overwhelm Three Thousand Emperors!",
-    "thumb": "https://thumbnail.komiku.org/img/upload/high-martial_world__one_hand_to_overwhelm_three_thousand_emperors_/img_6932ac75acb573.00617305.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "eiyuu-onna-kishi-ni-yuunou-to-bareta-ore-no-bijin-harem-kishidan-gaikaku-hikume-no-kijutsu-kishidan",
     "judul": "Eiyuu Onna Kishi ni Yuunou to Bareta Ore no Bijin Harem Kishidan - Gaikaku Hikume no Kijutsu Kishidan",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/19/20260519181516_84d845738d061a4c_16872806.jpg?w=1200",
@@ -79,6 +61,24 @@
     "online": 8,
     "tipe": "Manga",
     "status": "Ongoing"
+  },
+  {
+    "slug": "fairy-tail-100-years-quest",
+    "judul": "Fairy Tail: 100 Years Quest",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/fairy-tail-100-years-quest/manga_thumbnail-Manga-Fairy-Tail-100-Years-Quest.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "first-time-as-a-loved-youngest-child",
+    "judul": "First Time as a Loved Youngest Child",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/04/20260604173013_05b51d05ce6f8110_c9d89cbf.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
   },
   {
     "slug": "green-skin",
@@ -126,15 +126,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "mato-seihei-no-slave",
-    "judul": "Mato Seihei no Slave",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mato-seihei-no-slave/manga_thumbnail-Komik-Mato-Seihei-no-Slave.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "maryoku-zero-no-saikyou-kenja-mahou-riron-o-kiwametara-sekai-saikyou-ni-natte-ita",
     "judul": "Maryoku Zero no Saikyou Kenja ~Mahou Riron o Kiwametara, Sekai Saikyou ni Natte Ita~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170115_3bad9c13f7d05588_f68a47cd.webp?w=1200",
@@ -153,13 +144,22 @@
     "status": ""
   },
   {
-    "slug": "my-avatar-is-becoming-the-final-boss-remake",
-    "judul": "My Avatar Is Becoming the Final Boss (Remake)",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170043_4c77ee7bd50c6b9c_a072f873.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
+    "slug": "mozaik-role",
+    "judul": "Mozaik Role",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163006_624373ef2f635466_6ab6fd08.webp?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "moto-saikyou-boukensha-no-rojiura-caffe-nonbiri-kaigyouroku",
+    "judul": "Moto Saikyou Boukensha no Rojiura Caffe Nonbiri Kaigyouroku",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163015_8601527178d9a3ac_97b67d1a.webp?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": ""
   },
   {
     "slug": "majo-no-ending-note",
@@ -180,13 +180,13 @@
     "status": "Ongoing"
   },
   {
-    "slug": "national-power-level-labyrinth-designer",
-    "judul": "National Power Level Labyrinth Designer",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/28/20260528181600_8cd803809dbe25b1_19ba6795.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "one-day-the-male-lead-fell-into-our-house",
+    "judul": "One Day, the Male Lead Fell Into Our House",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/23/20260623171512_672c7b053c12b8e7_06d3bcbe.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
-    "status": "Ongoing"
+    "status": ""
   },
   {
     "slug": "namaiki-asahi-chan-wo-wakarasetai",
@@ -207,11 +207,29 @@
     "status": "Ongoing"
   },
   {
+    "slug": "kanojo-wo-deresaseru-houhou-wo-shorai-kekon-suru-oredake-ga-shitteiru",
+    "judul": "Kanojo wo Deresaseru Houhou wo, Shorai Kekon Suru Oredake ga Shitteiru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163036_d1ff02ae241920f5_7b82b238.jpg?w=1200",
+    "chapterCount": 0,
+    "online": 0,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "kuzu-yuusha-no-sonohigurashi",
     "judul": "Kuzu Yuusha no Sonohigurashi",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170046_91db53fe99b2d559_e13d607b.jpg?w=1200",
     "chapterCount": 3,
     "online": 3,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "karisome-seijo-wa-kyou-mo-otaishi-oshi-ni-kyuukon-sareru-watashi-to-no-kekkon-wa-kaishaku-chigai-nano-de-okotowarishimasu",
+    "judul": "Karisome Seijo wa Kyou mo Otaishi (Oshi) ni Kyuukon Sareru Watashi to no Kekkon wa Kaishaku Chigai Nano de Okotowarishimasu!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/17/20260617134523_f5559264bb22859a_7ce69c8c.jpg?w=1200",
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -232,6 +250,24 @@
     "online": 1,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "kounai-sandai-bijo-no-himo-shite",
+    "judul": "Kounai Sandai Bijo No Himo Shite",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163011_c9da6b2b34e7de09_57a223f8.webp?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
+    "slug": "kabeyaku-nado-fuyou-to-tsuihousareta-s-kyuu-boukensha-skill-wo-kushi-shite-shijou-saikyou-no-kunizukuri",
+    "judul": "Kabeyaku Nado Fuyou to Tsuihousareta S-kyuu Boukensha, Skill wo Kushi shite Shijou Saikyou no Kunizukuri",
+    "thumb": "https://thumbnail.komiku.org/img/upload/kabeyaku_nado_fuyou_to_tsuihousareta_s-kyuu_boukensha/img_684bd0b68deb31.07693692.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "akuyaku-kizoku-ga-hirakinaotte-hametsu-flag-wo-jitsuryoku-de-tatakiotteitara-itsunomanika-heroine-tachi-kara-eiyuushi-sareru-you-ni-natta-ken",
@@ -270,13 +306,13 @@
     "status": "Ongoing"
   },
   {
-    "slug": "initializing-the-sect-system",
-    "judul": "Initializing the Sect System",
-    "thumb": "https://thumbnail.komiku.org/img/upload/initializing_the_sect_system/img_6992df9c93fb83.48294181.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "im-going-to-become-the-dark-dukes-family",
+    "judul": "I’m Going to Become the Dark Duke’s Family",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163027_1d09d468e876698a_8139a5e3.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
-    "status": "Ongoing"
+    "status": ""
   },
   {
     "slug": "i-have-infinite-golden-traits",
@@ -297,6 +333,15 @@
     "status": ""
   },
   {
+    "slug": "i-picked-up-this-worlds-strategy-guide",
+    "judul": "I Picked Up This World’s Strategy Guide!",
+    "thumb": "https://thumbnail.komiku.org/img/upload/i_picked_up_this_world___s_strategy_guide_/img_684bd08686a444.76825947.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "isekai-saikyou-nippon-de-jk-to-konkatsu-suru",
     "judul": "Isekai Saikyou, Nippon de JK to Konkatsu Suru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224529_d9f9012ab13e1f37_d55cd32f.jpg?w=1200",
@@ -306,20 +351,11 @@
     "status": "Ongoing"
   },
   {
-    "slug": "i-became-the-master-of-the-weakest-demon-king",
-    "judul": "I Became The Master Of The Weakest Demon King",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/19/20260519181512_9e48af062dc92ee7_c5820d05.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": ""
-  },
-  {
     "slug": "i-became-a-munchkin-skill-thief",
     "judul": "I Became a Munchkin Skill Thief",
     "thumb": "https://thumbnail.komiku.org/img/upload/i_became_a_munchkin_skill_thief/img_695b3947a06586.62165287.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -342,12 +378,21 @@
     "status": ""
   },
   {
-    "slug": "the-villain-of-destiny",
-    "judul": "The Villain Of Destiny",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-villain-of-destiny/manga_thumbnail-Manhua-The-Villain-Of-Destiny.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
+    "slug": "the-heavenly-demons-otherworld-livestream",
+    "judul": "The Heavenly Demon's Otherworld Livestream",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163019_5444771fc5cb78a3_b648308c.webp?w=1200",
+    "chapterCount": 4,
+    "online": 4,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "the-great-mage-returns-after-4000-years",
+    "judul": "The Great Mage Returns After 4000 Years",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_great_mage_returns_after_4000_years/img_685cfc47030a27.02417458.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -358,15 +403,6 @@
     "online": 9,
     "tipe": "Manga",
     "status": "Ongoing"
-  },
-  {
-    "slug": "the-margraves-worthless-mage",
-    "judul": "The Margrave’s Worthless Mage",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/26/20260426214643_fcdd249919d17527_d5c3a65e.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
   },
   {
     "slug": "the-youngest-child-of-the-family-is-preventing-the-world-from-ending",
@@ -384,15 +420,6 @@
     "chapterCount": 0,
     "online": 0,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "the-regressed-son-of-a-duke-is-an-assassin",
-    "judul": "The Regressed Son Of A Duke Is An Assassin",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-regressed-son-of-a-duke-is-an-assassin/manga_thumbnail-Head-The-Regressed-Son-Of-A-Duke-Is-An-Assassin.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
