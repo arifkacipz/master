@@ -1,5 +1,23 @@
 [
   {
+    "slug": "regressor-of-the-fallen-family",
+    "judul": "Regressor Of The Fallen Family",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/regressor-of-the-fallen-family/manga_thumbnail-Head-Regressor-Of-The-Fallen-Family.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "reincarnation-of-the-fist-king",
+    "judul": "Reincarnation Of The Fist King",
+    "thumb": "https://thumbnail.komiku.org/img/upload/reincarnation_of_the_fist_king/img_6870c0af566883.46244480.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "rabu-kome-suki-to-kossori-tsunagaritai",
     "judul": "#Rabu kome-suki to kossori tsunagaritai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140026_41e7c78383942870_58d068f2.jpg?w=1200",
@@ -7,24 +25,6 @@
     "online": 0,
     "tipe": "Manga",
     "status": "Completed"
-  },
-  {
-    "slug": "reincarnators-stream",
-    "judul": "Reincarnator’s Stream",
-    "thumb": "https://thumbnail.komiku.org/img/upload/reincarnator___s_stream/img_693691b552c495.24321821.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "villains-are-destined-to-die",
-    "judul": "Villains Are Destined to Die",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517233027_822dbe27e5155d54_33cf39c4.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
   },
   {
     "slug": "worlds-strongest-punch",
@@ -36,24 +36,6 @@
     "status": ""
   },
   {
-    "slug": "who-let-him-cultivate-immortality",
-    "judul": "Who Let Him Cultivate Immortality?!",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/19/20260519180025_e223cffb49cb25c1_f20fe5bf.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": ""
-  },
-  {
-    "slug": "past-life-regressor-remake-2022",
-    "judul": "Past Life Regressor (Remake 2022)",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/past-life-regressor-remake-2022/manga_thumbnail-Komik-Past-Life-Regressor.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "became-a-family-with-the-four-duke-brothers",
     "judul": "Became a Family with the Four Duke Brothers",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074524_16e11585d4854fde_cc7c0838.jpg?w=1200",
@@ -61,15 +43,6 @@
     "online": 3,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "bizzare-restaurant",
-    "judul": "Bizarre Restaurant",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/bizzare-restaurant/manga_thumbnail-1-58.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "buka-mbg-di-dunia-lain",
@@ -108,11 +81,11 @@
     "status": "Ongoing"
   },
   {
-    "slug": "fog-land",
-    "judul": "Fog Land",
-    "thumb": "https://thumbnail.komiku.org/img/upload/fog_land/img_69859d934a65e0.42684756.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "foresighting-politician-the-politician-who-can-see-the-future",
+    "judul": "Foresighting Politician The Politician Who Can See the Future",
+    "thumb": "https://thumbnail.komiku.org/img/upload/foresighting_politician_the_politician_who_can_see_the_future/img_696216d0b93349.46133713.png?w=1200",
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -138,19 +111,10 @@
     "slug": "gakuen-no-madonna-no-watanabe-san-ga-naze-ka-maishu-yotei-wo-kitekuru",
     "judul": "Gakuen no Madonna no Watanabe san ga, Naze ka Maishu Yotei wo Kitekuru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415161514_2de788bc870093f2_e5625915.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manga",
     "status": ""
-  },
-  {
-    "slug": "greetings-sect-leader",
-    "judul": "Greetings, Sect Leader",
-    "thumb": "https://thumbnail.komiku.org/img/upload/greetings__sect_leader/img_695cbae4b9c366.87047612.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "global-class-transition-the-magic-kings-skills-have-infinite-affixes",
@@ -171,11 +135,29 @@
     "status": "Ongoing"
   },
   {
+    "slug": "shitai-katsugi-no-nemu",
+    "judul": "Shitai Katsugi no Nemu",
+    "thumb": "https://thumbnail.komiku.org/img/upload/shitai_katsugi_no_nemu/img_6992e3abb37a49.36607069.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "shamoneyism",
+    "judul": "Shamoneyism",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030101_649fc99194880d2f_d14c5ead.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "senpai-chotto-ii-desu-ka",
     "judul": "Senpai, Chotto ii Desu ka?",
     "thumb": "https://thumbnail.komiku.org/img/upload/senpai__chotto_ii_desu_ka_/img_686781d894ea37.48335212.jpg?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 13,
+    "online": 13,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -198,6 +180,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "martial-god-regressed-to-level-2",
+    "judul": "Martial God Regressed to Level 2",
+    "thumb": "https://thumbnail.komiku.org/img/upload/martial_god_regressed_to_level_2/img_682850bcb99e32.30242000.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "minikui-orc-no-gyakushuu-doujin-eroge-no-kichiku-koutaishi-ni-tensei-shita-mo-otoko-no-junan",
     "judul": "Minikui Orc no Gyakushuu - Doujin Eroge no Kichiku Koutaishi ni Tensei Shita mo Otoko no Junan",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194536_8ca70ac2f70cfbd3_294eb747.webp?w=1200",
@@ -207,12 +198,39 @@
     "status": ""
   },
   {
+    "slug": "martial-evolution-start-by-awakening-the-king-of-monsters",
+    "judul": "Martial Evolution: Start by Awakening the King of Monsters",
+    "thumb": "https://thumbnail.komiku.org/img/upload/martial_evolution/img_682a1b6d51c9c4.87848780.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "my-bias-gets-on-the-last-train",
+    "judul": "My Bias Gets On The Last Train",
+    "thumb": "https://thumbnail.komiku.org/img/upload/my_bias_gets_on_the_last_train/img_68318f4a5cd1e4.63189917.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "maryoku-zero-no-saikyou-kenja-mahou-riron-o-kiwametara-sekai-saikyou-ni-natte-ita",
     "judul": "Maryoku Zero no Saikyou Kenja ~Mahou Riron o Kiwametara, Sekai Saikyou ni Natte Ita~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170115_3bad9c13f7d05588_f68a47cd.webp?w=1200",
     "chapterCount": 8,
     "online": 8,
     "tipe": "Manga",
+    "status": ""
+  },
+  {
+    "slug": "my-wife-waited-for-me-in-the-wheat-field",
+    "judul": "My Wife Waited for Me in the Wheat Field",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613153018_6ad64f9d5575a14b_ea9874e4.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": ""
   },
   {
@@ -250,24 +268,6 @@
     "online": 3,
     "tipe": "Manga",
     "status": ""
-  },
-  {
-    "slug": "leveling-up-with-skills",
-    "judul": "Leveling Up with Skills",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/leveling-up-with-skills/manga_thumbnail-Head-Leveling-Up-with-Skills.jpeg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "lazy-prince-becomes-a-genius",
-    "judul": "Lazy Prince Becomes a Genius",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/lazy-prince-becomes-a-genius/manga_thumbnail-Manhwa-Lazy-Prince-Becomes-a-Genius.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "older-womens-club",
@@ -315,15 +315,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "next-life",
-    "judul": "Next Life",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/next-life/manga_thumbnail-Komik-Next-Life.jpeg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "killing-guard",
     "judul": "Killing Guard",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140011_9cc0c09138ddafb6_895491d0.jpg?w=1200",
@@ -336,8 +327,8 @@
     "slug": "kanojo-wo-deresaseru-houhou-wo-shorai-kekon-suru-oredake-ga-shitteiru",
     "judul": "Kanojo wo Deresaseru Houhou wo, Shorai Kekon Suru Oredake ga Shitteiru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163036_d1ff02ae241920f5_7b82b238.jpg?w=1200",
-    "chapterCount": 0,
-    "online": 0,
+    "chapterCount": 1,
+    "online": 1,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -387,13 +378,13 @@
     "status": ""
   },
   {
-    "slug": "akari-the-final-boss-girl-im-going-to-the-modern-age-to-find-someone-stronger-than-me",
-    "judul": "Akari the Final Boss Girl ~I'm Going to the Modern Age to Find Someone Stronger Than Me~",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/24/20260624130006_b733945077c70b9c_6c0fad19.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": ""
+    "slug": "a-dragonslayers-peerless-regression",
+    "judul": "A Dragonslayer’s Peerless Regression",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/a-dragonslayers-peerless-regression/manga_thumbnail-A2-A-Dragonslayers-Peerless-Regression.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "akuyaku-kizoku-ga-hirakinaotte-hametsu-flag-wo-jitsuryoku-de-tatakiotteitara-itsunomanika-heroine-tachi-kara-eiyuushi-sareru-you-ni-natta-ken",
@@ -414,21 +405,21 @@
     "status": "Ongoing"
   },
   {
-    "slug": "a-princess-who-reads-fortune",
-    "judul": "A Princess Who Reads Fortune",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415160123_febb40521c781f63_7bacf829.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
     "slug": "ashita-mo-ii-hi-de-arimasu-you-ni",
     "judul": "Ashita mo Ii Hi de Arimasu you ni",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194507_a100975f28f0c13a_b6f2385f.webp?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manga",
+    "status": ""
+  },
+  {
+    "slug": "after-transmigrating-i-became-an-urban-legend",
+    "judul": "After Transmigrating, I Became an Urban Legend",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613153009_408039c8354c21a5_96a1cfe7.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": ""
   },
   {
@@ -453,8 +444,8 @@
     "slug": "10000-ways-to-eliminate-players",
     "judul": "10,000 Ways to Eliminate Players",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424010145_36d0e26e0550e5ea_186647e7.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
@@ -462,9 +453,36 @@
     "slug": "i-became-the-most-terrifying-stepmother-in-history",
     "judul": "I Became the Most Terrifying Stepmother in History?!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/26/20260626133011_e7d265435b969308_1a00ec73.jpg?w=1200",
-    "chapterCount": 9,
-    "online": 9,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "i-killed-an-academy-player",
+    "judul": "I Killed An Academy Player",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-killed-an-academy-player/manga_thumbnail-Head-I-Killed-An-Academy-Player.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "i-became-a-sales-prodigy",
+    "judul": "I Became a Sales Prodigy",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-became-a-sales-prodigy/manga_thumbnail-A2-I-Became-a-Sales-Prodigy.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "it-all-starts-with-trillions-of-nether-currency",
+    "judul": "It All Starts With Trillions Of Nether Currency",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/it-all-starts-with-trillions-of-nether-currency/manga_thumbnail-A2-It-All-Starts-With-Trillions-Of-Nether-Currency.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
   },
   {
@@ -482,6 +500,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224538_b3a7235e7806a24d_95cc831d.jpg?w=1200",
     "chapterCount": 14,
     "online": 14,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "i-became-a-hatchling",
+    "judul": "I Became a Hatchling",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/05/20260505120018_57a501099e5c89a5_c03461f5.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -504,15 +531,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "i-reincarnated-as-a-legendary-surgeon",
-    "judul": "I Reincarnated as a Legendary Surgeon",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-reincarnated-as-a-legendary-surgeon/manga_thumbnail-Manhwa-I-Reincarnated-as-a-Legendary-Surgeon.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "itoko-no-onee-chan-ni-amaechau",
     "judul": "Itoko no Onee-chan ni Amaechau?",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/24/20260624020018_aa56a2c59c29bbdc_4ac61348.webp?w=1200",
@@ -531,6 +549,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "the-ultimate-shut-in",
+    "judul": "The Ultimate Shut-In",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-ultimate-shut-in/manga_thumbnail-A2-The-Ultimate-Shut-In.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "teto-x-egen",
     "judul": "Teto X Egen",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613153035_57411679d656db3e_0262edc0.webp?w=1200",
@@ -540,11 +567,11 @@
     "status": ""
   },
   {
-    "slug": "the-villains-daughter-plans-to-run-away",
-    "judul": "The Villain’s Daughter Plans To Run Away",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-villains-daughter-plans-to-run-away/manga_thumbnail-A2-The-Villains-Daughter-Plans-To-Run-Away.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "the-long-way-of-the-warrior",
+    "judul": "The Long Way of the Warrior",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-long-way-of-the-warrior/manga_thumbnail-Manhwa-The-Long-Way-of-the-Warrior.jpeg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -556,6 +583,15 @@
     "online": 6,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "the-return-of-the-mythical-archmage",
+    "judul": "The Return of the Mythical Archmage",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-return-of-the-mythical-archmage/manga_thumbnail-A2-The-Return-of-the-Mythical-Archmage.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "the-hero-returns-from-another-world",
@@ -576,15 +612,6 @@
     "status": ""
   },
   {
-    "slug": "the-returned-c-rank-tank-wont-die",
-    "judul": "The Returned C-Rank Tank Won’t Die!",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_returned_c-rank_tank_won___t_die_/img_68302c369a0f76.19564254.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "tales-of-the-nonhuman",
     "judul": "Tales of the Nonhuman",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/24/20260624020011_14ec810b6402cc2a_5805ecff.jpg?w=1200",
@@ -594,30 +621,30 @@
     "status": "Ongoing"
   },
   {
-    "slug": "the-end-has-come",
-    "judul": "The End Has Come",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_end_has_come/img_68333c5737e773.60040220.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "the-story-of-becoming-a-married-man-in-another-world",
+    "judul": "The Story of Becoming a Married Man in Another World",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/30/20260430144508_440c26ab6b5c85ba_fe1394ad.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
-    "slug": "the-youngest-child-of-the-family-is-preventing-the-world-from-ending",
-    "judul": "The Youngest Child of the Family Is Preventing the World From Ending",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/14/20260614221510_cf649865c9852891_c9d0148a.jpg?w=1200",
-    "chapterCount": 13,
-    "online": 13,
-    "tipe": "Manhwa",
-    "status": ""
+    "slug": "the-merciless-fairy-shall-become-a-cultivation-vessel",
+    "judul": "The Merciless Fairy Shall Become a Cultivation Vessel",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/15/20260315021528_a4365c93875b50ac_e2b07e22.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
-    "slug": "the-returnees-hidden-strategy-stream",
-    "judul": "The Returnee’s Hidden Strategy Stream",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/15/20260315020101_3517decf164181ff_28b7ff3f.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
+    "slug": "the-rebirth-of-the-heros-partys-archmage",
+    "judul": "The Rebirth of the Hero’s Party’s Archmage",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-rebirth-of-the-heros-partys-archmage/manga_thumbnail-A2-The-Rebirth-of-the-Heros-Partys-Archmage.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -635,6 +662,24 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/25/20260625133011_811d004266cbd0a1_f312daa4.jpg?w=1200",
     "chapterCount": 3,
     "online": 3,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "ultimate-martial-evolution-begin-by-awakening-the-king-of-monsters",
+    "judul": "Ultimate Martial Evolution: Begin by Awakening the King of Monsters",
+    "thumb": "https://thumbnail.komiku.org/img/upload/ultimate_martial_evolution__begin_by_awakening_the_king_of_monsters/img_682d9e13b57019.99859727.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "uchi-no-maid-ga-class-no-suki-na-ko-ni-nite-iru",
+    "judul": "Uchi no Maid ga Class no Suki na Ko ni Nite Iru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170004_f620a6a04a59aa84_09c3c29d.jpg?w=1200",
+    "chapterCount": 4,
+    "online": 4,
     "tipe": "Manga",
     "status": "Ongoing"
   }
