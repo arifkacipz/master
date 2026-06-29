@@ -1,6 +1,7 @@
 {
   "judul": "Karisome Seijo wa Kyou mo Otaishi (Oshi) ni Kyuukon Sareru Watashi to no Kekkon wa Kaishaku Chigai Nano de Okotowarishimasu!",
   "judul_alternatif": "Seijo Sementara yang Tiap Hari Dilamar Oshi Sang Putra Mahkota: Maaf, Pernikahan Ini Salah Paham, Aku Tolak!",
+  "slug": "karisome-seijo-wa-kyou-mo-otaishi-oshi-ni-kyuukon-sareru-watashi-to-no-kekkon-wa-kaishaku-chigai-nano-de-okotowarishimasu",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/17/20260617134523_f5559264bb22859a_7ce69c8c.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -15,6 +16,10 @@
   "pembaca_total": 102,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -86,10 +91,5 @@
       ]
     }
   ],
-  "slug": "karisome-seijo-wa-kyou-mo-otaishi-oshi-ni-kyuukon-sareru-watashi-to-no-kekkon-wa-kaishaku-chigai-nano-de-okotowarishimasu",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-06-29T10:32:45.117390"
+  "last_scraped": "2026-06-29T11:36:02.724394"
 }

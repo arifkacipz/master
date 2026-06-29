@@ -1,6 +1,7 @@
 {
   "judul": "The Heavenly Demon's Otherworld Livestream",
   "judul_alternatif": "Livestream Dunia Lain Sang Iblis Surgawi",
+  "slug": "the-heavenly-demons-otherworld-livestream",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163019_5444771fc5cb78a3_b648308c.webp?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 3, Chapter 4, Chapter 5, Chapter 6",
   "chapters": [
     {
       "nama": "Chapter 3",
@@ -524,10 +529,5 @@
       ]
     }
   ],
-  "slug": "the-heavenly-demons-otherworld-livestream",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 3, Chapter 4, Chapter 5, Chapter 6",
-  "last_scraped": "2026-06-29T10:32:00.117906"
+  "last_scraped": "2026-06-29T11:35:31.397405"
 }
