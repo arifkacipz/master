@@ -1,6 +1,7 @@
 {
   "judul": "Global Class Transition: The Magic King's Skills Have Infinite Affixes",
   "judul_alternatif": "Transisi Kelas Global: Skill Raja Sihir Memiliki Afiks Tanpa Batas",
+  "slug": "global-class-transition-the-magic-kings-skills-have-infinite-affixes",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074528_bde21ba0b7cb6238_ac936106.webp?w=1200",
   "tipe": "Manhua",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -89,10 +94,5 @@
       ]
     }
   ],
-  "slug": "global-class-transition-the-magic-kings-skills-have-infinite-affixes",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-06-29T01:35:14.205228"
+  "last_scraped": "2026-06-29T05:27:50.472104"
 }

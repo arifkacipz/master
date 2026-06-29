@@ -1,6 +1,7 @@
 {
   "judul": "Became a Family with the Four Duke Brothers",
   "judul_alternatif": "Menjadi Keluarga dengan Empat Saudara Adipati",
+  "slug": "became-a-family-with-the-four-duke-brothers",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074524_16e11585d4854fde_cc7c0838.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -18,6 +19,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -176,10 +181,5 @@
       ]
     }
   ],
-  "slug": "became-a-family-with-the-four-duke-brothers",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-06-29T01:35:11.439277"
+  "last_scraped": "2026-06-29T05:27:48.970030"
 }
