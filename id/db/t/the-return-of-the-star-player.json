@@ -1,6 +1,7 @@
 {
   "judul": "The Return of the Star Player",
   "judul_alternatif": "Kembalinya Pemain Bintang",
+  "slug": "the-return-of-the-star-player",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513164515_d19a8a901342cad8_dba96b66.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "Ongoing",
@@ -15,6 +16,10 @@
   "pembaca_total": 596,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -603,10 +608,5 @@
       ]
     }
   ],
-  "slug": "the-return-of-the-star-player",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-06-29T14:48:17.392201"
+  "last_scraped": "2026-06-29T15:07:04.436118"
 }

@@ -1,6 +1,7 @@
 {
   "judul": "The Chairman Who Just Wants to Slack Off",
   "judul_alternatif": "Ketua Direksi yang Cuma Ingin Santai",
+  "slug": "the-chairman-who-just-wants-to-slack-off",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194532_38bcd5a0586f67d6_1d284584.webp?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -420,10 +425,5 @@
       ]
     }
   ],
-  "slug": "the-chairman-who-just-wants-to-slack-off",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-06-29T14:47:44.213103"
+  "last_scraped": "2026-06-29T15:06:40.518410"
 }

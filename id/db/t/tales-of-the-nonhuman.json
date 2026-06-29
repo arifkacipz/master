@@ -1,6 +1,7 @@
 {
   "judul": "Tales of the Nonhuman",
   "judul_alternatif": "Kisah Para Nonmanusia",
+  "slug": "tales-of-the-nonhuman",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/24/20260624020011_14ec810b6402cc2a_5805ecff.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "Ongoing",
@@ -15,6 +16,10 @@
   "pembaca_total": 232,
   "pembaca_mingguan": 5,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -263,10 +268,5 @@
       ]
     }
   ],
-  "slug": "tales-of-the-nonhuman",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-06-29T14:47:13.701556"
+  "last_scraped": "2026-06-29T15:06:16.727415"
 }
