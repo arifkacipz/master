@@ -2,9 +2,9 @@
     "judul": "Resurrection Boy",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Resurrection-Boy-193x278.jpg",
     "source": "arenascan",
-    "online": 26,
-    "chapterCount": 26,
-    "Chs": "Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 27,
+    "chapterCount": 27,
+    "Chs": "Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1059,7 +1059,32 @@
                 "https://cdn.arenascan.com/arena-bucket/377635/26/24.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 27",
+            "url": "https://arenascan.com/resurrection-boy-chapter-27/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377635/27/1049535283d4.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/923d068ef129.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/9b23438c69b1.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/faf744e6e21c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/255da6918c76.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/972550b1940c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/3c0e71b1ba75.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/35ce77483b68.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/35336398a4c0.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/c057a59b93b0.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/b58df7ebb000.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/c207071d5a78.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/652ed5c41eb7.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/9f36ed6ef65c.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/62e1c80198b1.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/83210d71a773.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/1b5e01541689.webp",
+                "https://cdn.arenascan.com/arena-bucket/377635/27/411df7b6b2fc.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T21:43:14.937345"
+    "last_scraped": "2026-06-29T19:09:42.451525"
 }
