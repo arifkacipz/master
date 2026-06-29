@@ -1,6 +1,7 @@
 {
   "judul": "Uchi no Maid ga Class no Suki na Ko ni Nite Iru",
   "judul_alternatif": "Pembantu Rumahku Mirip dengan Cewek yang Kusuka di Kelas",
+  "slug": "uchi-no-maid-ga-class-no-suki-na-ko-ni-nite-iru",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170004_f620a6a04a59aa84_09c3c29d.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -16,6 +17,10 @@
   "pembaca_total": 1595,
   "pembaca_mingguan": 8,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -143,10 +148,5 @@
       ]
     }
   ],
-  "slug": "uchi-no-maid-ga-class-no-suki-na-ko-ni-nite-iru",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-06-29T17:32:05.865832"
+  "last_scraped": "2026-06-29T17:56:54.909864"
 }
