@@ -1,6 +1,7 @@
 {
   "judul": "Maou-sama, Re Re Revenge!",
   "judul_alternatif": "Raja Iblis, Balas Dendam Lagi-lagi!",
+  "slug": "maou-sama-re-re-revenge",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143015_5b0b543901308d8a_22725a8e.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -97,10 +102,5 @@
       ]
     }
   ],
-  "slug": "maou-sama-re-re-revenge",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-06-30T10:06:32.059369"
+  "last_scraped": "2026-06-30T10:30:50.231168"
 }

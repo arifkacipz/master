@@ -1,6 +1,7 @@
 {
   "judul": "The Cannon-Fodder Concubine's Daughter Just Wants to Survive by Being Adorable",
   "judul_alternatif": "Putri Selir Figuran Hanya Ingin Selamat dengan Bertingkah Imut",
+  "slug": "the-cannon-fodder-concubines-daughter-just-wants-to-survive-by-being-adorable",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151529_462d3600cbe2d26a_ad61050a.jpg?w=1200",
   "tipe": "Manhua",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 195,
   "pembaca_mingguan": 2,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -228,10 +233,5 @@
       ]
     }
   ],
-  "slug": "the-cannon-fodder-concubines-daughter-just-wants-to-survive-by-being-adorable",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-06-30T10:06:46.401055"
+  "last_scraped": "2026-06-30T10:30:54.690607"
 }

@@ -1,6 +1,7 @@
 {
   "judul": "Full-time Hunter: I Hunt the World!",
   "judul_alternatif": "Pemburu Penuh Waktu: Aku Memburu Dunia!",
+  "slug": "full-time-hunter-i-hunt-the-world",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143020_41f336e3cd5377be_c541e8c3.webp?w=1200",
   "tipe": "Manhua",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -64,10 +69,5 @@
       ]
     }
   ],
-  "slug": "full-time-hunter-i-hunt-the-world",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-06-30T10:06:37.014539"
+  "last_scraped": "2026-06-30T10:30:51.730464"
 }
