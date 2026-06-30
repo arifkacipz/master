@@ -19,10 +19,56 @@
   "pembaca_mingguan": 36,
   "cara_baca": "Kiri ke kanan",
   "source": "komiku",
-  "online": 25,
-  "chapterCount": 25,
-  "Chs": "Chapter 1.1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25",
+  "online": 26,
+  "chapterCount": 26,
+  "Chs": "Chapter 1, Chapter 1.1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/beast-tamer-evolution-chapter-1/",
+      "tanggal_rilis": "04/12/2025",
+      "images": [
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/1_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/1_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/1_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/1_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/1_part5.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/1_part6.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/2_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/2_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/2_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/2_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/2_part5.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/3_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/3_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/3_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/3_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/3_part5.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/4_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/4_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/4_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/4_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/4_part5.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/4_part6.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/5_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/5_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/5_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/5_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/5_part5.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/5_part6.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/6_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/6_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/6_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/6_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/6_part5.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/6_part6.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/7_part1.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/7_part2.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/7_part3.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/7_part4.webp",
+        "https://img.komiku.org/upload5/beast-tamer-evolution/1/2025-12-04/7_part5.webp"
+      ]
+    },
     {
       "nama": "Chapter 1.1",
       "url": "https://komiku.org/beast-tamer-evolution-chapter-1-1/",
@@ -1039,5 +1085,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-30T10:33:01.281466"
+  "last_scraped": "2026-06-30T12:33:28.026793"
 }
