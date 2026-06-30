@@ -18,10 +18,68 @@
   "pembaca_mingguan": 9,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38",
+  "online": 15,
+  "chapterCount": 15,
+  "Chs": "Chapter 25, Chapter 26, Chapter 26.5, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38",
   "chapters": [
+    {
+      "nama": "Chapter 25",
+      "url": "https://komiku.org/tadokoro-san-chapter-25/",
+      "tanggal_rilis": "13/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/tadokoro-san/25/2026-04-13/1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/25/2026-04-13/2.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/25/2026-04-13/3.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/25/2026-04-13/4_part1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/25/2026-04-13/4_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 26",
+      "url": "https://komiku.org/tadokoro-san-chapter-26/",
+      "tanggal_rilis": "16/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/tadokoro-san/26/2026-04-16/1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/26/2026-04-16/2.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/26/2026-04-16/3.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/26/2026-04-16/4_part1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/26/2026-04-16/4_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 26.5",
+      "url": "https://komiku.org/tadokoro-san-chapter-26-5/",
+      "tanggal_rilis": "16/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/tadokoro-san/26.5/2026-04-16/1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/26.5/2026-04-16/2_part1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/26.5/2026-04-16/2_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 27",
+      "url": "https://komiku.org/tadokoro-san-chapter-27/",
+      "tanggal_rilis": "16/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/tadokoro-san/27/2026-04-16/1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/27/2026-04-16/2.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/27/2026-04-16/3.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/27/2026-04-16/4_part1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/27/2026-04-16/4_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 28",
+      "url": "https://komiku.org/tadokoro-san-chapter-28/",
+      "tanggal_rilis": "20/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/tadokoro-san/28/2026-04-20/1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/28/2026-04-20/2.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/28/2026-04-20/3.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/28/2026-04-20/4_part1.webp",
+        "https://img.komiku.org/upload5/tadokoro-san/28/2026-04-20/4_part2.webp"
+      ]
+    },
     {
       "nama": "Chapter 29",
       "url": "https://komiku.org/tadokoro-san-chapter-29/",
@@ -143,5 +201,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-30T13:07:46.802976"
+  "last_scraped": "2026-06-30T16:24:36.646329"
 }

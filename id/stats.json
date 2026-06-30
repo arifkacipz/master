@@ -1,20 +1,29 @@
 [
   {
-    "slug": "reiwa-no-dara-san",
-    "judul": "Reiwa no Dara-san",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/03/20260403054533_128a89f0a6e00dce_43e23407.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": ""
-  },
-  {
     "slug": "rojiura-de-hirotta-onnanoko-ga-bad-end-go-no-otome-game-no-heroine-datta-ken",
     "judul": "Rojiura de Hirotta Onnanoko ga Bad End-go no Otome Game no Heroine Datta Ken",
     "thumb": "https://thumbnail.komiku.org/img/upload/rojiura_de_hirotta_onnanoko_ga_bad_end-go_no_otome_game_no_heroine_datta_ken/img_691ee6089c8511.88968637.png?w=1200",
     "chapterCount": 9,
     "online": 9,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "rankers-return-remake",
+    "judul": "Ranker’s Return (Remake)",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/rankers-return-remake/manga_thumbnail-Manhwa-Komik-Rankers-Return-Remake.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "return-of-the-greatest-lancer",
+    "judul": "Return of The Greatest Lancer",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/return-of-the-greatest-lancer/manga_thumbnail-Manhwa-Return-of-The-Greatest-Lancer.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -27,15 +36,6 @@
     "status": "Completed"
   },
   {
-    "slug": "return-of-the-sss-class-ranker",
-    "judul": "Return of the SSS-Class Ranker",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/return-of-the-sss-class-ranker/manga_thumbnail-Manhwa-Return-of-the-SSS-Class-Ranker.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -43,6 +43,24 @@
     "online": 7,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "war-of-corpses",
+    "judul": "War of Corpses",
+    "thumb": "https://thumbnail.komiku.org/img/upload/war_of_corpses/img_69621706a40388.29162305.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "part-time-grim-reaper",
+    "judul": "Part-Time Grim Reaper",
+    "thumb": "https://thumbnail.komiku.org/img/upload/part-time_grim_reaper/img_6839191612adb8.70145248.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "became-a-family-with-the-four-duke-brothers",
@@ -54,6 +72,24 @@
     "status": ""
   },
   {
+    "slug": "bad-ending-maker",
+    "judul": "Bad Ending Maker",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/bad-ending-maker/manga_thumbnail-Head-Bad-Ending-Maker.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "baek-xx",
+    "judul": "Baek XX",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/baek-xx/manga_thumbnail-Baek-XX-1.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "buka-mbg-di-dunia-lain",
     "judul": "Buka MBG di Dunia lain",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074531_d863c6acadb26030_6a3db6d9.png?w=1200",
@@ -61,6 +97,24 @@
     "online": 0,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "bad-business",
+    "judul": "Bad Business",
+    "thumb": "https://thumbnail.komiku.org/img/upload/bad_business/img_696217f6571c43.85022165.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "bao-jin-wo-de-xiao-majia",
+    "judul": "Bao Jin Wo De Xiao Majia",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/19/20260319233131_261a9dc5f37394f7_357cd5f3.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
     "slug": "hatsukoi-no-majo-kara-tanomareta-shigoto-wa-kanojo-ga-shinu-made-no-junbi-datta",
@@ -99,6 +153,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "executioner",
+    "judul": "Executioner",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/executioner/manga_thumbnail-Head-Executioner.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "full-time-hunter-i-hunt-the-world",
     "judul": "Full-time Hunter: I Hunt the World!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143020_41f336e3cd5377be_c541e8c3.webp?w=1200",
@@ -108,21 +171,12 @@
     "status": ""
   },
   {
-    "slug": "fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic",
-    "judul": "Fun Territory Defense Of The Easy-going Lord ~the Nameless Village Is Made Into The Strongest Fortified City By Production Magic~",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic/manga_thumbnail-Manga-Fun-Territory-Defense-Of-The-Easy-going-Lord-the-Nameless-Village-Is-Made-Into-The-Strongest-Fortified-City-By-Production-Magic.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "full-time-awakening",
-    "judul": "Full-Time Awakening",
-    "thumb": "https://thumbnail.komiku.org/img/upload/full-time_awakening/img_687dfc3d4330e4.42199864.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
+    "slug": "fight-delivery",
+    "judul": "Fight Delivery",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513164504_7f1bb6e21f820b6f_0cfefd87.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -171,13 +225,13 @@
     "status": "Ongoing"
   },
   {
-    "slug": "shikkoku-tsukai-no-saikyo-yusha-nakama-zenin-ni-uragira-retanode-saikyo-no-mamono",
-    "judul": "Shikkoku tsukai no saikyo yusha nakama zen’in ni uragira retanode saikyo no mamono",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/shikkoku-tsukai-no-saikyo-yusha-nakama-zenin-ni-uragira-retanode-saikyo-no-mamono/manga_thumbnail-Manga-Shikkoku-tsukai-no-saikyo-yusha-nakama-zenin-ni-uragira-retanode-saikyo-no-mamono.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "shura-youjo-no-eiyuutan-hanpa-sha-to-iwa-reta-youhei-youjo-ni-tensei-shite-nariagaru",
+    "judul": "Shura Youjo no Eiyuutan ~Hanpa-sha to Iwa Reta Youhei, Youjo ni Tensei Shite Nariagaru~",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424011523_4f65cd120a22fd0e_d5e66610.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
-    "status": "Ongoing"
+    "status": ""
   },
   {
     "slug": "senpai-chotto-ii-desu-ka",
@@ -270,15 +324,6 @@
     "status": ""
   },
   {
-    "slug": "mikadono-sanshimai-wa-angai-choroi",
-    "judul": "Mikadono Sanshimai wa Angai, Choroi",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mikadono-sanshimai-wa-angai-choroi/manga_thumbnail-Mikadono-1.jpg?w=1200",
-    "chapterCount": 14,
-    "online": 14,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "majo-no-ending-note",
     "judul": "Majo no Ending Note",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224506_60ec3919b8a89b47_f7272831.webp?w=1200",
@@ -318,8 +363,8 @@
     "slug": "one-day-the-male-lead-fell-into-our-house",
     "judul": "One Day, the Male Lead Fell Into Our House",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/23/20260623171512_672c7b053c12b8e7_06d3bcbe.jpg?w=1200",
-    "chapterCount": 7,
-    "online": 7,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -339,6 +384,15 @@
     "chapterCount": 13,
     "online": 13,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "dan-the-bat-wielding-knight",
+    "judul": "Dan, the Bat-Wielding Knight",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/15/20260315021508_675d5d7f1eec89bb_fce9956c.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -450,6 +504,24 @@
     "status": ""
   },
   {
+    "slug": "absolute-regression",
+    "judul": "Absolute Regression",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/absolute-regression/manga_thumbnail-A2-Absolute-Regression.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "a-small-world-full-of-fun",
+    "judul": "A Small World Full Of Fun",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/01/20260501110044_c548814cadc3fcc3_8f8936a2.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
     "slug": "akujo-ranking",
     "judul": "AKUJO RANKING",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313040007_b3a9fa22d6ec2819_d44c804e.jpg?w=1200",
@@ -486,12 +558,48 @@
     "status": "Ongoing"
   },
   {
+    "slug": "i-will-raise-this-family",
+    "judul": "I Will Raise This Family!",
+    "thumb": "https://thumbnail.komiku.org/img/upload/i_will_raise_this_family_/img_68b68fb12ee7d8.38498498.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "i-became-the-most-terrifying-stepmother-in-history",
     "judul": "I Became the Most Terrifying Stepmother in History?!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/26/20260626133011_e7d265435b969308_1a00ec73.jpg?w=1200",
     "chapterCount": 11,
     "online": 11,
     "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "i-became-the-first-prince",
+    "judul": "I Became the First Prince: Legend of Sword's Song",
+    "thumb": "https://thumbnail.komiku.org/img/upload/i_became_the_first_prince__legend_of_sword_s_song/img_69859d0b3e16e5.48491002.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "infinite-mage",
+    "judul": "Infinite Mage",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/infinite-mage/manga_thumbnail-Mage-1.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "iinazuke-ga-dekita-to-omottara-sono-iinazuke-ga-gakkou-de-yuumei-na-akuyaku-reijou-dattan-dakedo-dou-sureba-ii",
+    "judul": "Iinazuke ga Dekita to Omottara, Sono Iinazuke ga Gakkou de Yuumei na “Akuyaku Reijou” Dattan dakedo, Dou Sureba Ii?",
+    "thumb": "https://thumbnail.komiku.org/img/upload/iinazuke_ga_dekita_to_omottara__sono_iinazuke_ga_gakkou_de_yuumei_na/img_685f84a52a3d30.16131195.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -502,6 +610,15 @@
     "online": 10,
     "tipe": "Manhua",
     "status": ""
+  },
+  {
+    "slug": "i-awoke-as-a-god-after-auto-battling-for-a-million-years-idle-player-returns-as-a-god",
+    "judul": "I Awoke as a God After Auto Battling For a Million Years (Idle Player Returns as a God)",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-awoke-as-a-god-after-auto-battling-for-a-million-years-idle-player-returns-as-a-god/manga_thumbnail-A2-I-Awoke-as-a-God-After-Auto-Battling-For-a-Million-Years.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
     "slug": "i-have-infinite-golden-traits",
@@ -531,21 +648,30 @@
     "status": "Ongoing"
   },
   {
+    "slug": "i-became-the-rogue-first-prince",
+    "judul": "I Became the Rogue First Prince",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313211555_2fa2caa9548e744b_0e0f10db.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "isekai-saikyou-nippon-de-jk-to-konkatsu-suru",
     "judul": "Isekai Saikyou, Nippon de JK to Konkatsu Suru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224529_d9f9012ab13e1f37_d55cd32f.jpg?w=1200",
-    "chapterCount": 4,
-    "online": 4,
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
   {
-    "slug": "i-was-more-overpowered-than-the-hero-so-i-hid-my-power",
-    "judul": "I Was More Overpowered Than The Hero, So I Hid My Power!",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-was-more-overpowered-than-the-hero-so-i-hid-my-power/manga_thumbnail-Head-I-Was-More-Overpowered-Than-The-Hero-So-I-Hid-My-Power.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
+    "slug": "i-became-the-contract-mother-of-the-grim-reaper-dukes-family-and-they-became-obsessed-with-me",
+    "judul": "I Became the Contract Mother of the Grim Reaper Duke’s Family and They Became Obsessed With Me",
+    "thumb": "https://thumbnail.komiku.org/img/upload/i_became_the_contract_mother_of_the_grim_reaper_duke___s_family_and_they_became_obsessed_with_me/img_686cb1cc28d692.85399676.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -565,6 +691,24 @@
     "online": 2,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "the-bully-in-charge",
+    "judul": "The Bully In Charge",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-bully-in-charge/manga_thumbnail-thebullycover.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-world-after-the-fall",
+    "judul": "The World After the Fall",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-world-after-the-fall/manga_thumbnail-Manhwa-The-World-After-the-Fall.jpeg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "the-return-of-the-star-player",
@@ -594,6 +738,15 @@
     "status": ""
   },
   {
+    "slug": "the-100th-regression-of-the-max-level-player",
+    "judul": "The 100th Regression Of The Max-Level Player",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-100th-regression-of-the-max-level-player/manga_thumbnail-Head-The-100th-Regression-Of-The-Max-Level-Player.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "the-heavenly-demons-otherworld-livestream",
     "judul": "The Heavenly Demon's Otherworld Livestream",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163019_5444771fc5cb78a3_b648308c.webp?w=1200",
@@ -603,12 +756,30 @@
     "status": ""
   },
   {
-    "slug": "takou-no-hiki-wo-tasuketara-otomodachi-kara-hajimeru-koto-ni-narimashita-after-helping-ice-princess-from-another-school-i-decided-to-start-as-a-friend",
-    "judul": "Takou no Hiki wo Tasuketara, Otomodachi kara Hajimeru Koto ni narimashita (After Helping “Ice Princess” from Another School, I Decided to Start As a Friend)",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/takou-no-hiki-wo-tasuketara-otomodachi-kara-hajimeru-koto-ni-narimashita-after-helping-ice-princess-from-another-school-i-decided-to-start-as-a-friend/manga_thumbnail-A2-Takou-no-Hiki-wo-Tasuketara-Otomodachi-kara-Hajimeru-Koto-ni-narimashita.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
+    "slug": "the-evil-alchemist-cant-handle-his-own-experiment",
+    "judul": "The Evil Alchemist Can’t Handle His Own Experiment",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_evil_alchemist_can___t_handle_his_own_experiment/img_683569c48d72a9.21888780.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-devil-classroom",
+    "judul": "The Devil Classroom",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_devil_classroom/img_695cbb1a5daff4.92410660.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-max-leveled-hero-will-return",
+    "judul": "The MAX leveled hero will return!",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-max-leveled-hero-will-return/manga_thumbnail-Komik-The-MAX-leveled-hero-will-return.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -648,30 +819,30 @@
     "status": "Ongoing"
   },
   {
+    "slug": "the-apocalypses-ultimate-veteran",
+    "judul": "The Apocalypse's Ultimate Veteran",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_apocalypse_s_ultimate_veteran/img_693d225d3e0e86.83317542.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-yellow-haired-villain-in-female-main-characters-novel-wants-happiness",
+    "judul": "The Yellow-haired Villain in Female Main Character’s Novel wants Happiness",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_yellow-haired_villain_in_female_main_character___s/img_68a829f123cbb2.31921571.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
     "slug": "tales-of-the-nonhuman",
     "judul": "Tales of the Nonhuman",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/24/20260624020011_14ec810b6402cc2a_5805ecff.jpg?w=1200",
     "chapterCount": 3,
     "online": 3,
     "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "taidana-akuyaku-kizoku-no-ore-ni-konyaku-hakisareta-akuyaku-reijo-ga-totsuidara-saikyo-no-fufu-ni-narimashita",
-    "judul": "Taidana Akuyaku Kizoku no Ore ni, Konyaku Hakisareta Akuyaku Reijo ga Totsuidara Saikyo no Fufu ni Narimashita",
-    "thumb": "https://thumbnail.komiku.org/img/upload/taidana_akuyaku_kizoku_no_ore_ni/img_6835689dc45362.88644289.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "tadokoro-san",
-    "judul": "Tadokoro-san",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/tadokoro-san/manga_thumbnail-Tadokoro-san-1.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
