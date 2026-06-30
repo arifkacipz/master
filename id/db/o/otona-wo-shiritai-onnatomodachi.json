@@ -1,6 +1,7 @@
 {
   "judul": "Otona wo Shiritai Onnatomodachi",
   "judul_alternatif": "Teman Perempuan yang Ingin Tahu Soal Kedewasaan",
+  "slug": "otona-wo-shiritai-onnatomodachi",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151535_f3e71a02104cc412_5e6d6639.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -18,6 +19,10 @@
   "pembaca_total": 2819,
   "pembaca_mingguan": 216,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -144,10 +149,5 @@
       ]
     }
   ],
-  "slug": "otona-wo-shiritai-onnatomodachi",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-06-30T05:55:46.817067"
+  "last_scraped": "2026-06-30T06:53:51.045399"
 }

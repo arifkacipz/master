@@ -1,6 +1,7 @@
 {
   "judul": "Oshiete Shitsuji-Kun",
   "judul_alternatif": "Ajari Aku, Butler-kun",
+  "slug": "oshiete-shitsuji-kun",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524181558_8e850277e2524f24_4ce7e6b9.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 403,
   "pembaca_mingguan": 4,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -265,10 +270,5 @@
       ]
     }
   ],
-  "slug": "oshiete-shitsuji-kun",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-06-30T05:56:42.528565"
+  "last_scraped": "2026-06-30T06:54:34.136747"
 }
