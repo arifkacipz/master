@@ -18,15 +18,6 @@
     "status": "Completed"
   },
   {
-    "slug": "rise-of-the-mushroom-king",
-    "judul": "Rise of the Mushroom King",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513171513_fe64053b88dc78ff_922212d9.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": ""
-  },
-  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -36,12 +27,12 @@
     "status": ""
   },
   {
-    "slug": "world-trigger",
-    "judul": "World Trigger",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/world-trigger/manga_thumbnail-Komik-World-Trigger.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
+    "slug": "warrior-grandpa-and-supreme-granddaughter",
+    "judul": "Warrior Grandpa and Supreme Granddaughter",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/warrior-grandpa-and-supreme-granddaughter/manga_thumbnail-Head-Warrior-Grandpa-and-Supreme-Granddaughter.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -72,11 +63,20 @@
     "status": "Ongoing"
   },
   {
+    "slug": "holy-knight",
+    "judul": "Holy Knight",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143006_0421be024290f899_078a270c.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
     "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
     "judul": "Hissatsu Reijou Liese ~Tensei Shita Saikyou no Koroshiya wa, Yami wo Matou Akuyaku Reijou to Naru~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627170011_5de6131170c74e98_ec1e629a.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 3,
+    "online": 3,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -88,6 +88,15 @@
     "online": 8,
     "tipe": "Manga",
     "status": "Ongoing"
+  },
+  {
+    "slug": "full-time-hunter-i-hunt-the-world",
+    "judul": "Full-time Hunter: I Hunt the World!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143020_41f336e3cd5377be_c541e8c3.webp?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manhua",
+    "status": ""
   },
   {
     "slug": "green-skin",
@@ -105,6 +114,15 @@
     "chapterCount": 1,
     "online": 1,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "genius-hitter-hits-fastball",
+    "judul": "Genius Hitter Hits Fastball",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/genius-hitter-hits-fastball/manga_thumbnail-A2-Genius-Hitter-Hits-Fastball.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -138,8 +156,8 @@
     "slug": "stuck-in-a-glitch-novel-as-an-extra",
     "judul": "Stuck in a Glitch Novel as an Extra",
     "thumb": "https://thumbnail.komiku.org/img/upload/stuck_in_a_glitch_novel_as_an_extra/img_6831690273e119.52929237.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -189,13 +207,22 @@
     "status": ""
   },
   {
-    "slug": "made-in-abyss",
-    "judul": "Made in Abyss",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/made-in-abyss/manga_thumbnail-Komik-Made-in-Abyss.jpeg?w=1200",
+    "slug": "my-favorite-idol-is-protected-by-the-strongest-fiance",
+    "judul": "My Favorite Idol Is Protected by the Strongest Fiancé",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/15/20260615150012_bd9c7b3fc1e662bc_c9f90b06.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manga",
-    "status": "Ongoing"
+    "status": ""
+  },
+  {
+    "slug": "maou-sama-re-re-revenge",
+    "judul": "Maou-sama, Re Re Revenge!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143015_5b0b543901308d8a_22725a8e.webp?w=1200",
+    "chapterCount": 2,
+    "online": 2,
+    "tipe": "Manga",
+    "status": ""
   },
   {
     "slug": "maou-sama-wa-kaifuku-majutsu-o-kiwametai-sono-seijo-sekai-saikyou-ni-tsuki",
@@ -205,6 +232,15 @@
     "online": 3,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "momose-akira-no-hatsukoi-hatan-chuu",
+    "judul": "Momose Akira no Hatsukoi Hatan-chuu.",
+    "thumb": "https://thumbnail.komiku.org/img/upload/momose_akira_no_hatsukoi_hatan-chuu/img_6855095443e9d8.93731295.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "mozaik-role",
@@ -282,17 +318,26 @@
     "slug": "diagnosis-from-a-fallen-angel",
     "judul": "Diagnosis From a Fallen Angel",
     "thumb": "https://thumbnail.komiku.org/img/upload/diagnosis_from_a_fallen_angel/img_688886e6d08665.60518820.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 13,
+    "online": 13,
     "tipe": "Manga",
     "status": "Ongoing"
+  },
+  {
+    "slug": "doutei-dakedo-akuyaku-kizoku-ni-tensei-shitanode-harem-wo-tsukuru-hazu-datta-no-ni-nazeka-sekai-wo-sukuu-seijin-ni-nattemashita-namida",
+    "judul": "Doutei Dakedo Akuyaku Kizoku ni Tensei Shitanode Harem wo Tsukuru... Hazu Datta no ni Nazeka Sekai wo Sukuu Seijin ni Nattemashita (Namida)",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143011_e5748f73aa4888ab_5f2acf3d.webp?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": ""
   },
   {
     "slug": "negatte-mo-nai-tsuihou-go-kara-no-slow-life-intai-shita-hazu-ga-nariyuki-de-bishoujo-gal-no-shishou-ni-nattara-naze-ka-mechakucha-natsukareta",
     "judul": "Negatte mo Nai Tsuihou Go kara no Slow Life? Intai Shita Hazu ga Nariyuki de Bishoujo Gal no Shishou ni Nattara Naze ka Mechakucha Natsukareta",
     "thumb": "https://thumbnail.komiku.org/img/upload/negatte_mo_nai_tsuihou_go_kara_no_slow_life/img_682c2003ae3d86.39082551.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -302,15 +347,6 @@
     "thumb": "https://thumbnail.komiku.org/img/upload/namaiki_asahi-chan_wo_wakarasetai/img_684bdaaff0dda2.22663497.jpg?w=1200",
     "chapterCount": 12,
     "online": 12,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "netorare-tsuihousareta-saikyou-kishi-danchou-no-ossan-katainaka-de-eiyuu-ni-matsuriagerareru",
-    "judul": "Netorare Tsuihousareta Saikyou Kishi Danchou No Ossan, Katainaka De Eiyuu Ni Matsuriagerareru",
-    "thumb": "https://thumbnail.komiku.org/img/upload/netorare_tsuihousareta_saikyou_kishi_danchou_no_ossan__katainaka_de_eiyuu_ni_matsuriagerareru/img_691ee51f47ca57.57983033.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -423,15 +459,6 @@
     "status": ""
   },
   {
-    "slug": "josou-danshi-wa-skirt-wo-nugitai",
-    "judul": "Josou Danshi wa Skirt wo Nugitai!",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/19/20260319234551_06bfc97a8b3b5157_7b4087f2.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",
     "judul": "10-Nen Buri ni Saikai shita Kusogaki wa Seijun Bishoujo JK ni Seichou shiteita",
     "thumb": "https://thumbnail.komiku.org/img/upload/10-nen_buri_ni_saikai_shita_kusogaki/img_68343715ce60c0.00792004.jpg?w=1200",
@@ -459,21 +486,21 @@
     "status": "Ongoing"
   },
   {
+    "slug": "if-the-fairy-is-heartless-then-let-her-become-a-furnace",
+    "judul": "If the Fairy is Heartless, Then Let her Become a Furnace!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143033_fd1eda44380e0bf8_d080ea73.jpg?w=1200",
+    "chapterCount": 0,
+    "online": 0,
+    "tipe": "Manhua",
+    "status": ""
+  },
+  {
     "slug": "i-have-infinite-golden-traits",
     "judul": "I Have Infinite Golden Traits",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/22/20260522121520_01838ee15f1ae285_51333ac2.webp?w=1200",
     "chapterCount": 7,
     "online": 7,
     "tipe": "Manhua",
-    "status": ""
-  },
-  {
-    "slug": "i-received-a-request-from-the-villain-boss",
-    "judul": "I Received a Request from the Villain Boss",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224538_b3a7235e7806a24d_95cc831d.jpg?w=1200",
-    "chapterCount": 14,
-    "online": 14,
-    "tipe": "Manhwa",
     "status": ""
   },
   {
@@ -522,13 +549,13 @@
     "status": ""
   },
   {
-    "slug": "in-the-garden-of-may",
-    "judul": "In the Garden of May",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/03/20260603181511_d91a1ae8817b0b0e_7b32a739.webp?w=1200",
+    "slug": "the-god-of-improvisation",
+    "judul": "The God of Improvisation",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313061607_96725ebb4739f9ad_e7cf8a12.webp?w=1200",
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manhwa",
-    "status": ""
+    "status": "Ongoing"
   },
   {
     "slug": "the-return-of-the-star-player",
@@ -543,15 +570,6 @@
     "slug": "teto-x-egen",
     "judul": "Teto X Egen",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613153035_57411679d656db3e_0262edc0.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
-    "slug": "the-father-and-the-daughter",
-    "judul": "The Father and the Daughter",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517233019_6b692e4120ad12c7_c50b948f.webp?w=1200",
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manhwa",
@@ -585,13 +603,22 @@
     "status": "Ongoing"
   },
   {
-    "slug": "the-unbeatable-dungeons-lazy-boss",
-    "judul": "The Unbeatable Dungeon’s Lazy Boss",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-unbeatable-dungeons-lazy-boss/manga_thumbnail-Head-The-Unbeatable-Dungeons-Lazy-Boss.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
+    "slug": "the-ultimate-of-all-ages",
+    "judul": "The Ultimate of All Ages",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-ultimate-of-all-ages/manga_thumbnail-Manhua-The-Ultimate-of-All-Ages.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
+  },
+  {
+    "slug": "the-cannon-fodder-concubines-daughter-just-wants-to-survive-by-being-adorable",
+    "judul": "The Cannon-Fodder Concubine's Daughter Just Wants to Survive by Being Adorable",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151529_462d3600cbe2d26a_ad61050a.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": ""
   },
   {
     "slug": "the-chairman-who-just-wants-to-slack-off",
@@ -601,15 +628,6 @@
     "online": 5,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "the-new-gate",
-    "judul": "The New Gate",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-new-gate/manga_thumbnail-Komik-The-New-Gate.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "the-perfect-seniors-secret",
@@ -630,15 +648,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "the-ultimate-weapon-returns-after-100-million-years",
-    "judul": "The Ultimate Weapon Returns After 100 Million Years",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313211512_21ff92810ac6efe0_d4008257.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "tensei-nihakobinin-no-isekai-kouryakuhou",
     "judul": "Tensei Nihakobinin no Isekai Kouryakuhou",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504221527_9efeb618b74f8498_5dd6f3df.jpg?w=1200",
@@ -648,6 +657,15 @@
     "status": ""
   },
   {
+    "slug": "trauma-center-surgeon-baek-kang-hyeok",
+    "judul": "Trauma Center: Surgeon Baek Kang-Hyeok",
+    "thumb": "https://thumbnail.komiku.org/img/upload/trauma_center__surgeon_baek_kang-hyeok/img_6836ba5d068179.97708969.jpg?w=1200",
+    "chapterCount": 4,
+    "online": 4,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "tensei-teido-de-mune-no-ana-wa-umaranai",
     "judul": "Tensei Teido de Mune no Ana wa Umaranai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/28/20260628141511_e42b217e32e242cc_e875c388.jpg?w=1200",
@@ -655,6 +673,15 @@
     "online": 0,
     "tipe": "Manga",
     "status": "Ongoing"
+  },
+  {
+    "slug": "yami-kakusei-shite-shujinkou-ni-bokosareru-kamaseinu-ni-hyoui-shita-ga-gensaku-to-chigaisugite-tomadotteru",
+    "judul": "Yami Kakusei Shite Shujinkou ni Bokosareru Kamaseinu ni Hyoui Shita ga Gensaku to Chigaisugite Tomadotteru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143024_685b38344ed40b54_21732262.png?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": ""
   },
   {
     "slug": "youkoso-shuudouin-e-koko-wa-tsuihou-sareta-onna-tachi-no-rakuen-yo",
