@@ -1,6 +1,7 @@
 {
   "judul": "I May Be a Sickly Mom, but I’ll Raise My Fallen Son!",
   "judul_alternatif": "Aku Memang Ibu Sakit-sakitan, tapi Aku Akan Mendidik Putraku yang Jatuh!",
+  "slug": "i-may-be-a-sickly-mom-but-ill-raise-my-fallen-son",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630191513_68cd6391ba7f0954_1afb1c35.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -141,10 +146,5 @@
       ]
     }
   ],
-  "slug": "i-may-be-a-sickly-mom-but-ill-raise-my-fallen-son",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-06-30T12:27:31.873071"
+  "last_scraped": "2026-06-30T13:06:47.307696"
 }
