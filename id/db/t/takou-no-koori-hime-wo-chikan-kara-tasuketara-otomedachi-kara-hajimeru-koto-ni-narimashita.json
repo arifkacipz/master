@@ -18,10 +18,127 @@
   "pembaca_mingguan": 175,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 25,
-  "chapterCount": 25,
-  "Chs": "Chapter 5.2, Chapter 6.1, Chapter 6.2, Chapter 7.1, Chapter 7.2, Chapter 8.1, Chapter 8.2, Chapter 9.1, Chapter 9.2, Chapter 10.1, Chapter 10.2, Chapter 11.1, Chapter 11.2, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18.1, Chapter 18.2, Chapter 19.1, Chapter 19.2, Chapter 20.1, Chapter 20.2",
+  "online": 30,
+  "chapterCount": 30,
+  "Chs": "Chapter 3.1, Chapter 3.2, Chapter 4.1, Chapter 4.2, Chapter 5.1, Chapter 5.2, Chapter 6.1, Chapter 6.2, Chapter 7.1, Chapter 7.2, Chapter 8.1, Chapter 8.2, Chapter 9.1, Chapter 9.2, Chapter 10.1, Chapter 10.2, Chapter 11.1, Chapter 11.2, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18.1, Chapter 18.2, Chapter 19.1, Chapter 19.2, Chapter 20.1, Chapter 20.2",
   "chapters": [
+    {
+      "nama": "Chapter 3.1",
+      "url": "https://komiku.org/takou-no-koori-hime-wo-chikan-kara-tasuketara-otomedachi-kara-hajimeru-koto-ni-narimashita-chapter-3-1/",
+      "tanggal_rilis": "15/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/1.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/2.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/3.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/4.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/5.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/6.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/7.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/8.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/9.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/10.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/11.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/12.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/13.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/14.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/15.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/16.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.1/2026-04-15/17.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 3.2",
+      "url": "https://komiku.org/takou-no-koori-hime-wo-chikan-kara-tasuketara-otomedachi-kara-hajimeru-koto-ni-narimashita-chapter-3-2/",
+      "tanggal_rilis": "15/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/1.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/2.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/3.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/4.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/5.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/6.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/7.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/8.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/9.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/10.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/11.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/12.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/3.2/2026-04-15/13.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 4.1",
+      "url": "https://komiku.org/takou-no-koori-hime-wo-chikan-kara-tasuketara-otomedachi-kara-hajimeru-koto-ni-narimashita-chapter-4-1/",
+      "tanggal_rilis": "15/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/1.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/2.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/3.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/4.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/5.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/6.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/7.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/8.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/9.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/10.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/11.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/12.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/13.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/14.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/15.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/16.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/17.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.1/2026-04-15/18.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 4.2",
+      "url": "https://komiku.org/takou-no-koori-hime-wo-chikan-kara-tasuketara-otomedachi-kara-hajimeru-koto-ni-narimashita-chapter-4-2/",
+      "tanggal_rilis": "15/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/1.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/2.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/3.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/4.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/5.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/6.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/7.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/8.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/9.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/10.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/11.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/12.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/13.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/4.2/2026-04-15/14.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 5.1",
+      "url": "https://komiku.org/takou-no-koori-hime-wo-chikan-kara-tasuketara-otomedachi-kara-hajimeru-koto-ni-narimashita-chapter-5-1/",
+      "tanggal_rilis": "15/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/1.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/2.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/3.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/4.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/5.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/6.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/7.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/8.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/9.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/10.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/11.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/12.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/13.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/14.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/15.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/16.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/17.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/18.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/19.webp",
+        "https://img.komiku.org/upload5/takou-no-koori-hime-wo-chikan-kara-/5.1/2026-04-15/20.webp"
+      ]
+    },
     {
       "nama": "Chapter 5.2",
       "url": "https://komiku.org/takou-no-koori-hime-wo-chikan-kara-tasuketara-otomedachi-kara-hajimeru-koto-ni-narimashita-chapter-5-2/",
@@ -630,5 +747,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-30T17:26:05.202967"
+  "last_scraped": "2026-06-30T18:58:50.058807"
 }

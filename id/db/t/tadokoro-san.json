@@ -18,10 +18,81 @@
   "pembaca_mingguan": 9,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 26.5, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38",
+  "online": 25,
+  "chapterCount": 25,
+  "Chs": "Chapter 16, Chapter 17, Chapter 17.5, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 26.5, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38",
   "chapters": [
+    {
+      "nama": "Chapter 16",
+      "url": "https://komiku.org/tadokoro-san-chapter-16/",
+      "tanggal_rilis": "25/02/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2663084-1.jpg",
+        "https://img.komiku.org/uploads2/2663084-2.jpg",
+        "https://img.komiku.org/uploads2/2663084-3.jpg",
+        "https://img.komiku.org/uploads2/2663084-4.jpg",
+        "https://img.komiku.org/uploads2/2663084-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 17",
+      "url": "https://komiku.org/tadokoro-san-chapter-17/",
+      "tanggal_rilis": "25/02/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2663083-1.png",
+        "https://img.komiku.org/uploads2/2663083-2.jpg",
+        "https://img.komiku.org/uploads2/2663083-3.jpg",
+        "https://img.komiku.org/uploads2/2663083-4.jpg",
+        "https://img.komiku.org/uploads2/2663083-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 17.5",
+      "url": "https://komiku.org/tadokoro-san-chapter-17-5/",
+      "tanggal_rilis": "25/02/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2663082-1.jpg",
+        "https://img.komiku.org/uploads2/2663082-2.jpg",
+        "https://img.komiku.org/uploads2/2663082-3.jpg",
+        "https://img.komiku.org/uploads2/2663082-4.jpg",
+        "https://img.komiku.org/uploads2/2663082-5.jpg",
+        "https://img.komiku.org/uploads2/2663082-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 18",
+      "url": "https://komiku.org/tadokoro-san-chapter-18/",
+      "tanggal_rilis": "25/02/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2663081-1.jpg",
+        "https://img.komiku.org/uploads2/2663081-2.jpg",
+        "https://img.komiku.org/uploads2/2663081-3.jpg",
+        "https://img.komiku.org/uploads2/2663081-4.jpg",
+        "https://img.komiku.org/uploads2/2663081-5.jpg",
+        "https://img.komiku.org/uploads2/2663081-6.jpg",
+        "https://img.komiku.org/uploads2/2663081-7.jpg",
+        "https://img.komiku.org/uploads2/2663081-8.jpg",
+        "https://img.komiku.org/uploads2/2663081-9.jpg",
+        "https://img.komiku.org/uploads2/2663081-10.jpg",
+        "https://img.komiku.org/uploads2/2663081-11.jpg",
+        "https://img.komiku.org/uploads2/2663081-12.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 19",
+      "url": "https://komiku.org/tadokoro-san-chapter-19/",
+      "tanggal_rilis": "25/02/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2663080-1.jpg",
+        "https://img.komiku.org/uploads2/2663080-2.jpg",
+        "https://img.komiku.org/uploads2/2663080-3.jpg",
+        "https://img.komiku.org/uploads2/2663080-4.jpg",
+        "https://img.komiku.org/uploads2/2663080-5.jpg",
+        "https://img.komiku.org/uploads2/2663080-6.jpg",
+        "https://img.komiku.org/uploads2/2663080-7.jpg",
+        "https://img.komiku.org/uploads2/2663080-8.jpg"
+      ]
+    },
     {
       "nama": "Chapter 20",
       "url": "https://komiku.org/tadokoro-san-chapter-20/",
@@ -260,5 +331,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-06-30T17:25:05.654747"
+  "last_scraped": "2026-06-30T18:57:54.729369"
 }
