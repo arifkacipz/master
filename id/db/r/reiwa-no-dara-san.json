@@ -18,10 +18,41 @@
   "pembaca_mingguan": 29,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 40,
-  "chapterCount": 40,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 9.5, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 17.5, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 25.5, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 33.5, Chapter 36, Chapter 37, Chapter 38, Chapter 39",
+  "online": 41,
+  "chapterCount": 41,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 9.5, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 17.5, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 25.5, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 33.5, Chapter 36, Chapter 37, Chapter 38, Chapter 39",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/reiwa-no-dara-san-chapter-1/",
+      "tanggal_rilis": "03/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/1.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/2.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/3.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/4.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/5.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/6.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/7.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/8.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/9.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/10.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/11.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/12.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/13.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/14.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/15.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/16.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/17.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/18.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/19.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/20.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/21.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/22.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/23_part1.webp",
+        "https://img.komiku.org/upload5/reiwa-no-dara-san/1/2026-04-02/23_part2.webp"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/reiwa-no-dara-san-chapter-2/",
@@ -1347,5 +1378,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-01T00:07:42.043216"
+  "last_scraped": "2026-07-01T01:43:55.540708"
 }
