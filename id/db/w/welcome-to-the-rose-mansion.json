@@ -1,6 +1,7 @@
 {
   "judul": "Welcome to the Rose Mansion",
   "judul_alternatif": "Selamat Datang di Rose Mansion",
+  "slug": "welcome-to-the-rose-mansion",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701201512_f2d2a82a8584559d_b5171eee.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "Ongoing",
@@ -19,6 +20,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -427,10 +432,5 @@
       ]
     }
   ],
-  "slug": "welcome-to-the-rose-mansion",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-07-01T14:18:35.365383"
+  "last_scraped": "2026-07-01T16:07:46.710235"
 }
