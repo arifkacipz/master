@@ -1,6 +1,7 @@
 {
   "judul": "The Mansion Awaits Spring",
   "judul_alternatif": "Puri Menanti Musim Semi",
+  "slug": "the-mansion-awaits-spring",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701213038_695f191ae02fa665_6e6a1b65.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -103,10 +108,5 @@
       ]
     }
   ],
-  "slug": "the-mansion-awaits-spring",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-07-01T16:05:44.523461"
+  "last_scraped": "2026-07-01T17:12:29.282105"
 }

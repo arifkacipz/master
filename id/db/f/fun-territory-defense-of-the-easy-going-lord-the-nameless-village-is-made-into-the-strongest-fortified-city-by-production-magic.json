@@ -20,10 +20,136 @@
   "pembaca_mingguan": 4001,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 60,
-  "chapterCount": 60,
-  "Chs": "Chapter 20.2, Chapter 20.3, Chapter 21.1, Chapter 21.2, Chapter 21.3, Chapter 22.1, Chapter 22.2, Chapter 23.1, Chapter 23.2, Chapter 24.1, Chapter 24.2, Chapter 24.3, Chapter 25.1, Chapter 25.2, Chapter 26.1, Chapter 26.2, Chapter 26.3, Chapter 27.1, Chapter 27.2, Chapter 27.3, Chapter 28.1, Chapter 28.2, Chapter 29.1, Chapter 29.2, Chapter 29.3, Chapter 30.1, Chapter 30.2, Chapter 30.3, Chapter 31.1, Chapter 31.2, Chapter 31.3, Chapter 32.1, Chapter 32.2, Chapter 32.3, Chapter 33.1, Chapter 33.2, Chapter 34.1, Chapter 34.2, Chapter 35.1, Chapter 35.2, Chapter 35.3, Chapter 36.1, Chapter 36.2, Chapter 36.3, Chapter 37.1, Chapter 37.2, Chapter 37.3, Chapter 38.1, Chapter 38.2, Chapter 39.1, Chapter 39.2, Chapter 40.1, Chapter 40.2, Chapter 40.3, Chapter 41.1, Chapter 41.2, Chapter 42, Chapter 43.1, Chapter 43.2, Chapter 44.1",
+  "online": 65,
+  "chapterCount": 65,
+  "Chs": "Chapter 18, Chapter 19.1, Chapter 19.2, Chapter 19.3, Chapter 20.1 Fix, Chapter 20.2, Chapter 20.3, Chapter 21.1, Chapter 21.2, Chapter 21.3, Chapter 22.1, Chapter 22.2, Chapter 23.1, Chapter 23.2, Chapter 24.1, Chapter 24.2, Chapter 24.3, Chapter 25.1, Chapter 25.2, Chapter 26.1, Chapter 26.2, Chapter 26.3, Chapter 27.1, Chapter 27.2, Chapter 27.3, Chapter 28.1, Chapter 28.2, Chapter 29.1, Chapter 29.2, Chapter 29.3, Chapter 30.1, Chapter 30.2, Chapter 30.3, Chapter 31.1, Chapter 31.2, Chapter 31.3, Chapter 32.1, Chapter 32.2, Chapter 32.3, Chapter 33.1, Chapter 33.2, Chapter 34.1, Chapter 34.2, Chapter 35.1, Chapter 35.2, Chapter 35.3, Chapter 36.1, Chapter 36.2, Chapter 36.3, Chapter 37.1, Chapter 37.2, Chapter 37.3, Chapter 38.1, Chapter 38.2, Chapter 39.1, Chapter 39.2, Chapter 40.1, Chapter 40.2, Chapter 40.3, Chapter 41.1, Chapter 41.2, Chapter 42, Chapter 43.1, Chapter 43.2, Chapter 44.1",
   "chapters": [
+    {
+      "nama": "Chapter 18",
+      "url": "https://komiku.org/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic-chapter-18/",
+      "tanggal_rilis": "16/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2689651-1.jpg",
+        "https://img.komiku.org/uploads2/2689651-2.jpg",
+        "https://img.komiku.org/uploads2/2689651-3.jpg",
+        "https://img.komiku.org/uploads2/2689651-4.jpg",
+        "https://img.komiku.org/uploads2/2689651-5.jpg",
+        "https://img.komiku.org/uploads2/2689651-6.jpg",
+        "https://img.komiku.org/uploads2/2689651-7.jpg",
+        "https://img.komiku.org/uploads2/2689651-8.jpg",
+        "https://img.komiku.org/uploads2/2689651-9.jpg",
+        "https://img.komiku.org/uploads2/2689651-10.jpg",
+        "https://img.komiku.org/uploads2/2689651-11.jpg",
+        "https://img.komiku.org/uploads2/2689651-12.jpg",
+        "https://img.komiku.org/uploads2/2689651-13.jpg",
+        "https://img.komiku.org/uploads2/2689651-14.jpg",
+        "https://img.komiku.org/uploads2/2689651-15.jpg",
+        "https://img.komiku.org/uploads2/2689651-16.jpg",
+        "https://img.komiku.org/uploads2/2689651-17.jpg",
+        "https://img.komiku.org/uploads2/2689651-18.jpg",
+        "https://img.komiku.org/uploads2/2689651-19.jpg",
+        "https://img.komiku.org/uploads2/2689651-20.jpg",
+        "https://img.komiku.org/uploads2/2689651-21.jpg",
+        "https://img.komiku.org/uploads2/2689651-22.jpg",
+        "https://img.komiku.org/uploads2/2689651-23.jpg",
+        "https://img.komiku.org/uploads2/2689651-24.jpg",
+        "https://img.komiku.org/uploads2/2689651-25.jpg",
+        "https://img.komiku.org/uploads2/2689651-26.jpg",
+        "https://img.komiku.org/uploads2/2689651-27.jpg",
+        "https://img.komiku.org/uploads2/2689651-28.jpg",
+        "https://img.komiku.org/uploads2/2689651-29.jpg",
+        "https://img.komiku.org/uploads2/2689651-30.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 19.1",
+      "url": "https://komiku.org/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic-chapter-19-1/",
+      "tanggal_rilis": "25/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2691904-1.jpg",
+        "https://img.komiku.org/uploads2/2691904-2.jpg",
+        "https://img.komiku.org/uploads2/2691904-3.jpg",
+        "https://img.komiku.org/uploads2/2691904-4.jpg",
+        "https://img.komiku.org/uploads2/2691904-5.jpg",
+        "https://img.komiku.org/uploads2/2691904-6.jpg",
+        "https://img.komiku.org/uploads2/2691904-7.jpg",
+        "https://img.komiku.org/uploads2/2691904-8.jpg",
+        "https://img.komiku.org/uploads2/2691904-9.jpg",
+        "https://img.komiku.org/uploads2/2691904-10.jpg",
+        "https://img.komiku.org/uploads2/2691904-11.jpg",
+        "https://img.komiku.org/uploads2/2691904-12.jpg",
+        "https://img.komiku.org/uploads2/2691904-13.jpg",
+        "https://img.komiku.org/uploads2/2691904-14.jpg",
+        "https://img.komiku.org/uploads2/2691904-15.jpg",
+        "https://img.komiku.org/uploads2/2691904-16.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 19.2",
+      "url": "https://komiku.org/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic-chapter-19-2/",
+      "tanggal_rilis": "31/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2693547-1.jpg",
+        "https://img.komiku.org/uploads2/2693547-2.jpg",
+        "https://img.komiku.org/uploads2/2693547-3.jpg",
+        "https://img.komiku.org/uploads2/2693547-4.jpg",
+        "https://img.komiku.org/uploads2/2693547-5.jpg",
+        "https://img.komiku.org/uploads2/2693547-6.jpg",
+        "https://img.komiku.org/uploads2/2693547-7.jpg",
+        "https://img.komiku.org/uploads2/2693547-8.jpg",
+        "https://img.komiku.org/uploads2/2693547-9.jpg",
+        "https://img.komiku.org/uploads2/2693547-10.jpg",
+        "https://img.komiku.org/uploads2/2693547-11.jpg",
+        "https://img.komiku.org/uploads2/2693547-12.jpg",
+        "https://img.komiku.org/uploads2/2693547-13.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 19.3",
+      "url": "https://komiku.org/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic-chapter-19-3/",
+      "tanggal_rilis": "03/06/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2694222-1.jpg",
+        "https://img.komiku.org/uploads2/2694222-2.jpg",
+        "https://img.komiku.org/uploads2/2694222-3.jpg",
+        "https://img.komiku.org/uploads2/2694222-4.jpg",
+        "https://img.komiku.org/uploads2/2694222-5.jpg",
+        "https://img.komiku.org/uploads2/2694222-6.jpg",
+        "https://img.komiku.org/uploads2/2694222-7.jpg",
+        "https://img.komiku.org/uploads2/2694222-8.jpg",
+        "https://img.komiku.org/uploads2/2694222-9.jpg",
+        "https://img.komiku.org/uploads2/2694222-10.jpg",
+        "https://img.komiku.org/uploads2/2694222-11.jpg",
+        "https://img.komiku.org/uploads2/2694222-12.jpg",
+        "https://img.komiku.org/uploads2/2694222-13.jpg",
+        "https://img.komiku.org/uploads2/2694222-14.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 20.1 Fix",
+      "url": "https://komiku.org/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic-chapter-20-1/",
+      "tanggal_rilis": "10/01/2026",
+      "images": [
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/1.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/2.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/3.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/4.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/5.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/6.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/7.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/8.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/9.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/10.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/11.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/12.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/13.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/14.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/15.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/16.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/17.webp",
+        "https://img.komiku.org/upload5/fun-territory-defense-of-the-easy-g/20.1 Fix/2026-01-10/18.webp"
+      ]
+    },
     {
       "nama": "Chapter 20.2",
       "url": "https://komiku.org/fun-territory-defense-of-the-easy-going-lord-the-nameless-village-is-made-into-the-strongest-fortified-city-by-production-magic-chapter-20-2/",
@@ -1457,5 +1583,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-01T16:08:38.713542"
+  "last_scraped": "2026-07-01T17:14:49.590688"
 }
