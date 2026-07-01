@@ -1,6 +1,7 @@
 {
   "judul": "Kuzulesse Oblige - 18-kin Game Sekai no Kuzu Akuyaku ni Tensei Shiteshimatta Ore wa, Gensaku Chishiki no Chikara de Doushite mo Mob Jinsei wo Tsukami Toritai",
   "judul_alternatif": "Kuzulesse Oblige: Reinkarnasi Jadi Penjahat Busuk di Dunia Gim 18+, Aku Cuma Mau Hidup sebagai Mob dengan Modal Pengetahuan Asli",
+  "slug": "kuzulesse-oblige-18-kin-game-sekai-no-kuzu-akuyaku-ni-tensei-shiteshimatta-ore-wa-gensaku-chishiki-no-chikara-de-doushite-mo-mob-jinsei-wo-tsukami-toritai",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/05/20260605230010_2c7390cb839fdc29_dba94105.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -23,6 +24,10 @@
   "pembaca_total": 8240,
   "pembaca_mingguan": 835,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -257,10 +262,5 @@
       ]
     }
   ],
-  "slug": "kuzulesse-oblige-18-kin-game-sekai-no-kuzu-akuyaku-ni-tensei-shiteshimatta-ore-wa-gensaku-chishiki-no-chikara-de-doushite-mo-mob-jinsei-wo-tsukami-toritai",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-07-01T10:28:07.250028"
+  "last_scraped": "2026-07-01T11:56:21.294973"
 }
