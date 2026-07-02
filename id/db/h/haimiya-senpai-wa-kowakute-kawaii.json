@@ -19,10 +19,88 @@
   "pembaca_mingguan": 10937,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 30,
-  "chapterCount": 30,
-  "Chs": "Chapter 7, Chapter 8, Chapter 9, Chapter 9.5, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29.1, Chapter 29.2, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34",
+  "online": 35,
+  "chapterCount": 35,
+  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 9.5, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29.1, Chapter 29.2, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34",
   "chapters": [
+    {
+      "nama": "Chapter 2",
+      "url": "https://komiku.org/haimiya-senpai-wa-kowakute-kawaii-chapter-2/",
+      "tanggal_rilis": "08/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/2.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/3.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/4.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/5.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/6.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/2/2025-11-08/7.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 3",
+      "url": "https://komiku.org/haimiya-senpai-wa-kowakute-kawaii-chapter-3/",
+      "tanggal_rilis": "11/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/2.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/3.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/4.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/5.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/6.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/7.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/8.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/9.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/3/2025-11-11/10.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 4",
+      "url": "https://komiku.org/haimiya-senpai-wa-kowakute-kawaii-chapter-4/",
+      "tanggal_rilis": "12/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/2.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/3.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/4.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/5.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/6.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/7.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/8.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/4/2025-11-11/9.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 5",
+      "url": "https://komiku.org/haimiya-senpai-wa-kowakute-kawaii-chapter-5/",
+      "tanggal_rilis": "13/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/2.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/3.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/4.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/5.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/6.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/7.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/8.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/9.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/10.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/5/2025-11-13/11.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 6",
+      "url": "https://komiku.org/haimiya-senpai-wa-kowakute-kawaii-chapter-6/",
+      "tanggal_rilis": "15/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/6/2025-11-15/1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/6/2025-11-15/2_part1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/6/2025-11-15/2_part2.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/6/2025-11-15/3_part1.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/6/2025-11-15/3_part2.webp",
+        "https://img.komiku.org/upload5/haimiya-senpai-wa-kowakute-kawaii/6/2025-11-15/4.webp"
+      ]
+    },
     {
       "nama": "Chapter 7",
       "url": "https://komiku.org/haimiya-senpai-wa-kowakute-kawaii-chapter-7/",
@@ -710,5 +788,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-02T20:45:22.937322"
+  "last_scraped": "2026-07-02T21:05:48.308712"
 }
