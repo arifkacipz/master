@@ -17,10 +17,48 @@
   "pembaca_mingguan": 5854,
   "cara_baca": "Kiri ke kanan",
   "source": "komiku",
-  "online": 75,
-  "chapterCount": 75,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 20.5, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57, Chapter 58, Chapter 59, Chapter 60, Chapter 61, Chapter 62, Chapter 63, Chapter 64, Chapter 65, Chapter 66, Chapter 67, Chapter 68, Chapter 69, Chapter 70, Chapter 71, Chapter 72, Chapter 73, Chapter 74",
+  "online": 76,
+  "chapterCount": 76,
+  "Chs": "Chapter 00, Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 20.5, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57, Chapter 58, Chapter 59, Chapter 60, Chapter 61, Chapter 62, Chapter 63, Chapter 64, Chapter 65, Chapter 66, Chapter 67, Chapter 68, Chapter 69, Chapter 70, Chapter 71, Chapter 72, Chapter 73, Chapter 74",
   "chapters": [
+    {
+      "nama": "Chapter 00",
+      "url": "https://komiku.org/my-path-to-killing-god-in-otherworld-chapter-00/",
+      "tanggal_rilis": "26/08/2021",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/2409318-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-2_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-2_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-3_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-3_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-4_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-4_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-5_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-5_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-6_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-6_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-7_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-7_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-8_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-8_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-9_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-9_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-10_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-10_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-11_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-11_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-12_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-12_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-13_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-13_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-14_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-14_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-15_part1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-15_part2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/2409318-17.jpg"
+      ]
+    },
     {
       "nama": "Chapter 1",
       "url": "https://komiku.org/my-path-to-killing-god-in-otherworld-chapter-01/",
@@ -4526,5 +4564,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-02T20:59:20.169078"
+  "last_scraped": "2026-07-02T22:03:17.442550"
 }
