@@ -2,9 +2,9 @@
     "judul": "Sleepless Death",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Sleepless-Death-193x278.jpg",
     "source": "arenascan",
-    "online": 21,
-    "chapterCount": 21,
-    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 22,
+    "chapterCount": 22,
+    "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -767,7 +767,34 @@
                 "https://cdn.arenascan.com/arena-bucket/377469/21/36_result.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/sleepless-death-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/377469/22/01.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/02.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/03.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/04.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/05.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/06.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/07.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/08.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/09.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/15.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/16.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/17.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/18.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/19.jpg",
+                "https://cdn.arenascan.com/arena-bucket/377469/22/20.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-25T22:55:07.750180"
+    "last_scraped": "2026-07-02T13:02:50.828119"
 }
