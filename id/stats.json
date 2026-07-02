@@ -108,15 +108,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "hima-ten",
-    "judul": "Hima-Ten!",
-    "thumb": "https://thumbnail.komiku.org/img/upload/hima-ten_/img_684bcf86a53381.21525023.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "eiyuu-onna-kishi-ni-yuunou-to-bareta-ore-no-bijin-harem-kishidan-gaikaku-hikume-no-kijutsu-kishidan",
     "judul": "Eiyuu Onna Kishi ni Yuunou to Bareta Ore no Bijin Harem Kishidan - Gaikaku Hikume no Kijutsu Kishidan",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/19/20260519181516_84d845738d061a4c_16872806.jpg?w=1200",
@@ -205,6 +196,15 @@
     "online": 14,
     "tipe": "Manga",
     "status": "Ongoing"
+  },
+  {
+    "slug": "suterare-ouji-ga-saizensen-de-tekikoku-no-heishi-wo-chiryou-shitara-jitsu-wa-dainana-oujo-datta-ken",
+    "judul": "Suterare Ouji ga Saizensen de Tekikoku no Heishi wo Chiryou Shitara Jitsu wa Dainana Oujo datta Ken",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702191510_38288275c025fd31_01fbd827.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": ""
   },
   {
     "slug": "sekkaku-nouka-ni-tensei-shitanode-yuusha-wa-mezashimasen",
@@ -306,15 +306,6 @@
     "status": ""
   },
   {
-    "slug": "mahouka-koukou-no-rettousei-raihousha-hen-indo",
-    "judul": "Mahouka Koukou no Rettousei – Raihousha-hen",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mahouka-koukou-no-rettousei-raihousha-hen-indo/manga_thumbnail-Komik-Mahouka-Koukou-no-Rettousei--Raihousha-hen.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "majo-no-ending-note",
     "judul": "Majo no Ending Note",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224506_60ec3919b8a89b47_f7272831.webp?w=1200",
@@ -327,18 +318,9 @@
     "slug": "madogiwa-henshuu-to-baka-ni-sareta-ore-ga-futago-jk-to-doukyo-suru-koto-ni-natta",
     "judul": "Madogiwa henshuu to baka ni sareta ore ga, futago JK to doukyo suru koto ni natta",
     "thumb": "https://thumbnail.komiku.org/img/upload/madogiwa_henshuu_to_baka_ni_sareta_ore_ga/img_6836ba060b5715.81759095.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "legend-of-star-general",
-    "judul": "Legend of Star General",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/legend-of-star-general/manga_thumbnail-Manhua-Legend-of-Star-General.jpg?w=1200",
     "chapterCount": 10,
     "online": 10,
-    "tipe": "Manhua",
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -450,6 +432,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru",
+    "judul": "Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/kizoku-tensei-megumareta-umare-kara-saikyou-no-chikara-wo-eru/manga_thumbnail-KizokuTenseiCover.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "kanojo-wo-deresaseru-houhou-wo-shorai-kekon-suru-oredake-ga-shitteiru",
     "judul": "Kanojo wo Deresaseru Houhou wo, Shorai Kekon Suru Oredake ga Shitteiru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163036_d1ff02ae241920f5_7b82b238.jpg?w=1200",
@@ -522,15 +513,6 @@
     "status": ""
   },
   {
-    "slug": "kanojo-okarishimasu",
-    "judul": "Kanojo Okarishimasu",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/kanojo-okarishimasu/manga_thumbnail-Manga-Kanojo-Okarishimasu.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "akuyaku-kizoku-ga-hirakinaotte-hametsu-flag-wo-jitsuryoku-de-tatakiotteitara-itsunomanika-heroine-tachi-kara-eiyuushi-sareru-you-ni-natta-ken",
     "judul": "Akuyaku Kizoku ga Hirakinaotte Hametsu Flag wo \"Jitsuryoku\" de Tatakiotteitara, Itsunomanika Heroine-tachi kara Eiyuushi Sareru you ni Natta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223058_c1fb0b109509759b_86392d03.jpg?w=1200",
@@ -549,15 +531,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "a-weary-child-looks-for-his-father",
-    "judul": "A Weary Child Looks for His Father",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313050321_c6aa156a1cea8d9b_3018269c.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "ashita-mo-ii-hi-de-arimasu-you-ni",
     "judul": "Ashita mo Ii Hi de Arimasu you ni",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194507_a100975f28f0c13a_b6f2385f.webp?w=1200",
@@ -572,6 +545,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313040007_b3a9fa22d6ec2819_d44c804e.jpg?w=1200",
     "chapterCount": 4,
     "online": 4,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "childcare-diary-with-the-villain",
+    "judul": "Childcare Diary With the Villain",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702193011_8410dd8db04483b7_4099f8c9.jpg?w=1200",
+    "chapterCount": 0,
+    "online": 0,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -795,8 +777,8 @@
     "slug": "the-mansion-awaits-spring",
     "judul": "The Mansion Awaits Spring",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701213038_695f191ae02fa665_6e6a1b65.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 3,
+    "online": 3,
     "tipe": "Manhwa",
     "status": ""
   },
