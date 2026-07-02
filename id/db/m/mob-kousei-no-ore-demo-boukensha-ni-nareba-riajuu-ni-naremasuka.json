@@ -1,6 +1,7 @@
 {
   "judul": "Mob Kousei no Ore Demo Boukensha ni Nareba Riajuu ni Naremasuka?",
   "judul_alternatif": "Meski Hanya Siswa SMA Biasa, Kalau Jadi Petualang, Bisa Jadi Populer?",
+  "slug": "mob-kousei-no-ore-demo-boukensha-ni-nareba-riajuu-ni-naremasuka",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150047_8489a7650903e1b5_84926db0.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -22,6 +23,10 @@
   "pembaca_total": 2241,
   "pembaca_mingguan": 70,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -216,10 +221,5 @@
       ]
     }
   ],
-  "slug": "mob-kousei-no-ore-demo-boukensha-ni-nareba-riajuu-ni-naremasuka",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-07-02T11:04:21.542960"
+  "last_scraped": "2026-07-02T12:06:40.480710"
 }

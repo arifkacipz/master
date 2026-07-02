@@ -18,15 +18,6 @@
     "status": "Completed"
   },
   {
-    "slug": "versatile-sword-cultivator",
-    "judul": "Versatile Sword Cultivator",
-    "thumb": "https://thumbnail.komiku.org/img/upload/versatile_sword_cultivator/img_6853c0d16d3196.09649592.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -117,20 +108,11 @@
     "status": "Ongoing"
   },
   {
-    "slug": "haimiya-senpai-wa-kowakute-kawaii",
-    "judul": "Haimiya-senpai wa Kowakute Kawaii",
-    "thumb": "https://thumbnail.komiku.org/img/upload/haimiya-senpai_wa_kowakute_kawaii/img_690ef597ead4d7.84819415.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "hima-ten",
     "judul": "Hima-Ten!",
     "thumb": "https://thumbnail.komiku.org/img/upload/hima-ten_/img_684bcf86a53381.21525023.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -169,15 +151,6 @@
     "online": 8,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "game-chishiki-de-saikyou-ni-natta-mob-heishi-wa-shin-no-jitsuryoku-wo-kakushitai",
-    "judul": "Game Chishiki de Saikyou ni Natta Mob Heishi wa, Shin no Jitsuryoku wo Kakushitai",
-    "thumb": "https://thumbnail.komiku.org/img/upload/game_chishiki_de_saikyou_ni_natta_mob_heishi_wa/img_6831672c64a028.98483521.jpg?w=1200",
-    "chapterCount": 14,
-    "online": 14,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "game-kaishi-mae-ni-shini-mob-akuyaku-ouji-ni-tensei-shita-ore",
@@ -336,8 +309,8 @@
     "slug": "mahouka-koukou-no-rettousei-raihousha-hen-indo",
     "judul": "Mahouka Koukou no Rettousei – Raihousha-hen",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/mahouka-koukou-no-rettousei-raihousha-hen-indo/manga_thumbnail-Komik-Mahouka-Koukou-no-Rettousei--Raihousha-hen.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -351,11 +324,20 @@
     "status": ""
   },
   {
+    "slug": "madogiwa-henshuu-to-baka-ni-sareta-ore-ga-futago-jk-to-doukyo-suru-koto-ni-natta",
+    "judul": "Madogiwa henshuu to baka ni sareta ore ga, futago JK to doukyo suru koto ni natta",
+    "thumb": "https://thumbnail.komiku.org/img/upload/madogiwa_henshuu_to_baka_ni_sareta_ore_ga/img_6836ba060b5715.81759095.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "legend-of-star-general",
     "judul": "Legend of Star General",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/legend-of-star-general/manga_thumbnail-Manhua-Legend-of-Star-General.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
@@ -543,8 +525,8 @@
     "slug": "kanojo-okarishimasu",
     "judul": "Kanojo Okarishimasu",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/kanojo-okarishimasu/manga_thumbnail-Manga-Kanojo-Okarishimasu.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -567,29 +549,11 @@
     "status": "Ongoing"
   },
   {
-    "slug": "ascension-from-water-spirit-to-deity",
-    "judul": "Ascension: From Water Spirit to Deity",
-    "thumb": "https://thumbnail.komiku.org/img/upload/ascension__from_water_spirit_to_deity/img_682ef4a7ba1048.32533578.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "ano-shima-no-umine-sou",
-    "judul": "Ano Shima no Umine-sou",
-    "thumb": "https://thumbnail.komiku.org/img/upload/ano_shima_no_umine-sou/img_6972e9551066c2.32649942.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "a-weary-child-looks-for-his-father",
     "judul": "A Weary Child Looks for His Father",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313050321_c6aa156a1cea8d9b_3018269c.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
@@ -756,15 +720,6 @@
     "status": ""
   },
   {
-    "slug": "the-girl-who-see-it",
-    "judul": "The Girl Who See It",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-girl-who-see-it/manga_thumbnail-Manga-The-Girl-Who-See-It.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "the-heavenly-demons-otherworld-livestream",
     "judul": "The Heavenly Demon's Otherworld Livestream",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163019_5444771fc5cb78a3_b648308c.webp?w=1200",
@@ -810,13 +765,13 @@
     "status": "Ongoing"
   },
   {
-    "slug": "the-omni-guardian",
-    "judul": "The Omni Guardian",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_omni_guardian/img_6834162a04fc80.88777013.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
+    "slug": "they-told-you-to-farm-and-you-became-an-emperor",
+    "judul": "They Told You to Farm, and You Became an Emperor?",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702181507_8faf39ef1705404f_acede379.jpg?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manhwa",
+    "status": ""
   },
   {
     "slug": "tales-of-the-nonhuman",
@@ -835,15 +790,6 @@
     "online": 1,
     "tipe": "Manhua",
     "status": ""
-  },
-  {
-    "slug": "taida-na-akujo-kizoku-ni-tensei-shita-ore-shinario-o-bukko-wa-shitara-kikaku-gai-no-maryoku-de-saikyou-ni-natta",
-    "judul": "Taida na Akujo Kizoku ni Tensei Shita Ore, Shinario o Bukko wa Shitara Kikaku-gai no Maryoku de Saikyou ni Natta",
-    "thumb": "https://thumbnail.komiku.org/img/upload/taida_na_akujo_kizoku_ni_tensei_shita_ore/img_68492db7ba1ce9.66364302.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "the-mansion-awaits-spring",
@@ -897,15 +843,6 @@
     "chapterCount": 4,
     "online": 4,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "unbeatable-sword-master-cultivator",
-    "judul": "Unbeatable Sword Master Cultivator",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/unbeatable-sword-master-cultivator/manga_thumbnail-A2-Unbeatable-Sword-Master-Cultivator.jpg?w=1200",
-    "chapterCount": 13,
-    "online": 13,
-    "tipe": "Manhua",
     "status": "Ongoing"
   }
 ]
