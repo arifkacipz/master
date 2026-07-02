@@ -1,6 +1,7 @@
 {
   "judul": "Junjou gyaru wa kanojo janai no ni",
   "judul_alternatif": "Padahal Si Gyaru Polos Bukan Pacarku",
+  "slug": "junjou-gyaru-wa-kanojo-janai-no-ni",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702080011_a49c7790af7f73b9_6d7531d7.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -17,6 +18,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1.1",
   "chapters": [
     {
       "nama": "Chapter 1.1",
@@ -53,10 +58,5 @@
       ]
     }
   ],
-  "slug": "junjou-gyaru-wa-kanojo-janai-no-ni",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1.1",
-  "last_scraped": "2026-07-02T02:38:25.456789"
+  "last_scraped": "2026-07-02T07:58:49.069063"
 }

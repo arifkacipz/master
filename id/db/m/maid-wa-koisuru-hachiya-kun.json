@@ -17,10 +17,47 @@
   "pembaca_mingguan": 60,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 30,
-  "chapterCount": 30,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23.1, Chapter 23.2, Chapter 23.3, Chapter 24.1, Chapter 24.2, Chapter 25.1, Chapter 26.1, Chapter 26.2, Chapter 27.1",
+  "online": 31,
+  "chapterCount": 31,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23.1, Chapter 23.2, Chapter 23.3, Chapter 24.1, Chapter 24.2, Chapter 25.1, Chapter 26.1, Chapter 26.2, Chapter 27.1",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/maid-wa-koisuru-hachiya-kun-chapter-1/",
+      "tanggal_rilis": "20/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/1.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/2.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/3.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/4.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/5.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/6.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/7.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/8.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/9.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/10.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/11.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/12.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/13.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/14.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/15.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/16.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/17.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/18.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/19.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/20.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/21.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/22.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/23.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/24.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/25.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/26.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/27.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/28.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/29.webp",
+        "https://img.komiku.org/upload5/maid-wa-koisuru-hachiya-kun/1/2026-03-19/30.webp"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/maid-wa-koisuru-hachiya-kun-chapter-2/",
@@ -1119,5 +1156,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-02T02:39:02.916060"
+  "last_scraped": "2026-07-02T07:59:17.675718"
 }
