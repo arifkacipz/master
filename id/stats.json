@@ -153,24 +153,6 @@
     "status": ""
   },
   {
-    "slug": "got-dropped-into-a-ghost-story-still-gotta-work",
-    "judul": "Got Dropped Into A Ghost Story, Still Gotta Work",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150033_99f1768f6747d1c1_4fba2ef9.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
-    "slug": "god-of-martial-arts",
-    "judul": "God of Martial Arts",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/god-of-martial-arts/manga_thumbnail-Komik-God-of-Martial-Arts.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "game-kaishi-mae-ni-shini-mob-akuyaku-ouji-ni-tensei-shita-ore",
     "judul": "Game Kaishi Mae ni Shini Mob Akuyaku Ouji ni Tensei shita Ore",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629211511_01f631db9cd4fa4b_e9cdff8f.jpg?w=1200",
@@ -196,15 +178,6 @@
     "online": 1,
     "tipe": "Manhua",
     "status": ""
-  },
-  {
-    "slug": "sword-devouring-swordmaster",
-    "judul": "Sword Devouring Swordmaster",
-    "thumb": "https://thumbnail.komiku.org/img/upload/sword_devouring_swordmaster/img_69489c76c51499.94599048.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "shujinkou-no-osananajimi-ga-wakiyaku-no-ore-ni-gui-gui-kuru",
@@ -351,15 +324,6 @@
     "status": ""
   },
   {
-    "slug": "mairimashita-iruma-kun-if-episode-of-mafia",
-    "judul": "Mairimashita! Iruma-kun if – Episode of Mafia",
-    "thumb": "https://thumbnail.komiku.org/img/upload/mairimashita__iruma-kun_if_____episode_of_mafia/img_6847f456b32176.27182964.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "moto-saikyou-boukensha-no-rojiura-caffe-nonbiri-kaigyouroku",
     "judul": "Moto Saikyou Boukensha no Rojiura Caffe Nonbiri Kaigyouroku",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163015_8601527178d9a3ac_97b67d1a.webp?w=1200",
@@ -387,15 +351,6 @@
     "status": ""
   },
   {
-    "slug": "overgeared-new",
-    "judul": "Overgeared",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/overgeared-new/manga_thumbnail-Manhua-Overgeared-New.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "otome-game-no-mob-desura-naindaga",
     "judul": "Otome Game no Mob Desura Naindaga",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517233051_2dc0d0dfb0354e1b_8178fa7a.webp?w=1200",
@@ -412,15 +367,6 @@
     "online": 5,
     "tipe": "Manga",
     "status": ""
-  },
-  {
-    "slug": "osana-robot-to-abunai-hakase",
-    "judul": "Osana Robot to Abunai Hakase",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/28/20260328060011_41083b74db22bcde_ce4d2958.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "older-womens-club",
@@ -486,30 +432,12 @@
     "status": "Ongoing"
   },
   {
-    "slug": "obshchaka",
-    "judul": "Obshchaka",
-    "thumb": "https://thumbnail.komiku.org/img/upload/obshchaka/img_696df21a1b9021.29002698.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "diagnosis-from-a-fallen-angel",
     "judul": "Diagnosis From a Fallen Angel",
     "thumb": "https://thumbnail.komiku.org/img/upload/diagnosis_from_a_fallen_angel/img_688886e6d08665.60518820.jpg?w=1200",
     "chapterCount": 13,
     "online": 13,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "demon-lords-martial-arts-ascension",
-    "judul": "Demon Lord’s Martial Arts Ascension",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/demon-lords-martial-arts-ascension/manga_thumbnail-Demon-Lords-Martial-Arts-Ascension-1.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -786,8 +714,8 @@
     "slug": "i-opened-a-farm-in-a-cultivation-world",
     "judul": "I Opened a Farm in a Cultivation World",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183105_f0b446f4e259142e_1cc078ba.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manhua",
     "status": ""
   },
@@ -822,8 +750,8 @@
     "slug": "the-demon-king-overrun-by-heroes",
     "judul": "The Demon King Overrun by Heroes",
     "thumb": "https://thumbnail.komiku.org/img/upload/the_demon_king_overrun_by_heroes/img_692d66c9bbdd06.08528109.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -840,8 +768,8 @@
     "slug": "the-sword-emperors-path-to-namgung",
     "judul": "The Sword Emperor’s Path To Namgung",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/18/20260618233012_a1fc192961f0e1c8_9af3a131.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -864,33 +792,6 @@
     "status": ""
   },
   {
-    "slug": "tyrant-of-the-otherworld-my-shadow-can-evolve-infinitely",
-    "judul": "Tyrant of the Otherworld: My Shadow Can Evolve Infinitely",
-    "thumb": "https://thumbnail.komiku.org/img/upload/tyrant_of_the_otherworld__my_shadow_can_evolve_infinitely/img_686630d7cfab55.70017709.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "the-regressed-extra-becomes-a-genius",
-    "judul": "The Regressed Extra Becomes a Genius",
-    "thumb": "https://thumbnail.komiku.org/img/upload/boku_no_ikezu_na_konyakusha/img_69314ef4486cf0.17832604.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "the-snow-leopard-baby-of-the-black-leopard-family",
-    "judul": "The Snow Leopard Baby of the Black Leopard Family",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_snow_leopard_baby_of_the_black_leopard_family/img_68318db433b301.55983329.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "the-hero-returns-from-another-world",
     "judul": "The Hero Returns From Another World",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/the-hero-returns-from-another-world/manga_thumbnail-The-Hero-Returns-From-Another-World-1.jpg?w=1200",
@@ -903,8 +804,8 @@
     "slug": "tears-on-a-withered-flower",
     "judul": "Tears on a Withered Flower",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030053_4c1eb4cc1290a2ee_e9797d76.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -921,8 +822,8 @@
     "slug": "the-seventh-prince-wants-to-bail",
     "judul": "The Seventh Prince Wants to Bail",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/29/20260529233013_4c3f2b87e32f734b_4809afbd.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -988,15 +889,6 @@
     "online": 10,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "the-ss-rank-freshman-at-dawn-academy",
-    "judul": "The SS-Rank Freshman at Dawn Academy",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_ss-rank_freshman_at_dawn_academy/img_69ac8d6f8e5354.96195829.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "the-chaebol-familys-genius-monster",

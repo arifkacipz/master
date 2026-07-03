@@ -16,10 +16,63 @@
   "pembaca_mingguan": 21,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57, Chapter 58",
+  "online": 15,
+  "chapterCount": 15,
+  "Chs": "Chapter 45, Chapter 46, Chapter 46.5, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57, Chapter 58",
   "chapters": [
+    {
+      "nama": "Chapter 45",
+      "url": "https://komiku.org/osana-robot-to-abunai-hakase-chapter-45/",
+      "tanggal_rilis": "28/03/2026",
+      "images": [
+        "https://img2.komiku.org/upload5/osana-robot-to-abunai-hakase/45/2026-03-27/1.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/45/2026-03-27/2.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/45/2026-03-27/3.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 46",
+      "url": "https://komiku.org/osana-robot-to-abunai-hakase-chapter-46/",
+      "tanggal_rilis": "02/04/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/osana-robot-to-abunai-hakase/46/2026-04-01/1.webp",
+        "https://img1.komiku.org/upload5/osana-robot-to-abunai-hakase/46/2026-04-01/2.webp",
+        "https://img1.komiku.org/upload5/osana-robot-to-abunai-hakase/46/2026-04-01/3.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 46.5",
+      "url": "https://komiku.org/osana-robot-to-abunai-hakase-chapter-46-5/",
+      "tanggal_rilis": "12/04/2026",
+      "images": [
+        "https://img2.komiku.org/upload5/osana-robot-to-abunai-hakase/46.5/2026-04-12/1.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/46.5/2026-04-12/2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 47",
+      "url": "https://komiku.org/osana-robot-to-abunai-hakase-chapter-47/",
+      "tanggal_rilis": "12/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/47/2026-04-12/1.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/47/2026-04-12/2.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/47/2026-04-12/3.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 48",
+      "url": "https://komiku.org/osana-robot-to-abunai-hakase-chapter-48/",
+      "tanggal_rilis": "17/04/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/1.webp",
+        "https://img2.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/2.webp",
+        "https://img2.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/3.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/4.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/5.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/6.webp",
+        "https://img.komiku.org/upload5/osana-robot-to-abunai-hakase/48/2026-04-17/7.webp"
+      ]
+    },
     {
       "nama": "Chapter 49",
       "url": "https://komiku.org/osana-robot-to-abunai-hakase-chapter-49/",
@@ -133,5 +186,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-03T19:10:01.188907"
+  "last_scraped": "2026-07-03T20:37:14.939413"
 }
