@@ -18,6 +18,15 @@
     "status": "Completed"
   },
   {
+    "slug": "replica-datte-koi-wo-suru",
+    "judul": "Replica Datte, Koi wo suru.",
+    "thumb": "https://thumbnail.komiku.org/img/upload/replica_datte__koi_wo_suru/img_6874b1b8902df7.05046792.jpg?w=1200",
+    "chapterCount": 10,
+    "online": 10,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -57,8 +66,8 @@
     "slug": "became-a-family-with-the-four-duke-brothers",
     "judul": "Became a Family with the Four Duke Brothers",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074524_16e11585d4854fde_cc7c0838.jpg?w=1200",
-    "chapterCount": 9,
-    "online": 9,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -72,9 +81,27 @@
     "status": ""
   },
   {
+    "slug": "buchigire-reijou-wa-houfuku-wo-chikaimashita-madousho-no-chikara-de-sokoku-wo-tataki-tsubushimasu",
+    "judul": "Buchigire Reijou wa Houfuku wo Chikaimashita. ~Madousho no Chikara de Sokoku wo Tataki Tsubushimasu~",
+    "thumb": "https://thumbnail.komiku.org/img/upload/buchigire_reijou_wa_houfuku_wo_chikaimashita/img_692180e7c221a5.10973363.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "bocil-villain-si-cenayang",
     "judul": "Bocil Villain Si Cenayang",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513163005_e5bbc9e25f1afa6f_18c469a1.jpg?w=1200",
+    "chapterCount": 10,
+    "online": 10,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "became-the-patron-of-villains",
+    "judul": "Became The Patron Of Villains",
+    "thumb": "https://thumbnail.komiku.org/img/upload/became_the_patron_of_villains/img_68fb1d5e505ad1.35527108.jpg?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manhwa",
@@ -124,15 +151,6 @@
     "online": 4,
     "tipe": "Manga",
     "status": "Ongoing"
-  },
-  {
-    "slug": "home-plate-villain",
-    "judul": "Home Plate Villain",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/home-plate-villain/manga_thumbnail-1-Home-Plate-Villain.jpeg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
   },
   {
     "slug": "eiyuu-onna-kishi-ni-yuunou-to-bareta-ore-no-bijin-harem-kishidan-gaikaku-hikume-no-kijutsu-kishidan",
@@ -225,6 +243,15 @@
     "status": ""
   },
   {
+    "slug": "shokubutsu-monster-musume-nikki",
+    "judul": "Shokubutsu Monster Musume Nikki",
+    "thumb": "https://thumbnail.komiku.org/img/upload/shokubutsu_monster_musume_nikki/img_6864e5960d97d8.57789635.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "shura-youjo-no-eiyuutan-hanpa-sha-to-iwa-reta-youhei-youjo-ni-tensei-shite-nariagaru",
     "judul": "Shura Youjo no Eiyuutan ~Hanpa-sha to Iwa Reta Youhei, Youjo ni Tensei Shite Nariagaru~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424011523_4f65cd120a22fd0e_d5e66610.webp?w=1200",
@@ -282,8 +309,8 @@
     "slug": "mamahaha-no-kokoroe",
     "judul": "Mamahaha no Kokoroe",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/18/20260618171511_c5a90c090af5fc71_8d1e409b.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -333,6 +360,15 @@
     "status": ""
   },
   {
+    "slug": "mood-disorder",
+    "judul": "Mood Disorder",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415164508_7416770607586738_d85ae03d.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "mozaik-role",
     "judul": "Mozaik Role",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163006_624373ef2f635466_6ab6fd08.webp?w=1200",
@@ -349,6 +385,15 @@
     "online": 1,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "magical-realm-shopkeeper",
+    "judul": "Magical Realm Shopkeeper",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/magical-realm-shopkeeper/manga_thumbnail-A2-Magical-Realm-Shopkeeper.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "majo-no-ending-note",
@@ -435,8 +480,8 @@
     "slug": "ookii-muki-muki-chiisai-muchi-muchi",
     "judul": "Ookii Muki Muki Chiisai Muchi Muchi",
     "thumb": "https://thumbnail.komiku.org/img/upload/ookii_muki_muki_chiisai_muchi_muchi/img_6878a9e4207326.40108972.jpg?w=1200",
-    "chapterCount": 9,
-    "online": 9,
+    "chapterCount": 14,
+    "online": 14,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -495,20 +540,20 @@
     "status": "Ongoing"
   },
   {
+    "slug": "kingdom",
+    "judul": "Kingdom",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/kingdom/manga_thumbnail-Komik-Kingdom.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "keppeki-sakyubasu-wa-xxx-ga-o-kirai",
     "judul": "Keppeki sakyubasu wa ××× ga o kirai!",
     "thumb": "https://thumbnail.komiku.org/img/upload/keppeki_sakyubasu_wa/img_684fcd52e4c156.96580990.jpg?w=1200",
     "chapterCount": 12,
     "online": 12,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "komik-one-piece-indo",
-    "judul": "One Piece",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/komik-one-piece-indo/manga_thumbnail-Komik-One-Piece.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -561,8 +606,8 @@
     "slug": "kuni-wo-owareta-ryuushi-san-hirowareta-ringoku-de-ukkari-musou-shite-shimau",
     "judul": "Kuni wo Owareta Ryuushi-san, Hirowareta Ringoku de Ukkari Musou shite Shimau",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/kuni-wo-owareta-ryuushi-san-hirowareta-ringoku-de-ukkari-musou-shite-shimau/manga_thumbnail-A2-Kuni-wo-Owareta-Ryuushi-san-Hirowareta-Ringoku-de-Ukkari-Musou-shite-Shimau.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -630,6 +675,24 @@
     "status": "Ongoing"
   },
   {
+    "slug": "crimson-heart-wanderer",
+    "judul": "Crimson Heart Wanderer",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030119_7fef132e68717e04_7ba97591.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "crimson-reset",
+    "judul": "Crimson Reset",
+    "thumb": "https://thumbnail.komiku.org/img/upload/crimson_reset/img_692d671fc6eb26.09029638.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "contract-killer-enrollment",
     "judul": "Contract Killer Enrollment",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224605_06f0ed4c6aaf1e77_e9de94ba.jpg?w=1200",
@@ -684,6 +747,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "i-was-immediately-mistaken-for-a-monster-genius-actor",
+    "judul": "I Was Immediately Mistaken for a Monster Genius Actor",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-was-immediately-mistaken-for-a-monster-genius-actor/manga_thumbnail-A2-I-Was-Immediately-Mistaken-for-a-Monster-Genius-Actor.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "if-the-fairy-is-heartless-then-let-her-become-a-furnace",
     "judul": "If the Fairy is Heartless, Then Let her Become a Furnace!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143033_fd1eda44380e0bf8_d080ea73.jpg?w=1200",
@@ -705,6 +777,15 @@
     "slug": "i-dont-want-to-play-matchmaker",
     "judul": "I Don’t Want to Play Matchmaker!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/02/20260602123028_dd7e04a5da379c10_13a79422.jpg?w=1200",
+    "chapterCount": 10,
+    "online": 10,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "i-created-an-urban-legend",
+    "judul": "I Created an Urban Legend!",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-created-an-urban-legend/manga_thumbnail-Head-I-Created-an-Urban-Legend.jpg?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manhua",
@@ -717,6 +798,15 @@
     "chapterCount": 14,
     "online": 14,
     "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "i-can-evolve-everything-remake",
+    "judul": "I Can Evolve Everything (Remake)",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517231605_6df72e7c643534da_199e8bcb.webp?w=1200",
+    "chapterCount": 6,
+    "online": 6,
+    "tipe": "Manhua",
     "status": ""
   },
   {
@@ -774,15 +864,6 @@
     "status": ""
   },
   {
-    "slug": "the-ultimate-romanticist",
-    "judul": "The Ultimate Romanticist",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223103_e195749535309ccd_0c036efd.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "this-assassin-is-a-son-in-law",
     "judul": "This Assassin is a Son-in-Law",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424010158_76fd481bf0b95609_945ea8f9.webp?w=1200",
@@ -792,6 +873,15 @@
     "status": ""
   },
   {
+    "slug": "the-extras-academy-survival-guide",
+    "judul": "The Extra’s Academy Survival Guide",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-extras-academy-survival-guide/manga_thumbnail-Head-The-Extras-Academy-Survival-Guide.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "the-heavenly-demons-otherworld-livestream",
     "judul": "The Heavenly Demon's Otherworld Livestream",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629163019_5444771fc5cb78a3_b648308c.webp?w=1200",
@@ -799,6 +889,15 @@
     "online": 6,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "the-regressed-extra-becomes-a-genius",
+    "judul": "The Regressed Extra Becomes a Genius",
+    "thumb": "https://thumbnail.komiku.org/img/upload/boku_no_ikezu_na_konyakusha/img_69314ef4486cf0.17832604.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "the-hero-returns-from-another-world",
@@ -824,15 +923,6 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194532_38bcd5a0586f67d6_1d284584.webp?w=1200",
     "chapterCount": 7,
     "online": 7,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
-    "slug": "the-baby-fairy-is-a-villain",
-    "judul": "The Baby Fairy is a Villain",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703141505_9ea6e8efe07d5511_e5f28569.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -885,18 +975,18 @@
     "slug": "the-mansion-awaits-spring",
     "judul": "The Mansion Awaits Spring",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701213038_695f191ae02fa665_6e6a1b65.jpg?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
   {
-    "slug": "the-demon-slayers-restaurant",
-    "judul": "The Demon Slayer’s Restaurant",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_demon_slayer___s_restaurant/img_682d627029ac22.69578289.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
+    "slug": "the-divine-path-in-eternal-darkness",
+    "judul": "The Divine Path in Eternal Darkness",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-divine-path-in-eternal-darkness/manga_thumbnail-A2-The-Divine-Path-in-Eternal-Darkness.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
   },
   {
@@ -906,6 +996,24 @@
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-genius-decided-to-live-an-ordinary-life",
+    "judul": "The Genius Decided to Live an Ordinary Life",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-genius-decided-to-live-an-ordinary-life/manga_thumbnail-A2-The-Genius-Decided-to-Live-an-Ordinary-Life.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-games-greatest-troll",
+    "judul": "The Game’s Greatest Troll",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-games-greatest-troll/manga_thumbnail-Manhua-The-Games-Greatest-Troll.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
