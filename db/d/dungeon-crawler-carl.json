@@ -2,9 +2,9 @@
     "judul": "Dungeon Crawler Carl",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/cb62aa47-094b-4df7-a384-ca7b4bd97a24.webp",
     "source": "arenascan",
-    "online": 41,
-    "chapterCount": 41,
-    "Chs": "Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 43,
+    "chapterCount": 43,
+    "Chs": "Chapter 43, Chapter 42, Chapter 41, Chapter 40, Chapter 39, Chapter 38, Chapter 37, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -2766,7 +2766,51 @@
                 "https://cdn.arenascan.com/arena-bucket/233858/41/c5d9e4f0d72c.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 42",
+            "url": "https://arenascan.com/dungeon-crawler-carl-chapter-42/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/233858/42/8b67a6678ccc.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/70b4eb4d1656.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/19d4c324feb0.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/88a3895c8594.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/7a0ef45fc201.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/a044dbe4765b.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/022a0a2db3db.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/3e8859cf7b8f.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/b78292920ade.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/c95a00012d2b.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/e8d505c04a8c.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/42/e41c7305408e.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 43",
+            "url": "https://arenascan.com/dungeon-crawler-carl-chapter-43/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/233858/43/5764ff34c83c.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/9cc9fa5baf6c.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/356126c0a301.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/f2cc5614f71e.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/ca6aab313cf3.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/264dc77237cf.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/24e934a01b92.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/7ed45bd99763.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/271dde8ab089.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/80ebdfa3aecd.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/4a007f957153.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/d9d19df1b4bc.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/acf176a66288.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/0b06f84ed6f4.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/2720a05e7124.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/f84e3ca563bc.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/2d8a0e26236a.webp",
+                "https://cdn.arenascan.com/arena-bucket/233858/43/7dea9019b51a.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-19T12:31:58.624294"
+    "last_scraped": "2026-07-03T21:38:36.218167"
 }
