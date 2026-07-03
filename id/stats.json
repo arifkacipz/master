@@ -9,15 +9,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "reality-quest",
-    "judul": "Reality Quest",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/reality-quest/manga_thumbnail-Manga-Reality-Quest.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "rabu-kome-suki-to-kossori-tsunagaritai",
     "judul": "#Rabu kome-suki to kossori tsunagaritai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140026_41e7c78383942870_58d068f2.jpg?w=1200",
@@ -81,6 +72,15 @@
     "status": ""
   },
   {
+    "slug": "bocil-villain-si-cenayang",
+    "judul": "Bocil Villain Si Cenayang",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513163005_e5bbc9e25f1afa6f_18c469a1.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "haha-no-ai-wa-mama-naranai",
     "judul": "Haha no Ai wa Mama Naranai!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324060022_3e2c9fcfaca23bef_76aa4c8a.webp?w=1200",
@@ -126,20 +126,11 @@
     "status": "Ongoing"
   },
   {
-    "slug": "how-to-dial-down-a-gangster-male-lead",
-    "judul": "How to Dial Down a Gangster Male Lead",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415154540_17c28a8234f26ca4_c3443bd5.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
     "slug": "home-plate-villain",
     "judul": "Home Plate Villain",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/home-plate-villain/manga_thumbnail-1-Home-Plate-Villain.jpeg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -162,15 +153,6 @@
     "status": ""
   },
   {
-    "slug": "from-disgraced-lady-to-beloved-stepmother",
-    "judul": "From Disgraced Lady to Beloved Stepmother",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524184506_7a2f044188e8c136_264572ca.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "fight-delivery",
     "judul": "Fight Delivery",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513164504_7f1bb6e21f820b6f_0cfefd87.jpg?w=1200",
@@ -183,8 +165,8 @@
     "slug": "gomi-ika-da-to-tsuihou-sareta-shiyounin-jitsu-wa-zense-kenja-desu-shijou-saikyou-no-kenja-sekai-saikouhou-no-gakuen-ni-kayou",
     "judul": "Gomi Ika da to Tsuihou Sareta Shiyounin, Jitsu wa Zense Kenja desu ~Shijou Saikyou no Kenja, Sekai Saikouhou no Gakuen ni Kayou~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151511_44ce1aaaf1acd180_f327c650.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 6,
+    "online": 6,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -333,15 +315,6 @@
     "status": ""
   },
   {
-    "slug": "mannen-d-rank-no-chuunen-boukensha-yotta-ikioi-de-densetsu-no-ken-wo-hikkonuku",
-    "judul": "Mannen D-rank No Chuunen Boukensha Yotta Ikioi De Densetsu No Ken Wo Hikkonuku",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mannen-d-rank-no-chuunen-boukensha-yotta-ikioi-de-densetsu-no-ken-wo-hikkonuku/manga_thumbnail-Komik-Mannen-D-rank-No-Chuunen-Boukensha-Yotta-Ikioi-De-Densetsu-No-Ken-Wo-Hikkonuku.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "maou-sama-re-re-revenge",
     "judul": "Maou-sama, Re Re Revenge!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143015_5b0b543901308d8a_22725a8e.webp?w=1200",
@@ -405,15 +378,6 @@
     "status": ""
   },
   {
-    "slug": "osananananajimi",
-    "judul": "Osananananajimi",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/20/20260320000027_0d6d92f0d0246a18_2a8a2667.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": ""
-  },
-  {
     "slug": "oshiete-shitsuji-kun",
     "judul": "Oshiete Shitsuji-Kun",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524181558_8e850277e2524f24_4ce7e6b9.webp?w=1200",
@@ -444,8 +408,8 @@
     "slug": "our-ancestors-are-watching",
     "judul": "Our Ancestors are Watching",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703134511_162d1936e78d9eff_4a5b0a93.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -471,8 +435,8 @@
     "slug": "ookii-muki-muki-chiisai-muchi-muchi",
     "judul": "Ookii Muki Muki Chiisai Muchi Muchi",
     "thumb": "https://thumbnail.komiku.org/img/upload/ookii_muki_muki_chiisai_muchi_muchi/img_6878a9e4207326.40108972.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -492,24 +456,6 @@
     "chapterCount": 13,
     "online": 13,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "dark-and-light-martial-emperor",
-    "judul": "Dark and Light Martial Emperor",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/dark-and-light-martial-emperor/manga_thumbnail-Head-Dark-and-Light-Martial-Emperor.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "dungeon-crawler-carl",
-    "judul": "Dungeon Crawler Carl",
-    "thumb": "https://thumbnail.komiku.org/img/upload/dungeon_crawler_carl/img_68970b24cc4711.76886360.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -561,8 +507,8 @@
     "slug": "komik-one-piece-indo",
     "judul": "One Piece",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/komik-one-piece-indo/manga_thumbnail-Komik-One-Piece.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -608,6 +554,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/18/20260618143019_8070ac6d9be7ff70_5283181d.jpg?w=1200",
     "chapterCount": 2,
     "online": 2,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "kuni-wo-owareta-ryuushi-san-hirowareta-ringoku-de-ukkari-musou-shite-shimau",
+    "judul": "Kuni wo Owareta Ryuushi-san, Hirowareta Ringoku de Ukkari Musou shite Shimau",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/kuni-wo-owareta-ryuushi-san-hirowareta-ringoku-de-ukkari-musou-shite-shimau/manga_thumbnail-A2-Kuni-wo-Owareta-Ryuushi-san-Hirowareta-Ringoku-de-Ukkari-Musou-shite-Shimau.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -747,11 +702,11 @@
     "status": ""
   },
   {
-    "slug": "i-became-a-god-devouring-souls-at-the-crematorium",
-    "judul": "I Became a God Devouring Souls at the Crematorium",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324060050_4855abb9405027de_d3734b14.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "i-dont-want-to-play-matchmaker",
+    "judul": "I Don’t Want to Play Matchmaker!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/02/20260602123028_dd7e04a5da379c10_13a79422.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
@@ -763,15 +718,6 @@
     "online": 14,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "i-became-the-villain-the-hero-is-obsessed-with",
-    "judul": "I Became The Villain The Hero Is Obsessed With",
-    "thumb": "https://thumbnail.komiku.org/img/upload/i_became_the_villain_the_hero_is_obsessed_with/img_68d82c5ba696d2.73362409.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "i-picked-up-this-worlds-strategy-guide",
@@ -789,15 +735,6 @@
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "i-only-need-the-dukes-child",
-    "judul": "I Only Need the Duke’s Child",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524181527_fb6e0dd48e4399c4_c634f36f.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -840,8 +777,8 @@
     "slug": "the-ultimate-romanticist",
     "judul": "The Ultimate Romanticist",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223103_e195749535309ccd_0c036efd.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -891,29 +828,11 @@
     "status": ""
   },
   {
-    "slug": "terminally-ill-genius-dark-knight",
-    "judul": "Terminally-Ill Genius Dark Knight",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/terminally-ill-genius-dark-knight/manga_thumbnail-Head-Terminally-Ill-Genius-Dark-Knight.jpg?w=1200",
-    "chapterCount": 14,
-    "online": 14,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "the-magic-theory-of-the-regressed-sword-saint",
-    "judul": "The Magic Theory of the Regressed Sword Saint",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/19/20260319234510_5943bc0c1363e0ee_c34781b8.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "the-baby-fairy-is-a-villain",
     "judul": "The Baby Fairy is a Villain",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703141505_9ea6e8efe07d5511_e5f28569.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -954,15 +873,6 @@
     "status": ""
   },
   {
-    "slug": "the-genius-grandson-of-namgung-clan",
-    "judul": "The Genius Grandson of Namgung Clan",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_genius_grandson_of_namgung_clan/img_686781abbfa805.59947653.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "the-fake-saintess-of-a-reverse-harem-game",
     "judul": "The Fake Saintess of a Reverse Harem Game",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703031512_6d492cb2b39d8064_356e5823.png?w=1200",
@@ -975,8 +885,8 @@
     "slug": "the-mansion-awaits-spring",
     "judul": "The Mansion Awaits Spring",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701213038_695f191ae02fa665_6e6a1b65.jpg?w=1200",
-    "chapterCount": 3,
-    "online": 3,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -984,8 +894,8 @@
     "slug": "the-demon-slayers-restaurant",
     "judul": "The Demon Slayer’s Restaurant",
     "thumb": "https://thumbnail.komiku.org/img/upload/the_demon_slayer___s_restaurant/img_682d627029ac22.69578289.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -993,8 +903,8 @@
     "slug": "the-crown-prince-that-sells-medicine",
     "judul": "The Crown Prince That Sells Medicine",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/the-crown-prince-that-sells-medicine/manga_thumbnail-Head-The-Crown-Prince-That-Sells-Medicine.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -1002,8 +912,8 @@
     "slug": "the-chaebol-familys-genius-monster",
     "judul": "The Chaebol Family's Genius Monster",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703064516_7b3cbfc7fdb7dbb8_e91a49f1.webp?w=1200",
-    "chapterCount": 2,
-    "online": 2,
+    "chapterCount": 6,
+    "online": 6,
     "tipe": "Manhwa",
     "status": ""
   },

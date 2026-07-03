@@ -1,6 +1,7 @@
 {
   "judul": "Baito-saki no Net Café ga, Nazeka Class no Bishoujo-tachi no Tamariba ni Natta Ken",
   "judul_alternatif": "Warnet Tempat Kerjaku Entah Kenapa Jadi Tongkrongan Para Gadis Tercantik di Kelas",
+  "slug": "baito-saki-no-net-cafe-ga-nazeka-class-no-bishoujo-tachi-no-tamariba-ni-natta-ken",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703140009_8c8359a00f52e6d0_de4c97c3.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -57,10 +62,5 @@
       ]
     }
   ],
-  "slug": "baito-saki-no-net-cafe-ga-nazeka-class-no-bishoujo-tachi-no-tamariba-ni-natta-ken",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-07-03T09:54:08.980341"
+  "last_scraped": "2026-07-03T12:06:13.827511"
 }

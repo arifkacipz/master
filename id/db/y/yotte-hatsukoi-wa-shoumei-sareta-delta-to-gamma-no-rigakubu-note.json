@@ -1,6 +1,7 @@
 {
   "judul": "Yotte, Hatsukoi wa Shoumei sareta. Delta to Gamma no Rigakubu Note",
   "judul_alternatif": "Karena Itu, Cinta Pertama Terbukti: Catatan Fakultas Sains Delta dan Gamma",
+  "slug": "yotte-hatsukoi-wa-shoumei-sareta-delta-to-gamma-no-rigakubu-note",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223026_92beffe066cd82a6_6682f57d.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 808,
   "pembaca_mingguan": 16,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -162,10 +167,5 @@
       ]
     }
   ],
-  "slug": "yotte-hatsukoi-wa-shoumei-sareta-delta-to-gamma-no-rigakubu-note",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-03T09:54:35.948918"
+  "last_scraped": "2026-07-03T12:06:33.669053"
 }
