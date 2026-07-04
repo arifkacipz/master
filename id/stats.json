@@ -18,6 +18,15 @@
     "status": "Completed"
   },
   {
+    "slug": "ragna-crimson",
+    "judul": "Ragna Crimson",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/ragna-crimson/manga_thumbnail-Komik-Ragna-Crimson.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -180,11 +189,29 @@
     "status": ""
   },
   {
+    "slug": "sword-of-the-undying",
+    "judul": "Sword of The Undying",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170026_d20e99a8ed909b87_f9e3da5a.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
     "slug": "shujinkou-no-osananajimi-ga-wakiyaku-no-ore-ni-gui-gui-kuru",
     "judul": "Shujinkou no Osananajimi ga, Wakiyaku no Ore ni Gui Gui Kuru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194517_8001e773041626df_7a6d2d77.jpg?w=1200",
     "chapterCount": 1,
     "online": 1,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "sekai-saikyou-no-kouei-meikyuukoku-no-shinjin-tansakusha",
+    "judul": "Sekai Saikyou no Kouei: Meikyuukoku no Shinjin Tansakusha",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/sekai-saikyou-no-kouei-meikyuukoku-no-shinjin-tansakusha/manga_thumbnail-Komik-Sekai-Saikyou-no-Kouei-Meikyuukoku-no-Shinjin-Tansakusha.jpeg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -212,6 +239,15 @@
     "thumb": "https://thumbnail.komiku.org/img/upload/senpai__chotto_ii_desu_ka_/img_686781d894ea37.48335212.jpg?w=1200",
     "chapterCount": 14,
     "online": 14,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "shikisai-no-mahou",
+    "judul": "Shikisai no Mahou",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/25/20260525233028_0900459d7903dd12_d4da7340.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -351,6 +387,15 @@
     "status": ""
   },
   {
+    "slug": "legend-of-the-low-level-martial-artist",
+    "judul": "Legend of the Low-Level Martial Artist",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150120_4d42606be9205d9b_8f4ea776.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "otome-game-no-mob-desura-naindaga",
     "judul": "Otome Game no Mob Desura Naindaga",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517233051_2dc0d0dfb0354e1b_8178fa7a.webp?w=1200",
@@ -466,6 +511,15 @@
     "online": 8,
     "tipe": "Manhua",
     "status": ""
+  },
+  {
+    "slug": "nonderi-kubo-wa-genjitsu-no-koi-ga-shiritai",
+    "judul": "Nonderi Kubo wa Genjitsu no Koi ga Shiritai",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513171642_66fe8a5a9dab4d95_c4f885e2.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "killing-guard",
@@ -594,6 +648,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "a-mercenarys-rebirth-among-nobles",
+    "judul": "A Mercenary’s Rebirth Among Nobles",
+    "thumb": "https://thumbnail.komiku.org/img/upload/a_mercenary___s_rebirth_among_nobles/img_6936921213feb6.30656261.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "akujo-ranking",
     "judul": "AKUJO RANKING",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313040007_b3a9fa22d6ec2819_d44c804e.jpg?w=1200",
@@ -609,6 +672,15 @@
     "chapterCount": 10,
     "online": 10,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "chronicles-of-the-demon-faction",
+    "judul": "Chronicles of the Demon Faction",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/chronicles-of-the-demon-faction/manga_thumbnail-Head-Chronicles-of-the-Demon-Faction.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -675,11 +747,11 @@
     "status": ""
   },
   {
-    "slug": "i-will-try-to-save-my-dad",
-    "judul": "I Will Try to Save My Dad",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524181531_923a563e3b49f14d_66d9dcc4.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "i-became-the-tyrant-of-a-defense-game",
+    "judul": "I Became the Tyrant of a Defense Game",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-became-the-tyrant-of-a-defense-game/manga_thumbnail-Manhwa-I-Became-the-Tyrant-of-a-Defense-Game.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -765,15 +837,6 @@
     "status": ""
   },
   {
-    "slug": "the-obsessive-maniac-is-trying-to-confine-me",
-    "judul": "The Obsessive Maniac Is Trying to Confine Me",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524181538_715d658e8e6f6c8a_f71a285e.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "this-assassin-is-a-son-in-law",
     "judul": "This Assassin is a Son-in-Law",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424010158_76fd481bf0b95609_945ea8f9.webp?w=1200",
@@ -815,15 +878,6 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/29/20260529233013_4c3f2b87e32f734b_4809afbd.jpg?w=1200",
     "chapterCount": 11,
     "online": 11,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "the-scandal-maker-has-returned",
-    "judul": "The Scandal Maker Has Returned",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151622_27c678516414cf77_67bed8fa.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -876,8 +930,8 @@
     "slug": "the-fake-saintess-of-a-reverse-harem-game",
     "judul": "The Fake Saintess of a Reverse Harem Game",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703031512_6d492cb2b39d8064_356e5823.png?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -948,8 +1002,8 @@
     "slug": "youre-the-only-one-i-can-see",
     "judul": "You’re the Only One I Can See",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415160105_0e0368d1f09dd742_132d470f.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
