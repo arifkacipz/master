@@ -2,9 +2,9 @@
     "judul": "The Unbeatable Dungeon\u2019s Lazy Boss Monster",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/dflazy.jpg",
     "source": "arenascan",
-    "online": 5,
-    "chapterCount": 5,
-    "Chs": "Chapter 132, Chapter 131, Chapter 130, Chapter 129, Chapter 128",
+    "online": 6,
+    "chapterCount": 6,
+    "Chs": "Chapter 133, Chapter 132, Chapter 131, Chapter 130, Chapter 129, Chapter 128",
     "chapters": [
         {
             "nama": "Chapter 128",
@@ -113,7 +113,25 @@
                 "https://cdn.arenascan.com/arena-bucket/410799/132/015.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 133",
+            "url": "https://arenascan.com/the-unbeatable-dungeon-s-lazy-boss-monster-chapter-133/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/410799/133/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/410799/133/011.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-27T15:47:02.616352"
+    "last_scraped": "2026-07-04T09:37:02.302467"
 }
