@@ -1,5 +1,16 @@
 [
   {
+    "slug": "boss-beating",
+    "judul": "Boss Beating",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/Boss-Beating-193x278.jpg",
+    "total_online": 20,
+    "total_downloaded": 18,
+    "missing": [
+      "Chapter 17",
+      "Chapter 16"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -19,6 +30,26 @@
       "Chapter 80",
       "Chapter 79",
       "Chapter 78"
+    ]
+  },
+  {
+    "slug": "mistaken-for-a-wicked-woman",
+    "judul": "Mistaken for a Wicked Woman!",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/11f2f7a5-19ca-4f23-9fd1-7970586f098d.webp",
+    "total_online": 84,
+    "total_downloaded": 83,
+    "missing": [
+      "Chapter 81"
+    ]
+  },
+  {
+    "slug": "lets-divorce-not-obsess",
+    "judul": "Let’s Divorce, Not Obsess!",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/10/55ee96d4-a7e5-4898-abe8-40eb2d354a30.webp",
+    "total_online": 51,
+    "total_downloaded": 50,
+    "missing": [
+      "Chapter 49"
     ]
   },
   {
