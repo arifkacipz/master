@@ -1,6 +1,7 @@
 {
   "judul": "The Journey of a Dark Elf with Fading Powers",
   "judul_alternatif": "Perjalanan Seorang Elf Gelap dengan Kekuatan yang Memudar",
+  "slug": "the-journey-of-a-dark-elf-with-fading-powers",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/05/20260605230021_cdaf5a7ac6e93156_5e29456e.webp?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 92,
   "pembaca_mingguan": 5,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -178,10 +183,5 @@
       ]
     }
   ],
-  "slug": "the-journey-of-a-dark-elf-with-fading-powers",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-04T10:30:42.767813"
+  "last_scraped": "2026-07-04T11:22:04.260769"
 }
