@@ -1,5 +1,17 @@
 [
   {
+    "slug": "war-of-the-stray-dogs",
+    "judul": "War of the Stray Dogs",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/War-of-the-Stray-Dogs-193x278.jpg",
+    "total_online": 26,
+    "total_downloaded": 23,
+    "missing": [
+      "Chapter 23",
+      "Chapter 22",
+      "Chapter 21"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -19,6 +31,24 @@
       "Chapter 80",
       "Chapter 79",
       "Chapter 78"
+    ]
+  },
+  {
+    "slug": "the-hero-returns",
+    "judul": "The Hero Returns",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/91f0874e-21b1-4e54-8e1d-eb06d6858f7f.jpg",
+    "total_online": 163,
+    "total_downloaded": 165,
+    "missing": [
+      "Chapter 09",
+      "Chapter 08",
+      "Chapter 07",
+      "Chapter 06",
+      "Chapter 05",
+      "Chapter 04",
+      "Chapter 03",
+      "Chapter 02",
+      "Chapter 01"
     ]
   },
   {
