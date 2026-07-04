@@ -1,6 +1,7 @@
 {
   "judul": "Hangyakusha to Shite Oukoku de Shokei Sareta Kakure Saikyou Kishi",
   "judul_alternatif": "Ksatria Tersembunyi Terkuat yang Dieksekusi Kerajaan sebagai Pemberontak",
+  "slug": "hangyakusha-to-shite-oukoku-de-shokei-sareta-kakure-saikyou-kishi",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/12/20260312144324_c8edc85365c00d58_ded05b49.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -18,6 +19,10 @@
   "pembaca_total": 1144,
   "pembaca_mingguan": 15,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -174,10 +179,5 @@
       ]
     }
   ],
-  "slug": "hangyakusha-to-shite-oukoku-de-shokei-sareta-kakure-saikyou-kishi",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-04T15:00:33.013328"
+  "last_scraped": "2026-07-04T16:04:00.762762"
 }
