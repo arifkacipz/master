@@ -18,10 +18,126 @@
   "pembaca_mingguan": 1232,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 15,
-  "chapterCount": 15,
-  "Chs": "Chapter 12.1, Chapter 12.2, Chapter 13, Chapter 14.1, Chapter 14.2, Chapter 15.1, Chapter 15.2, Chapter 16.1, Chapter 16.2, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22",
+  "online": 20,
+  "chapterCount": 20,
+  "Chs": "Chapter 9.2, Chapter 10.1, Chapter 10.2, Chapter 11.1, Chapter 11.2, Chapter 12.1, Chapter 12.2, Chapter 13, Chapter 14.1, Chapter 14.2, Chapter 15.1, Chapter 15.2, Chapter 16.1, Chapter 16.2, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22",
   "chapters": [
+    {
+      "nama": "Chapter 9.2",
+      "url": "https://komiku.org/rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou-chapter-9-2/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/1.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/2.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/3.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/4.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/5.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/6.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/7.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/8.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/9.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/12.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/13.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/14.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/15.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/16.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/17.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/18.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/19.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/9.2/2026-03-23/20.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 10.1",
+      "url": "https://komiku.org/rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou-chapter-10-1/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/1.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/2.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/3.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/4.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/5.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/6.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/12.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/13.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/14.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.1/2026-03-23/15.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 10.2",
+      "url": "https://komiku.org/rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou-chapter-10-2/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/1.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/2.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/3.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/4.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/5.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/6.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/10.2/2026-03-23/12.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 11.1",
+      "url": "https://komiku.org/rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou-chapter-11-1/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/1.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/2.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/3.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/4.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/5.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/6.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/7.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/8.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/9.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/12.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/13.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/14.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/15.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/16.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/17.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/18.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/19.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.1/2026-03-23/20.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 11.2",
+      "url": "https://komiku.org/rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou-chapter-11-2/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/1.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/2.webp",
+        "https://img1.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/3.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/4.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/5.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/6.webp",
+        "https://img2.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/12.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/13.webp",
+        "https://img.komiku.org/upload5/rinkoku-kara-kita-yome-ga-kawaisugi/11.2/2026-03-23/14.webp"
+      ]
+    },
     {
       "nama": "Chapter 12.1",
       "url": "https://komiku.org/rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou-chapter-12-1/",
@@ -443,5 +559,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-04T20:48:08.655491"
+  "last_scraped": "2026-07-04T21:17:05.100379"
 }
