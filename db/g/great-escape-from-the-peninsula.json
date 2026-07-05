@@ -3,9 +3,39 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/ce4f90f6e604.webp",
     "source": "arenascan",
     "online": 7,
-    "chapterCount": 6,
+    "chapterCount": 7,
     "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/great-escape-from-the-peninsula-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431708/1/ab81250e9326.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/e8d76a0f4323.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/55beb616381c.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/f2cc8ccc7059.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/ecd50dbea911.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/25c84592eecd.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/b1d769837b46.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/ce87806e2015.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/2e319a9516ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/8c3486f35cc5.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/a73384098110.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/10d3efa9bcdf.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/f1a8519bd754.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/51bf66fa24af.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/d7e566741e02.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/9147f57b5dfe.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/0f951275e1d5.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/a4aa6bf9883d.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/609e8a78e2a9.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/9c7ac4186c94.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/180d737dd78c.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/89950dce561a.webp",
+                "https://cdn.arenascan.com/arena-bucket/431708/1/72d1e506c41a.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/great-escape-from-the-peninsula-chapter-2/",
@@ -143,5 +173,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-05T16:19:29.393443"
+    "last_scraped": "2026-07-05T18:39:15.178123"
 }
