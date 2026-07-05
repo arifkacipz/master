@@ -2,9 +2,9 @@
     "judul": "King of Improvisation",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/King-of-Improvisation-193x278.jpg",
     "source": "arenascan",
-    "online": 22,
-    "chapterCount": 22,
-    "Chs": "Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 24,
+    "chapterCount": 24,
+    "Chs": "Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -501,7 +501,41 @@
                 "https://cdn.arenascan.com/arena-bucket/380661/23/08.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/king-of-improvisation-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380661/24/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/24/010.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 25",
+            "url": "https://arenascan.com/king-of-improvisation-chapter-25/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380661/25/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/380661/25/010.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-21T18:04:22.975928"
+    "last_scraped": "2026-07-05T20:23:16.429591"
 }
