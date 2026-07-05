@@ -18,15 +18,6 @@
     "status": "Completed"
   },
   {
-    "slug": "reset-life-of-regression-police",
-    "judul": "Reset Life of Regression Police",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/reset-life-of-regression-police/manga_thumbnail-Reset-Life-of-Regression-Police-1.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -78,15 +69,6 @@
     "chapterCount": 0,
     "online": 0,
     "tipe": "Manhwa",
-    "status": ""
-  },
-  {
-    "slug": "8-sai-kara-hajimeru-mahougaku",
-    "judul": "8-sai kara Hajimeru Mahougaku",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183013_7fe05c67e430653a_5bfb9873.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
     "status": ""
   },
   {
@@ -180,15 +162,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "god-of-blackfield",
-    "judul": "God of Blackfield",
-    "thumb": "https://thumbnail.komiku.org/img/upload/god_of_blackfield/img_690c4bd7be0472.02262862.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "green-skin",
     "judul": "Green Skin",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/03/20260603054511_ef11969f3fc1570a_4c97481f.webp?w=1200",
@@ -277,6 +250,15 @@
     "online": 6,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "surviving-in-a-school-of-ghost-stories",
+    "judul": "Surviving in a School of Ghost Stories",
+    "thumb": "https://thumbnail.komiku.org/img/upload/surviving_in_a_school_of_ghost_stories/img_693fd5f88a5c63.47365626.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "sekkaku-nouka-ni-tensei-shitanode-yuusha-wa-mezashimasen",
@@ -459,15 +441,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "ore-yuusha-janai-desu-kara-vr-sekai-no-chouten-ni-kunrin-seshi-otoko-tenseishi-level-1-no-mushoku-kara-restart-suru",
-    "judul": "Ore, Yuusha janai desu kara. – VR Sekai no Chouten ni Kunrin Seshi Otoko. Tenseishi, Level 1 no Mushoku kara Restart suru",
-    "thumb": "https://thumbnail.komiku.org/img/upload/ore__yuusha_janai_desu_kara/img_682d9ef55d1a33.67978655.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "osananajimitachi-ga-ninki-idol-ni-natta-amama-na-kanojotachi-wa-ore-ni-mitsuide-kureteiru",
     "judul": "Osananajimitachi ga Ninki Idol ni Natta: Amama na Kanojotachi wa Ore ni Mitsuide Kureteiru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/14/20260414144512_c0e1f4f2554191f2_58e0039b.jpg?w=1200",
@@ -540,15 +513,6 @@
     "status": ""
   },
   {
-    "slug": "dungeons-and-crayons",
-    "judul": "Dungeons and Crayons",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314031519_ef4a55619db539f4_731187b9.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "namaiki-asahi-chan-wo-wakarasetai",
     "judul": "Namaiki Asahi-chan wo Wakarasetai",
     "thumb": "https://thumbnail.komiku.org/img/upload/namaiki_asahi-chan_wo_wakarasetai/img_684bdaaff0dda2.22663497.jpg?w=1200",
@@ -615,6 +579,15 @@
     "slug": "kuzulesse-oblige-18-kin-game-sekai-no-kuzu-akuyaku-ni-tensei-shiteshimatta-ore-wa-gensaku-chishiki-no-chikara-de-doushite-mo-mob-jinsei-wo-tsukami-toritai",
     "judul": "Kuzulesse Oblige - 18-kin Game Sekai no Kuzu Akuyaku ni Tensei Shiteshimatta Ore wa, Gensaku Chishiki no Chikara de Doushite mo Mob Jinsei wo Tsukami Toritai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/05/20260605230010_2c7390cb839fdc29_dba94105.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "kuma-kuma-kuma-bear",
+    "judul": "Kuma Kuma Kuma Bear",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/kuma-kuma-kuma-bear/manga_thumbnail-Komik-Kuma-Kuma-Kuma-Bear.jpeg?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manga",
@@ -750,8 +723,8 @@
     "slug": "contract-killer-enrollment",
     "judul": "Contract Killer Enrollment",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224605_06f0ed4c6aaf1e77_e9de94ba.jpg?w=1200",
-    "chapterCount": 7,
-    "online": 7,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhwa",
     "status": ""
   },
