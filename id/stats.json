@@ -1,14 +1,5 @@
 [
   {
-    "slug": "riches-cant-buy-loyalty",
-    "judul": "Riches Can’t Buy Loyalty",
-    "thumb": "https://thumbnail.komiku.org/img/upload/riches_can___t_buy_loyalty/img_68356b52079934.48867146.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "rojiura-de-hirotta-onnanoko-ga-bad-end-go-no-otome-game-no-heroine-datta-ken",
     "judul": "Rojiura de Hirotta Onnanoko ga Bad End-go no Otome Game no Heroine Datta Ken",
     "thumb": "https://thumbnail.komiku.org/img/upload/rojiura_de_hirotta_onnanoko_ga_bad_end-go_no_otome_game_no_heroine_datta_ken/img_691ee6089c8511.88968637.png?w=1200",
@@ -25,6 +16,15 @@
     "online": 0,
     "tipe": "Manga",
     "status": "Completed"
+  },
+  {
+    "slug": "reset-life-of-regression-police",
+    "judul": "Reset Life of Regression Police",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/reset-life-of-regression-police/manga_thumbnail-Reset-Life-of-Regression-Police-1.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "worlds-strongest-punch",
@@ -81,13 +81,13 @@
     "status": ""
   },
   {
-    "slug": "blue-lock",
-    "judul": "Blue Lock",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/blue-lock/manga_thumbnail-Manga-Blue-Lock.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "slug": "8-sai-kara-hajimeru-mahougaku",
+    "judul": "8-sai kara Hajimeru Mahougaku",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183013_7fe05c67e430653a_5bfb9873.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
-    "status": "Ongoing"
+    "status": ""
   },
   {
     "slug": "haha-no-ai-wa-mama-naranai",
@@ -177,6 +177,15 @@
     "chapterCount": 6,
     "online": 6,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "god-of-blackfield",
+    "judul": "God of Blackfield",
+    "thumb": "https://thumbnail.komiku.org/img/upload/god_of_blackfield/img_690c4bd7be0472.02262862.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -444,8 +453,8 @@
     "slug": "otoko-girai-na-bijin-shimai-wo-namae-mo-tsugezu-ni-tasuketara-ittai-dounaru",
     "judul": "Otoko Girai na Bijin Shimai wo Namae mo Tsugezu ni Tasuketara Ittai Dounaru?",
     "thumb": "https://thumbnail.komiku.org/img/upload/otoko_girai_na_bijin_shimai_wo_namae/img_6850feb07e2659.14222424.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -456,6 +465,15 @@
     "chapterCount": 6,
     "online": 6,
     "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "ore-yuusha-janai-desu-kara-vr-sekai-no-chouten-ni-kunrin-seshi-otoko-tenseishi-level-1-no-mushoku-kara-restart-suru",
+    "judul": "Ore, Yuusha janai desu kara. – VR Sekai no Chouten ni Kunrin Seshi Otoko. Tenseishi, Level 1 no Mushoku kara Restart suru",
+    "thumb": "https://thumbnail.komiku.org/img/upload/ore__yuusha_janai_desu_kara/img_682d9ef55d1a33.67978655.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -531,12 +549,12 @@
     "status": ""
   },
   {
-    "slug": "nihon-e-youkoso-elf-san",
-    "judul": "Nihon e Youkoso Elf-san",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/nihon-e-youkoso-elf-san/manga_thumbnail-Head-Nihon-e-Youkoso-Elf-san.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
+    "slug": "dungeons-and-crayons",
+    "judul": "Dungeons and Crayons",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314031519_ef4a55619db539f4_731187b9.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {

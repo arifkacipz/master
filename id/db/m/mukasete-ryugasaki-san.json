@@ -20,10 +20,73 @@
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 35,
-  "chapterCount": 35,
-  "Chs": "Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
+  "online": 40,
+  "chapterCount": 40,
+  "Chs": "Chapter 91, Chapter 92, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
   "chapters": [
+    {
+      "nama": "Chapter 91",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-91/",
+      "tanggal_rilis": "18/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2794245-1.jpg",
+        "https://img2.komiku.org/uploads2/2794245-2.jpg",
+        "https://img2.komiku.org/uploads2/2794245-3.jpg",
+        "https://img.komiku.org/uploads2/2794245-4.jpg",
+        "https://img.komiku.org/uploads2/2794245-5.jpg",
+        "https://img.komiku.org/uploads2/2794245-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 92",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-92/",
+      "tanggal_rilis": "18/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2794518-1.jpg",
+        "https://img2.komiku.org/uploads2/2794518-2.jpg",
+        "https://img2.komiku.org/uploads2/2794518-3.jpg",
+        "https://img.komiku.org/uploads2/2794518-4.jpg",
+        "https://img.komiku.org/uploads2/2794518-5.jpg",
+        "https://img.komiku.org/uploads2/2794518-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 93",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-93/",
+      "tanggal_rilis": "19/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2794681-1.jpg",
+        "https://img2.komiku.org/uploads2/2794681-2.jpg",
+        "https://img.komiku.org/uploads2/2794681-3.jpg",
+        "https://img.komiku.org/uploads2/2794681-4.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 94",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-94/",
+      "tanggal_rilis": "20/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2794901-1.jpg",
+        "https://img2.komiku.org/uploads2/2794901-2.jpg",
+        "https://img2.komiku.org/uploads2/2794901-3.jpg",
+        "https://img.komiku.org/uploads2/2794901-4.jpg",
+        "https://img.komiku.org/uploads2/2794901-5.jpg",
+        "https://img.komiku.org/uploads2/2794901-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 95",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-95/",
+      "tanggal_rilis": "22/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2795092-1.jpg",
+        "https://img2.komiku.org/uploads2/2795092-2.jpg",
+        "https://img2.komiku.org/uploads2/2795092-3.jpg",
+        "https://img.komiku.org/uploads2/2795092-4.jpg",
+        "https://img.komiku.org/uploads2/2795092-5.jpg",
+        "https://img.komiku.org/uploads2/2795092-6.jpg"
+      ]
+    },
     {
       "nama": "Chapter 96",
       "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-96/",
@@ -614,5 +677,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-05T15:11:12.631615"
+  "last_scraped": "2026-07-05T16:34:33.473448"
 }
