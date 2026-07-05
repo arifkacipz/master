@@ -20,10 +20,77 @@
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 25,
-  "chapterCount": 25,
-  "Chs": "Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
+  "online": 30,
+  "chapterCount": 30,
+  "Chs": "Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
   "chapters": [
+    {
+      "nama": "Chapter 101",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-101/",
+      "tanggal_rilis": "28/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2796636-1.jpg",
+        "https://img1.komiku.org/uploads2/2796636-2.jpg",
+        "https://img2.komiku.org/uploads2/2796636-3.jpg",
+        "https://img2.komiku.org/uploads2/2796636-4.jpg",
+        "https://img.komiku.org/uploads2/2796636-5.jpg",
+        "https://img.komiku.org/uploads2/2796636-6.jpg",
+        "https://img.komiku.org/uploads2/2796636-7.jpg",
+        "https://img.komiku.org/uploads2/2796636-8.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 102",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-102/",
+      "tanggal_rilis": "29/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2796842-1.jpg",
+        "https://img2.komiku.org/uploads2/2796842-2.jpg",
+        "https://img2.komiku.org/uploads2/2796842-3.jpg",
+        "https://img.komiku.org/uploads2/2796842-4.jpg",
+        "https://img.komiku.org/uploads2/2796842-5.jpg",
+        "https://img.komiku.org/uploads2/2796842-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 103",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-103/",
+      "tanggal_rilis": "29/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2796985-1.jpg",
+        "https://img2.komiku.org/uploads2/2796985-2.jpg",
+        "https://img2.komiku.org/uploads2/2796985-3.jpg",
+        "https://img.komiku.org/uploads2/2796985-4.jpg",
+        "https://img.komiku.org/uploads2/2796985-5.jpg",
+        "https://img.komiku.org/uploads2/2796985-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 104",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-104/",
+      "tanggal_rilis": "30/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2797161-1.jpg",
+        "https://img2.komiku.org/uploads2/2797161-2.jpg",
+        "https://img2.komiku.org/uploads2/2797161-3.jpg",
+        "https://img.komiku.org/uploads2/2797161-4.jpg",
+        "https://img.komiku.org/uploads2/2797161-5.jpg",
+        "https://img.komiku.org/uploads2/2797161-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 105",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-105/",
+      "tanggal_rilis": "31/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2797327-1.jpg",
+        "https://img2.komiku.org/uploads2/2797327-2.jpg",
+        "https://img2.komiku.org/uploads2/2797327-3.jpg",
+        "https://img.komiku.org/uploads2/2797327-4.jpg",
+        "https://img.komiku.org/uploads2/2797327-5.jpg",
+        "https://img.komiku.org/uploads2/2797327-6.jpg"
+      ]
+    },
     {
       "nama": "Chapter 106",
       "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-106/",
@@ -479,5 +546,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-05T13:17:25.296210"
+  "last_scraped": "2026-07-05T14:58:31.836102"
 }
