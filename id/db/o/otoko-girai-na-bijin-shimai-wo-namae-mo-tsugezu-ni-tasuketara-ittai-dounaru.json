@@ -17,10 +17,43 @@
   "pembaca_mingguan": 37,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 25,
-  "chapterCount": 25,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 26, Chapter 27",
+  "online": 26,
+  "chapterCount": 26,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 26, Chapter 27",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/otoko-girai-na-bijin-shimai-wo-namae-mo-tsugezu-ni-tasuketara-ittai-dounaru-chapter-1/",
+      "tanggal_rilis": "17/06/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/1.jpg",
+        "https://img1.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/2.jpg",
+        "https://img1.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/3.jpg",
+        "https://img1.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/4.jpg",
+        "https://img1.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/5.jpg",
+        "https://img1.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/6.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/7.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/8.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/9.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/10.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/11.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/12.jpg",
+        "https://img2.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/13.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/14.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/15.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/16.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/17.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/18.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/19.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/20.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/21.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/22.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/23.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/24.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/25.jpg",
+        "https://img.komiku.org/upload5/otoko-girai-na-bijin-shimai-wo-nama/1/2025-06-17/26.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/otoko-girai-na-bijin-shimai-wo-namae-mo-tsugezu-ni-tasuketara-ittai-dounaru-chapter-2/",
@@ -805,5 +838,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-05T18:06:52.613974"
+  "last_scraped": "2026-07-05T19:49:37.414845"
 }

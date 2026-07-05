@@ -20,10 +20,78 @@
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 55,
-  "chapterCount": 55,
-  "Chs": "Chapter 77, Chapter 78, Chapter 78.5, Chapter 79, Chapter 80, Chapter 81, Chapter 82, Chapter 83, Chapter 84, Chapter 85, Chapter 86, Chapter 87, Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
+  "online": 60,
+  "chapterCount": 60,
+  "Chs": "Chapter 72, Chapter 73, Chapter 74, Chapter 75, Chapter 76, Chapter 77, Chapter 78, Chapter 78.5, Chapter 79, Chapter 80, Chapter 81, Chapter 82, Chapter 83, Chapter 84, Chapter 85, Chapter 86, Chapter 87, Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
   "chapters": [
+    {
+      "nama": "Chapter 72",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-72/",
+      "tanggal_rilis": "18/02/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2784845-1.jpg",
+        "https://img2.komiku.org/uploads2/2784845-2.jpg",
+        "https://img2.komiku.org/uploads2/2784845-3.jpg",
+        "https://img.komiku.org/uploads2/2784845-4.jpg",
+        "https://img.komiku.org/uploads2/2784845-5.jpg",
+        "https://img.komiku.org/uploads2/2784845-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 73",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-73/",
+      "tanggal_rilis": "19/02/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2784964-1.jpg",
+        "https://img1.komiku.org/uploads2/2784964-2.jpg",
+        "https://img2.komiku.org/uploads2/2784964-3.jpg",
+        "https://img2.komiku.org/uploads2/2784964-4.jpg",
+        "https://img.komiku.org/uploads2/2784964-5.jpg",
+        "https://img.komiku.org/uploads2/2784964-6.jpg",
+        "https://img.komiku.org/uploads2/2784964-7.jpg",
+        "https://img.komiku.org/uploads2/2784964-8.jpg",
+        "https://img.komiku.org/uploads2/2784964-9.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 74",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-74/",
+      "tanggal_rilis": "20/02/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2785143-1.jpg",
+        "https://img2.komiku.org/uploads2/2785143-2.jpg",
+        "https://img2.komiku.org/uploads2/2785143-3.jpg",
+        "https://img.komiku.org/uploads2/2785143-4.jpg",
+        "https://img.komiku.org/uploads2/2785143-5.jpg",
+        "https://img.komiku.org/uploads2/2785143-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 75",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-75/",
+      "tanggal_rilis": "21/02/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2785317-1.jpg",
+        "https://img2.komiku.org/uploads2/2785317-2.jpg",
+        "https://img2.komiku.org/uploads2/2785317-3.jpg",
+        "https://img.komiku.org/uploads2/2785317-4.jpg",
+        "https://img.komiku.org/uploads2/2785317-5.jpg",
+        "https://img.komiku.org/uploads2/2785317-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 76",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-76/",
+      "tanggal_rilis": "02/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2788934-1.jpg",
+        "https://img2.komiku.org/uploads2/2788934-2.jpg",
+        "https://img2.komiku.org/uploads2/2788934-3.jpg",
+        "https://img.komiku.org/uploads2/2788934-4.jpg",
+        "https://img.komiku.org/uploads2/2788934-5.jpg",
+        "https://img.komiku.org/uploads2/2788934-6.jpg"
+      ]
+    },
     {
       "nama": "Chapter 77",
       "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-77/",
@@ -896,5 +964,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-05T18:08:44.008210"
+  "last_scraped": "2026-07-05T19:51:29.706291"
 }
