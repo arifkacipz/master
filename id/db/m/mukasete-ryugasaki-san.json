@@ -20,10 +20,78 @@
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 30,
-  "chapterCount": 30,
-  "Chs": "Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
+  "online": 35,
+  "chapterCount": 35,
+  "Chs": "Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
   "chapters": [
+    {
+      "nama": "Chapter 96",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-96/",
+      "tanggal_rilis": "22/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2795684-1.jpg",
+        "https://img1.komiku.org/uploads2/2795684-2.jpg",
+        "https://img2.komiku.org/uploads2/2795684-3.jpg",
+        "https://img2.komiku.org/uploads2/2795684-4.jpg",
+        "https://img2.komiku.org/uploads2/2795684-5.jpg",
+        "https://img.komiku.org/uploads2/2795684-6.jpg",
+        "https://img.komiku.org/uploads2/2795684-7.jpg",
+        "https://img.komiku.org/uploads2/2795684-8.jpg",
+        "https://img.komiku.org/uploads2/2795684-9.jpg",
+        "https://img.komiku.org/uploads2/2795684-10.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 97",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-97/",
+      "tanggal_rilis": "24/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2795927-1.jpg",
+        "https://img2.komiku.org/uploads2/2795927-2.jpg",
+        "https://img2.komiku.org/uploads2/2795927-3.jpg",
+        "https://img.komiku.org/uploads2/2795927-4.jpg",
+        "https://img.komiku.org/uploads2/2795927-5.jpg",
+        "https://img.komiku.org/uploads2/2795927-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 98",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-98/",
+      "tanggal_rilis": "24/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2796087-1.jpg",
+        "https://img2.komiku.org/uploads2/2796087-2.jpg",
+        "https://img2.komiku.org/uploads2/2796087-3.jpg",
+        "https://img.komiku.org/uploads2/2796087-4.jpg",
+        "https://img.komiku.org/uploads2/2796087-5.jpg",
+        "https://img.komiku.org/uploads2/2796087-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 99",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-99/",
+      "tanggal_rilis": "26/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2796283-1.jpg",
+        "https://img2.komiku.org/uploads2/2796283-2.jpg",
+        "https://img.komiku.org/uploads2/2796283-3.jpg",
+        "https://img.komiku.org/uploads2/2796283-4.jpg",
+        "https://img.komiku.org/uploads2/2796283-5.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 100",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-100/",
+      "tanggal_rilis": "26/03/2024",
+      "images": [
+        "https://img1.komiku.org/uploads2/2796470-1.jpg",
+        "https://img2.komiku.org/uploads2/2796470-2.jpg",
+        "https://img2.komiku.org/uploads2/2796470-3.jpg",
+        "https://img.komiku.org/uploads2/2796470-4.jpg",
+        "https://img.komiku.org/uploads2/2796470-5.jpg",
+        "https://img.komiku.org/uploads2/2796470-6.jpg"
+      ]
+    },
     {
       "nama": "Chapter 101",
       "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-101/",
@@ -546,5 +614,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-05T14:58:31.836102"
+  "last_scraped": "2026-07-05T15:11:12.631615"
 }
