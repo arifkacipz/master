@@ -27,15 +27,6 @@
     "status": ""
   },
   {
-    "slug": "what-a-bountiful-harvest-demon-lord",
-    "judul": "What A Bountiful Harvest, Demon Lord!",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/what-a-bountiful-harvest-demon-lord/manga_thumbnail-A2-What-A-Bountiful-Harvest-Demon-Lord.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "what-cant-kill-me",
     "judul": "What Can’t Kill Me",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701213030_f011bed5d8e433cd_92dfb847.jpg?w=1200",
@@ -69,6 +60,15 @@
     "chapterCount": 14,
     "online": 14,
     "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "boukensha-ni-narenakatta-ore-skill-oppai-kyousei-de-nayameru-anoko-wo-hitotasuke",
+    "judul": "Boukensha ni Narenakatta Ore, Skill [Oppai Kyousei] de Nayameru Anoko wo Hitotasuke!?",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150104_22e903c36a402909_84c1230c.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": ""
   },
   {
@@ -369,15 +369,6 @@
     "status": ""
   },
   {
-    "slug": "mukasete-ryugasaki-san",
-    "judul": "Mukasete! Ryugasaki-san",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mukasete-ryugasaki-san/manga_thumbnail-Manga-Mukasete-Ryugasaki-san.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "majo-no-ending-note",
     "judul": "Majo no Ending Note",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224506_60ec3919b8a89b47_f7272831.webp?w=1200",
@@ -408,8 +399,8 @@
     "slug": "lord-prestons-secret-tutor",
     "judul": "Lord Preston’s Secret Tutor",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415161612_7ee0ec911535d005_58e2b523.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -651,8 +642,8 @@
     "slug": "kesa-mo-yuraretemasu",
     "judul": "Kesa Mo Yuraretemasu",
     "thumb": "https://thumbnail.komiku.org/img/upload/kesa_mo_yuraretemasu/img_689b09979c0a98.18391758.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -894,8 +885,8 @@
     "slug": "tonari-no-seki-no-yankee-shimizu-san-ga-kami-o-kuroku-sometekita",
     "judul": "Tonari no Seki no Yankee Shimizu-san ga Kami o Kuroku Sometekita",
     "thumb": "https://thumbnail.komiku.org/img/upload/tonari_no_seki_no_yankee_shimizu-san_ga/img_6836b662928694.60380449.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -961,15 +952,6 @@
     "online": 8,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "tensei-shite-high-elf-ni-narimashitaga-slow-life-wa-120-nen-de-akimashita",
-    "judul": "Tensei Shite High Elf ni Narimashitaga, Slow Life wa 120-nen de Akimashita",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/tensei-shite-high-elf-ni-narimashitaga-slow-life-wa-120-nen-de-akimashita/manga_thumbnail-Manga-Tensei-Shite-High-Elf-ni-Narimashitaga-Slow-Life-wa-120-nen-de-Akimashita.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "the-perfect-seniors-secret",
@@ -1076,15 +1058,6 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324061518_4e99125a8dd898f7_8b5ba82a.jpg?w=1200",
     "chapterCount": 7,
     "online": 7,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "yuumei-vtuber-no-ani-dakedo-nazeka-ore-ga-yuumei-ni-natteita",
-    "judul": "Yuumei VTuber no Ani Dakedo Nazeka Ore ga Yuumei ni Natteita",
-    "thumb": "https://thumbnail.komiku.org/img/upload/yuumei_vtuber_no_ani_dakedo/img_6834130c6f6570.36958760.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
