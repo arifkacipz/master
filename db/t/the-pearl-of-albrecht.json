@@ -2,9 +2,9 @@
     "judul": "The Pearl of Albrecht",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Pearl-of-Albrecht-193x278.jpg",
     "source": "arenascan",
-    "online": 29,
-    "chapterCount": 28,
-    "Chs": "Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 31,
+    "chapterCount": 30,
+    "Chs": "Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1660,7 +1660,54 @@
                 "https://cdn.arenascan.com/arena-bucket/384118/28/9.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 29",
+            "url": "https://arenascan.com/the-pearl-of-albrecht-chapter-29/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/384118/29/1_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/2_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/3_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/4_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/5_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/6_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/7_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/29/8_result.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 30",
+            "url": "https://arenascan.com/the-pearl-of-albrecht-chapter-30/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/384118/30/01_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/02_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/03_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/04_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/05_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/06_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/07_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/08_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/09_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/10_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/11_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/12_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/13_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/14_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/15_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/16_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/17_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/18_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/19_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/20_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/21_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/22_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/23_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/24_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/384118/30/25_result.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-16T21:27:51.081553"
+    "last_scraped": "2026-07-05T17:38:28.120417"
 }

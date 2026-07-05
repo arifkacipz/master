@@ -3,9 +3,48 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/thumbnail_IMAG21_bf6643a9-a415-403f-bea1-74820e7b410a.webp",
     "source": "arenascan",
     "online": 7,
-    "chapterCount": 6,
+    "chapterCount": 7,
     "Chs": "Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/i-ve-left-my-body-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431747/1/68ba5eb969961cc95cc34cae4db1a778.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/080ec2bf7a9d8a5242d2b78bf5581c98.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/ccf9f1b5e2f2d85840cf7219c1a5902f.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/08ee2b9159e60da1b5d371eed3db4465.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/fb5d7270b854334ffa69fcc41b870959.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/ffce20e7557bce43ed0b00949fc21d97.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/f2479977cc9dd26a58fb60d721cd7a59.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/f2b034789f6aced5307dc3428dff09ce.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/c1cd46f3ace6c56f016b6a8e9e78834a.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/1b47a0cca4b129ff5e96047ec6ac1f73.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/59631d412c2702c87f6810167f6fa81c.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/3fe4b9873504dcd903493e5e67aaff6b.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/0404d495f8909003ce4cd488326c0c73.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/d8a76b1291916207444a0de1d3e910dd.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/b233ea4ddce7cc0e63fc7704bf4a049d.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/983b23b30f61efd203fba26160667970.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/632991af35828c97602e3c1e725dc249.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/e80caab043604d8ece37532953a372a8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/27a98fca24a6806a620eacca4e0ad388.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/4bee43fb11e891def7c62bf0f9bb32cc.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/335ef2545ae10405b23fd81c71bd1972.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/a65a704ef65c9eeccbc5837093ef38be.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/fa02d655d50e4dcf0c5bac8c8e23ebbe.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/f752290964163c062047e144a4756d40.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/c0037d90cb120dac82c848c6c8bc6ca7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/d2d9528bce6c9328636361da9dce74ad.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/b27a6a3f2411f02e024c78f9a1b89d2a.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/23b5b5be0252dfada2bd9a7274e71787.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/4fcb75bb9ac2dd78ca40afb78ac78e2d.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/300ebf154b206d7f5075a42bb298aff2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/68f62f12c6326ce1dd19d3662e2e481a.jpg",
+                "https://cdn.arenascan.com/arena-bucket/431747/1/ea7df484dc0e66bbd3dce793d7f8e8be.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/i-ve-left-my-body-chapter-2/",
@@ -187,5 +226,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-05T16:19:29.394378"
+    "last_scraped": "2026-07-05T17:38:28.207668"
 }
