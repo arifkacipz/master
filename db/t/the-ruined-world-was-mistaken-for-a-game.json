@@ -3,9 +3,69 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/52f002bf470b.webp",
     "source": "arenascan",
     "online": 13,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0.1, Chapter 0",
     "chapters": [
+        {
+            "nama": "Chapter 6",
+            "url": "https://arenascan.com/the-ruined-world-was-mistaken-for-a-game-chapter-6/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431730/6/1992ddf09fa7.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/b79a90633a06.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/53931d55c459.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/d48cd7bb39f7.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/fae29d99aee8.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/9bfab5ef3b52.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/8fb9abcd302e.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/5f3149012753.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/44ed309e7c40.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/7a04943af4a3.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/65243a1d70de.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/a1da29e259d8.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/6/eedf82f28cf0.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 7",
+            "url": "https://arenascan.com/the-ruined-world-was-mistaken-for-a-game-chapter-7/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431730/7/3c169c75a897.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/a1377206b835.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/7d066e5dbb48.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/7a46ad083e5a.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/e467223eee65.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/bd36c5d7e97d.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/b36c7265c369.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/02d0b7b5b3f6.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/58d1ca1f526d.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/c250c3586821.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/4a7352eb3123.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/7/0fc3d5870bc3.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 8",
+            "url": "https://arenascan.com/the-ruined-world-was-mistaken-for-a-game-chapter-8/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431730/8/7dfece43f278.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/757281a2b889.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/8040ad389759.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/2a5104046ab4.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/e978aed6ef6b.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/ef8803cf6be0.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/718ff42adc5f.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/51ef007930de.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/3c5d6754cfc4.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/968eb00517cf.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/b0987daddf63.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/10972ac2185a.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/8d9014d42d74.webp",
+                "https://cdn.arenascan.com/arena-bucket/431730/8/ca19ee5fceb0.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 9",
             "url": "https://arenascan.com/the-ruined-world-was-mistaken-for-a-game-chapter-9/",
@@ -98,5 +158,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-05T14:52:34.590957"
+    "last_scraped": "2026-07-05T16:19:29.286035"
 }
