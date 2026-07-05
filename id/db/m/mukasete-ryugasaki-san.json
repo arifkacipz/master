@@ -20,10 +20,75 @@
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 70,
-  "chapterCount": 70,
-  "Chs": "Chapter 61, Chapter 62, Chapter 63, Chapter 64, Chapter 65, Chapter 66, Chapter 67, Chapter 68, Chapter 69, Chapter 71, Chapter 72, Chapter 73, Chapter 74, Chapter 75, Chapter 76, Chapter 77, Chapter 78, Chapter 78.5, Chapter 79, Chapter 80, Chapter 81, Chapter 82, Chapter 83, Chapter 84, Chapter 85, Chapter 86, Chapter 87, Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
+  "online": 75,
+  "chapterCount": 75,
+  "Chs": "Chapter 56, Chapter 57, Chapter 58, Chapter 59, Chapter 60, Chapter 61, Chapter 62, Chapter 63, Chapter 64, Chapter 65, Chapter 66, Chapter 67, Chapter 68, Chapter 69, Chapter 71, Chapter 72, Chapter 73, Chapter 74, Chapter 75, Chapter 76, Chapter 77, Chapter 78, Chapter 78.5, Chapter 79, Chapter 80, Chapter 81, Chapter 82, Chapter 83, Chapter 84, Chapter 85, Chapter 86, Chapter 87, Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 107, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127, Chapter 128, Chapter 129, Chapter 130",
   "chapters": [
+    {
+      "nama": "Chapter 56",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-56/",
+      "tanggal_rilis": "24/07/2023",
+      "images": [
+        "https://img1.komiku.org/uploads2/2713940-1.jpg",
+        "https://img2.komiku.org/uploads2/2713940-2.jpg",
+        "https://img2.komiku.org/uploads2/2713940-3.jpg",
+        "https://img.komiku.org/uploads2/2713940-4.jpg",
+        "https://img.komiku.org/uploads2/2713940-5.jpg",
+        "https://img.komiku.org/uploads2/2713940-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 57",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-57/",
+      "tanggal_rilis": "25/07/2023",
+      "images": [
+        "https://img1.komiku.org/uploads2/2714213-1.jpg",
+        "https://img2.komiku.org/uploads2/2714213-2.jpg",
+        "https://img2.komiku.org/uploads2/2714213-3.jpg",
+        "https://img.komiku.org/uploads2/2714213-4.jpg",
+        "https://img.komiku.org/uploads2/2714213-5.jpg",
+        "https://img.komiku.org/uploads2/2714213-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 58",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-58/",
+      "tanggal_rilis": "03/08/2023",
+      "images": [
+        "https://img1.komiku.org/uploads2/2716571-1.jpg",
+        "https://img2.komiku.org/uploads2/2716571-2.jpg",
+        "https://img2.komiku.org/uploads2/2716571-3.jpg",
+        "https://img.komiku.org/uploads2/2716571-4.jpg",
+        "https://img.komiku.org/uploads2/2716571-5.jpg",
+        "https://img.komiku.org/uploads2/2716571-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 59",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-59/",
+      "tanggal_rilis": "22/08/2023",
+      "images": [
+        "https://img1.komiku.org/uploads2/2721435-1.jpg",
+        "https://img2.komiku.org/uploads2/2721435-2.jpg",
+        "https://img2.komiku.org/uploads2/2721435-3.jpg",
+        "https://img.komiku.org/uploads2/2721435-4.jpg",
+        "https://img.komiku.org/uploads2/2721435-5.jpg",
+        "https://img.komiku.org/uploads2/2721435-6.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 60",
+      "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-60/",
+      "tanggal_rilis": "24/08/2023",
+      "images": [
+        "https://img1.komiku.org/uploads2/2722136-1.jpg",
+        "https://img2.komiku.org/uploads2/2722136-2.jpg",
+        "https://img2.komiku.org/uploads2/2722136-3.jpg",
+        "https://img.komiku.org/uploads2/2722136-4.jpg",
+        "https://img.komiku.org/uploads2/2722136-5.jpg",
+        "https://img.komiku.org/uploads2/2722136-6.jpg"
+      ]
+    },
     {
       "nama": "Chapter 61",
       "url": "https://komiku.org/mukasete-ryugasaki-san-chapter-61/",
@@ -1100,5 +1165,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-05T21:59:08.115685"
+  "last_scraped": "2026-07-05T22:41:30.199963"
 }
