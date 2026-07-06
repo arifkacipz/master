@@ -18,6 +18,15 @@
     "status": "Completed"
   },
   {
+    "slug": "return-of-the-devourer",
+    "judul": "Return of the Devourer",
+    "thumb": "https://thumbnail.komiku.org/img/upload/return_of_the_devourer/img_695b39b6f0d8f9.73172883.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -97,15 +106,6 @@
     "online": 3,
     "tipe": "Manga",
     "status": "Ongoing"
-  },
-  {
-    "slug": "holy-knight",
-    "judul": "Holy Knight",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143006_0421be024290f899_078a270c.webp?w=1200",
-    "chapterCount": 14,
-    "online": 14,
-    "tipe": "Manga",
-    "status": ""
   },
   {
     "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
@@ -243,15 +243,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "suna-mahou-de-suna-no-oukoku-o-tsukurou-sabaku-ni-tsuihou-sareta-kara-ganbatte-sokoku-ijou-no-kokka-o-tatete-mita",
-    "judul": "Suna Mahou de Suna no Oukoku o Tsukurou ~Sabaku ni Tsuihou Sareta kara Ganbatte Sokoku Ijou no Kokka o Tatete Mita~",
-    "thumb": "https://thumbnail.komiku.org/img/upload/suna_mahou_de_suna_no_oukoku_o_tsukurou/img_686e189f2f3614.17484195.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "suterare-ouji-ga-saizensen-de-tekikoku-no-heishi-wo-chiryou-shitara-jitsu-wa-dainana-oujo-datta-ken",
     "judul": "Suterare Ouji ga Saizensen de Tekikoku no Heishi wo Chiryou Shitara Jitsu wa Dainana Oujo datta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702191510_38288275c025fd31_01fbd827.webp?w=1200",
@@ -277,6 +268,15 @@
     "online": 11,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "my-female-apprentices-are-all-big-shots-from-the-future",
+    "judul": "My Female Apprentices Are All Big Shots From the Future",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/my-female-apprentices-are-all-big-shots-from-the-future/manga_thumbnail-Manhua-My-Female-Apprentices-Are-All-Big-Shots-From-the-Future.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
     "slug": "mob-kousei-no-ore-demo-boukensha-ni-nareba-riajuu-ni-naremasuka",
@@ -390,8 +390,8 @@
     "slug": "mob-kara-hajimaru-tansaku-eiyuutan",
     "judul": "Mob kara Hajimaru Tansaku Eiyuutan",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/mob-kara-hajimaru-tansaku-eiyuutan/manga_thumbnail-Manga-Mob-kara-Hajimaru-Tansaku-Eiyuutan.jpg?w=1200",
-    "chapterCount": 6,
-    "online": 6,
+    "chapterCount": 7,
+    "online": 7,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -567,6 +567,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "kichiku-eiyuu",
+    "judul": "Kichiku Eiyuu",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/kichiku-eiyuu/manga_thumbnail-Kichiku-Eiyuu-1.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "keppeki-sakyubasu-wa-xxx-ga-o-kirai",
     "judul": "Keppeki sakyubasu wa ××× ga o kirai!",
     "thumb": "https://thumbnail.komiku.org/img/upload/keppeki_sakyubasu_wa/img_684fcd52e4c156.96580990.jpg?w=1200",
@@ -624,8 +633,8 @@
     "slug": "kuroiwa-medaka-ni-watashi-no-kawaii-ga-tsuujinai",
     "judul": "Kuroiwa Medaka ni Watashi no Kawaii ga Tsuujinai",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/kuroiwa-medaka-ni-watashi-no-kawaii-ga-tsuujinai/manga_thumbnail-Manga-Kuroiwa-Medaka-ni-Watashi-no-Kawaii-ga-Tsuujinai.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 14,
+    "online": 14,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -729,6 +738,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "clever-cleaning-life-of-the-returned-genius-hunter",
+    "judul": "Clever Cleaning Life Of The Returned Genius Hunter",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/clever-cleaning-life-of-the-returned-genius-hunter/manga_thumbnail-CleverCleaning-Cover.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "contract-killer-enrollment",
     "judul": "Contract Killer Enrollment",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224605_06f0ed4c6aaf1e77_e9de94ba.jpg?w=1200",
@@ -786,8 +804,8 @@
     "slug": "i-have-infinite-golden-traits",
     "judul": "I Have Infinite Golden Traits",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/22/20260522121520_01838ee15f1ae285_51333ac2.webp?w=1200",
-    "chapterCount": 7,
-    "online": 7,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhua",
     "status": ""
   },
@@ -861,6 +879,15 @@
     "chapterCount": 13,
     "online": 13,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-novels-extra-remake",
+    "judul": "The Novel’s Extra (Remake)",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-novels-extra-remake/manga_thumbnail-Manhwa-The-Novels-Extra-Remake.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -939,8 +966,8 @@
     "slug": "the-chairman-who-just-wants-to-slack-off",
     "judul": "The Chairman Who Just Wants to Slack Off",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194532_38bcd5a0586f67d6_1d284584.webp?w=1200",
-    "chapterCount": 11,
-    "online": 11,
+    "chapterCount": 13,
+    "online": 13,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -996,6 +1023,15 @@
     "chapterCount": 14,
     "online": 14,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-corporate-underdog-who-does-everything-right",
+    "judul": "The Corporate Underdog Who Does Everything Right",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_corporate_underdog_who_does_everything_right/img_68333bfd9c7026.15348075.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
