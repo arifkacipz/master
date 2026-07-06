@@ -2,9 +2,9 @@
     "judul": "Chat With Me",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Chat-With-Me-193x278.jpg",
     "source": "arenascan",
-    "online": 15,
-    "chapterCount": 15,
-    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 16,
+    "chapterCount": 16,
+    "Chs": "Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -711,7 +711,28 @@
                 "https://cdn.arenascan.com/arena-bucket/392650/16/50273de730fc.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/chat-with-me-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/392650/17/a63c595cb433.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/6a9d5b61b51b.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/f6346187f361.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/adb5a28c13e7.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/4206220499d6.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/9875987ca9ab.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/5466471b1142.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/e6f6f9fa84cc.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/7c70e1dd33a6.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/78e58611634e.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/d471a6193ab2.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/9f6898b1e56e.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/ec99c5b350d6.webp",
+                "https://cdn.arenascan.com/arena-bucket/392650/17/6aba6a1f314b.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-06T01:18:44.275618"
+    "last_scraped": "2026-07-06T12:31:23.528975"
 }
