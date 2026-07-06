@@ -2,9 +2,9 @@
     "judul": "Players for All: I can choose the dungeon rewards",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/f4d6cf2b9f16.webp",
     "source": "arenascan",
-    "online": 10,
-    "chapterCount": 10,
-    "Chs": "Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 11,
+    "chapterCount": 11,
+    "Chs": "Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -464,7 +464,22 @@
                 "https://cdn.arenascan.com/arena-bucket/431721/10/82d8935a44a2.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 11",
+            "url": "https://arenascan.com/players-for-all-i-can-choose-the-dungeon-rewards-chapter-11/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431721/11/c096ec2d2147.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/c0e8db94c59c.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/3175ef233735.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/3887291fe108.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/13ae47a2c594.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/1cfb302a4211.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/6defc582a083.webp",
+                "https://cdn.arenascan.com/arena-bucket/431721/11/dee6da01c63b.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-05T18:39:32.627786"
+    "last_scraped": "2026-07-06T18:27:38.529315"
 }
