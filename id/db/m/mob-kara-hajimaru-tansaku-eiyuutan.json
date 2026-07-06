@@ -1,6 +1,7 @@
 {
   "judul": "Mob kara Hajimaru Tansaku Eiyuutan",
   "judul_alternatif": "Mob yang Memulai Kisah Pahlawan Epik",
+  "slug": "mob-kara-hajimaru-tansaku-eiyuutan",
   "thumb": "https://thumbnail.komiku.org/uploads/manga/mob-kara-hajimaru-tansaku-eiyuutan/manga_thumbnail-Manga-Mob-kara-Hajimaru-Tansaku-Eiyuutan.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -19,7 +20,39 @@
   "pembaca_total": 31556,
   "pembaca_mingguan": 1,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 6,
+  "chapterCount": 6,
+  "Chs": "Chapter 1.1, Chapter 1.2, Chapter 1.3, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
+    {
+      "nama": "Chapter 1.1",
+      "url": "https://komiku.org/mob-kara-hajimaru-tansaku-eiyuutan-chapter-01-1/",
+      "tanggal_rilis": "17/05/2022",
+      "images": [
+        "https://img1.komiku.org/uploads2/2513776-1.jpg",
+        "https://img1.komiku.org/uploads2/2513776-2.jpg",
+        "https://img1.komiku.org/uploads2/2513776-3.jpg",
+        "https://img1.komiku.org/uploads2/2513776-4.jpg",
+        "https://img1.komiku.org/uploads2/2513776-5.jpg",
+        "https://img2.komiku.org/uploads2/2513776-6.jpg",
+        "https://img2.komiku.org/uploads2/2513776-7.jpg",
+        "https://img2.komiku.org/uploads2/2513776-8.jpg",
+        "https://img2.komiku.org/uploads2/2513776-9.jpg",
+        "https://img2.komiku.org/uploads2/2513776-10.jpg",
+        "https://img.komiku.org/uploads2/2513776-11.jpg",
+        "https://img.komiku.org/uploads2/2513776-12.jpg",
+        "https://img.komiku.org/uploads2/2513776-13.jpg",
+        "https://img.komiku.org/uploads2/2513776-14.jpg",
+        "https://img.komiku.org/uploads2/2513776-15.jpg",
+        "https://img.komiku.org/uploads2/2513776-16.jpg",
+        "https://img.komiku.org/uploads2/2513776-17.jpg",
+        "https://img.komiku.org/uploads2/2513776-18.jpg",
+        "https://img.komiku.org/uploads2/2513776-19.jpg",
+        "https://img.komiku.org/uploads2/2513776-20.jpg",
+        "https://img.komiku.org/uploads2/2513776-21.jpg"
+      ]
+    },
     {
       "nama": "Chapter 1.2",
       "url": "https://komiku.org/mob-kara-hajimaru-tansaku-eiyuutan-chapter-01-2/",
@@ -180,10 +213,5 @@
       ]
     }
   ],
-  "slug": "mob-kara-hajimaru-tansaku-eiyuutan",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1.2, Chapter 1.3, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-07-06T08:14:56.101164"
+  "last_scraped": "2026-07-06T09:14:46.729499"
 }
