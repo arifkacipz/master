@@ -20,10 +20,63 @@
   "pembaca_mingguan": 147,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 45,
-  "chapterCount": 45,
-  "Chs": "Chapter 1.2, Chapter 2, Chapter 3.1, Chapter 3.2, Chapter 4, Chapter 5, Chapter 6, Chapter 6.2, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12 Fix, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 24.2, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42",
+  "online": 47,
+  "chapterCount": 47,
+  "Chs": "Chapter .1, Chapter 1.1, Chapter 1.2, Chapter 2, Chapter 3.1, Chapter 3.2, Chapter 4, Chapter 5, Chapter 6, Chapter 6.2, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12 Fix, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 24.2, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42",
   "chapters": [
+    {
+      "nama": "Chapter .1",
+      "url": "https://komiku.org/monogatari-no-kuromaku-ni-tensei-shite-chapter-00-1/",
+      "tanggal_rilis": "24/11/2022",
+      "images": [
+        "https://img1.komiku.org/uploads2/2620925-1.png",
+        "https://img1.komiku.org/uploads2/2620925-2.jpg",
+        "https://img1.komiku.org/uploads2/2620925-3.jpg",
+        "https://img1.komiku.org/uploads2/2620925-4.jpg",
+        "https://img2.komiku.org/uploads2/2620925-5.jpg",
+        "https://img2.komiku.org/uploads2/2620925-6.jpg",
+        "https://img2.komiku.org/uploads2/2620925-7.jpg",
+        "https://img2.komiku.org/uploads2/2620925-8.jpg",
+        "https://img.komiku.org/uploads2/2620925-9.jpg",
+        "https://img.komiku.org/uploads2/2620925-10.jpg",
+        "https://img.komiku.org/uploads2/2620925-11.jpg",
+        "https://img.komiku.org/uploads2/2620925-12.jpg",
+        "https://img.komiku.org/uploads2/2620925-13.jpg",
+        "https://img.komiku.org/uploads2/2620925-14.jpg",
+        "https://img.komiku.org/uploads2/2620925-15.jpg",
+        "https://img.komiku.org/uploads2/2620925-16.png",
+        "https://img.komiku.org/uploads2/2620925-17.png"
+      ]
+    },
+    {
+      "nama": "Chapter 1.1",
+      "url": "https://komiku.org/monogatari-no-kuromaku-ni-tensei-shite-chapter-01-1/",
+      "tanggal_rilis": "24/11/2022",
+      "images": [
+        "https://img1.komiku.org/uploads2/2620924-1.png",
+        "https://img1.komiku.org/uploads2/2620924-2.jpg",
+        "https://img1.komiku.org/uploads2/2620924-3.jpg",
+        "https://img1.komiku.org/uploads2/2620924-4.jpg",
+        "https://img1.komiku.org/uploads2/2620924-5.jpg",
+        "https://img2.komiku.org/uploads2/2620924-6.jpg",
+        "https://img2.komiku.org/uploads2/2620924-7.jpg",
+        "https://img2.komiku.org/uploads2/2620924-8.jpg",
+        "https://img2.komiku.org/uploads2/2620924-9.jpg",
+        "https://img2.komiku.org/uploads2/2620924-10.jpg",
+        "https://img2.komiku.org/uploads2/2620924-11.jpg",
+        "https://img.komiku.org/uploads2/2620924-12.jpg",
+        "https://img.komiku.org/uploads2/2620924-13.jpg",
+        "https://img.komiku.org/uploads2/2620924-14.jpg",
+        "https://img.komiku.org/uploads2/2620924-15.jpg",
+        "https://img.komiku.org/uploads2/2620924-16.jpg",
+        "https://img.komiku.org/uploads2/2620924-17.jpg",
+        "https://img.komiku.org/uploads2/2620924-18.jpg",
+        "https://img.komiku.org/uploads2/2620924-19.jpg",
+        "https://img.komiku.org/uploads2/2620924-20.jpg",
+        "https://img.komiku.org/uploads2/2620924-21.jpg",
+        "https://img.komiku.org/uploads2/2620924-22.png"
+      ]
+    },
     {
       "nama": "Chapter 1.2",
       "url": "https://komiku.org/monogatari-no-kuromaku-ni-tensei-shite-chapter-01-2/",
@@ -1725,5 +1778,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-06T18:56:34.503968"
+  "last_scraped": "2026-07-06T20:53:53.157894"
 }
