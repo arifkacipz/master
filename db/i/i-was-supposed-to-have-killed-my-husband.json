@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/I-Was-Supposed-to-Have-Killed-My-Husband-193x278.jpg",
     "source": "arenascan",
     "online": 23,
-    "chapterCount": 22,
+    "chapterCount": 23,
     "Chs": "Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -625,6 +625,25 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/i-was-supposed-to-have-killed-my-husband-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/389654/20/1cec7c6aa09c.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/656d051d7e6f.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/950fac06ddef.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/266e321c775e.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/c0763d3d2f86.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/838881553052.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/95a12787bf24.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/3e611016a615.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/5cd3a4b6600b.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/211100962980.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/92680a14c9b8.webp",
+                "https://cdn.arenascan.com/arena-bucket/389654/20/64e5c1da7813.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 21",
             "url": "https://arenascan.com/i-was-supposed-to-have-killed-my-husband-chapter-21/",
             "images": [
@@ -688,5 +707,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-06T04:02:50.273424"
+    "last_scraped": "2026-07-06T06:03:22.018071"
 }
