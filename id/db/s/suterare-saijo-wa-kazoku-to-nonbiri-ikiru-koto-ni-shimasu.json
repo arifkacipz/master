@@ -19,10 +19,92 @@
   "pembaca_mingguan": 55,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 15,
-  "chapterCount": 15,
-  "Chs": "Chapter 5.2, Chapter 5.3, Chapter 5.4, Chapter 6.1, Chapter 6.2, Chapter 6.3, Chapter 6.4, Chapter 7.1, Chapter 7.2, Chapter 7.3, Chapter 7.4, Chapter 8.1, Chapter 8.2, Chapter 8.3, Chapter 8.4",
+  "online": 20,
+  "chapterCount": 20,
+  "Chs": "Chapter 4.1, Chapter 4.2, Chapter 4.3, Chapter 4.4, Chapter 5.1, Chapter 5.2, Chapter 5.3, Chapter 5.4, Chapter 6.1, Chapter 6.2, Chapter 6.3, Chapter 6.4, Chapter 7.1, Chapter 7.2, Chapter 7.3, Chapter 7.4, Chapter 8.1, Chapter 8.2, Chapter 8.3, Chapter 8.4",
   "chapters": [
+    {
+      "nama": "Chapter 4.1",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-4-1/",
+      "tanggal_rilis": "27/12/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.1/2025-12-27/9.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 4.2",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-4-2/",
+      "tanggal_rilis": "27/12/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/4.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/9.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.2/2025-12-27/10.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 4.3",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-4-3/",
+      "tanggal_rilis": "02/01/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.3/2026-01-02/9.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 4.4",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-4-4/",
+      "tanggal_rilis": "02/01/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/4.4/2026-01-02/9.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 5.1",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-5-1/",
+      "tanggal_rilis": "13/01/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/4.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/9.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/5.1/2026-01-13/10.webp"
+      ]
+    },
     {
       "nama": "Chapter 5.2",
       "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-5-2/",
@@ -276,5 +358,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-07T19:00:33.630571"
+  "last_scraped": "2026-07-07T19:28:29.672930"
 }
