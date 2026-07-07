@@ -19,10 +19,85 @@
   "pembaca_mingguan": 55,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 4.1, Chapter 4.2, Chapter 4.3, Chapter 4.4, Chapter 5.1, Chapter 5.2, Chapter 5.3, Chapter 5.4, Chapter 6.1, Chapter 6.2, Chapter 6.3, Chapter 6.4, Chapter 7.1, Chapter 7.2, Chapter 7.3, Chapter 7.4, Chapter 8.1, Chapter 8.2, Chapter 8.3, Chapter 8.4",
+  "online": 25,
+  "chapterCount": 25,
+  "Chs": "Chapter 2.4, Chapter 3.1, Chapter 3.2, Chapter 3.3, Chapter 3.4, Chapter 4.1, Chapter 4.2, Chapter 4.3, Chapter 4.4, Chapter 5.1, Chapter 5.2, Chapter 5.3, Chapter 5.4, Chapter 6.1, Chapter 6.2, Chapter 6.3, Chapter 6.4, Chapter 7.1, Chapter 7.2, Chapter 7.3, Chapter 7.4, Chapter 8.1, Chapter 8.2, Chapter 8.3, Chapter 8.4",
   "chapters": [
+    {
+      "nama": "Chapter 2.4",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-2-4/",
+      "tanggal_rilis": "26/11/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/2.4/2025-11-26/8.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 3.1",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-3-1/",
+      "tanggal_rilis": "27/11/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.1/2025-11-27/1_part1.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.1/2025-11-27/1_part2.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.1/2025-11-27/1_part3.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.1/2025-11-27/1_part4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.1/2025-11-27/2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 3.2",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-3-2/",
+      "tanggal_rilis": "01/12/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.2/2025-12-01/9.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 3.3",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-3-3/",
+      "tanggal_rilis": "01/12/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.3/2025-12-01/9.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 3.4",
+      "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-3-4/",
+      "tanggal_rilis": "08/12/2025",
+      "images": [
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/1.webp",
+        "https://img1.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/2.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/3.webp",
+        "https://img2.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/4.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/5.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/6.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/7.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/8.webp",
+        "https://img.komiku.org/upload5/suterare-saijo-wa-kazoku-to-nonbiri/3.4/2025-12-08/9.webp"
+      ]
+    },
     {
       "nama": "Chapter 4.1",
       "url": "https://komiku.org/suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu-chapter-4-1/",
@@ -358,5 +433,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-07T19:28:29.672930"
+  "last_scraped": "2026-07-07T20:51:14.580518"
 }
