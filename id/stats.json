@@ -18,15 +18,6 @@
     "status": "Completed"
   },
   {
-    "slug": "ruri-dragon",
-    "judul": "Ruri Dragon",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/ruri-dragon/manga_thumbnail-Manga-Ruri-Dragon.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -50,15 +41,6 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701201512_f2d2a82a8584559d_b5171eee.jpg?w=1200",
     "chapterCount": 5,
     "online": 5,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "player-who-cant-level-up",
-    "judul": "Player Who Can’t Level Up",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/player-who-cant-level-up/manga_thumbnail-Manhwa-Player-Who-Cant-Level-Up.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -165,8 +147,8 @@
     "slug": "futoku-no-guild",
     "judul": "Futoku no Guild",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/futoku-no-guild/manga_thumbnail-Futoku-no-Guild-1.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -228,19 +210,10 @@
     "slug": "suspicion-of-plagiarism",
     "judul": "Suspicion of Plagiarism",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183030_c3caa7df445f2271_00a56f14.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 13,
+    "online": 13,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "sokushi-cheat-ga-saikyou-sugite-isekai-no-yatsura-ga-marude-aite-ni-naranai-n-desu-ga",
-    "judul": "Sokushi Cheat ga Saikyou Sugite, Isekai no Yatsura ga Marude Aite ni Naranai n desu ga",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/sokushi-cheat-ga-saikyou-sugite-isekai-no-yatsura-ga-marude-aite-ni-naranai-n-desu-ga/manga_thumbnail-Komik-Sokushi-Cheat-ga-Saikyou-Sugite-Isekai-no-Yatsura-ga-Marude-Aite-ni-Naranai-n-desu-ga.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "shujinkou-no-osananajimi-ga-wakiyaku-no-ore-ni-gui-gui-kuru",
@@ -327,8 +300,8 @@
     "slug": "mamahaha-no-kokoroe",
     "judul": "Mamahaha no Kokoroe",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/18/20260618171511_c5a90c090af5fc71_8d1e409b.jpg?w=1200",
-    "chapterCount": 11,
-    "online": 11,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -540,15 +513,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "danjohi-15-no-sekai-demo-futsu-ni-ikirareru-to-omotta-geki-juu-kanjou-na-kanojotachi-ga-mujikaku-danshi-ni-honrousaretara",
-    "judul": "Danjohi 1:5 no Sekai demo Futsu ni Ikirareru to Omotta? ~ Geki Juu Kanjou na Kanojotachi ga Mujikaku Danshi ni Honrousaretara",
-    "thumb": "https://thumbnail.komiku.org/img/upload/danjohi_1_5_no_sekai_demo_futsu_ni_ikirareru_to_omotta/img_682d59714127a8.14956291.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "doutei-dakedo-akuyaku-kizoku-ni-tensei-shitanode-harem-wo-tsukuru-hazu-datta-no-ni-nazeka-sekai-wo-sukuu-seijin-ni-nattemashita-namida",
     "judul": "Doutei Dakedo Akuyaku Kizoku ni Tensei Shitanode Harem wo Tsukuru... Hazu Datta no ni Nazeka Sekai wo Sukuu Seijin ni Nattemashita (Namida)",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143011_e5748f73aa4888ab_5f2acf3d.webp?w=1200",
@@ -556,15 +520,6 @@
     "online": 1,
     "tipe": "Manga",
     "status": ""
-  },
-  {
-    "slug": "now-that-we-draw",
-    "judul": "Now That We Draw",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/now-that-we-draw/manga_thumbnail-A2-Now-That-We-Draw.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
   },
   {
     "slug": "namaiki-asahi-chan-wo-wakarasetai",
@@ -828,15 +783,6 @@
     "status": ""
   },
   {
-    "slug": "i-shall-master-this-family",
-    "judul": "I Shall Master This Family!",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183034_db391418f7794fb2_2348ad8d.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "i-became-a-hatchling",
     "judul": "I Became a Hatchling",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/05/20260505120018_57a501099e5c89a5_c03461f5.webp?w=1200",
@@ -921,8 +867,8 @@
     "slug": "teisou-gyakuten-sekai-nara-moteru-to-omotte-itara",
     "judul": "Teisou Gyakuten Sekai Nara Moteru to Omotte Itara",
     "thumb": "https://thumbnail.komiku.org/img/upload/teisou_gyakuten_sekai_nara_moteru_to_omotte_itara/img_69369260d8fff9.87711596.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
