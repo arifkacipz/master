@@ -18,6 +18,15 @@
     "status": "Completed"
   },
   {
+    "slug": "ruri-dragon",
+    "judul": "Ruri Dragon",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/ruri-dragon/manga_thumbnail-Manga-Ruri-Dragon.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -39,6 +48,15 @@
     "slug": "welcome-to-the-rose-mansion",
     "judul": "Welcome to the Rose Mansion",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/01/20260701201512_f2d2a82a8584559d_b5171eee.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "player-who-cant-level-up",
+    "judul": "Player Who Can’t Level Up",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/player-who-cant-level-up/manga_thumbnail-Manhwa-Player-Who-Cant-Level-Up.jpg?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manhwa",
@@ -198,6 +216,24 @@
     "status": ""
   },
   {
+    "slug": "suspicion-of-plagiarism",
+    "judul": "Suspicion of Plagiarism",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183030_c3caa7df445f2271_00a56f14.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
+    "slug": "sokushi-cheat-ga-saikyou-sugite-isekai-no-yatsura-ga-marude-aite-ni-naranai-n-desu-ga",
+    "judul": "Sokushi Cheat ga Saikyou Sugite, Isekai no Yatsura ga Marude Aite ni Naranai n desu ga",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/sokushi-cheat-ga-saikyou-sugite-isekai-no-yatsura-ga-marude-aite-ni-naranai-n-desu-ga/manga_thumbnail-Komik-Sokushi-Cheat-ga-Saikyou-Sugite-Isekai-no-Yatsura-ga-Marude-Aite-ni-Naranai-n-desu-ga.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "shujinkou-no-osananajimi-ga-wakiyaku-no-ore-ni-gui-gui-kuru",
     "judul": "Shujinkou no Osananajimi ga, Wakiyaku no Ore ni Gui Gui Kuru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194517_8001e773041626df_7a6d2d77.jpg?w=1200",
@@ -354,8 +390,8 @@
     "slug": "majo-no-ending-note",
     "judul": "Majo no Ending Note",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/22/20260622224506_60ec3919b8a89b47_f7272831.webp?w=1200",
-    "chapterCount": 3,
-    "online": 3,
+    "chapterCount": 4,
+    "online": 4,
     "tipe": "Manga",
     "status": ""
   },
@@ -495,6 +531,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "danjohi-15-no-sekai-demo-futsu-ni-ikirareru-to-omotta-geki-juu-kanjou-na-kanojotachi-ga-mujikaku-danshi-ni-honrousaretara",
+    "judul": "Danjohi 1:5 no Sekai demo Futsu ni Ikirareru to Omotta? ~ Geki Juu Kanjou na Kanojotachi ga Mujikaku Danshi ni Honrousaretara",
+    "thumb": "https://thumbnail.komiku.org/img/upload/danjohi_1_5_no_sekai_demo_futsu_ni_ikirareru_to_omotta/img_682d59714127a8.14956291.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "doutei-dakedo-akuyaku-kizoku-ni-tensei-shitanode-harem-wo-tsukuru-hazu-datta-no-ni-nazeka-sekai-wo-sukuu-seijin-ni-nattemashita-namida",
     "judul": "Doutei Dakedo Akuyaku Kizoku ni Tensei Shitanode Harem wo Tsukuru... Hazu Datta no ni Nazeka Sekai wo Sukuu Seijin ni Nattemashita (Namida)",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143011_e5748f73aa4888ab_5f2acf3d.webp?w=1200",
@@ -502,6 +547,15 @@
     "online": 1,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "now-that-we-draw",
+    "judul": "Now That We Draw",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/now-that-we-draw/manga_thumbnail-A2-Now-That-We-Draw.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "namaiki-asahi-chan-wo-wakarasetai",
@@ -723,8 +777,8 @@
     "slug": "zero-degrees",
     "judul": "Zero Degrees",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620133006_a4edd445d30f8eb3_f31580e7.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -763,6 +817,15 @@
     "online": 8,
     "tipe": "Manhua",
     "status": ""
+  },
+  {
+    "slug": "i-shall-master-this-family",
+    "judul": "I Shall Master This Family!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183034_db391418f7794fb2_2348ad8d.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "i-became-a-hatchling",
@@ -858,8 +921,8 @@
     "slug": "this-assassin-is-a-son-in-law",
     "judul": "This Assassin is a Son-in-Law",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/24/20260424010158_76fd481bf0b95609_945ea8f9.webp?w=1200",
-    "chapterCount": 12,
-    "online": 12,
+    "chapterCount": 13,
+    "online": 13,
     "tipe": "Manhua",
     "status": ""
   },
