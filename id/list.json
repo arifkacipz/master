@@ -1,5 +1,25 @@
 [
   {
+    "judul": "Sword of The Undying",
+    "slug": "sword-of-the-undying",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170026_d20e99a8ed909b87_f9e3da5a.webp?w=1200",
+    "tipe": "Manhwa",
+    "status": "",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Magic"
+    ],
+    "pembaca_total": 15624,
+    "chapterCount": 16,
+    "last_scraped": "2026-07-07T16:22:51.483211",
+    "judul_alternatif": "Pedang Sang Abadi",
+    "author": "Hiroaki Samura",
+    "sinopsis_ringkas": "Kiran, seorang kurir jalanan di kota pelabuhan Nevara, mendapati hidupnya berubah ketika sebuah pedang kuno memilihnya sebagai tuan baru. Pedang itu m",
+    "rating": "17+"
+  },
+  {
     "judul": "DANDADAN",
     "slug": "dandadan",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/dandadan/manga_thumbnail-Manga-DANDADAN.jpg?w=1200",
@@ -6147,26 +6167,6 @@
     "author": "-",
     "sinopsis_ringkas": "Di kota yang perlahan memudar menjadi abu-abu, Akari menemukan bakat langka: ia bisa melihat “benang warna” yang menempel pada benda dan hati manusia.",
     "rating": "13+"
-  },
-  {
-    "judul": "Sword of The Undying",
-    "slug": "sword-of-the-undying",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170026_d20e99a8ed909b87_f9e3da5a.webp?w=1200",
-    "tipe": "Manhwa",
-    "status": "",
-    "genre": [
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Magic"
-    ],
-    "pembaca_total": 14747,
-    "chapterCount": 16,
-    "last_scraped": "2026-07-04T15:05:05.958307",
-    "judul_alternatif": "Pedang Sang Abadi",
-    "author": "Hiroaki Samura",
-    "sinopsis_ringkas": "Kiran, seorang kurir jalanan di kota pelabuhan Nevara, mendapati hidupnya berubah ketika sebuah pedang kuno memilihnya sebagai tuan baru. Pedang itu m",
-    "rating": "17+"
   },
   {
     "judul": "Return of the Mad Demon",
