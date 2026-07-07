@@ -99,6 +99,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "healing-with-drubly",
+    "judul": "Healing With Drubly",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/03/20260603120006_ed4f85f5d8da01a0_302dab72.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
     "judul": "Hissatsu Reijou Liese ~Tensei Shita Saikyou no Koroshiya wa, Yami wo Matou Akuyaku Reijou to Naru~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627170011_5de6131170c74e98_ec1e629a.jpg?w=1200",
@@ -201,8 +210,8 @@
     "slug": "suterare-saijo-wa-kazoku-to-nonbiri-ikiru-koto-ni-shimasu",
     "judul": "Suterare Saijo Wa Kazoku To Nonbiri Ikiru Koto Ni Shimasu",
     "thumb": "https://thumbnail.komiku.org/img/upload/suterare_saijo_wa_kazoku_to_nonbiri_ikiru_koto_ni_shimasu/img_691ee5ba1f3201.84407978.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -261,6 +270,15 @@
     "status": ""
   },
   {
+    "slug": "senmetsumadou-no-saikyou-kenja-musai-no-kenja-madou-wo-kiwame-saikyou-e-itaru",
+    "judul": "Senmetsumadou no Saikyou Kenja: Musai no Kenja, Madou wo Kiwame Saikyou e Itaru",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/senmetsumadou-no-saikyou-kenja-musai-no-kenja-madou-wo-kiwame-saikyou-e-itaru/manga_thumbnail-Manga-Senmetsumadou-no-Saikyou-Kenja-Musai-no-Kenja-Madou-wo-Kiwame-Saikyou-e-Itaru.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "sekkaku-nouka-ni-tensei-shitanode-yuusha-wa-mezashimasen",
     "judul": "Sekkaku Nouka ni Tensei shitanode Yuusha wa Mezashimasen",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140019_7cc7174ba30380d8_8d08825f.jpg?w=1200",
@@ -285,6 +303,15 @@
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "my-simulated-path-to-immortality",
+    "judul": "My Simulated Path to Immortality",
+    "thumb": "https://thumbnail.komiku.org/img/upload/my_simulated_path_to_immortality/img_69218147138982.15559427.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
   },
   {
@@ -570,8 +597,8 @@
     "slug": "kiraware-majo-to-karada-ga-irekawatta-keredo-watashi-wa-kyou-mo-genki-ni-kurashiteimasu",
     "judul": "Kiraware Majo to Karada ga Irekawatta Keredo, Watashi wa Kyou mo Genki ni Kurashiteimasu!",
     "thumb": "https://thumbnail.komiku.org/img/upload/kiraware_majo_to_karada_ga_irekawatta_keredo/img_693fd370099270.11540255.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -651,8 +678,8 @@
     "slug": "kaifukushoku-no-akuyaku-reijou",
     "judul": "Kaifukushoku no Akuyaku Reijou",
     "thumb": "https://thumbnail.komiku.org/img/upload/kaifukushoku_no_akuyaku_reijou/img_6864e5bec880f1.03648246.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -790,6 +817,15 @@
     "online": 8,
     "tipe": "Manhua",
     "status": ""
+  },
+  {
+    "slug": "im-really-not-the-demon-gods-lackey",
+    "judul": "I’m Really Not The Demon God’s Lackey",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/im-really-not-the-demon-gods-lackey/manga_thumbnail-Manhua-Im-Really-Not-The-Demon-Gods-Lackey.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
     "slug": "i-became-a-hatchling",
@@ -1008,11 +1044,20 @@
     "status": ""
   },
   {
+    "slug": "to-hell-with-the-status-window",
+    "judul": "To Hell With the Status Window",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314031606_ef1a33dbf57f7131_ceecc12f.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "tada-shizuka-ni-kiesaru-tsumorideshita",
     "judul": "Tada Shizuka ni Kiesaru Tsumorideshita",
     "thumb": "https://thumbnail.komiku.org/img/upload/tada_shizuka_ni_kiesaru_tsumorideshita/img_685509e7e979c8.13182957.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manga",
     "status": "Ongoing"
   },
