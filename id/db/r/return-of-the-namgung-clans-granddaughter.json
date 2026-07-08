@@ -1,6 +1,7 @@
 {
   "judul": "Return of the Namgung Clan's Granddaughter",
   "judul_alternatif": "Kembalinya Cucu Klan Namgung",
+  "slug": "return-of-the-namgung-clans-granddaughter",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708153012_3d46795b94bbb8d5_fffd25d9.png?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -13,9 +14,13 @@
   "sinopsis": "Setelah diasingkan akibat kudeta yang mengguncang Klan Namgung, sang cucu kembali dengan keahlian pedang tajam dan kepala dingin. Ia membawa tekad untuk merebut lagi martabat keluarganya, membongkar pengkhianat yang bersembunyi di lingkaran terdekat, dan melindungi orang-orang yang dulu tak sempat ia selamatkan.\nDi tengah rapat tetua, turnamen murim, dan misi lintas wilayah, ia dihadapkan pada pilihan antara balas dendam instan atau reformasi yang berkelanjutan. Aliansi tak terduga, rivalitas dengan pewaris klan lain, dan rahasia garis darah memaksanya tumbuh cepat. Setiap duel bukan hanya adu jurus, melainkan langkah catur menuju kursi pemimpin klan.",
   "author": "-",
   "rating": "13+",
-  "pembaca_total": 0,
-  "pembaca_mingguan": 0,
+  "pembaca_total": 19,
+  "pembaca_mingguan": 19,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 17",
   "chapters": [
     {
       "nama": "Chapter 17",
@@ -76,10 +81,5 @@
       ]
     }
   ],
-  "slug": "return-of-the-namgung-clans-granddaughter",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 17",
-  "last_scraped": "2026-07-08T11:01:00.427448"
+  "last_scraped": "2026-07-08T12:01:49.390190"
 }

@@ -18,10 +18,52 @@
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11",
+  "online": 11,
+  "chapterCount": 11,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/ashita-mo-mata-yuusha-no-tonari-chapter-1/",
+      "tanggal_rilis": "08/07/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/1.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/2.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/3.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/4.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/5.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/6.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/7.webp",
+        "https://img1.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/8.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/9.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/10.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/11.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/12.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/13.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/14.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/15.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/16.webp",
+        "https://img2.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/17.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/18.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/19.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/20.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/21.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/22.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/23.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/24.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/25.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/26.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/27.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/28.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/29.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/30.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/31.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/32.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/33.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/34.webp",
+        "https://img.komiku.org/upload5/ashita-mo-mata-yuusha-no-tonari/1/2026-07-08/35.webp"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/ashita-mo-mata-yuusha-no-tonari-chapter-2/",
@@ -323,5 +365,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-08T11:05:22.402196"
+  "last_scraped": "2026-07-08T12:05:58.969114"
 }
