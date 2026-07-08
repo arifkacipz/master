@@ -9,15 +9,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "revenge-of-the-bloom-flower",
-    "judul": "Revenge of the Bloom Flower",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/26/20260426214632_d6875e202bf1788a_e2d4ce95.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
     "slug": "rabu-kome-suki-to-kossori-tsunagaritai",
     "judul": "#Rabu kome-suki to kossori tsunagaritai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627140026_41e7c78383942870_58d068f2.jpg?w=1200",
@@ -39,8 +30,8 @@
     "slug": "return-of-the-namgung-clans-granddaughter",
     "judul": "Return of the Namgung Clan's Granddaughter",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708153012_3d46795b94bbb8d5_fffd25d9.png?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 6,
+    "online": 6,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -88,15 +79,6 @@
     "online": 1,
     "tipe": "Manga",
     "status": "Ongoing"
-  },
-  {
-    "slug": "became-a-family-with-the-four-duke-brothers",
-    "judul": "Became a Family with the Four Duke Brothers",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074524_16e11585d4854fde_cc7c0838.jpg?w=1200",
-    "chapterCount": 14,
-    "online": 14,
-    "tipe": "Manhwa",
-    "status": ""
   },
   {
     "slug": "buka-mbg-di-dunia-lain",
@@ -180,6 +162,24 @@
     "status": ""
   },
   {
+    "slug": "empyreal-cabinet",
+    "judul": "Empyreal Cabinet",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170105_478f82fd2cb0df50_936e1ea6.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": ""
+  },
+  {
+    "slug": "31514-grand-blue",
+    "judul": "Grand Blue",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/31514-grand-blue/manga_thumbnail-Komik-Grand-Blue.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "full-time-hunter-i-hunt-the-world",
     "judul": "Full-time Hunter: I Hunt the World!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143020_41f336e3cd5377be_c541e8c3.webp?w=1200",
@@ -228,8 +228,8 @@
     "slug": "game-kaishi-mae-ni-shini-mob-akuyaku-ouji-ni-tensei-shita-ore",
     "judul": "Game Kaishi Mae ni Shini Mob Akuyaku Ouji ni Tensei shita Ore",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629211511_01f631db9cd4fa4b_e9cdff8f.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -327,8 +327,8 @@
     "slug": "sofubo-wo-tazunete-iede-kyodai-ni-nin-tabi-haha-to-no-wakare-nigiyakana-tabiji",
     "judul": "Sofubo Wo Tazunete Iede Kyodai Ni Nin Tabi Haha to No Wakare, Nigiyakana Tabiji",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150038_78ec66f9ab88d93f_6691cfa3.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 6,
+    "online": 6,
     "tipe": "Manga",
     "status": ""
   },
@@ -423,15 +423,6 @@
     "status": ""
   },
   {
-    "slug": "mr-zombie",
-    "judul": "Mr. Zombie",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mr-zombie/manga_thumbnail-Mr.-Zombie-1.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "meow-meow-squeak-squeak",
     "judul": "Meow-Meow Squeak-Squeak!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144611_4d52caad0d1f2740_753c9549.jpg?w=1200",
@@ -507,10 +498,19 @@
     "slug": "like-father-like-son",
     "judul": "Like Father, Like Son",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517231555_c3c2e6d881e8bed9_d11b62b3.webp?w=1200",
-    "chapterCount": 11,
-    "online": 11,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "level-1-kara-hajimaru-shoukan-musou",
+    "judul": "Level 1 kara Hajimaru Shoukan Musou",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/level-1-kara-hajimaru-shoukan-musou/manga_thumbnail-Manga-Level-1-kara-Hajimaru-Shoukan-Musou.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "legend-of-the-low-level-martial-artist",
@@ -610,6 +610,15 @@
     "online": 12,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "okaasan-boukensha-login-bonus-de-skill-shufu-ni-mezamemashita-shuuichi-moraeru-chirashi-de-boukensha-seikatsu-ganbarimasu",
+    "judul": "Okaasan Boukensha, Login Bonus de Skill [Shufu] ni Mezamemashita. Shuuichi Moraeru Chirashi de Boukensha Seikatsu Ganbarimasu!",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313061558_c1bf6d549e03cea5_dd82d934.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "otomege-no-mobu-de-sura-nain-da-ga",
@@ -759,8 +768,8 @@
     "slug": "kokou-na-kanojo-to-kanojo-no-heya-de-shiteru-koto",
     "judul": "Kokou na Kanojo to, Kanojo no Heya de Shiteru Koto",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708151558_728419a37abb2b68_82d6041e.jpg?w=1200",
-    "chapterCount": 0,
-    "online": 0,
+    "chapterCount": 1,
+    "online": 1,
     "tipe": "Manga",
     "status": ""
   },
@@ -855,15 +864,6 @@
     "status": ""
   },
   {
-    "slug": "atm-ojisan-isekai-de-mote-ki-ga-tomaranai",
-    "judul": "ATM Ojisan: Isekai de Mote-ki ga Tomaranai!",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/28/20260528181613_2ebde98cd99a7e51_8bef3fd0.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "akuyaku-kizoku-ga-hirakinaotte-hametsu-flag-wo-jitsuryoku-de-tatakiotteitara-itsunomanika-heroine-tachi-kara-eiyuushi-sareru-you-ni-natta-ken",
     "judul": "Akuyaku Kizoku ga Hirakinaotte Hametsu Flag wo \"Jitsuryoku\" de Tatakiotteitara, Itsunomanika Heroine-tachi kara Eiyuushi Sareru you ni Natta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504223058_c1fb0b109509759b_86392d03.jpg?w=1200",
@@ -885,8 +885,8 @@
     "slug": "adopting-the-male-protagonist-changed-the-genre",
     "judul": "Adopting the Male Protagonist Changed the Genre",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144552_9bc24a44830baf55_c876704a.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -936,6 +936,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "children-of-the-rune",
+    "judul": "Children of the Rune",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/children-of-the-rune/manga_thumbnail-A2-Children-Of-Rune.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "chanto-suki-tte-ieru-ko-musou",
     "judul": "Chanto Suki tte Ieru Ko Musou",
     "thumb": "https://thumbnail.komiku.org/img/upload/chanto_suki_tte_ieru_ko_musou/img_6909e0ebb465c3.74850349.jpg?w=1200",
@@ -963,6 +972,15 @@
     "status": ""
   },
   {
+    "slug": "chronicles-of-the-martial-gods",
+    "judul": "Chronicles Of The Martial God’s",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/chronicles-of-the-martial-gods/manga_thumbnail-Chronicles-Cover.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "zero-degrees",
     "judul": "Zero Degrees",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620133006_a4edd445d30f8eb3_f31580e7.webp?w=1200",
@@ -987,6 +1005,15 @@
     "chapterCount": 12,
     "online": 12,
     "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "isekai-izakaya-nobu",
+    "judul": "Isekai Izakaya “Nobu”",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/isekai-izakaya-nobu/manga_thumbnail-Manga-Isekai-Izakaya-Nobu.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
     "status": "Ongoing"
   },
   {
@@ -1087,6 +1114,15 @@
     "online": 10,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "ichiokunen-shugyou-no-mujikaku-kensei",
+    "judul": "Ichiokunen Shugyou no Mujikaku Kensei",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708194512_c2d114817b6c810f_8ceb9764.jpg?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "i-turn-skills-into-broken-ones-with-a-single-word",
@@ -1374,6 +1410,15 @@
     "chapterCount": 4,
     "online": 4,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "underworld-restaurant",
+    "judul": "Underworld Restaurant",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/underworld-restaurant/manga_thumbnail-Underworld-Restaurant-1-1.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
     "status": "Ongoing"
   }
 ]
