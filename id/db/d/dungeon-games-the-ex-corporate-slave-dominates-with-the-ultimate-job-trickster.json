@@ -1,6 +1,7 @@
 {
   "judul": "Dungeon Games: The Ex-Corporate Slave Dominates With the Ultimate Job “Trickster”",
   "judul_alternatif": "Permainan Dungeon: Mantan Budak Korporat Mendominasi dengan Pekerjaan Pamungkas 'Trickster'",
+  "slug": "dungeon-games-the-ex-corporate-slave-dominates-with-the-ultimate-job-trickster",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144505_077a94e9e28f88ea_0a63d716.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 2",
@@ -153,10 +158,5 @@
       ]
     }
   ],
-  "slug": "dungeon-games-the-ex-corporate-slave-dominates-with-the-ultimate-job-trickster",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-08T08:15:09.919277"
+  "last_scraped": "2026-07-08T11:04:52.442556"
 }

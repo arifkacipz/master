@@ -1,6 +1,7 @@
 {
   "judul": "TS Aruka-chan to Kinin Shimai no Nichijou",
   "judul_alternatif": "TS Aruka-chan dan Keseharian Saudari Bangsawan",
+  "slug": "ts-aruka-chan-to-kinin-shimai-no-nichijou",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708143029_a10e7698c9298e8d_8afa394c.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -13,6 +14,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -78,10 +83,5 @@
       ]
     }
   ],
-  "slug": "ts-aruka-chan-to-kinin-shimai-no-nichijou",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-08T08:15:32.255031"
+  "last_scraped": "2026-07-08T11:05:09.740703"
 }

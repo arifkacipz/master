@@ -1,6 +1,7 @@
 {
   "judul": "Kiwamete KENZEN na Bishoujo Level Up",
   "judul_alternatif": "Naik Level Gadis Cantik yang Teramat Sehat Hati",
+  "slug": "kiwamete-kenzen-na-bishoujo-level-up",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/30/20260430144534_bca9a7956bcf92b6_2ae2cb08.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 956,
   "pembaca_mingguan": 37,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -67,10 +72,5 @@
       ]
     }
   ],
-  "slug": "kiwamete-kenzen-na-bishoujo-level-up",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-07-08T08:14:07.420992"
+  "last_scraped": "2026-07-08T11:02:08.337038"
 }

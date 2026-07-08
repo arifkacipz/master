@@ -1,6 +1,7 @@
 {
   "judul": "I Ended Up Raising My Younger Self",
   "judul_alternatif": "Aku Berakhir Mengasuh Diriku yang Lebih Muda",
+  "slug": "i-ended-up-raising-my-younger-self",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150033_5aa69ed7a6700cd3_25fe323b.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 2",
@@ -103,10 +108,5 @@
       ]
     }
   ],
-  "slug": "i-ended-up-raising-my-younger-self",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 2",
-  "last_scraped": "2026-07-08T08:14:43.083720"
+  "last_scraped": "2026-07-08T11:04:33.707272"
 }

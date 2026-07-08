@@ -1,6 +1,7 @@
 {
   "judul": "My Husband Was Definitely a Paladin",
   "judul_alternatif": "Suamiku Benar-Benar Seorang Paladin",
+  "slug": "my-husband-was-definitely-a-paladin",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150010_3cfc84edf6ad184a_469b6ad6.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 3",
@@ -102,10 +107,5 @@
       ]
     }
   ],
-  "slug": "my-husband-was-definitely-a-paladin",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 3",
-  "last_scraped": "2026-07-08T08:14:03.389413"
+  "last_scraped": "2026-07-08T11:02:05.373363"
 }

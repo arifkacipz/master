@@ -1,6 +1,7 @@
 {
   "judul": "Tenmaku no Jaadugar",
   "judul_alternatif": "Pesulap di Balik Tenda",
+  "slug": "tenmaku-no-jaadugar",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150054_2b82abe50caed236_aad6b823.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 1",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -69,10 +74,5 @@
       ]
     }
   ],
-  "slug": "tenmaku-no-jaadugar",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 1",
-  "last_scraped": "2026-07-08T08:14:31.671927"
+  "last_scraped": "2026-07-08T11:04:22.836814"
 }

@@ -1,6 +1,7 @@
 {
   "judul": "I Turn Skills Into Broken Ones With a Single Word",
   "judul_alternatif": "Aku Mengubah Skill Jadi OP Hanya dengan Satu Kata",
+  "slug": "i-turn-skills-into-broken-ones-with-a-single-word",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708143038_3bd85518b1f2f4d9_c3bc3952.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -138,10 +143,5 @@
       ]
     }
   ],
-  "slug": "i-turn-skills-into-broken-ones-with-a-single-word",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-07-08T08:16:09.992209"
+  "last_scraped": "2026-07-08T11:05:38.107509"
 }

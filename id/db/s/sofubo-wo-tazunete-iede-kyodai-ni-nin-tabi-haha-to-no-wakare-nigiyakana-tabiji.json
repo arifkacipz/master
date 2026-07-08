@@ -1,6 +1,7 @@
 {
   "judul": "Sofubo Wo Tazunete Iede Kyodai Ni Nin Tabi Haha to No Wakare, Nigiyakana Tabiji",
   "judul_alternatif": "Mencari Kakek-Nenek: Kakak-Adik Kabur dari Rumah, Perpisahan dengan Ibu, dan Perjalanan yang Ramai",
+  "slug": "sofubo-wo-tazunete-iede-kyodai-ni-nin-tabi-haha-to-no-wakare-nigiyakana-tabiji",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150038_78ec66f9ab88d93f_6691cfa3.jpg?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 3.1, Chapter 4.1",
   "chapters": [
     {
       "nama": "Chapter 3.1",
@@ -69,10 +74,5 @@
       ]
     }
   ],
-  "slug": "sofubo-wo-tazunete-iede-kyodai-ni-nin-tabi-haha-to-no-wakare-nigiyakana-tabiji",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 3.1, Chapter 4.1",
-  "last_scraped": "2026-07-08T08:14:24.160687"
+  "last_scraped": "2026-07-08T11:04:20.881021"
 }

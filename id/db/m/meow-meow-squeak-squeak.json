@@ -1,6 +1,7 @@
 {
   "judul": "Meow-Meow Squeak-Squeak!",
   "judul_alternatif": "Meong-Meong Cit-Cit!",
+  "slug": "meow-meow-squeak-squeak",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144611_4d52caad0d1f2740_753c9549.jpg?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -14,6 +15,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -151,10 +156,5 @@
       ]
     }
   ],
-  "slug": "meow-meow-squeak-squeak",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-07-08T08:15:03.895044"
+  "last_scraped": "2026-07-08T11:04:49.425297"
 }
