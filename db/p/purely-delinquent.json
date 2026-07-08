@@ -2,9 +2,9 @@
     "judul": "Purely Delinquent",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Purely-Delinquent-193x278.jpg",
     "source": "arenascan",
-    "online": 16,
-    "chapterCount": 16,
-    "Chs": "Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 18,
+    "chapterCount": 18,
+    "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -370,7 +370,53 @@
                 "https://cdn.arenascan.com/arena-bucket/394868/16/b92e1e6126fd.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 17",
+            "url": "https://arenascan.com/purely-delinquent-chapter-17/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/394868/17/ed565d365d21.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/fb2dc1010b28.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/3f47c59d7993.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/540a6846bbf6.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/7d3a9a23e08a.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/f94d599e6205.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/9e0fd52089a4.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/cd6488f7090c.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/17/54135741569d.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/purely-delinquent-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/394868/18/99b5105552eb.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/100e9b395036.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/d1746eb5c638.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/c827169d9511.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/8ff0e130422f.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/adef3c70e41d.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/15dae8f75e1e.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/33cf690e2e8f.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/b75240cd0ce2.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/e1cbcef9aa96.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/5659556d5d7d.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/3ddb000ce629.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/2e5eb64131ca.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/0676323517ed.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/c9191ceaaa7c.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/af68b5025ae5.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/c2af1704d4d4.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/9d061434ae5a.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/7fd7a67a710a.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/8294c86c945f.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/0778c1a8d28a.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/01674d3b4537.webp",
+                "https://cdn.arenascan.com/arena-bucket/394868/18/786ea40e87c8.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-24T20:19:48.828213"
+    "last_scraped": "2026-07-08T18:00:20.699722"
 }
