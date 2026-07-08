@@ -22,6 +22,19 @@
     ]
   },
   {
+    "slug": "my-killer-neighbor",
+    "judul": "My Killer Neighbor",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Killer-Neighbor-193x278.webp",
+    "total_online": 28,
+    "total_downloaded": 24,
+    "missing": [
+      "Chapter 25",
+      "Chapter 24",
+      "Chapter 23",
+      "Chapter 22"
+    ]
+  },
+  {
     "slug": "angelica-my-wife-has-changed",
     "judul": "Angelica: My wife has changed",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/46f001bd-4158-450e-98cd-fdd37bc7dbf9.jpg",
@@ -82,15 +95,22 @@
     ]
   },
   {
+    "slug": "alessas-frills",
+    "judul": "Alessa’s Frills",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f08b237e-8329-4c48-9fac-64e22f79539c.jpg",
+    "total_online": 49,
+    "total_downloaded": 48,
+    "missing": [
+      "Chapter 5.5"
+    ]
+  },
+  {
     "slug": "the-maids-secret-tea-recipe-for-the-prince",
     "judul": "The Maid’s Secret Tea Recipe for the Prince",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/37087feb-1f2e-4f6f-8f1c-2c564c8eb93e.webp",
     "total_online": 56,
-    "total_downloaded": 3,
+    "total_downloaded": 6,
     "missing": [
-      "Chapter 53",
-      "Chapter 52",
-      "Chapter 51",
       "Chapter 50",
       "Chapter 49",
       "Chapter 48",
@@ -162,11 +182,8 @@
     "judul": "The Kind Intruder",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/7526ba68-d917-4077-8a88-637af486da9e.webp",
     "total_online": 55,
-    "total_downloaded": 51,
+    "total_downloaded": 54,
     "missing": [
-      "Chapter 52",
-      "Chapter 51",
-      "Chapter 50",
       "Chapter 49"
     ]
   },
