@@ -19,10 +19,51 @@
   "pembaca_mingguan": 134,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21",
+  "online": 21,
+  "chapterCount": 21,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/ore-ga-inai-to-sugu-chomeru-hakanagi-kasumi-chapter-1/",
+      "tanggal_rilis": "27/01/2026",
+      "images": [
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/1.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/2.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/3.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/4.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/5.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/6.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/7.webp",
+        "https://img1.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/8.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/9.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/10.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/11.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/12.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/13.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/14.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/15.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/16.webp",
+        "https://img2.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/17.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/18.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/19.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/20.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/21.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/22.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/23.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/24.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/25.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/26.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/27.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/28.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/29.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/30.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/31.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/32.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/33.webp",
+        "https://img.komiku.org/upload5/ore-ga-inai-to-sugu-chomeru-hakanag/1/2026-01-27/34.webp"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/ore-ga-inai-to-sugu-chomeru-hakanagi-kasumi-chapter-2/",
@@ -590,5 +631,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-08T14:51:25.445330"
+  "last_scraped": "2026-07-08T15:18:07.903243"
 }
