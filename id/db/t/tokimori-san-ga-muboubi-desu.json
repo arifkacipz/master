@@ -18,10 +18,84 @@
   "pembaca_mingguan": 239,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 30,
-  "chapterCount": 30,
-  "Chs": "Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 33.5, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43",
+  "online": 35,
+  "chapterCount": 35,
+  "Chs": "Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 33.5, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43",
   "chapters": [
+    {
+      "nama": "Chapter 10",
+      "url": "https://komiku.org/tokimori-san-ga-muboubi-desu-chapter-10/",
+      "tanggal_rilis": "26/04/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2684443-1_part1.jpg",
+        "https://img.komiku.org/uploads2/2684443-1_part2.jpg",
+        "https://img.komiku.org/uploads2/2684443-2_part1.jpg",
+        "https://img.komiku.org/uploads2/2684443-2_part2.jpg",
+        "https://img.komiku.org/uploads2/2684443-3_part1.jpg",
+        "https://img.komiku.org/uploads2/2684443-3_part2.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 11",
+      "url": "https://komiku.org/tokimori-san-ga-muboubi-desu-chapter-11/",
+      "tanggal_rilis": "01/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2685539-1_part1.jpg",
+        "https://img.komiku.org/uploads2/2685539-1_part2.jpg",
+        "https://img.komiku.org/uploads2/2685539-1_part3.jpg",
+        "https://img.komiku.org/uploads2/2685539-2_part1.jpg",
+        "https://img.komiku.org/uploads2/2685539-2_part2.jpg",
+        "https://img.komiku.org/uploads2/2685539-3_part1.jpg",
+        "https://img.komiku.org/uploads2/2685539-3_part2.jpg",
+        "https://img.komiku.org/uploads2/2685539-4.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 12",
+      "url": "https://komiku.org/tokimori-san-ga-muboubi-desu-chapter-12/",
+      "tanggal_rilis": "01/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2685538-1_part1.jpg",
+        "https://img.komiku.org/uploads2/2685538-1_part2.jpg",
+        "https://img.komiku.org/uploads2/2685538-2_part1.jpg",
+        "https://img.komiku.org/uploads2/2685538-2_part2.jpg",
+        "https://img.komiku.org/uploads2/2685538-3_part1.jpg",
+        "https://img.komiku.org/uploads2/2685538-3_part2.jpg",
+        "https://img.komiku.org/uploads2/2685538-4.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 13",
+      "url": "https://komiku.org/tokimori-san-ga-muboubi-desu-chapter-13/",
+      "tanggal_rilis": "09/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2687951-1_part1.jpg",
+        "https://img.komiku.org/uploads2/2687951-1_part2.jpg",
+        "https://img.komiku.org/uploads2/2687951-1_part3.jpg",
+        "https://img.komiku.org/uploads2/2687951-2_part1.jpg",
+        "https://img.komiku.org/uploads2/2687951-2_part2.jpg",
+        "https://img.komiku.org/uploads2/2687951-2_part3.jpg",
+        "https://img.komiku.org/uploads2/2687951-3_part1.jpg",
+        "https://img.komiku.org/uploads2/2687951-3_part2.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 14",
+      "url": "https://komiku.org/tokimori-san-ga-muboubi-desu-chapter-14/",
+      "tanggal_rilis": "09/05/2023",
+      "images": [
+        "https://img.komiku.org/uploads2/2687950-1_part1.jpg",
+        "https://img.komiku.org/uploads2/2687950-1_part2.jpg",
+        "https://img.komiku.org/uploads2/2687950-2_part1.jpg",
+        "https://img.komiku.org/uploads2/2687950-2_part2.jpg",
+        "https://img.komiku.org/uploads2/2687950-2_part3.jpg",
+        "https://img.komiku.org/uploads2/2687950-3_part1.jpg",
+        "https://img.komiku.org/uploads2/2687950-3_part2.jpg",
+        "https://img.komiku.org/uploads2/2687950-3_part3.jpg",
+        "https://img.komiku.org/uploads2/2687950-4_part1.jpg",
+        "https://img.komiku.org/uploads2/2687950-4_part2.jpg"
+      ]
+    },
     {
       "nama": "Chapter 15",
       "url": "https://komiku.org/tokimori-san-ga-muboubi-desu-chapter-15/",
@@ -556,5 +630,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-09T22:48:21.431821"
+  "last_scraped": "2026-07-09T23:07:49.504258"
 }
