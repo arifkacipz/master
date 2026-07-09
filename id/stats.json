@@ -36,15 +36,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "return-of-the-frozen-player",
-    "judul": "Return of the Frozen Player",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/return-of-the-frozen-player/manga_thumbnail-Manhwa-Return-of-the-Frozen-Player.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "worlds-strongest-punch",
     "judul": "World's Strongest Punch",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620001506_5bc455c6c939a93c_e8dae186.webp?w=1200",
@@ -84,19 +75,10 @@
     "slug": "baito-saki-no-net-cafe-ga-nazeka-class-no-bishoujo-tachi-no-tamariba-ni-natta-ken",
     "judul": "Baito-saki no Net Café ga, Nazeka Class no Bishoujo-tachi no Tamariba ni Natta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703140009_8c8359a00f52e6d0_de4c97c3.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manga",
     "status": "Ongoing"
-  },
-  {
-    "slug": "bokutachi-ga-yarimashita",
-    "judul": "Bokutachi ga Yarimashita",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053028_c112ac9cb3dc34a9_7d85b50a.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": ""
   },
   {
     "slug": "buka-mbg-di-dunia-lain",
@@ -113,6 +95,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324060022_3e2c9fcfaca23bef_76aa4c8a.webp?w=1200",
     "chapterCount": 7,
     "online": 7,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "harapeko-oyako-to-motokare-yanushi",
+    "judul": "Harapeko Oyako to Motokare Yanushi",
+    "thumb": "https://thumbnail.komiku.org/img/upload/harapeko_oyako_to_motokare_yanushi/img_685263f23bbd09.46359086.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -243,6 +234,15 @@
     "status": ""
   },
   {
+    "slug": "gyaru-shinkan-wa-rizare-ga-darui",
+    "judul": "Gyaru Shinkan wa Rizare ga Darui",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415163023_06a0e7de79055166_0366d434.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
     "slug": "game-kaishi-mae-ni-shini-mob-akuyaku-ouji-ni-tensei-shita-ore",
     "judul": "Game Kaishi Mae ni Shini Mob Akuyaku Ouji ni Tensei shita Ore",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629211511_01f631db9cd4fa4b_e9cdff8f.jpg?w=1200",
@@ -304,15 +304,6 @@
     "online": 1,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "superhuman-game-broadcast",
-    "judul": "Superhuman Game Broadcast",
-    "thumb": "https://thumbnail.komiku.org/img/upload/superhuman_game_broadcast/img_69202e1c0a9031.19811781.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "shura-youjo-no-eiyuutan-hanpa-sha-to-iwa-reta-youhei-youjo-ni-tensei-shite-nariagaru",
@@ -441,15 +432,6 @@
     "status": ""
   },
   {
-    "slug": "mamayuyu",
-    "judul": "MamaYuyu",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053035_23970f7c21b979b1_3d551599.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": ""
-  },
-  {
     "slug": "maou-sama-re-re-revenge",
     "judul": "Maou-sama, Re Re Revenge!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143015_5b0b543901308d8a_22725a8e.webp?w=1200",
@@ -457,6 +439,15 @@
     "online": 3,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "monster-no-niku-wo-kutte-itara-oui-no-tsuita-ken",
+    "judul": "Monster no Niku wo Kutte Itara Oui no Tsuita Ken",
+    "thumb": "https://thumbnail.komiku.org/img/upload/monster_no_niku_wo_kutte_itara_oui_no_tsuita_ken/img_689300b8092509.96671334.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "meow-meow-squeak-squeak",
@@ -516,8 +507,8 @@
     "slug": "my-husband-was-definitely-a-paladin",
     "judul": "My Husband Was Definitely a Paladin",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150010_3cfc84edf6ad184a_469b6ad6.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -543,8 +534,8 @@
     "slug": "make-heroine-o-katasetai",
     "judul": "Make Heroine o Katasetai!!",
     "thumb": "https://thumbnail.komiku.org/img/upload/make_heroine_o_katasetai__/img_68c51d5b7e10e3.56588829.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1047,8 +1038,8 @@
     "slug": "i-ended-up-raising-my-younger-self",
     "judul": "I Ended Up Raising My Younger Self",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150033_5aa69ed7a6700cd3_25fe323b.jpg?w=1200",
-    "chapterCount": 3,
-    "online": 3,
+    "chapterCount": 6,
+    "online": 6,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -1236,8 +1227,8 @@
     "slug": "tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shit",
     "judul": "Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shit",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shit/manga_thumbnail-Komik-Tensei-Kizoku-no-Isekai-Boukenroku-Jichou-wo-Shiranai-Kamigami-no-Shit.jpeg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1302,15 +1293,6 @@
     "chapterCount": 8,
     "online": 8,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "transmigrating-to-the-otherworld-once-more",
-    "judul": "Transmigrating to the Otherworld Once More",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/transmigrating-to-the-otherworld-once-more/manga_thumbnail-Manhwa-Transmigrating-to-the-Otherworld-Once-More.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
