@@ -1,6 +1,7 @@
 {
   "judul": "Musume Ni Danzai Sareru Akuyaku Koushaku Ni Tensei Shitemashita ~Akuyaku Muubu o Yameta no ni Nazeka Musume ga Koori No Reijou Ka Suru Ken~",
   "judul_alternatif": "Aku Bereinkarnasi Menjadi Adipati Penjahat yang Dihukum Putriku ~Sudah Tobat, Tapi Entah Mengapa Putriku Menjadi Nona Es~",
+  "slug": "musume-ni-danzai-sareru-akuyaku-koushaku-ni-tensei-shitemashita-akuyaku-muubu-o-yameta-no-ni-nazeka-musume-ga-koori-no-reijou-ka-suru-ken",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/28/20260528181519_d49aa8e02cc4470d_4a4a898c.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -20,6 +21,10 @@
   "pembaca_total": 3781,
   "pembaca_mingguan": 390,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2, Chapter 3.1, Chapter 3.2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -171,10 +176,5 @@
       ]
     }
   ],
-  "slug": "musume-ni-danzai-sareru-akuyaku-koushaku-ni-tensei-shitemashita-akuyaku-muubu-o-yameta-no-ni-nazeka-musume-ga-koori-no-reijou-ka-suru-ken",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2, Chapter 3.1, Chapter 3.2",
-  "last_scraped": "2026-07-09T11:29:31.885687"
+  "last_scraped": "2026-07-09T11:51:24.673409"
 }
