@@ -1,6 +1,7 @@
 {
   "judul": "My Twin Stole My Place as His Wife",
   "judul_alternatif": "Kembaranku Merebut Posisiku sebagai Istrinya",
+  "slug": "my-twin-stole-my-place-as-his-wife",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709191509_310985e8d4eb004d_f748b13c.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -518,10 +523,5 @@
       ]
     }
   ],
-  "slug": "my-twin-stole-my-place-as-his-wife",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-07-09T14:15:14.998390"
+  "last_scraped": "2026-07-09T14:42:30.192523"
 }
