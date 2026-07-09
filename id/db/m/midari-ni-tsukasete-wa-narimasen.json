@@ -16,10 +16,100 @@
   "pembaca_mingguan": 104,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 5.2, Chapter 6.1, Chapter 6.2, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13",
+  "online": 15,
+  "chapterCount": 15,
+  "Chs": "Chapter 3.1, Chapter 3.2, Chapter 4.1, Chapter 4.2, Chapter 5.1, Chapter 5.2, Chapter 6.1, Chapter 6.2, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13",
   "chapters": [
+    {
+      "nama": "Chapter 3.1",
+      "url": "https://komiku.org/midari-ni-tsukasete-wa-narimasen-chapter-3-1/",
+      "tanggal_rilis": "04/06/2025",
+      "images": [
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/1.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/2.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/3.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/4.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/5.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/6.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/7.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/8.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/9.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/10.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.1/2025-06-04/11.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 3.2",
+      "url": "https://komiku.org/midari-ni-tsukasete-wa-narimasen-chapter-3-2/",
+      "tanggal_rilis": "04/06/2025",
+      "images": [
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/1.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/2.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/3.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/4.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/5.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/6.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/7.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/8.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/9.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/10.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/3.2/2025-06-04/11.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 4.1",
+      "url": "https://komiku.org/midari-ni-tsukasete-wa-narimasen-chapter-4-1/",
+      "tanggal_rilis": "04/06/2025",
+      "images": [
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/1.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/2.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/3.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/4.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/5.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/6.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/7.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/8.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/9.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/10.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.1/2025-06-04/11.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 4.2",
+      "url": "https://komiku.org/midari-ni-tsukasete-wa-narimasen-chapter-4-2/",
+      "tanggal_rilis": "04/06/2025",
+      "images": [
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/1.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/2.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/3.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/4.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/5.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/6.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/7.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/8.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/9.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/10.jpg",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/4.2/2025-06-04/11.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 5.1",
+      "url": "https://komiku.org/midari-ni-tsukasete-wa-narimasen-chapter-5-1/",
+      "tanggal_rilis": "04/06/2025",
+      "images": [
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/1.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/2.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/3.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/4.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/5.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/6.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/7.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/8.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/9.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/10.webp",
+        "https://img.komiku.org/upload5/midari-ni-tsukasete-wa-narimasen/5.1/2025-06-04/11.webp"
+      ]
+    },
     {
       "nama": "Chapter 5.2",
       "url": "https://komiku.org/midari-ni-tsukasete-wa-narimasen-chapter-5-2/",
@@ -251,5 +341,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-09T11:51:10.114881"
+  "last_scraped": "2026-07-09T14:16:36.193435"
 }

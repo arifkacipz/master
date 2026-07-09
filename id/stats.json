@@ -81,15 +81,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "brother-am-i-cute",
-    "judul": "Brother, Am I Cute?",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/brother-am-i-cute/manga_thumbnail-Head-Brother-Am-I-Cute.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "buka-mbg-di-dunia-lain",
     "judul": "Buka MBG di Dunia lain",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074531_d863c6acadb26030_6a3db6d9.png?w=1200",
@@ -405,6 +396,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "my-twin-stole-my-place-as-his-wife",
+    "judul": "My Twin Stole My Place as His Wife",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709191509_310985e8d4eb004d_f748b13c.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
     "slug": "minikui-orc-no-gyakushuu-doujin-eroge-no-kichiku-koutaishi-ni-tensei-shita-mo-otoko-no-junan",
     "judul": "Minikui Orc no Gyakushuu - Doujin Eroge no Kichiku Koutaishi ni Tensei Shita mo Otoko no Junan",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194536_8ca70ac2f70cfbd3_294eb747.webp?w=1200",
@@ -441,20 +441,20 @@
     "status": "Ongoing"
   },
   {
-    "slug": "midari-ni-tsukasete-wa-narimasen",
-    "judul": "Midari ni Tsukasete wa Narimasen",
-    "thumb": "https://thumbnail.komiku.org/img/upload/midari_ni_tsukasete_wa_narimasen/img_683fec6b575b23.58695701.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "maou-sama-re-re-revenge",
     "judul": "Maou-sama, Re Re Revenge!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143015_5b0b543901308d8a_22725a8e.webp?w=1200",
     "chapterCount": 3,
     "online": 3,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
+    "slug": "mairimashita-iruma-kun-boku-doumei-no-game-michi",
+    "judul": "Mairimashita! Iruma-kun: Boku Doumei no Game-michi",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709190017_948c62f0f71e59a2_f4fa17ed.webp?w=1200",
+    "chapterCount": 1,
+    "online": 1,
     "tipe": "Manga",
     "status": ""
   },
@@ -484,15 +484,6 @@
     "online": 1,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "my-younger-sister-was-a-genius",
-    "judul": "My Younger Sister Was a Genius",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/my-younger-sister-was-a-genius/manga_thumbnail-A2-My-Younger-Sister-Was-a-Genius.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "moto-saikyou-boukensha-no-rojiura-caffe-nonbiri-kaigyouroku",
@@ -540,11 +531,20 @@
     "status": ""
   },
   {
+    "slug": "male-god-your-persona-has-collapsed",
+    "judul": "Male God, Your Persona Has Collapsed!",
+    "thumb": "https://thumbnail.komiku.org/img/upload/male_god__your_persona_has_collapsed_/img_6985995fb3ccf1.00451751.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
     "slug": "mob-kara-hajimaru-tansaku-eiyuutan",
     "judul": "Mob kara Hajimaru Tansaku Eiyuutan",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/mob-kara-hajimaru-tansaku-eiyuutan/manga_thumbnail-Manga-Mob-kara-Hajimaru-Tansaku-Eiyuutan.jpg?w=1200",
-    "chapterCount": 7,
-    "online": 7,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -556,15 +556,6 @@
     "online": 12,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "legendary-car-hailing-system",
-    "judul": "Legendary Car-Hailing System",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/legendary-car-hailing-system/manga_thumbnail-A2-Legendary-Car-Hailing-System.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
   },
   {
     "slug": "legend-of-the-low-level-martial-artist",
@@ -601,6 +592,15 @@
     "online": 6,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "off-work-today-too",
+    "judul": "Off Work Today Too",
+    "thumb": "https://thumbnail.komiku.org/img/upload/off_work_today_too/img_69859d5fdbc5b2.38888953.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "older-womens-club",
@@ -690,6 +690,15 @@
     "chapterCount": 3,
     "online": 3,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "divine-leveling-system",
+    "judul": "Divine Leveling System",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/divine-leveling-system/manga_thumbnail-Super-God-System-1.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
   },
   {
@@ -939,8 +948,8 @@
     "slug": "academy-saikyou-no-mob-healer-shinigee-sekai-no-mob-ni-tensei-shita-ore-wa-hazure-job-healer-to-gensaku-chishiki-de-musou-suru",
     "judul": "Academy Saikyou no Mob Healer: Shinigee Sekai no Mob ni Tensei Shita Ore wa, Hazure Job [Healer] to Gensaku Chishiki de Musou Suru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151543_5ae6c089a52c9976_ba8a820c.jpg?w=1200",
-    "chapterCount": 4,
-    "online": 4,
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1141,6 +1150,15 @@
     "online": 10,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "isekai-tensei-reijou-shuppon-suru",
+    "judul": "Isekai Tensei Reijou, Shuppon Suru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709190012_1d12b4863c0f9509_efbcf6c0.jpg?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "ichiokunen-shugyou-no-mujikaku-kensei",
@@ -1413,6 +1431,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "the-101st-confession",
+    "judul": "The 101st Confession",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/06/20260606030006_bee5ab3b93aafbe4_5da98f06.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "yami-kakusei-shite-shujinkou-ni-bokosareru-kamaseinu-ni-hyoui-shita-ga-gensaku-to-chigaisugite-tomadotteru",
     "judul": "Yami Kakusei Shite Shujinkou ni Bokosareru Kamaseinu ni Hyoui Shita ga Gensaku to Chigaisugite Tomadotteru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143024_685b38344ed40b54_21732262.png?w=1200",
@@ -1443,8 +1470,8 @@
     "slug": "yugami-no-toriko",
     "judul": "Yugami no Toriko",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324061550_06f352469f142a7c_e5bccf25.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manga",
     "status": "Ongoing"
   },
