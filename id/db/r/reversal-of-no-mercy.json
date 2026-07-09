@@ -1,6 +1,7 @@
 {
   "judul": "Reversal of No Mercy",
   "judul_alternatif": "Pembalikan Tanpa Ampun",
+  "slug": "reversal-of-no-mercy",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/10/20260710030019_e0f21a4332f2cc4f_399084e5.webp?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 1,
+  "chapterCount": 1,
+  "Chs": "Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 2",
@@ -133,10 +138,5 @@
       ]
     }
   ],
-  "slug": "reversal-of-no-mercy",
-  "source": "komiku",
-  "online": 1,
-  "chapterCount": 1,
-  "Chs": "Chapter 2",
-  "last_scraped": "2026-07-09T21:16:36.891484"
+  "last_scraped": "2026-07-09T22:46:25.793373"
 }

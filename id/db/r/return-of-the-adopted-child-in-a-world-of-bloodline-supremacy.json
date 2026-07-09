@@ -1,6 +1,7 @@
 {
   "judul": "Return of the Adopted Child in a World of Bloodline Supremacy",
   "judul_alternatif": "Kembalinya Anak Angkat di Dunia Supremasi Garis Darah",
+  "slug": "return-of-the-adopted-child-in-a-world-of-bloodline-supremacy",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/10/20260710030006_d7f76cccf570d97f_846d2d50.webp?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -15,6 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -275,10 +280,5 @@
       ]
     }
   ],
-  "slug": "return-of-the-adopted-child-in-a-world-of-bloodline-supremacy",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-09T21:16:33.685517"
+  "last_scraped": "2026-07-09T22:46:24.216313"
 }
