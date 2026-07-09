@@ -3,9 +3,45 @@
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/5a11d05d-7f25-487b-9c95-0713f00da441.jpg",
     "source": "arenascan",
     "online": 5,
-    "chapterCount": 3,
+    "chapterCount": 5,
     "Chs": "Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/the-little-prince-in-the-next-life-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/164658/1/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/1/10.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 2",
+            "url": "https://arenascan.com/the-little-prince-in-the-next-life-2/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/164658/2/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/164658/2/10.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 3",
             "url": "https://arenascan.com/the-little-prince-in-the-next-life-3/",
@@ -175,5 +211,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-09T08:52:57.885457"
+    "last_scraped": "2026-07-09T10:06:09.404440"
 }
