@@ -2,9 +2,9 @@
     "judul": "Greedy",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/greedy.jpg",
     "source": "arenascan",
-    "online": 30,
-    "chapterCount": 30,
-    "Chs": "Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 32,
+    "chapterCount": 32,
+    "Chs": "Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -581,7 +581,39 @@
                 "https://cdn.arenascan.com/arena-bucket/378856/31/9.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 32",
+            "url": "https://arenascan.com/greedy-chapter-32/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378856/32/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/32/7.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 33",
+            "url": "https://arenascan.com/greedy-chapter-33/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/378856/33/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/378856/33/9.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-26T16:33:47.055368"
+    "last_scraped": "2026-07-09T08:52:58.102656"
 }
