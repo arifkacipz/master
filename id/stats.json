@@ -81,6 +81,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "brother-am-i-cute",
+    "judul": "Brother, Am I Cute?",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/brother-am-i-cute/manga_thumbnail-Head-Brother-Am-I-Cute.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "buka-mbg-di-dunia-lain",
     "judul": "Buka MBG di Dunia lain",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629074531_d863c6acadb26030_6a3db6d9.png?w=1200",
@@ -102,8 +111,8 @@
     "slug": "harapeko-oyako-to-motokare-yanushi",
     "judul": "Harapeko Oyako to Motokare Yanushi",
     "thumb": "https://thumbnail.komiku.org/img/upload/harapeko_oyako_to_motokare_yanushi/img_685263f23bbd09.46359086.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -237,8 +246,8 @@
     "slug": "gyaru-shinkan-wa-rizare-ga-darui",
     "judul": "Gyaru Shinkan wa Rizare ga Darui",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415163023_06a0e7de79055166_0366d434.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": ""
   },
@@ -324,6 +333,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "shounin-reijou-agnes-henkyou-ni-tsuihou-sareta-akuyaku-reijou-wa-shousai-o-hakki-shi-nariagaru",
+    "judul": "Shounin Reijou Agnes Henkyou ni Tsuihou Sareta Akuyaku Reijou wa Shousai o Hakki Shi Nariagaru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709180014_acf181f8467502a5_e66222f1.jpg?w=1200",
+    "chapterCount": 1,
+    "online": 1,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "suterare-ouji-ga-saizensen-de-tekikoku-no-heishi-wo-chiryou-shitara-jitsu-wa-dainana-oujo-datta-ken",
     "judul": "Suterare Ouji ga Saizensen de Tekikoku no Heishi wo Chiryou Shitara Jitsu wa Dainana Oujo datta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702191510_38288275c025fd31_01fbd827.webp?w=1200",
@@ -345,8 +363,8 @@
     "slug": "sofubo-wo-tazunete-iede-kyodai-ni-nin-tabi-haha-to-no-wakare-nigiyakana-tabiji",
     "judul": "Sofubo Wo Tazunete Iede Kyodai Ni Nin Tabi Haha to No Wakare, Nigiyakana Tabiji",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150038_78ec66f9ab88d93f_6691cfa3.jpg?w=1200",
-    "chapterCount": 6,
-    "online": 6,
+    "chapterCount": 7,
+    "online": 7,
     "tipe": "Manga",
     "status": ""
   },
@@ -432,6 +450,24 @@
     "status": ""
   },
   {
+    "slug": "musume-ni-danzai-sareru-akuyaku-koushaku-ni-tensei-shitemashita-akuyaku-muubu-o-yameta-no-ni-nazeka-musume-ga-koori-no-reijou-ka-suru-ken",
+    "judul": "Musume Ni Danzai Sareru Akuyaku Koushaku Ni Tensei Shitemashita ~Akuyaku Muubu o Yameta no ni Nazeka Musume ga Koori No Reijou Ka Suru Ken~",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/28/20260528181519_d49aa8e02cc4470d_4a4a898c.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "midari-ni-tsukasete-wa-narimasen",
+    "judul": "Midari ni Tsukasete wa Narimasen",
+    "thumb": "https://thumbnail.komiku.org/img/upload/midari_ni_tsukasete_wa_narimasen/img_683fec6b575b23.58695701.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "maou-sama-re-re-revenge",
     "judul": "Maou-sama, Re Re Revenge!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143015_5b0b543901308d8a_22725a8e.webp?w=1200",
@@ -444,8 +480,8 @@
     "slug": "monster-no-niku-wo-kutte-itara-oui-no-tsuita-ken",
     "judul": "Monster no Niku wo Kutte Itara Oui no Tsuita Ken",
     "thumb": "https://thumbnail.komiku.org/img/upload/monster_no_niku_wo_kutte_itara_oui_no_tsuita_ken/img_689300b8092509.96671334.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -475,6 +511,15 @@
     "online": 1,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "my-younger-sister-was-a-genius",
+    "judul": "My Younger Sister Was a Genius",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/my-younger-sister-was-a-genius/manga_thumbnail-A2-My-Younger-Sister-Was-a-Genius.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "moto-saikyou-boukensha-no-rojiura-caffe-nonbiri-kaigyouroku",
@@ -516,8 +561,8 @@
     "slug": "money-keeps-piling-up-no-matter-how-much-i-spend",
     "judul": "Money Keeps Piling Up No Matter How Much I Spend",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/19/20260619101505_7acb05642d61e284_7e191ce6.webp?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manhua",
     "status": ""
   },
@@ -531,15 +576,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "make-heroine-o-katasetai",
-    "judul": "Make Heroine o Katasetai!!",
-    "thumb": "https://thumbnail.komiku.org/img/upload/make_heroine_o_katasetai__/img_68c51d5b7e10e3.56588829.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "like-father-like-son",
     "judul": "Like Father, Like Son",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517231555_c3c2e6d881e8bed9_d11b62b3.webp?w=1200",
@@ -547,6 +583,15 @@
     "online": 12,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "legendary-car-hailing-system",
+    "judul": "Legendary Car-Hailing System",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/legendary-car-hailing-system/manga_thumbnail-A2-Legendary-Car-Hailing-System.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
     "slug": "legend-of-the-low-level-martial-artist",
@@ -633,8 +678,8 @@
     "slug": "ogamida-san-wa-hetare-gao-ga-mitai",
     "judul": "Ogamida-san wa Hetare-Gao ga Mitai",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150050_dc3027a4683b20b0_d9a0c7ae.webp?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manga",
     "status": ""
   },
@@ -1224,15 +1269,6 @@
     "status": ""
   },
   {
-    "slug": "tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shit",
-    "judul": "Tensei Kizoku no Isekai Boukenroku ~Jichou wo Shiranai Kamigami no Shit",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shit/manga_thumbnail-Komik-Tensei-Kizoku-no-Isekai-Boukenroku-Jichou-wo-Shiranai-Kamigami-no-Shit.jpeg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "the-hero-returns-from-another-world",
     "judul": "The Hero Returns From Another World",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/the-hero-returns-from-another-world/manga_thumbnail-The-Hero-Returns-From-Another-World-1.jpg?w=1200",
@@ -1263,8 +1299,8 @@
     "slug": "the-outcast-loser-necromancer",
     "judul": "The Outcast Loser Necromancer",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708151523_efca82b41e961c87_a5877858.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -1425,8 +1461,17 @@
     "slug": "yonige-seijo-no-nidome-no-kekkon",
     "judul": "Yonige Seijo no Nidome no Kekkon",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/25/20260625133011_811d004266cbd0a1_f312daa4.jpg?w=1200",
-    "chapterCount": 3,
-    "online": 3,
+    "chapterCount": 4,
+    "online": 4,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "yugami-no-toriko",
+    "judul": "Yugami no Toriko",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324061550_06f352469f142a7c_e5bccf25.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
