@@ -1,6 +1,7 @@
 {
   "judul": "Modern Mogal",
   "judul_alternatif": "Mogal Modern",
+  "slug": "modern-mogal",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053011_d2d6ba9ed0081ce0_1323a992.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -16,11 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
-  "chapters": [],
-  "slug": "modern-mogal",
   "source": "komiku",
   "online": 0,
   "chapterCount": 0,
   "Chs": "",
-  "last_scraped": "2026-07-08T23:45:09.589491"
+  "chapters": [],
+  "last_scraped": "2026-07-09T00:05:57.212187"
 }

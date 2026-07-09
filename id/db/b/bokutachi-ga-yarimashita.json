@@ -1,6 +1,7 @@
 {
   "judul": "Bokutachi ga Yarimashita",
   "judul_alternatif": "Kami yang Melakukannya",
+  "slug": "bokutachi-ga-yarimashita",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053028_c112ac9cb3dc34a9_7d85b50a.jpg?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -14,11 +15,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
-  "chapters": [],
-  "slug": "bokutachi-ga-yarimashita",
   "source": "komiku",
   "online": 0,
   "chapterCount": 0,
   "Chs": "",
-  "last_scraped": "2026-07-08T23:45:12.896173"
+  "chapters": [],
+  "last_scraped": "2026-07-09T00:06:00.640245"
 }

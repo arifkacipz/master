@@ -1,6 +1,7 @@
 {
   "judul": "MamaYuyu",
   "judul_alternatif": "MamaYuyu",
+  "slug": "mamayuyu",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053035_23970f7c21b979b1_3d551599.jpg?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,11 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
-  "chapters": [],
-  "slug": "mamayuyu",
   "source": "komiku",
   "online": 0,
   "chapterCount": 0,
   "Chs": "",
-  "last_scraped": "2026-07-08T23:45:14.571976"
+  "chapters": [],
+  "last_scraped": "2026-07-09T00:06:02.325195"
 }

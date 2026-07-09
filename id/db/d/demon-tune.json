@@ -1,6 +1,7 @@
 {
   "judul": "Demon Tune",
   "judul_alternatif": "Nada Iblis",
+  "slug": "demon-tune",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053018_71e0acb879502f45_56c83c99.jpg?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,11 +17,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
-  "chapters": [],
-  "slug": "demon-tune",
   "source": "komiku",
   "online": 0,
   "chapterCount": 0,
   "Chs": "",
-  "last_scraped": "2026-07-08T23:45:11.239756"
+  "chapters": [],
+  "last_scraped": "2026-07-09T00:05:58.929228"
 }

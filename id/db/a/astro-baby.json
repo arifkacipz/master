@@ -1,6 +1,7 @@
 {
   "judul": "Astro Baby",
   "judul_alternatif": "Bayi Astro",
+  "slug": "astro-baby",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709053041_3c58ba0e38172d95_b7d03415.jpg?w=1200",
   "tipe": "Manhwa",
   "status": "",
@@ -15,11 +16,10 @@
   "pembaca_total": 0,
   "pembaca_mingguan": 0,
   "cara_baca": "Kiri ke kanan",
-  "chapters": [],
-  "slug": "astro-baby",
   "source": "komiku",
   "online": 0,
   "chapterCount": 0,
   "Chs": "",
-  "last_scraped": "2026-07-08T23:45:16.289568"
+  "chapters": [],
+  "last_scraped": "2026-07-09T00:06:04.097610"
 }
