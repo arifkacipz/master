@@ -939,8 +939,8 @@
     "slug": "akumade-taidana-akuyaku-kizoku",
     "judul": "Akumade Taidana Akuyaku Kizoku",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/04/20260504221605_3e23488d758ddaf7_90d5262c.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": ""
   },
@@ -957,8 +957,8 @@
     "slug": "alone-necromancer",
     "judul": "Alone Necromancer",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/alone-necromancer/manga_thumbnail-Manhwa-Alone-Necromancer.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -1359,11 +1359,20 @@
     "status": "Ongoing"
   },
   {
+    "slug": "the-joseon-prince-who-went-to-america-and-never-returned",
+    "judul": "The Joseon Prince Who Went to America and Never Returned",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-joseon-prince-who-went-to-america-and-never-returned/manga_thumbnail-A2-The-Joseon-Prince-Who-Went-to-America-and-Never-Returned.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "the-evil-ring",
     "judul": "The Evil Ring",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/the-evil-ring/manga_thumbnail-A2-The-Evil-Ring.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
