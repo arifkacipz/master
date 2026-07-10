@@ -90,21 +90,21 @@
     "status": "Ongoing"
   },
   {
+    "slug": "bleach",
+    "judul": "Bleach",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/bleach/manga_thumbnail-Manga-Bleach.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "End"
+  },
+  {
     "slug": "boku-no-ikezuna-konyakusha",
     "judul": "Boku no Ikezuna Konyakusha",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/boku-no-ikezuna-konyakusha/manga_thumbnail-A2-Boku-no-Ikezuna-Konyakusha.jpg?w=1200",
     "chapterCount": 9,
     "online": 9,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "baku-hantam-yok",
-    "judul": "Baku hantam yok",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/18/20260418164519_1d345abf0cf0e62c_f8ca9a32.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
     "status": "Ongoing"
   },
   {
@@ -331,6 +331,15 @@
     "online": 14,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "supreme-curse-master",
+    "judul": "Supreme Curse Master",
+    "thumb": "https://thumbnail.komiku.org/img/upload/supreme_curse_master/img_682a1c9c21b7f5.13258156.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
   },
   {
     "slug": "senpai-chotto-ii-desu-ka",
@@ -1116,15 +1125,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "jinsei-gyakuten-uwaki-sare-enzai-o-kiserareta-ore-ga-gakuen-ichi-no-bishoujo-ni-natsukareru",
-    "judul": "Jinsei Gyakuten Uwaki Sare, Enzai o Kiserareta Ore ga, Gakuen Ichi no Bishoujo ni Natsukareru",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415164533_3e382e1ba07c0a31_6172af9a.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": ""
-  },
-  {
     "slug": "jinsei-gyakuten-uwaki-sare-enzai-wo-kiserareta-ore-ga-gakuen-ichi-no-bishoujo-ni-natsuka-reru",
     "judul": "Jinsei Gyakuten Uwaki sare, Enzai wo Kiserareta Ore ga, Gakuen Ichi no Bishoujo ni Natsuka reru",
     "thumb": "https://thumbnail.komiku.org/img/upload/jinsei_gyakuten_uwaki_sare__enzai_wo_kiserareta_ore_ga__gakuen_ichi_no_bishoujo_ni_natsuka_reru/img_684a88807aee81.63837022.jpg?w=1200",
@@ -1429,15 +1429,6 @@
     "online": 3,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "the-new-hire-is-the-demon-lord",
-    "judul": "The New Hire Is the Demon Lord",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/19/20260319234521_0c3892a45c32e49a_344ca116.webp?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "tales-of-the-nonhuman",
