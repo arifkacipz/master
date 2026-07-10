@@ -1,14 +1,5 @@
 [
   {
-    "slug": "reversal-of-no-mercy",
-    "judul": "Reversal of No Mercy",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/10/20260710030019_e0f21a4332f2cc4f_399084e5.webp?w=1200",
-    "chapterCount": 11,
-    "online": 11,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
     "slug": "rojiura-de-hirotta-onnanoko-ga-bad-end-go-no-otome-game-no-heroine-datta-ken",
     "judul": "Rojiura de Hirotta Onnanoko ga Bad End-go no Otome Game no Heroine Datta Ken",
     "thumb": "https://thumbnail.komiku.org/img/upload/rojiura_de_hirotta_onnanoko_ga_bad_end-go_no_otome_game_no_heroine_datta_ken/img_691ee6089c8511.88968637.png?w=1200",
@@ -95,6 +86,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703140009_8c8359a00f52e6d0_de4c97c3.jpg?w=1200",
     "chapterCount": 2,
     "online": 2,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "boku-no-ikezuna-konyakusha",
+    "judul": "Boku no Ikezuna Konyakusha",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/boku-no-ikezuna-konyakusha/manga_thumbnail-A2-Boku-no-Ikezuna-Konyakusha.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -342,6 +342,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "seiken-chan-wa-kojirasete-iru",
+    "judul": "Seiken-chan wa Kojirasete Iru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613154549_b9360397f830e795_95ac070b.webp?w=1200",
+    "chapterCount": 2,
+    "online": 2,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
     "slug": "suterare-ouji-ga-saizensen-de-tekikoku-no-heishi-wo-chiryou-shitara-jitsu-wa-dainana-oujo-datta-ken",
     "judul": "Suterare Ouji ga Saizensen de Tekikoku no Heishi wo Chiryou Shitara Jitsu wa Dainana Oujo datta Ken",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702191510_38288275c025fd31_01fbd827.webp?w=1200",
@@ -570,8 +579,8 @@
     "slug": "lv999-no-murabito",
     "judul": "Lv999 no Murabito",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/lv999-no-murabito/manga_thumbnail-Komik-Lv999-no-Murabito.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -727,6 +736,15 @@
     "online": 7,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "deretai-kanojo-no-uraomote",
+    "judul": "Deretai Kanojo no Uraomote",
+    "thumb": "https://thumbnail.komiku.org/img/upload/deretai_kanojo_no_uraomote/img_6864e496be14e9.51023827.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "demon-tune",
@@ -909,6 +927,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "koibami-shoujo",
+    "judul": "Koibami Shoujo",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/koibami-shoujo/manga_thumbnail-A2-Koibami-Shoujo.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "keiken-wo-sukiru-ni-suru-bannou-na-nouryoku-wo-te-ni-irete-saikyou-no-tansaku-sha-ni-narimashita-jk-to-issho-ni-dungeon-tansaku-de-nariagaru",
     "judul": "Keiken wo Sukiru ni suru Bannou na Nouryoku wo Te ni Irete, Saikyou no Tansaku-sha ni Narimashita ~JK to Issho ni Dungeon Tansaku de Nariagaru~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517231548_549570f55ed97d3b_88517c71.webp?w=1200",
@@ -1083,8 +1110,8 @@
     "slug": "jinsei-gyakuten-uwaki-sare-enzai-wo-kiserareta-ore-ga-gakuen-ichi-no-bishoujo-ni-natsuka-reru",
     "judul": "Jinsei Gyakuten Uwaki sare, Enzai wo Kiserareta Ore ga, Gakuen Ichi no Bishoujo ni Natsuka reru",
     "thumb": "https://thumbnail.komiku.org/img/upload/jinsei_gyakuten_uwaki_sare__enzai_wo_kiserareta_ore_ga__gakuen_ichi_no_bishoujo_ni_natsuka_reru/img_684a88807aee81.63837022.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1110,8 +1137,8 @@
     "slug": "i-ended-up-raising-my-younger-self",
     "judul": "I Ended Up Raising My Younger Self",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150033_5aa69ed7a6700cd3_25fe323b.jpg?w=1200",
-    "chapterCount": 6,
-    "online": 6,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -1452,8 +1479,8 @@
     "slug": "the-grand-dukes-new-daughter-in-law-is-a-little-fierce",
     "judul": "The Grand Duke’s New Daughter-in-Law Is a Little Fierce",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/25/20260625020018_b8cdc759f7a6ba6e_d280626c.webp?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manhwa",
     "status": ""
   },

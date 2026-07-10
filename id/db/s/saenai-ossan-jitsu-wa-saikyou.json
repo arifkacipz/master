@@ -1,6 +1,7 @@
 {
   "judul": "Saenai Ossan, Jitsu wa Saikyou",
   "judul_alternatif": "Om Biasa Aja, Ternyata Paling Kuat",
+  "slug": "saenai-ossan-jitsu-wa-saikyou",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/16/20260616130012_a8585ab7dd88dce9_6f914f94.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -18,6 +19,10 @@
   "pembaca_total": 945,
   "pembaca_mingguan": 34,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -220,10 +225,5 @@
       ]
     }
   ],
-  "slug": "saenai-ossan-jitsu-wa-saikyou",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-07-10T06:38:10.003340"
+  "last_scraped": "2026-07-10T08:47:26.662356"
 }
