@@ -93,8 +93,8 @@
     "slug": "bleach",
     "judul": "Bleach",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/bleach/manga_thumbnail-Manga-Bleach.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "End"
   },
@@ -336,8 +336,8 @@
     "slug": "supreme-curse-master",
     "judul": "Supreme Curse Master",
     "thumb": "https://thumbnail.komiku.org/img/upload/supreme_curse_master/img_682a1c9c21b7f5.13258156.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhua",
     "status": "Ongoing"
   },
@@ -390,8 +390,8 @@
     "slug": "sofubo-wo-tazunete-iede-kyodai-ni-nin-tabi-haha-to-no-wakare-nigiyakana-tabiji",
     "judul": "Sofubo Wo Tazunete Iede Kyodai Ni Nin Tabi Haha to No Wakare, Nigiyakana Tabiji",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150038_78ec66f9ab88d93f_6691cfa3.jpg?w=1200",
-    "chapterCount": 9,
-    "online": 9,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": ""
   },
@@ -574,6 +574,15 @@
     "online": 9,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "mandragora-tte-baretara-toubatsu-desu-ka-hana-no-majo-no-hohoemi-wa-kanchigai-no-tane-o-maku",
+    "judul": "Mandragora tte Baretara Toubatsu desu ka?: Hana no Majo no Hohoemi wa Kanchigai no Tane o Maku",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513163132_b3194aee653ed8b4_894e7319.jpg?w=1200",
+    "chapterCount": 10,
+    "online": 10,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "mazoku-no-musumetachi-to-okuru-midareta-isekai-seikatsu",
@@ -1389,8 +1398,8 @@
     "slug": "the-seventh-prince-wants-to-bail",
     "judul": "The Seventh Prince Wants to Bail",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/29/20260529233013_4c3f2b87e32f734b_4809afbd.jpg?w=1200",
-    "chapterCount": 11,
-    "online": 11,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
