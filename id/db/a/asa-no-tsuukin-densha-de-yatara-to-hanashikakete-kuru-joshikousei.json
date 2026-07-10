@@ -17,10 +17,39 @@
   "pembaca_mingguan": 9,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 10.1",
+  "online": 11,
+  "chapterCount": 11,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 10.1",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/asa-no-tsuukin-densha-de-yatara-to-hanashikakete-kuru-joshikousei-chapter-1/",
+      "tanggal_rilis": "13/02/2026",
+      "images": [
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/1.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/2.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/3.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/4.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/5.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/6.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/7.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/8.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/9.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/10.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/11.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/12.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/13.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/14.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/15.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/16.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/17.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/18.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/19.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/20.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/21.webp",
+        "https://img.komiku.org/upload5/asa-no-tsuukin-densha-de-yatara-to-/1/2026-02-13/22.webp"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/asa-no-tsuukin-densha-de-yatara-to-hanashikakete-kuru-joshikousei-chapter-2/",
@@ -272,5 +301,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-10T05:14:44.594659"
+  "last_scraped": "2026-07-10T06:39:31.241497"
 }
