@@ -2,9 +2,9 @@
     "judul": "Peach Blossom Paradise",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/Peach-Blossom-Paradise-193x278.webp",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 20,
+    "chapterCount": 20,
+    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -532,7 +532,31 @@
                 "https://cdn.arenascan.com/arena-bucket/383438/19/5bd1f97a86e3.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 20",
+            "url": "https://arenascan.com/peach-blossom-paradise-chapter-20/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/383438/20/6e29c11012cf.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/f0adec02a4f8.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/89347367c98c.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/3deea88d4908.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/b421eddaae49.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/5bfc49974b76.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/6b0513108c99.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/abe86cc88f1f.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/03f36d104eec.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/42cccda88545.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/fc7aefaf1e3f.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/529214f48d6a.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/d9c92f570774.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/95827af4ef7d.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/e6a57be38e59.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/53eaf6b8dbfe.webp",
+                "https://cdn.arenascan.com/arena-bucket/383438/20/64879332596f.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-04T21:35:25.311696"
+    "last_scraped": "2026-07-10T03:47:11.876527"
 }
