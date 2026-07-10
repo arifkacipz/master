@@ -90,15 +90,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "bleach",
-    "judul": "Bleach",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/bleach/manga_thumbnail-Manga-Bleach.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "End"
-  },
-  {
     "slug": "boku-no-ikezuna-konyakusha",
     "judul": "Boku no Ikezuna Konyakusha",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/boku-no-ikezuna-konyakusha/manga_thumbnail-A2-Boku-no-Ikezuna-Konyakusha.jpg?w=1200",
@@ -156,6 +147,15 @@
     "slug": "hissatsu-reijou-liese-tensei-shita-saikyou-no-koroshiya-wa-yami-wo-matou-akuyaku-reijou-to-naru",
     "judul": "Hissatsu Reijou Liese ~Tensei Shita Saikyou no Koroshiya wa, Yami wo Matou Akuyaku Reijou to Naru~",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627170011_5de6131170c74e98_ec1e629a.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "hachigatsu-kokonoka-boku-wa-kimi-ni-kuwareru",
+    "judul": "Hachigatsu Kokonoka Boku wa Kimi ni Kuwareru.",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/hachigatsu-kokonoka-boku-wa-kimi-ni-kuwareru/manga_thumbnail-1-2.png?w=1200",
     "chapterCount": 5,
     "online": 5,
     "tipe": "Manga",
@@ -331,15 +331,6 @@
     "online": 14,
     "tipe": "Manga",
     "status": ""
-  },
-  {
-    "slug": "supreme-curse-master",
-    "judul": "Supreme Curse Master",
-    "thumb": "https://thumbnail.komiku.org/img/upload/supreme_curse_master/img_682a1c9c21b7f5.13258156.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
   },
   {
     "slug": "senpai-chotto-ii-desu-ka",
@@ -579,8 +570,8 @@
     "slug": "mandragora-tte-baretara-toubatsu-desu-ka-hana-no-majo-no-hohoemi-wa-kanchigai-no-tane-o-maku",
     "judul": "Mandragora tte Baretara Toubatsu desu ka?: Hana no Majo no Hohoemi wa Kanchigai no Tane o Maku",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513163132_b3194aee653ed8b4_894e7319.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1353,8 +1344,8 @@
     "slug": "the-amber-sword",
     "judul": "The Amber Sword",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/20/20260620133010_d7f2a3419c706bd5_81a6d74d.webp?w=1200",
-    "chapterCount": 7,
-    "online": 7,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manhua",
     "status": ""
   },
