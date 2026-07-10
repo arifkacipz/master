@@ -1,6 +1,7 @@
 {
   "judul": "Seiken-chan wa Kojirasete Iru",
   "judul_alternatif": "Pedang Suci-chan yang Terlalu Rumit",
+  "slug": "seiken-chan-wa-kojirasete-iru",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613154549_b9360397f830e795_95ac070b.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 65,
   "pembaca_mingguan": 6,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 2,
+  "chapterCount": 2,
+  "Chs": "Chapter 1, Chapter 2",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -161,10 +166,5 @@
       ]
     }
   ],
-  "slug": "seiken-chan-wa-kojirasete-iru",
-  "source": "komiku",
-  "online": 2,
-  "chapterCount": 2,
-  "Chs": "Chapter 1, Chapter 2",
-  "last_scraped": "2026-07-10T08:46:18.055050"
+  "last_scraped": "2026-07-10T10:20:13.476568"
 }

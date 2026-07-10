@@ -93,8 +93,8 @@
     "slug": "boku-no-ikezuna-konyakusha",
     "judul": "Boku no Ikezuna Konyakusha",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/boku-no-ikezuna-konyakusha/manga_thumbnail-A2-Boku-no-Ikezuna-Konyakusha.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -196,6 +196,15 @@
     "online": 2,
     "tipe": "Manhua",
     "status": ""
+  },
+  {
+    "slug": "face-genius-0-year-old-top-star",
+    "judul": "Face Genius, 0 Year-Old Top Star",
+    "thumb": "https://thumbnail.komiku.org/img/upload/face_genius__0_year-old_top_star/img_68bff884b4f1a1.94021241.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "fight-delivery",
@@ -372,8 +381,8 @@
     "slug": "sofubo-wo-tazunete-iede-kyodai-ni-nin-tabi-haha-to-no-wakare-nigiyakana-tabiji",
     "judul": "Sofubo Wo Tazunete Iede Kyodai Ni Nin Tabi Haha to No Wakare, Nigiyakana Tabiji",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150038_78ec66f9ab88d93f_6691cfa3.jpg?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manga",
     "status": ""
   },
@@ -558,6 +567,15 @@
     "status": ""
   },
   {
+    "slug": "mazoku-no-musumetachi-to-okuru-midareta-isekai-seikatsu",
+    "judul": "Mazoku no Musumetachi to Okuru Midareta Isekai Seikatsu",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613151551_052dc052e59e8780_a9d75afc.jpg?w=1200",
+    "chapterCount": 3,
+    "online": 3,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "money-keeps-piling-up-no-matter-how-much-i-spend",
     "judul": "Money Keeps Piling Up No Matter How Much I Spend",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/19/20260619101505_7acb05642d61e284_7e191ce6.webp?w=1200",
@@ -576,15 +594,6 @@
     "status": ""
   },
   {
-    "slug": "lv999-no-murabito",
-    "judul": "Lv999 no Murabito",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/lv999-no-murabito/manga_thumbnail-Komik-Lv999-no-Murabito.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "legend-of-the-low-level-martial-artist",
     "judul": "Legend of the Low-Level Martial Artist",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150120_4d42606be9205d9b_8f4ea776.jpg?w=1200",
@@ -601,6 +610,15 @@
     "online": 9,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "oroka-na-tenshi-wa-akuma-to-odoru",
+    "judul": "Oroka na Tenshi wa Akuma to Odoru",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/oroka-na-tenshi-wa-akuma-to-odoru/manga_thumbnail-Manga-Oroka-na-Tenshi-wa-Akuma-to-Odoru.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "otome-game-no-mob-desura-naindaga",
@@ -651,8 +669,8 @@
     "slug": "ore-no-osananajimi-ga-dekkkkaku-narisugita",
     "judul": "Ore no Osananajimi ga Dekkkkaku Narisugita",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150042_1416fc717f06226b_ec0751da.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manga",
     "status": ""
   },
@@ -741,8 +759,8 @@
     "slug": "deretai-kanojo-no-uraomote",
     "judul": "Deretai Kanojo no Uraomote",
     "thumb": "https://thumbnail.komiku.org/img/upload/deretai_kanojo_no_uraomote/img_6864e496be14e9.51023827.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 8,
+    "online": 8,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -930,8 +948,8 @@
     "slug": "koibami-shoujo",
     "judul": "Koibami Shoujo",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/koibami-shoujo/manga_thumbnail-A2-Koibami-Shoujo.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1107,11 +1125,20 @@
     "status": "Ongoing"
   },
   {
+    "slug": "jinsei-gyakuten-uwaki-sare-enzai-o-kiserareta-ore-ga-gakuen-ichi-no-bishoujo-ni-natsukareru",
+    "judul": "Jinsei Gyakuten Uwaki Sare, Enzai o Kiserareta Ore ga, Gakuen Ichi no Bishoujo ni Natsukareru",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415164533_3e382e1ba07c0a31_6172af9a.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": ""
+  },
+  {
     "slug": "jinsei-gyakuten-uwaki-sare-enzai-wo-kiserareta-ore-ga-gakuen-ichi-no-bishoujo-ni-natsuka-reru",
     "judul": "Jinsei Gyakuten Uwaki sare, Enzai wo Kiserareta Ore ga, Gakuen Ichi no Bishoujo ni Natsuka reru",
     "thumb": "https://thumbnail.komiku.org/img/upload/jinsei_gyakuten_uwaki_sare__enzai_wo_kiserareta_ore_ga__gakuen_ichi_no_bishoujo_ni_natsuka_reru/img_684a88807aee81.63837022.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1335,8 +1362,8 @@
     "slug": "the-hero-returns-from-another-world",
     "judul": "The Hero Returns From Another World",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/the-hero-returns-from-another-world/manga_thumbnail-The-Hero-Returns-From-Another-World-1.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
+    "chapterCount": 11,
+    "online": 11,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1562,6 +1589,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513170004_f620a6a04a59aa84_09c3c29d.jpg?w=1200",
     "chapterCount": 4,
     "online": 4,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "umamusume-pretty-derby-pisupisu%e2%98%86supisupi-golshi-chan",
+    "judul": "Umamusume – Pretty Derby PisuPisu☆SupiSupi – Golshi-chan",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/13/20260513163136_a997772032dda1d5_1acc5cb3.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   }
