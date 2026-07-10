@@ -1,6 +1,7 @@
 {
   "judul": "Chiisakute Kawaii Bungeibu no Chiteki na Senpai o, Hiza no Ue ni Nosetara Mainichi Suwattekuru you ni natta",
   "judul_alternatif": "Ketika Aku Meletakkan Senpai Imut dan Cerdas dari Klub Sastra di Pangkuanku, Ia Mulai Duduk di Sana Setiap Hari",
+  "slug": "chiisakute-kawaii-bungeibu-no-chiteki-na-senpai-o-hiza-no-ue-ni-nosetara-mainichi-suwattekuru-you-ni-natta",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415164514_20ecd9ee70692cc2_bd5e6399.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -15,7 +16,43 @@
   "pembaca_total": 2422,
   "pembaca_mingguan": 28,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 6,
+  "chapterCount": 6,
+  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2, Chapter 3.1, Chapter 3.2, Chapter 4.1",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/chiisakute-kawaii-bungeibu-no-chiteki-na-senpai-o-hiza-no-ue-ni-nosetara-mainichi-suwattekuru-you-ni-natta-chapter-1/",
+      "tanggal_rilis": "15/04/2026",
+      "images": [
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/1.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/2.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/3.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/4.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/5.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/6.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/7.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/8.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/9.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/10.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/11.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/12.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/13.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/14.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/15.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/16.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/17.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/18.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/19.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/20.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/21.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/22.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/23.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/24.webp",
+        "https://img.komiku.org/upload5/chiisakute-kawaii-bungeibu-no-chite/1/2026-04-15/25.webp"
+      ]
+    },
     {
       "nama": "Chapter 2.1",
       "url": "https://komiku.org/chiisakute-kawaii-bungeibu-no-chiteki-na-senpai-o-hiza-no-ue-ni-nosetara-mainichi-suwattekuru-you-ni-natta-chapter-2-1/",
@@ -136,10 +173,5 @@
       ]
     }
   ],
-  "slug": "chiisakute-kawaii-bungeibu-no-chiteki-na-senpai-o-hiza-no-ue-ni-nosetara-mainichi-suwattekuru-you-ni-natta",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 2.1, Chapter 2.2, Chapter 3.1, Chapter 3.2, Chapter 4.1",
-  "last_scraped": "2026-07-10T12:11:39.936693"
+  "last_scraped": "2026-07-10T13:07:22.052822"
 }
