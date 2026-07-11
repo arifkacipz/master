@@ -25,11 +25,25 @@
     "slug": "alessas-frills",
     "judul": "Alessa’s Frills",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f08b237e-8329-4c48-9fac-64e22f79539c.jpg",
-    "total_online": 121,
-    "total_downloaded": 119,
+    "total_online": 127,
+    "total_downloaded": 122,
     "missing": [
+      "Chapter 13.3",
+      "Chapter 13.2",
+      "Chapter 13.1",
       "Chapter 12.7",
       "Chapter 12.6"
+    ]
+  },
+  {
+    "slug": "the-vegetative-bigshot-cant-pretend-anymore",
+    "judul": "The Vegetative Bigshot Can’t Pretend Anymore",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/12/2599e466-d20b-46f6-b023-5ac6d54716b0.webp",
+    "total_online": 54,
+    "total_downloaded": 52,
+    "missing": [
+      "Chapter 52",
+      "Chapter 51"
     ]
   },
   {
