@@ -22,11 +22,21 @@
     ]
   },
   {
+    "slug": "golden-chevalier",
+    "judul": "Golden Chevalier",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/11/9c28d5ae-5b7d-4e2f-afbe-5276d1bdfebe.webp",
+    "total_online": 52,
+    "total_downloaded": 51,
+    "missing": [
+      "Chapter 49"
+    ]
+  },
+  {
     "slug": "alessas-frills",
     "judul": "Alessa’s Frills",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/07/f08b237e-8329-4c48-9fac-64e22f79539c.jpg",
-    "total_online": 147,
-    "total_downloaded": 146,
+    "total_online": 150,
+    "total_downloaded": 149,
     "missing": [
       "Chapter 15.3"
     ]
