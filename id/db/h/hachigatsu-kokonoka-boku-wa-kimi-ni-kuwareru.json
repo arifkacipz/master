@@ -21,10 +21,57 @@
   "pembaca_mingguan": 1013,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 45,
-  "chapterCount": 45,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46",
+  "online": 46,
+  "chapterCount": 46,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/hachigatsu-kokonoka-boku-wa-kimi-ni-kuwareru-chapter-1/",
+      "tanggal_rilis": "31/10/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2608977-1.jpg",
+        "https://img.komiku.org/uploads2/2608977-2.jpg",
+        "https://img.komiku.org/uploads2/2608977-3.jpg",
+        "https://img.komiku.org/uploads2/2608977-4.jpg",
+        "https://img.komiku.org/uploads2/2608977-5.jpg",
+        "https://img.komiku.org/uploads2/2608977-6.jpg",
+        "https://img.komiku.org/uploads2/2608977-7.jpg",
+        "https://img.komiku.org/uploads2/2608977-8.jpg",
+        "https://img.komiku.org/uploads2/2608977-9.jpg",
+        "https://img.komiku.org/uploads2/2608977-10.jpg",
+        "https://img.komiku.org/uploads2/2608977-11.jpg",
+        "https://img.komiku.org/uploads2/2608977-12.jpg",
+        "https://img.komiku.org/uploads2/2608977-13.jpg",
+        "https://img.komiku.org/uploads2/2608977-14.jpg",
+        "https://img.komiku.org/uploads2/2608977-15.jpg",
+        "https://img.komiku.org/uploads2/2608977-16.jpg",
+        "https://img.komiku.org/uploads2/2608977-17.jpg",
+        "https://img.komiku.org/uploads2/2608977-18.jpg",
+        "https://img.komiku.org/uploads2/2608977-19.jpg",
+        "https://img.komiku.org/uploads2/2608977-20.jpg",
+        "https://img.komiku.org/uploads2/2608977-21.jpg",
+        "https://img.komiku.org/uploads2/2608977-22.jpg",
+        "https://img.komiku.org/uploads2/2608977-23.jpg",
+        "https://img.komiku.org/uploads2/2608977-24.jpg",
+        "https://img.komiku.org/uploads2/2608977-25.jpg",
+        "https://img.komiku.org/uploads2/2608977-26.jpg",
+        "https://img.komiku.org/uploads2/2608977-27.jpg",
+        "https://img.komiku.org/uploads2/2608977-28.jpg",
+        "https://img.komiku.org/uploads2/2608977-29.jpg",
+        "https://img.komiku.org/uploads2/2608977-30.jpg",
+        "https://img.komiku.org/uploads2/2608977-31.jpg",
+        "https://img.komiku.org/uploads2/2608977-32.jpg",
+        "https://img.komiku.org/uploads2/2608977-33.jpg",
+        "https://img.komiku.org/uploads2/2608977-34.jpg",
+        "https://img.komiku.org/uploads2/2608977-35.jpg",
+        "https://img.komiku.org/uploads2/2608977-36.jpg",
+        "https://img.komiku.org/uploads2/2608977-37.jpg",
+        "https://img.komiku.org/uploads2/2608977-38.jpg",
+        "https://img.komiku.org/uploads2/2608977-39.jpg",
+        "https://img.komiku.org/uploads2/2608977-40.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/hachigatsu-kokonoka-boku-wa-kimi-ni-kuwareru-chapter-2/",
@@ -1345,5 +1392,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-10T23:55:50.417889"
+  "last_scraped": "2026-07-11T01:08:30.198142"
 }
