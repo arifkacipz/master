@@ -18,10 +18,97 @@
   "pembaca_mingguan": 36,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25",
+  "online": 15,
+  "chapterCount": 15,
+  "Chs": "Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25",
   "chapters": [
+    {
+      "nama": "Chapter 11",
+      "url": "https://komiku.org/yui-can-only-live-in-the-shadows-chapter-11/",
+      "tanggal_rilis": "25/02/2026",
+      "images": [
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/1_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/1_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/1_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/1_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/2_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/2_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/2_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/2_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/3_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/11/2026-02-25/3_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 12",
+      "url": "https://komiku.org/yui-can-only-live-in-the-shadows-chapter-12/",
+      "tanggal_rilis": "27/02/2026",
+      "images": [
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/1_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/1_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/1_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/1_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/2_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/2_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/2_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/2_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/3_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/12/2026-02-27/3_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 13",
+      "url": "https://komiku.org/yui-can-only-live-in-the-shadows-chapter-13/",
+      "tanggal_rilis": "03/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/1_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/1_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/1_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/1_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/2_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/2_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/2_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/2_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/3_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/13/2026-03-03/3_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 14",
+      "url": "https://komiku.org/yui-can-only-live-in-the-shadows-chapter-14/",
+      "tanggal_rilis": "03/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/1_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/1_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/1_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/1_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/2_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/2_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/2_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/2_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/2_part5.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/3_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/14/2026-03-03/3_part2.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 15",
+      "url": "https://komiku.org/yui-can-only-live-in-the-shadows-chapter-15/",
+      "tanggal_rilis": "03/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/1_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/1_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/1_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/1_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/2_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/2_part2.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/2_part3.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/2_part4.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/2_part5.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/3_part1.webp",
+        "https://img.komiku.org/upload5/yui-can-only-live-in-the-shadows/15/2026-03-03/3_part2.webp"
+      ]
+    },
     {
       "nama": "Chapter 16",
       "url": "https://komiku.org/yui-can-only-live-in-the-shadows-chapter-16/",
@@ -221,5 +308,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-11T16:47:45.180328"
+  "last_scraped": "2026-07-11T17:39:41.729517"
 }
