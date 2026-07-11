@@ -1017,15 +1017,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "artifact-devouring-player",
-    "judul": "Artifact-Devouring Player",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/artifact-devouring-player/manga_thumbnail-A2-Artifact-Devouring-Player.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "ashita-mo-mata-yuusha-no-tonari",
     "judul": "Ashita mo Mata Yuusha no Tonari",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708143033_f0aa8fc31c319cf8_7d906cba.webp?w=1200",
@@ -1596,8 +1587,8 @@
     "slug": "yui-can-only-live-in-the-shadows",
     "judul": "Yui Can Only Live In the Shadows",
     "thumb": "https://thumbnail.komiku.org/img/upload/yui_can_only_live_in_the_shadows/img_698ed8f96d4c32.24749305.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
