@@ -297,15 +297,6 @@
     "status": ""
   },
   {
-    "slug": "suspicion-of-plagiarism",
-    "judul": "Suspicion of Plagiarism",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/24/20260524183030_c3caa7df445f2271_00a56f14.webp?w=1200",
-    "chapterCount": 13,
-    "online": 13,
-    "tipe": "Manhwa",
-    "status": ""
-  },
-  {
     "slug": "saenai-ossan-jitsu-wa-saikyou",
     "judul": "Saenai Ossan, Jitsu wa Saikyou",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/16/20260616130012_a8585ab7dd88dce9_6f914f94.jpg?w=1200",
@@ -570,8 +561,8 @@
     "slug": "my-husband-was-definitely-a-paladin",
     "judul": "My Husband Was Definitely a Paladin",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708150010_3cfc84edf6ad184a_469b6ad6.jpg?w=1200",
-    "chapterCount": 9,
-    "online": 9,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -1249,6 +1240,15 @@
     "online": 10,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "isekai-walking",
+    "judul": "Isekai Walking",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/isekai-walking/manga_thumbnail-Head-isekai-walking.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "isekai-tensei-reijou-shuppon-suru",
