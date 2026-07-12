@@ -2,9 +2,9 @@
     "judul": "Confession Agent",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/ca703ee8-980e-4379-8768-db3d9f16ad1a.webp",
     "source": "arenascan",
-    "online": 20,
-    "chapterCount": 20,
-    "Chs": "Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 21,
+    "chapterCount": 21,
+    "Chs": "Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -1007,7 +1007,18 @@
                 "https://cdn.arenascan.com/arena-bucket/79169/20/69b4320e2c67.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 21",
+            "url": "https://arenascan.com/confession-agent-chapter-21/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/79169/21/e66b153f1282.webp",
+                "https://cdn.arenascan.com/arena-bucket/79169/21/c92bd496cfe3.webp",
+                "https://cdn.arenascan.com/arena-bucket/79169/21/fe0d111c90ee.webp",
+                "https://cdn.arenascan.com/arena-bucket/79169/21/d0374e46713d.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-04T22:41:24.833937"
+    "last_scraped": "2026-07-12T22:58:50.955750"
 }
