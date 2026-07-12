@@ -2,9 +2,9 @@
     "judul": "The Postman Walking Through the Apocalypse",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Postman-Walking-Through-the-Apocalypse-193x278.jpg",
     "source": "arenascan",
-    "online": 19,
-    "chapterCount": 19,
-    "Chs": "Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 24,
+    "chapterCount": 22,
+    "Chs": "Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -410,7 +410,55 @@
                 "https://cdn.arenascan.com/arena-bucket/386707/19/f1d19fe92453.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 22",
+            "url": "https://arenascan.com/the-postman-walking-through-the-apocalypse-chapter-22/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/386707/22/971b7a442323.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/6331561b285e.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/c66eafe6d511.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/7ad2e590c08d.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/846b48b7c7e3.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/da6f823953c6.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/205285bbfec8.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/49fa2c154b2e.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/22/123b0268ff8a.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 23",
+            "url": "https://arenascan.com/the-postman-walking-through-the-apocalypse-chapter-23/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/386707/23/d30296372f17.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/71752c7686ef.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/816907d1d9c9.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/a3531cc4bf4f.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/8d3a78411e58.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/2acdf721d485.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/01b4f7853513.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/23/9ed1c451b91f.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 24",
+            "url": "https://arenascan.com/the-postman-walking-through-the-apocalypse-chapter-24/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/386707/24/40cdb1f01801.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/e3b0368aeff8.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/0c19b58828ee.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/0568195e14e5.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/ae6b79f71180.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/7c2c4c6a5b43.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/06a471a7f7f3.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/caff24efeb69.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/a9cb8902e129.webp",
+                "https://cdn.arenascan.com/arena-bucket/386707/24/ba15aad204b7.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-16T02:16:25.228354"
+    "last_scraped": "2026-07-12T21:59:08.289321"
 }
