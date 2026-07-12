@@ -20,10 +20,60 @@
   "pembaca_mingguan": 12,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 43.5, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57",
+  "online": 25,
+  "chapterCount": 25,
+  "Chs": "Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 43.5, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 56, Chapter 57",
   "chapters": [
+    {
+      "nama": "Chapter 34",
+      "url": "https://komiku.org/bouryoku-banzai-chapter-34/",
+      "tanggal_rilis": "11/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/1.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/2.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/3.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/4.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/5.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/6.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/7.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/8.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/9.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/10.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/11.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/12.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/13.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/14.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/15.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/16.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/17.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/18.webp",
+        "https://img.komiku.org/upload5/bouryoku-banzai/34/2025-11-11/19.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 35",
+      "url": "https://komiku.org/bouryoku-banzai-chapter-35/",
+      "tanggal_rilis": "18/11/2025",
+      "images": []
+    },
+    {
+      "nama": "Chapter 36",
+      "url": "https://komiku.org/bouryoku-banzai-chapter-36/",
+      "tanggal_rilis": "28/11/2025",
+      "images": []
+    },
+    {
+      "nama": "Chapter 37",
+      "url": "https://komiku.org/bouryoku-banzai-chapter-37/",
+      "tanggal_rilis": "02/12/2025",
+      "images": []
+    },
+    {
+      "nama": "Chapter 38",
+      "url": "https://komiku.org/bouryoku-banzai-chapter-38/",
+      "tanggal_rilis": "08/12/2025",
+      "images": []
+    },
     {
       "nama": "Chapter 39",
       "url": "https://komiku.org/bouryoku-banzai-chapter-39/",
@@ -553,5 +603,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-12T12:12:13.491888"
+  "last_scraped": "2026-07-12T13:06:33.321950"
 }

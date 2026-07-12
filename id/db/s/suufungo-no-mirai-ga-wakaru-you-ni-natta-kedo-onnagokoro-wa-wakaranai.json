@@ -17,10 +17,130 @@
   "pembaca_mingguan": 12,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 10,
-  "chapterCount": 10,
-  "Chs": "Chapter 12.2, Chapter 13.1, Chapter 13.2, Chapter 14.1, Chapter 14.2, Chapter 15.1, Chapter 15.2, Chapter 16.1, Chapter 16.2, Chapter 17",
+  "online": 15,
+  "chapterCount": 15,
+  "Chs": "Chapter 10.1, Chapter 10.2, Chapter 11.1, Chapter 11.2, Chapter 12.1, Chapter 12.2, Chapter 13.1, Chapter 13.2, Chapter 14.1, Chapter 14.2, Chapter 15.1, Chapter 15.2, Chapter 16.1, Chapter 16.2, Chapter 17",
   "chapters": [
+    {
+      "nama": "Chapter 10.1",
+      "url": "https://komiku.org/suufungo-no-mirai-ga-wakaru-you-ni-natta-kedo-onnagokoro-wa-wakaranai-chapter-10-1/",
+      "tanggal_rilis": "25/07/2025",
+      "images": [
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/1.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/2.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/3.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/4.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/5.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/6.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/7.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/8.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/9.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/10.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/11.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/12.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/13.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/14.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/15.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/16.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.1/2025-07-25/17.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 10.2",
+      "url": "https://komiku.org/suufungo-no-mirai-ga-wakaru-you-ni-natta-kedo-onnagokoro-wa-wakaranai-chapter-10-2/",
+      "tanggal_rilis": "25/07/2025",
+      "images": [
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/1.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/2.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/3.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/4.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/5.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/6.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/7.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/8.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/9.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/10.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/11.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/12.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/13.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/14.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/15.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/16.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/10.2/2025-07-25/17.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 11.1",
+      "url": "https://komiku.org/suufungo-no-mirai-ga-wakaru-you-ni-natta-kedo-onnagokoro-wa-wakaranai-chapter-11-1/",
+      "tanggal_rilis": "22/08/2025",
+      "images": [
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/1.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/2.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/3.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/4.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/5.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/6.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/7.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/8.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/9.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/10.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/11.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/12.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/13.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/14.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/15.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/16.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/17.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/18.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/19.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.1/2025-08-22/20.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 11.2",
+      "url": "https://komiku.org/suufungo-no-mirai-ga-wakaru-you-ni-natta-kedo-onnagokoro-wa-wakaranai-chapter-11-2/",
+      "tanggal_rilis": "31/08/2025",
+      "images": [
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/1.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/2.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/3.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/4.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/5.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/6.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/7.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/8.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/9.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/10.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/11.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/12.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/13.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/11.2/2025-08-31/14.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 12.1",
+      "url": "https://komiku.org/suufungo-no-mirai-ga-wakaru-you-ni-natta-kedo-onnagokoro-wa-wakaranai-chapter-12-1/",
+      "tanggal_rilis": "24/09/2025",
+      "images": [
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/1.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/2.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/3.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/4.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/5.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/6.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/7.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/8.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/9.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/10.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/11.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/12.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/13.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/14.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/15.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/16.jpg",
+        "https://img.komiku.org/upload5/suufungo-no-mirai-ga-wakaru-you-ni-/12.1/2025-09-24/17.jpg"
+      ]
+    },
     {
       "nama": "Chapter 12.2",
       "url": "https://komiku.org/suufungo-no-mirai-ga-wakaru-you-ni-natta-kedo-onnagokoro-wa-wakaranai-chapter-12-2/",
@@ -278,5 +398,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-12T12:11:24.209524"
+  "last_scraped": "2026-07-12T13:04:20.309163"
 }
