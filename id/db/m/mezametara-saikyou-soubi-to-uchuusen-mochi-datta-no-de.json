@@ -21,10 +21,135 @@
   "pembaca_mingguan": 36,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 90,
-  "chapterCount": 90,
-  "Chs": "Chapter 10.2, Chapter 11.1, Chapter 11.2, Chapter 12.1, Chapter 12.2, Chapter 13.1, Chapter 13.2, Chapter 14.1, Chapter 14.2, Chapter 15.1, Chapter 15.2, Chapter 16.1, Chapter 16.2, Chapter 17.1, Chapter 17.2, Chapter 18.1, Chapter 18.2, Chapter 19.1, Chapter 19.2, Chapter 20.1, Chapter 20.2, Chapter 21.1, Chapter 21.2, Chapter 22.1, Chapter 22.2, Chapter 23.1, Chapter 23.2, Chapter 24.1, Chapter 24.2, Chapter 25.1, Chapter 25.2, Chapter 26.1, Chapter 26.2, Chapter 27.1, Chapter 27.2, Chapter 28, Chapter 29.1, Chapter 29.2, Chapter 30.1, Chapter 30.2, Chapter 31.1, Chapter 31.2, Chapter 32.1, Chapter 33.1, Chapter 33.2, Chapter 34.1, Chapter 34.2, Chapter 35.1, Chapter 35.2, Chapter 36.1, Chapter 36.2, Chapter 37.1, Chapter 37.2, Chapter 38.1, Chapter 38.2, Chapter 39.1, Chapter 39.2, Chapter 40.1, Chapter 40.2, Chapter 41.1, Chapter 41.2, Chapter 42.1, Chapter 42.2, Chapter 43.1, Chapter 43.2, Chapter 44.1, Chapter 44.2, Chapter 45.1, Chapter 45.2, Chapter 46.1, Chapter 46.2, Chapter 47.1, Chapter 47.2, Chapter 48.1, Chapter 48.2, Chapter 49.1, Chapter 49.2, Chapter 50.1, Chapter 50.2, Chapter 51.1, Chapter 51.2 Fix, Chapter 52.1, Chapter 52.2, Chapter 53.1, Chapter 53.2, Chapter 54.1, Chapter 54.2, Chapter 55.1, Chapter 55.2, Chapter 56.1",
+  "online": 95,
+  "chapterCount": 95,
+  "Chs": "Chapter 8.1, Chapter 8.2, Chapter 9.1, Chapter 9.2, Chapter 10.1, Chapter 10.2, Chapter 11.1, Chapter 11.2, Chapter 12.1, Chapter 12.2, Chapter 13.1, Chapter 13.2, Chapter 14.1, Chapter 14.2, Chapter 15.1, Chapter 15.2, Chapter 16.1, Chapter 16.2, Chapter 17.1, Chapter 17.2, Chapter 18.1, Chapter 18.2, Chapter 19.1, Chapter 19.2, Chapter 20.1, Chapter 20.2, Chapter 21.1, Chapter 21.2, Chapter 22.1, Chapter 22.2, Chapter 23.1, Chapter 23.2, Chapter 24.1, Chapter 24.2, Chapter 25.1, Chapter 25.2, Chapter 26.1, Chapter 26.2, Chapter 27.1, Chapter 27.2, Chapter 28, Chapter 29.1, Chapter 29.2, Chapter 30.1, Chapter 30.2, Chapter 31.1, Chapter 31.2, Chapter 32.1, Chapter 33.1, Chapter 33.2, Chapter 34.1, Chapter 34.2, Chapter 35.1, Chapter 35.2, Chapter 36.1, Chapter 36.2, Chapter 37.1, Chapter 37.2, Chapter 38.1, Chapter 38.2, Chapter 39.1, Chapter 39.2, Chapter 40.1, Chapter 40.2, Chapter 41.1, Chapter 41.2, Chapter 42.1, Chapter 42.2, Chapter 43.1, Chapter 43.2, Chapter 44.1, Chapter 44.2, Chapter 45.1, Chapter 45.2, Chapter 46.1, Chapter 46.2, Chapter 47.1, Chapter 47.2, Chapter 48.1, Chapter 48.2, Chapter 49.1, Chapter 49.2, Chapter 50.1, Chapter 50.2, Chapter 51.1, Chapter 51.2 Fix, Chapter 52.1, Chapter 52.2, Chapter 53.1, Chapter 53.2, Chapter 54.1, Chapter 54.2, Chapter 55.1, Chapter 55.2, Chapter 56.1",
   "chapters": [
+    {
+      "nama": "Chapter 8.1",
+      "url": "https://komiku.org/mezametara-saikyou-soubi-to-uchuusen-mochi-datta-no-de-chapter-08-1/",
+      "tanggal_rilis": "07/08/2020",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/2260989-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-15.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-17.jpg",
+        "https://img.komiku.org/wp-content/uploads/2260989-18.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 8.2",
+      "url": "https://komiku.org/mezametara-saikyou-soubi-to-uchuusen-mochi-datta-no-de-chapter-8-2/",
+      "tanggal_rilis": "23/08/2020",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/2268974-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-15.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-17.jpg",
+        "https://img.komiku.org/wp-content/uploads/2268974-18.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 9.1",
+      "url": "https://komiku.org/mezametara-saikyou-soubi-to-uchuusen-mochi-datta-no-de-chapter-9-1/",
+      "tanggal_rilis": "31/08/2020",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/2276549-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-15.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-17.jpg",
+        "https://img.komiku.org/wp-content/uploads/2276549-18.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 9.2",
+      "url": "https://komiku.org/mezametara-saikyou-soubi-to-uchuusen-mochi-datta-no-de-chapter-09-2/",
+      "tanggal_rilis": "21/09/2020",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/2291852-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-15.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-17.jpg",
+        "https://img.komiku.org/wp-content/uploads/2291852-18.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 10.1",
+      "url": "https://komiku.org/mezametara-saikyou-soubi-to-uchuusen-mochi-datta-no-de-chapter-10-1/",
+      "tanggal_rilis": "25/10/2020",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/2305647-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-15.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-17.jpg",
+        "https://img.komiku.org/wp-content/uploads/2305647-18.jpg"
+      ]
+    },
     {
       "nama": "Chapter 10.2",
       "url": "https://komiku.org/mezametara-saikyou-soubi-to-uchuusen-mochi-datta-no-de-chapter-10-2/",
@@ -2289,5 +2414,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-12T19:40:03.467963"
+  "last_scraped": "2026-07-12T20:08:25.791793"
 }
