@@ -2,9 +2,9 @@
     "judul": "You Are at the End of the Downfall",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/You-Are-at-the-End-of-the-Downfall-193x278.jpg",
     "source": "arenascan",
-    "online": 12,
-    "chapterCount": 12,
-    "Chs": "Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 13,
+    "chapterCount": 13,
+    "Chs": "Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -345,7 +345,28 @@
                 "https://cdn.arenascan.com/arena-bucket/403837/12/image-08_result.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/you-are-at-the-end-of-the-downfall-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/403837/13/01_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/02_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/03_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/04_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/05_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/06_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/07_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/08_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/09_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/10_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/11_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/12_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/13_result.webp",
+                "https://cdn.arenascan.com/arena-bucket/403837/13/14_result.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-04T21:34:34.884120"
+    "last_scraped": "2026-07-12T20:59:05.387708"
 }
