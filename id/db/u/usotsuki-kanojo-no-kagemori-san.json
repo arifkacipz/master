@@ -1,6 +1,7 @@
 {
   "judul": "Usotsuki Kanojo no Kagemori-san",
   "judul_alternatif": "Pacar Pembohong Kagemori-san",
+  "slug": "usotsuki-kanojo-no-kagemori-san",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613154502_50adef50e191c3c4_4bc2aea7.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -15,6 +16,10 @@
   "pembaca_total": 2043,
   "pembaca_mingguan": 7,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -156,10 +161,5 @@
       ]
     }
   ],
-  "slug": "usotsuki-kanojo-no-kagemori-san",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-07-12T11:54:03.204767"
+  "last_scraped": "2026-07-12T12:11:04.732361"
 }
