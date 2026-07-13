@@ -189,6 +189,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "eternally-regressing-knight",
+    "judul": "Eternally Regressing Knight",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/eternally-regressing-knight/manga_thumbnail-A2-Eternally-Regressing-Knight.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "everyone-else-became-a-romance-fantasy-heroine-but-i-became-a-closet-monster",
     "judul": "Everyone Else Became a Romance Fantasy Heroine, But I Became a Closet Monster",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708143110_5a7eeac95e018a92_b6c6ecf1.jpg?w=1200",
@@ -205,15 +214,6 @@
     "online": 7,
     "tipe": "Manhua",
     "status": ""
-  },
-  {
-    "slug": "endless-yearning",
-    "judul": "Endless Yearning",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/02/20260602123025_ad41405ae03bdebc_283fa235.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "full-time-hunter-i-hunt-the-world",
@@ -275,15 +275,6 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629211511_01f631db9cd4fa4b_e9cdff8f.jpg?w=1200",
     "chapterCount": 2,
     "online": 2,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "goblin-slayer-gaiden-year-one",
-    "judul": "Goblin Slayer Gaiden: Year One",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/goblin-slayer-gaiden-year-one/manga_thumbnail-Manga-Goblin-Slayer-Gaiden-Year-One.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1134,6 +1125,15 @@
     "status": ""
   },
   {
+    "slug": "zenmetsu-end-o-shi-ni-monogurui-de-kaihi-shita-party-ga-yanda",
+    "judul": "Zenmetsu End o Shi ni Monogurui de Kaihi Shita. Party ga Yanda.",
+    "thumb": "https://thumbnail.komiku.org/img/upload/zenmetsu_end_o_shi_ni_monogurui_de_kaihi_shita/img_6992e61f411af1.80506400.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "junjou-gyaru-wa-kanojo-janai-no-ni",
     "judul": "Junjou gyaru wa kanojo janai no ni",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/02/20260702080011_a49c7790af7f73b9_6d7531d7.jpg?w=1200",
@@ -1164,8 +1164,8 @@
     "slug": "i-became-a-wizard-in-a-medieval-fantasy-world",
     "judul": "I Became a Wizard in a Medieval Fantasy World",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/01/20260501110013_c935dbedadcf4ac5_41e7ab32.webp?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -1501,6 +1501,15 @@
     "online": 8,
     "tipe": "Manhwa",
     "status": ""
+  },
+  {
+    "slug": "the-genius-who-sees-through-the-world",
+    "judul": "The Genius Who Sees Through the World",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_genius_who_sees_through_the_world/img_683588331bf3b9.40833122.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
   },
   {
     "slug": "tada-shizuka-ni-kiesaru-tsumorideshita",
