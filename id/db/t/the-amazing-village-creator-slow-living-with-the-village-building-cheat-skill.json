@@ -6,16 +6,18 @@
   "tipe": "Manga",
   "status": "Ongoing",
   "genre": [
+    "Adult",
     "Adventure",
     "Comedy",
+    "Ecchi",
     "Fantasy",
     "Isekai"
   ],
   "sinopsis": "Komik ini menceritakan tentang seorang pemuda yang menemukan sebuah kemampuan ajaib untuk membangun desa dari awal dengan mudah. Dengan keahlian uniknya tersebut, ia memulai hidup yang lambat dan tenang, membangun komunitas yang harmonis dan menjalani kehidupan yang jauh dari hiruk pikuk dunia kota.\n\nSelama perjalanannya, sang protagonis menghadapi berbagai tantangan dalam mengelola desa dan menjaga hubungan antar penduduk. Melalui strategi dan keahliannya yang spesial, ia berhasil membawa perubahan positif, menciptakan tempat yang nyaman untuk ditinggali dan melestarikan nilai-nilai tradisional secara modern.",
   "author": "Park Sae-ryung",
   "rating": "10+",
-  "pembaca_total": 112840,
-  "pembaca_mingguan": 6266,
+  "pembaca_total": 116677,
+  "pembaca_mingguan": 10103,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
   "online": 41,
@@ -1077,5 +1079,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-13T06:09:48.734736"
+  "last_scraped": "2026-07-13T08:32:26.165970"
 }
