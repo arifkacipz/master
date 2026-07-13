@@ -1,6 +1,7 @@
 {
   "judul": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2-nensei-hen 2nd Stage",
   "judul_alternatif": "Selamat Datang di Ruang Kelas dengan Prinsip Kemampuan Tertinggi Tahun Kedua Tahap Kedua",
+  "slug": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2-nensei-hen-2nd-stage",
   "thumb": "https://thumbnail.komiku.org/img/upload/youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_2/img_6843f146bab9a7.34606551.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -17,6 +18,10 @@
   "pembaca_total": 8726,
   "pembaca_mingguan": 9,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1.1, Chapter 1.2, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1.1",
@@ -169,10 +174,5 @@
       ]
     }
   ],
-  "slug": "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2-nensei-hen-2nd-stage",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1.1, Chapter 1.2, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-07-13T04:51:46.504650"
+  "last_scraped": "2026-07-13T06:08:49.275252"
 }
