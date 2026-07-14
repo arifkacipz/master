@@ -264,8 +264,8 @@
     "slug": "gokurakugai",
     "judul": "Gokurakugai",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/gokurakugai/manga_thumbnail-Gokurakugai-Cover.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1404,15 +1404,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "the-s-classes-that-i-raised",
-    "judul": "The S-Classes That I Raised",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-s-classes-that-i-raised/manga_thumbnail-Komik-The-S-Classes-That-I-Raised.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "the-perfect-seniors-secret",
     "judul": "The Perfect Senior’s Secret!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/02/20260602123022_ced7af68ae838f6d_f44b07c4.jpg?w=1200",
@@ -1485,6 +1476,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "the-princess-goes-to-school",
+    "judul": "The Princess Goes to School",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/13/20260313211537_66f20eb55b6b314f_6267da38.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "the-fake-saintess-of-a-reverse-harem-game",
     "judul": "The Fake Saintess of a Reverse Harem Game",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703031512_6d492cb2b39d8064_356e5823.png?w=1200",
@@ -1500,6 +1500,15 @@
     "chapterCount": 9,
     "online": 9,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "the-evil-god-descends-i-own-great-hell",
+    "judul": "The Evil God Descends, I Own Great Hell",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_evil_god_descends__i_own_great_hell/img_684fccb44d9e61.34624873.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
   },
   {
