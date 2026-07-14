@@ -14,13 +14,13 @@
   "sinopsis": "-",
   "author": "-",
   "rating": "15+",
-  "pembaca_total": 253,
-  "pembaca_mingguan": 5,
+  "pembaca_total": 394,
+  "pembaca_mingguan": 9,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -269,7 +269,47 @@
         "https://img.komiku.org/upload5/majo-no-ending-note/4/2026-07-07/42_part1.jpg",
         "https://img.komiku.org/upload5/majo-no-ending-note/4/2026-07-07/42_part2.jpg"
       ]
+    },
+    {
+      "nama": "Chapter 5",
+      "url": "https://komiku.org/majo-no-ending-note-chapter-5/",
+      "tanggal_rilis": "14/07/2026",
+      "images": [
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/1.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/2.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/3.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/4.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/5.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/6.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/7.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/8.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/9.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/10.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/11.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/12.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/13.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/14.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/15.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/16.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/17.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/18.webp",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/19.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/20.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/21.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/22.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/23.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/24.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/25.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/26.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/27.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/28.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/29.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/30.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/31.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/32.jpg",
+        "https://img.komiku.org/upload5/majo-no-ending-note/5/2026-07-14/33.webp"
+      ]
     }
   ],
-  "last_scraped": "2026-07-07T19:03:14.587204"
+  "last_scraped": "2026-07-14T08:55:04.479845"
 }
