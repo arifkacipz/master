@@ -261,15 +261,6 @@
     "status": ""
   },
   {
-    "slug": "god-killer",
-    "judul": "God Killer",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/god-killer/manga_thumbnail-Manhua-God-Killer.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
-    "status": "Ongoing"
-  },
-  {
     "slug": "game-kaishi-mae-ni-shini-mob-akuyaku-ouji-ni-tensei-shita-ore",
     "judul": "Game Kaishi Mae ni Shini Mob Akuyaku Ouji ni Tensei shita Ore",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629211511_01f631db9cd4fa4b_e9cdff8f.jpg?w=1200",
@@ -331,15 +322,6 @@
     "online": 1,
     "tipe": "Manhwa",
     "status": ""
-  },
-  {
-    "slug": "song-baek",
-    "judul": "Song Baek",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/song-baek/manga_thumbnail-A2-Song-Baek.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
   },
   {
     "slug": "senpai-chotto-ii-desu-ka",
@@ -657,6 +639,15 @@
     "status": ""
   },
   {
+    "slug": "once-an-assassin-now-a-royal-nanny",
+    "judul": "Once an Assassin, Now a Royal Nanny",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/15/20260415161545_1cd4b9df1596179e_4d3d3ca5.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": ""
+  },
+  {
     "slug": "older-womens-club",
     "judul": "Older Women’s Club",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629194527_e77786633df17458_25edcd69.jpg?w=1200",
@@ -680,6 +671,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703134511_162d1936e78d9eff_4a5b0a93.jpg?w=1200",
     "chapterCount": 8,
     "online": 8,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "obsessive-love-kills-the-saintess-twice",
+    "judul": "Obsessive Love Kills the Saintess Twice",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/05/20260605111517_0e7d734b9fb36e5b_aae0a75b.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -1479,8 +1479,8 @@
     "slug": "the-arranged-suitor-was-the-kidnapper",
     "judul": "The Arranged Suitor Was the Kidnapper",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/17/20260617134514_27caad0b7e4d6808_d9e7d68b.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
