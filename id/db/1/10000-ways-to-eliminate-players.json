@@ -12,13 +12,13 @@
   "sinopsis": "Saat sebuah game survival skala global tiba-tiba menimpa dunia nyata, Raka, mantan QA yang hafal bug dan celah, terjebak sebagai moderator bayangan. Di tangannya ada sebuah buku sistem bernama Kompendium 10.000 Eliminasi, katalog taktik kejam dan trik bersih untuk menyingkirkan pemain. Setiap halaman adalah metode berbeda, dari manipulasi peta sampai perang psikologis, dan sistem memaksanya menurunkan jumlah peserta setiap hari agar server tidak runtuh.\nDi tengah arena yang terus berevolusi, Raka menyusun strategi layaknya patch note berjalan, menata ulang aturan, dan memutar balik jebakan para guild puncak. Namun setiap metode yang dipakai meninggalkan konsekuensi sosial dan moral. Saat daftar di buku mulai menulis dirinya sendiri dan menguak identitas arsitek permainan, Raka dihadapkan pada pilihan final: memutus permainan dengan risiko chaos total atau menjadi eksekutor terakhir yang menjaga dunia tetap stabil.",
   "author": "Tidak diketahui",
   "rating": "15+",
-  "pembaca_total": 5130,
-  "pembaca_mingguan": 10,
+  "pembaca_total": 6071,
+  "pembaca_mingguan": 33,
   "cara_baca": "Kiri ke kanan",
   "source": "komiku",
-  "online": 12,
-  "chapterCount": 12,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12",
+  "online": 14,
+  "chapterCount": 14,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -542,7 +542,72 @@
         "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/12/2026-06-29/18.jpg",
         "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/12/2026-06-29/19.webp"
       ]
+    },
+    {
+      "nama": "Chapter 13",
+      "url": "https://komiku.org/10000-ways-to-eliminate-players-chapter-13/",
+      "tanggal_rilis": "15/07/2026",
+      "images": [
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/1_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/1_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/1_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/1_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/2_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/2_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/2_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/2_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/3_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/3_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/3_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/3_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/4_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/4_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/4_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/4_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/5_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/5_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/5_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/6_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/6_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/6_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/6_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/6_part5.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/7_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/7_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/7_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/13/2026-07-14/7_part4.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 14",
+      "url": "https://komiku.org/10000-ways-to-eliminate-players-chapter-14/",
+      "tanggal_rilis": "15/07/2026",
+      "images": [
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/1_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/1_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/1_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/1_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/2_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/2_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/2_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/2_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/3_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/3_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/3_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/3_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/4_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/4_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/4_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/4_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/4_part5.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/5_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/5_part2.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/5_part3.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/5_part4.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/6_part1.jpg",
+        "https://img.komiku.org/upload5/10-000-ways-to-eliminate-players/14/2026-07-14/6_part2.jpg"
+      ]
     }
   ],
-  "last_scraped": "2026-06-30T01:40:45.255961"
+  "last_scraped": "2026-07-14T19:09:02.240876"
 }
