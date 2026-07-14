@@ -153,6 +153,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "heart-pounding-ghostly-poem",
+    "judul": "Heart-Pounding Ghostly Poem",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/heart-pounding-ghostly-poem/manga_thumbnail-A2-Heart-Pounding-Ghostly-Poem.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhwa",
+    "status": "Ongoing"
+  },
+  {
     "slug": "hangyakusha-to-shite-oukoku-de-shokei-sareta-kakure-saikyou-kishi",
     "judul": "Hangyakusha to Shite Oukoku de Shokei Sareta Kakure Saikyou Kishi",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/12/20260312144324_c8edc85365c00d58_ded05b49.jpg?w=1200",
@@ -167,15 +176,6 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/27/20260627170011_5de6131170c74e98_ec1e629a.jpg?w=1200",
     "chapterCount": 5,
     "online": 5,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "henkyou-no-yakushi-miyako-de-s-rank-boukensha-to-naru",
-    "judul": "Henkyou no Yakushi, Miyako de S Rank Boukensha to naru",
-    "thumb": "https://thumbnail.komiku.org/img/upload/henkyou_no_yakushi__miyako_de_s_rank_boukensha_to_naru/img_68520929740942.84001091.jpg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -219,8 +219,8 @@
     "slug": "full-time-hunter-i-hunt-the-world",
     "judul": "Full-time Hunter: I Hunt the World!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630143020_41f336e3cd5377be_c541e8c3.webp?w=1200",
-    "chapterCount": 2,
-    "online": 2,
+    "chapterCount": 3,
+    "online": 3,
     "tipe": "Manhua",
     "status": ""
   },
@@ -633,8 +633,8 @@
     "slug": "otome-game-no-mob-desura-naindaga",
     "judul": "Otome Game no Mob Desura Naindaga",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/17/20260517233051_2dc0d0dfb0354e1b_8178fa7a.webp?w=1200",
-    "chapterCount": 11,
-    "online": 11,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manga",
     "status": ""
   },
@@ -705,8 +705,8 @@
     "slug": "otomege-no-mobu-de-sura-nain-da-ga",
     "judul": "Otomege no Mobu de Sura Nain da ga",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/otomege-no-mobu-de-sura-nain-da-ga/manga_thumbnail-Otomege-no-Mobu-de-Sura-Nain-da-ga-Cover.jpg?w=1200",
-    "chapterCount": 11,
-    "online": 11,
+    "chapterCount": 12,
+    "online": 12,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1617,6 +1617,15 @@
     "chapterCount": 4,
     "online": 4,
     "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "unveiling-the-emperors-secret",
+    "judul": "Unveiling the Emperor’s Secret",
+    "thumb": "https://thumbnail.komiku.org/img/upload/unveiling_the_emperor___s_secret/img_68774ff68ca600.96134326.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
     "status": "Ongoing"
   }
 ]
