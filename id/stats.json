@@ -153,15 +153,6 @@
     "status": "Ongoing"
   },
   {
-    "slug": "heart-pounding-ghostly-poem",
-    "judul": "Heart-Pounding Ghostly Poem",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/heart-pounding-ghostly-poem/manga_thumbnail-A2-Heart-Pounding-Ghostly-Poem.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhwa",
-    "status": "Ongoing"
-  },
-  {
     "slug": "hangyakusha-to-shite-oukoku-de-shokei-sareta-kakure-saikyou-kishi",
     "judul": "Hangyakusha to Shite Oukoku de Shokei Sareta Kakure Saikyou Kishi",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/12/20260312144324_c8edc85365c00d58_ded05b49.jpg?w=1200",
@@ -270,6 +261,15 @@
     "status": ""
   },
   {
+    "slug": "gokurakugai",
+    "judul": "Gokurakugai",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/gokurakugai/manga_thumbnail-Gokurakugai-Cover.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "game-kaishi-mae-ni-shini-mob-akuyaku-ouji-ni-tensei-shita-ore",
     "judul": "Game Kaishi Mae ni Shini Mob Akuyaku Ouji ni Tensei shita Ore",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/29/20260629211511_01f631db9cd4fa4b_e9cdff8f.jpg?w=1200",
@@ -354,8 +354,8 @@
     "slug": "shounin-reijou-agnes-henkyou-ni-tsuihou-sareta-akuyaku-reijou-wa-shousai-o-hakki-shi-nariagaru",
     "judul": "Shounin Reijou Agnes Henkyou ni Tsuihou Sareta Akuyaku Reijou wa Shousai o Hakki Shi Nariagaru",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709180014_acf181f8467502a5_e66222f1.jpg?w=1200",
-    "chapterCount": 1,
-    "online": 1,
+    "chapterCount": 2,
+    "online": 2,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1209,8 +1209,8 @@
     "slug": "im-a-condemned-witch-but-im-being-loved-after-my-regression",
     "judul": "I’m a Condemned Witch, but I’m Being Loved After My Regression!?",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708143025_6478cc8d6613052e_21cd11cb.webp?w=1200",
-    "chapterCount": 8,
-    "online": 8,
+    "chapterCount": 9,
+    "online": 9,
     "tipe": "Manga",
     "status": ""
   },
@@ -1254,8 +1254,8 @@
     "slug": "i-may-be-a-sickly-mom-but-ill-raise-my-fallen-son",
     "judul": "I May Be a Sickly Mom, but I’ll Raise My Fallen Son!",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/30/20260630191513_68cd6391ba7f0954_1afb1c35.jpg?w=1200",
-    "chapterCount": 12,
-    "online": 12,
+    "chapterCount": 14,
+    "online": 14,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -1407,8 +1407,8 @@
     "slug": "the-s-classes-that-i-raised",
     "judul": "The S-Classes That I Raised",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/the-s-classes-that-i-raised/manga_thumbnail-Komik-The-S-Classes-That-I-Raised.png?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": "Ongoing"
   },
@@ -1515,8 +1515,8 @@
     "slug": "the-grand-dukes-new-daughter-in-law-is-a-little-fierce",
     "judul": "The Grand Duke’s New Daughter-in-Law Is a Little Fierce",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/25/20260625020018_b8cdc759f7a6ba6e_d280626c.webp?w=1200",
-    "chapterCount": 9,
-    "online": 9,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manhwa",
     "status": ""
   },
@@ -1626,15 +1626,6 @@
     "chapterCount": 4,
     "online": 4,
     "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
-    "slug": "unveiling-the-emperors-secret",
-    "judul": "Unveiling the Emperor’s Secret",
-    "thumb": "https://thumbnail.komiku.org/img/upload/unveiling_the_emperor___s_secret/img_68774ff68ca600.96134326.png?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manhua",
     "status": "Ongoing"
   }
 ]
