@@ -22,6 +22,17 @@
     ]
   },
   {
+    "slug": "my-pirate-prince",
+    "judul": "My Pirate Prince",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/My-Pirate-Prince-193x278.jpg",
+    "total_online": 32,
+    "total_downloaded": 30,
+    "missing": [
+      "Chapter 33",
+      "Chapter 32"
+    ]
+  },
+  {
     "slug": "under-the-oak-tree",
     "judul": "Under the Oak Tree",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/Under-the-Oak-Tree.jpg",
