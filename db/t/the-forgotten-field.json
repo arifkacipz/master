@@ -2,9 +2,9 @@
     "judul": "The Forgotten Field",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/The-Forgotten-Field-193x278.jpg",
     "source": "arenascan",
-    "online": 28,
-    "chapterCount": 28,
-    "Chs": "Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
+    "online": 29,
+    "chapterCount": 29,
+    "Chs": "Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1, Chapter 0",
     "chapters": [
         {
             "nama": "Chapter 0",
@@ -750,7 +750,24 @@
                 "https://cdn.arenascan.com/arena-bucket/401124/27/25_result.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 28",
+            "url": "https://arenascan.com/the-forgotten-field-chapter-28/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/401124/28/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/07_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/08_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/09_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/401124/28/10_result.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-08T19:44:27.419096"
+    "last_scraped": "2026-07-14T21:06:48.354258"
 }
