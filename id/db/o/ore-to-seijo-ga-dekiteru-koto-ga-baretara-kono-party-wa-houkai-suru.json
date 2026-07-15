@@ -22,10 +22,117 @@
   "pembaca_mingguan": 185,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 3.1, Chapter 3.2, Chapter 3.3, Chapter 4.1, Chapter 4.2, Chapter 4.3, Chapter 5.1, Chapter 5.2, Chapter 5.3, Chapter 6.1, Chapter 6.2, Chapter 6.3, Chapter 7.1, Chapter 7.2, Chapter 7.3, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12",
+  "online": 24,
+  "chapterCount": 24,
+  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2, Chapter 2.3, Chapter 3.1, Chapter 3.2, Chapter 3.3, Chapter 4.1, Chapter 4.2, Chapter 4.3, Chapter 5.1, Chapter 5.2, Chapter 5.3, Chapter 6.1, Chapter 6.2, Chapter 6.3, Chapter 7.1, Chapter 7.2, Chapter 7.3, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/ore-to-seijo-ga-dekiteru-koto-ga-baretara-kono-party-wa-houkai-suru-chapter-1/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/1.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/2.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/3.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/4.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/5.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/6.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/12.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/13.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/14.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/15.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/16.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/17.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/18.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/19.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/20.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/21.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/22.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/23.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/24.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/25.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/26.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/27.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/28.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/29.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/30.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/31.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/32.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/33.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/34.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/35.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/36.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/37.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/38.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/39.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/40.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/41.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/42.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/43.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/44.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/1/2026-03-23/45.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 2.1",
+      "url": "https://komiku.org/ore-to-seijo-ga-dekiteru-koto-ga-baretara-kono-party-wa-houkai-suru-chapter-2-1/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/1.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/2.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/3.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/4.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/5.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/6.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.1/2026-03-23/12.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 2.2",
+      "url": "https://komiku.org/ore-to-seijo-ga-dekiteru-koto-ga-baretara-kono-party-wa-houkai-suru-chapter-2-2/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/1.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/2.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/3.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/4.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/5.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/6.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/10.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/11.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.2/2026-03-23/12.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 2.3",
+      "url": "https://komiku.org/ore-to-seijo-ga-dekiteru-koto-ga-baretara-kono-party-wa-houkai-suru-chapter-2-3/",
+      "tanggal_rilis": "24/03/2026",
+      "images": [
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/1.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/2.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/3.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/4.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/5.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/6.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/7.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/8.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/9.webp",
+        "https://img.komiku.org/upload5/ore-to-seijo-ga-dekiteru-koto-ga-ba/2.3/2026-03-23/10.webp"
+      ]
+    },
     {
       "nama": "Chapter 3.1",
       "url": "https://komiku.org/ore-to-seijo-ga-dekiteru-koto-ga-baretara-kono-party-wa-houkai-suru-chapter-3-1/",
@@ -545,5 +652,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-15T17:12:05.729616"
+  "last_scraped": "2026-07-15T18:37:13.176929"
 }
