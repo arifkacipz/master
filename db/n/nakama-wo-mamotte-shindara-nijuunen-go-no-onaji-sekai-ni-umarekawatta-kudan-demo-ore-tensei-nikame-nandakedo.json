@@ -2,9 +2,9 @@
     "judul": "Nakama wo Mamotte Shindara Nijuunen Go no Onaji Sekai ni Umarekawatta Kudan\u2026\u2026demo Ore, Tensei Nikame Nandakedo?",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/nakama-wo-mamotte-shindara-nijuunen-go-no-onaji-sekai-ni-umarekawatta-kudandemo-ore-tensei-nikame-nandakedo.jpg",
     "source": "arenascan",
-    "online": 9,
-    "chapterCount": 9,
-    "Chs": "Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2.2, Chapter 2.1, Chapter 1",
+    "online": 10,
+    "chapterCount": 10,
+    "Chs": "Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2.2, Chapter 2.1, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -269,7 +269,30 @@
                 "https://cdn.arenascan.com/arena-bucket/380660/8/15.jpg"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 9",
+            "url": "https://arenascan.com/nakama-wo-mamotte-shindara-nijuunen-go-no-onaji-sekai-ni-umarekawatta-kudan-demo-ore-tensei-nikame-nandakedo-chapter-9/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/380660/9/0.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/1.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/2.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/3.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/4.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/5.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/6.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/7.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/8.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/9.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/10.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/11.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/12.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/13.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/14.jpg",
+                "https://cdn.arenascan.com/arena-bucket/380660/9/15.jpg"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-06-26T16:01:34.563597"
+    "last_scraped": "2026-07-15T12:07:48.793803"
 }
