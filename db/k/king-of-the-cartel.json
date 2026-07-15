@@ -3,7 +3,7 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/King-of-the-Cartel-193x278.jpg",
     "source": "arenascan",
     "online": 22,
-    "chapterCount": 20,
+    "chapterCount": 22,
     "Chs": "Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
@@ -585,6 +585,68 @@
             "source_chapter": "arenascan"
         },
         {
+            "nama": "Chapter 18",
+            "url": "https://arenascan.com/king-of-the-cartel-chapter-18/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387360/18/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/012.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/014.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/015.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/016.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/017.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/018.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/019.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/020.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/021.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/022.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/023.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/024.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/025.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/026.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/027.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/028.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/029.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/030.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/031.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/032.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/033.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/034.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/035.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/036.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/18/037.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 19",
+            "url": "https://arenascan.com/king-of-the-cartel-chapter-19/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/387360/19/001.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/002.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/003.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/004.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/005.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/006.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/007.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/008.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/009.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/010.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/011.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/012.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/013.webp",
+                "https://cdn.arenascan.com/arena-bucket/387360/19/014.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
             "nama": "Chapter 20",
             "url": "https://arenascan.com/king-of-the-cartel-chapter-20/",
             "images": [
@@ -714,5 +776,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-15T03:44:30.498271"
+    "last_scraped": "2026-07-15T04:31:10.448658"
 }
