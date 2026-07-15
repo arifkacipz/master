@@ -18,10 +18,53 @@
   "pembaca_mingguan": 23441,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 40,
-  "chapterCount": 40,
-  "Chs": "Chapter 2.1, Chapter 2.2, Chapter 3, Chapter 4, Chapter 5, Chapter 6.1, Chapter 6.2, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39",
+  "online": 41,
+  "chapterCount": 41,
+  "Chs": "Chapter 1, Chapter 2.1, Chapter 2.2, Chapter 3, Chapter 4, Chapter 5, Chapter 6.1, Chapter 6.2, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/saijo-no-osewa-takane-no-hana-darakena-meimon-kou-de-gakuin-ichi-no-ojou-sama-seikatsu-noryoku-kaimu-o-kagenagara-osewa-suru-koto-ni-narimashita-chapter-01/",
+      "tanggal_rilis": "17/09/2022",
+      "images": [
+        "https://img.komiku.org/uploads2/2574627-1.jpg",
+        "https://img.komiku.org/uploads2/2574627-2.jpg",
+        "https://img.komiku.org/uploads2/2574627-3.jpg",
+        "https://img.komiku.org/uploads2/2574627-4.jpg",
+        "https://img.komiku.org/uploads2/2574627-5.jpg",
+        "https://img.komiku.org/uploads2/2574627-6.jpg",
+        "https://img.komiku.org/uploads2/2574627-7.jpg",
+        "https://img.komiku.org/uploads2/2574627-8.jpg",
+        "https://img.komiku.org/uploads2/2574627-9.jpg",
+        "https://img.komiku.org/uploads2/2574627-10.jpg",
+        "https://img.komiku.org/uploads2/2574627-11.jpg",
+        "https://img.komiku.org/uploads2/2574627-12.jpg",
+        "https://img.komiku.org/uploads2/2574627-13.jpg",
+        "https://img.komiku.org/uploads2/2574627-14.jpg",
+        "https://img.komiku.org/uploads2/2574627-15.jpg",
+        "https://img.komiku.org/uploads2/2574627-16.jpg",
+        "https://img.komiku.org/uploads2/2574627-17.jpg",
+        "https://img.komiku.org/uploads2/2574627-18.jpg",
+        "https://img.komiku.org/uploads2/2574627-19.jpg",
+        "https://img.komiku.org/uploads2/2574627-20.jpg",
+        "https://img.komiku.org/uploads2/2574627-21.jpg",
+        "https://img.komiku.org/uploads2/2574627-22.jpg",
+        "https://img.komiku.org/uploads2/2574627-23.jpg",
+        "https://img.komiku.org/uploads2/2574627-24.jpg",
+        "https://img.komiku.org/uploads2/2574627-25.jpg",
+        "https://img.komiku.org/uploads2/2574627-26.jpg",
+        "https://img.komiku.org/uploads2/2574627-27.jpg",
+        "https://img.komiku.org/uploads2/2574627-28.jpg",
+        "https://img.komiku.org/uploads2/2574627-29.jpg",
+        "https://img.komiku.org/uploads2/2574627-30.jpg",
+        "https://img.komiku.org/uploads2/2574627-31.jpg",
+        "https://img.komiku.org/uploads2/2574627-32.jpg",
+        "https://img.komiku.org/uploads2/2574627-33.jpg",
+        "https://img.komiku.org/uploads2/2574627-34.jpg",
+        "https://img.komiku.org/uploads2/2574627-35.jpg",
+        "https://img.komiku.org/uploads2/2574627-36.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2.1",
       "url": "https://komiku.org/saijo-no-osewa-takane-no-hana-darakena-meimon-kou-de-gakuin-ichi-no-ojou-sama-seikatsu-noryoku-kaimu-o-kagenagara-osewa-suru-koto-ni-narimashita-chapter-02-1/",
@@ -1361,5 +1404,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-15T13:23:22.138017"
+  "last_scraped": "2026-07-15T15:07:34.678301"
 }
