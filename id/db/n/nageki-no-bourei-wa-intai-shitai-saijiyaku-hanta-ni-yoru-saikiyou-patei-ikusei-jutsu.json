@@ -21,10 +21,63 @@
   "pembaca_mingguan": 257,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 75,
-  "chapterCount": 75,
-  "Chs": "Chapter 2.1, Chapter 2.2, Chapter 3.1, Chapter 3.2, Chapter 4, Chapter 5, Chapter 6, Chapter 7.1, Chapter 7.2, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 55.1, Chapter 55.2, Chapter 56.1, Chapter 56.2, Chapter 57.1, Chapter 57.2, Chapter 58.1, Chapter 58.2, Chapter 59.1, Chapter 59.2, Chapter 60.1, Chapter 60.2, Chapter 61.1, Chapter 61.2, Chapter 62.1, Chapter 62.2, Chapter 63, Chapter 64",
+  "online": 77,
+  "chapterCount": 77,
+  "Chs": "Chapter 1.1, Chapter 1.2, Chapter 2.1, Chapter 2.2, Chapter 3.1, Chapter 3.2, Chapter 4, Chapter 5, Chapter 6, Chapter 7.1, Chapter 7.2, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22, Chapter 23, Chapter 24, Chapter 25, Chapter 26, Chapter 27, Chapter 28, Chapter 29, Chapter 30, Chapter 31, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 37, Chapter 38, Chapter 39, Chapter 40, Chapter 41, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51, Chapter 52, Chapter 53, Chapter 54, Chapter 55, Chapter 55.1, Chapter 55.2, Chapter 56.1, Chapter 56.2, Chapter 57.1, Chapter 57.2, Chapter 58.1, Chapter 58.2, Chapter 59.1, Chapter 59.2, Chapter 60.1, Chapter 60.2, Chapter 61.1, Chapter 61.2, Chapter 62.1, Chapter 62.2, Chapter 63, Chapter 64",
   "chapters": [
+    {
+      "nama": "Chapter 1.1",
+      "url": "https://komiku.org/nageki-no-bourei-wa-intai-shitai-saijiyaku-hanta-ni-yoru-saikiyou-patei-ikusei-jutsu-chapter-1-1/",
+      "tanggal_rilis": "09/01/2019",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/88509-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-15.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-16.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-17.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-18.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-19.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-20.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-21.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-22.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-23.jpg",
+        "https://img.komiku.org/wp-content/uploads/88509-24.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 1.2",
+      "url": "https://komiku.org/nageki-no-bourei-wa-intai-shitai-saijiyaku-hanta-ni-yoru-saikiyou-patei-ikusei-jutsu-chapter-1-2/",
+      "tanggal_rilis": "26/03/2019",
+      "images": [
+        "https://img.komiku.org/wp-content/uploads/88510-1.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-2.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-3.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-4.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-5.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-6.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-7.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-8.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-9.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-10.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-11.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-12.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-13.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-14.jpg",
+        "https://img.komiku.org/wp-content/uploads/88510-15.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2.1",
       "url": "https://komiku.org/nageki-no-bourei-wa-intai-shitai-saijiyaku-hanta-ni-yoru-saikiyou-patei-ikusei-jutsu-chapter-2-1/",
@@ -2655,5 +2708,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-15T23:43:59.170960"
+  "last_scraped": "2026-07-15T23:55:58.641851"
 }
