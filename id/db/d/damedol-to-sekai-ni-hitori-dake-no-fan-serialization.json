@@ -16,10 +16,138 @@
   "pembaca_mingguan": 102,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 15,
-  "chapterCount": 15,
-  "Chs": "Chapter 34, Chapter 35, Chapter 36, Chapter 36.5, Chapter 36.6, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51",
+  "online": 20,
+  "chapterCount": 20,
+  "Chs": "Chapter 30, Chapter 31, Chapter 31.5, Chapter 32, Chapter 33, Chapter 34, Chapter 35, Chapter 36, Chapter 36.5, Chapter 36.6, Chapter 42, Chapter 43, Chapter 44, Chapter 45, Chapter 46, Chapter 47, Chapter 48, Chapter 49, Chapter 50, Chapter 51",
   "chapters": [
+    {
+      "nama": "Chapter 30",
+      "url": "https://komiku.org/damedol-to-sekai-ni-hitori-dake-no-fan-serialization-chapter-30/",
+      "tanggal_rilis": "06/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/1.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/2.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/3.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/4.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/5.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/6.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/7.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/8.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/9.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/10.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/11.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/12.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/13.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/14.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/15.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/16.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/17.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/18.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/19.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/20.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/30/2025-11-06/21.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 31",
+      "url": "https://komiku.org/damedol-to-sekai-ni-hitori-dake-no-fan-serialization-chapter-31/",
+      "tanggal_rilis": "09/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/1.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/2.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/3.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/4.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/5.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/6.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/7.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/8.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/9.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/10.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/11.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/12.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/13.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/14.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/15.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/16.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/17.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/18.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/19.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31/2025-11-09/20.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 31.5",
+      "url": "https://komiku.org/damedol-to-sekai-ni-hitori-dake-no-fan-serialization-chapter-31-5/",
+      "tanggal_rilis": "09/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/1.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/2.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/3.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/4.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/5.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/6.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/7.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/8.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/9.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/10.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/31.5/2025-11-09/11.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 32",
+      "url": "https://komiku.org/damedol-to-sekai-ni-hitori-dake-no-fan-serialization-chapter-32/",
+      "tanggal_rilis": "09/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/1.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/2.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/3.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/4.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/5.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/6.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/7.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/8.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/9.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/10.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/11.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/12.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/13.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/14.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/15.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/16.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/17.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/18.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/19.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/20.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/21.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/32/2025-11-09/22.webp"
+      ]
+    },
+    {
+      "nama": "Chapter 33",
+      "url": "https://komiku.org/damedol-to-sekai-ni-hitori-dake-no-fan-serialization-chapter-33/",
+      "tanggal_rilis": "12/11/2025",
+      "images": [
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/1.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/2.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/3.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/4.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/5.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/6.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/7.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/8.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/9.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/10.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/11.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/12.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/13.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/14.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/15.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/16.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/17.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/18.webp",
+        "https://img.komiku.org/upload5/damedol-to-sekai-ni-hitori-dake-no-/33/2025-11-12/19.webp"
+      ]
+    },
     {
       "nama": "Chapter 34",
       "url": "https://komiku.org/damedol-to-sekai-ni-hitori-dake-no-fan-serialization-chapter-34/",
@@ -421,5 +549,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-15T15:06:02.089267"
+  "last_scraped": "2026-07-15T15:23:38.827485"
 }
