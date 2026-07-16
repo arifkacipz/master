@@ -1,6 +1,7 @@
 {
   "judul": "Binbou Kokka No Kuroji Kaikaku",
   "judul_alternatif": "Revolusi Kuroji dari Negara Miskin",
+  "slug": "binbou-kokka-no-kuroji-kaikaku",
   "thumb": "https://thumbnail.komiku.org/uploads/manga/binbou-kokka-no-kuroji-kaikaku/manga_thumbnail-Manhwa-Binbou-Kokka-No-Kuroji-Kaikaku.jpg?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -13,6 +14,10 @@
   "pembaca_total": 2028,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1.1, Chapter 1.2, Chapter 2.1, Chapter 2.2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1.1",
@@ -153,10 +158,5 @@
       ]
     }
   ],
-  "slug": "binbou-kokka-no-kuroji-kaikaku",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1.1, Chapter 1.2, Chapter 2.1, Chapter 2.2, Chapter 3",
-  "last_scraped": "2026-07-16T17:08:07.336174"
+  "last_scraped": "2026-07-16T18:37:40.051491"
 }
