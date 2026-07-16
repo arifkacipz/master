@@ -1,6 +1,7 @@
 {
   "judul": "Tousan wa [Kensei], Kaasan wa [Kenshin], Boku wa [Ochi〇po Chanbara Master]",
   "judul_alternatif": "Ayah adalah Kensei, Ibu adalah Kenshin, dan Aku Master Chanbara Ochi〇po",
+  "slug": "tousan-wa-kensei-kaasan-wa-kenshin-boku-wa-ochi%e3%80%87po-chanbara-master",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/05/19/20260519181529_8d2d1984f14d0e48_c44ea5c8.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -18,6 +19,10 @@
   "pembaca_total": 3945,
   "pembaca_mingguan": 131,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -175,10 +180,5 @@
       ]
     }
   ],
-  "slug": "tousan-wa-kensei-kaasan-wa-kenshin-boku-wa-ochi%e3%80%87po-chanbara-master",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-16T04:56:10.333244"
+  "last_scraped": "2026-07-16T06:38:47.654268"
 }
