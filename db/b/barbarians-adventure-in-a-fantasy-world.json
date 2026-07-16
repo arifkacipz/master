@@ -2,9 +2,9 @@
     "judul": "Barbarian\u2019s Adventure in a Fantasy World",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/08/8b6b27b4-6974-4859-97fe-85d19ae85722.jpg",
     "source": "arenascan",
-    "online": 43,
-    "chapterCount": 43,
-    "Chs": "Chapter 63, Chapter 62, Chapter 61, Chapter 60, Chapter 59, Chapter 58, Chapter 57, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
+    "online": 44,
+    "chapterCount": 44,
+    "Chs": "Chapter 64, Chapter 63, Chapter 62, Chapter 61, Chapter 60, Chapter 59, Chapter 58, Chapter 57, Chapter 36, Chapter 35, Chapter 34, Chapter 33, Chapter 32, Chapter 31, Chapter 30, Chapter 29, Chapter 28, Chapter 27, Chapter 26, Chapter 25, Chapter 24, Chapter 23, Chapter 22, Chapter 21, Chapter 20, Chapter 19, Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
         {
             "nama": "Chapter 1",
@@ -952,7 +952,26 @@
                 "https://cdn.arenascan.com/arena-bucket/233852/63/e0b3c16677f0.webp"
             ],
             "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 64",
+            "url": "https://arenascan.com/barbarians-adventure-in-a-fantasy-world-chapter-64/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/233852/64/f65d0b123e65.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/7a6275cbb2e2.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/5bcd31a99409.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/ed12c09b54a7.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/36931c5431c6.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/cba23eb4d1fa.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/c0e5b2794c3a.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/43dfeaa2d893.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/8a49ac84e89e.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/5e3dd9947254.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/ad36e0806b91.webp",
+                "https://cdn.arenascan.com/arena-bucket/233852/64/9cfb4d63e658.webp"
+            ],
+            "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-02T18:55:25.861716"
+    "last_scraped": "2026-07-16T17:46:02.021717"
 }
