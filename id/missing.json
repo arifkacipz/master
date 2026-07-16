@@ -1,30 +1,345 @@
 [
   {
-    "slug": "rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou",
-    "judul": "Rinkoku kara Kita Yome ga Kawaisugite Doushiyou",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324061543_b681289aa67e9b28_e5dc1e61.webp?w=1200",
-    "total_online": 34,
-    "total_downloaded": 33,
+    "slug": "the-regressor-can-make-them-all",
+    "judul": "The Regressor Can Make Them All",
+    "thumb": "https://thumbnail.komiku.org/img/upload/the_regressor_can_make_them_all/img_699c04dc341cf6.96908954.jpg?w=1200",
+    "total_online": 33,
+    "total_downloaded": 32,
     "missing": [
-      "Chapter 21"
+      "Chapter 8"
     ]
   },
   {
-    "slug": "reincarnated-as-the-archdukes-son",
-    "judul": "Reincarnated as the Archduke’s Son",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314031557_db30790d26906298_339e8b52.jpg?w=1200",
+    "slug": "the-chaebol-familys-genius-monster",
+    "judul": "The Chaebol Family's Genius Monster",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703064516_7b3cbfc7fdb7dbb8_e91a49f1.webp?w=1200",
+    "total_online": 14,
+    "total_downloaded": 13,
+    "missing": [
+      "Chapter 12"
+    ]
+  },
+  {
+    "slug": "the-nebulas-civilization",
+    "judul": "The Nebula’s Civilization",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-nebulas-civilization/manga_thumbnail-Head-The-Nebulas-Civilization.jpg?w=1200",
+    "total_online": 131,
+    "total_downloaded": 130,
+    "missing": [
+      "Chapter 119"
+    ]
+  },
+  {
+    "slug": "the-indomitable-martial-king",
+    "judul": "The Indomitable Martial King",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-indomitable-martial-king/manga_thumbnail-Head-The-Indomitable-Martial-King.jpg?w=1200",
+    "total_online": 142,
+    "total_downloaded": 141,
+    "missing": [
+      "Chapter 39"
+    ]
+  },
+  {
+    "slug": "the-knight-king-who-returned-with-a-god",
+    "judul": "The Knight King Who Returned with a God",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-knight-king-who-returned-with-a-god/manga_thumbnail-Head-The-Knight-King-Who-Returned-with-a-God.jpg?w=1200",
+    "total_online": 159,
+    "total_downloaded": 157,
+    "missing": [
+      "Chapter 68",
+      "Chapter 72"
+    ]
+  },
+  {
+    "slug": "the-dark-magician-transmigrates-after-66666-years",
+    "judul": "The Dark Magician Transmigrates After 66666 Years",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-dark-magician-transmigrates-after-66666-years/manga_thumbnail-Manwha-The-Dark-Magician-Transmigrates-After-66666-Years.png?w=1200",
+    "total_online": 170,
+    "total_downloaded": 169,
+    "missing": [
+      "Chapter 104"
+    ]
+  },
+  {
+    "slug": "the-genius-decided-to-live-an-ordinary-life",
+    "judul": "The Genius Decided to Live an Ordinary Life",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-genius-decided-to-live-an-ordinary-life/manga_thumbnail-A2-The-Genius-Decided-to-Live-an-Ordinary-Life.jpg?w=1200",
+    "total_online": 68,
+    "total_downloaded": 67,
+    "missing": [
+      "Chapter 63"
+    ]
+  },
+  {
+    "slug": "the-extras-academy-survival-guide",
+    "judul": "The Extra’s Academy Survival Guide",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-extras-academy-survival-guide/manga_thumbnail-Head-The-Extras-Academy-Survival-Guide.jpg?w=1200",
+    "total_online": 115,
+    "total_downloaded": 113,
+    "missing": [
+      "Chapter 111",
+      "Chapter 113"
+    ]
+  },
+  {
+    "slug": "i-was-immediately-mistaken-for-a-monster-genius-actor",
+    "judul": "I Was Immediately Mistaken for a Monster Genius Actor",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-was-immediately-mistaken-for-a-monster-genius-actor/manga_thumbnail-A2-I-Was-Immediately-Mistaken-for-a-Monster-Genius-Actor.jpg?w=1200",
+    "total_online": 108,
+    "total_downloaded": 105,
+    "missing": [
+      "Chapter 103",
+      "Chapter 106",
+      "Chapter 108"
+    ]
+  },
+  {
+    "slug": "invincible-with-only-a-single-point-of-hp",
+    "judul": "Invincible With Only a Single Point of HP",
+    "thumb": "https://thumbnail.komiku.org/img/upload/invincible_with_only_a_single_point_of_hp/img_693102d7cd92e3.18976927.jpg?w=1200",
+    "total_online": 31,
+    "total_downloaded": 30,
+    "missing": [
+      "Chapter 8"
+    ]
+  },
+  {
+    "slug": "i-am-the-virus-monarch",
+    "judul": "I Am the Virus Monarch",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-am-the-virus-monarch/manga_thumbnail-Head-I-Am-the-Virus-Monarch.jpg?w=1200",
+    "total_online": 101,
+    "total_downloaded": 100,
+    "missing": [
+      "Chapter 90"
+    ]
+  },
+  {
+    "slug": "i-obtained-a-mythic-item",
+    "judul": "I Obtained a Mythic Item",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-obtained-a-mythic-item/manga_thumbnail-Manhwa-I-Obtained-a-Mythic-Item.jpg?w=1200",
+    "total_online": 100,
+    "total_downloaded": 99,
+    "missing": [
+      "Chapter 160"
+    ]
+  },
+  {
+    "slug": "im-the-brave-puppy-that-will-save-the-villainess",
+    "judul": "I’m the Brave Puppy That Will Save the Villainess",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144526_32e3cd478d23252b_ccfd38ee.jpg?w=1200",
+    "total_online": 30,
+    "total_downloaded": 26,
+    "missing": [
+      "Chapter 23",
+      "Chapter 24",
+      "Chapter 25",
+      "Chapter 26"
+    ]
+  },
+  {
+    "slug": "i-randomly-have-a-new-career-every-week",
+    "judul": "I Randomly Have A New Career Every Week",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-randomly-have-a-new-career-every-week/manga_thumbnail-Manhua-I-Randomly-Have-A-New-Career-Every-Week.jpg?w=1200",
+    "total_online": 352,
+    "total_downloaded": 350,
+    "missing": [
+      "Chapter 896",
+      "Chapter 899"
+    ]
+  },
+  {
+    "slug": "i-love-the-demon-lord-so-much-that-even-my-female-disciples-want-to-kill-me",
+    "judul": "I Love the Demon Lord So Much That Even My Female Disciples Want to Kill Me",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-love-the-demon-lord-so-much-that-even-my-female-disciples-want-to-kill-me/manga_thumbnail-Head-I-Love-the-Demon-Lord-So-Much-That-Even-My-Female-Disciples-Want-to-Kill-Me.jpg?w=1200",
+    "total_online": 114,
+    "total_downloaded": 111,
+    "missing": [
+      "Chapter 9",
+      "Chapter 100",
+      "Chapter 103"
+    ]
+  },
+  {
+    "slug": "infinite-mage",
+    "judul": "Infinite Mage",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/infinite-mage/manga_thumbnail-Mage-1.png?w=1200",
+    "total_online": 177,
+    "total_downloaded": 176,
+    "missing": [
+      "Chapter 176"
+    ]
+  },
+  {
+    "slug": "bouryoku-banzai",
+    "judul": "Bouryoku Banzai",
+    "thumb": "https://thumbnail.komiku.org/img/upload/bouryoku_banzai/img_682d64d968b642.49331531.jpg?w=1200",
+    "total_online": 58,
+    "total_downloaded": 54,
+    "missing": [
+      "Chapter 35",
+      "Chapter 36",
+      "Chapter 37",
+      "Chapter 38"
+    ]
+  },
+  {
+    "slug": "bad-ending-maker",
+    "judul": "Bad Ending Maker",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/bad-ending-maker/manga_thumbnail-Head-Bad-Ending-Maker.jpg?w=1200",
     "total_online": 40,
     "total_downloaded": 39,
     "missing": [
+      "Chapter 58"
+    ]
+  },
+  {
+    "slug": "sousei-no-taiga",
+    "judul": "Sousei no Taiga",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030109_be123cb3b25fea47_9080d0cf.jpg?w=1200",
+    "total_online": 25,
+    "total_downloaded": 24,
+    "missing": [
+      "Chapter 20"
+    ]
+  },
+  {
+    "slug": "shokubutsu-monster-musume-nikki",
+    "judul": "Shokubutsu Monster Musume Nikki",
+    "thumb": "https://thumbnail.komiku.org/img/upload/shokubutsu_monster_musume_nikki/img_6864e5960d97d8.57789635.jpg?w=1200",
+    "total_online": 25,
+    "total_downloaded": 24,
+    "missing": [
+      "Chapter 18"
+    ]
+  },
+  {
+    "slug": "savior-of-divine-blood-draw-out-0-00000001-to-become-the-strongest",
+    "judul": "Savior of Divine Blood ~Draw Out 0.00000001% to Become the Strongest~",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/savior-of-divine-blood-draw-out-0-00000001-to-become-the-strongest/manga_thumbnail-Head-Savior-of-Divine-Blood-Draw-Out-0.00000001-to-Become-the-Strongest.jpg?w=1200",
+    "total_online": 40,
+    "total_downloaded": 39,
+    "missing": [
+      "Chapter 131"
+    ]
+  },
+  {
+    "slug": "senki-survival-saga-isekai-no-unmei-o-kaketa-mujintou-fujun-iseikouyuu",
+    "judul": "Senki Survival Saga: Isekai no Unmei o Kaketa Mujintou Fujun Iseikouyuu",
+    "thumb": "https://thumbnail.komiku.org/img/upload/senki_survival_saga__isekai_no_unmei_o_kaketa_mujintou_fujun_iseikouyuu/img_68bffad8cf3367.65892277.jpg?w=1200",
+    "total_online": 40,
+    "total_downloaded": 38,
+    "missing": [
+      "Chapter 36",
       "Chapter 39"
+    ]
+  },
+  {
+    "slug": "shinsoo-kindergarten",
+    "judul": "Shinsoo Kindergarten",
+    "thumb": "https://thumbnail.komiku.org/img/upload/shinsoo_kindergarten/img_682d58bcd9b635.29180067.jpg?w=1200",
+    "total_online": 71,
+    "total_downloaded": 70,
+    "missing": [
+      "Chapter 37"
+    ]
+  },
+  {
+    "slug": "somebody-stop-the-pope",
+    "judul": "Somebody Stop the Pope",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/somebody-stop-the-pope/manga_thumbnail-A2-Somebody-Stop-the-Pope.jpg?w=1200",
+    "total_online": 76,
+    "total_downloaded": 75,
+    "missing": [
+      "Chapter 71"
+    ]
+  },
+  {
+    "slug": "when-a-genius-office-worker-goes-too-far",
+    "judul": "When a Genius Office Worker Goes Too Far",
+    "thumb": "https://thumbnail.komiku.org/img/upload/when_a_genius_office_worker_goes_too_far/img_6888877602bba2.17008715.jpg?w=1200",
+    "total_online": 50,
+    "total_downloaded": 49,
+    "missing": [
+      "Chapter 19"
+    ]
+  },
+  {
+    "slug": "world-teacher-isekaishiki-kyouiku-agent",
+    "judul": "World Teacher: Isekaishiki Kyouiku Agent",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/world-teacher-isekaishiki-kyouiku-agent/manga_thumbnail-Manga-World-Teacher-Isekaishiki-Kyouiku-Agent.jpg?w=1200",
+    "total_online": 93,
+    "total_downloaded": 92,
+    "missing": [
+      "Chapter 68.2"
+    ]
+  },
+  {
+    "slug": "god-of-martial-arts",
+    "judul": "God of Martial Arts",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/god-of-martial-arts/manga_thumbnail-Komik-God-of-Martial-Arts.jpg?w=1200",
+    "total_online": 1046,
+    "total_downloaded": 1044,
+    "missing": [
+      "Chapter 143.3",
+      "Chapter 144.2"
+    ]
+  },
+  {
+    "slug": "pick-me-up",
+    "judul": "Pick Me Up",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/pick-me-up/manga_thumbnail-Pick-Me-Up-1.png?w=1200",
+    "total_online": 210,
+    "total_downloaded": 209,
+    "missing": [
+      "Chapter 152"
+    ]
+  },
+  {
+    "slug": "harapeko-oyako-to-motokare-yanushi",
+    "judul": "Harapeko Oyako to Motokare Yanushi",
+    "thumb": "https://thumbnail.komiku.org/img/upload/harapeko_oyako_to_motokare_yanushi/img_685263f23bbd09.46359086.jpg?w=1200",
+    "total_online": 28,
+    "total_downloaded": 27,
+    "missing": [
+      "Chapter 18"
+    ]
+  },
+  {
+    "slug": "manager-kim",
+    "judul": "Manager Kim",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/manager-kim/manga_thumbnail-Manhwa-Manager-Kim.jpg?w=1200",
+    "total_online": 215,
+    "total_downloaded": 214,
+    "missing": [
+      "Chapter 129"
+    ]
+  },
+  {
+    "slug": "my-younger-sister-was-a-genius",
+    "judul": "My Younger Sister Was a Genius",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/my-younger-sister-was-a-genius/manga_thumbnail-A2-My-Younger-Sister-Was-a-Genius.jpg?w=1200",
+    "total_online": 35,
+    "total_downloaded": 34,
+    "missing": [
+      "Chapter 81"
+    ]
+  },
+  {
+    "slug": "mount-hua-sects-genius-phantom-swordsman",
+    "judul": "Mount Hua Sect’s Genius Phantom Swordsman",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/mount-hua-sects-genius-phantom-swordsman/manga_thumbnail-A2-Mount-Hua-Sects-Genius-Phantom-Swordsman.jpg?w=1200",
+    "total_online": 72,
+    "total_downloaded": 71,
+    "missing": [
+      "Chapter 45"
     ]
   },
   {
     "slug": "return-of-the-martial-arts-genius",
     "judul": "Return Of The Martial Arts Genius",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/return-of-the-martial-arts-genius/manga_thumbnail-Head-Return-Of-The-Martial-Arts-Genius.jpeg?w=1200",
-    "total_online": 110,
-    "total_downloaded": 108,
+    "total_online": 115,
+    "total_downloaded": 113,
     "missing": [
       "Chapter 60",
       "Chapter 64"
@@ -51,6 +366,16 @@
     ]
   },
   {
+    "slug": "rinkoku-kara-kita-yome-ga-kawaisugite-doushiyou",
+    "judul": "Rinkoku kara Kita Yome ga Kawaisugite Doushiyou",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/24/20260324061543_b681289aa67e9b28_e5dc1e61.webp?w=1200",
+    "total_online": 34,
+    "total_downloaded": 33,
+    "missing": [
+      "Chapter 21"
+    ]
+  },
+  {
     "slug": "return-of-the-namgung-clans-granddaughter",
     "judul": "Return of the Namgung Clan's Granddaughter",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708153012_3d46795b94bbb8d5_fffd25d9.png?w=1200",
@@ -61,179 +386,13 @@
     ]
   },
   {
-    "slug": "world-teacher-isekaishiki-kyouiku-agent",
-    "judul": "World Teacher: Isekaishiki Kyouiku Agent",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/world-teacher-isekaishiki-kyouiku-agent/manga_thumbnail-Manga-World-Teacher-Isekaishiki-Kyouiku-Agent.jpg?w=1200",
-    "total_online": 93,
-    "total_downloaded": 92,
-    "missing": [
-      "Chapter 68.2"
-    ]
-  },
-  {
-    "slug": "when-a-genius-office-worker-goes-too-far",
-    "judul": "When a Genius Office Worker Goes Too Far",
-    "thumb": "https://thumbnail.komiku.org/img/upload/when_a_genius_office_worker_goes_too_far/img_6888877602bba2.17008715.jpg?w=1200",
-    "total_online": 50,
-    "total_downloaded": 49,
-    "missing": [
-      "Chapter 19"
-    ]
-  },
-  {
-    "slug": "pick-me-up",
-    "judul": "Pick Me Up",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/pick-me-up/manga_thumbnail-Pick-Me-Up-1.png?w=1200",
-    "total_online": 210,
-    "total_downloaded": 209,
-    "missing": [
-      "Chapter 152"
-    ]
-  },
-  {
-    "slug": "bad-ending-maker",
-    "judul": "Bad Ending Maker",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/bad-ending-maker/manga_thumbnail-Head-Bad-Ending-Maker.jpg?w=1200",
+    "slug": "reincarnated-as-the-archdukes-son",
+    "judul": "Reincarnated as the Archduke’s Son",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314031557_db30790d26906298_339e8b52.jpg?w=1200",
     "total_online": 40,
     "total_downloaded": 39,
     "missing": [
-      "Chapter 58"
-    ]
-  },
-  {
-    "slug": "bouryoku-banzai",
-    "judul": "Bouryoku Banzai",
-    "thumb": "https://thumbnail.komiku.org/img/upload/bouryoku_banzai/img_682d64d968b642.49331531.jpg?w=1200",
-    "total_online": 58,
-    "total_downloaded": 54,
-    "missing": [
-      "Chapter 35",
-      "Chapter 36",
-      "Chapter 37",
-      "Chapter 38"
-    ]
-  },
-  {
-    "slug": "harapeko-oyako-to-motokare-yanushi",
-    "judul": "Harapeko Oyako to Motokare Yanushi",
-    "thumb": "https://thumbnail.komiku.org/img/upload/harapeko_oyako_to_motokare_yanushi/img_685263f23bbd09.46359086.jpg?w=1200",
-    "total_online": 28,
-    "total_downloaded": 27,
-    "missing": [
-      "Chapter 18"
-    ]
-  },
-  {
-    "slug": "god-of-martial-arts",
-    "judul": "God of Martial Arts",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/god-of-martial-arts/manga_thumbnail-Komik-God-of-Martial-Arts.jpg?w=1200",
-    "total_online": 1046,
-    "total_downloaded": 1044,
-    "missing": [
-      "Chapter 143.3",
-      "Chapter 144.2"
-    ]
-  },
-  {
-    "slug": "shokubutsu-monster-musume-nikki",
-    "judul": "Shokubutsu Monster Musume Nikki",
-    "thumb": "https://thumbnail.komiku.org/img/upload/shokubutsu_monster_musume_nikki/img_6864e5960d97d8.57789635.jpg?w=1200",
-    "total_online": 25,
-    "total_downloaded": 24,
-    "missing": [
-      "Chapter 18"
-    ]
-  },
-  {
-    "slug": "shinsoo-kindergarten",
-    "judul": "Shinsoo Kindergarten",
-    "thumb": "https://thumbnail.komiku.org/img/upload/shinsoo_kindergarten/img_682d58bcd9b635.29180067.jpg?w=1200",
-    "total_online": 71,
-    "total_downloaded": 70,
-    "missing": [
-      "Chapter 37"
-    ]
-  },
-  {
-    "slug": "sousei-no-taiga",
-    "judul": "Sousei no Taiga",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314030109_be123cb3b25fea47_9080d0cf.jpg?w=1200",
-    "total_online": 25,
-    "total_downloaded": 24,
-    "missing": [
-      "Chapter 20"
-    ]
-  },
-  {
-    "slug": "senki-survival-saga-isekai-no-unmei-o-kaketa-mujintou-fujun-iseikouyuu",
-    "judul": "Senki Survival Saga: Isekai no Unmei o Kaketa Mujintou Fujun Iseikouyuu",
-    "thumb": "https://thumbnail.komiku.org/img/upload/senki_survival_saga__isekai_no_unmei_o_kaketa_mujintou_fujun_iseikouyuu/img_68bffad8cf3367.65892277.jpg?w=1200",
-    "total_online": 40,
-    "total_downloaded": 38,
-    "missing": [
-      "Chapter 36",
       "Chapter 39"
-    ]
-  },
-  {
-    "slug": "savior-of-divine-blood-draw-out-0-00000001-to-become-the-strongest",
-    "judul": "Savior of Divine Blood ~Draw Out 0.00000001% to Become the Strongest~",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/savior-of-divine-blood-draw-out-0-00000001-to-become-the-strongest/manga_thumbnail-Head-Savior-of-Divine-Blood-Draw-Out-0.00000001-to-Become-the-Strongest.jpg?w=1200",
-    "total_online": 40,
-    "total_downloaded": 39,
-    "missing": [
-      "Chapter 131"
-    ]
-  },
-  {
-    "slug": "somebody-stop-the-pope",
-    "judul": "Somebody Stop the Pope",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/somebody-stop-the-pope/manga_thumbnail-A2-Somebody-Stop-the-Pope.jpg?w=1200",
-    "total_online": 76,
-    "total_downloaded": 75,
-    "missing": [
-      "Chapter 71"
-    ]
-  },
-  {
-    "slug": "mount-hua-sects-genius-phantom-swordsman",
-    "judul": "Mount Hua Sect’s Genius Phantom Swordsman",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/mount-hua-sects-genius-phantom-swordsman/manga_thumbnail-A2-Mount-Hua-Sects-Genius-Phantom-Swordsman.jpg?w=1200",
-    "total_online": 72,
-    "total_downloaded": 71,
-    "missing": [
-      "Chapter 45"
-    ]
-  },
-  {
-    "slug": "manager-kim",
-    "judul": "Manager Kim",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/manager-kim/manga_thumbnail-Manhwa-Manager-Kim.jpg?w=1200",
-    "total_online": 215,
-    "total_downloaded": 214,
-    "missing": [
-      "Chapter 129"
-    ]
-  },
-  {
-    "slug": "my-younger-sister-was-a-genius",
-    "judul": "My Younger Sister Was a Genius",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/my-younger-sister-was-a-genius/manga_thumbnail-A2-My-Younger-Sister-Was-a-Genius.jpg?w=1200",
-    "total_online": 35,
-    "total_downloaded": 34,
-    "missing": [
-      "Chapter 81"
-    ]
-  },
-  {
-    "slug": "devious-son-of-heaven",
-    "judul": "Devious Son Of Heaven",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/devious-son-of-heaven/manga_thumbnail-Head-Devious-Son-Of-Heaven.jpg?w=1200",
-    "total_online": 172,
-    "total_downloaded": 170,
-    "missing": [
-      "Chapter 129",
-      "Chapter 157"
     ]
   },
   {
@@ -248,6 +407,16 @@
     ]
   },
   {
+    "slug": "chronicles-of-the-lazy-sovereign",
+    "judul": "Chronicles Of The Lazy Sovereign",
+    "thumb": "https://thumbnail.komiku.org/img/upload/chronicles_of_the_lazy_sovereign/img_6874b13d061816.77732278.jpg?w=1200",
+    "total_online": 55,
+    "total_downloaded": 54,
+    "missing": [
+      "Chapter 2"
+    ]
+  },
+  {
     "slug": "crimson-reset",
     "judul": "Crimson Reset",
     "thumb": "https://thumbnail.komiku.org/img/upload/crimson_reset/img_692d671fc6eb26.09029638.webp?w=1200",
@@ -258,13 +427,14 @@
     ]
   },
   {
-    "slug": "chronicles-of-the-lazy-sovereign",
-    "judul": "Chronicles Of The Lazy Sovereign",
-    "thumb": "https://thumbnail.komiku.org/img/upload/chronicles_of_the_lazy_sovereign/img_6874b13d061816.77732278.jpg?w=1200",
-    "total_online": 55,
-    "total_downloaded": 54,
+    "slug": "devious-son-of-heaven",
+    "judul": "Devious Son Of Heaven",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/devious-son-of-heaven/manga_thumbnail-Head-Devious-Son-Of-Heaven.jpg?w=1200",
+    "total_online": 172,
+    "total_downloaded": 170,
     "missing": [
-      "Chapter 2"
+      "Chapter 129",
+      "Chapter 157"
     ]
   },
   {
@@ -277,176 +447,6 @@
       "Chapter 26",
       "Chapter 27.5",
       "Chapter 28"
-    ]
-  },
-  {
-    "slug": "im-the-brave-puppy-that-will-save-the-villainess",
-    "judul": "I’m the Brave Puppy That Will Save the Villainess",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144526_32e3cd478d23252b_ccfd38ee.jpg?w=1200",
-    "total_online": 30,
-    "total_downloaded": 26,
-    "missing": [
-      "Chapter 23",
-      "Chapter 24",
-      "Chapter 25",
-      "Chapter 26"
-    ]
-  },
-  {
-    "slug": "i-obtained-a-mythic-item",
-    "judul": "I Obtained a Mythic Item",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-obtained-a-mythic-item/manga_thumbnail-Manhwa-I-Obtained-a-Mythic-Item.jpg?w=1200",
-    "total_online": 100,
-    "total_downloaded": 99,
-    "missing": [
-      "Chapter 160"
-    ]
-  },
-  {
-    "slug": "i-randomly-have-a-new-career-every-week",
-    "judul": "I Randomly Have A New Career Every Week",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-randomly-have-a-new-career-every-week/manga_thumbnail-Manhua-I-Randomly-Have-A-New-Career-Every-Week.jpg?w=1200",
-    "total_online": 352,
-    "total_downloaded": 350,
-    "missing": [
-      "Chapter 896",
-      "Chapter 899"
-    ]
-  },
-  {
-    "slug": "i-was-immediately-mistaken-for-a-monster-genius-actor",
-    "judul": "I Was Immediately Mistaken for a Monster Genius Actor",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-was-immediately-mistaken-for-a-monster-genius-actor/manga_thumbnail-A2-I-Was-Immediately-Mistaken-for-a-Monster-Genius-Actor.jpg?w=1200",
-    "total_online": 108,
-    "total_downloaded": 105,
-    "missing": [
-      "Chapter 103",
-      "Chapter 106",
-      "Chapter 108"
-    ]
-  },
-  {
-    "slug": "i-love-the-demon-lord-so-much-that-even-my-female-disciples-want-to-kill-me",
-    "judul": "I Love the Demon Lord So Much That Even My Female Disciples Want to Kill Me",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-love-the-demon-lord-so-much-that-even-my-female-disciples-want-to-kill-me/manga_thumbnail-Head-I-Love-the-Demon-Lord-So-Much-That-Even-My-Female-Disciples-Want-to-Kill-Me.jpg?w=1200",
-    "total_online": 114,
-    "total_downloaded": 111,
-    "missing": [
-      "Chapter 9",
-      "Chapter 100",
-      "Chapter 103"
-    ]
-  },
-  {
-    "slug": "infinite-mage",
-    "judul": "Infinite Mage",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/infinite-mage/manga_thumbnail-Mage-1.png?w=1200",
-    "total_online": 177,
-    "total_downloaded": 176,
-    "missing": [
-      "Chapter 176"
-    ]
-  },
-  {
-    "slug": "i-am-the-virus-monarch",
-    "judul": "I Am the Virus Monarch",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/i-am-the-virus-monarch/manga_thumbnail-Head-I-Am-the-Virus-Monarch.jpg?w=1200",
-    "total_online": 101,
-    "total_downloaded": 100,
-    "missing": [
-      "Chapter 90"
-    ]
-  },
-  {
-    "slug": "invincible-with-only-a-single-point-of-hp",
-    "judul": "Invincible With Only a Single Point of HP",
-    "thumb": "https://thumbnail.komiku.org/img/upload/invincible_with_only_a_single_point_of_hp/img_693102d7cd92e3.18976927.jpg?w=1200",
-    "total_online": 31,
-    "total_downloaded": 30,
-    "missing": [
-      "Chapter 8"
-    ]
-  },
-  {
-    "slug": "the-regressor-can-make-them-all",
-    "judul": "The Regressor Can Make Them All",
-    "thumb": "https://thumbnail.komiku.org/img/upload/the_regressor_can_make_them_all/img_699c04dc341cf6.96908954.jpg?w=1200",
-    "total_online": 33,
-    "total_downloaded": 32,
-    "missing": [
-      "Chapter 8"
-    ]
-  },
-  {
-    "slug": "the-extras-academy-survival-guide",
-    "judul": "The Extra’s Academy Survival Guide",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-extras-academy-survival-guide/manga_thumbnail-Head-The-Extras-Academy-Survival-Guide.jpg?w=1200",
-    "total_online": 115,
-    "total_downloaded": 113,
-    "missing": [
-      "Chapter 111",
-      "Chapter 113"
-    ]
-  },
-  {
-    "slug": "the-knight-king-who-returned-with-a-god",
-    "judul": "The Knight King Who Returned with a God",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-knight-king-who-returned-with-a-god/manga_thumbnail-Head-The-Knight-King-Who-Returned-with-a-God.jpg?w=1200",
-    "total_online": 159,
-    "total_downloaded": 157,
-    "missing": [
-      "Chapter 68",
-      "Chapter 72"
-    ]
-  },
-  {
-    "slug": "the-nebulas-civilization",
-    "judul": "The Nebula’s Civilization",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-nebulas-civilization/manga_thumbnail-Head-The-Nebulas-Civilization.jpg?w=1200",
-    "total_online": 131,
-    "total_downloaded": 130,
-    "missing": [
-      "Chapter 119"
-    ]
-  },
-  {
-    "slug": "the-genius-decided-to-live-an-ordinary-life",
-    "judul": "The Genius Decided to Live an Ordinary Life",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-genius-decided-to-live-an-ordinary-life/manga_thumbnail-A2-The-Genius-Decided-to-Live-an-Ordinary-Life.jpg?w=1200",
-    "total_online": 68,
-    "total_downloaded": 67,
-    "missing": [
-      "Chapter 63"
-    ]
-  },
-  {
-    "slug": "the-chaebol-familys-genius-monster",
-    "judul": "The Chaebol Family's Genius Monster",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/03/20260703064516_7b3cbfc7fdb7dbb8_e91a49f1.webp?w=1200",
-    "total_online": 14,
-    "total_downloaded": 13,
-    "missing": [
-      "Chapter 12"
-    ]
-  },
-  {
-    "slug": "the-dark-magician-transmigrates-after-66666-years",
-    "judul": "The Dark Magician Transmigrates After 66666 Years",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-dark-magician-transmigrates-after-66666-years/manga_thumbnail-Manwha-The-Dark-Magician-Transmigrates-After-66666-Years.png?w=1200",
-    "total_online": 165,
-    "total_downloaded": 164,
-    "missing": [
-      "Chapter 104"
-    ]
-  },
-  {
-    "slug": "the-indomitable-martial-king",
-    "judul": "The Indomitable Martial King",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/the-indomitable-martial-king/manga_thumbnail-Head-The-Indomitable-Martial-King.jpg?w=1200",
-    "total_online": 142,
-    "total_downloaded": 141,
-    "missing": [
-      "Chapter 39"
     ]
   }
 ]
