@@ -3,9 +3,23 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/1594e75d1363.webp",
     "source": "arenascan",
     "online": 4,
-    "chapterCount": 3,
+    "chapterCount": 4,
     "Chs": "Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/return-of-the-top-player-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/433866/1/f64df14b413e.webp",
+                "https://cdn.arenascan.com/arena-bucket/433866/1/b34c99d13c7b.webp",
+                "https://cdn.arenascan.com/arena-bucket/433866/1/e67ece199336.webp",
+                "https://cdn.arenascan.com/arena-bucket/433866/1/fad218fb1206.webp",
+                "https://cdn.arenascan.com/arena-bucket/433866/1/1830b7205d90.webp",
+                "https://cdn.arenascan.com/arena-bucket/433866/1/3ee595c793e9.webp",
+                "https://cdn.arenascan.com/arena-bucket/433866/1/4de36fd77500.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/return-of-the-top-player-chapter-2/",
@@ -50,5 +64,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-16T17:46:02.074632"
+    "last_scraped": "2026-07-16T18:43:45.267021"
 }
