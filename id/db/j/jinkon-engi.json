@@ -1,6 +1,7 @@
 {
   "judul": "Jinkon Engi",
   "judul_alternatif": "Kronik Jiwa Buatan",
+  "slug": "jinkon-engi",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/04/26/20260426220025_4849ef38df06ae7c_20f99254.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 1125,
   "pembaca_mingguan": 6,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 4,
+  "chapterCount": 4,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -205,10 +210,5 @@
       ]
     }
   ],
-  "slug": "jinkon-engi",
-  "source": "komiku",
-  "online": 4,
-  "chapterCount": 4,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4",
-  "last_scraped": "2026-07-18T04:45:50.647033"
+  "last_scraped": "2026-07-18T06:59:25.269103"
 }

@@ -135,15 +135,6 @@
     "status": ""
   },
   {
-    "slug": "tsuki-ga-michibiku-isekai-douchuu",
-    "judul": "Tsuki ga Michibiku Isekai Douchuu",
-    "thumb": "https://thumbnail.komiku.org/uploads/manga/tsuki-ga-michibiku-isekai-douchuu/manga_thumbnail-Komik-Tsuki-ga-Michibiku-Isekai-Douchuu.jpeg?w=1200",
-    "chapterCount": 10,
-    "online": 10,
-    "tipe": "Manga",
-    "status": "Ongoing"
-  },
-  {
     "slug": "teisou-gyakuten-sekai-nara-moteru-to-omotte-itara",
     "judul": "Teisou Gyakuten Sekai Nara Moteru to Omotte Itara",
     "thumb": "https://thumbnail.komiku.org/img/upload/teisou_gyakuten_sekai_nara_moteru_to_omotte_itara/img_69369260d8fff9.87711596.jpg?w=1200",
@@ -282,8 +273,8 @@
     "slug": "isekai-meikyuu-de-harem-wo-indo",
     "judul": "Isekai Meikyuu de Harem wo",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/isekai-meikyuu-de-harem-wo-indo/manga_thumbnail-Komik-Isekai-Meikyuu-de-Harem-wo.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -484,6 +475,15 @@
     "online": 3,
     "tipe": "Manga",
     "status": ""
+  },
+  {
+    "slug": "supreme-academy-genius",
+    "judul": "Supreme Academy Genius",
+    "thumb": "https://thumbnail.komiku.org/img/upload/supreme_academy_genius/img_692175a65a31a3.74387047.png?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
   },
   {
     "slug": "shachou-to-sake-to-hoshi",
@@ -1053,6 +1053,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "mysterious-revival-starting-with-a-trillion-ghost-coins",
+    "judul": "Mysterious Revival: Starting with a Trillion Ghost Coins",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/15/20260315021621_40bda9bdbb865677_550ac646.webp?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manhua",
+    "status": "Ongoing"
+  },
+  {
     "slug": "mairimashita-iruma-kun-boku-doumei-no-game-michi",
     "judul": "Mairimashita! Iruma-kun: Boku Doumei no Game-michi",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/09/20260709190017_948c62f0f71e59a2_f4fa17ed.webp?w=1200",
@@ -1182,8 +1191,8 @@
     "slug": "risou-no-kanojo",
     "judul": "Risou no Kanojo",
     "thumb": "https://thumbnail.komiku.org/img/upload/risou_no_kanojo/img_685cfc1f94f948.20168364.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1317,8 +1326,8 @@
     "slug": "kanojo-no-tomodachi",
     "judul": "Kanojo no Tomodachi",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/kanojo-no-tomodachi/manga_thumbnail-Manga-Kanojo-no-Tomodachi.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
@@ -1398,8 +1407,8 @@
     "slug": "nihonkoku-shoukan",
     "judul": "Nihonkoku Shoukan",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/nihonkoku-shoukan/manga_thumbnail-Manga-Nihonkoku-Shoukan.jpg?w=1200",
-    "chapterCount": 5,
-    "online": 5,
+    "chapterCount": 10,
+    "online": 10,
     "tipe": "Manga",
     "status": "Ongoing"
   },
