@@ -18,10 +18,90 @@
   "pembaca_mingguan": 76575,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 40,
-  "chapterCount": 40,
-  "Chs": "Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 92.1, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127",
+  "online": 45,
+  "chapterCount": 45,
+  "Chs": "Chapter 83, Chapter 84, Chapter 85, Chapter 86, Chapter 87, Chapter 88, Chapter 89, Chapter 90, Chapter 91, Chapter 92, Chapter 92.1, Chapter 93, Chapter 94, Chapter 95, Chapter 96, Chapter 97, Chapter 98, Chapter 99, Chapter 100, Chapter 101, Chapter 102, Chapter 103, Chapter 104, Chapter 105, Chapter 106, Chapter 108, Chapter 109, Chapter 110, Chapter 111, Chapter 112, Chapter 113, Chapter 114, Chapter 115, Chapter 116, Chapter 117, Chapter 118, Chapter 119, Chapter 120, Chapter 121, Chapter 122, Chapter 123, Chapter 124, Chapter 125, Chapter 126, Chapter 127",
   "chapters": [
+    {
+      "nama": "Chapter 83",
+      "url": "https://komiku.org/kanojo-no-tomodachi-chapter-83/",
+      "tanggal_rilis": "31/07/2024",
+      "images": [
+        "https://img.komiku.org/uploads2/2842116-1.jpg",
+        "https://img.komiku.org/uploads2/2842116-2.jpg",
+        "https://img.komiku.org/uploads2/2842116-3.jpg",
+        "https://img.komiku.org/uploads2/2842116-4.jpg",
+        "https://img.komiku.org/uploads2/2842116-5.jpg",
+        "https://img.komiku.org/uploads2/2842116-6.jpg",
+        "https://img.komiku.org/uploads2/2842116-7.jpg",
+        "https://img.komiku.org/uploads2/2842116-8.jpg",
+        "https://img.komiku.org/uploads2/2842116-9.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 84",
+      "url": "https://komiku.org/kanojo-no-tomodachi-chapter-84/",
+      "tanggal_rilis": "31/07/2024",
+      "images": [
+        "https://img.komiku.org/uploads2/2842115-1.jpg",
+        "https://img.komiku.org/uploads2/2842115-2.jpg",
+        "https://img.komiku.org/uploads2/2842115-3.jpg",
+        "https://img.komiku.org/uploads2/2842115-4.jpg",
+        "https://img.komiku.org/uploads2/2842115-5.jpg",
+        "https://img.komiku.org/uploads2/2842115-6.jpg",
+        "https://img.komiku.org/uploads2/2842115-7.jpg",
+        "https://img.komiku.org/uploads2/2842115-8.jpg",
+        "https://img.komiku.org/uploads2/2842115-9.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 85",
+      "url": "https://komiku.org/kanojo-no-tomodachi-chapter-85/",
+      "tanggal_rilis": "31/07/2024",
+      "images": [
+        "https://img.komiku.org/uploads2/2842114-1.jpg",
+        "https://img.komiku.org/uploads2/2842114-2.jpg",
+        "https://img.komiku.org/uploads2/2842114-3.jpg",
+        "https://img.komiku.org/uploads2/2842114-4.jpg",
+        "https://img.komiku.org/uploads2/2842114-5.jpg",
+        "https://img.komiku.org/uploads2/2842114-6.jpg",
+        "https://img.komiku.org/uploads2/2842114-7.jpg",
+        "https://img.komiku.org/uploads2/2842114-8.jpg",
+        "https://img.komiku.org/uploads2/2842114-9.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 86",
+      "url": "https://komiku.org/kanojo-no-tomodachi-chapter-86/",
+      "tanggal_rilis": "10/08/2024",
+      "images": [
+        "https://img.komiku.org/uploads2/2846145-1.jpg",
+        "https://img.komiku.org/uploads2/2846145-2.jpg",
+        "https://img.komiku.org/uploads2/2846145-3.jpg",
+        "https://img.komiku.org/uploads2/2846145-4.jpg",
+        "https://img.komiku.org/uploads2/2846145-5.jpg",
+        "https://img.komiku.org/uploads2/2846145-6.jpg",
+        "https://img.komiku.org/uploads2/2846145-7.jpg",
+        "https://img.komiku.org/uploads2/2846145-8.jpg",
+        "https://img.komiku.org/uploads2/2846145-9.jpg"
+      ]
+    },
+    {
+      "nama": "Chapter 87",
+      "url": "https://komiku.org/kanojo-no-tomodachi-chapter-87/",
+      "tanggal_rilis": "08/09/2024",
+      "images": [
+        "https://img.komiku.org/uploads2/2853252-1.jpg",
+        "https://img.komiku.org/uploads2/2853252-2.jpg",
+        "https://img.komiku.org/uploads2/2853252-3.jpg",
+        "https://img.komiku.org/uploads2/2853252-4.jpg",
+        "https://img.komiku.org/uploads2/2853252-5.jpg",
+        "https://img.komiku.org/uploads2/2853252-6.jpg",
+        "https://img.komiku.org/uploads2/2853252-7.jpg",
+        "https://img.komiku.org/uploads2/2853252-8.jpg",
+        "https://img.komiku.org/uploads2/2853252-9.jpg"
+      ]
+    },
     {
       "nama": "Chapter 88",
       "url": "https://komiku.org/kanojo-no-tomodachi-chapter-88/",
@@ -678,5 +758,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-18T11:50:37.291817"
+  "last_scraped": "2026-07-18T13:00:52.027023"
 }
