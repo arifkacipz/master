@@ -17,10 +17,49 @@
   "pembaca_mingguan": 294,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22",
+  "online": 21,
+  "chapterCount": 21,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 21, Chapter 22",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/risou-no-kanojo-chapter-1/",
+      "tanggal_rilis": "26/06/2025",
+      "images": [
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/1.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/2.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/3.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/4.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/5.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/6.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/7.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/8.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/9.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/10.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/11.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/12.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/13.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/14.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/15.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/16.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/17.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/18.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/19.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/20.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/21.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/22.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/23.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/24.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/25.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/26.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/27.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/28.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/29.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/30.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/31.jpg",
+        "https://img.komiku.org/upload5/risou-no-kanojo/1/2025-06-26/32.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/risou-no-kanojo-chapter-2/",
@@ -469,5 +508,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-18T08:48:37.653026"
+  "last_scraped": "2026-07-18T09:53:43.510028"
 }
