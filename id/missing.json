@@ -325,6 +325,17 @@
     ]
   },
   {
+    "slug": "mokushiroku-no-yonkishi",
+    "judul": "Mokushiroku no Yonkishi",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/mokushiroku-no-yonkishi/manga_thumbnail-Manga-Mokushiroku-no-Yonkishi.jpg?w=1200",
+    "total_online": 100,
+    "total_downloaded": 98,
+    "missing": [
+      "Chapter 150",
+      "Chapter 151"
+    ]
+  },
+  {
     "slug": "my-younger-sister-was-a-genius",
     "judul": "My Younger Sister Was a Genius",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/my-younger-sister-was-a-genius/manga_thumbnail-A2-My-Younger-Sister-Was-a-Genius.jpg?w=1200",
@@ -376,6 +387,16 @@
     ]
   },
   {
+    "slug": "risou-no-kanojo",
+    "judul": "Risou no Kanojo",
+    "thumb": "https://thumbnail.komiku.org/img/upload/risou_no_kanojo/img_685cfc1f94f948.20168364.jpg?w=1200",
+    "total_online": 15,
+    "total_downloaded": 14,
+    "missing": [
+      "Chapter 10"
+    ]
+  },
+  {
     "slug": "return-of-the-sss-class-ranker",
     "judul": "Return of the SSS-Class Ranker",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/return-of-the-sss-class-ranker/manga_thumbnail-Manhwa-Return-of-the-SSS-Class-Ranker.jpg?w=1200",
@@ -409,8 +430,8 @@
     "slug": "reincarnated-as-the-archdukes-son",
     "judul": "Reincarnated as the Archduke’s Son",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/14/20260314031557_db30790d26906298_339e8b52.jpg?w=1200",
-    "total_online": 40,
-    "total_downloaded": 39,
+    "total_online": 41,
+    "total_downloaded": 40,
     "missing": [
       "Chapter 39"
     ]
