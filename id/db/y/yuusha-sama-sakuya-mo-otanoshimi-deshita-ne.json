@@ -21,10 +21,34 @@
   "pembaca_mingguan": 24,
   "cara_baca": "Kanan ke kiri",
   "source": "komiku",
-  "online": 20,
-  "chapterCount": 20,
-  "Chs": "Chapter 2, Chapter 3, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 10.5, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 20.5",
+  "online": 21,
+  "chapterCount": 21,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 5, Chapter 6, Chapter 7, Chapter 8, Chapter 9, Chapter 10, Chapter 10.5, Chapter 11, Chapter 12, Chapter 13, Chapter 14, Chapter 15, Chapter 16, Chapter 17, Chapter 18, Chapter 19, Chapter 20, Chapter 20.5",
   "chapters": [
+    {
+      "nama": "Chapter 1",
+      "url": "https://komiku.org/yuusha-sama-sakuya-mo-otanoshimi-deshita-ne-chapter-01/",
+      "tanggal_rilis": "06/06/2024",
+      "images": [
+        "https://img.komiku.org/uploads2/2823702-1.jpg",
+        "https://img.komiku.org/uploads2/2823702-2.jpg",
+        "https://img.komiku.org/uploads2/2823702-3.jpg",
+        "https://img.komiku.org/uploads2/2823702-4.jpg",
+        "https://img.komiku.org/uploads2/2823702-5.jpg",
+        "https://img.komiku.org/uploads2/2823702-6.jpg",
+        "https://img.komiku.org/uploads2/2823702-7.jpg",
+        "https://img.komiku.org/uploads2/2823702-8.jpg",
+        "https://img.komiku.org/uploads2/2823702-9.jpg",
+        "https://img.komiku.org/uploads2/2823702-10.jpg",
+        "https://img.komiku.org/uploads2/2823702-11.jpg",
+        "https://img.komiku.org/uploads2/2823702-12.jpg",
+        "https://img.komiku.org/uploads2/2823702-13.jpg",
+        "https://img.komiku.org/uploads2/2823702-14.jpg",
+        "https://img.komiku.org/uploads2/2823702-15.jpg",
+        "https://img.komiku.org/uploads2/2823702-16.jpg",
+        "https://img.komiku.org/uploads2/2823702-17.jpg"
+      ]
+    },
     {
       "nama": "Chapter 2",
       "url": "https://komiku.org/yuusha-sama-sakuya-mo-otanoshimi-deshita-ne-chapter-02/",
@@ -553,5 +577,5 @@
       ]
     }
   ],
-  "last_scraped": "2026-07-19T20:05:47.642194"
+  "last_scraped": "2026-07-19T21:11:38.373541"
 }
