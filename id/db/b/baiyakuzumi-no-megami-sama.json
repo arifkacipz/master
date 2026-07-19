@@ -1,6 +1,7 @@
 {
   "judul": "Baiyakuzumi no Megami-sama",
   "judul_alternatif": "Sang Dewi dari Baiyakuzumi",
+  "slug": "baiyakuzumi-no-megami-sama",
   "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150017_a05ee9ca6834eec5_60ee57cb.webp?w=1200",
   "tipe": "Manga",
   "status": "",
@@ -16,6 +17,10 @@
   "pembaca_total": 124,
   "pembaca_mingguan": 0,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 3,
+  "chapterCount": 3,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -104,10 +109,5 @@
       ]
     }
   ],
-  "slug": "baiyakuzumi-no-megami-sama",
-  "source": "komiku",
-  "online": 3,
-  "chapterCount": 3,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3",
-  "last_scraped": "2026-07-19T11:51:38.554126"
+  "last_scraped": "2026-07-19T12:10:12.266396"
 }
