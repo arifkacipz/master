@@ -1,5 +1,23 @@
 [
   {
+    "judul": "Meow-Meow Squeak-Squeak!",
+    "slug": "meow-meow-squeak-squeak",
+    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144611_4d52caad0d1f2740_753c9549.jpg?w=1200",
+    "tipe": "Manga",
+    "status": "",
+    "genre": [
+      "Comedy",
+      "Romance"
+    ],
+    "pembaca_total": 222,
+    "chapterCount": 5,
+    "last_scraped": "2026-07-19T18:39:29.269418",
+    "judul_alternatif": "Meong-Meong Cit-Cit!",
+    "author": "-",
+    "sinopsis_ringkas": "Di tengah hiruk-pikuk kota tropis, Mio si kucing loreng yang lincah bertemu Pip si tikus lab yang cerdas. Pengejaran klasik berubah jadi aliansi tak t",
+    "rating": "10+"
+  },
+  {
     "judul": "Mr. Zombie",
     "slug": "mr-zombie",
     "thumb": "https://thumbnail.komiku.org/uploads/manga/mr-zombie/manga_thumbnail-Mr.-Zombie-1.jpg?w=1200",
@@ -15716,24 +15734,6 @@
     "author": "-",
     "sinopsis_ringkas": "Aruka tiba-tiba mengalami TS, bangun sebagai gadis dan terseret ke dalam rumah sebuah keluarga bangsawan. Dua saudari di rumah itu, kakak yang anggun ",
     "rating": "15+"
-  },
-  {
-    "judul": "Meow-Meow Squeak-Squeak!",
-    "slug": "meow-meow-squeak-squeak",
-    "thumb": "https://thumbnail.komiku.org/new/img/images/2026/07/08/20260708144611_4d52caad0d1f2740_753c9549.jpg?w=1200",
-    "tipe": "Manga",
-    "status": "",
-    "genre": [
-      "Comedy",
-      "Romance"
-    ],
-    "pembaca_total": 50,
-    "chapterCount": 5,
-    "last_scraped": "2026-07-08T12:20:59.148898",
-    "judul_alternatif": "Meong-Meong Cit-Cit!",
-    "author": "-",
-    "sinopsis_ringkas": "Di tengah hiruk-pikuk kota tropis, Mio si kucing loreng yang lincah bertemu Pip si tikus lab yang cerdas. Pengejaran klasik berubah jadi aliansi tak t",
-    "rating": "10+"
   },
   {
     "judul": "Ming Dynasty’s Failure",
