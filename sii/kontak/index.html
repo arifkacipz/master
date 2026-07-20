@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - PT Plastik Packindo Sejahtera</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .page-header { background: linear-gradient(135deg, #023e8a, #0077b6); color: white; padding: 120px 0 60px; text-align: center; }
+        .contact-section { padding: 60px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .info-item { display: flex; gap: 15px; margin-bottom: 25px; align-items: flex-start; }
+        .info-icon { background: var(--light-bg); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.2rem; flex-shrink: 0; }
+        .info-text h4 { margin-bottom: 5px; }
+        .map-container { margin-top: 30px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .contact-form form { background: var(--light-bg); padding: 35px; border-radius: var(--radius); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px 15px; border: 1px solid var(--border); border-radius: 8px; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fa-solid fa-industry"></i> <span>PT PACKINDO SEJAHTERA</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Beranda</a></li>
+                <li><a href="../katalog/index.html" class="nav-link">Katalog</a></li>
+                <li><a href="index.html" class="nav-link active">Hubungi Kami</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="page-header" id="contactHeader"></section>
+
+    <section class="contact-section" id="contactContent"></section>
+
+    <footer class="footer" id="footerKontak"></footer>
+
+    <a href="https://wa.me/6281122228888" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header
+            document.getElementById('contactHeader').innerHTML = `
+                <h1>${siteData.contactPage.title}</h1>
+                <p>${siteData.contactPage.description}</p>`;
+            
+            // Content
+            document.getElementById('contactContent').innerHTML = `
+                <div class="container contact-grid">
+                    <div class="contact-info">
+                        <h2>Informasi Kontak</h2>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text"><h4>Alamat Pabrik & Kantor</h4><p>${siteData.contact.address}</p></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text"><h4>Telepon</h4><p>${siteData.contact.phone} (Hunting)</p></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="info-text"><h4>WhatsApp</h4><p>${siteData.contact.whatsapp} (Chat only)</p></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-text"><h4>Email</h4><p>${siteData.contact.email}</p></div>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="${siteData.contactPage.mapEmbedUrl}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2>${siteData.contactPage.formLabels.submit}</h2>
+                        <form action="#" method="POST" onsubmit="alert('Pesan Anda telah dikirim. Kami akan menghubungi Anda segera.'); return false;">
+                            <div class="form-group">
+                                <label>${siteData.contactPage.formLabels.name}</label>
+                                <input type="text" required placeholder="Nama Anda">
+                            </div>
+                            <div class="form-group">
+                                <label>${siteData.contactPage.formLabels.email}</label>
+                                <input type="email" required placeholder="email@perusahaan.com">
+                            </div>
+                            <div class="form-group">
+                                <label>${siteData.contactPage.formLabels.subject}</label>
+                                <input type="text" placeholder="Permintaan penawaran produk...">
+                            </div>
+                            <div class="form-group">
+                                <label>${siteData.contactPage.formLabels.message}</label>
+                                <textarea required placeholder="Tulis detail kebutuhan Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">${siteData.contactPage.formLabels.submit} <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>`;
+            
+            // Footer
+            document.getElementById('footerKontak').innerHTML = `
+                <div class="container footer-grid">
+                    <div class="footer-col footer-about">
+                        <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
+                        <p>${siteData.footer.about}</p>
+                    </div>
+                    <div class="footer-col footer-contact">
+                        <h4>Kontak</h4>
+                        <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                        <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
+                    </div>
+                </div>
+                <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
+            
+            document.querySelector('.wa-float').href = siteData.waLink;
+        });
+    </script>
+</body>
+</html>

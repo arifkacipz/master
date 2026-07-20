@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Plastik Packindo Sejahtera - Pabrik Plastik Packaging</title>
+    <meta name="description" content="Pabrik plastik packaging terpercaya menyediakan berbagai produk plastik berkualitas.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fa-solid fa-industry"></i>
+                <span id="navBrand">PT PACKINDO SEJAHTERA</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Beranda</a></li>
+                <li><a href="katalog/index.html" class="nav-link">Katalog</a></li>
+                <li><a href="kontak/index.html" class="nav-link">Hubungi Kami</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="heroSection">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" id="heroContent"></div>
+        <div class="hero-stats" id="heroStats"></div>
+    </section>
+
+    <section class="about section-padding" id="aboutSection"></section>
+
+    <section class="categories section-padding bg-light" id="categoriesSection"></section>
+
+    <section class="why-us section-padding" id="whyUsSection"></section>
+
+    <section class="cta section-padding" id="ctaSection"></section>
+
+    <footer class="footer" id="footerSection"></footer>
+
+    <a href="https://wa.me/6281122228888" class="wa-float" id="waButton" target="_blank" rel="noopener" title="Chat via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update brand name
+            document.getElementById('navBrand').textContent = siteData.siteName;
+
+            // Hero background
+            const heroEl = document.getElementById('heroSection');
+            if (siteData.hero.bgImage) {
+                heroEl.style.backgroundImage = `url('${siteData.hero.bgImage}')`;
+                heroEl.classList.add('hero-has-image');
+            }
+
+            // Hero content
+            document.getElementById('heroContent').innerHTML = `
+                <h6 class="hero-subtitle">${siteData.hero.subtitle}</h6>
+                <h1 class="hero-title">${siteData.hero.title}</h1>
+                <p class="hero-desc">${siteData.hero.description}</p>
+                <div class="hero-buttons">
+                    <a href="katalog/index.html" class="btn btn-primary">${siteData.hero.buttons.catalog}</a>
+                    <a href="kontak/index.html" class="btn btn-outline">${siteData.hero.buttons.contact}</a>
+                </div>`;
+
+            // Hero stats
+            document.getElementById('heroStats').innerHTML = siteData.stats.map(stat => `
+                <div class="stat-item">
+                    <span class="stat-number" data-target="${stat.number}">0</span>
+                    <span class="stat-label">${stat.label}</span>
+                </div>`).join('');
+
+            // About section
+            const aboutImgHtml = siteData.about.image 
+                ? `<img src="${siteData.about.image}" alt="${siteData.about.imageAlt || 'Fasilitas Pabrik'}">`
+                : `<i class="fa-solid fa-warehouse about-icon-placeholder"></i><span>Fasilitas Pabrik</span>`;
+            
+            document.getElementById('aboutSection').innerHTML = `
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-image-wrapper">
+                            <div class="about-image">${aboutImgHtml}</div>
+                            <div class="about-badge">
+                                <i class="fa-solid fa-certificate"></i> ${siteData.about.badge}
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <span class="section-tag">${siteData.about.tag}</span>
+                            <h2 class="section-title">${siteData.about.title}</h2>
+                            ${siteData.about.paragraphs.map(p => `<p>${p}</p>`).join('')}
+                            <div class="about-features">
+                                ${siteData.about.features.map(f => `<div class="feature"><i class="fa-solid fa-check-circle"></i> ${f}</div>`).join('')}
+                            </div>
+                            <a href="katalog/index.html" class="btn btn-primary">${siteData.about.button}</a>
+                        </div>
+                    </div>
+                </div>`;
+
+            // Categories
+            document.getElementById('categoriesSection').innerHTML = `
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-tag">PRODUK UNGGULAN</span>
+                        <h2 class="section-title">Kategori Produk Plastik Packaging</h2>
+                        <p class="section-desc">Kami memproduksi beragam jenis kemasan plastik untuk berbagai kebutuhan industri</p>
+                    </div>
+                    <div class="categories-grid">
+                        ${siteData.productCategories.map(cat => {
+                            const catImg = cat.image 
+                                ? `<img src="${cat.image}" alt="${cat.name}">` 
+                                : `<i class="fa-solid ${cat.icon}"></i>`;
+                            return `
+                                <div class="category-card">
+                                    <div class="category-icon">${catImg}</div>
+                                    <h3>${cat.name}</h3>
+                                    <p>${cat.description}</p>
+                                </div>`;
+                        }).join('')}
+                    </div>
+                </div>`;
+
+            // Why Us
+            document.getElementById('whyUsSection').innerHTML = `
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-tag">${siteData.whyUs.tag}</span>
+                        <h2 class="section-title">${siteData.whyUs.title}</h2>
+                        <p class="section-desc">${siteData.whyUs.description}</p>
+                    </div>
+                    <div class="why-grid">
+                        ${siteData.whyUs.items.map(item => `
+                            <div class="why-card">
+                                <div class="why-number">${item.number}</div>
+                                <h3>${item.title}</h3>
+                                <p>${item.description}</p>
+                            </div>`).join('')}
+                    </div>
+                </div>`;
+
+            // CTA
+            document.getElementById('ctaSection').innerHTML = `
+                <div class="container text-center">
+                    <h2 class="cta-title">${siteData.cta.title}</h2>
+                    <p class="cta-desc">${siteData.cta.description}</p>
+                    <div class="cta-buttons">
+                        <a href="kontak/index.html" class="btn btn-white">${siteData.cta.buttons.contact}</a>
+                        <a href="katalog/index.html" class="btn btn-outline-white">${siteData.cta.buttons.catalog}</a>
+                    </div>
+                </div>`;
+
+            // Footer
+            document.getElementById('footerSection').innerHTML = `
+                <div class="container footer-grid">
+                    <div class="footer-col footer-about">
+                        <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
+                        <p>${siteData.footer.about}</p>
+                        <div class="social-links">
+                            <a href="${siteData.footer.social.whatsapp}"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="${siteData.footer.social.instagram}"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="${siteData.footer.social.facebook}"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="${siteData.footer.social.email}"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Produk</h4>
+                        <ul>${siteData.footer.products.map(p => `<li><a href="katalog/index.html">${p}</a></li>`).join('')}</ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Halaman</h4>
+                        <ul>${siteData.footer.pages.map(p => `<li><a href="${p.url}">${p.name}</a></li>`).join('')}</ul>
+                    </div>
+                    <div class="footer-col footer-contact">
+                        <h4>Kontak</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> ${siteData.contact.address}</p>
+                        <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                        <p><i class="fa-solid fa-mobile-screen"></i> ${siteData.contact.whatsapp} (WA)</p>
+                        <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; ${new Date().getFullYear()} ${siteData.siteName}. All Rights Reserved.</p>
+                </div>`;
+
+            // WA link
+            document.getElementById('waButton').href = siteData.waLink;
+
+            // Counter animation
+            document.querySelectorAll('.stat-number').forEach(num => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounter(entry.target, parseInt(entry.target.dataset.target));
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                observer.observe(num);
+            });
+        });
+
+        function animateCounter(el, target) {
+            let current = 0;
+            const step = target / 100;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    el.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current);
+                }
+            }, 20);
+        }
+    </script>
+</body>
+</html>
