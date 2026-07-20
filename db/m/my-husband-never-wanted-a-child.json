@@ -3,9 +3,56 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/b98dd0be-0bb4-4476-9253-02dd3588a87e-193x278.webp",
     "source": "arenascan",
     "online": 18,
-    "chapterCount": 3,
+    "chapterCount": 6,
     "Chs": "Chapter 18, Chapter 17, Chapter 16, Chapter 15, Chapter 14, Chapter 13, Chapter 12, Chapter 11, Chapter 10, Chapter 9, Chapter 8, Chapter 7, Chapter 6, Chapter 5, Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 13",
+            "url": "https://arenascan.com/my-husband-never-wanted-a-child-chapter-13/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/434427/13/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/07_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/13/08_result.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 14",
+            "url": "https://arenascan.com/my-husband-never-wanted-a-child-chapter-14/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/434427/14/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/07_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/08_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/14/09_result.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
+        {
+            "nama": "Chapter 15",
+            "url": "https://arenascan.com/my-husband-never-wanted-a-child-chapter-15/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/434427/15/01_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/02_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/03_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/04_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/05_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/06_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/07_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/08_result.jpg",
+                "https://cdn.arenascan.com/arena-bucket/434427/15/09_result.jpg"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 16",
             "url": "https://arenascan.com/my-husband-never-wanted-a-child-chapter-16/",
@@ -55,5 +102,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-20T21:50:43.101792"
+    "last_scraped": "2026-07-20T23:06:21.183629"
 }
