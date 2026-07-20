@@ -1,6 +1,7 @@
 {
   "judul": "Mutsuko, Seiwo Tsukemasu!",
   "judul_alternatif": "Mutsuko, Kita Akan Berkibar",
+  "slug": "mutsuko-seiwo-tsukemasu",
   "thumb": "https://thumbnail.komiku.org/img/upload/mutsuko__seiwo_tsukemasu_/img_695b21ecc51b41.83655372.png?w=1200",
   "tipe": "Manga",
   "status": "Ongoing",
@@ -17,6 +18,10 @@
   "pembaca_total": 1980,
   "pembaca_mingguan": 5,
   "cara_baca": "Kanan ke kiri",
+  "source": "komiku",
+  "online": 5,
+  "chapterCount": 5,
+  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
   "chapters": [
     {
       "nama": "Chapter 1",
@@ -231,10 +236,5 @@
       ]
     }
   ],
-  "slug": "mutsuko-seiwo-tsukemasu",
-  "source": "komiku",
-  "online": 5,
-  "chapterCount": 5,
-  "Chs": "Chapter 1, Chapter 2, Chapter 3, Chapter 4, Chapter 5",
-  "last_scraped": "2026-07-20T02:22:18.373896"
+  "last_scraped": "2026-07-20T06:12:35.870752"
 }
