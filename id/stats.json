@@ -423,6 +423,15 @@
     "status": "Ongoing"
   },
   {
+    "slug": "bar-flowers",
+    "judul": "Bar Flowers",
+    "thumb": "https://thumbnail.komiku.org/uploads/manga/bar-flowers/manga_thumbnail-Manga-Bar-Flowers.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
     "slug": "baiyakuzumi-no-megami-sama",
     "judul": "Baiyakuzumi no Megami-sama",
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/06/13/20260613150017_a05ee9ca6834eec5_60ee57cb.webp?w=1200",
@@ -887,6 +896,15 @@
     "thumb": "https://thumbnail.komiku.org/new/img/images/2026/03/12/20260312144324_c8edc85365c00d58_ded05b49.jpg?w=1200",
     "chapterCount": 3,
     "online": 3,
+    "tipe": "Manga",
+    "status": "Ongoing"
+  },
+  {
+    "slug": "honzuki-no-gekokujou-hannerore-no-kizoku-in-gonensei-ichi-koishite-mitai-ohime-sama",
+    "judul": "Honzuki no Gekokujou: Hannerōre no Kizoku-in Gonensei Ichi – Koishite Mitai O’hime-sama",
+    "thumb": "https://thumbnail.komiku.org/img/upload/honzuki_no_gekokujou/img_6972ea0482a1f2.56434183.jpg?w=1200",
+    "chapterCount": 5,
+    "online": 5,
     "tipe": "Manga",
     "status": "Ongoing"
   },
