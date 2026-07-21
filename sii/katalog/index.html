@@ -108,7 +108,7 @@
     <script src="../js/script.js"></script>
     <script>
         const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv';
-        const WA_NUMBER = '6281230586587'; // Nomor WhatsApp tujuan
+        const WA_NUMBER = '6281230586587';
 
         let allProducts = [];
 
@@ -222,9 +222,15 @@
                     ? `<img src="${imgSrc}" alt="${p.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${p.name}')">`
                     : `<i class="fa-solid ${p.icon || 'fa-box'}"></i>`;
 
-                // Spesifikasi
+                // Spesifikasi – format angka dengan pemisah ribuan
                 let specsRows = '';
-                const addSpec = (label, value) => { if (value) specsRows += `<tr><td>${label}</td><td>: ${value}</td></tr>`; };
+                const addSpec = (label, value) => { 
+                    if (value) {
+                        // Jika value adalah number, format dengan toLocaleString, selain itu tampilkan apa adanya
+                        const displayValue = typeof value === 'number' ? value.toLocaleString('id-ID') : value;
+                        specsRows += `<tr><td>${label}</td><td>: ${displayValue}</td></tr>`;
+                    }
+                };
                 addSpec('Ukuran', p.size);
                 addSpec('Ketebalan', p.tebal);
                 addSpec('Isi Per Roll', p.pcs_roll);
@@ -248,9 +254,9 @@
                 addPrice('Harga Item Saja', p.price_only);
                 const priceSection = priceHtml ? `<div class="price-list">${priceHtml}</div>` : '';
 
-                // Buat pesan WhatsApp otomatis
+                // WhatsApp message
                 const rawSize = p.size || '';
-                const displaySize = rawSize.replace(/\*/g, 'x'); // ganti * dengan x
+                const displaySize = rawSize.replace(/\*/g, 'x');
                 const productName = p.name || 'Produk';
                 const sizeText = displaySize ? ` dengan ukuran *${displaySize}*` : '';
                 const message = `Halo kak, saya ingin bertanya untuk produk *${productName}*${sizeText}. Apakah Stock tersedia?`;
