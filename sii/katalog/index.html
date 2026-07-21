@@ -111,9 +111,7 @@
 
         let allProducts = [];
 
-        /**
-         * Parser CSV robust yang menangani field dalam tanda kutip, koma, dan baris baru di dalam field.
-         */
+        // Parser CSV robust
         function parseCSV(text) {
             const rows = [];
             let currentRow = [];
@@ -127,11 +125,9 @@
                 if (inQuotes) {
                     if (char === '"') {
                         if (nextChar === '"') {
-                            // Escape dua kutip -> satu kutip
                             currentField += '"';
-                            i++; // Lewati nextChar
+                            i++;
                         } else {
-                            // Akhir dari field yang di-quote
                             inQuotes = false;
                         }
                     } else {
@@ -139,14 +135,11 @@
                     }
                 } else {
                     if (char === '"') {
-                        // Mulai field quoted
                         inQuotes = true;
                     } else if (char === ',') {
-                        // Akhir field
                         currentRow.push(currentField.trim());
                         currentField = '';
                     } else if (char === '\n') {
-                        // Akhir baris
                         currentRow.push(currentField.trim());
                         if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
                             rows.push(currentRow);
@@ -158,34 +151,24 @@
                     }
                 }
             }
-
-            // Sisa field terakhir
             currentRow.push(currentField.trim());
             if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
                 rows.push(currentRow);
             }
 
             if (rows.length < 2) return [];
-
             const headers = rows[0];
             const data = [];
 
             for (let i = 1; i < rows.length; i++) {
                 const values = rows[i];
-                // Jika jumlah kolom kurang, bisa diabaikan atau diisi kosong
-                if (values.length < headers.length) {
-                    // Tambahkan string kosong untuk kolom yang hilang
-                    while (values.length < headers.length) {
-                        values.push('');
-                    }
-                }
+                while (values.length < headers.length) values.push('');
                 const obj = {};
                 headers.forEach((header, index) => {
-                    let val = values[index] || '';
-                    obj[header] = val;
+                    obj[header] = values[index] || '';
                 });
 
-                // Konversi field numerik
+                // Konversi numerik: hapus semua non-digit, lalu parse
                 const numFields = [
                     'price_pcs', 'price_roll', 'price_bal', 'price_pack',
                     'price_with_poly', 'price_only',
@@ -193,13 +176,15 @@
                 ];
                 numFields.forEach(field => {
                     if (obj.hasOwnProperty(field)) {
-                        obj[field] = parseInt(obj[field]) || 0;
+                        const raw = obj[field];
+                        // Hapus semua karakter kecuali digit
+                        const clean = raw.replace(/\D/g, '');
+                        obj[field] = clean ? parseInt(clean, 10) : 0;
                     }
                 });
 
                 data.push(obj);
             }
-
             return data;
         }
 
@@ -208,7 +193,7 @@
             .then(csvText => {
                 allProducts = parseCSV(csvText);
                 console.log('Data produk berhasil diambil:', allProducts.length, 'item');
-                console.log('Contoh data:', allProducts[0]); // Debug: lihat struktur
+                if (allProducts.length > 0) console.log('Contoh data:', allProducts[0]);
                 renderProducts();
                 setupFilters();
                 document.getElementById('catalogHeader').innerHTML = `
@@ -240,7 +225,7 @@
                     ? `<img src="${imgSrc}" alt="${p.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${p.name}')">`
                     : `<i class="fa-solid ${p.icon || 'fa-box'}"></i>`;
 
-                // Spesifikasi (hanya jika ada nilainya)
+                // Spesifikasi
                 let specsRows = '';
                 const addSpec = (label, value) => { if (value) specsRows += `<tr><td>${label}</td><td>: ${value}</td></tr>`; };
                 addSpec('Ukuran', p.size);
@@ -251,11 +236,12 @@
                 addSpec('Roll per Pack', p.roll_pack);
                 const specsTable = specsRows ? `<table class="specs-table">${specsRows}</table>` : '';
 
-                // Harga: tampilkan semua, 0 jika kosong
+                // Harga: hanya tampilkan jika > 0
                 let priceHtml = '';
                 const addPrice = (label, value) => {
-                    const val = value || 0;
-                    priceHtml += `<div class="price-item"><span>${label}</span> Rp ${val.toLocaleString()}</div>`;
+                    if (value && value > 0) {
+                        priceHtml += `<div class="price-item"><span>${label}</span> Rp ${value.toLocaleString('id-ID')}</div>`;
+                    }
                 };
                 addPrice('Harga Satuan', p.price_pcs);
                 addPrice('Harga Per Roll', p.price_roll);
@@ -263,7 +249,7 @@
                 addPrice('Harga Per Pack', p.price_pack);
                 addPrice('Bundling dg Polymailer', p.price_with_poly);
                 addPrice('Harga Item Saja', p.price_only);
-                const priceSection = `<div class="price-list">${priceHtml}</div>`;
+                const priceSection = priceHtml ? `<div class="price-list">${priceHtml}</div>` : '';
 
                 return `
                     <div class="product-card">
