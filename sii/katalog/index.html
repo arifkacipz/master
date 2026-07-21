@@ -102,16 +102,16 @@
 
     <footer class="footer" id="footerKatalog"></footer>
 
-    <a href="https://wa.me/6281122228888" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://wa.me/6281230586587" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
     <script src="../js/data.js"></script>
     <script src="../js/script.js"></script>
     <script>
         const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv';
+        const WA_NUMBER = '6281230586587'; // Nomor WhatsApp tujuan
 
         let allProducts = [];
 
-        // Parser CSV robust
         function parseCSV(text) {
             const rows = [];
             let currentRow = [];
@@ -157,7 +157,7 @@
             }
 
             if (rows.length < 2) return [];
-            const headers = rows[0];
+            const headers = rows[0].map(h => h.trim());
             const data = [];
 
             for (let i = 1; i < rows.length; i++) {
@@ -168,7 +168,6 @@
                     obj[header] = values[index] || '';
                 });
 
-                // Konversi numerik: hapus semua non-digit, lalu parse
                 const numFields = [
                     'price_pcs', 'price_roll', 'price_bal', 'price_pack',
                     'price_with_poly', 'price_only',
@@ -177,7 +176,6 @@
                 numFields.forEach(field => {
                     if (obj.hasOwnProperty(field)) {
                         const raw = obj[field];
-                        // Hapus semua karakter kecuali digit
                         const clean = raw.replace(/\D/g, '');
                         obj[field] = clean ? parseInt(clean, 10) : 0;
                     }
@@ -185,6 +183,7 @@
 
                 data.push(obj);
             }
+
             return data;
         }
 
@@ -192,8 +191,6 @@
             .then(response => response.text())
             .then(csvText => {
                 allProducts = parseCSV(csvText);
-                console.log('Data produk berhasil diambil:', allProducts.length, 'item');
-                if (allProducts.length > 0) console.log('Contoh data:', allProducts[0]);
                 renderProducts();
                 setupFilters();
                 document.getElementById('catalogHeader').innerHTML = `
@@ -231,12 +228,12 @@
                 addSpec('Ukuran', p.size);
                 addSpec('Ketebalan', p.tebal);
                 addSpec('Isi Per Roll', p.pcs_roll);
-                addSpec('Isi Per Bal', p.roll_bal);
+                addSpec('Roll Per Bal', p.roll_bal);
                 addSpec('Isi Per Pack', p.pcs_pack);
                 addSpec('Roll per Pack', p.roll_pack);
                 const specsTable = specsRows ? `<table class="specs-table">${specsRows}</table>` : '';
 
-                // Harga: hanya tampilkan jika > 0
+                // Harga
                 let priceHtml = '';
                 const addPrice = (label, value) => {
                     if (value && value > 0) {
@@ -251,6 +248,15 @@
                 addPrice('Harga Item Saja', p.price_only);
                 const priceSection = priceHtml ? `<div class="price-list">${priceHtml}</div>` : '';
 
+                // Buat pesan WhatsApp otomatis
+                const rawSize = p.size || '';
+                const displaySize = rawSize.replace(/\*/g, 'x'); // ganti * dengan x
+                const productName = p.name || 'Produk';
+                const sizeText = displaySize ? ` dengan ukuran *${displaySize}*` : '';
+                const message = `Halo kak, saya ingin bertanya untuk produk *${productName}*${sizeText}. Apakah Stock tersedia?`;
+                const encodedMessage = encodeURIComponent(message);
+                const waLink = `https://wa.me/${WA_NUMBER}?text=${encodedMessage}`;
+
                 return `
                     <div class="product-card">
                         <div class="product-img ${imgSrc ? 'clickable' : ''}" onclick="${imgSrc ? `openLightbox('${imgSrc}','${p.name}')` : ''}">
@@ -262,7 +268,7 @@
                             <p class="product-desc">${p.desc || ''}</p>
                             ${specsTable}
                             ${priceSection}
-                            <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
+                            <a href="${waLink}" class="btn btn-primary btn-small" target="_blank">Minta Penawaran</a>
                         </div>
                     </div>`;
             }).join('');
@@ -317,7 +323,6 @@
                 </div>
             </div>
             <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
-        document.querySelector('.wa-float').href = siteData.waLink;
     </script>
 </body>
 </html>
