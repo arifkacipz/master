@@ -11,7 +11,7 @@ const siteData = {
             catalog: "Lihat Katalog Produk",
             contact: "Hubungi Kami"
         },
-        bgImage: "./img/bg.jpg"   // kosongkan "" jika tidak ada
+        bgImage: "img/bg.jpg"   // kosongkan "" jika tidak ada
     },
     
     stats: [
@@ -38,7 +38,7 @@ const siteData = {
         ],
         button: "Jelajahi Produk Kami",
         badge: "ISO 9001:2015",
-        image: "./img/pt.jpg",  // foto pabrik
+        image: "img/pt.jpg",  // foto pabrik
         imageAlt: "Fasilitas Pabrik"
     },
     
