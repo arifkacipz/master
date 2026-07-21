@@ -3,9 +3,23 @@
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/a3734608efb8.webp",
     "source": "arenascan",
     "online": 4,
-    "chapterCount": 3,
+    "chapterCount": 4,
     "Chs": "Chapter 4, Chapter 3, Chapter 2, Chapter 1",
     "chapters": [
+        {
+            "nama": "Chapter 1",
+            "url": "https://arenascan.com/full-time-hunter-i-hunt-the-world-chapter-1/",
+            "images": [
+                "https://cdn.arenascan.com/arena-bucket/431720/1/17f83ac230e2.webp",
+                "https://cdn.arenascan.com/arena-bucket/431720/1/3378ccf8b6f4.webp",
+                "https://cdn.arenascan.com/arena-bucket/431720/1/518820a81ec3.webp",
+                "https://cdn.arenascan.com/arena-bucket/431720/1/8fe69b5afe69.webp",
+                "https://cdn.arenascan.com/arena-bucket/431720/1/6d80299ba0ff.webp",
+                "https://cdn.arenascan.com/arena-bucket/431720/1/aaf872f63da9.webp",
+                "https://cdn.arenascan.com/arena-bucket/431720/1/9021d72dce90.webp"
+            ],
+            "source_chapter": "arenascan"
+        },
         {
             "nama": "Chapter 2",
             "url": "https://arenascan.com/full-time-hunter-i-hunt-the-world-chapter-2/",
@@ -49,5 +63,5 @@
             "source_chapter": "arenascan"
         }
     ],
-    "last_scraped": "2026-07-21T00:17:45.469629"
+    "last_scraped": "2026-07-21T01:02:12.865690"
 }
