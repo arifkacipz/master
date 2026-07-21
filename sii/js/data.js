@@ -11,7 +11,7 @@ const siteData = {
             catalog: "Lihat Katalog Produk",
             contact: "Hubungi Kami"
         },
-        bgImage: "img/bg.jpg"   // kosongkan "" jika tidak ada
+        bgImage: "/img/bg.jpg"   // kosongkan "" jika tidak ada
     },
     
     stats: [
