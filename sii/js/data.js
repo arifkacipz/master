@@ -1,5 +1,5 @@
 const siteData = {
-    siteName: "PT Plastik Packindo Sejahtera",
+    siteName: "NUSA PACKING INDONESIA",
     siteTagline: "Pabrik Plastik Packaging Terpercaya di Indonesia",
     since: 2005,
     
@@ -11,7 +11,7 @@ const siteData = {
             catalog: "Lihat Katalog Produk",
             contact: "Hubungi Kami"
         },
-        bgImage: "img/bg.jpg"   // kosongkan "" jika tidak ada
+        bgImage: "img/bg.jpg"
     },
     
     stats: [
@@ -25,11 +25,11 @@ const siteData = {
         tag: "TENTANG KAMI",
         title: "Mitra Terpercaya untuk Kebutuhan Plastik Packaging Anda",
         paragraphs: [
-            "PT Plastik Packindo Sejahtera adalah pabrik plastik packaging yang berlokasi di kawasan industri strategis. Sejak tahun 2005, kami telah melayani berbagai perusahaan dari skala UKM hingga korporasi multinasional.",
-            "Kami mengkhususkan diri dalam produksi berbagai jenis kemasan plastik seperti <strong>Polymailer, bubma, zipper, bubble wrap,</strong> dan masih banyak lagi."
+            "NUSA PACKING INDONESIA adalah pabrik plastik packaging yang berlokasi di kawasan industri strategis. Sejak tahun 2005, kami telah melayani berbagai perusahaan dari skala UKM hingga korporasi multinasional.",
+            "Kami mengkhususkan diri dalam produksi berbagai jenis kemasan plastik seperti <strong>Polymailer, Bubble Mailer, Zipper, Bubble Wrap,</strong> dan masih banyak lagi."
         ],
         features: [
-            "Bahan baku food-grade bersertifikat",
+            "Bahan baku bersertifikat",
             "Teknologi mesin modern & otomatis",
             "Custom desain & ukuran sesuai permintaan",
             "Harga pabrik langsung, tanpa perantara",
@@ -38,7 +38,7 @@ const siteData = {
         ],
         button: "Jelajahi Produk Kami",
         badge: "ISO 9001:2015",
-        image: "img/pt.jpg",  // foto pabrik
+        image: "img/pt.jpg",
         imageAlt: "Fasilitas Pabrik"
     },
     
@@ -54,10 +54,10 @@ const siteData = {
         title: "Mengapa Memilih Kami?",
         description: "Kami berkomitmen memberikan produk dan layanan terbaik",
         items: [
-            { number: "01", title: "Kualitas Terjamin", description: "Setiap produk melalui quality control ketat dan bahan baku food-grade." },
+            { number: "01", title: "Kualitas Terjamin", description: "Setiap produk melalui quality control ketat." },
             { number: "02", title: "Harga Kompetitif", description: "Harga langsung pabrik tanpa perantara." },
             { number: "03", title: "Custom Produk", description: "Custom ukuran, ketebalan, hingga berbagai pilihan warna." },
-            { number: "04", title: "Kapasitas Besar", description: "30+ mesin modern, kapasitas ratusan ton/bulan." }
+            { number: "04", title: "Kapasitas Besar", description: "30+ mesin modern, kapasitas ratusan ton perbulan." }
         ]
     },
     
@@ -87,7 +87,7 @@ const siteData = {
     },
     
     contact: {
-        address: "Laksana Business Park Blok LA-12, LA-12A, LA-32, Jl. Raya Kalibaru, Laksana, Kecamatan Pakuhaji, Kabupaten Tangerang, Banten 15570",
+        address: "Laksana Business Park Blok LA-32, Jl. Raya Kalibaru, Laksana, Kecamatan Pakuhaji, Kabupaten Tangerang, Banten 15570",
         whatsapp: "+62 812-3058-6587",
         email: "arifkacipz@gmail.com"
     },
@@ -97,21 +97,13 @@ const siteData = {
     catalogPage: {
         title: "Katalog Produk Plastik",
         description: "Lebih dari 2000 varian produk siap memenuhi kebutuhan packaging Anda",
-        filterLabels: ["Semua", "Polymailer", "Bubble Mailer", "Zipper", "Bubble Wrap", "Other"],
-        filterValues: ["all", "bag", "bubma", "zip", "bubble", "other"],
+        filterLabels: ["Semua", "Polymailer", "Bubble Mailer", "Zipper", "OPP", "Bubble Wrap", "Other"],
+        filterValues: ["all", "poly", "mailer", "zip", "opp", "bubble", "other"],
         products: [
             { name: "Polymailer Hitam-1", category: "bag", icon: "fa-bag-shopping", image: "../img/hitam1.jpeg", desc: "Kantong Polymailer dengan warna Hitam Glossy." },
             { name: "Polymailer Hitam-2", category: "bag", icon: "fa-bag-shopping", image: "../img/hitam2.png", desc: "Kantong Polymailer dengan warna Hitam Doff." },
             { name: "Polymailer Putih Hitam-8", category: "bag", icon: "fa-bag-shopping", image: "../img/putihhitam8.jpeg", desc: "Kantong Polymailer dengan bagian luar berwarna putih dan bagian dalam berwarna hitam." },
             { name: "Polymailer Putih Hitam-11", category: "bag", icon: "fa-bag-shopping", image: "../img/putihhitam8.jpeg", desc: "Kantong Polymailer dengan bagian luar berwarna putih dan bagian dalam berwarna hitam." },
-            { name: "Botol PET 330ml", category: "bottle", icon: "fa-bottle-water", image: "", desc: "Botol minum PET bening 330ml standar." },
-            { name: "Botol HDPE 500ml", category: "bottle", icon: "fa-bottle-water", image: "", desc: "Botol HDPE untuk kosmetik/farmasi." },
-            { name: "Stretch zip 50cm", category: "zip", icon: "fa-roll", image: "", desc: "Stretch zip lebar 50cm, tebal 20 micron." },
-            { name: "Stretch zip 30cm", category: "zip", icon: "fa-roll", image: "", desc: "Stretch zip mini untuk packing manual." },
-            { name: "Standing Pouch Zipper 12x20", category: "pouch", icon: "fa-envelopes-bulk", image: "", desc: "Pouch aluminium foil + zipper untuk kopi." },
-            { name: "Standing Pouch Bening 15x25", category: "pouch", icon: "fa-envelopes-bulk", image: "", desc: "Pouch transparan klip zipper untuk snack." },
-            { name: "Bubble Wrap 1.2m", category: "bubble", icon: "fa-shield-halved", image: "", desc: "Bubble roll lebar 120cm, gelembung 10mm." },
-            { name: "Bubble Wrap Kecil 30cm", category: "bubble", icon: "fa-shield-halved", image: "", desc: "Bubble wrap kecil untuk pengiriman elektronik." }
         ]
     },
     
