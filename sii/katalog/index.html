@@ -111,21 +111,27 @@
 
         let allProducts = [];
 
-        // Parser CSV yang lebih robust (menangani koma di dalam tanda petik)
-        function parseCSV(str) {
+        /**
+         * Parser CSV robust yang menangani field dalam tanda kutip, koma, dan baris baru di dalam field.
+         */
+        function parseCSV(text) {
             const rows = [];
             let currentRow = [];
             let currentField = '';
             let inQuotes = false;
 
-            for (let i = 0; i < str.length; i++) {
-                const char = str[i];
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const nextChar = text[i + 1];
+
                 if (inQuotes) {
                     if (char === '"') {
-                        if (str[i + 1] === '"') { // escaped quote
+                        if (nextChar === '"') {
+                            // Escape dua kutip -> satu kutip
                             currentField += '"';
-                            i++;
+                            i++; // Lewati nextChar
                         } else {
+                            // Akhir dari field yang di-quote
                             inQuotes = false;
                         }
                     } else {
@@ -133,13 +139,16 @@
                     }
                 } else {
                     if (char === '"') {
+                        // Mulai field quoted
                         inQuotes = true;
                     } else if (char === ',') {
+                        // Akhir field
                         currentRow.push(currentField.trim());
                         currentField = '';
                     } else if (char === '\n') {
+                        // Akhir baris
                         currentRow.push(currentField.trim());
-                        if (currentRow.length > 0 && currentRow.some(f => f !== '')) {
+                        if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
                             rows.push(currentRow);
                         }
                         currentRow = [];
@@ -149,32 +158,48 @@
                     }
                 }
             }
-            // Sisa
+
+            // Sisa field terakhir
             currentRow.push(currentField.trim());
-            if (currentRow.length > 0 && currentRow.some(f => f !== '')) {
+            if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
                 rows.push(currentRow);
             }
 
             if (rows.length < 2) return [];
+
             const headers = rows[0];
             const data = [];
+
             for (let i = 1; i < rows.length; i++) {
                 const values = rows[i];
-                if (values.length < headers.length) continue;
+                // Jika jumlah kolom kurang, bisa diabaikan atau diisi kosong
+                if (values.length < headers.length) {
+                    // Tambahkan string kosong untuk kolom yang hilang
+                    while (values.length < headers.length) {
+                        values.push('');
+                    }
+                }
                 const obj = {};
                 headers.forEach((header, index) => {
                     let val = values[index] || '';
                     obj[header] = val;
                 });
-                // Konversi numerik (pakai nama header sesuai di sheet)
-                const numFields = ['price_pcs', 'price_roll', 'price_bal', 'price_pack', 'price_with_poly', 'price_only', 'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack'];
+
+                // Konversi field numerik
+                const numFields = [
+                    'price_pcs', 'price_roll', 'price_bal', 'price_pack',
+                    'price_with_poly', 'price_only',
+                    'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack'
+                ];
                 numFields.forEach(field => {
                     if (obj.hasOwnProperty(field)) {
                         obj[field] = parseInt(obj[field]) || 0;
                     }
                 });
+
                 data.push(obj);
             }
+
             return data;
         }
 
@@ -183,6 +208,7 @@
             .then(csvText => {
                 allProducts = parseCSV(csvText);
                 console.log('Data produk berhasil diambil:', allProducts.length, 'item');
+                console.log('Contoh data:', allProducts[0]); // Debug: lihat struktur
                 renderProducts();
                 setupFilters();
                 document.getElementById('catalogHeader').innerHTML = `
@@ -214,7 +240,7 @@
                     ? `<img src="${imgSrc}" alt="${p.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${p.name}')">`
                     : `<i class="fa-solid ${p.icon || 'fa-box'}"></i>`;
 
-                // Spesifikasi
+                // Spesifikasi (hanya jika ada nilainya)
                 let specsRows = '';
                 const addSpec = (label, value) => { if (value) specsRows += `<tr><td>${label}</td><td>: ${value}</td></tr>`; };
                 addSpec('Ukuran', p.size);
@@ -225,7 +251,7 @@
                 addSpec('Roll per Pack', p.roll_pack);
                 const specsTable = specsRows ? `<table class="specs-table">${specsRows}</table>` : '';
 
-                // Harga: selalu tampilkan semua, dengan nilai 0 jika kosong
+                // Harga: tampilkan semua, 0 jika kosong
                 let priceHtml = '';
                 const addPrice = (label, value) => {
                     const val = value || 0;
