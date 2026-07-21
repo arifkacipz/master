@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* ===== PAGE HEADER & FILTER (tidak berubah) ===== */
         .page-header {
             background: linear-gradient(135deg, #023e8a, #0077b6);
             color: white; padding: 120px 0 60px; text-align: center;
@@ -20,81 +19,47 @@
         .category-filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
         .filter-btn { padding: 10px 22px; border-radius: 50px; background: white; border: 1px solid var(--border); cursor: pointer; font-weight: 500; transition: var(--transition); }
         .filter-btn.active, .filter-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; padding: 40px 0 60px; }
-        .product-card { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); transition: transform 0.3s; }
-        .product-card:hover { transform: translateY(-5px); border-color: var(--primary); }
-        .product-img { 
-            height: 200px; 
-            background: linear-gradient(145deg, #e0f2fe, #bae6fd); 
-            display: flex; align-items: center; justify-content: center; 
-            font-size: 3.5rem; color: var(--primary); 
-            overflow: hidden;
-            cursor: default;
-        }
-        /* Jika gambar bisa diklik */
-        .product-img.clickable {
-            cursor: pointer;
-        }
-        .product-img img { 
-            width: 100%; height: 100%; object-fit: cover; 
-            transition: transform 0.3s;
-        }
-        .product-img.clickable:hover img {
-            transform: scale(1.05);
-        }
-        .product-info { padding: 20px; }
-        .product-info h3 { margin-bottom: 8px; }
-        .product-category { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
-        .product-desc { color: var(--text-light); margin-bottom: 15px; }
-        .btn-small { padding: 10px 24px; font-size: 14px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; padding: 40px 0 60px; }
 
-        /* ===== LIGHTBOX STYLES ===== */
+        .product-card {
+            background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+            border: 1px solid var(--border); transition: transform 0.3s; display: flex; flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .product-img {
+            height: 200px; background: linear-gradient(145deg, #e0f2fe, #bae6fd);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3.5rem; color: var(--primary); overflow: hidden; cursor: default;
+        }
+        .product-img.clickable { cursor: pointer; }
+        .product-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+        .product-img.clickable:hover img { transform: scale(1.05); }
+        .product-info { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+        .product-category { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
+        .product-info h3 { margin-bottom: 8px; }
+        .product-desc { color: var(--text-light); margin-bottom: 15px; font-size: 0.95rem; }
+        .btn-small { padding: 10px 24px; font-size: 14px; margin-top: auto; align-self: flex-start; }
+
+        .specs-table { width: 100%; margin: 10px 0; border-collapse: collapse; font-size: 0.9rem; }
+        .specs-table td { padding: 4px 0; border-bottom: 1px solid #eee; }
+        .specs-table td:first-child { font-weight: 500; color: var(--text-dark); width: 45%; }
+        .price-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+        .price-item { background: var(--light-bg); padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-dark); }
+        .price-item span { font-weight: 700; margin-right: 4px; }
+
         .lightbox {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.9);
-            z-index: 9999;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; flex-direction: column;
         }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 80vh;
-            border-radius: 8px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.5);
-            object-fit: contain;
-        }
-        .lightbox .close-btn {
-            position: absolute;
-            top: 25px;
-            right: 35px;
-            font-size: 3rem;
-            color: white;
-            cursor: pointer;
-            transition: 0.2s;
-            z-index: 10;
-        }
-        .lightbox .close-btn:hover {
-            color: var(--accent);
-        }
-        .lightbox .caption {
-            color: white;
-            margin-top: 20px;
-            font-size: 1.1rem;
-            text-align: center;
-            padding: 0 20px;
-        }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 80vh; border-radius: 8px; box-shadow: 0 0 40px rgba(0,0,0,0.5); object-fit: contain; }
+        .lightbox .close-btn { position: absolute; top: 25px; right: 35px; font-size: 3rem; color: white; cursor: pointer; z-index: 10; }
+        .lightbox .close-btn:hover { color: var(--accent); }
+        .lightbox .caption { color: white; margin-top: 20px; font-size: 1.1rem; text-align: center; padding: 0 20px; }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="../index.html" class="nav-logo">
@@ -109,12 +74,10 @@
         </div>
     </nav>
 
-    <!-- HEADER KATALOG -->
     <section class="page-header">
         <div class="container" id="catalogHeader"></div>
     </section>
 
-    <!-- SEARCH & FILTER -->
     <section class="search-filter">
         <div class="container">
             <div class="filter-bar">
@@ -127,111 +90,132 @@
         </div>
     </section>
 
-    <!-- GRID PRODUK -->
-    <section class="container products-grid" id="productsGrid"></section>
+    <section class="container products-grid" id="productsGrid">
+        <p>Memuat data produk...</p>
+    </section>
 
-    <!-- LIGHTBOX MODAL -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="close-btn">&times;</span>
         <img src="" alt="Gambar Produk" id="lightboxImg">
         <div class="caption" id="lightboxCaption"></div>
     </div>
 
-    <!-- FOOTER -->
     <footer class="footer" id="footerKatalog"></footer>
 
-    <!-- WA FLOAT -->
     <a href="https://wa.me/6281122228888" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
-    <!-- SCRIPTS -->
     <script src="../js/data.js"></script>
     <script src="../js/script.js"></script>
     <script>
-        // Fungsi Lightbox
-        function openLightbox(imgSrc, productName) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxCaption = document.getElementById('lightboxCaption');
-            
-            lightboxImg.src = imgSrc;
-            lightboxCaption.textContent = productName || '';
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // cegah scroll
-        }
+        // ==================== KONFIGURASI ====================
+        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv'; 
+        // =====================================================
 
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+        let allProducts = [];
 
-        // Tutup dengan tombol ESC
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeLightbox();
+        fetch(SHEET_CSV_URL)
+            .then(response => response.text())
+            .then(csvText => {
+                allProducts = parseCSV(csvText);
+                renderProducts();
+                setupFilters();
+                document.getElementById('catalogHeader').innerHTML = `
+                    <h1>${siteData.catalogPage.title}</h1>
+                    <p>${siteData.catalogPage.description}</p>`;
+            })
+            .catch(error => {
+                console.error('Gagal memuat data:', error);
+                document.getElementById('productsGrid').innerHTML = '<p>Gagal memuat data produk. Silakan coba lagi nanti.</p>';
+            });
+
+        function parseCSV(str) {
+            const rows = str.split('\n').filter(row => row.trim() !== '');
+            const headers = rows[0].split(',').map(h => h.trim());
+            const data = [];
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i].split(',');
+                if (values.length < headers.length) continue; // hindari baris tidak lengkap
+                const obj = {};
+                headers.forEach((header, index) => {
+                    let val = values[index] ? values[index].trim() : '';
+                    // Hapus tanda kutip ganda jika ada
+                    if (val.startsWith('"') && val.endsWith('"')) {
+                        val = val.substring(1, val.length - 1);
+                    }
+                    obj[header] = val;
+                });
+                // Konversi field numerik
+                obj.price_pcs = parseInt(obj.price_pcs) || 0;
+                obj.price_rol = parseInt(obj.price_rol) || 0;
+                obj.price_bal = parseInt(obj.price_bal) || 0;
+                obj.price_pack = parseInt(obj.price_pack) || 0;
+                obj.pcs_roll = parseInt(obj.pcs_roll) || 0;
+                obj.roll_ball = parseInt(obj.roll_ball) || 0;
+                data.push(obj);
             }
-        });
+            return data;
+        }
 
-        // Render halaman
-        document.addEventListener('DOMContentLoaded', () => {
-            // Header
-            document.getElementById('catalogHeader').innerHTML = `
-                <h1>${siteData.catalogPage.title}</h1>
-                <p>${siteData.catalogPage.description}</p>`;
+        function renderProducts(filter = 'all', search = '') {
+            const searchLower = search.toLowerCase();
+            const filtered = allProducts.filter(p => {
+                const matchCat = filter === 'all' || p.cat === filter;
+                const matchSearch = (p.name || '').toLowerCase().includes(searchLower) || (p.desc || '').toLowerCase().includes(searchLower);
+                return matchCat && matchSearch;
+            });
 
-            // Filter Buttons
-            const filters = siteData.catalogPage.filterLabels;
-            const values = siteData.catalogPage.filterValues;
-            document.getElementById('categoryFilters').innerHTML = filters.map((label, i) =>
-                `<button class="filter-btn ${i===0?'active':''}" data-filter="${values[i]}">${label}</button>`
+            const grid = document.getElementById('productsGrid');
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p>Tidak ada produk ditemukan.</p>';
+                return;
+            }
+
+            grid.innerHTML = filtered.map(p => {
+                // Gambar atau ikon
+                const imgSrc = p.img ? '../' + p.img : null;
+                const imgHtml = imgSrc
+                    ? `<img src="${imgSrc}" alt="${p.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${p.name}')">`
+                    : `<i class="fa-solid ${p.icon || 'fa-box'}"></i>`;
+
+                // Tabel spesifikasi
+                let specsRows = '';
+                if (p.size) specsRows += `<tr><td>Ukuran</td><td>: ${p.size}</td></tr>`;
+                if (p.tebal) specsRows += `<tr><td>Tebal</td><td>: ${p.tebal}</td></tr>`;
+                if (p.pcs_roll) specsRows += `<tr><td>Isi per Roll</td><td>: ${p.pcs_roll}</td></tr>`;
+                if (p.roll_ball) specsRows += `<tr><td>Roll per Bal</td><td>: ${p.roll_ball}</td></tr>`;
+                const specsTable = specsRows ? `<table class="specs-table">${specsRows}</table>` : '';
+
+                // Harga
+                let priceHtml = '';
+                if (p.price_pcs) priceHtml += `<div class="price-item"><span>Pcs</span> Rp ${p.price_pcs.toLocaleString()}</div>`;
+                if (p.price_rol) priceHtml += `<div class="price-item"><span>Roll</span> Rp ${p.price_rol.toLocaleString()}</div>`;
+                if (p.price_bal) priceHtml += `<div class="price-item"><span>Bal</span> Rp ${p.price_bal.toLocaleString()}</div>`;
+                if (p.price_pack) priceHtml += `<div class="price-item"><span>Pack</span> Rp ${p.price_pack.toLocaleString()}</div>`;
+                const priceSection = priceHtml ? `<div class="price-list">${priceHtml}</div>` : '';
+
+                return `
+                    <div class="product-card">
+                        <div class="product-img ${imgSrc ? 'clickable' : ''}" onclick="${imgSrc ? `openLightbox('${imgSrc}','${p.name}')` : ''}">
+                            ${imgHtml}
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">${(p.cat || '').toUpperCase()}</div>
+                            <h3>${p.name}</h3>
+                            <p class="product-desc">${p.desc || ''}</p>
+                            ${specsTable}
+                            ${priceSection}
+                            <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        function setupFilters() {
+            const filterDiv = document.getElementById('categoryFilters');
+            filterDiv.innerHTML = siteData.catalogPage.filterLabels.map((label, i) =>
+                `<button class="filter-btn ${i===0?'active':''}" data-filter="${siteData.catalogPage.filterValues[i]}">${label}</button>`
             ).join('');
 
-            // Produk
-            const products = siteData.catalogPage.products;
-            const grid = document.getElementById('productsGrid');
-
-            function renderProducts(filter = 'all', search = '') {
-                const searchLower = search.toLowerCase();
-                const filtered = products.filter(p => {
-                    const matchCat = filter === 'all' || p.category === filter;
-                    const matchSearch = p.name.toLowerCase().includes(searchLower) || p.desc.toLowerCase().includes(searchLower);
-                    return matchCat && matchSearch;
-                });
-
-                grid.innerHTML = filtered.map(p => {
-                    // Jika ada gambar, gunakan <img> dan beri class clickable + onclick
-                    if (p.image) {
-                        return `
-                        <div class="product-card">
-                            <div class="product-img clickable" onclick="openLightbox('${p.image}', '${p.name.replace(/'/g, "\\'")}')">
-                                <img src="${p.image}" alt="${p.name}">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">${p.category.toUpperCase()}</div>
-                                <h3>${p.name}</h3>
-                                <p class="product-desc">${p.desc}</p>
-                                <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
-                            </div>
-                        </div>`;
-                    } else {
-                        // Tanpa gambar, tampilkan ikon (tidak bisa diklik)
-                        return `
-                        <div class="product-card">
-                            <div class="product-img">
-                                <i class="fa-solid ${p.icon}"></i>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">${p.category.toUpperCase()}</div>
-                                <h3>${p.name}</h3>
-                                <p class="product-desc">${p.desc}</p>
-                                <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
-                            </div>
-                        </div>`;
-                    }
-                }).join('');
-            }
-
-            // Event Filter
             let activeFilter = 'all';
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -241,36 +225,43 @@
                     renderProducts(activeFilter, document.getElementById('searchInput').value);
                 });
             });
-
-            // Event Search
             document.getElementById('searchInput').addEventListener('input', e => {
                 renderProducts(activeFilter, e.target.value);
             });
+        }
 
-            // Render awal
-            renderProducts();
+        // Lightbox
+        function openLightbox(imgSrc, productName) {
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxCaption').textContent = productName;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-            // Footer
-            document.getElementById('footerKatalog').innerHTML = `
-                <div class="container footer-grid">
-                    <div class="footer-col footer-about">
-                        <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
-                        <p>${siteData.footer.about}</p>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Produk</h4>
-                        <ul>${siteData.footer.products.map(p => `<li><a href="index.html">${p}</a></li>`).join('')}</ul>
-                    </div>
-                    <div class="footer-col footer-contact">
-                        <h4>Kontak</h4>
-                        <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
-                        <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
-                    </div>
+        // Footer
+        document.getElementById('footerKatalog').innerHTML = `
+            <div class="container footer-grid">
+                <div class="footer-col footer-about">
+                    <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
+                    <p>${siteData.footer.about}</p>
                 </div>
-                <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
-
-            document.querySelector('.wa-float').href = siteData.waLink;
-        });
+                <div class="footer-col">
+                    <h4>Produk</h4>
+                    <ul>${siteData.footer.products.map(p => `<li><a href="index.html">${p}</a></li>`).join('')}</ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                    <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
+        document.querySelector('.wa-float').href = siteData.waLink;
     </script>
 </body>
 </html>
