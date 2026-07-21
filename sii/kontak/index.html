@@ -64,10 +64,6 @@
                             <div class="info-text"><h4>Alamat Pabrik & Kantor</h4><p>${siteData.contact.address}</p></div>
                         </div>
                         <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-                            <div class="info-text"><h4>Telepon</h4><p>${siteData.contact.phone} (Hunting)</p></div>
-                        </div>
-                        <div class="info-item">
                             <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
                             <div class="info-text"><h4>WhatsApp</h4><p>${siteData.contact.whatsapp} (Chat only)</p></div>
                         </div>
@@ -76,7 +72,7 @@
                             <div class="info-text"><h4>Email</h4><p>${siteData.contact.email}</p></div>
                         </div>
                         <div class="map-container">
-                            <iframe src="${siteData.contactPage.mapEmbedUrl}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="${siteData.contactPage.mapEmbedUrl}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
                     </div>
                     <div class="contact-form">
@@ -112,7 +108,8 @@
                     </div>
                     <div class="footer-col footer-contact">
                         <h4>Kontak</h4>
-                        <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                        <p><i class="fa-solid fa-location-dot"></i> ${siteData.contact.address}</p>
+                        <p><i class="fa-solid fa-mobile-screen"></i> ${siteData.contact.whatsapp} (WA)</p>
                         <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
                     </div>
                 </div>

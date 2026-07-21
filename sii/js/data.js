@@ -11,7 +11,7 @@ const siteData = {
             catalog: "Lihat Katalog Produk",
             contact: "Hubungi Kami"
         },
-        bgImage: "img/hero-bg.jpg"   // kosongkan "" jika tidak ada
+        bgImage: "img/bg.jpg"   // kosongkan "" jika tidak ada
     },
     
     stats: [
@@ -38,7 +38,7 @@ const siteData = {
         ],
         button: "Jelajahi Produk Kami",
         badge: "ISO 9001:2015",
-        image: "img/about-factory.jpg",  // foto pabrik
+        image: "img/pt.jpg",  // foto pabrik
         imageAlt: "Fasilitas Pabrik"
     },
     
@@ -82,14 +82,14 @@ const siteData = {
             whatsapp: "#",
             instagram: "#",
             facebook: "#",
-            email: "mailto:sales@packindosejahtera.co.id"
+            email: "mailto:arifkacipz@gmail.com"
         }
     },
     
     contact: {
         address: "Laksana Business Park Blok LA-12, LA-12A, LA-32, Jl. Raya Kalibaru, Laksana, Kecamatan Pakuhaji, Kabupaten Tangerang, Banten 15570",
         whatsapp: "+62 812-3058-6587",
-        email: "sales@packindosejahtera.co.id"
+        email: "arifkacipz@gmail.com"
     },
     
     waLink: "https://wa.me/6281230586587",
@@ -100,10 +100,10 @@ const siteData = {
         filterLabels: ["Semua", "Polymailer", "Bubble Mailer", "Zipper", "Bubble Wrap", "Other"],
         filterValues: ["all", "bag", "bubma", "zip", "bubble", "other"],
         products: [
-            { name: "Polymailer Hitam-1", category: "bag", icon: "fa-bag-shopping", image: "img/hitam1.jpeg", desc: "Kantong Polymailer dengan warna Hitam Glossy." },
-            { name: "Polymailer Hitam-2", category: "bag", icon: "fa-bag-shopping", image: "img/hitam2.png", desc: "Kantong Polymailer dengan warna Hitam Doff." },
-            { name: "Polymailer Putih Hitam-8", category: "bag", icon: "fa-bag-shopping", image: "img/putihhitam8.jpeg", desc: "Kantong Polymailer dengan bagian luar berwarna putih dan bagian dalam berwarna hitam." },
-            { name: "Polymailer Putih Hitam-11", category: "bag", icon: "fa-bag-shopping", image: "img/putihhitam8.jpeg", desc: "Kantong Polymailer dengan bagian luar berwarna putih dan bagian dalam berwarna hitam." },
+            { name: "Polymailer Hitam-1", category: "bag", icon: "fa-bag-shopping", image: "../img/hitam1.jpeg", desc: "Kantong Polymailer dengan warna Hitam Glossy." },
+            { name: "Polymailer Hitam-2", category: "bag", icon: "fa-bag-shopping", image: "../img/hitam2.png", desc: "Kantong Polymailer dengan warna Hitam Doff." },
+            { name: "Polymailer Putih Hitam-8", category: "bag", icon: "fa-bag-shopping", image: "../img/putihhitam8.jpeg", desc: "Kantong Polymailer dengan bagian luar berwarna putih dan bagian dalam berwarna hitam." },
+            { name: "Polymailer Putih Hitam-11", category: "bag", icon: "fa-bag-shopping", image: "../img/putihhitam8.jpeg", desc: "Kantong Polymailer dengan bagian luar berwarna putih dan bagian dalam berwarna hitam." },
             { name: "Botol PET 330ml", category: "bottle", icon: "fa-bottle-water", image: "", desc: "Botol minum PET bening 330ml standar." },
             { name: "Botol HDPE 500ml", category: "bottle", icon: "fa-bottle-water", image: "", desc: "Botol HDPE untuk kosmetik/farmasi." },
             { name: "Stretch zip 50cm", category: "zip", icon: "fa-roll", image: "", desc: "Stretch zip lebar 50cm, tebal 20 micron." },
@@ -125,6 +125,6 @@ const siteData = {
             message: "Pesan",
             submit: "Kirim Pesan"
         },
-        mapEmbedUrl: "https://maps.app.goo.gl/HnEfuAJW8Ye9DeNn6"
+        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.417281101296!2d106.6157982719013!3d-6.074332493911725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a017c59549c8d%3A0xd2c8a2a3964b0470!2sPT.%20Swiftpack%20Industry%20Indonesia!5e0!3m2!1sid!2sid!4v1784601709371!5m2!1sid!2sid"
     }
 };

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        /* ===== PAGE HEADER & FILTER (tidak berubah) ===== */
         .page-header {
             background: linear-gradient(135deg, #023e8a, #0077b6);
             color: white; padding: 120px 0 60px; text-align: center;
@@ -22,17 +23,78 @@
         .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; padding: 40px 0 60px; }
         .product-card { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); transition: transform 0.3s; }
         .product-card:hover { transform: translateY(-5px); border-color: var(--primary); }
-        .product-img { height: 200px; background: linear-gradient(145deg, #e0f2fe, #bae6fd); display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: var(--primary); overflow: hidden; }
-        .product-img img { width: 100%; height: 100%; object-fit: cover; }
+        .product-img { 
+            height: 200px; 
+            background: linear-gradient(145deg, #e0f2fe, #bae6fd); 
+            display: flex; align-items: center; justify-content: center; 
+            font-size: 3.5rem; color: var(--primary); 
+            overflow: hidden;
+            cursor: default;
+        }
+        /* Jika gambar bisa diklik */
+        .product-img.clickable {
+            cursor: pointer;
+        }
+        .product-img img { 
+            width: 100%; height: 100%; object-fit: cover; 
+            transition: transform 0.3s;
+        }
+        .product-img.clickable:hover img {
+            transform: scale(1.05);
+        }
         .product-info { padding: 20px; }
         .product-info h3 { margin-bottom: 8px; }
         .product-category { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
         .product-desc { color: var(--text-light); margin-bottom: 15px; }
         .btn-small { padding: 10px 24px; font-size: 14px; }
+
+        /* ===== LIGHTBOX STYLES ===== */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        .lightbox .close-btn {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+            z-index: 10;
+        }
+        .lightbox .close-btn:hover {
+            color: var(--accent);
+        }
+        .lightbox .caption {
+            color: white;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 0 20px;
+        }
     </style>
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="../index.html" class="nav-logo">
@@ -47,10 +109,12 @@
         </div>
     </nav>
 
+    <!-- HEADER KATALOG -->
     <section class="page-header">
         <div class="container" id="catalogHeader"></div>
     </section>
 
+    <!-- SEARCH & FILTER -->
     <section class="search-filter">
         <div class="container">
             <div class="filter-bar">
@@ -63,26 +127,66 @@
         </div>
     </section>
 
+    <!-- GRID PRODUK -->
     <section class="container products-grid" id="productsGrid"></section>
 
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img src="" alt="Gambar Produk" id="lightboxImg">
+        <div class="caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer" id="footerKatalog"></footer>
 
+    <!-- WA FLOAT -->
     <a href="https://wa.me/6281122228888" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
+    <!-- SCRIPTS -->
     <script src="../js/data.js"></script>
     <script src="../js/script.js"></script>
     <script>
+        // Fungsi Lightbox
+        function openLightbox(imgSrc, productName) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = productName || '';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // cegah scroll
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Tutup dengan tombol ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Render halaman
         document.addEventListener('DOMContentLoaded', () => {
+            // Header
             document.getElementById('catalogHeader').innerHTML = `
                 <h1>${siteData.catalogPage.title}</h1>
                 <p>${siteData.catalogPage.description}</p>`;
 
+            // Filter Buttons
             const filters = siteData.catalogPage.filterLabels;
             const values = siteData.catalogPage.filterValues;
             document.getElementById('categoryFilters').innerHTML = filters.map((label, i) =>
                 `<button class="filter-btn ${i===0?'active':''}" data-filter="${values[i]}">${label}</button>`
             ).join('');
 
+            // Produk
             const products = siteData.catalogPage.products;
             const grid = document.getElementById('productsGrid');
 
@@ -93,23 +197,41 @@
                     const matchSearch = p.name.toLowerCase().includes(searchLower) || p.desc.toLowerCase().includes(searchLower);
                     return matchCat && matchSearch;
                 });
+
                 grid.innerHTML = filtered.map(p => {
-                    const imgContent = p.image 
-                        ? `<img src="${p.image}" alt="${p.name}">` 
-                        : `<i class="fa-solid ${p.icon}"></i>`;
-                    return `
-                    <div class="product-card">
-                        <div class="product-img">${imgContent}</div>
-                        <div class="product-info">
-                            <div class="product-category">${p.category.toUpperCase()}</div>
-                            <h3>${p.name}</h3>
-                            <p class="product-desc">${p.desc}</p>
-                            <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
-                        </div>
-                    </div>`;
+                    // Jika ada gambar, gunakan <img> dan beri class clickable + onclick
+                    if (p.image) {
+                        return `
+                        <div class="product-card">
+                            <div class="product-img clickable" onclick="openLightbox('${p.image}', '${p.name.replace(/'/g, "\\'")}')">
+                                <img src="${p.image}" alt="${p.name}">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">${p.category.toUpperCase()}</div>
+                                <h3>${p.name}</h3>
+                                <p class="product-desc">${p.desc}</p>
+                                <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
+                            </div>
+                        </div>`;
+                    } else {
+                        // Tanpa gambar, tampilkan ikon (tidak bisa diklik)
+                        return `
+                        <div class="product-card">
+                            <div class="product-img">
+                                <i class="fa-solid ${p.icon}"></i>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">${p.category.toUpperCase()}</div>
+                                <h3>${p.name}</h3>
+                                <p class="product-desc">${p.desc}</p>
+                                <a href="../kontak/index.html" class="btn btn-primary btn-small">Minta Penawaran</a>
+                            </div>
+                        </div>`;
+                    }
                 }).join('');
             }
 
+            // Event Filter
             let activeFilter = 'all';
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -119,10 +241,16 @@
                     renderProducts(activeFilter, document.getElementById('searchInput').value);
                 });
             });
-            document.getElementById('searchInput').addEventListener('input', e => renderProducts(activeFilter, e.target.value));
 
+            // Event Search
+            document.getElementById('searchInput').addEventListener('input', e => {
+                renderProducts(activeFilter, e.target.value);
+            });
+
+            // Render awal
             renderProducts();
 
+            // Footer
             document.getElementById('footerKatalog').innerHTML = `
                 <div class="container footer-grid">
                     <div class="footer-col footer-about">
