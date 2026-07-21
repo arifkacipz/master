@@ -111,10 +111,78 @@
 
         let allProducts = [];
 
+        // Parser CSV yang lebih robust (menangani koma di dalam tanda petik)
+        function parseCSV(str) {
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < str.length; i++) {
+                const char = str[i];
+                if (inQuotes) {
+                    if (char === '"') {
+                        if (str[i + 1] === '"') { // escaped quote
+                            currentField += '"';
+                            i++;
+                        } else {
+                            inQuotes = false;
+                        }
+                    } else {
+                        currentField += char;
+                    }
+                } else {
+                    if (char === '"') {
+                        inQuotes = true;
+                    } else if (char === ',') {
+                        currentRow.push(currentField.trim());
+                        currentField = '';
+                    } else if (char === '\n') {
+                        currentRow.push(currentField.trim());
+                        if (currentRow.length > 0 && currentRow.some(f => f !== '')) {
+                            rows.push(currentRow);
+                        }
+                        currentRow = [];
+                        currentField = '';
+                    } else {
+                        currentField += char;
+                    }
+                }
+            }
+            // Sisa
+            currentRow.push(currentField.trim());
+            if (currentRow.length > 0 && currentRow.some(f => f !== '')) {
+                rows.push(currentRow);
+            }
+
+            if (rows.length < 2) return [];
+            const headers = rows[0];
+            const data = [];
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i];
+                if (values.length < headers.length) continue;
+                const obj = {};
+                headers.forEach((header, index) => {
+                    let val = values[index] || '';
+                    obj[header] = val;
+                });
+                // Konversi numerik (pakai nama header sesuai di sheet)
+                const numFields = ['price_pcs', 'price_roll', 'price_bal', 'price_pack', 'price_with_poly', 'price_only', 'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack'];
+                numFields.forEach(field => {
+                    if (obj.hasOwnProperty(field)) {
+                        obj[field] = parseInt(obj[field]) || 0;
+                    }
+                });
+                data.push(obj);
+            }
+            return data;
+        }
+
         fetch(SHEET_CSV_URL)
             .then(response => response.text())
             .then(csvText => {
                 allProducts = parseCSV(csvText);
+                console.log('Data produk berhasil diambil:', allProducts.length, 'item');
                 renderProducts();
                 setupFilters();
                 document.getElementById('catalogHeader').innerHTML = `
@@ -125,37 +193,6 @@
                 console.error('Gagal memuat data:', error);
                 document.getElementById('productsGrid').innerHTML = '<p>Gagal memuat data produk. Silakan coba lagi nanti.</p>';
             });
-
-        function parseCSV(str) {
-            const rows = str.split('\n').filter(row => row.trim() !== '');
-            const headers = rows[0].split(',').map(h => h.trim());
-            const data = [];
-            for (let i = 1; i < rows.length; i++) {
-                const values = rows[i].split(',');
-                if (values.length < headers.length) continue;
-                const obj = {};
-                headers.forEach((header, index) => {
-                    let val = values[index] ? values[index].trim() : '';
-                    if (val.startsWith('"') && val.endsWith('"')) {
-                        val = val.substring(1, val.length - 1);
-                    }
-                    obj[header] = val;
-                });
-                // Konversi field numerik - gunakan nama header yang baru
-                obj.price_pcs = parseInt(obj.price_pcs) || 0;
-                obj.price_roll = parseInt(obj.price_roll) || 0; // dulu price_rol
-                obj.price_bal = parseInt(obj.price_bal) || 0;
-                obj.price_pack = parseInt(obj.price_pack) || 0;
-                obj.price_with_poly = parseInt(obj.price_with_poly) || 0;
-                obj.price_only = parseInt(obj.price_only) || 0;
-                obj.pcs_roll = parseInt(obj.pcs_roll) || 0;
-                obj.roll_bal = parseInt(obj.roll_bal) || 0; // dulu roll_ball
-                obj.pcs_pack = parseInt(obj.pcs_pack) || 0;
-                obj.roll_pack = parseInt(obj.roll_pack) || 0;
-                data.push(obj);
-            }
-            return data;
-        }
 
         function renderProducts(filter = 'all', search = '') {
             const searchLower = search.toLowerCase();
@@ -177,7 +214,7 @@
                     ? `<img src="${imgSrc}" alt="${p.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${p.name}')">`
                     : `<i class="fa-solid ${p.icon || 'fa-box'}"></i>`;
 
-                // Spesifikasi - menggunakan label dari header yang Anda tentukan
+                // Spesifikasi
                 let specsRows = '';
                 const addSpec = (label, value) => { if (value) specsRows += `<tr><td>${label}</td><td>: ${value}</td></tr>`; };
                 addSpec('Ukuran', p.size);
@@ -188,16 +225,19 @@
                 addSpec('Roll per Pack', p.roll_pack);
                 const specsTable = specsRows ? `<table class="specs-table">${specsRows}</table>` : '';
 
-                // Harga - menggunakan label sesuai permintaan
+                // Harga: selalu tampilkan semua, dengan nilai 0 jika kosong
                 let priceHtml = '';
-                const addPrice = (label, value) => { if (value) priceHtml += `<div class="price-item"><span>${label}</span> Rp ${value.toLocaleString()}</div>`; };
+                const addPrice = (label, value) => {
+                    const val = value || 0;
+                    priceHtml += `<div class="price-item"><span>${label}</span> Rp ${val.toLocaleString()}</div>`;
+                };
                 addPrice('Harga Satuan', p.price_pcs);
                 addPrice('Harga Per Roll', p.price_roll);
                 addPrice('Harga Per Bal', p.price_bal);
                 addPrice('Harga Per Pack', p.price_pack);
-                addPrice('Bundling dengan Polymailer', p.price_with_poly);
+                addPrice('Bundling dg Polymailer', p.price_with_poly);
                 addPrice('Harga Item Saja', p.price_only);
-                const priceSection = priceHtml ? `<div class="price-list">${priceHtml}</div>` : '';
+                const priceSection = `<div class="price-list">${priceHtml}</div>`;
 
                 return `
                     <div class="product-card">
