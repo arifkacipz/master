@@ -21,6 +21,17 @@
     ]
   },
   {
+    "slug": "island-of-stars-and-chains",
+    "judul": "Island of Stars and Chains",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/08/1a714e74-5388-47a6-966c-5b94ff498e17.webp",
+    "total_online": 67,
+    "total_downloaded": 65,
+    "missing": [
+      "Chapter 66",
+      "Chapter 65"
+    ]
+  },
+  {
     "slug": "how-far-are-you-okay-with",
     "judul": "How Far Are You Okay With?",
     "thumb": "https://arenascan.com/wp-content/uploads/2025/06/dda306bd-870e-4b44-baf9-1498eb8e40d7.webp",
@@ -47,8 +58,42 @@
     "judul": "My Husband Never Wanted a Child",
     "thumb": "https://cdn.arenascan.com/arena-bucket/images/b98dd0be-0bb4-4476-9253-02dd3588a87e-193x278.webp",
     "total_online": 18,
-    "total_downloaded": 6,
+    "total_downloaded": 9,
     "missing": [
+      "Chapter 9",
+      "Chapter 8",
+      "Chapter 7",
+      "Chapter 6",
+      "Chapter 5",
+      "Chapter 4",
+      "Chapter 3",
+      "Chapter 2",
+      "Chapter 1"
+    ]
+  },
+  {
+    "slug": "full-time-hunter-i-hunt-the-world",
+    "judul": "Full-time Hunter: I hunt the world!",
+    "thumb": "https://cdn.arenascan.com/arena-bucket/images/a3734608efb8.webp",
+    "total_online": 4,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 1"
+    ]
+  },
+  {
+    "slug": "first-confession",
+    "judul": "First Confession",
+    "thumb": "https://arenascan.com/wp-content/uploads/2025/07/98aa5e71-db03-4fbd-b706-febc198fcf5a.webp",
+    "total_online": 21,
+    "total_downloaded": 3,
+    "missing": [
+      "Chapter 18",
+      "Chapter 17",
+      "Chapter 16",
+      "Chapter 15",
+      "Chapter 14",
+      "Chapter 13",
       "Chapter 12",
       "Chapter 11",
       "Chapter 10",
