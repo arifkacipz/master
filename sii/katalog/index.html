@@ -107,9 +107,7 @@
     <script src="../js/data.js"></script>
     <script src="../js/script.js"></script>
     <script>
-        // ==================== KONFIGURASI ====================
-        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv'; 
-        // =====================================================
+        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv';
 
         let allProducts = [];
 
@@ -134,23 +132,26 @@
             const data = [];
             for (let i = 1; i < rows.length; i++) {
                 const values = rows[i].split(',');
-                if (values.length < headers.length) continue; // hindari baris tidak lengkap
+                if (values.length < headers.length) continue;
                 const obj = {};
                 headers.forEach((header, index) => {
                     let val = values[index] ? values[index].trim() : '';
-                    // Hapus tanda kutip ganda jika ada
                     if (val.startsWith('"') && val.endsWith('"')) {
                         val = val.substring(1, val.length - 1);
                     }
                     obj[header] = val;
                 });
-                // Konversi field numerik
+                // Konversi numerik
                 obj.price_pcs = parseInt(obj.price_pcs) || 0;
                 obj.price_rol = parseInt(obj.price_rol) || 0;
                 obj.price_bal = parseInt(obj.price_bal) || 0;
                 obj.price_pack = parseInt(obj.price_pack) || 0;
+                obj.price_with_poly = parseInt(obj.price_with_poly) || 0;
+                obj.price_only = parseInt(obj.price_only) || 0;
                 obj.pcs_roll = parseInt(obj.pcs_roll) || 0;
                 obj.roll_ball = parseInt(obj.roll_ball) || 0;
+                obj.pcs_pack = parseInt(obj.pcs_pack) || 0;
+                obj.roll_pack = parseInt(obj.roll_pack) || 0;
                 data.push(obj);
             }
             return data;
@@ -171,26 +172,30 @@
             }
 
             grid.innerHTML = filtered.map(p => {
-                // Gambar atau ikon
                 const imgSrc = p.img ? '../' + p.img : null;
                 const imgHtml = imgSrc
                     ? `<img src="${imgSrc}" alt="${p.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${p.name}')">`
                     : `<i class="fa-solid ${p.icon || 'fa-box'}"></i>`;
 
-                // Tabel spesifikasi
                 let specsRows = '';
-                if (p.size) specsRows += `<tr><td>Ukuran</td><td>: ${p.size}</td></tr>`;
-                if (p.tebal) specsRows += `<tr><td>Tebal</td><td>: ${p.tebal}</td></tr>`;
-                if (p.pcs_roll) specsRows += `<tr><td>Isi per Roll</td><td>: ${p.pcs_roll}</td></tr>`;
-                if (p.roll_ball) specsRows += `<tr><td>Roll per Bal</td><td>: ${p.roll_ball}</td></tr>`;
+                const addSpec = (label, value) => { if (value) specsRows += `<tr><td>${label}</td><td>: ${value}</td></tr>`; };
+                addSpec('Ukuran', p.size);
+                addSpec('Tebal', p.tebal);
+                addSpec('Isi per Roll', p.pcs_roll);
+                addSpec('Roll per Bal', p.roll_ball);
+                addSpec('Isi per Pack', p.pcs_pack);
+                addSpec('Roll per Pack', p.roll_pack);
                 const specsTable = specsRows ? `<table class="specs-table">${specsRows}</table>` : '';
 
-                // Harga
+                // Label harga yang sudah diperbarui
                 let priceHtml = '';
-                if (p.price_pcs) priceHtml += `<div class="price-item"><span>Pcs</span> Rp ${p.price_pcs.toLocaleString()}</div>`;
-                if (p.price_rol) priceHtml += `<div class="price-item"><span>Roll</span> Rp ${p.price_rol.toLocaleString()}</div>`;
-                if (p.price_bal) priceHtml += `<div class="price-item"><span>Bal</span> Rp ${p.price_bal.toLocaleString()}</div>`;
-                if (p.price_pack) priceHtml += `<div class="price-item"><span>Pack</span> Rp ${p.price_pack.toLocaleString()}</div>`;
+                const addPrice = (label, value) => { if (value) priceHtml += `<div class="price-item"><span>${label}</span> Rp ${value.toLocaleString()}</div>`; };
+                addPrice('Pcs', p.price_pcs);
+                addPrice('Roll', p.price_rol);
+                addPrice('Bal', p.price_bal);
+                addPrice('Pack', p.price_pack);
+                addPrice('Harga dg Polymailer', p.price_with_poly);   // ← label baru
+                addPrice('Harga Satuan Saja', p.price_only);         // ← label baru
                 const priceSection = priceHtml ? `<div class="price-list">${priceHtml}</div>` : '';
 
                 return `
@@ -230,7 +235,6 @@
             });
         }
 
-        // Lightbox
         function openLightbox(imgSrc, productName) {
             document.getElementById('lightboxImg').src = imgSrc;
             document.getElementById('lightboxCaption').textContent = productName;
@@ -243,7 +247,6 @@
         }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-        // Footer
         document.getElementById('footerKatalog').innerHTML = `
             <div class="container footer-grid">
                 <div class="footer-col footer-about">
