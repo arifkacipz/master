@@ -98,7 +98,7 @@ const siteData = {
         title: "Katalog Produk Plastik",
         description: "Lebih dari 2000 varian produk siap memenuhi kebutuhan packaging Anda",
         filterLabels: ["Semua", "Polymailer", "Bubble Mailer", "Zipper", "OPP", "Bubble Wrap", "Other"],
-        filterValues: ["all", "poly", "mailer", "zip", "opp", "bubble", "other"],
+        filterValues: ["all", "poly", "mailer", "zip", "opp", "wrap", "other"],
         products: [
             { name: "Polymailer Hitam-1", category: "bag", icon: "fa-bag-shopping", image: "../img/hitam1.jpeg", desc: "Kantong Polymailer dengan warna Hitam Glossy." },
             { name: "Polymailer Hitam-2", category: "bag", icon: "fa-bag-shopping", image: "../img/hitam2.png", desc: "Kantong Polymailer dengan warna Hitam Doff." },
