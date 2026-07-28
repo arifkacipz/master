@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog Produk - PT Plastik Packindo Sejahtera</title>
+    <title>Katalog Produk - NUSA PACKING INDONESIA</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -41,6 +41,13 @@
         .product-desc { color: var(--text-light); margin-bottom: 15px; font-size: 0.95rem; }
         .btn-small { padding: 10px 24px; font-size: 14px; margin-top: auto; align-self: flex-start; }
 
+        .variant-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
         .variant-select {
             width: 100%;
             padding: 10px;
@@ -74,7 +81,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="../index.html" class="nav-logo">
-                <i class="fa-solid fa-industry"></i> <span>PT PACKINDO SEJAHTERA</span>
+                <i class="fa-solid fa-industry"></i> <span>NUSA PACKING INDONESIA</span>
             </a>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="../index.html" class="nav-link">Beranda</a></li>
@@ -122,7 +129,7 @@
         const WA_NUMBER = '6281230586587';
 
         let allProducts = [];
-        let groupedProducts = []; // Array of groups
+        let groupedProducts = [];
 
         function parseCSV(text) {
             const rows = [];
@@ -199,7 +206,6 @@
             return data;
         }
 
-        // Kelompokkan produk berdasarkan nama
         function groupProducts(products) {
             const map = new Map();
             products.forEach(p => {
@@ -258,8 +264,9 @@
                     ? `<img src="${imgSrc}" alt="${group.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${group.name}')">`
                     : `<i class="fa-solid ${group.icon || 'fa-box'}"></i>`;
 
-                // Dropdown jika lebih dari 1 varian
+                // Dropdown dengan label "Pilih Ukuran"
                 const dropdownHtml = variants.length > 1 ? `
+                    <label class="variant-label">Pilih Ukuran:</label>
                     <select class="variant-select" data-product-name="${escapeHtml(group.name)}" onchange="updateVariant(this)">
                         ${variants.map((v, idx) => {
                             const label = (v.size || '') + (v.tebal ? ' - ' + v.tebal : '') || 'Standar';
@@ -280,11 +287,8 @@
                         }).join('')}
                     </select>` : '';
 
-                // Spesifikasi awal (pakai varian pertama)
                 const specsHtml = buildSpecsHtml(firstVariant);
                 const priceHtml = buildPriceHtml(firstVariant);
-
-                // Link WA berdasarkan varian pertama
                 const initialWaLink = generateWaLink(group.name, firstVariant.size);
 
                 return `
@@ -336,7 +340,6 @@
             return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
         }
 
-        // Escape HTML untuk mencegah XSS
         function escapeHtml(text) {
             return String(text).replace(/[&<>"']/g, function(m) {
                 if (m === '&') return '&amp;';
@@ -347,20 +350,17 @@
             });
         }
 
-        // Fungsi toggle dropdown (opsional, bisa klik nama untuk fokus select)
         function toggleDropdown(header) {
             const card = header.closest('.product-card');
             const select = card.querySelector('.variant-select');
             if (select) select.focus();
         }
 
-        // Update spesifikasi, harga, dan link WA saat dropdown berubah
         window.updateVariant = function(selectEl) {
             const option = selectEl.options[selectEl.selectedIndex];
             const card = selectEl.closest('.product-card');
             const productName = card.dataset.productName;
 
-            // Bangun objek varian sementara dari data attributes
             const variant = {
                 size: option.dataset.size,
                 tebal: option.dataset.tebal,
@@ -376,11 +376,8 @@
                 price_only: parseInt(option.dataset.price_only) || 0,
             };
 
-            // Update specs
             card.querySelector('.specs-container').innerHTML = buildSpecsHtml(variant);
-            // Update prices
             card.querySelector('.price-container').innerHTML = buildPriceHtml(variant);
-            // Update link WA
             const waLink = generateWaLink(productName, variant.size);
             card.querySelector('.wa-link').href = waLink;
         };
