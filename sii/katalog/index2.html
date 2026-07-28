@@ -264,7 +264,6 @@
                     ? `<img src="${imgSrc}" alt="${group.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${group.name}')">`
                     : `<i class="fa-solid ${group.icon || 'fa-box'}"></i>`;
 
-                // Dropdown dengan label "Pilih Ukuran"
                 const dropdownHtml = variants.length > 1 ? `
                     <label class="variant-label">Pilih Ukuran:</label>
                     <select class="variant-select" data-product-name="${escapeHtml(group.name)}" onchange="updateVariant(this)">
@@ -414,23 +413,38 @@
         }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
+        // Footer
         document.getElementById('footerKatalog').innerHTML = `
             <div class="container footer-grid">
                 <div class="footer-col footer-about">
                     <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
                     <p>${siteData.footer.about}</p>
+                    <div class="social-links">
+                        <a href="${siteData.footer.social.whatsapp}"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="${siteData.footer.social.instagram}"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="${siteData.footer.social.facebook}"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="${siteData.footer.social.email}"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Produk</h4>
-                    <ul>${siteData.footer.products.map(p => `<li><a href="index.html">${p}</a></li>`).join('')}</ul>
+                    <ul>${siteData.footer.products.map(p => `<li><a href="/katalog/">${p}</a></li>`).join('')}</ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Halaman</h4>
+                    <ul>${siteData.footer.pages.map(p => `<li><a href="${p.url}">${p.name}</a></li>`).join('')}</ul>
                 </div>
                 <div class="footer-col footer-contact">
                     <h4>Kontak</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> ${siteData.contact.address}</p>
                     <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> ${siteData.contact.whatsapp} (WA)</p>
                     <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
                 </div>
             </div>
-            <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
+            <div class="footer-bottom">
+                <p>&copy; ${new Date().getFullYear()} ${siteData.siteName}. All Rights Reserved.</p>
+            </div>`;
     </script>
 </body>
 </html>
