@@ -43,7 +43,7 @@
 
     <footer class="footer" id="footerKontak"></footer>
 
-    <a href="https://wa.me/6281122228888" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://wa.me/6281230586587" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
     <script src="../js/data.js"></script>
     <script src="../js/script.js"></script>
@@ -64,6 +64,10 @@
                             <div class="info-text"><h4>Alamat Pabrik & Kantor</h4><p>${siteData.contact.address}</p></div>
                         </div>
                         <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text"><h4>Telepon</h4><p>${siteData.contact.phone} (Hunting)</p></div>
+                        </div>
+                        <div class="info-item">
                             <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
                             <div class="info-text"><h4>WhatsApp</h4><p>${siteData.contact.whatsapp} (Chat only)</p></div>
                         </div>
@@ -72,7 +76,7 @@
                             <div class="info-text"><h4>Email</h4><p>${siteData.contact.email}</p></div>
                         </div>
                         <div class="map-container">
-                            <iframe src="${siteData.contactPage.mapEmbedUrl}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            <iframe src="${siteData.contactPage.mapEmbedUrl}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                     <div class="contact-form">
@@ -99,23 +103,38 @@
                     </div>
                 </div>`;
             
-            // Footer
+            // Footer KONTAK – sama persis dengan Beranda & Katalog
             document.getElementById('footerKontak').innerHTML = `
                 <div class="container footer-grid">
                     <div class="footer-col footer-about">
                         <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
                         <p>${siteData.footer.about}</p>
+                        <div class="social-links">
+                            <a href="${siteData.footer.social.whatsapp}"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="${siteData.footer.social.instagram}"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="${siteData.footer.social.facebook}"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="${siteData.footer.social.email}"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Produk</h4>
+                        <ul>${siteData.footer.products.map(p => `<li><a href="/katalog/">${p}</a></li>`).join('')}</ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Halaman</h4>
+                        <ul>${siteData.footer.pages.map(p => `<li><a href="${p.url}">${p.name}</a></li>`).join('')}</ul>
                     </div>
                     <div class="footer-col footer-contact">
                         <h4>Kontak</h4>
                         <p><i class="fa-solid fa-location-dot"></i> ${siteData.contact.address}</p>
+                        <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
                         <p><i class="fa-solid fa-mobile-screen"></i> ${siteData.contact.whatsapp} (WA)</p>
                         <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
                     </div>
                 </div>
-                <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
-            
-            document.querySelector('.wa-float').href = siteData.waLink;
+                <div class="footer-bottom">
+                    <p>&copy; ${new Date().getFullYear()} ${siteData.siteName}. All Rights Reserved.</p>
+                </div>`;
         });
     </script>
 </body>
