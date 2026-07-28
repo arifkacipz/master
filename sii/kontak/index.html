@@ -151,7 +151,7 @@
         });
 
         // --- Custom Validation & Submission ---
-        const WORKER_URL = 'https://tele.uyuliven1.workers.dev';
+        const WORKER_URL = 'https://tele.uyuliven1.workers.dev/';
 
         function validateField(id) {
             const field = document.getElementById(id);
@@ -205,14 +205,26 @@
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(payload)
                     });
+
                     if (response.ok) {
-                        alert('Pesan berhasil dikirim. Mohon ditunggu.');
+                        alert('Pesan berhasil dikirim!');
                         location.reload();
                     } else {
-                        throw new Error('Gagal');
+                        // Coba baca error dari body
+                        let errorMessage = 'Gagal mengirim pesan.';
+                        try {
+                            const errData = await response.json();
+                            if (errData.error) {
+                                errorMessage = errData.error;
+                            }
+                        } catch (parseError) {
+                            // Jika bukan JSON, gunakan status text
+                            errorMessage = `Error ${response.status}: ${response.statusText || 'Terjadi kesalahan'}`;
+                        }
+                        status.innerHTML = `<span style="color:red;">${errorMessage}</span>`;
                     }
-                } catch (error) {
-                    status.innerHTML = '<span style="color:red;">Gagal mengirim pesan. Silahkan coba lagi.</span>';
+                } catch (networkError) {
+                    status.innerHTML = '<span style="color:red;">Gagal terhubung ke server. Periksa koneksi internet Anda.</span>';
                 } finally {
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = 'Kirim Pesan <i class="fa-solid fa-paper-plane"></i>';
