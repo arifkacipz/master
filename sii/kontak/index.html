@@ -15,9 +15,12 @@
         .info-text h4 { margin-bottom: 5px; }
         .map-container { margin-top: 30px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
         .contact-form form { background: var(--light-bg); padding: 35px; border-radius: var(--radius); }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 500; }
         .form-group input, .form-group textarea { width: 100%; padding: 12px 15px; border: 1px solid var(--border); border-radius: 8px; }
+        .error-message { color: #dc2626; font-size: 0.85rem; margin-top: 4px; display: none; }
+        .form-group.error input, .form-group.error textarea { border-color: #dc2626; }
+        .form-group.error .error-message { display: block; }
         @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -53,8 +56,8 @@
             document.getElementById('contactHeader').innerHTML = `
                 <h1>${siteData.contactPage.title}</h1>
                 <p>${siteData.contactPage.description}</p>`;
-            
-            // Content
+
+            // Konten
             document.getElementById('contactContent').innerHTML = `
                 <div class="container contact-grid">
                     <div class="contact-info">
@@ -80,30 +83,40 @@
                         </div>
                     </div>
                     <div class="contact-form">
-                        <h2>${siteData.contactPage.formLabels.submit}</h2>
-                        <form action="#" method="POST" onsubmit="alert('Pesan Anda telah dikirim. Kami akan menghubungi Anda segera.'); return false;">
+                        <h2>Kirim Pesan</h2>
+                        <form id="contactForm" novalidate>
                             <div class="form-group">
-                                <label>${siteData.contactPage.formLabels.name}</label>
-                                <input type="text" required placeholder="Nama Anda">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" placeholder="Nama Anda">
+                                <div class="error-message">Nama wajib diisi</div>
                             </div>
                             <div class="form-group">
-                                <label>${siteData.contactPage.formLabels.email}</label>
-                                <input type="email" required placeholder="email@perusahaan.com">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="email@perusahaan.com">
+                                <div class="error-message">Email wajib diisi</div>
                             </div>
                             <div class="form-group">
-                                <label>${siteData.contactPage.formLabels.subject}</label>
-                                <input type="text" placeholder="Permintaan penawaran produk...">
+                                <label for="wa">Nomor WhatsApp</label>
+                                <input type="tel" id="wa" placeholder="0812-xxxx-xxxx">
+                                <div class="error-message">Nomor WhatsApp wajib diisi</div>
                             </div>
                             <div class="form-group">
-                                <label>${siteData.contactPage.formLabels.message}</label>
-                                <textarea required placeholder="Tulis detail kebutuhan Anda..."></textarea>
+                                <label for="subject">Subjek</label>
+                                <input type="text" id="subject" placeholder="Permintaan penawaran produk...">
+                                <div class="error-message">Subjek wajib diisi</div>
                             </div>
-                            <button type="submit" class="btn btn-primary">${siteData.contactPage.formLabels.submit} <i class="fa-solid fa-paper-plane"></i></button>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" placeholder="Tulis detail kebutuhan Anda..."></textarea>
+                                <div class="error-message">Pesan wajib diisi</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+                            <p id="formStatus" style="margin-top:15px;"></p>
                         </form>
                     </div>
                 </div>`;
-            
-            // Footer KONTAK – sama persis dengan Beranda & Katalog
+
+            // Footer
             document.getElementById('footerKontak').innerHTML = `
                 <div class="container footer-grid">
                     <div class="footer-col footer-about">
@@ -135,6 +148,85 @@
                 <div class="footer-bottom">
                     <p>&copy; ${new Date().getFullYear()} ${siteData.siteName}. All Rights Reserved.</p>
                 </div>`;
+        });
+
+        // --- Custom Validation & Submission ---
+        const WORKER_URL = 'https://telegram-proxy.NAMA-ANDA.workers.dev';
+
+        function validateField(id) {
+            const field = document.getElementById(id);
+            const group = field.closest('.form-group');
+            const value = field.value.trim();
+            if (!value) {
+                group.classList.add('error');
+                return false;
+            } else {
+                group.classList.remove('error');
+                return true;
+            }
+        }
+
+        function validateAll() {
+            const fields = ['name', 'email', 'wa', 'subject', 'message'];
+            let allValid = true;
+            fields.forEach(id => {
+                if (!validateField(id)) allValid = false;
+            });
+            return allValid;
+        }
+
+        document.addEventListener('submit', async function(e) {
+            if (e.target.id === 'contactForm') {
+                e.preventDefault();
+                const status = document.getElementById('formStatus');
+                status.innerHTML = '';
+
+                if (!validateAll()) {
+                    status.innerHTML = '<span style="color:red;">Gagal mengirim. Periksa kembali.</span>';
+                    return;
+                }
+
+                const submitBtn = document.getElementById('submitBtn');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'Mengirim...';
+                status.innerHTML = '';
+
+                const payload = {
+                    name: document.getElementById('name').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    wa: document.getElementById('wa').value.trim(),
+                    subject: document.getElementById('subject').value.trim(),
+                    message: document.getElementById('message').value.trim()
+                };
+
+                try {
+                    const response = await fetch(WORKER_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (response.ok) {
+                        alert('Pesan berhasil dikirim. Mohon ditunggu.');
+                        location.reload();
+                    } else {
+                        throw new Error('Gagal');
+                    }
+                } catch (error) {
+                    status.innerHTML = '<span style="color:red;">Gagal mengirim pesan. Silahkan coba lagi.</span>';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Kirim Pesan <i class="fa-solid fa-paper-plane"></i>';
+                }
+            }
+        });
+
+        // Hapus error saat pengguna mengetik
+        document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(field => {
+            field.addEventListener('input', function() {
+                if (this.value.trim() !== '') {
+                    this.closest('.form-group').classList.remove('error');
+                }
+            });
         });
     </script>
 </body>
