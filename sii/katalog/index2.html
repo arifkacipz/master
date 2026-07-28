@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - PT Plastik Packindo Sejahtera</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #023e8a, #0077b6);
+            color: white; padding: 120px 0 60px; text-align: center;
+        }
+        .search-filter { padding: 30px 0; background: var(--light-bg); }
+        .filter-bar { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: center; }
+        .search-box { position: relative; flex: 1; min-width: 250px; max-width: 400px; }
+        .search-box input { width: 100%; padding: 12px 20px 12px 45px; border-radius: 50px; border: 1px solid var(--border); }
+        .search-box i { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-light); }
+        .category-filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .filter-btn { padding: 10px 22px; border-radius: 50px; background: white; border: 1px solid var(--border); cursor: pointer; font-weight: 500; transition: var(--transition); }
+        .filter-btn.active, .filter-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; padding: 40px 0 60px; }
+
+        .product-card {
+            background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+            border: 1px solid var(--border); transition: transform 0.3s; display: flex; flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .product-img {
+            height: 200px; background: linear-gradient(145deg, #e0f2fe, #bae6fd);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3.5rem; color: var(--primary); overflow: hidden; cursor: default;
+        }
+        .product-img.clickable { cursor: pointer; }
+        .product-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+        .product-img.clickable:hover img { transform: scale(1.05); }
+        .product-info { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+        .product-category { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
+        .product-name { cursor: pointer; user-select: none; }
+        .product-name:hover { color: var(--primary-dark); }
+        .product-desc { color: var(--text-light); margin-bottom: 15px; font-size: 0.95rem; }
+        .btn-small { padding: 10px 24px; font-size: 14px; margin-top: auto; align-self: flex-start; }
+
+        .variant-select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            background: white;
+        }
+
+        .specs-table { width: 100%; margin: 10px 0; border-collapse: collapse; font-size: 0.9rem; }
+        .specs-table td { padding: 4px 0; border-bottom: 1px solid #eee; }
+        .specs-table td:first-child { font-weight: 500; color: var(--text-dark); width: 45%; }
+        .price-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+        .price-item { background: var(--light-bg); padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-dark); }
+        .price-item span { font-weight: 700; margin-right: 4px; }
+
+        .lightbox {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; flex-direction: column;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 80vh; border-radius: 8px; box-shadow: 0 0 40px rgba(0,0,0,0.5); object-fit: contain; }
+        .lightbox .close-btn { position: absolute; top: 25px; right: 35px; font-size: 3rem; color: white; cursor: pointer; z-index: 10; }
+        .lightbox .close-btn:hover { color: var(--accent); }
+        .lightbox .caption { color: white; margin-top: 20px; font-size: 1.1rem; text-align: center; padding: 0 20px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i class="fa-solid fa-industry"></i> <span>PT PACKINDO SEJAHTERA</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Beranda</a></li>
+                <li><a href="index.html" class="nav-link active">Katalog</a></li>
+                <li><a href="../kontak/index.html" class="nav-link">Hubungi Kami</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container" id="catalogHeader"></div>
+    </section>
+
+    <section class="search-filter">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Cari produk...">
+                </div>
+                <div class="category-filters" id="categoryFilters"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container products-grid" id="productsGrid">
+        <p>Memuat data produk...</p>
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Gambar Produk" id="lightboxImg">
+        <div class="caption" id="lightboxCaption"></div>
+    </div>
+
+    <footer class="footer" id="footerKatalog"></footer>
+
+    <a href="https://wa.me/6281230586587" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv';
+        const WA_NUMBER = '6281230586587';
+
+        let allProducts = [];
+        let groupedProducts = []; // Array of groups
+
+        function parseCSV(text) {
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const nextChar = text[i + 1];
+
+                if (inQuotes) {
+                    if (char === '"') {
+                        if (nextChar === '"') {
+                            currentField += '"';
+                            i++;
+                        } else {
+                            inQuotes = false;
+                        }
+                    } else {
+                        currentField += char;
+                    }
+                } else {
+                    if (char === '"') {
+                        inQuotes = true;
+                    } else if (char === ',') {
+                        currentRow.push(currentField.trim());
+                        currentField = '';
+                    } else if (char === '\n') {
+                        currentRow.push(currentField.trim());
+                        if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
+                            rows.push(currentRow);
+                        }
+                        currentRow = [];
+                        currentField = '';
+                    } else {
+                        currentField += char;
+                    }
+                }
+            }
+            currentRow.push(currentField.trim());
+            if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
+                rows.push(currentRow);
+            }
+
+            if (rows.length < 2) return [];
+            const headers = rows[0].map(h => h.trim());
+            const data = [];
+
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i];
+                while (values.length < headers.length) values.push('');
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index] || '';
+                });
+
+                const numFields = [
+                    'price_pcs', 'price_roll', 'price_bal', 'price_pack',
+                    'price_with_poly', 'price_only',
+                    'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack'
+                ];
+                numFields.forEach(field => {
+                    if (obj.hasOwnProperty(field)) {
+                        const raw = obj[field];
+                        const clean = raw.replace(/\D/g, '');
+                        obj[field] = clean ? parseInt(clean, 10) : 0;
+                    }
+                });
+
+                data.push(obj);
+            }
+
+            return data;
+        }
+
+        // Kelompokkan produk berdasarkan nama
+        function groupProducts(products) {
+            const map = new Map();
+            products.forEach(p => {
+                const key = p.name.trim();
+                if (!map.has(key)) {
+                    map.set(key, {
+                        name: p.name,
+                        cat: p.cat,
+                        img: p.img,
+                        icon: p.icon,
+                        desc: p.desc,
+                        variants: []
+                    });
+                }
+                map.get(key).variants.push(p);
+            });
+            return Array.from(map.values());
+        }
+
+        fetch(SHEET_CSV_URL)
+            .then(response => response.text())
+            .then(csvText => {
+                allProducts = parseCSV(csvText);
+                groupedProducts = groupProducts(allProducts);
+                console.log('Total produk:', allProducts.length, 'Grup:', groupedProducts.length);
+                renderProducts();
+                setupFilters();
+                document.getElementById('catalogHeader').innerHTML = `
+                    <h1>${siteData.catalogPage.title}</h1>
+                    <p>${siteData.catalogPage.description}</p>`;
+            })
+            .catch(error => {
+                console.error('Gagal memuat data:', error);
+                document.getElementById('productsGrid').innerHTML = '<p>Gagal memuat data produk. Silakan coba lagi nanti.</p>';
+            });
+
+        function renderProducts(filter = 'all', search = '') {
+            const searchLower = search.toLowerCase();
+            const filtered = groupedProducts.filter(group => {
+                const matchCat = filter === 'all' || group.cat === filter;
+                const matchSearch = (group.name || '').toLowerCase().includes(searchLower) || (group.desc || '').toLowerCase().includes(searchLower);
+                return matchCat && matchSearch;
+            });
+
+            const grid = document.getElementById('productsGrid');
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p>Tidak ada produk ditemukan.</p>';
+                return;
+            }
+
+            grid.innerHTML = filtered.map((group, groupIndex) => {
+                const variants = group.variants;
+                const firstVariant = variants[0];
+                const imgSrc = group.img ? '../' + group.img : null;
+                const imgHtml = imgSrc
+                    ? `<img src="${imgSrc}" alt="${group.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${group.name}')">`
+                    : `<i class="fa-solid ${group.icon || 'fa-box'}"></i>`;
+
+                // Dropdown jika lebih dari 1 varian
+                const dropdownHtml = variants.length > 1 ? `
+                    <select class="variant-select" data-product-name="${escapeHtml(group.name)}" onchange="updateVariant(this)">
+                        ${variants.map((v, idx) => {
+                            const label = (v.size || '') + (v.tebal ? ' - ' + v.tebal : '') || 'Standar';
+                            return `<option value="${idx}" 
+                                data-size="${v.size || ''}"
+                                data-tebal="${v.tebal || ''}"
+                                data-pcs_roll="${v.pcs_roll || 0}"
+                                data-roll_bal="${v.roll_bal || 0}"
+                                data-pcs_pack="${v.pcs_pack || 0}"
+                                data-roll_pack="${v.roll_pack || 0}"
+                                data-price_pcs="${v.price_pcs || 0}"
+                                data-price_roll="${v.price_roll || 0}"
+                                data-price_bal="${v.price_bal || 0}"
+                                data-price_pack="${v.price_pack || 0}"
+                                data-price_with_poly="${v.price_with_poly || 0}"
+                                data-price_only="${v.price_only || 0}"
+                            >${escapeHtml(label)}</option>`;
+                        }).join('')}
+                    </select>` : '';
+
+                // Spesifikasi awal (pakai varian pertama)
+                const specsHtml = buildSpecsHtml(firstVariant);
+                const priceHtml = buildPriceHtml(firstVariant);
+
+                // Link WA berdasarkan varian pertama
+                const initialWaLink = generateWaLink(group.name, firstVariant.size);
+
+                return `
+                    <div class="product-card" data-product-name="${escapeHtml(group.name)}">
+                        <div class="product-img ${imgSrc ? 'clickable' : ''}" onclick="${imgSrc ? `openLightbox('${imgSrc}','${group.name}')` : ''}">
+                            ${imgHtml}
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">${(group.cat || '').toUpperCase()}</div>
+                            <h3 class="product-name" onclick="toggleDropdown(this)">${escapeHtml(group.name)}</h3>
+                            <p class="product-desc">${group.desc || ''}</p>
+                            ${dropdownHtml}
+                            <div class="specs-container">${specsHtml}</div>
+                            <div class="price-container">${priceHtml}</div>
+                            <a href="${initialWaLink}" class="btn btn-primary btn-small wa-link" target="_blank">Minta Penawaran</a>
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        function buildSpecsHtml(variant) {
+            let rows = '';
+            const add = (label, value) => { if (value) rows += `<tr><td>${label}</td><td>: ${typeof value === 'number' ? value.toLocaleString('id-ID') : value}</td></tr>`; };
+            add('Ukuran', variant.size);
+            add('Ketebalan', variant.tebal);
+            add('Isi Per Roll', variant.pcs_roll);
+            add('Roll Per Bal', variant.roll_bal);
+            add('Isi Per Pack', variant.pcs_pack);
+            add('Roll per Pack', variant.roll_pack);
+            return rows ? `<table class="specs-table">${rows}</table>` : '';
+        }
+
+        function buildPriceHtml(variant) {
+            let html = '';
+            const add = (label, value) => { if (value && value > 0) html += `<div class="price-item"><span>${label}</span> Rp ${value.toLocaleString('id-ID')}</div>`; };
+            add('Harga Satuan', variant.price_pcs);
+            add('Harga Per Roll', variant.price_roll);
+            add('Harga Per Bal', variant.price_bal);
+            add('Harga Per Pack', variant.price_pack);
+            add('Bundling dg Polymailer', variant.price_with_poly);
+            add('Harga Item Saja', variant.price_only);
+            return html ? `<div class="price-list">${html}</div>` : '';
+        }
+
+        function generateWaLink(productName, sizeRaw) {
+            const displaySize = (sizeRaw || '').replace(/\*/g, 'x');
+            const sizeText = displaySize ? ` dengan ukuran *${displaySize}*` : '';
+            const message = `Halo kak, saya ingin bertanya untuk produk *${productName}*${sizeText}. Apakah Stock tersedia?`;
+            return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+        }
+
+        // Escape HTML untuk mencegah XSS
+        function escapeHtml(text) {
+            return String(text).replace(/[&<>"']/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                if (m === '"') return '&quot;';
+                if (m === "'") return '&#039;';
+            });
+        }
+
+        // Fungsi toggle dropdown (opsional, bisa klik nama untuk fokus select)
+        function toggleDropdown(header) {
+            const card = header.closest('.product-card');
+            const select = card.querySelector('.variant-select');
+            if (select) select.focus();
+        }
+
+        // Update spesifikasi, harga, dan link WA saat dropdown berubah
+        window.updateVariant = function(selectEl) {
+            const option = selectEl.options[selectEl.selectedIndex];
+            const card = selectEl.closest('.product-card');
+            const productName = card.dataset.productName;
+
+            // Bangun objek varian sementara dari data attributes
+            const variant = {
+                size: option.dataset.size,
+                tebal: option.dataset.tebal,
+                pcs_roll: parseInt(option.dataset.pcs_roll) || 0,
+                roll_bal: parseInt(option.dataset.roll_bal) || 0,
+                pcs_pack: parseInt(option.dataset.pcs_pack) || 0,
+                roll_pack: parseInt(option.dataset.roll_pack) || 0,
+                price_pcs: parseInt(option.dataset.price_pcs) || 0,
+                price_roll: parseInt(option.dataset.price_roll) || 0,
+                price_bal: parseInt(option.dataset.price_bal) || 0,
+                price_pack: parseInt(option.dataset.price_pack) || 0,
+                price_with_poly: parseInt(option.dataset.price_with_poly) || 0,
+                price_only: parseInt(option.dataset.price_only) || 0,
+            };
+
+            // Update specs
+            card.querySelector('.specs-container').innerHTML = buildSpecsHtml(variant);
+            // Update prices
+            card.querySelector('.price-container').innerHTML = buildPriceHtml(variant);
+            // Update link WA
+            const waLink = generateWaLink(productName, variant.size);
+            card.querySelector('.wa-link').href = waLink;
+        };
+
+        function setupFilters() {
+            const filterDiv = document.getElementById('categoryFilters');
+            filterDiv.innerHTML = siteData.catalogPage.filterLabels.map((label, i) =>
+                `<button class="filter-btn ${i===0?'active':''}" data-filter="${siteData.catalogPage.filterValues[i]}">${label}</button>`
+            ).join('');
+
+            let activeFilter = 'all';
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeFilter = btn.dataset.filter;
+                    renderProducts(activeFilter, document.getElementById('searchInput').value);
+                });
+            });
+            document.getElementById('searchInput').addEventListener('input', e => {
+                renderProducts(activeFilter, e.target.value);
+            });
+        }
+
+        function openLightbox(imgSrc, productName) {
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxCaption').textContent = productName;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+        document.getElementById('footerKatalog').innerHTML = `
+            <div class="container footer-grid">
+                <div class="footer-col footer-about">
+                    <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
+                    <p>${siteData.footer.about}</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Produk</h4>
+                    <ul>${siteData.footer.products.map(p => `<li><a href="index.html">${p}</a></li>`).join('')}</ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                    <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
+    </script>
+</body>
+</html>
