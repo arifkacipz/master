@@ -12,14 +12,14 @@
 
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="nav-logo">
+            <a href="" class="nav-logo">
                 <i class="fa-solid fa-industry"></i>
                 <span id="navBrand">NUSA PACKING INDONESIA</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Beranda</a></li>
-                <li><a href="katalog/index.html" class="nav-link">Katalog</a></li>
-                <li><a href="kontak/index.html" class="nav-link">Hubungi Kami</a></li>
+                <li><a href="" class="nav-link active">Beranda</a></li>
+                <li><a href="katalog/" class="nav-link">Katalog</a></li>
+                <li><a href="kontak/" class="nav-link">Hubungi Kami</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span><span></span><span></span>
@@ -67,8 +67,8 @@
                 <h1 class="hero-title">${siteData.hero.title}</h1>
                 <p class="hero-desc">${siteData.hero.description}</p>
                 <div class="hero-buttons">
-                    <a href="katalog/index.html" class="btn btn-primary">${siteData.hero.buttons.catalog}</a>
-                    <a href="kontak/index.html" class="btn btn-outline">${siteData.hero.buttons.contact}</a>
+                    <a href="katalog/" class="btn btn-primary">${siteData.hero.buttons.catalog}</a>
+                    <a href="kontak/" class="btn btn-outline">${siteData.hero.buttons.contact}</a>
                 </div>`;
 
             // Hero stats
@@ -99,7 +99,7 @@
                             <div class="about-features">
                                 ${siteData.about.features.map(f => `<div class="feature"><i class="fa-solid fa-check-circle"></i> ${f}</div>`).join('')}
                             </div>
-                            <a href="katalog/index.html" class="btn btn-primary">${siteData.about.button}</a>
+                            <a href="katalog/" class="btn btn-primary">${siteData.about.button}</a>
                         </div>
                     </div>
                 </div>`;
@@ -151,8 +151,8 @@
                     <h2 class="cta-title">${siteData.cta.title}</h2>
                     <p class="cta-desc">${siteData.cta.description}</p>
                     <div class="cta-buttons">
-                        <a href="kontak/index.html" class="btn btn-white">${siteData.cta.buttons.contact}</a>
-                        <a href="katalog/index.html" class="btn btn-outline-white">${siteData.cta.buttons.catalog}</a>
+                        <a href="kontak/" class="btn btn-white">${siteData.cta.buttons.contact}</a>
+                        <a href="katalog/" class="btn btn-outline-white">${siteData.cta.buttons.catalog}</a>
                     </div>
                 </div>`;
 
@@ -171,7 +171,7 @@
                     </div>
                     <div class="footer-col">
                         <h4>Produk</h4>
-                        <ul>${siteData.footer.products.map(p => `<li><a href="katalog/index.html">${p}</a></li>`).join('')}</ul>
+                        <ul>${siteData.footer.products.map(p => `<li><a href="katalog/">${p}</a></li>`).join('')}</ul>
                     </div>
                     <div class="footer-col">
                         <h4>Halaman</h4>
