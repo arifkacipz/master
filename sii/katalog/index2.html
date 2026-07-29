@@ -71,19 +71,20 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="./" class="nav-logo">
+            <a href="/" class="nav-logo">
                 <i class="fa-solid fa-industry"></i> <span>NUSA PACKING INDONESIA</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="./" class="nav-link">Beranda</a></li>
-                <li><a href="./katalog/" class="nav-link active">Katalog</a></li>
-                <li><a href="./kontak/" class="nav-link">Hubungi Kami</a></li>
+                <li><a href="/" class="nav-link">Beranda</a></li>
+                <li><a href="/katalog/" class="nav-link active">Katalog</a></li>
+                <li><a href="/kontak/" class="nav-link">Hubungi Kami</a></li>
             </ul>
             <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
         </div>
     </nav>
 
     <section class="page-header" id="catalogHeader"></section>
+
     <section class="search-filter">
         <div class="container">
             <div class="filter-bar">
@@ -95,7 +96,10 @@
             </div>
         </div>
     </section>
-    <section class="container products-grid" id="productsGrid"><p>Memuat data produk...</p></section>
+
+    <section class="container products-grid" id="productsGrid">
+        <p>Memuat data produk...</p>
+    </section>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <span class="close-btn">&times;</span>
@@ -104,6 +108,7 @@
     </div>
 
     <footer class="footer" id="footerKatalog"></footer>
+
     <a href="https://wa.me/6281230586587" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
     <script src="js/data.js"></script>
@@ -114,11 +119,84 @@
         let allProducts = [];
         let groupedProducts = [];
 
-        // ========== PARSER ==========
-        function parseCSV(text) { /* ... (kode parser yang sudah benar) ... */ }
+        // ========== PARSER CSV ==========
+        function parseCSV(text) {
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
+            let inQuotes = false;
 
-        function groupProducts(products) { /* ... (kode grouping) ... */ }
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const nextChar = text[i + 1];
+                if (inQuotes) {
+                    if (char === '"') {
+                        if (nextChar === '"') { currentField += '"'; i++; }
+                        else { inQuotes = false; }
+                    } else { currentField += char; }
+                } else {
+                    if (char === '"') { inQuotes = true; }
+                    else if (char === ',') {
+                        currentRow.push(currentField.trim());
+                        currentField = '';
+                    } else if (char === '\n') {
+                        currentRow.push(currentField.trim());
+                        if (currentRow.length > 0 && !currentRow.every(f => f === '')) rows.push(currentRow);
+                        currentRow = [];
+                        currentField = '';
+                    } else { currentField += char; }
+                }
+            }
+            currentRow.push(currentField.trim());
+            if (currentRow.length > 0 && !currentRow.every(f => f === '')) rows.push(currentRow);
 
+            if (rows.length < 2) return [];
+            const headers = rows[0].map(h => h.trim().toLowerCase());
+            const data = [];
+
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i];
+                while (values.length < headers.length) values.push('');
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index] || '';
+                });
+
+                const numFields = ['price_pcs', 'price_roll', 'price_bal', 'price_pack', 'price_with_poly', 'price_only',
+                                   'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack', 'stock'];
+                numFields.forEach(field => {
+                    if (obj.hasOwnProperty(field)) {
+                        const raw = obj[field];
+                        const clean = raw.replace(/\D/g, '');
+                        obj[field] = clean ? parseInt(clean, 10) : 0;
+                    }
+                });
+                data.push(obj);
+            }
+            return data;
+        }
+
+        // ========== GROUPING ==========
+        function groupProducts(products) {
+            const map = new Map();
+            products.forEach(p => {
+                const key = p.name.trim();
+                if (!map.has(key)) {
+                    map.set(key, {
+                        name: p.name,
+                        cat: p.cat,
+                        img: p.img,
+                        icon: p.icon,
+                        desc: p.desc,
+                        variants: []
+                    });
+                }
+                map.get(key).variants.push(p);
+            });
+            return Array.from(map.values());
+        }
+
+        // ========== DETEKSI SATUAN STOK ==========
         function getStockUnit(variant) {
             if (variant.stock_unit && variant.stock_unit.trim() !== '') return variant.stock_unit.trim();
             if (variant.roll_bal > 0) return 'Bal';
@@ -133,7 +211,7 @@
             let cssClass, text;
             if (stock === 0) {
                 cssClass = 'stock-empty';
-                text = `Stok Habis`;
+                text = 'Stok Habis';
             } else if (stock < 50) {
                 cssClass = 'stock-low';
                 text = `Stok Hampir Habis : ${stock.toLocaleString('id-ID')} ${unit}`;
@@ -166,14 +244,17 @@
                 return matchCat && matchSearch;
             });
             const grid = document.getElementById('productsGrid');
-            if (filtered.length === 0) { grid.innerHTML = '<p>Tidak ada produk ditemukan.</p>'; return; }
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p>Tidak ada produk ditemukan.</p>';
+                return;
+            }
 
             grid.innerHTML = filtered.map(group => {
                 const variants = group.variants;
                 const firstVariant = variants[0];
-                const imgSrc = group.img ? group.img : null; // contoh "img/hitam1.jpeg"
+                const imgSrc = group.img || null;
                 const imgHtml = imgSrc
-                    ? `<img src="${imgSrc}" alt="${escapeHtml(group.name)}" onclick="event.stopPropagation(); openLightbox('${imgSrc.replace(/'/g, "&#39;")}','${escapeHtml(group.name).replace(/'/g, "&#39;")}')">`
+                    ? `<img src="${imgSrc}" alt="${escapeHtml(group.name)}" onclick="event.stopPropagation(); openLightbox('${imgSrc.replace(/'/g, '&#39;')}','${escapeHtml(group.name).replace(/'/g, '&#39;')}')">`
                     : `<i class="fa-solid ${group.icon || 'fa-box'}"></i>`;
 
                 const dropdownHtml = variants.length > 1 ? `
@@ -182,8 +263,8 @@
                         ${variants.map((v, idx) => {
                             const label = (v.size || '') + (v.tebal ? ' - ' + v.tebal : '') || 'Standar';
                             return `<option value="${idx}" 
-                                data-size="${v.size || ''}"
-                                data-tebal="${v.tebal || ''}"
+                                data-size="${escapeHtml(v.size || '')}"
+                                data-tebal="${escapeHtml(v.tebal || '')}"
                                 data-pcs_roll="${v.pcs_roll || 0}"
                                 data-roll_bal="${v.roll_bal || 0}"
                                 data-pcs_pack="${v.pcs_pack || 0}"
@@ -207,7 +288,7 @@
 
                 return `
                     <div class="product-card" data-product-name="${escapeHtml(group.name)}">
-                        <div class="product-img ${imgSrc ? 'clickable' : ''}" onclick="${imgSrc ? `openLightbox('${imgSrc.replace(/'/g, "&#39;")}','${escapeHtml(group.name).replace(/'/g, "&#39;")}')` : ''}">
+                        <div class="product-img ${imgSrc ? 'clickable' : ''}" onclick="${imgSrc ? `openLightbox('${imgSrc.replace(/'/g, '&#39;')}','${escapeHtml(group.name).replace(/'/g, '&#39;')}')` : ''}">
                             ${imgHtml}
                         </div>
                         <div class="product-info">
@@ -226,8 +307,29 @@
             }).join('');
         }
 
-        function buildSpecsHtml(variant) { /* ... (seperti sebelumnya) ... */ }
-        function buildPriceHtml(variant) { /* ... (seperti sebelumnya) ... */ }
+        function buildSpecsHtml(variant) {
+            let rows = '';
+            const add = (label, value) => { if (value) rows += `<tr><td>${label}</td><td>: ${typeof value === 'number' ? value.toLocaleString('id-ID') : value}</td></tr>`; };
+            add('Ukuran', variant.size);
+            add('Ketebalan', variant.tebal);
+            add('Isi Per Roll', variant.pcs_roll);
+            add('Roll Per Bal', variant.roll_bal);
+            add('Isi Per Pack', variant.pcs_pack);
+            add('Roll per Pack', variant.roll_pack);
+            return rows ? `<table class="specs-table">${rows}</table>` : '';
+        }
+
+        function buildPriceHtml(variant) {
+            let html = '';
+            const add = (label, value) => { if (value && value > 0) html += `<div class="price-item"><span>${label}</span> Rp ${value.toLocaleString('id-ID')}</div>`; };
+            add('Harga Satuan', variant.price_pcs);
+            add('Harga Per Roll', variant.price_roll);
+            add('Harga Per Bal', variant.price_bal);
+            add('Harga Per Pack', variant.price_pack);
+            add('Bundling dg Polymailer', variant.price_with_poly);
+            add('Harga Item Saja', variant.price_only);
+            return html ? `<div class="price-list">${html}</div>` : '';
+        }
 
         function generateWaLink(productName, sizeRaw) {
             const displaySize = (sizeRaw || '').replace(/\*/g, 'x');
@@ -237,13 +339,16 @@
         }
 
         function escapeHtml(text) {
-            return String(text).replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[m]);
+            if (typeof text !== 'string') return text;
+            return text.replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[m]);
         }
 
+        // ========== UPDATE VARIANT ==========
         window.updateVariant = function(selectEl) {
             const option = selectEl.options[selectEl.selectedIndex];
             const card = selectEl.closest('.product-card');
             const productName = card.dataset.productName;
+
             const variant = {
                 size: option.dataset.size,
                 tebal: option.dataset.tebal,
@@ -260,6 +365,7 @@
                 stock: parseInt(option.dataset.stock) || 0,
                 stock_unit: option.dataset.stock_unit || ''
             };
+
             card.querySelector('.specs-container').innerHTML = buildSpecsHtml(variant);
             card.querySelector('.price-container').innerHTML = buildPriceHtml(variant);
             const stockInfo = getStockInfo(variant);
@@ -268,27 +374,71 @@
             card.querySelector('.wa-link').href = waLink;
         };
 
-        function setupFilters() { /* ... (filter setup) ... */ }
+        // ========== FILTER ==========
+        function setupFilters() {
+            const filterDiv = document.getElementById('categoryFilters');
+            filterDiv.innerHTML = siteData.catalogPage.filterLabels.map((label, i) =>
+                `<button class="filter-btn ${i===0?'active':''}" data-filter="${siteData.catalogPage.filterValues[i]}">${label}</button>`
+            ).join('');
+            let activeFilter = 'all';
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeFilter = btn.dataset.filter;
+                    renderProducts(activeFilter, document.getElementById('searchInput').value);
+                });
+            });
+            document.getElementById('searchInput').addEventListener('input', e => {
+                renderProducts(activeFilter, e.target.value);
+            });
+        }
 
-        // ========== LIGHTBOX (global) ==========
+        // ========== LIGHTBOX ==========
         function openLightbox(imgSrc, productName) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxCaption = document.getElementById('lightboxCaption');
-            lightboxImg.src = imgSrc;
-            lightboxCaption.textContent = productName;
-            lightbox.classList.add('active');
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxCaption').textContent = productName;
+            document.getElementById('lightbox').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
+            document.getElementById('lightbox').classList.remove('active');
             document.body.style.overflow = '';
         }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
         // ========== FOOTER ==========
-        document.getElementById('footerKatalog').innerHTML = `... (footer HTML seperti sebelumnya) ...`;
+        document.getElementById('footerKatalog').innerHTML = `
+            <div class="container footer-grid">
+                <div class="footer-col footer-about">
+                    <h4><i class="fa-solid fa-industry"></i> ${siteData.siteName}</h4>
+                    <p>${siteData.footer.about}</p>
+                    <div class="social-links">
+                        <a href="${siteData.footer.social.whatsapp}"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="${siteData.footer.social.instagram}"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="${siteData.footer.social.facebook}"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="${siteData.footer.social.email}"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Produk</h4>
+                    <ul>${siteData.footer.products.map(p => `<li><a href="./katalog/">${p}</a></li>`).join('')}</ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Halaman</h4>
+                    <ul>${siteData.footer.pages.map(p => `<li><a href="${p.url}">${p.name}</a></li>`).join('')}</ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> ${siteData.contact.address}</p>
+                    <p><i class="fa-solid fa-phone"></i> ${siteData.contact.phone}</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> ${siteData.contact.whatsapp} (WA)</p>
+                    <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ${new Date().getFullYear()} ${siteData.siteName}. All Rights Reserved.</p>
+            </div>`;
     </script>
 </body>
 </html>
