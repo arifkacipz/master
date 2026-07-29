@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Produk - NUSA PACKING INDONESIA</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <base href="/sii/"> <!-- Sesuaikan dengan root aplikasi Anda -->
     <style>
         .page-header {
             background: linear-gradient(135deg, #023e8a, #0077b6);
@@ -42,20 +43,11 @@
         .btn-small { padding: 10px 24px; font-size: 14px; margin-top: auto; align-self: flex-start; }
 
         .variant-label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-            color: var(--text-dark);
+            display: block; font-weight: 600; margin-bottom: 5px; font-size: 0.9rem; color: var(--text-dark);
         }
         .variant-select {
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-            background: white;
+            width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--border);
+            margin-bottom: 15px; font-size: 0.9rem; background: white;
         }
 
         .specs-table { width: 100%; margin: 10px 0; border-collapse: collapse; font-size: 0.9rem; }
@@ -65,28 +57,38 @@
         .price-item { background: var(--light-bg); padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-dark); }
         .price-item span { font-weight: 700; margin-right: 4px; }
 
-        .lightbox {
-            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; flex-direction: column;
+        /* Stok badge */
+        .stock-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 10px;
+            color: white;
         }
+        .stock-ready { background-color: #16a34a; } /* hijau */
+        .stock-low { background-color: #eab308; color: #1e293b; } /* kuning */
+        .stock-empty { background-color: #dc2626; } /* merah */
+
+        .lightbox { /* ... (sama seperti sebelumnya) */ }
         .lightbox.active { display: flex; }
-        .lightbox img { max-width: 90%; max-height: 80vh; border-radius: 8px; box-shadow: 0 0 40px rgba(0,0,0,0.5); object-fit: contain; }
-        .lightbox .close-btn { position: absolute; top: 25px; right: 35px; font-size: 3rem; color: white; cursor: pointer; z-index: 10; }
+        .lightbox img { max-width: 90%; max-height: 80vh; border-radius: 8px; }
+        .lightbox .close-btn { position: absolute; top: 25px; right: 35px; font-size: 3rem; color: white; cursor: pointer; }
         .lightbox .close-btn:hover { color: var(--accent); }
-        .lightbox .caption { color: white; margin-top: 20px; font-size: 1.1rem; text-align: center; padding: 0 20px; }
+        .lightbox .caption { color: white; margin-top: 20px; font-size: 1.1rem; text-align: center; }
     </style>
 </head>
 <body>
-
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="../index.html" class="nav-logo">
+            <a href="./" class="nav-logo">
                 <i class="fa-solid fa-industry"></i> <span>NUSA PACKING INDONESIA</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="../index.html" class="nav-link">Beranda</a></li>
-                <li><a href="index.html" class="nav-link active">Katalog</a></li>
-                <li><a href="../kontak/index.html" class="nav-link">Hubungi Kami</a></li>
+                <li><a href="./" class="nav-link">Beranda</a></li>
+                <li><a href="./katalog/" class="nav-link active">Katalog</a></li>
+                <li><a href="./kontak/" class="nav-link">Hubungi Kami</a></li>
             </ul>
             <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
         </div>
@@ -122,15 +124,16 @@
 
     <a href="https://wa.me/6281230586587" class="wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
-    <script src="../js/data.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
     <script>
-        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?gid=0&single=true&output=csv';
+        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTaEQmiwbVIc6Sxv57XxDKjawYZtX9ddvtwS-MnVlmjLYc6kt1dSvQ7B2yFHMzecI4UipL9Wz-x9pjw/pub?output=csv';
         const WA_NUMBER = '6281230586587';
 
         let allProducts = [];
         let groupedProducts = [];
 
+        // ========== PARSER CSV ==========
         function parseCSV(text) {
             const rows = [];
             let currentRow = [];
@@ -140,43 +143,29 @@
             for (let i = 0; i < text.length; i++) {
                 const char = text[i];
                 const nextChar = text[i + 1];
-
                 if (inQuotes) {
                     if (char === '"') {
-                        if (nextChar === '"') {
-                            currentField += '"';
-                            i++;
-                        } else {
-                            inQuotes = false;
-                        }
-                    } else {
-                        currentField += char;
-                    }
+                        if (nextChar === '"') { currentField += '"'; i++; }
+                        else { inQuotes = false; }
+                    } else { currentField += char; }
                 } else {
-                    if (char === '"') {
-                        inQuotes = true;
-                    } else if (char === ',') {
+                    if (char === '"') { inQuotes = true; }
+                    else if (char === ',') {
                         currentRow.push(currentField.trim());
                         currentField = '';
                     } else if (char === '\n') {
                         currentRow.push(currentField.trim());
-                        if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
-                            rows.push(currentRow);
-                        }
+                        if (currentRow.length > 0 && !currentRow.every(f => f === '')) rows.push(currentRow);
                         currentRow = [];
                         currentField = '';
-                    } else {
-                        currentField += char;
-                    }
+                    } else { currentField += char; }
                 }
             }
             currentRow.push(currentField.trim());
-            if (currentRow.length > 0 && !currentRow.every(f => f === '')) {
-                rows.push(currentRow);
-            }
+            if (currentRow.length > 0 && !currentRow.every(f => f === '')) rows.push(currentRow);
 
             if (rows.length < 2) return [];
-            const headers = rows[0].map(h => h.trim());
+            const headers = rows[0].map(h => h.trim().toLowerCase()); // normalisasi jadi lowercase
             const data = [];
 
             for (let i = 1; i < rows.length; i++) {
@@ -187,11 +176,9 @@
                     obj[header] = values[index] || '';
                 });
 
-                const numFields = [
-                    'price_pcs', 'price_roll', 'price_bal', 'price_pack',
-                    'price_with_poly', 'price_only',
-                    'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack'
-                ];
+                // Konversi field numerik (termasuk stock)
+                const numFields = ['price_pcs', 'price_roll', 'price_bal', 'price_pack', 'price_with_poly', 'price_only',
+                                   'pcs_roll', 'roll_bal', 'pcs_pack', 'roll_pack', 'stock'];
                 numFields.forEach(field => {
                     if (obj.hasOwnProperty(field)) {
                         const raw = obj[field];
@@ -200,12 +187,13 @@
                     }
                 });
 
+                // Jika ada kolom stock_unit, biarkan sebagai string
                 data.push(obj);
             }
-
             return data;
         }
 
+        // ========== GROUPING ==========
         function groupProducts(products) {
             const map = new Map();
             products.forEach(p => {
@@ -225,12 +213,46 @@
             return Array.from(map.values());
         }
 
+        // ========== DETEKSI SATUAN STOK ==========
+        function getStockUnit(variant) {
+            // Jika ada kolom stock_unit, gunakan itu
+            if (variant.stock_unit && variant.stock_unit.trim() !== '') {
+                return variant.stock_unit.trim();
+            }
+            // Deteksi otomatis berdasarkan kolom yang ada isinya
+            if (variant.roll_bal > 0) return 'Bal';
+            if (variant.pcs_pack > 0) return 'Pack';
+            if (variant.pcs_roll > 0) return 'Roll';
+            return 'Pcs'; // fallback
+        }
+
+        function getStockInfo(variant) {
+            const stock = variant.stock || 0;
+            const unit = getStockUnit(variant);
+            let status, cssClass, text;
+            if (stock === 0) {
+                status = 'Stok Habis';
+                cssClass = 'stock-empty';
+                text = `Stok Habis`;
+            } else if (stock < 50) {
+                status = 'Stok Hampir Habis';
+                cssClass = 'stock-low';
+                text = `Stok Hampir Habis : ${stock.toLocaleString('id-ID')} ${unit}`;
+            } else {
+                status = 'Stok Ready';
+                cssClass = 'stock-ready';
+                text = `Stok Ready : ${stock.toLocaleString('id-ID')} ${unit}`;
+            }
+            return { status, cssClass, text };
+        }
+
+        // ========== RENDER ==========
         fetch(SHEET_CSV_URL)
             .then(response => response.text())
             .then(csvText => {
                 allProducts = parseCSV(csvText);
                 groupedProducts = groupProducts(allProducts);
-                console.log('Total produk:', allProducts.length, 'Grup:', groupedProducts.length);
+                console.log('Produk:', allProducts.length, 'Grup:', groupedProducts.length);
                 renderProducts();
                 setupFilters();
                 document.getElementById('catalogHeader').innerHTML = `
@@ -239,7 +261,7 @@
             })
             .catch(error => {
                 console.error('Gagal memuat data:', error);
-                document.getElementById('productsGrid').innerHTML = '<p>Gagal memuat data produk. Silakan coba lagi nanti.</p>';
+                document.getElementById('productsGrid').innerHTML = '<p>Gagal memuat data produk.</p>';
             });
 
         function renderProducts(filter = 'all', search = '') {
@@ -256,14 +278,15 @@
                 return;
             }
 
-            grid.innerHTML = filtered.map((group, groupIndex) => {
+            grid.innerHTML = filtered.map(group => {
                 const variants = group.variants;
                 const firstVariant = variants[0];
-                const imgSrc = group.img ? '../' + group.img : null;
+                const imgSrc = group.img ? group.img : null; // path relatif dari base
                 const imgHtml = imgSrc
                     ? `<img src="${imgSrc}" alt="${group.name}" onclick="event.stopPropagation(); openLightbox('${imgSrc}','${group.name}')">`
                     : `<i class="fa-solid ${group.icon || 'fa-box'}"></i>`;
 
+                // Dropdown ukuran
                 const dropdownHtml = variants.length > 1 ? `
                     <label class="variant-label">Pilih Ukuran:</label>
                     <select class="variant-select" data-product-name="${escapeHtml(group.name)}" onchange="updateVariant(this)">
@@ -282,12 +305,15 @@
                                 data-price_pack="${v.price_pack || 0}"
                                 data-price_with_poly="${v.price_with_poly || 0}"
                                 data-price_only="${v.price_only || 0}"
+                                data-stock="${v.stock || 0}"
+                                data-stock_unit="${escapeHtml(v.stock_unit || '')}"
                             >${escapeHtml(label)}</option>`;
                         }).join('')}
                     </select>` : '';
 
                 const specsHtml = buildSpecsHtml(firstVariant);
                 const priceHtml = buildPriceHtml(firstVariant);
+                const stockInfo = getStockInfo(firstVariant);
                 const initialWaLink = generateWaLink(group.name, firstVariant.size);
 
                 return `
@@ -297,11 +323,14 @@
                         </div>
                         <div class="product-info">
                             <div class="product-category">${(group.cat || '').toUpperCase()}</div>
-                            <h3 class="product-name" onclick="toggleDropdown(this)">${escapeHtml(group.name)}</h3>
+                            <h3 class="product-name">${escapeHtml(group.name)}</h3>
                             <p class="product-desc">${group.desc || ''}</p>
                             ${dropdownHtml}
                             <div class="specs-container">${specsHtml}</div>
                             <div class="price-container">${priceHtml}</div>
+                            <div class="stock-container">
+                                <span class="stock-badge ${stockInfo.cssClass}">${stockInfo.text}</span>
+                            </div>
                             <a href="${initialWaLink}" class="btn btn-primary btn-small wa-link" target="_blank">Minta Penawaran</a>
                         </div>
                     </div>`;
@@ -340,21 +369,10 @@
         }
 
         function escapeHtml(text) {
-            return String(text).replace(/[&<>"']/g, function(m) {
-                if (m === '&') return '&amp;';
-                if (m === '<') return '&lt;';
-                if (m === '>') return '&gt;';
-                if (m === '"') return '&quot;';
-                if (m === "'") return '&#039;';
-            });
+            return String(text).replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;' })[m]);
         }
 
-        function toggleDropdown(header) {
-            const card = header.closest('.product-card');
-            const select = card.querySelector('.variant-select');
-            if (select) select.focus();
-        }
-
+        // ========== UPDATE VARIANT ==========
         window.updateVariant = function(selectEl) {
             const option = selectEl.options[selectEl.selectedIndex];
             const card = selectEl.closest('.product-card');
@@ -373,20 +391,24 @@
                 price_pack: parseInt(option.dataset.price_pack) || 0,
                 price_with_poly: parseInt(option.dataset.price_with_poly) || 0,
                 price_only: parseInt(option.dataset.price_only) || 0,
+                stock: parseInt(option.dataset.stock) || 0,
+                stock_unit: option.dataset.stock_unit || ''
             };
 
             card.querySelector('.specs-container').innerHTML = buildSpecsHtml(variant);
             card.querySelector('.price-container').innerHTML = buildPriceHtml(variant);
+            const stockInfo = getStockInfo(variant);
+            card.querySelector('.stock-container').innerHTML = `<span class="stock-badge ${stockInfo.cssClass}">${stockInfo.text}</span>`;
             const waLink = generateWaLink(productName, variant.size);
             card.querySelector('.wa-link').href = waLink;
         };
 
+        // ========== FILTER & SEARCH ==========
         function setupFilters() {
             const filterDiv = document.getElementById('categoryFilters');
             filterDiv.innerHTML = siteData.catalogPage.filterLabels.map((label, i) =>
                 `<button class="filter-btn ${i===0?'active':''}" data-filter="${siteData.catalogPage.filterValues[i]}">${label}</button>`
             ).join('');
-
             let activeFilter = 'all';
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -396,11 +418,10 @@
                     renderProducts(activeFilter, document.getElementById('searchInput').value);
                 });
             });
-            document.getElementById('searchInput').addEventListener('input', e => {
-                renderProducts(activeFilter, e.target.value);
-            });
+            document.getElementById('searchInput').addEventListener('input', e => renderProducts(activeFilter, e.target.value));
         }
 
+        // ========== LIGHTBOX ==========
         function openLightbox(imgSrc, productName) {
             document.getElementById('lightboxImg').src = imgSrc;
             document.getElementById('lightboxCaption').textContent = productName;
@@ -413,7 +434,7 @@
         }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-        // Footer identik dengan Beranda
+        // ========== FOOTER ==========
         document.getElementById('footerKatalog').innerHTML = `
             <div class="container footer-grid">
                 <div class="footer-col footer-about">
@@ -428,7 +449,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Produk</h4>
-                    <ul>${siteData.footer.products.map(p => `<li><a href="/katalog/">${p}</a></li>`).join('')}</ul>
+                    <ul>${siteData.footer.products.map(p => `<li><a href="./katalog/">${p}</a></li>`).join('')}</ul>
                 </div>
                 <div class="footer-col">
                     <h4>Halaman</h4>
@@ -442,9 +463,7 @@
                     <p><i class="fa-solid fa-envelope"></i> ${siteData.contact.email}</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; ${new Date().getFullYear()} ${siteData.siteName}. All Rights Reserved.</p>
-            </div>`;
+            <div class="footer-bottom"><p>&copy; ${new Date().getFullYear()} ${siteData.siteName}.</p></div>`;
     </script>
 </body>
 </html>
