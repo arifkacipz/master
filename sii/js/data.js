@@ -6,7 +6,7 @@ const siteData = {
     // ========== HERO (Beranda) ==========
     hero: {
         subtitle: "SINCE 2013",
-        title: "Pabrik Plastik Packaging<br>Terpercaya di Indonesia",
+        title: "Pabrik Plastik Packaging Murah<br>Terpercaya di Indonesia",
         description: "Memproduksi berbagai macam kemasan plastik berkualitas tinggi untuk industri makanan, minuman, retail, farmasi, dan manufaktur. Solusi packaging lengkap dengan harga kompetitif.",
         buttons: {
             catalog: "Lihat Katalog Produk",
@@ -17,10 +17,10 @@ const siteData = {
 
     // ========== STATS (Beranda) ==========
     stats: [
-        { number: 11,  label: "Tahun Pengalaman" },
+        { number: 13,  label: "Tahun Pengalaman" },
         { number: 200, label: "Klien Aktif" },
         { number: 1000, label: "Varian Produk" },
-        { number: 30,  label: "Mesin Produksi" }
+        { number: 50,  label: "Mesin Produksi" }
     ],
 
     // ========== ABOUT (Beranda) ==========
@@ -107,9 +107,9 @@ const siteData = {
         about: "Pabrik plastik packaging terpercaya melayani kebutuhan kemasan plastik berkualitas untuk berbagai industri di seluruh Indonesia.",
         products: ["Polymailer", "Bubble Mailer", "Zipper Bag", "Bubble Wrap", "OPP Tape"],
         pages: [
-            { name: "Beranda", url: "/" },
-            { name: "Katalog", url: "/katalog/" },
-            { name: "Hubungi Kami", url: "/kontak/" }
+            { name: "Beranda", url: "/sii/" },
+            { name: "Katalog", url: "/sii/katalog/" },
+            { name: "Hubungi Kami", url: "/sii/kontak/" }
         ],
         social: {
             whatsapp: "https://wa.me/6281230586587",
