@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Produk - NUSA PACKING INDONESIA</title>
-    <link rel="stylesheet" href="https://zepeto.club/sii/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <base href="https://zepeto.club/sii/"> <!-- Sesuaikan dengan root aplikasi Anda -->
+    <base href="/sii/"> <!-- Sesuaikan dengan root aplikasi Anda -->
     <style>
         .page-header {
             background: linear-gradient(135deg, #023e8a, #0077b6);
@@ -71,13 +71,13 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="" class="nav-logo">
+            <a href="./" class="nav-logo">
                 <i class="fa-solid fa-industry"></i> <span>NUSA PACKING INDONESIA</span>
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="" class="nav-link">Beranda</a></li>
-                <li><a href="katalog/" class="nav-link active">Katalog</a></li>
-                <li><a href="kontak/" class="nav-link">Hubungi Kami</a></li>
+                <li><a href="./" class="nav-link">Beranda</a></li>
+                <li><a href="./katalog/" class="nav-link active">Katalog</a></li>
+                <li><a href="./kontak/" class="nav-link">Hubungi Kami</a></li>
             </ul>
             <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
         </div>
@@ -197,7 +197,12 @@
         }
 
         // ========== DETEKSI SATUAN STOK ==========
-        function getStockUnit(variant) {
+        function getStockUnit(variant, cat) {
+            // Jika kategori mailer, paksa "Pack"
+            if (cat && cat.toLowerCase().includes('mailer')) {
+                return 'Pack';
+            }
+            // Jika tidak, deteksi otomatis
             if (variant.stock_unit && variant.stock_unit.trim() !== '') return variant.stock_unit.trim();
             if (variant.roll_bal > 0) return 'Bal';
             if (variant.pcs_pack > 0) return 'Pack';
@@ -205,9 +210,9 @@
             return 'Pcs';
         }
 
-        function getStockInfo(variant) {
+        function getStockInfo(variant, cat) {
             const stock = variant.stock || 0;
-            const unit = getStockUnit(variant);
+            const unit = getStockUnit(variant, cat);
             let cssClass, text;
             if (stock === 0) {
                 cssClass = 'stock-empty';
@@ -283,11 +288,11 @@
 
                 const specsHtml = buildSpecsHtml(firstVariant);
                 const priceHtml = buildPriceHtml(firstVariant);
-                const stockInfo = getStockInfo(firstVariant);
+                const stockInfo = getStockInfo(firstVariant, group.cat);
                 const initialWaLink = generateWaLink(group.name, firstVariant.size);
 
                 return `
-                    <div class="product-card" data-product-name="${escapeHtml(group.name)}">
+                    <div class="product-card" data-product-name="${escapeHtml(group.name)}" data-cat="${escapeHtml(group.cat || '')}">
                         <div class="product-img ${imgSrc ? 'clickable' : ''}" onclick="${imgSrc ? `openLightbox('${imgSrc.replace(/'/g, '&#39;')}','${escapeHtml(group.name).replace(/'/g, '&#39;')}')` : ''}">
                             ${imgHtml}
                         </div>
@@ -314,8 +319,8 @@
             add('Ketebalan', variant.tebal);
             add('Isi Per Roll', variant.pcs_roll);
             add('Roll Per Bal', variant.roll_bal);
-            add('Isi Per Pack', variant.pcs_pack);
-            add('Roll per Pack', variant.roll_pack);
+            add('Isi Per Pack', variant.pcs_pack);   // "Isi Per Pack" untuk pcs_pack
+            add('Roll Per Pack', variant.roll_pack); // "Roll Per Pack" tetap jika ada
             return rows ? `<table class="specs-table">${rows}</table>` : '';
         }
 
@@ -348,6 +353,7 @@
             const option = selectEl.options[selectEl.selectedIndex];
             const card = selectEl.closest('.product-card');
             const productName = card.dataset.productName;
+            const cat = card.dataset.cat;
 
             const variant = {
                 size: option.dataset.size,
@@ -368,7 +374,7 @@
 
             card.querySelector('.specs-container').innerHTML = buildSpecsHtml(variant);
             card.querySelector('.price-container').innerHTML = buildPriceHtml(variant);
-            const stockInfo = getStockInfo(variant);
+            const stockInfo = getStockInfo(variant, cat);
             card.querySelector('.stock-container').innerHTML = `<span class="stock-badge ${stockInfo.cssClass}">${stockInfo.text}</span>`;
             const waLink = generateWaLink(productName, variant.size);
             card.querySelector('.wa-link').href = waLink;
